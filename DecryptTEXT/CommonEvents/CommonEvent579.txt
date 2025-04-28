@@ -1,0 +1,25 @@
+CommonEvent 579
+Name = "SwapC+Remove v2017"
+
+  Script(["@ac = $game_variables[2018]"])
+  Script(["$PU_AUTOMATIC_POPUP = false"])
+  Wait([10])
+  Script(["@ga = $game_variables[2017]"])
+  Script(["$game_party.gain_item($data_armors[@ga],1)"])
+  Comment(["has dress?"])
+  ConditionalBranch([12, "!$game_actors[@ac].equips[5].nil?"])
+    ControlVariables([2017, 2017, 0, 4, "$game_actors[@ac].equips[5].id"])
+    Script(["@ra = $game_variables[2017]"])
+    Script(["$game_actors[@ac].change_equip_by_id(5, @ga)"])
+    Script(["$game_party.lose_item($data_armors[@ra],1)"])
+    Empty([])
+
+  Else([])
+    Script(["$game_actors[@ac].change_equip_by_id(5, @ga)"])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["has dress?"])
+  Wait([10])
+  Script(["$PU_AUTOMATIC_POPUP = true"])
+  Empty([])

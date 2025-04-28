@@ -1,0 +1,27 @@
+CommonEvent 589
+Name = "★👤★ Slave Aff Loss"
+
+  ConditionalBranch([12, "$game_actors[1].equips[5] == $data_armors[260]"])
+    Comment(["Greenkin Mask"])
+    JumpToLabel(["nowrong"])
+    Empty([])
+
+  BranchEnd([])
+  Script(["@prog = $game_variables[2868]"])
+  Script(["@n = $game_variables[@prog][0]"])
+  Comment(["-6 aff Slave Race"])
+  Script(["@aff = [0,0,6,9,15,59,110,186,381,638,1365,1556,0,1886,3554,3761,2942,3929,4169,"])
+  ScriptMore(["4249,4329,0,0,0,0,0,0,0,0,0,4429,4498,0,0,0,0]"])
+  Script(["@var = @aff[@n]"])
+  Script(["if @var != 0"])
+  ScriptMore(["if @var == 2942"])
+  ScriptMore(["$game_variables[@var] -= 2"])
+  ScriptMore(["else"])
+  ScriptMore(["$game_variables[@var] -= 6"])
+  ScriptMore(["end"])
+  ScriptMore(["if $game_variables[@var] <= -10"])
+  ScriptMore([" $game_variables[@var] = -10"])
+  ScriptMore(["end"])
+  ScriptMore(["end"])
+  Label(["nowrong"])
+  Empty([])

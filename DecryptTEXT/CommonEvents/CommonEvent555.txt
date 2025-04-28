@@ -1,0 +1,558 @@
+CommonEvent 555
+Name = "☢☢☢ Prog Skills"
+
+  ConditionalBranch([12, "$game_switches[2730] == true || $game_switches[3340] == true"])
+    Script(["@prog = $game_variables[2868]"])
+    Script(["@npm = $game_variables[2863]"])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([0, 2718, 0])
+      Script(["@prog = 2249 + $game_variables[2067]"])
+      Script(["@pla = $game_variables[@prog][8]"])
+      Script(["@npm = 34 + @pla"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([0, 2444, 0])
+        Script(["@npm = $game_variables[2085]"])
+        Script(["@prog = $game_variables[2165]"])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([0, 2411, 0])
+          Script(["@prog = 2249 + $game_variables[2067]"])
+          Empty([])
+
+        Else([])
+          Script(["@prog = 2250 + $game_variables[1918]"])
+          Empty([])
+
+        BranchEnd([])
+        ConditionalBranch([0, 2442, 0])
+          Script(["@pla = $game_variables[@prog][8]"])
+          Script(["@npm = 34 + @pla"])
+          Empty([])
+
+        Else([])
+          Script(["@npm = $game_variables[767]"])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Script(["$game_actors[@npm].forget_skill(199)"])
+  Script(["$game_actors[@npm].forget_skill(224)"])
+  Script(["$game_actors[@npm].forget_skill(206)"])
+  Script(["$game_actors[@npm].forget_skill(215)"])
+  Script(["$game_actors[@npm].forget_skill(216)"])
+  Script(["$game_actors[@npm].forget_skill(246)"])
+  Script(["$game_actors[@npm].forget_skill(247)"])
+  Script(["$game_actors[@npm].forget_skill(1)"])
+  Script(["$game_actors[@npm].forget_skill(226)"])
+  Script(["$game_actors[@npm].forget_skill(245)"])
+  Script(["$game_actors[@npm].forget_skill(128)"])
+  Script(["$game_actors[@npm].forget_skill(225)"])
+  Script(["$game_actors[@npm].forget_skill(139)"])
+  Script(["$game_actors[@npm].forget_skill(241)"])
+  Script(["$game_actors[@npm].forget_skill(250)"])
+  Script(["$game_actors[@npm].forget_skill(252)"])
+  Script(["$game_actors[@npm].forget_skill(253)"])
+  Script(["$game_actors[@npm].forget_skill(254)"])
+  Script(["$game_actors[@npm].forget_skill(223)"])
+  Script(["$game_actors[@npm].forget_skill(240)"])
+  Script(["$game_actors[@npm].forget_skill(257)"])
+  Script(["$game_actors[@npm].forget_skill(260)"])
+  Script(["$game_actors[@npm].forget_skill(261)"])
+  Script(["$game_actors[@npm].forget_skill(249)"])
+  Script(["$game_actors[@npm].forget_skill(262)"])
+  Script(["$game_actors[@npm].forget_skill(271)"])
+  Script(["$game_actors[@npm].forget_skill(278)"])
+  Script(["$game_actors[@npm].forget_skill(279)"])
+  Script(["$game_actors[@npm].forget_skill(280)"])
+  Script(["$game_actors[@npm].forget_skill(281)"])
+  Script(["$game_actors[@npm].forget_skill(282)"])
+  Script(["$game_actors[@npm].forget_skill(283)"])
+  Script(["$game_actors[@npm].forget_skill(284)"])
+  Script(["$game_actors[@npm].forget_skill(285)"])
+  Script(["$game_actors[@npm].forget_skill(286)"])
+  Script(["$game_actors[@npm].forget_skill(287)"])
+  Script(["$game_actors[@npm].forget_skill(288)"])
+  Script(["$game_actors[@npm].forget_skill(293)"])
+  Script(["$game_actors[@npm].forget_skill(298)"])
+  Script(["$game_actors[@npm].forget_skill(299)"])
+  Script(["$game_actors[@npm].forget_skill(300)"])
+  Script(["$game_actors[@npm].forget_skill(301)"])
+  Script(["$game_actors[@npm].forget_skill(302)"])
+  Script(["$game_actors[@npm].forget_skill(303)"])
+  Script(["$game_actors[@npm].forget_skill(130)"])
+  Script(["$game_actors[@npm].forget_skill(131)"])
+  Script(["$game_actors[@npm].forget_skill(132)"])
+  Script(["$game_actors[@npm].forget_skill(309)"])
+  Script(["$game_actors[@npm].forget_skill(310)"])
+  Script(["$game_actors[@npm].forget_skill(311)"])
+  Script(["$game_actors[@npm].forget_skill(318)"])
+  Script(["$game_actors[@npm].forget_skill(321)"])
+  Script(["$game_actors[@npm].forget_skill(325)"])
+  Script(["$game_actors[@npm].forget_skill(326)"])
+  Script(["$game_actors[@npm].forget_skill(327)"])
+  Script(["$game_actors[@npm].forget_skill(328)"])
+  Script(["$game_actors[@npm].forget_skill(134)"])
+  Script(["$game_actors[@npm].forget_skill(271)"])
+  Script(["$game_actors[@npm].forget_skill(130)"])
+  ScriptMore(["$game_actors[@npm].forget_skill(131)"])
+  ScriptMore(["$game_actors[@npm].forget_skill(132)"])
+  Script(["$game_actors[@npm].forget_skill(136)"])
+  Script(["$game_actors[@npm].forget_skill(137)"])
+  Script(["$game_actors[@npm].forget_skill(138)"])
+  Script(["$game_actors[@npm].forget_skill(341)"])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 1"])
+    Script(["$game_actors[@npm].learn_skill(128)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 2"])
+    Script(["$game_actors[@npm].learn_skill(225)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 3"])
+    ConditionalBranch([12, "$game_variables[@prog][3] == 3"])
+      Script(["$game_actors[@npm].learn_skill(225)"])
+      Empty([])
+
+    Else([])
+      Script(["$game_actors[@npm].learn_skill(139)"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 4"])
+    ConditionalBranch([12, "$game_variables[@prog][20] == \"feather\""])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "$game_variables[@prog][3] == 2"])
+        Script(["$game_actors[@npm].learn_skill(246)"])
+        Empty([])
+
+      Else([])
+        Script(["$game_actors[@npm].learn_skill(224)"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 5"])
+    ConditionalBranch([12, "$game_variables[@prog][3] == 2"])
+      Script(["$game_actors[@npm].learn_skill(245)"])
+      Empty([])
+
+    Else([])
+      Script(["$game_actors[@npm].learn_skill(226)"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 6"])
+    Script(["$game_actors[@npm].learn_skill(206)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 7"])
+    ConditionalBranch([12, "$game_variables[@prog][20] == \"onyx\""])
+      Script(["$game_actors[@npm].learn_skill(1)"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "$game_variables[@prog][3] == 3 || $game_variables[@prog][3] == 4"])
+        Empty([])
+
+      Else([])
+        Script(["$game_actors[@npm].learn_skill(1)"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 8"])
+    Script(["$game_actors[@npm].learn_skill(215)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 9"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 10"])
+    ConditionalBranch([12, "$game_variables[@prog][3] == 3"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "$game_variables[@prog][3] == 2"])
+        Script(["$game_actors[@npm].learn_skill(215)"])
+        Empty([])
+
+      Else([])
+        Script(["$game_actors[@npm].learn_skill(241)"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 11"])
+    ConditionalBranch([12, "$game_variables[@prog][20] == \"sakari\" || $game_variables[@prog][20] == \"plasma\""])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "$game_variables[@prog][3] == 2 || $game_variables[@prog][3] == 4"])
+        Script(["$game_actors[@npm].learn_skill(318)"])
+        Empty([])
+
+      Else([])
+        Script(["$game_actors[@npm].learn_skill(241)"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 12"])
+    ConditionalBranch([12, "$game_variables[@prog][20] == \"seji\""])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 13"])
+    ConditionalBranch([12, "$game_variables[@prog][3] == 2 || $game_variables[@prog][3] == 4"])
+      Script(["$game_actors[@npm].learn_skill(247)"])
+      Empty([])
+
+    Else([])
+      Script(["$game_actors[@npm].learn_skill(246)"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 14"])
+    Script(["$game_actors[@npm].learn_skill(250)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 15"])
+    Script(["$game_actors[@npm].learn_skill(216)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 16"])
+    ConditionalBranch([12, "$game_variables[@prog][4] == 0"])
+      Script(["$game_actors[@npm].learn_skill(253)"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[@prog][4] == 1"])
+      Script(["$game_actors[@npm].learn_skill(240)"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[@prog][4] == 2"])
+      Script(["$game_actors[@npm].learn_skill(223)"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[@prog][4] == 3"])
+      Script(["$game_actors[@npm].learn_skill(254)"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[@prog][4] == 4"])
+      Script(["$game_actors[@npm].learn_skill(252)"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[@prog][4] == 5"])
+      ConditionalBranch([12, "$game_variables[@prog][3] == 0"])
+        Script(["$game_actors[@npm].learn_skill(223)"])
+        Empty([])
+
+      BranchEnd([])
+      ConditionalBranch([12, "$game_variables[@prog][3] == 1"])
+        Script(["$game_actors[@npm].learn_skill(240)"])
+        Empty([])
+
+      BranchEnd([])
+      ConditionalBranch([12, "$game_variables[@prog][3] == 2"])
+        Script(["$game_actors[@npm].learn_skill(223)"])
+        Empty([])
+
+      BranchEnd([])
+      ConditionalBranch([12, "$game_variables[@prog][3] == 3"])
+        Script(["$game_actors[@npm].learn_skill(254)"])
+        Empty([])
+
+      BranchEnd([])
+      ConditionalBranch([12, "$game_variables[@prog][3] == 4"])
+        Script(["$game_actors[@npm].learn_skill(240)"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 17"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 18"])
+    ConditionalBranch([12, "$game_variables[@prog][3] == 4"])
+      Comment(["Giga"])
+      Empty([])
+
+    Else([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 19"])
+    Script(["$game_actors[@npm].learn_skill(293)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 20"])
+    Script(["$game_actors[@npm].learn_skill(303)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 21"])
+    Script(["$game_actors[@npm].learn_skill(199)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"mama\""])
+    Script(["$game_actors[@npm].learn_skill(199)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 22"])
+    Script(["$game_actors[@npm].learn_skill(311)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 23"])
+    Script(["$game_actors[@npm].learn_skill(288)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 24"])
+    ConditionalBranch([12, "$game_variables[@prog][11] == 0"])
+      Comment(["uncracked"])
+      Script(["$game_actors[@npm].learn_skill(287)"])
+      Empty([])
+
+    Else([])
+      Comment(["cracked"])
+      Script(["@ski = 279 + $game_variables[@prog][4]"])
+      Script(["$game_actors[@npm].learn_skill(@ski)"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 25"])
+    ConditionalBranch([12, "$game_variables[@prog][3] == 2 || $game_variables[@prog][1] == 1"])
+      Comment(["futa/male"])
+      Script(["$game_actors[@npm].learn_skill(131)"])
+      Empty([])
+
+    Else([])
+      Comment(["fem"])
+      Script(["$game_actors[@npm].learn_skill(130)"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 30"])
+    ConditionalBranch([12, "$game_variables[@prog][3] == 2 || $game_variables[@prog][3] == 5"])
+      Comment(["Stump - Pea Shot"])
+      Script(["$game_actors[@npm].learn_skill(301)"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"amelie\""])
+    Script(["$game_actors[@npm].learn_skill(260)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"moss\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"crusader\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"crystal\""])
+    Script(["$game_actors[@npm].learn_skill(257)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"scarecrow\""])
+    Script(["$game_actors[@npm].learn_skill(261)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"mimic\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"dokuro\""])
+    Script(["$game_actors[@npm].learn_skill(262)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"wendigo\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"eldritch\""])
+    Script(["$game_actors[@npm].learn_skill(298)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"idol\""])
+    Script(["$game_actors[@npm].learn_skill(132)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"kitsune\""])
+    Script(["$game_actors[@npm].learn_skill(299)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"squid\""])
+    Script(["$game_actors[@npm].learn_skill(300)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"dullanyan\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"monkey\""])
+    Script(["$game_actors[@npm].learn_skill(309)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"scorpio\""])
+    Script(["$game_actors[@npm].learn_skill(311)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"sprite\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"candy\""])
+    Script(["$game_actors[@npm].learn_skill(321)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"goat\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"ox\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"chain\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"zmeu\""])
+    Script(["$game_actors[@npm].learn_skill(325)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"yukionna\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"jester\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"nightmare\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"bot\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"mama\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"femk\""])
+    Script(["$game_actors[@npm].learn_skill(271)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"lilbug\""])
+    Script(["$game_actors[@npm].learn_skill(341)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == \"imps31\""])
+    Script(["$game_actors[@npm].learn_skill(136)"])
+    ScriptMore(["$game_actors[@npm].learn_skill(137)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 99"])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

@@ -1,0 +1,12 @@
+CommonEvent 578
+Name = "SwapC v2017"
+
+  Script(["$ac = $game_variables[2018]"])
+  Script(["$PU_AUTOMATIC_POPUP = false"])
+  Wait([10])
+  Script(["$ga = $game_variables[2017]"])
+  Script(["$game_party.gain_item($data_armors[$ga],1)"])
+  Script(["$game_actors[$ac].change_equip_by_id(5, $ga)"])
+  Wait([10])
+  Script(["$PU_AUTOMATIC_POPUP = true"])
+  Empty([])

@@ -1,0 +1,20 @@
+CommonEvent 501
+Name = "*Daily 5.1 panty check*"
+
+  Script(["@a = 1"])
+  ScriptMore(["while @a <= 39"])
+  ScriptMore(["if $game_variables[2784][@a] == 192"])
+  ScriptMore([" $game_variables[2778][@a] = 2"])
+  ScriptMore(["end"])
+  ScriptMore(["if $game_variables[2784][@a] == 193"])
+  ScriptMore([" $game_variables[2779][@a] = 2"])
+  ScriptMore(["end"])
+  ScriptMore(["if $game_variables[2784][@a] == 198"])
+  ScriptMore([" $game_variables[2778][@a] = 1"])
+  ScriptMore(["end"])
+  ScriptMore(["if $game_variables[2784][@a] == 199"])
+  ScriptMore([" $game_variables[2779][@a] = 1"])
+  ScriptMore(["end"])
+  ScriptMore(["@a += 1"])
+  ScriptMore(["end"])
+  Empty([])

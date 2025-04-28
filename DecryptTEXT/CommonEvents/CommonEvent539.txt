@@ -1,0 +1,307 @@
+CommonEvent 539
+Name = "Control Cursor Pos"
+
+  Label(["init"])
+  Comment(["#0 Kob#"])
+  CommentMore(["#1 Rest"])
+  CommentMore(["#2 Mines"])
+  CommentMore(["#3 Central-> Prod"])
+  CommentMore(["#4 Prod-> Farm"])
+  CommentMore(["#5 Prod-> Quarter"])
+  Comment(["#6 Farm-> Out"])
+  CommentMore(["#7 Shop"])
+  CommentMore(["#8 Production"])
+  CommentMore(["#9 Farming"])
+  CommentMore(["#10 Nobles"])
+  CommentMore(["#11 Sleep"])
+  Comment(["#12 Woodcutting"])
+  ConditionalBranch([0, 2389, 0])
+    ConditionalBranch([0, 2390, 0])
+      ConditionalBranch([0, 2392, 0])
+        ConditionalBranch([0, 2391, 0])
+          Comment(["Mine Shop Prod Farm Noble Woodcut"])
+          ConditionalBranch([12, "$game_variables[2162]==1 || $game_variables[2162]==3 || $game_variables[2162]==4 || $game_variables[2162]==9 || $game_variables[2162]==7 || $game_variables[2162]==10"])
+            PlaySE(["RPG::SE(@name=\"Cursor2\", @pitch=100, @volume=80)"])
+            CallCommonEvent([540])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([0, 2429, 0])
+              ControlVariables([2162, 2162, 2, 0, 1])
+              Empty([])
+
+            BranchEnd([])
+            ConditionalBranch([0, 2430, 0])
+              ControlVariables([2162, 2162, 1, 0, 1])
+              Empty([])
+
+            BranchEnd([])
+            ConditionalBranch([12, "$game_variables[2162] <= 0 || $game_variables[2162] >= 11"])
+              ConditionalBranch([0, 2429, 0])
+                ControlVariables([2162, 2162, 0, 0, 10])
+                Empty([])
+
+              BranchEnd([])
+              ConditionalBranch([0, 2430, 0])
+                ControlVariables([2162, 2162, 0, 0, 1])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            JumpToLabel(["init"])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        Else([])
+          Comment(["Mine Shop Prod Farm Noble Prod->Quar"])
+          ConditionalBranch([12, "$game_variables[2162]==1 || $game_variables[2162]==5 || $game_variables[2162]==3 || $game_variables[2162]==4 || $game_variables[2162]==9 || $game_variables[2162]==7 || $game_variables[2162]==10"])
+            PlaySE(["RPG::SE(@name=\"Cursor2\", @pitch=100, @volume=80)"])
+            CallCommonEvent([540])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([0, 2429, 0])
+              ControlVariables([2162, 2162, 2, 0, 1])
+              Empty([])
+
+            BranchEnd([])
+            ConditionalBranch([0, 2430, 0])
+              ControlVariables([2162, 2162, 1, 0, 1])
+              Empty([])
+
+            BranchEnd([])
+            ConditionalBranch([12, "$game_variables[2162] <= 0 || $game_variables[2162] >= 11"])
+              ConditionalBranch([0, 2429, 0])
+                ControlVariables([2162, 2162, 0, 0, 10])
+                Empty([])
+
+              BranchEnd([])
+              ConditionalBranch([0, 2430, 0])
+                ControlVariables([2162, 2162, 0, 0, 1])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            JumpToLabel(["init"])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([0, 2391, 0])
+          Comment(["Mine Shop Prod Farm Farm->Out"])
+          ConditionalBranch([12, "$game_variables[2162]==1 || $game_variables[2162]==3 || $game_variables[2162]==4 || $game_variables[2162]==8 || $game_variables[2162]==7"])
+            PlaySE(["RPG::SE(@name=\"Cursor2\", @pitch=100, @volume=80)"])
+            CallCommonEvent([540])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([0, 2429, 0])
+              ControlVariables([2162, 2162, 2, 0, 1])
+              Empty([])
+
+            BranchEnd([])
+            ConditionalBranch([0, 2430, 0])
+              ControlVariables([2162, 2162, 1, 0, 1])
+              Empty([])
+
+            BranchEnd([])
+            ConditionalBranch([12, "$game_variables[2162] <= 0 || $game_variables[2162] >= 11"])
+              ConditionalBranch([0, 2429, 0])
+                ControlVariables([2162, 2162, 0, 0, 10])
+                Empty([])
+
+              BranchEnd([])
+              ConditionalBranch([0, 2430, 0])
+                ControlVariables([2162, 2162, 0, 0, 1])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            JumpToLabel(["init"])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        Else([])
+          Comment(["Mine Shop Prod Farm Farm->Out Prod->Quar"])
+          ConditionalBranch([12, "$game_variables[2162]==1 || $game_variables[2162]==5 || $game_variables[2162]==3 || $game_variables[2162]==4 || $game_variables[2162]==8 || $game_variables[2162]==7"])
+            PlaySE(["RPG::SE(@name=\"Cursor2\", @pitch=100, @volume=80)"])
+            CallCommonEvent([540])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([0, 2429, 0])
+              ControlVariables([2162, 2162, 2, 0, 1])
+              Empty([])
+
+            BranchEnd([])
+            ConditionalBranch([0, 2430, 0])
+              ControlVariables([2162, 2162, 1, 0, 1])
+              Empty([])
+
+            BranchEnd([])
+            ConditionalBranch([12, "$game_variables[2162] <= 0 || $game_variables[2162] >= 11"])
+              ConditionalBranch([0, 2429, 0])
+                ControlVariables([2162, 2162, 0, 0, 10])
+                Empty([])
+
+              BranchEnd([])
+              ConditionalBranch([0, 2430, 0])
+                ControlVariables([2162, 2162, 0, 0, 1])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            JumpToLabel(["init"])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([0, 2391, 0])
+        Comment(["Mine Shop Prod Prod->Farm"])
+        ConditionalBranch([12, "$game_variables[2162]==1 || $game_variables[2162]==3 || $game_variables[2162]==4 || $game_variables[2162]==6"])
+          PlaySE(["RPG::SE(@name=\"Cursor2\", @pitch=100, @volume=80)"])
+          CallCommonEvent([540])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([0, 2429, 0])
+            ControlVariables([2162, 2162, 2, 0, 1])
+            Empty([])
+
+          BranchEnd([])
+          ConditionalBranch([0, 2430, 0])
+            ControlVariables([2162, 2162, 1, 0, 1])
+            Empty([])
+
+          BranchEnd([])
+          ConditionalBranch([12, "$game_variables[2162] <= 0 || $game_variables[2162] >= 11"])
+            ConditionalBranch([0, 2429, 0])
+              ControlVariables([2162, 2162, 0, 0, 10])
+              Empty([])
+
+            BranchEnd([])
+            ConditionalBranch([0, 2430, 0])
+              ControlVariables([2162, 2162, 0, 0, 1])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          JumpToLabel(["init"])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      Else([])
+        Comment(["Mine Shop Prod Prod->Farm Prod->Quar"])
+        ConditionalBranch([12, "$game_variables[2162]==1 || $game_variables[2162]==3 || $game_variables[2162]==4 || $game_variables[2162]==6 || $game_variables[2162]==5"])
+          PlaySE(["RPG::SE(@name=\"Cursor2\", @pitch=100, @volume=80)"])
+          CallCommonEvent([540])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([0, 2429, 0])
+            ControlVariables([2162, 2162, 2, 0, 1])
+            Empty([])
+
+          BranchEnd([])
+          ConditionalBranch([0, 2430, 0])
+            ControlVariables([2162, 2162, 1, 0, 1])
+            Empty([])
+
+          BranchEnd([])
+          ConditionalBranch([12, "$game_variables[2162] <= 0 || $game_variables[2162] >= 11"])
+            ConditionalBranch([0, 2429, 0])
+              ControlVariables([2162, 2162, 0, 0, 10])
+              Empty([])
+
+            BranchEnd([])
+            ConditionalBranch([0, 2430, 0])
+              ControlVariables([2162, 2162, 0, 0, 1])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          JumpToLabel(["init"])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Else([])
+    Comment(["Mine Cent->Prod"])
+    ConditionalBranch([12, "$game_variables[2162]==1 || $game_variables[2162]==2"])
+      PlaySE(["RPG::SE(@name=\"Cursor2\", @pitch=100, @volume=80)"])
+      CallCommonEvent([540])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([0, 2429, 0])
+        ControlVariables([2162, 2162, 2, 0, 1])
+        Empty([])
+
+      BranchEnd([])
+      ConditionalBranch([0, 2430, 0])
+        ControlVariables([2162, 2162, 1, 0, 1])
+        Empty([])
+
+      BranchEnd([])
+      ConditionalBranch([12, "$game_variables[2162] <= 0 || $game_variables[2162] >= 11"])
+        ConditionalBranch([0, 2429, 0])
+          ControlVariables([2162, 2162, 0, 0, 10])
+          Empty([])
+
+        BranchEnd([])
+        ConditionalBranch([0, 2430, 0])
+          ControlVariables([2162, 2162, 0, 0, 1])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      JumpToLabel(["init"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ControlSwitches([2429, 2429, 1])
+  ControlSwitches([2430, 2430, 1])
+  Empty([])

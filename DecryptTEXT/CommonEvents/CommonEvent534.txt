@@ -1,0 +1,26 @@
+CommonEvent 534
+Name = "Get Progeny graph"
+
+  Script(["@n = $game_variables[2163]"])
+  Script(["@bab = 2250"])
+  Loop([])
+    ConditionalBranch([12, "$game_variables[@bab][2] == @n"])
+      Script(["$game_variables[2165] = @bab"])
+      Empty([])
+
+    BranchEnd([])
+    Script(["@bab += 1"])
+    ConditionalBranch([12, "@bab > 2750"])
+      BreakLoop([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  RepeatAbove([])
+  ConditionalBranch([0, 2443, 0])
+    CallCommonEvent([530])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

@@ -1,0 +1,9 @@
+CommonEvent 554
+Name = "Daycare stats"
+
+  Script(["@win12 = Window_Base.new(0,0,800,608)"])
+  ScriptMore(["@win12.opacity = 0"])
+  Script(["@n = 2245 + $game_variables[2067]"])
+  Script(["@text12 = $game_variables[@n][2]"])
+  Script(["@win12.draw_text_ex(512,81,@text12)"])
+  Empty([])

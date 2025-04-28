@@ -1,0 +1,18 @@
+CommonEvent 502
+Name = "Panty untrick! MitV"
+
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Unmount the \\i[594] \\C[18]Tricky Panties\\C[0]?"])
+  ShowChoices([["Yes", "No"], 2])
+  When([0, "Yes"])
+    Script(["$game_variables[2777] -= 1"])
+    ChangeItems([198, 1, 0, 1])
+    Wait([45])
+    ChangeItems([201, 0, 0, 1])
+    Empty([])
+
+  When([1, "No"])
+    Empty([])
+
+  ChoicesEnd([])
+  Empty([])

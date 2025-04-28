@@ -1,0 +1,81 @@
+CommonEvent 559
+Name = "*Erase Pic S&D*"
+
+  ControlSwitches([4999, 4999, 0])
+  Comment(["try"])
+  ControlSwitches([4001, 4030, 1])
+  Comment(["try end"])
+  ConditionalBranch([12, "$game_switches[2730] == true || $game_switches[3340] == true"])
+    Comment(["race/sex change"])
+    Script(["@prog = $game_variables[2868]"])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([12, "$game_switches[2628] == true || $game_switches[579] == true"])
+      Script(["@prog = $game_variables[2769]"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([0, 2576, 0])
+        Script(["@prog = 2248"])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([0, 2562, 0])
+          Script(["@prog = 2243"])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([0, 2411, 0])
+            Script(["@prog = 2250 + $game_variables[2067]"])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([0, 2412, 0])
+              Script(["@prog = 2100 + $game_variables[2097] "])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([0, 2421, 0])
+                Script(["@prog = 2120 + $game_variables[2161] "])
+                Empty([])
+
+              Else([])
+                ConditionalBranch([0, 2443, 0])
+                  Script(["@prog = $game_variables[2165]"])
+                  Empty([])
+
+                Else([])
+                  Script(["@prog = 2250 + $game_variables[1918]"])
+                  Empty([])
+
+                BranchEnd([])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["EGGS"])
+  Script(["@n = 111"])
+  ScriptMore(["while @n <= 122"])
+  ScriptMore(["$game_map.screen.pictures[@n].erase"])
+  ScriptMore(["@n += 1"])
+  ScriptMore(["end"])
+  ControlSwitches([4999, 4999, 1])
+  Empty([])

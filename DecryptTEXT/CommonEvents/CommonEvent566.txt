@@ -1,0 +1,21 @@
+CommonEvent 566
+Name = "Prepare Kob workers"
+
+  ControlVariables([2057, 2057, 0, 0, 0])
+  ControlVariables([2058, 2058, 0, 0, 0])
+  ControlVariables([2059, 2059, 0, 0, 0])
+  ControlVariables([2060, 2060, 0, 0, 0])
+  Script(["$game_variables[2056] ="])
+  ScriptMore(["[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]"])
+  Comment(["#0 Kob#"])
+  CommentMore(["#1 Rest"])
+  CommentMore(["#2 Mines"])
+  CommentMore(["#3 Central-> Prod"])
+  CommentMore(["#4 Prod-> Farm"])
+  CommentMore(["#5 Prod-> Quarter"])
+  Comment(["#6 Farm-> Out"])
+  CommentMore(["#7 Production"])
+  CommentMore(["#8 Farming"])
+  CommentMore(["#9 Nobles"])
+  CommentMore(["#10 Sleep"])
+  Empty([])

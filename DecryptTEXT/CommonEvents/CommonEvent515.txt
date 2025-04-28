@@ -1,0 +1,254 @@
+CommonEvent 515
+Name = "Kob daytime"
+
+  ConditionalBranch([1, 1794, 0, 1, 0])
+    ConditionalBranch([1, 376, 0, 19, 1])
+      ControlSwitches([413, 413, 0])
+      ControlSwitches([412, 412, 1])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 376, 0, 18, 1])
+        ControlSwitches([413, 413, 1])
+        ControlSwitches([412, 412, 0])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([1, 376, 0, 15, 1])
+          ControlSwitches([413, 413, 1])
+          ControlSwitches([412, 412, 0])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([1, 376, 0, 12, 1])
+            ControlSwitches([413, 413, 1])
+            ControlSwitches([412, 412, 0])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([1, 376, 0, 9, 1])
+              ControlSwitches([413, 413, 1])
+              ControlSwitches([412, 412, 0])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([1, 376, 0, 6, 1])
+                ControlSwitches([413, 413, 1])
+                ControlSwitches([412, 412, 0])
+                Empty([])
+
+              Else([])
+                ControlSwitches([413, 413, 0])
+                ControlSwitches([412, 412, 1])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1794, 0, 2, 0])
+    ConditionalBranch([1, 376, 0, 21, 1])
+      ControlSwitches([413, 413, 0])
+      ControlSwitches([412, 412, 1])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 376, 0, 19, 1])
+        ControlSwitches([413, 413, 1])
+        ControlSwitches([412, 412, 0])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([1, 376, 0, 17, 1])
+          ControlSwitches([413, 413, 1])
+          ControlSwitches([412, 412, 0])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([1, 376, 0, 12, 1])
+            ControlSwitches([413, 413, 1])
+            ControlSwitches([412, 412, 0])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([1, 376, 0, 9, 1])
+              ControlSwitches([413, 413, 1])
+              ControlSwitches([412, 412, 0])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([1, 376, 0, 6, 1])
+                ControlSwitches([413, 413, 1])
+                ControlSwitches([412, 412, 0])
+                Empty([])
+
+              Else([])
+                ControlSwitches([413, 413, 0])
+                ControlSwitches([412, 412, 1])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1794, 0, 3, 0])
+    ConditionalBranch([1, 376, 0, 19, 1])
+      ControlSwitches([413, 413, 0])
+      ControlSwitches([412, 412, 1])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 376, 0, 17, 1])
+        ControlSwitches([413, 413, 1])
+        ControlSwitches([412, 412, 0])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([1, 376, 0, 15, 1])
+          ControlSwitches([413, 413, 1])
+          ControlSwitches([412, 412, 0])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([1, 376, 0, 12, 1])
+            ControlSwitches([413, 413, 1])
+            ControlSwitches([412, 412, 0])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([1, 376, 0, 9, 1])
+              ControlSwitches([413, 413, 1])
+              ControlSwitches([412, 412, 0])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([1, 376, 0, 6, 1])
+                ControlSwitches([413, 413, 1])
+                ControlSwitches([412, 412, 0])
+                Empty([])
+
+              Else([])
+                ControlSwitches([413, 413, 0])
+                ControlSwitches([412, 412, 1])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1794, 0, 4, 0])
+    ConditionalBranch([1, 376, 0, 17, 1])
+      ControlSwitches([413, 413, 0])
+      ControlSwitches([412, 412, 1])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 376, 0, 15, 1])
+        ControlSwitches([413, 413, 1])
+        ControlSwitches([412, 412, 0])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([1, 376, 0, 13, 1])
+          ControlSwitches([413, 413, 1])
+          ControlSwitches([412, 412, 0])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([1, 376, 0, 11, 1])
+            ControlSwitches([413, 413, 1])
+            ControlSwitches([412, 412, 0])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([1, 376, 0, 9, 1])
+              ControlSwitches([413, 413, 1])
+              ControlSwitches([412, 412, 0])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([1, 376, 0, 6, 1])
+                ControlSwitches([413, 413, 1])
+                ControlSwitches([412, 412, 0])
+                Empty([])
+
+              Else([])
+                ControlSwitches([413, 413, 0])
+                ControlSwitches([412, 412, 1])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 376, 0, 24, 1])
+    ControlVariables([761, 761, 1, 0, 1])
+    ControlVariables([376, 376, 2, 0, 24])
+    CallCommonEvent([194])
+    Empty([])
+
+  Else([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

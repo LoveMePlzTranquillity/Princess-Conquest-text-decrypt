@@ -1,0 +1,110 @@
+CommonEvent 536
+Name = "Name Check"
+
+  ControlSwitches([2441, 2441, 1])
+  ConditionalBranch([0, 3719, 0])
+    Script(["@prog = 2947"])
+    ScriptMore(["@nc = 2250"])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([0, 1232, 0])
+      Script(["@prog = 3187"])
+      ScriptMore(["@nc = 2250"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([0, 3059, 0])
+        Script(["@prog = $game_variables[2868]"])
+        ScriptMore(["@nc = 2250"])
+        Empty([])
+
+      Else([])
+        Script(["@prog = 2250 + $game_variables[1918]"])
+        ScriptMore(["@nc = 2250"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["checkname"])
+  ConditionalBranch([12, "@nc == @prog"])
+    JumpToLabel(["skip"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][2] == $game_variables[@nc][2]"])
+    ConditionalBranch([12, "$game_switches[5415] == true"])
+      JumpToLabel(["nameneg"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 3719, 0])
+      JumpToLabel(["nameneg"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 1232, 0])
+      JumpToLabel(["nameneg"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 3534, 0])
+      JumpToLabel(["nameneg"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 3059, 0])
+      JumpToLabel(["nameneg"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 2503, 0])
+      JumpToLabel(["nameneg"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 2465, 1])
+      JumpToLabel(["nameneg"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_map.map_id == 261 || $game_map.map_id == 262 || $game_map.map_id == 137 || $game_map.map_id == 463 || $game_map.map_id == 488 || $game_map.map_id == 480"])
+      Label(["nameneg"])
+      ShowTextAttributes(["Hero", 0, 2, 2])
+      ShowText(["I'm pretty sure I already have a Progeny named like that...\\.\\.\\."])
+      ControlSwitches([2441, 2441, 0])
+      JumpToLabel(["end"])
+      Empty([])
+
+    Else([])
+      ShowPicture([1, "Dear dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Dear:"])
+      ShowText(["This won't work,\\. you already have a Progeny named like that!\\.\\. Come on now,\\. put some effort in it!"])
+      ErasePicture([1])
+      ControlSwitches([2441, 2441, 0])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["skip"])
+  Script(["@nc += 1"])
+  ConditionalBranch([12, "@nc >= 2751"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  Else([])
+    JumpToLabel(["checkname"])
+    Empty([])
+
+  BranchEnd([])
+  Label(["end"])
+  Empty([])

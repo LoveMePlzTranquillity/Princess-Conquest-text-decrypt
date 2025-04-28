@@ -1,0 +1,23 @@
+CommonEvent 516
+Name = "Kob Time passing"
+
+  Script(["@t = 0"])
+  Loop([])
+    Wait([60])
+    Script(["@t += 1"])
+    ConditionalBranch([12, "@t >= 60"])
+      BreakLoop([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  RepeatAbove([])
+  ControlVariables([376, 376, 1, 0, 1])
+  CallCommonEvent([515])
+  Script(["    if $game_map.map_id == 60"])
+  ScriptMore(["      $game_switches[2563] = true"])
+  ScriptMore(["    else"])
+  ScriptMore(["      $game_switches[2563] = false"])
+  ScriptMore(["    end  "])
+  Empty([])

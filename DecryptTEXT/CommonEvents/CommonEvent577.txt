@@ -1,0 +1,12 @@
+CommonEvent 577
+Name = "SwapW v2017"
+
+  Script(["$ba = 49"])
+  Script(["$PU_AUTOMATIC_POPUP = false"])
+  Wait([10])
+  Script(["$ga = $game_variables[2017]"])
+  Script(["$game_party.gain_item($data_weapons[$ga],1)"])
+  Script(["$game_actors[$ac].change_equip_by_id(1, $ba)"])
+  Wait([10])
+  Script(["$PU_AUTOMATIC_POPUP = true"])
+  Empty([])

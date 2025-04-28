@@ -1,0 +1,7 @@
+CommonEvent 581
+Name = "Narcotized"
+
+  Wait([600])
+  Wait([600])
+  ControlSwitches([2173, 2173, 1])
+  Empty([])

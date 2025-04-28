@@ -1,0 +1,164 @@
+CommonEvent 504
+Name = "Panty trick!"
+
+  ConditionalBranch([0, 2708, 0])
+    ConditionalBranch([8, 201])
+      JumpToLabel(["MR"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You have no \\C[18]indument\\C[0] you can combine with \\i[534] \\c[18]Red Thread Rings\\c[0]."])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2707, 0])
+    ConditionalBranch([8, 201])
+      JumpToLabel(["MG"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You have no \\C[18]indument\\C[0] you can combine with the \\i[596] \\c[18]Moonlight Charm\\c[0]."])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([8, 191])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([8, 31])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You have no \\C[18]accessory\\C[0] you can combine with the \\i[637] \\c[18]Princess Panties\\c[0]."])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([8, 191])
+    ConditionalBranch([8, 31])
+      ShowChoices([["Combine with \\i[534] Red Thread Ring", "Combine with \\i[596] Moonlight Charm"], 5])
+      When([0, "Combine with \\i[534] Red Thread Ring"])
+        JumpToLabel(["MR"])
+        Empty([])
+
+      When([1, "Combine with \\i[596] Moonlight Charm"])
+        JumpToLabel(["MG"])
+        Empty([])
+
+      WhenCancel([])
+        JumpToLabel(["end"])
+        Empty([])
+
+      ChoicesEnd([])
+      Empty([])
+
+    Else([])
+      JumpToLabel(["MG"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Else([])
+    JumpToLabel(["MR"])
+    Empty([])
+
+  BranchEnd([])
+  Label(["MR"])
+  ControlVariables([2781, 2781, 0, 3, 0, 31, 0])
+  ControlVariables([2781, 2781, 3, 0, 2])
+  ControlVariables([2781, 2781, 2, 1, 2777])
+  ConditionalBranch([12, "$game_variables[2781] >= 1"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Combine 1 \\i[637] \\c[18]Princess Panties\\c[0] with 1 \\i[534] \\c[18]Red Thread Ring\\c[0]?"])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Where are you going to place the \\i[534] \\c[18]Red Thread Ring\\c[0]?"])
+      ShowChoices([["Inside, on the front", "Inside, on the back", "Cancel"], 3])
+      When([0, "Inside, on the front"])
+        Script(["$game_variables[2777] += 1"])
+        ChangeItems([201, 1, 0, 1])
+        Wait([45])
+        ChangeItems([198, 0, 0, 1])
+        Empty([])
+
+      When([1, "Inside, on the back"])
+        Script(["$game_variables[2777] += 1"])
+        ChangeItems([201, 1, 0, 1])
+        Wait([45])
+        ChangeItems([199, 0, 0, 1])
+        Empty([])
+
+      When([2, "Cancel"])
+        JumpToLabel(["end"])
+        Empty([])
+
+      ChoicesEnd([])
+      Empty([])
+
+    When([1, "No"])
+      JumpToLabel(["end"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Else([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["All \\i[534] \\c[18]Red Thread Rings\\c[0] have been placed."])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  JumpToLabel(["end"])
+  Label(["MG"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Combine 1 \\i[637] \\c[18]Princess Panties\\c[0] with 1 \\i[596] \\c[18]Moonlight Charm\\c[0]?"])
+  ShowChoices([["Yes", "No"], 2])
+  When([0, "Yes"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Where are you going to place the \\i[596] \\c[18]Moonlight Charm\\c[0]?"])
+    ShowChoices([["Inside, on the front", "Inside, on the back", "Cancel"], 3])
+    When([0, "Inside, on the front"])
+      ChangeItems([201, 1, 0, 1])
+      ChangeItems([191, 1, 0, 1])
+      Wait([45])
+      ChangeItems([192, 0, 0, 1])
+      Empty([])
+
+    When([1, "Inside, on the back"])
+      ChangeItems([201, 1, 0, 1])
+      ChangeItems([191, 1, 0, 1])
+      Wait([45])
+      ChangeItems([193, 0, 0, 1])
+      Empty([])
+
+    When([2, "Cancel"])
+      JumpToLabel(["end"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  When([1, "No"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  ChoicesEnd([])
+  Label(["end"])
+  Empty([])
