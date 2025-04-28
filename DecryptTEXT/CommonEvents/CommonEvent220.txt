@@ -1,0 +1,18 @@
+CommonEvent 220
+Name = "DogBlock Check"
+
+  ControlSwitches([3955, 3955, 1])
+  ConditionalBranch([4, 16, 0])
+    ConditionalBranch([12, "$game_actors[16].equips[4] == $data_armors[241]"])
+      Comment(["Beast Choker DogP"])
+      Empty([])
+
+    Else([])
+      ControlSwitches([3955, 3955, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

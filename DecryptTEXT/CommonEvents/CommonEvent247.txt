@@ -1,0 +1,256 @@
+CommonEvent 247
+Name = "🡆NPC🡆 rndm start NPC1"
+
+  ChangeActorName([19, "???"])
+  ChangeActorName([20, "???"])
+  ChangeActorName([22, "???"])
+  ChangeActorName([28, "???"])
+  ChangeActorName([29, "???"])
+  Label(["again"])
+  ControlVariables([1269, 1269, 0, 0, 1])
+  ControlVariables([1246, 1246, 0, 2, 1, 5])
+  ConditionalBranch([1, 1246, 0, 1, 0])
+    ControlVariables([1435, 1435, 0, 0, 3])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([1, 1246, 0, 2, 0])
+      ControlVariables([1435, 1435, 0, 0, 1])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 1246, 0, 3, 0])
+        JumpToLabel(["again"])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([1, 1246, 0, 4, 0])
+          ControlVariables([1435, 1435, 0, 0, 2])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([1, 1246, 0, 5, 0])
+            ControlVariables([1435, 1435, 0, 0, 3])
+            Empty([])
+
+          Else([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["pos again"])
+  ControlVariables([1284, 1284, 0, 2, 0, 20])
+  ConditionalBranch([1, 1284, 0, 0, 0])
+    ControlSwitches([1509, 1509, 0])
+    ControlVariables([1310, 1310, 0, 0, 80])
+    ControlVariables([1311, 1311, 0, 0, 56])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([1, 1284, 0, 2, 0])
+      ControlSwitches([1509, 1509, 0])
+      ControlVariables([1310, 1310, 0, 0, 64])
+      ControlVariables([1311, 1311, 0, 0, 40])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 1284, 0, 3, 0])
+        ControlSwitches([1509, 1509, 0])
+        ControlVariables([1310, 1310, 0, 0, 45])
+        ControlVariables([1311, 1311, 0, 0, 30])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([1, 1284, 0, 4, 0])
+          ControlSwitches([1509, 1509, 0])
+          ControlVariables([1310, 1310, 0, 0, 17])
+          ControlVariables([1311, 1311, 0, 0, 71])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([1, 1284, 0, 5, 0])
+            ControlSwitches([1509, 1509, 0])
+            ControlVariables([1310, 1310, 0, 0, 61])
+            ControlVariables([1311, 1311, 0, 0, 52])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([1, 1284, 0, 6, 0])
+              ControlSwitches([1509, 1509, 0])
+              ControlVariables([1310, 1310, 0, 0, 53])
+              ControlVariables([1311, 1311, 0, 0, 74])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([1, 1284, 0, 7, 0])
+                ControlSwitches([1509, 1509, 0])
+                ControlVariables([1310, 1310, 0, 0, 70])
+                ControlVariables([1311, 1311, 0, 0, 80])
+                Empty([])
+
+              Else([])
+                ConditionalBranch([1, 1284, 0, 9, 0])
+                  ControlSwitches([1510, 1510, 0])
+                  ControlVariables([1310, 1310, 0, 0, 65])
+                  ControlVariables([1311, 1311, 0, 0, 35])
+                  Empty([])
+
+                Else([])
+                  ConditionalBranch([1, 1284, 0, 10, 0])
+                    ControlSwitches([1510, 1510, 0])
+                    ControlVariables([1310, 1310, 0, 0, 84])
+                    ControlVariables([1311, 1311, 0, 0, 49])
+                    Empty([])
+
+                  Else([])
+                    ConditionalBranch([1, 1284, 0, 11, 0])
+                      ControlSwitches([1510, 1510, 0])
+                      ControlVariables([1310, 1310, 0, 0, 49])
+                      ControlVariables([1311, 1311, 0, 0, 55])
+                      Empty([])
+
+                    Else([])
+                      ConditionalBranch([1, 1284, 0, 12, 0])
+                        ControlSwitches([1510, 1510, 0])
+                        ControlVariables([1310, 1310, 0, 0, 35])
+                        ControlVariables([1311, 1311, 0, 0, 44])
+                        Empty([])
+
+                      Else([])
+                        ConditionalBranch([1, 1284, 0, 13, 0])
+                          ControlSwitches([1510, 1510, 0])
+                          ControlVariables([1310, 1310, 0, 0, 89])
+                          ControlVariables([1311, 1311, 0, 0, 33])
+                          Empty([])
+
+                        Else([])
+                          ConditionalBranch([1, 1284, 0, 14, 0])
+                            ConditionalBranch([1, 1246, 0, 2, 0])
+                              JumpToLabel(["pos again"])
+                              Empty([])
+
+                            Else([])
+                              ConditionalBranch([1, 1246, 0, 3, 0])
+                                JumpToLabel(["pos again"])
+                                Empty([])
+
+                              BranchEnd([])
+                              Empty([])
+
+                            BranchEnd([])
+                            ControlSwitches([1509, 1509, 0])
+                            ControlVariables([1310, 1310, 0, 0, 69])
+                            ControlVariables([1311, 1311, 0, 0, 41])
+                            Empty([])
+
+                          Else([])
+                            ConditionalBranch([1, 1284, 0, 15, 0])
+                              ControlSwitches([1510, 1510, 0])
+                              ControlVariables([1310, 1310, 0, 0, 96])
+                              ControlVariables([1311, 1311, 0, 0, 15])
+                              Empty([])
+
+                            Else([])
+                              ConditionalBranch([1, 1284, 0, 17, 0])
+                                ControlSwitches([1510, 1510, 0])
+                                ControlVariables([1310, 1310, 0, 0, 55])
+                                ControlVariables([1311, 1311, 0, 0, 48])
+                                Empty([])
+
+                              Else([])
+                                ConditionalBranch([1, 1284, 0, 18, 0])
+                                  ControlSwitches([1509, 1509, 0])
+                                  ControlVariables([1310, 1310, 0, 0, 13])
+                                  ControlVariables([1311, 1311, 0, 0, 35])
+                                  Empty([])
+
+                                Else([])
+                                  ConditionalBranch([1, 1284, 0, 19, 0])
+                                    JumpToLabel(["pos again"])
+                                    Empty([])
+
+                                  Else([])
+                                    ConditionalBranch([1, 1284, 0, 20, 0])
+                                      ControlSwitches([1510, 1510, 0])
+                                      ControlVariables([1310, 1310, 0, 0, 28])
+                                      ControlVariables([1311, 1311, 0, 0, 22])
+                                      Empty([])
+
+                                    Else([])
+                                      ConditionalBranch([1, 1284, 0, 21, 0])
+                                        ControlSwitches([1510, 1510, 0])
+                                        ControlVariables([1310, 1310, 0, 0, 108])
+                                        ControlVariables([1311, 1311, 0, 0, 17])
+                                        Empty([])
+
+                                      Else([])
+                                        JumpToLabel(["pos again"])
+                                        Empty([])
+
+                                      BranchEnd([])
+                                      Empty([])
+
+                                    BranchEnd([])
+                                    Empty([])
+
+                                  BranchEnd([])
+                                  Empty([])
+
+                                BranchEnd([])
+                                Empty([])
+
+                              BranchEnd([])
+                              Empty([])
+
+                            BranchEnd([])
+                            Empty([])
+
+                          BranchEnd([])
+                          Empty([])
+
+                        BranchEnd([])
+                        Empty([])
+
+                      BranchEnd([])
+                      Empty([])
+
+                    BranchEnd([])
+                    Empty([])
+
+                  BranchEnd([])
+                  Empty([])
+
+                BranchEnd([])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

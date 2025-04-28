@@ -1,0 +1,100 @@
+CommonEvent 201
+Name = "★👤★ sold one"
+
+  ConditionalBranch([1, 1238, 0, 1, 0])
+    ControlSwitches([1456, 1456, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1238, 0, 2, 0])
+    ControlSwitches([1457, 1457, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1238, 0, 3, 0])
+    ControlSwitches([1458, 1458, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1238, 0, 4, 0])
+    ControlSwitches([1459, 1459, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1238, 0, 5, 0])
+    ControlSwitches([1460, 1460, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1238, 0, 6, 0])
+    ControlSwitches([1461, 1461, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1238, 0, 7, 0])
+    ControlSwitches([1462, 1462, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1238, 0, 8, 0])
+    ControlSwitches([1621, 1621, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1238, 0, 9, 0])
+    ControlSwitches([1992, 1992, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1238, 0, 10, 0])
+    ControlSwitches([2387, 2387, 0])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1238, 0, 11, 0])
+    ControlSwitches([2637, 2637, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1238, 0, 12, 0])
+    ControlSwitches([2885, 2885, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1238, 0, 13, 0])
+    ControlSwitches([3278, 3278, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1238, 0, 14, 0])
+    ControlSwitches([4056, 4056, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1238, 0, 15, 0])
+    ControlSwitches([4236, 4236, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1238, 0, 16, 0])
+    ControlSwitches([4390, 4390, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1238, 0, 17, 0])
+    ControlSwitches([4691, 4691, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1238, 0, 18, 0])
+    ControlSwitches([3137, 3137, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1238, 0, 19, 0])
+    ControlSwitches([2817, 2817, 1])
+    Empty([])
+
+  BranchEnd([])
+  ControlVariables([1231, 1231, 2, 0, 1])
+  Empty([])

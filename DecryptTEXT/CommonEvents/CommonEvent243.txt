@@ -1,0 +1,26 @@
+CommonEvent 243
+Name = "Resume HUD"
+
+  ConditionalBranch([12, "$game_switches[4600] == true"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 1841, 0])
+    Script(["screen.pictures[253].move(0, 651, 117, 100, 100, 255, 0, 1)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 1412, 0])
+    Script(["$game_map.start_sas"])
+    ScriptMore(["$game_map.sas_hud.show(true)"])
+    CallCommonEvent([53])
+    Empty([])
+
+  BranchEnd([])
+  ControlSwitches([1412, 1412, 1])
+  ControlSwitches([2689, 2689, 1])
+  CallCommonEvent([54])
+  CallCommonEvent([686])
+  Label(["end"])
+  Empty([])

@@ -1,0 +1,30 @@
+CommonEvent 246
+Name = "🡆NPC🡆 NPC move from church"
+
+  ControlVariables([1436, 1438, 0, 0, 0])
+  ConditionalBranch([1, 1284, 0, 14, 0])
+    ControlVariables([2840, 2840, 0, 1, 1246])
+    ControlSwitches([2681, 2681, 0])
+    CallCommonEvent([682])
+    ControlSwitches([2681, 2681, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1265, 0, 14, 0])
+    ControlVariables([2840, 2840, 0, 1, 1247])
+    ControlSwitches([2681, 2681, 0])
+    CallCommonEvent([682])
+    ControlSwitches([2681, 2681, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1266, 0, 14, 0])
+    ControlVariables([2840, 2840, 0, 1, 1248])
+    ControlSwitches([2681, 2681, 0])
+    CallCommonEvent([682])
+    ControlSwitches([2681, 2681, 1])
+    Empty([])
+
+  BranchEnd([])
+  CallCommonEvent([215])
+  Empty([])

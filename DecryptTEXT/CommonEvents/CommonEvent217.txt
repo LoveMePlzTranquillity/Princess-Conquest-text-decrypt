@@ -1,0 +1,47 @@
+CommonEvent 217
+Name = "Death to Tavern"
+
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["You're weakened and can barely walk,\\. that's why you decide to go back to the Tavern for the day."])
+  ControlVariables([376, 376, 0, 0, 7])
+  ControlVariables([761, 761, 1, 0, 1])
+  SetWeatherEffects([:none, 9, 0, false])
+  ErasePicture([9])
+  Wait([120])
+  PlayME(["RPG::ME(@name=\"Inn\", @pitch=100, @volume=100)"])
+  ControlVariables([472, 472, 0, 0, 0])
+  ControlVariables([471, 471, 0, 2, 0, 10])
+  ConditionalBranch([1, 471, 0, 4, 2])
+    FadeoutBGS([2])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([1, 471, 0, 7, 2])
+      Empty([])
+
+    Else([])
+      FadeoutBGS([2])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Wait([50])
+  TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 10, false])
+  CallCommonEvent([194])
+  Wait([250])
+  RecoverAll([0, 0])
+  ControlVariables([1194, 1194, 0, 2, 1, 2])
+  ConditionalBranch([1, 1194, 0, 1, 0])
+    TransferPlayer([0, 170, 5, 16, 4, 0])
+    Empty([])
+
+  Else([])
+    TransferPlayer([0, 170, 27, 13, 4, 0])
+    Empty([])
+
+  BranchEnd([])
+  Script(["$game_map.sas_hud.refresh_bars"])
+  FadeinScreen([])
+  Empty([])

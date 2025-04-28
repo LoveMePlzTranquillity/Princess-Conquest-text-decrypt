@@ -1,0 +1,127 @@
+CommonEvent 216
+Name = "Enemy NPC level/troops"
+
+  ConditionalBranch([0, 1679, 0])
+    ControlVariables([1451, 1451, 0, 1, 1269])
+    ConditionalBranch([1, 1246, 0, 1, 0])
+      ControlSwitches([1669, 1669, 0])
+      ControlVariables([525, 525, 1, 0, 1])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 1246, 0, 2, 0])
+        ControlSwitches([1670, 1670, 0])
+        ControlVariables([525, 525, 1, 0, 1])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([1, 1246, 0, 3, 0])
+          JumpToLabel(["end1"])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([1, 1246, 0, 4, 0])
+            ControlSwitches([2660, 2660, 0])
+            ControlVariables([525, 525, 1, 0, 1])
+            Empty([])
+
+          Else([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["end1"])
+  ConditionalBranch([0, 1680, 0])
+    ControlVariables([1451, 1451, 0, 1, 1270])
+    ConditionalBranch([1, 1247, 0, 1, 0])
+      ControlSwitches([1669, 1669, 0])
+      ControlVariables([525, 525, 1, 0, 1])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 1247, 0, 2, 0])
+        ControlSwitches([1670, 1670, 0])
+        ControlVariables([525, 525, 1, 0, 1])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([1, 1247, 0, 3, 0])
+          JumpToLabel(["end2"])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([1, 1247, 0, 4, 0])
+            ControlSwitches([2660, 2660, 0])
+            ControlVariables([525, 525, 1, 0, 1])
+            Empty([])
+
+          Else([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["end2"])
+  ConditionalBranch([0, 1681, 0])
+    ControlVariables([1451, 1451, 0, 1, 1271])
+    ConditionalBranch([1, 1248, 0, 1, 0])
+      ControlSwitches([1669, 1669, 0])
+      ControlVariables([525, 525, 1, 0, 1])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 1248, 0, 2, 0])
+        ControlSwitches([1670, 1670, 0])
+        ControlVariables([525, 525, 1, 0, 1])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([1, 1248, 0, 3, 0])
+          JumpToLabel(["end3"])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([1, 1248, 0, 4, 0])
+            ControlSwitches([2660, 2660, 0])
+            ControlVariables([525, 525, 1, 0, 1])
+            Empty([])
+
+          Else([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["end3"])
+  Empty([])

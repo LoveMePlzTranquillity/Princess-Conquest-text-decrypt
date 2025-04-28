@@ -1,0 +1,386 @@
+CommonEvent 215
+Name = "★ NPC in map"
+
+  ControlSwitches([1690, 1692, 1])
+  ControlVariables([1443, 1443, 0, 4, "$game_map.map_id"])
+  ConditionalBranch([1, 1443, 0, 4, 0])
+    ConditionalBranch([1, 1284, 0, 2, 0])
+      ControlSwitches([1690, 1690, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1265, 0, 2, 0])
+      ControlSwitches([1691, 1691, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1266, 0, 2, 0])
+      ControlSwitches([1692, 1692, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1443, 0, 5, 0])
+    ConditionalBranch([1, 1284, 0, 3, 0])
+      ControlSwitches([1690, 1690, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1265, 0, 3, 0])
+      ControlSwitches([1691, 1691, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1266, 0, 3, 0])
+      ControlSwitches([1692, 1692, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1443, 0, 1, 0])
+    ConditionalBranch([1, 1284, 0, 4, 0])
+      ControlSwitches([1690, 1690, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1265, 0, 4, 0])
+      ControlSwitches([1691, 1691, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1266, 0, 4, 0])
+      ControlSwitches([1692, 1692, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1443, 0, 15, 0])
+    ConditionalBranch([1, 1284, 0, 5, 0])
+      ControlSwitches([1690, 1690, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1265, 0, 5, 0])
+      ControlSwitches([1691, 1691, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1266, 0, 5, 0])
+      ControlSwitches([1692, 1692, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1443, 0, 20, 0])
+    ConditionalBranch([1, 1284, 0, 6, 0])
+      ControlSwitches([1690, 1690, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1265, 0, 6, 0])
+      ControlSwitches([1691, 1691, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1266, 0, 6, 0])
+      ControlSwitches([1692, 1692, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1443, 0, 28, 0])
+    ConditionalBranch([1, 1284, 0, 7, 0])
+      ControlSwitches([1690, 1690, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1265, 0, 7, 0])
+      ControlSwitches([1691, 1691, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1266, 0, 7, 0])
+      ControlSwitches([1692, 1692, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1443, 0, 47, 0])
+    ConditionalBranch([1, 1284, 0, 9, 0])
+      ControlSwitches([1690, 1690, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1265, 0, 9, 0])
+      ControlSwitches([1691, 1691, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1266, 0, 9, 0])
+      ControlSwitches([1692, 1692, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1443, 0, 71, 0])
+    ConditionalBranch([1, 1284, 0, 10, 0])
+      ControlSwitches([1690, 1690, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1265, 0, 10, 0])
+      ControlSwitches([1691, 1691, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1266, 0, 10, 0])
+      ControlSwitches([1692, 1692, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1443, 0, 170, 0])
+    ConditionalBranch([1, 1284, 0, 0, 0])
+      ControlSwitches([1690, 1690, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1265, 0, 0, 0])
+      ControlSwitches([1691, 1691, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1266, 0, 0, 0])
+      ControlSwitches([1692, 1692, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1443, 0, 205, 0])
+    ConditionalBranch([1, 1284, 0, 13, 0])
+      ControlSwitches([1690, 1690, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1265, 0, 13, 0])
+      ControlSwitches([1691, 1691, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1266, 0, 13, 0])
+      ControlSwitches([1692, 1692, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1443, 0, 185, 0])
+    ConditionalBranch([1, 1284, 0, 14, 0])
+      ControlSwitches([1690, 1690, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1265, 0, 14, 0])
+      ControlSwitches([1691, 1691, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1266, 0, 14, 0])
+      ControlSwitches([1692, 1692, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1443, 0, 218, 0])
+    ConditionalBranch([1, 1284, 0, 15, 0])
+      ControlSwitches([1690, 1690, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1265, 0, 15, 0])
+      ControlSwitches([1691, 1691, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1266, 0, 15, 0])
+      ControlSwitches([1692, 1692, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1443, 0, 265, 0])
+    ConditionalBranch([1, 1284, 0, 16, 0])
+      ControlSwitches([1690, 1690, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1265, 0, 16, 0])
+      ControlSwitches([1691, 1691, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1266, 0, 16, 0])
+      ControlSwitches([1692, 1692, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1443, 0, 284, 0])
+    ConditionalBranch([1, 1284, 0, 17, 0])
+      ControlSwitches([1690, 1690, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1265, 0, 17, 0])
+      ControlSwitches([1691, 1691, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1266, 0, 17, 0])
+      ControlSwitches([1692, 1692, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1443, 0, 317, 0])
+    ConditionalBranch([1, 1284, 0, 18, 0])
+      ControlSwitches([1690, 1690, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1265, 0, 18, 0])
+      ControlSwitches([1691, 1691, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1266, 0, 18, 0])
+      ControlSwitches([1692, 1692, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1443, 0, 166, 0])
+    Comment(["Diamond Seashell"])
+    ConditionalBranch([1, 1284, 0, 21, 0])
+      ControlSwitches([1690, 1690, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1265, 0, 21, 0])
+      ControlSwitches([1691, 1691, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1266, 0, 21, 0])
+      ControlSwitches([1692, 1692, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1443, 0, 466, 0])
+    Comment(["Birdcage"])
+    ConditionalBranch([1, 1284, 0, 19, 0])
+      ControlSwitches([1690, 1690, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1265, 0, 19, 0])
+      ControlSwitches([1691, 1691, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1266, 0, 19, 0])
+      ControlSwitches([1692, 1692, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1443, 0, 496, 0])
+    Comment(["Oni Crater"])
+    ConditionalBranch([1, 1284, 0, 20, 0])
+      ControlSwitches([1690, 1690, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1265, 0, 20, 0])
+      ControlSwitches([1691, 1691, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1266, 0, 20, 0])
+      ControlSwitches([1692, 1692, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1443, 0, 514, 0])
+    Comment(["Plant Ruins"])
+    ConditionalBranch([1, 1284, 0, 21, 0])
+      ControlSwitches([1690, 1690, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1265, 0, 21, 0])
+      ControlSwitches([1691, 1691, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1266, 0, 21, 0])
+      ControlSwitches([1692, 1692, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 1506, 0])
+    ControlSwitches([1690, 1690, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 1507, 0])
+    ControlSwitches([1691, 1691, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 1508, 0])
+    ControlSwitches([1692, 1692, 1])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

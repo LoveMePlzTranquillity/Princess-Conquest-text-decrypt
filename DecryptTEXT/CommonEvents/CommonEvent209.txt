@@ -1,0 +1,18 @@
+CommonEvent 209
+Name = "Undead Favor"
+
+  Script(["@r = rand(10)"])
+  ConditionalBranch([12, "@r < 1"])
+    ShowAnimation([-1, 56, false])
+    ControlVariables([110, 110, 1, 0, 1])
+    ControlVariables([381, 381, 1, 0, 1])
+    ControlVariables([15, 15, 1, 0, 1])
+    ConditionalBranch([0, 3329, 0])
+      ControlVariables([3761, 3761, 1, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

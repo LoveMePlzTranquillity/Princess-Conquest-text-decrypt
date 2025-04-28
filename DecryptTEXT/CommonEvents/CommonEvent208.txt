@@ -1,0 +1,34 @@
+CommonEvent 208
+Name = "★👤★ Princess sold to NPC"
+
+  ConditionalBranch([1, 1231, 0, 10, 0])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 1468, 0])
+    ControlVariables([1269, 1269, 1, 0, 1])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([0, 1467, 0])
+      ControlVariables([1270, 1270, 1, 0, 1])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([0, 1469, 0])
+        ControlVariables([1271, 1271, 1, 0, 1])
+        Empty([])
+
+      Else([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["end"])
+  Empty([])

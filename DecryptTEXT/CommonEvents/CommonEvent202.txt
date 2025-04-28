@@ -1,0 +1,120 @@
+CommonEvent 202
+Name = "🡆NPC🡆 *NPC roaming*"
+
+  Script(["@timeStr = [0,8,6,6,8,6,0,0,0,0,0]"])
+  ScriptMore(["@speed = $game_variables[2766]"])
+  ScriptMore(["if @speed <= 1"])
+  ScriptMore(["@timeStr = [0,12,8,8,12,8,0,0,0,0,0]"])
+  ScriptMore(["end"])
+  ScriptMore(["@id1 = $game_variables[1246]"])
+  ScriptMore(["@id2 = $game_variables[1247]"])
+  ScriptMore(["@id3 = $game_variables[1248]"])
+  ScriptMore(["@roamT1 = @timeStr[@id1]"])
+  ScriptMore(["@roamT2 = @timeStr[@id2]"])
+  ScriptMore(["@roamT3 = @timeStr[@id3]"])
+  ControlVariables([1278, 1278, 0, 4, "@roamT1"])
+  ControlVariables([1279, 1279, 0, 4, "@roamT2"])
+  ControlVariables([1296, 1296, 0, 4, "@roamT3"])
+  ConditionalBranch([0, 1682, 1])
+    ConditionalBranch([0, 1506, 1])
+      ConditionalBranch([1, 1246, 0, 0, 5])
+        ControlVariables([1280, 1280, 1, 0, 1])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Else([])
+    ControlVariables([1436, 1436, 2, 0, 1])
+    ConditionalBranch([1, 1436, 0, 0, 2])
+      ControlSwitches([1682, 1682, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1246, 0, 0, 5])
+    ConditionalBranch([1, 1280, 1, 1278, 1])
+      ControlSwitches([1693, 1693, 1])
+      ControlVariables([1280, 1280, 0, 0, 0])
+      CallCommonEvent([203])
+      Wait([30])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 1683, 1])
+    ConditionalBranch([0, 1507, 1])
+      ConditionalBranch([1, 1247, 0, 0, 5])
+        ControlVariables([1281, 1281, 1, 0, 1])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Else([])
+    ControlVariables([1437, 1437, 2, 0, 1])
+    ConditionalBranch([1, 1437, 0, 0, 2])
+      ControlSwitches([1683, 1683, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1247, 0, 0, 5])
+    ConditionalBranch([1, 1281, 1, 1279, 1])
+      ControlSwitches([1693, 1693, 1])
+      ControlVariables([1281, 1281, 0, 0, 0])
+      CallCommonEvent([204])
+      Wait([30])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 1684, 1])
+    ConditionalBranch([0, 1508, 1])
+      ConditionalBranch([1, 1248, 0, 0, 5])
+        ControlVariables([1297, 1297, 1, 0, 1])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Else([])
+    ControlVariables([1438, 1438, 2, 0, 1])
+    ConditionalBranch([1, 1438, 0, 0, 2])
+      ControlSwitches([1684, 1684, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1248, 0, 0, 5])
+    ConditionalBranch([1, 1297, 1, 1296, 1])
+      ControlSwitches([1693, 1693, 1])
+      ControlVariables([1297, 1297, 0, 0, 0])
+      CallCommonEvent([205])
+      Wait([30])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

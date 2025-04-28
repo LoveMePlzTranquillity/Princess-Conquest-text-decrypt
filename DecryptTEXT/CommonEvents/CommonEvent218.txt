@@ -1,0 +1,6 @@
+CommonEvent 218
+Name = "switch CD"
+
+  Wait([30])
+  ControlSwitches([1725, 1725, 1])
+  Empty([])

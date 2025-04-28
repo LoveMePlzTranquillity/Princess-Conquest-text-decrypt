@@ -1,0 +1,25 @@
+CommonEvent 244
+Name = "Moth Q finish?"
+
+  ConditionalBranch([0, 1772, 0])
+    ConditionalBranch([0, 1773, 0])
+      ConditionalBranch([0, 1774, 0])
+        ConditionalBranch([0, 1775, 0])
+          ConditionalBranch([0, 1776, 0])
+            ControlSwitches([1789, 1789, 0])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

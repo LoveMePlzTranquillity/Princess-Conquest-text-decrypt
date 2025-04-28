@@ -1,0 +1,51 @@
+CommonEvent 251
+Name = "Rattesein Interests"
+
+  ConditionalBranch([1, 3897, 0, 0, 3])
+    ControlVariables([1929, 1929, 1, 0, 1])
+    Comment(["2% Interest + 1% Daily"])
+    Script(["@int = 2 + $game_variables[1929]"])
+    ControlVariables([1877, 1877, 0, 4, "($game_variables[3897] * @int/100).round()"])
+    ConditionalBranch([12, "$game_variables[628] == 123 || $game_variables[628] == 1023"])
+      ControlVariables([1877, 1877, 0, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([8, 324])
+      ConditionalBranch([8, 328])
+        Comment(["Can move funds to Bank"])
+        ConditionalBranch([1, 3899, 1, 1877, 1])
+          ControlVariables([3899, 3899, 2, 1, 1877])
+          ControlVariables([1877, 1877, 0, 0, 0])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[628] == 123 || $game_variables[628] == 1023"])
+      ControlVariables([3897, 3897, 1, 0, 0])
+      Empty([])
+
+    Else([])
+      ControlVariables([3897, 3897, 1, 1, 1877])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1929, 0, 10, 1])
+      ControlSwitches([3864, 3864, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Else([])
+    ControlVariables([1929, 1929, 0, 0, 0])
+    ControlSwitches([3864, 3864, 1])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

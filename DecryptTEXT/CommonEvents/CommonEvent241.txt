@@ -1,0 +1,54 @@
+CommonEvent 241
+Name = "♥ Check Partner"
+
+  Comment(["RAB / WYV / SLI "])
+  CommentMore(["defaul to custom"])
+  ControlSwitches([3425, 3425, 1])
+  ConditionalBranch([12, "$game_variables[3996] == 18"])
+    Comment(["Mermaid def STD"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[3996] == 19"])
+    Comment(["Bird def STD"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[3996] == 20"])
+    Comment(["Oni def STD"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[3996] == 1"])
+    JumpToLabel(["defcust"])
+    Empty([])
+
+  BranchEnd([])
+  Script(["@pr = 4000 + $game_variables[3996]"])
+  ConditionalBranch([12, "$game_variables[@pr][0] != 0"])
+    Label(["defcust"])
+    ConditionalBranch([0, 3426, 0])
+      ControlSwitches([3425, 3425, 0])
+      ControlSwitches([3426, 3426, 1])
+      JumpToLabel(["end"])
+      Empty([])
+
+    Else([])
+      ControlSwitches([3425, 3425, 0])
+      Wait([15])
+      CallCommonEvent([239])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Else([])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  Label(["end"])
+  Empty([])
