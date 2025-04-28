@@ -1,0 +1,79 @@
+CommonEvent 673
+Name = "*** ReassSkill ***"
+
+  Comment(["### Reass Trait Skill ###"])
+  Script(["@v = $game_variables[628]"])
+  ScriptMore(["if @v >= 1000"])
+  ScriptMore(["@plus = \"++\""])
+  ScriptMore(["@v -= 1000"])
+  ScriptMore(["elsif @v >= 100"])
+  ScriptMore(["@plus = \"+\""])
+  ScriptMore(["@v -= 100"])
+  ScriptMore(["else"])
+  ScriptMore(["@plus = \"\""])
+  ScriptMore(["end"])
+  ConditionalBranch([12, "@v == 2"])
+    ConditionalBranch([12, "@plus == \"++\""])
+      ChangeState([0, 1, 0, 135])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "@plus == \"+\""])
+        ChangeState([0, 1, 0, 134])
+        Empty([])
+
+      Else([])
+        ChangeState([0, 1, 0, 133])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@v == 3"])
+    ConditionalBranch([12, "@plus == \"++\""])
+      ChangeState([0, 1, 0, 138])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "@plus == \"+\""])
+        ChangeState([0, 1, 0, 137])
+        Empty([])
+
+      Else([])
+        ChangeState([0, 1, 0, 136])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@v == 4"])
+    ConditionalBranch([12, "@plus == \"++\""])
+      ChangeState([0, 1, 0, 141])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "@plus == \"+\""])
+        ChangeState([0, 1, 0, 140])
+        Empty([])
+
+      Else([])
+        ChangeState([0, 1, 0, 139])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["### Reass Trait Skill ###"])
+  Empty([])

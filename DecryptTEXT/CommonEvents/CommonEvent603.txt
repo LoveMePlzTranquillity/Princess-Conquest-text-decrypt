@@ -1,0 +1,21 @@
+CommonEvent 603
+Name = "pre1->1"
+
+  SetMoveRoute([287, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=5, @parameters=[])\", \"RPG::MoveCommand(@code=5, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+  Unnamed(["RPG::MoveCommand(@code=5, @parameters=[])"])
+  Unnamed(["RPG::MoveCommand(@code=5, @parameters=[])"])
+  Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+  Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+  Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+  Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+  ControlVariables([1655, 1655, 0, 0, 73])
+  ControlVariables([1656, 1656, 0, 0, 40])
+  ControlVariables([1654, 1654, 0, 0, 1])
+  ConditionalBranch([12, "$game_map.map_id == 2"])
+    Script(["@x = $game_variables[1655]"])
+    ScriptMore(["@y = $game_variables[1656]"])
+    Script(["$game_map.events[287].moveto(@x,@y)"])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

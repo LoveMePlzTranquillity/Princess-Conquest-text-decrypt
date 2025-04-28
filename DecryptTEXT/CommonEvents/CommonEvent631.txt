@@ -1,0 +1,200 @@
+CommonEvent 631
+Name = "★👤★ Pr / Heir name"
+
+  ControlVariables([1425, 1425, 0, 0, 1])
+  ConditionalBranch([1, 2770, 0, 0, 0])
+    Script(["$game_variables[2770] ="])
+    ScriptMore(["[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2509, 0])
+    Script(["$game_variables[2770][0] = \"Human Heir\""])
+    Empty([])
+
+  Else([])
+    Script(["$game_variables[2770][0] = \"Human Princess\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2510, 0])
+    Script(["$game_variables[2770][1] = \"Slime Heir\""])
+    Empty([])
+
+  Else([])
+    Script(["$game_variables[2770][1] = \"Slime Princess\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2511, 0])
+    Script(["$game_variables[2770][2] = \"Golem Heir\""])
+    Empty([])
+
+  Else([])
+    Script(["$game_variables[2770][2] = \"Golem Princess\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2512, 0])
+    Script(["$game_variables[2770][3] = \"Insect Heir\""])
+    Empty([])
+
+  Else([])
+    Script(["$game_variables[2770][3] = \"Insect Princess\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2513, 0])
+    Script(["$game_variables[2770][4] = \"Skeleton Heir\""])
+    Empty([])
+
+  Else([])
+    Script(["$game_variables[2770][4]=\"Skeleton Princess\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2514, 0])
+    Script(["$game_variables[2770][5] = \"Desert Heir\""])
+    Empty([])
+
+  Else([])
+    Script(["$game_variables[2770][5] = \"Desert Princess\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2515, 0])
+    Script(["$game_variables[2770][6] = \"Ghost Heir\""])
+    Empty([])
+
+  Else([])
+    Script(["$game_variables[2770][6] = \"Ghost Princess\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2516, 0])
+    Script(["$game_variables[2770][7] = \"Goblin Heir\""])
+    Empty([])
+
+  Else([])
+    Script(["$game_variables[2770][7] = \"Goblin Princess\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2517, 0])
+    Script(["$game_variables[2770][8] = \"Moth Heir\""])
+    Empty([])
+
+  Else([])
+    Script(["$game_variables[2770][8] = \"Moth Princess\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2518, 0])
+    Script(["$game_variables[2770][9] = \"Cat Heir\""])
+    Empty([])
+
+  Else([])
+    Script(["$game_variables[2770][9] = \"Cat Princess\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2635, 0])
+    Script(["$game_variables[2770][10] = \"Mouse Heir\""])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([0, 2519, 0])
+      Script(["$game_variables[2770][10] = \"Mouse Heir\""])
+      Empty([])
+
+    Else([])
+      Script(["$game_variables[2770][10] = \"Mouse Princess\""])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2926, 0])
+    Script(["$game_variables[2770][11] = \"Rabbit Heir\""])
+    Empty([])
+
+  Else([])
+    Script(["$game_variables[2770][11] = "])
+    ScriptMore(["\"Rabbit Princess\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2521, 0])
+    Script(["$game_variables[2770][12] = \"Harvest Heir\""])
+    Empty([])
+
+  Else([])
+    Script(["$game_variables[2770][12] = "])
+    ScriptMore(["\"Harvest Princess\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 4087, 0])
+    Script(["$game_variables[2770][13] = \"Finhead Heir\""])
+    Empty([])
+
+  Else([])
+    Script(["$game_variables[2770][13] = "])
+    ScriptMore(["\"Finhead Princess\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 4267, 0])
+    Script(["$game_variables[2770][14] = \"Mermaid Heir\""])
+    Empty([])
+
+  Else([])
+    Script(["$game_variables[2770][14] = "])
+    ScriptMore(["\"Mermaid Princess\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 4421, 0])
+    Script(["$game_variables[2770][15] = \"Bird Heir\""])
+    Empty([])
+
+  Else([])
+    Script(["$game_variables[2770][15] = \"Bird Princess\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 4722, 0])
+    Script(["$game_variables[2770][16] = \"Oni Heir\""])
+    Empty([])
+
+  Else([])
+    Script(["$game_variables[2770][16] = \"Oni Princess\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3168, 0])
+    Script(["$game_variables[2770][17] = \"Plant Heir\""])
+    Empty([])
+
+  Else([])
+    Script(["$game_variables[2770][17] = \"Plant Princess\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2838, 0])
+    Script(["$game_variables[2770][18] = \"Shadow Heir\""])
+    Empty([])
+
+  Else([])
+    Script(["$game_variables[2770][18] = \"Shadow Princess\""])
+    Empty([])
+
+  BranchEnd([])
+  Script(["@n = $game_variables[2771]"])
+  ScriptMore(["$game_variables[2771] = "])
+  ScriptMore(["$game_variables[2770][@n]"])
+  Script(["@m = $game_variables[2772]"])
+  ScriptMore(["$game_variables[2772] = "])
+  ScriptMore(["$game_variables[2770][@m]"])
+  Empty([])

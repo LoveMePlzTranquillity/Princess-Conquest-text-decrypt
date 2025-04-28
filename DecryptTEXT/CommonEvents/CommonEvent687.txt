@@ -1,0 +1,71 @@
+CommonEvent 687
+Name = "Clock :"
+
+  Wait([60])
+  ConditionalBranch([12, "$game_map.interpreter.running?"])
+    JumpToLabel(["init"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_message.visible == true"])
+    JumpToLabel(["init"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3825, 0])
+    JumpToLabel(["init"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3826, 0])
+    JumpToLabel(["init"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 1770, 0])
+    JumpToLabel(["init"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2411, 0])
+    JumpToLabel(["init"])
+    Empty([])
+
+  BranchEnd([])
+  Script(["$game_map.screen.pictures[90].move(0,679,"])
+  ScriptMore(["500,100,100,0,0,1)"])
+  Wait([60])
+  ConditionalBranch([12, "$game_map.interpreter.running?"])
+    JumpToLabel(["init"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_message.visible == true"])
+    JumpToLabel(["init"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3825, 0])
+    JumpToLabel(["init"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3826, 0])
+    JumpToLabel(["init"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 1770, 0])
+    JumpToLabel(["init"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2411, 0])
+    JumpToLabel(["init"])
+    Empty([])
+
+  BranchEnd([])
+  Script(["$game_map.screen.pictures[90].move(0,679,"])
+  ScriptMore(["500,100,100,255,0,1)"])
+  Label(["init"])
+  Empty([])

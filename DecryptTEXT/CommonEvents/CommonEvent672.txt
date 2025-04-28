@@ -1,0 +1,29 @@
+CommonEvent 672
+Name = "★ ToyP DPI atk"
+
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Dragon Princess I was hoarding treasure in this castle!\\.\\. Toy Princess army suffers heavy casualties!"])
+  ConditionalBranch([0, 3696, 0])
+    ControlSwitches([2628, 2628, 0])
+    ControlVariables([2051, 2051, 0, 0, 4])
+    ControlVariables([2769, 2769, 0, 0, 2202])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Toy Heir:"])
+    ShowText(["!!!"])
+    CallCommonEvent([559])
+    ControlSwitches([2628, 2628, 1])
+    Empty([])
+
+  Else([])
+    Script(["n = \"ToyP dial\""])
+    ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+    ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+    ShowTextAttributes(["", 4, 2, 2])
+    ShowText(["Toy Princess:"])
+    ShowText(["..."])
+    ErasePicture([1])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

@@ -1,0 +1,27 @@
+CommonEvent 666
+Name = "FinP DPI atk"
+
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Dragon Princess I was hoarding treasure in this castle!\\.\\. Finhead Princess army suffers heavy casualties!"])
+  ConditionalBranch([0, 4087, 0])
+    ControlSwitches([2628, 2628, 0])
+    ControlVariables([2051, 2051, 0, 0, 2])
+    ControlVariables([2769, 2769, 0, 0, 2196])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Finhead Heir:"])
+    ShowText(["What is that?!\\.\\. The dragon!?"])
+    CallCommonEvent([559])
+    ControlSwitches([2628, 2628, 1])
+    Empty([])
+
+  Else([])
+    ShowPicture([1, "FinheadP dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Finhead Princess:"])
+    ShowText(["The dragon is here!\\.\\. Back underwater!\\.\\. D-\\.don't be scared!\\.\\. ...\\.\\.\\. ok,\\. just a little."])
+    ErasePicture([1])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

@@ -1,0 +1,20 @@
+CommonEvent 625
+Name = "sprite call edit"
+
+  Comment(["##########################"])
+  Script(["@savedS = $game_variables[@load][61] rescue \"\""])
+  ConditionalBranch([12, "@savedS == 0 || @savedS == \"\""])
+    CallCommonEvent([549])
+    Empty([])
+
+  Else([])
+    Script(["$game_variables[7315] = $game_variables[@load][61]"])
+    ScriptMore(["$game_variables[7316] = $game_variables[@load][62]"])
+    Comment(["##########################"])
+    Script(["$game_switches[5300] = false"])
+    Comment(["##########################"])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["##########################"])
+  Empty([])

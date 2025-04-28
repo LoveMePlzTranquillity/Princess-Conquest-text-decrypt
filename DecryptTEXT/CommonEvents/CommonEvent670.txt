@@ -1,0 +1,29 @@
+CommonEvent 670
+Name = "PlaP DPI atk"
+
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Dragon Princess I was hoarding treasure in this castle!\\.\\. Plant Princess army suffers heavy casualties!"])
+  ConditionalBranch([0, 3168, 0])
+    ControlSwitches([2628, 2628, 0])
+    ControlVariables([2051, 2051, 0, 0, 4])
+    ControlVariables([2769, 2769, 0, 0, 2200])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Plant Heir:"])
+    ShowText(["My sprouts!\\.\\. They're gonna burn!!"])
+    CallCommonEvent([559])
+    ControlSwitches([2628, 2628, 1])
+    Empty([])
+
+  Else([])
+    Script(["n = \"PlantP dial scared\""])
+    ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+    ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+    ShowTextAttributes(["", 4, 2, 2])
+    ShowText(["Plant Princess:"])
+    ShowText(["!!!\\.\\. It's the dragon!!\\.\\. Take cover,\\. my buds!!"])
+    ErasePicture([1])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

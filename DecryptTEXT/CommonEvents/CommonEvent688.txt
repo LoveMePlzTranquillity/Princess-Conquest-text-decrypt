@@ -1,0 +1,50 @@
+CommonEvent 688
+Name = "ClockKey equipped"
+
+  Wait([60])
+  Script(["@mprec = 1"])
+  Comment(["---------------------------------------"])
+  Script(["@love=$game_party.members[0].parent_stat(0)"])
+  ConditionalBranch([12, "$game_variables[116] == \"TaintedLove\""])
+    Script(["@love+=$game_party.members[0].parent_stat(1)"])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["---------------------------------------"])
+  ConditionalBranch([12, "@love >= 5"])
+    Script(["@mprec = 5"])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([12, "@love >= 3"])
+      Script(["@mprec = 2"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@mprec < 1"])
+    Script(["@mprec = 1"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.members[0].id == 1"])
+    Script(["@mprec = 2"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.members[0].id == 1 && $game_switches[819] == true"])
+    Comment(["Leader GoddessK"])
+    ChangeState([0, 1, 1, 192])
+    Script(["$game_party.leader.mp += @mprec"])
+    ChangeState([0, 1, 0, 192])
+    Empty([])
+
+  Else([])
+    Script(["$game_party.leader.mp += @mprec"])
+    Empty([])
+
+  BranchEnd([])
+  Script(["$game_map.sas_hud.refresh_bars"])
+  Empty([])

@@ -1,0 +1,137 @@
+CommonEvent 599
+Name = "Destination Relev Ship"
+
+  ConditionalBranch([1, 1661, 0, 1, 0])
+    ControlSwitches([2045, 2045, 1])
+    ControlSwitches([2046, 2046, 1])
+    ControlSwitches([2047, 2047, 1])
+    ControlSwitches([2049, 2049, 1])
+    ControlSwitches([2050, 2050, 1])
+    ControlSwitches([2053, 2053, 1])
+    Empty([])
+
+  Else([])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["to 0?"])
+  ControlVariables([1662, 1662, 0, 0, 1])
+  Comment(["to 1?"])
+  ControlVariables([1663, 1663, 0, 0, 1])
+  Comment(["to 2?"])
+  ConditionalBranch([1, 90, 0, -1, 0])
+    ControlVariables([1664, 1664, 0, 2, 0, 1])
+    Empty([])
+
+  Else([])
+    ControlVariables([1664, 1664, 0, 0, 1])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["to 3?"])
+  ConditionalBranch([1, 91, 0, -1, 0])
+    ControlVariables([1665, 1665, 0, 2, 0, 1])
+    Empty([])
+
+  Else([])
+    ControlVariables([1665, 1665, 0, 0, 1])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["to 4?"])
+  ConditionalBranch([1, 111, 0, -1, 0])
+    ControlVariables([1666, 1666, 0, 2, 0, 1])
+    Empty([])
+
+  Else([])
+    ControlVariables([1666, 1666, 0, 0, 1])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["to 5?"])
+  ConditionalBranch([1, 1668, 0, 3, 1])
+    ControlVariables([1669, 1669, 0, 0, 1])
+    Empty([])
+
+  Else([])
+    ControlVariables([1669, 1669, 0, 0, 0])
+    Empty([])
+
+  BranchEnd([])
+  Label(["again"])
+  ControlVariables([1667, 1667, 0, 2, 0, 6])
+  ConditionalBranch([1, 1667, 0, 0, 0])
+    ControlSwitches([2044, 2044, 0])
+    ControlSwitches([2045, 2045, 0])
+    ControlVariables([1668, 1668, 1, 0, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1667, 0, 1, 0])
+    ControlSwitches([2044, 2044, 0])
+    ControlSwitches([2046, 2046, 0])
+    ControlVariables([1668, 1668, 1, 0, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1667, 0, 2, 0])
+    ConditionalBranch([1, 1664, 0, 0, 0])
+      JumpToLabel(["again"])
+      Empty([])
+
+    Else([])
+      ControlSwitches([2044, 2044, 0])
+      ControlSwitches([2047, 2047, 0])
+      ControlVariables([1668, 1668, 1, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1667, 0, 3, 0])
+    ConditionalBranch([1, 1665, 0, 0, 0])
+      JumpToLabel(["again"])
+      Empty([])
+
+    Else([])
+      ControlSwitches([2044, 2044, 0])
+      ControlSwitches([2049, 2049, 0])
+      ControlVariables([1668, 1668, 1, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1667, 0, 4, 0])
+    ConditionalBranch([1, 1666, 0, 0, 0])
+      JumpToLabel(["again"])
+      Empty([])
+
+    Else([])
+      ControlSwitches([2044, 2044, 0])
+      ControlSwitches([2050, 2050, 0])
+      ControlVariables([1668, 1668, 1, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1667, 0, 5, 1])
+    ConditionalBranch([1, 1669, 0, 0, 0])
+      JumpToLabel(["again"])
+      Empty([])
+
+    Else([])
+      ControlSwitches([2044, 2044, 0])
+      ControlSwitches([2053, 2053, 0])
+      ControlVariables([1668, 1668, 2, 0, 3])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

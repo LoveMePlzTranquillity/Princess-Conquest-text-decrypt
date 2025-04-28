@@ -1,0 +1,31 @@
+CommonEvent 667
+Name = "MerP DPI atk"
+
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Dragon Princess I was hoarding treasure in this castle!\\.\\. Mermaid Princess army suffers heavy casualties!"])
+  ConditionalBranch([0, 4267, 0])
+    ControlSwitches([2628, 2628, 0])
+    ControlVariables([2051, 2051, 0, 0, 2])
+    ControlVariables([2769, 2769, 0, 0, 2197])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Mermaid Heir:"])
+    ShowText(["A flying...\\.\\.\\. kraken!?\\.\\. BACK TO TH' ABYSS,\\. GALS!"])
+    CallCommonEvent([559])
+    ControlSwitches([2628, 2628, 1])
+    Empty([])
+
+  Else([])
+    ShowPicture([1, "MermaidP dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Mermaid Princess:"])
+    ShowText(["HRRRR...\\.\\.\\. COME DOWN HE'E!!\\.\\. COWARD!!\\.\\. "])
+    ShowPicture([1, "MermaidP dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Mermaid Princess:"])
+    ShowText(["GAH!\\.\\. IT BURNS!\\.\\. SUBMERGE!!"])
+    ErasePicture([1])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

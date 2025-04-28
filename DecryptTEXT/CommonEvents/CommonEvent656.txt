@@ -1,0 +1,27 @@
+CommonEvent 656
+Name = "InsP DPI atk"
+
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Dragon Princess I was hoarding treasure in this castle!\\.\\. Insect Princess army suffers heavy casualties!"])
+  ConditionalBranch([0, 2512, 0])
+    ControlSwitches([2628, 2628, 0])
+    ControlVariables([2051, 2051, 0, 0, 1])
+    ControlVariables([2769, 2769, 0, 0, 2184])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Heir:"])
+    ShowText(["I can't have the Hive become dust while I'm in charge!\\.\\. Retreat!\\.\\. *kchch*"])
+    CallCommonEvent([559])
+    ControlSwitches([2628, 2628, 1])
+    Empty([])
+
+  Else([])
+    ShowPicture([1, "Insect Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess: "])
+    ShowText(["The Dragon Princess!\\.\\. Spread!\\.\\. Don't lead her to the Hive!!"])
+    ErasePicture([1])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

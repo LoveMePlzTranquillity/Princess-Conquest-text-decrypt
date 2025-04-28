@@ -1,0 +1,28 @@
+CommonEvent 654
+Name = "SliP DPI atk"
+
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Dragon Princess I was hoarding treasure in this castle!\\.\\. Slime Princess army suffers heavy casualties!"])
+  ConditionalBranch([0, 2510, 0])
+    ControlSwitches([2628, 2628, 0])
+    ControlVariables([2051, 2051, 0, 0, 1])
+    ControlVariables([2769, 2769, 0, 0, 2182])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Slime Heir:"])
+    ShowText(["*Blub*!\\.\\. The flames are too hot!\\.\\. It's just like mother told me!"])
+    CallCommonEvent([559])
+    ControlSwitches([2628, 2628, 1])
+    Empty([])
+
+  Else([])
+    ShowPicture([1, "Slime Princess dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Slime Princess: "])
+    ShowText(["AAARGH! \\.\\.It burns!! *blublob*\\.\\."])
+    ShowText(["Away!\\.\\. AWAAAY!"])
+    ErasePicture([1])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

@@ -1,0 +1,84 @@
+CommonEvent 597
+Name = "Ship RND start"
+
+  ControlVariables([1654, 1654, 0, 2, 0, 4])
+  ConditionalBranch([1, 1654, 0, 0, 0])
+    ControlVariables([1655, 1655, 0, 0, 83])
+    ControlVariables([1656, 1656, 0, 0, 53])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([1, 1654, 0, 1, 0])
+      ControlVariables([1655, 1655, 0, 0, 73])
+      ControlVariables([1656, 1656, 0, 0, 40])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 1654, 0, 2, 0])
+        ControlVariables([1655, 1655, 0, 0, 43])
+        ControlVariables([1656, 1656, 0, 0, 27])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([1, 1654, 0, 3, 0])
+          ControlVariables([1655, 1655, 0, 0, 11])
+          ControlVariables([1656, 1656, 0, 0, 70])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([1, 1654, 0, 4, 0])
+            ControlVariables([1655, 1655, 0, 0, 53])
+            ControlVariables([1656, 1656, 0, 0, 82])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ControlSwitches([2051, 2051, 0])
+  Comment(["CIVIL SHIP"])
+  ControlSwitches([3543, 3543, 0])
+  Script(["@sh = rand(4)"])
+  ConditionalBranch([12, "@sh < 1"])
+    ControlSwitches([3538, 3538, 0])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([12, "@sh < 2"])
+      ControlSwitches([3539, 3539, 0])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "@sh < 3"])
+        ControlSwitches([3540, 3540, 0])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([12, "@sh < 4"])
+          ControlSwitches([3541, 3541, 0])
+          Empty([])
+
+        Else([])
+          ControlSwitches([3542, 3542, 0])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

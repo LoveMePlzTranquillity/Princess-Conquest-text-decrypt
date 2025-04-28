@@ -1,0 +1,27 @@
+CommonEvent 662
+Name = "CatP DPI atk"
+
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Dragon Princess I was hoarding treasure in this castle!\\.\\. Cat Princess army suffers heavy casualties!"])
+  ConditionalBranch([0, 2518, 0])
+    ControlSwitches([2628, 2628, 0])
+    ControlVariables([2051, 2051, 0, 0, 2])
+    ControlVariables([2769, 2769, 0, 0, 2190])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Cat Heir:"])
+    ShowText(["Nya!\\.\\. We'd need a bigger hunting pack for her!\\.\\. Retreat!"])
+    CallCommonEvent([559])
+    ControlSwitches([2628, 2628, 1])
+    Empty([])
+
+  Else([])
+    ShowPicture([1, "Cat Princess Dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Cat Princess: "])
+    ShowText(["NYA!\\.\\. The dragon?!\\.\\. This won't end here!"])
+    ErasePicture([1])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

@@ -1,0 +1,27 @@
+CommonEvent 665
+Name = "HarP DPI atk"
+
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Dragon Princess I was hoarding treasure in this castle!\\.\\. Harvest Princess army suffers heavy casualties!"])
+  ConditionalBranch([0, 2521, 0])
+    ControlSwitches([2628, 2628, 0])
+    ControlVariables([2051, 2051, 0, 0, 2])
+    ControlVariables([2769, 2769, 0, 0, 2194])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Harvest Heir:"])
+    ShowText(["W-\\.what?\\.\\. It was a trap?!"])
+    CallCommonEvent([559])
+    ControlSwitches([2628, 2628, 1])
+    Empty([])
+
+  Else([])
+    ShowPicture([1, "HarvestP dial scared", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Harvest Princess: "])
+    ShowText(["We've been played like fools!\\.\\. Run,\\. or she will go after our fields next!"])
+    ErasePicture([1])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

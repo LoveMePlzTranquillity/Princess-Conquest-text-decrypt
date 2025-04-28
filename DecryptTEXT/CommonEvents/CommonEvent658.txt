@@ -1,0 +1,30 @@
+CommonEvent 658
+Name = "DesP DPI atk"
+
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Dragon Princess I was hoarding treasure in this castle!\\.\\. Desert Princess army suffers heavy casualties!"])
+  ConditionalBranch([0, 2514, 0])
+    ControlSwitches([2628, 2628, 0])
+    ControlVariables([2051, 2051, 0, 0, 1])
+    ControlVariables([2769, 2769, 0, 0, 2186])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Desert Heir:"])
+    ShowText(["That's HOT!\\.\\. But not in a good way!!\\.\\."])
+    CallCommonEvent([559])
+    ControlSwitches([2628, 2628, 1])
+    Empty([])
+
+  Else([])
+    ShowPicture([1, "Desert Princess dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Desert Princess: "])
+    ShowText(["This is hotter than the sands of our desert!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Desert Princess: "])
+    ShowText(["Let's go back men,\\. but the war will be ours!"])
+    ErasePicture([1])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

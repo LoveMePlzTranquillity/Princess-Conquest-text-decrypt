@@ -1,0 +1,81 @@
+CommonEvent 692
+Name = "RejBeads equipped"
+
+  Wait([60])
+  ConditionalBranch([12, "$game_party.leader.hp == 1"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  Script(["@hprec = 1"])
+  Comment(["---------------------------------------"])
+  Script(["@love = $game_party.members[0].parent_stat(0)"])
+  ConditionalBranch([12, "$game_variables[116] == \"TaintedLove\""])
+    Script(["@love+=$game_party.members[0].parent_stat(1)"])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["---------------------------------------"])
+  ConditionalBranch([12, "@love >= 5"])
+    Script(["@hprec = 5"])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([12, "@love >= 3"])
+      Script(["@hprec = 2"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.members[0].id == 1"])
+    Script(["@hprec = 2"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.members[0].equips.include?$data_armors[661]"])
+    Comment(["PlantSaur Costume"])
+    ConditionalBranch([12, "$game_party.members[0].equips.include?$data_armors[95]"])
+      Comment(["Rej Beads"])
+      Script(["@hprec *= 2"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.members[0].equips.include?$data_armors[807]"])
+    Comment(["Radiant Helm"])
+    ConditionalBranch([12, "$game_switches[819] == true"])
+      Comment(["Goddess K"])
+      Script(["@hprec += 10"])
+      Empty([])
+
+    Else([])
+      Comment(["Other"])
+      Script(["@hprec += 2"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.members[0].id == 1 && $game_switches[819] == true"])
+    Comment(["Leader GoddessK"])
+    ChangeState([0, 1, 1, 192])
+    Empty([])
+
+  BranchEnd([])
+  Script(["$game_party.leader.hp += @hprec"])
+  ConditionalBranch([12, "$game_party.members[0].id == 1 && $game_switches[819] == true"])
+    Comment(["Leader GoddessK"])
+    ChangeState([0, 1, 0, 192])
+    Empty([])
+
+  BranchEnd([])
+  Script(["$game_map.sas_hud.refresh_bars"])
+  Comment(["###############"])
+  Label(["end"])
+  Comment(["###############"])
+  Empty([])

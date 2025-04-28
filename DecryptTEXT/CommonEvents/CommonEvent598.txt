@@ -1,0 +1,46 @@
+CommonEvent 598
+Name = "roaming routes Ship"
+
+  ConditionalBranch([1, 1657, 0, 1, 0])
+    ControlVariables([1658, 1658, 0, 2, 120, 240])
+    Empty([])
+
+  Else([])
+    Empty([])
+
+  BranchEnd([])
+  Wait([60])
+  ConditionalBranch([0, 2052, 1])
+    ConditionalBranch([0, 2044, 1])
+      ConditionalBranch([1, 1657, 0, 0, 5])
+        ControlVariables([1659, 1659, 1, 0, 1])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Else([])
+    ControlVariables([1660, 1660, 2, 0, 1])
+    ConditionalBranch([1, 1660, 0, 0, 2])
+      ControlSwitches([2052, 2052, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1657, 0, 0, 5])
+    ConditionalBranch([1, 1659, 1, 1658, 1])
+      ControlVariables([1659, 1659, 0, 0, 0])
+      CallCommonEvent([599])
+      Wait([60])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

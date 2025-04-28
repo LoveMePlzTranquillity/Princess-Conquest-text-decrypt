@@ -1,0 +1,40 @@
+CommonEvent 689
+Name = "Pur.Lump equipped"
+
+  ConditionalBranch([0, 1147, 1])
+    Comment(["---------------------------------------"])
+    Script(["@love=$game_party.members[0].parent_stat(0)"])
+    ConditionalBranch([12, "$game_variables[116] == \"TaintedLove\""])
+      Script(["@love+=$game_party.members[0].parent_stat(1)"])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["---------------------------------------"])
+    ConditionalBranch([12, "@love >= 5"])
+      ControlVariables([882, 882, 0, 2, 50, 100])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "@love >= 3"])
+        ControlVariables([882, 882, 0, 2, 20, 100])
+        Empty([])
+
+      Else([])
+        ControlVariables([882, 882, 0, 2, 1, 100])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 882, 0, 80, 1])
+      ShowAnimation([-1, 328, false])
+      ControlSwitches([1147, 1147, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Wait([180])
+  Empty([])

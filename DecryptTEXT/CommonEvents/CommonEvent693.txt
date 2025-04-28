@@ -1,0 +1,67 @@
+CommonEvent 693
+Name = "Sacred Candle Eff"
+
+  ErasePicture([1])
+  ErasePicture([2])
+  ErasePicture([3])
+  Script(["@party = $game_party.members.size"])
+  ConditionalBranch([12, "$game_party.leader.id == 1"])
+    ConditionalBranch([12, "@party < 2"])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_party.members[1].equips[4] == $data_armors[175]"])
+      ShowAnimation([-1, 56, false])
+      Script(["@pm = $game_party.members[1].id"])
+      Script(["actor = $game_actors[@pm]"])
+      ScriptMore(["if !actor.dead?"])
+      ScriptMore(["actor.change_hp(-9999, false)"])
+      ScriptMore(["end"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@party < 3"])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_party.members[2].equips[4] == $data_armors[175]"])
+      ShowAnimation([-1, 56, false])
+      Script(["@pm = $game_party.members[2].id"])
+      Script(["actor = $game_actors[@pm]"])
+      ScriptMore(["if !actor.dead?"])
+      ScriptMore(["actor.change_hp(-9999, false)"])
+      ScriptMore(["end"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@party < 4"])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_party.members[3].equips[4] == $data_armors[175]"])
+      ShowAnimation([-1, 56, false])
+      Script(["@pm = $game_party.members[3].id"])
+      Script(["actor = $game_actors[@pm]"])
+      ScriptMore(["if !actor.dead?"])
+      ScriptMore(["actor.change_hp(-9999, false)"])
+      ScriptMore(["end"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([12, "$game_party.members[0].equips[4] == $data_armors[175]"])
+      ShowAnimation([-1, 56, false])
+      ChangeHP([0, 1, 1, 0, 9999, false])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["end"])
+  Empty([])

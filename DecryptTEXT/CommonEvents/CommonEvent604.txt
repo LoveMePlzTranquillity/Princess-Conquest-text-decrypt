@@ -1,0 +1,10 @@
+CommonEvent 604
+Name = "1->pre1"
+
+  SetMoveRoute([287, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=8, @parameters=[])\", \"RPG::MoveCommand(@code=8, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+  Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+  Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+  Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+  Unnamed(["RPG::MoveCommand(@code=8, @parameters=[])"])
+  Unnamed(["RPG::MoveCommand(@code=8, @parameters=[])"])
+  Empty([])

@@ -1,0 +1,27 @@
+CommonEvent 659
+Name = "GhoP DPI atk"
+
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Dragon Princess I was hoarding treasure in this castle!\\.\\. Ghost Princess army suffers heavy casualties!"])
+  ConditionalBranch([0, 2515, 0])
+    ControlSwitches([2628, 2628, 0])
+    ControlVariables([2051, 2051, 0, 0, 1])
+    ControlVariables([2769, 2769, 0, 0, 2187])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Ghost Heir:"])
+    ShowText(["!!\\.\\. "])
+    CallCommonEvent([559])
+    ControlSwitches([2628, 2628, 1])
+    Empty([])
+
+  Else([])
+    ShowPicture([1, "Ghost Princess dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Ghost Princess:"])
+    ShowText(["!!\\.\\."])
+    ErasePicture([1])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

@@ -1,0 +1,21 @@
+CommonEvent 690
+Name = "Pur.Lump Effect"
+
+  ControlSwitches([1148, 1148, 0])
+  Wait([7])
+  ControlSwitches([1148, 1148, 0])
+  Wait([7])
+  ControlSwitches([1148, 1148, 0])
+  Wait([7])
+  ControlSwitches([1148, 1148, 0])
+  Wait([7])
+  ControlSwitches([1148, 1148, 0])
+  Wait([7])
+  ControlSwitches([1148, 1148, 0])
+  Wait([7])
+  ControlSwitches([1148, 1148, 0])
+  Wait([7])
+  ControlVariables([883, 883, 0, 0, 0])
+  ControlSwitches([1148, 1148, 1])
+  ControlSwitches([1147, 1147, 1])
+  Empty([])

@@ -1,0 +1,267 @@
+CommonEvent 691
+Name = "★ Pur.Lump Fert"
+
+  ConditionalBranch([0, 2812, 1])
+    ConditionalBranch([12, "$game_actors[57].equips[4] == $data_armors[92] "])
+      ConditionalBranch([1, 4550, 0, 0, 0])
+        Script(["$game_variables[1911][15] = [0,1].sample"])
+        Empty([])
+
+      BranchEnd([])
+      ControlVariables([4550, 4550, 0, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3132, 1])
+    ConditionalBranch([12, "$game_actors[56].equips[4] == $data_armors[92] "])
+      ConditionalBranch([1, 4481, 0, 0, 0])
+        Script(["$game_variables[1911][14] = [0,1].sample"])
+        Empty([])
+
+      BranchEnd([])
+      ControlVariables([4481, 4481, 0, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 4686, 1])
+    ConditionalBranch([12, "$game_actors[54].equips[4] == $data_armors[92] "])
+      ConditionalBranch([1, 4381, 0, 0, 0])
+        Script(["$game_variables[1911][13] = [0,1].sample"])
+        Empty([])
+
+      BranchEnd([])
+      ControlVariables([4381, 4381, 0, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 4385, 1])
+    ConditionalBranch([12, "$game_actors[53].equips[4] == $data_armors[92] "])
+      ConditionalBranch([1, 4301, 0, 0, 0])
+        Script(["$game_variables[1911][12] = [0,1].sample"])
+        Empty([])
+
+      BranchEnd([])
+      ControlVariables([4301, 4301, 0, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 4231, 1])
+    ConditionalBranch([12, "$game_actors[48].equips[4] == $data_armors[92] "])
+      ConditionalBranch([1, 4230, 0, 0, 0])
+        Script(["$game_variables[1911][11] = [0,1].sample"])
+        Empty([])
+
+      BranchEnd([])
+      ControlVariables([4230, 4230, 0, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 4051, 1])
+    ConditionalBranch([12, "$game_actors[46].equips[4] == $data_armors[92] "])
+      ConditionalBranch([1, 4130, 0, 0, 0])
+        Script(["$game_variables[1911][10] = [0,1].sample"])
+        Empty([])
+
+      BranchEnd([])
+      ControlVariables([4130, 4130, 0, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3511, 1])
+    ConditionalBranch([12, "$game_actors[41].equips[4] == $data_armors[92] "])
+      ConditionalBranch([1, 2923, 0, 0, 0])
+        Script(["$game_variables[1911][9] = [0,1].sample"])
+        Empty([])
+
+      BranchEnd([])
+      ControlVariables([2923, 2923, 0, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2213, 1])
+    ConditionalBranch([12, "$game_actors[5].equips[4] == $data_armors[92] "])
+      ConditionalBranch([1, 1802, 0, 0, 0])
+        Script(["$game_variables[1911][1] = [0,1].sample"])
+        Empty([])
+
+      BranchEnd([])
+      ControlVariables([1802, 1802, 0, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3313, 1])
+    ConditionalBranch([12, "$game_actors[32].equips[4] == $data_armors[92] "])
+      ConditionalBranch([1, 3853, 0, 0, 0])
+        Script(["$game_variables[1911][8] = [0,1].sample"])
+        Empty([])
+
+      BranchEnd([])
+      ControlVariables([3853, 3853, 0, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2214, 1])
+    ConditionalBranch([12, "$game_actors[7].equips[4] == $data_armors[92] "])
+      ControlVariables([1803, 1803, 0, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2215, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2216, 1])
+    ConditionalBranch([12, "$game_actors[8].equips[4] == $data_armors[92] "])
+      ControlVariables([1805, 1805, 0, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2217, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2218, 1])
+    ConditionalBranch([12, "$game_actors[4].equips[4] == $data_armors[92] "])
+      ConditionalBranch([1, 1807, 0, 0, 0])
+        Script(["$game_variables[1911][2] = [0,1].sample"])
+        Empty([])
+
+      BranchEnd([])
+      ControlVariables([1807, 1807, 0, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2219, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2220, 1])
+    ConditionalBranch([12, "$game_actors[14].equips[4] == $data_armors[92] "])
+      ConditionalBranch([1, 1809, 0, 0, 0])
+        Script(["$game_variables[1911][3] = [0,1].sample"])
+        Empty([])
+
+      BranchEnd([])
+      ControlVariables([1809, 1809, 0, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2221, 1])
+    ConditionalBranch([12, "$game_actors[21].equips[4] == $data_armors[92] "])
+      ControlVariables([1810, 1810, 0, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2222, 1])
+    ConditionalBranch([12, "$game_actors[23].equips[4] == $data_armors[92] "])
+      ConditionalBranch([1, 1811, 0, 0, 0])
+        Script(["$game_variables[1911][4] = [0,1].sample"])
+        Empty([])
+
+      BranchEnd([])
+      ControlVariables([1811, 1811, 0, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2223, 1])
+    ConditionalBranch([12, "$game_actors[16].equips[4] == $data_armors[92] "])
+      ConditionalBranch([1, 1812, 0, 0, 0])
+        Script(["$game_variables[1911][5] = [0,1].sample"])
+        Empty([])
+
+      BranchEnd([])
+      ControlVariables([1812, 1812, 0, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2224, 1])
+    ConditionalBranch([12, "$game_actors[26].equips[4] == $data_armors[92] "])
+      ConditionalBranch([1, 1829, 0, 0, 0])
+        Script(["$game_variables[1911][6] = [0,1].sample"])
+        Empty([])
+
+      BranchEnd([])
+      ControlVariables([1829, 1829, 0, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2920, 1])
+    ConditionalBranch([12, "$game_actors[30].equips[4] == $data_armors[92] "])
+      ConditionalBranch([1, 3630, 0, 0, 0])
+        Script(["$game_variables[1911][7] = [0,1].sample"])
+        Empty([])
+
+      BranchEnd([])
+      ControlVariables([3630, 3630, 0, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2212, 1])
+    ConditionalBranch([12, "$game_actors[2].equips[4] == $data_armors[92] "])
+      ConditionalBranch([1, 1801, 0, 0, 0])
+        Script(["$game_variables[1911][0] = [0,1].sample"])
+        Empty([])
+
+      BranchEnd([])
+      ControlVariables([1801, 1801, 0, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

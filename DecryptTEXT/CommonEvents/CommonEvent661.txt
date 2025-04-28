@@ -1,0 +1,37 @@
+CommonEvent 661
+Name = "MotP DPI atk"
+
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Dragon Princess I was hoarding treasure in this castle!\\.\\. Moth Princess army suffers heavy casualties!"])
+  ConditionalBranch([0, 2517, 0])
+    ControlSwitches([2628, 2628, 0])
+    ControlVariables([2051, 2051, 0, 0, 1])
+    ControlVariables([2769, 2769, 0, 0, 2189])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ConditionalBranch([12, "$game_variables[2189][3] == 3"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Moth Heir:"])
+      ShowText(["..."])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Moth Heir:"])
+      ShowText(["Look how big her wings are!\\.\\. She's scary!\\.\\. Fly back to our nest!!"])
+      Empty([])
+
+    BranchEnd([])
+    CallCommonEvent([559])
+    ControlSwitches([2628, 2628, 1])
+    Empty([])
+
+  Else([])
+    ShowPicture([1, "Moth Princess Dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Moth Princess: "])
+    ShowText(["Waaa~...\\.\\.\\. This is not fair..."])
+    ErasePicture([1])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

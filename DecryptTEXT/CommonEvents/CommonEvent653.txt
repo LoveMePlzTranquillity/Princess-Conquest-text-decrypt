@@ -1,0 +1,27 @@
+CommonEvent 653
+Name = "HumP DPI atk"
+
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Dragon Princess I was hoarding treasure in this castle!\\.\\. Human Princess army suffers heavy casualties!"])
+  ConditionalBranch([0, 2509, 0])
+    ControlSwitches([2628, 2628, 0])
+    ControlVariables([2051, 2051, 0, 0, 1])
+    ControlVariables([2769, 2769, 0, 0, 2181])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Human Heir:"])
+    ShowText(["Who's that?!\\.\\. ...\\.\\.\\. The dragoness of mother's stories?!\\.\\. RUN!!"])
+    CallCommonEvent([559])
+    ControlSwitches([2628, 2628, 1])
+    Empty([])
+
+  Else([])
+    ShowPicture([1, "Human Princess dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Human Princess: "])
+    ShowText(["The Dragon Princess is here!\\.\\. CURSE HER...\\.\\.\\. RETREAT!!"])
+    ErasePicture([1])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

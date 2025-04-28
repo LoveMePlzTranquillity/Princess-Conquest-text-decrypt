@@ -1,0 +1,30 @@
+CommonEvent 660
+Name = "GobP DPI atk"
+
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Dragon Princess I was hoarding treasure in this castle!\\.\\. Goblin Princess army suffers heavy casualties!"])
+  ConditionalBranch([0, 2516, 0])
+    ControlSwitches([2628, 2628, 0])
+    ControlVariables([2051, 2051, 0, 0, 2])
+    ControlVariables([2769, 2769, 0, 0, 2188])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Goblin Heir:"])
+    ShowText(["She's still around?\\.\\. Mother told me to keep away from her...\\.\\.\\."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Goblin Heir:"])
+    ShowText(["We run back for now,\\. but one day...\\.\\.\\. she will be ours!"])
+    CallCommonEvent([559])
+    ControlSwitches([2628, 2628, 1])
+    Empty([])
+
+  Else([])
+    ShowPicture([1, "GoblinP dial shock", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Goblin Princess: "])
+    ShowText(["Run back,\\. 'me men!\\.\\. She's gonna burn our asses!"])
+    ErasePicture([1])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

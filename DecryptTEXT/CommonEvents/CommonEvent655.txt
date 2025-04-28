@@ -1,0 +1,39 @@
+CommonEvent 655
+Name = "GolP DPI atk"
+
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Dragon Princess I was hoarding treasure in this castle!\\.\\. Golem Princess army suffers heavy casualties!"])
+  ConditionalBranch([0, 2511, 0])
+    ControlSwitches([2628, 2628, 0])
+    ControlVariables([2051, 2051, 0, 0, 1])
+    ControlVariables([2769, 2769, 0, 0, 2183])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Golem Heir:"])
+    ShowText(["SHE IS MELTING OUR PLATES.\\.\\. WE NEED AN UPGRADE BEFORE WE CAN FIGHT HER!"])
+    CallCommonEvent([559])
+    ControlSwitches([2628, 2628, 1])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([0, 32, 0])
+      ShowPicture([1, "Golem Princess Dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Golem Princess: "])
+      ShowText(["TEMPERATURE APPROACHING CRITICAL LEVELS!\\. RETREAT!!!"])
+      ErasePicture([1])
+      Empty([])
+
+    Else([])
+      ShowPicture([1, "Golem Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Golem Princess:"])
+      ShowText(["SHAAAA!\\.\\. It buuurns!\\.\\. Get back idiots!\\.\\. BACK!"])
+      ErasePicture([1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

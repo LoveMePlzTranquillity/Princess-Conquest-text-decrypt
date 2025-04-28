@@ -1,0 +1,93 @@
+CommonEvent 685
+Name = "Skill/Time"
+
+  Script(["@w = 0"])
+  Loop([])
+    Wait([30])
+    Script(["if @w.nil?"])
+    ScriptMore(["@w = 0"])
+    ScriptMore(["end"])
+    Script(["@w += 30"])
+    Comment(["#########################"])
+    ConditionalBranch([1, 114, 0, 0, 5])
+      ConditionalBranch([12, "$game_variables[116].include? \"Nemui\""])
+        Comment(["Nemuidere"])
+        ConditionalBranch([12, "@w % 180 == 0"])
+          ConditionalBranch([0, 739, 1])
+            JumpToLabel(["end"])
+            Empty([])
+
+          BranchEnd([])
+          ShotBalloonIcon([-1, 10, false])
+          Empty([])
+
+        BranchEnd([])
+        ConditionalBranch([12, "@w % 600 == 0"])
+          ConditionalBranch([0, 739, 1])
+            JumpToLabel(["end"])
+            Empty([])
+
+          BranchEnd([])
+          ShowAnimation([-1, 325, false])
+          Wait([10])
+          ControlSwitches([1542, 1542, 0])
+          BreakLoop([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      ConditionalBranch([12, "$game_variables[114].include? \"Healer\""])
+        ConditionalBranch([12, "@w % 120 == 0"])
+          Comment(["Healer"])
+          Script(["@i = $game_party.members.size"])
+          Script(["@n = 0"])
+          Loop([])
+            ConditionalBranch([12, "@i >= (@n + 1)"])
+              Script(["@mhp = $game_party.members[@n].mhp"])
+              Script(["@hprec = @mhp / 200"])
+              ConditionalBranch([12, "@hprec < 1"])
+                Script(["@hprec = 1"])
+                Empty([])
+
+              BranchEnd([])
+              ConditionalBranch([12, "$game_party.members[@n].id == 1 && $game_switches[819] == true"])
+                Comment(["Leader GoddessK"])
+                ChangeState([0, 1, 1, 192])
+                Script(["$game_party.members[@n].hp += @hprec"])
+                ChangeState([0, 1, 0, 192])
+                Empty([])
+
+              Else([])
+                Script(["$game_party.members[@n].hp += @hprec"])
+                Empty([])
+
+              BranchEnd([])
+              Script(["$game_map.sas_hud.refresh_bars"])
+              Empty([])
+
+            Else([])
+              BreakLoop([])
+              Empty([])
+
+            BranchEnd([])
+            Script(["@n += 1"])
+            Empty([])
+
+          RepeatAbove([])
+          BreakLoop([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  RepeatAbove([])
+  Label(["end"])
+  Empty([])
