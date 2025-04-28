@@ -1,0 +1,800 @@
+Actor 1
+Nickname = ""
+Character Name = "$protag"
+Face Name = "Hero"
+Name = "Anon"
+Description = "A mercenary looking for his way in the Kingdom."
+Note = "<SPDS: 2>"
+
+Actor 2
+Nickname = ""
+Character Name = "$KobP"
+Face Name = "KoboldP"
+Name = "Usnug"
+Description = "A naive kobold with a sense of curiosity that often gets her into trouble. She wants to learn more about human culture."
+Note = "<SPDS: 0>\r\n<starting gear: 73>"
+
+Actor 3
+Nickname = ""
+Character Name = "$Knocker"
+Face Name = "KobH"
+Name = "Ugnuk"
+Description = "A member of the Kobold Princess royal garrison."
+Note = ""
+
+Actor 4
+Nickname = ""
+Character Name = "$DesP"
+Face Name = "DesertP"
+Name = "Sherazad"
+Description = "A princess who has trained in the art of dance and intense fucking sessions. She is constantly on the hunt for men and women to add to her harem."
+Note = "<SPDS: 1>\r\n<starting gear: 75>"
+
+Actor 5
+Nickname = ""
+Character Name = "$HumanP"
+Face Name = "HumanP"
+Name = "Sophia"
+Description = "The official princess of the human race. Born with a silver spoon in her mouth and raised to be a housewife, she longs for a life of adventure."
+Note = "<SPDS: 3>\r\n<starting gear: 74>"
+
+Actor 6
+Nickname = ""
+Character Name = "$golemP"
+Face Name = "GolemP"
+Name = "Galatea"
+Description = "The first golem to be created by others of her kind. Born with an innate sense of wonder, she hopes to learn more about the world."
+Note = "<SPDS: 4>\r\n<starting gear: 84>\r\n"
+
+Actor 7
+Nickname = ""
+Character Name = "$SliP"
+Face Name = "SlimeP"
+Name = "Jellica"
+Description = "A lively princess! Also a slime!"
+Note = "<SPDS: 5>\r\n"
+
+Actor 8
+Nickname = ""
+Character Name = "$InsectPrincess"
+Face Name = "InsectP"
+Name = "Zoe"
+Description = "The future of the Insect Princess had long since been decided for her as the kingdom's broodmother. Her heart, however, yearns for love."
+Note = "<SPDS: 7>\r\n"
+
+Actor 9
+Nickname = ""
+Character Name = "$SkeP"
+Face Name = "SkeletonP"
+Name = "Elaine"
+Description = "A lifetime of death has given this princess a humerus outlook on life. Only someone with a lot of guts can charm this hip maiden."
+Note = "<SPDS: 6>\r\n<starting gear: 85>"
+
+Actor 10
+Nickname = ""
+Character Name = "skelliesarmy"
+Face Name = "Monster1"
+Name = "Skeleton Soldier"
+Description = "Skeleton Princess summoned unit."
+Note = "<no spds>"
+
+Actor 11
+Nickname = ""
+Character Name = "$DraPII"
+Face Name = "DragonPII"
+Name = "Mandrya"
+Description = "A hoarder of knowledge, this great dragon seeks to combine the effects of deities to turn the dragon kingdom into a formidable superpower."
+Note = "<SPDS: 8>\r\n<starting gear: 88>\r\nsuperbia"
+
+Actor 12
+Nickname = ""
+Character Name = "$GhoP"
+Face Name = "GhostP"
+Name = "Yulia"
+Description = "Not a princess' ghost, but rather, the ethereal and mute Ghost Princess. If she ever turns red, run as fast as you can."
+Note = "<SPDS: 9>\r\n<starting gear: 82>"
+
+Actor 13
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = "Slave"
+Description = ""
+Note = "<SPDS: 99>"
+
+Actor 14
+Nickname = ""
+Character Name = "$GoblinP"
+Face Name = "GoblinP"
+Name = "Gobbu"
+Description = "The shortstack princess of slavery and breeding!"
+Note = "<SPDS: 10>\r\n<starting gear: 76>"
+
+Actor 15
+Nickname = ""
+Character Name = "elegroup1"
+Face Name = "GolemP"
+Name = "Synapse Galatea"
+Description = "The mechanical ruler of the golems. It's said to be centuries old."
+Note = ""
+
+Actor 16
+Nickname = ""
+Character Name = "$DogP"
+Face Name = "DogP"
+Name = "Yuki"
+Description = "A Princess who longed to be united with her prince. After latching onto a passing dragon, she departed to a tower and waited for them to arrive."
+Note = "<SPDS: 11>\r\n<starting gear: 80>"
+
+Actor 17
+Nickname = ""
+Character Name = "bees"
+Face Name = "Monster1"
+Name = "store graphic dagger"
+Description = ""
+Note = ""
+
+Actor 18
+Nickname = ""
+Character Name = "$DraP"
+Face Name = "DragonPI"
+Name = "Lacomia"
+Description = "First daughter of the Dragon Queen, aims to hoard every treasure in the Kingdom!"
+Note = "<SPDS: 12>\r\n<starting gear: 87>\r\navarizia"
+
+Actor 19
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = "NPC - Amelie"
+Description = ""
+Note = ""
+
+Actor 20
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = "NPC - Michael"
+Description = ""
+Note = ""
+
+Actor 21
+Nickname = ""
+Character Name = "$MothP"
+Face Name = "MothP"
+Name = "Mashiro"
+Description = "The nosy princess of an insect empire. Her fuzzy wings can spread a fine psychedelic dust that often than not gets her into trouble."
+Note = "<SPDS: 13>\r\n<starting gear: 81>"
+
+Actor 22
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = "NPC - Qhala"
+Description = ""
+Note = ""
+
+Actor 23
+Nickname = ""
+Character Name = "$CatP"
+Face Name = "CatP"
+Name = "Kat"
+Description = "This charming princess stalks the night, hunting giant beasts. She hopes to one day hunt something as large as a dragon."
+Note = "<SPDS: 14>\r\n<starting gear: 83>"
+
+Actor 24
+Nickname = "The Toxic Sloth"
+Character Name = "$DraPIII"
+Face Name = "DragonPIII"
+Name = "Silene"
+Description = "The youngest in a vast line of royal dragons, this princess aims to build her horde high. Unfortunately, she can't stop eating her treasures."
+Note = "<SPDS: 15>\r\n<starting gear: 89>"
+
+Actor 25
+Nickname = ""
+Character Name = "$HolsP"
+Face Name = ""
+Name = "Caroline"
+Description = ""
+Note = "<starting gear: 86>"
+
+Actor 26
+Nickname = ""
+Character Name = "$MouseP"
+Face Name = "MouP"
+Name = "Olivia"
+Description = "A plucky tinkerer, sister of the eleven Hourly Sisters. Watch out for your stuff around her!"
+Note = "<SPDS: 16>\r\n<starting gear: 152>"
+
+Actor 27
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = "NPC - R-005TY"
+Description = ""
+Note = ""
+
+Actor 28
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = "NPC - Mugen"
+Description = ""
+Note = ""
+
+Actor 29
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = "NPC - Niuya"
+Description = ""
+Note = ""
+
+Actor 30
+Nickname = ""
+Character Name = "$RabbitP"
+Face Name = "RabbitP"
+Name = "Fanny"
+Description = "The lonely Princess of the Rabbit Vineyards. Her mother often tells her to get married, but for some reason, suitors are scarce."
+Note = "<SPDS: 17>\r\n<starting gear: 159>"
+
+Actor 31
+Nickname = ""
+Character Name = "$DRIDER"
+Face Name = "DriderP"
+Name = "Marble"
+Description = ""
+Note = "<SPDS: 0>\r\n<starting gear: 256>"
+
+Actor 32
+Nickname = ""
+Character Name = "$HarvestP"
+Face Name = "HarvestP"
+Name = "Anica"
+Description = "The gentle Princess of the Scarecrow Fields. Hides a cute secret."
+Note = "<SPDS: 18>\r\n<starting gear: 231>"
+
+Actor 33
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = "Lamia"
+Description = ""
+Note = ""
+
+Actor 34
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 35
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = "S&D 1"
+Description = ""
+Note = "<SPDS: 35>\r\n<starting gear: 197>"
+
+Actor 36
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = "S&D 2"
+Description = ""
+Note = "<SPDS: 35>\r\n<starting gear: 197>"
+
+Actor 37
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = "S&D 3"
+Description = ""
+Note = "<SPDS: 35>\r\n<starting gear: 197>"
+
+Actor 38
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = "S&D 4"
+Description = ""
+Note = "<SPDS: 35>\r\n<starting gear: 197>"
+
+Actor 39
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = "S&D 5"
+Description = ""
+Note = "<SPDS: 35>\r\n<starting gear: 197>"
+
+Actor 40
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 41
+Nickname = ""
+Character Name = "$WyvP"
+Face Name = "WyvernP"
+Name = "Fiika"
+Description = "An outcast among dragons and humans. Her traumatic past may push her even further from the rest of the Kingdom."
+Note = "<SPDS: 19>\r\n<starting gear: 245>"
+
+Actor 42
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 43
+Nickname = ""
+Character Name = "$FaunP"
+Face Name = "FaunP"
+Name = "Hop"
+Description = ""
+Note = "<starting gear: 272>"
+
+Actor 44
+Nickname = ""
+Character Name = "$ScarecrowP"
+Face Name = "ScarecrowP"
+Name = "Shayla"
+Description = "The not so gentle Princess of the Scarecrow Fields."
+Note = ""
+
+Actor 45
+Nickname = ""
+Character Name = "$Amelie_Walk"
+Face Name = "Amelie"
+Name = "Amelie"
+Description = "A kobold girl, with a paladin's heritage."
+Note = "<starting gear: 276>"
+
+Actor 46
+Nickname = ""
+Character Name = "$FinheadP"
+Face Name = "FinheadP"
+Name = "Perla"
+Description = "The spoiled Princess of the Sea. Lives a sheltered life in the Diamond Seashell."
+Note = "<SPDS: 20>\r\n<starting gear: 305>"
+
+Actor 47
+Nickname = ""
+Character Name = "$FairyP"
+Face Name = "FairyP"
+Name = "Fairy"
+Description = ""
+Note = "<SPDS: 0>\r\n<starting gear: 355>"
+
+Actor 48
+Nickname = ""
+Character Name = "$MermaidP"
+Face Name = "MermaidP"
+Name = "Thetis"
+Description = "Princess of the raiders inhabiting the depths of the Kingdom. Said to be descending for the God of the Sea itself."
+Note = "<SPDS: 21>\r\n<starting gear: 358>"
+
+Actor 49
+Nickname = ""
+Character Name = ""
+Face Name = "HeroChain"
+Name = ""
+Description = ""
+Note = ""
+
+Actor 50
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = "absent actor temp"
+Description = ""
+Note = ""
+
+Actor 51
+Nickname = ""
+Character Name = "$Frog_Princess"
+Face Name = "FrogP"
+Name = "Pipi"
+Description = ""
+Note = "<SPDS: 0>\r\n<starting gear: 365>"
+
+Actor 52
+Nickname = ""
+Character Name = "$DuskNoShad"
+Face Name = "DuskP"
+Name = "Dusky"
+Description = ""
+Note = "<SPDS: 0>"
+
+Actor 53
+Nickname = ""
+Character Name = "$BirdP"
+Face Name = "BirdP"
+Name = "Dorothy"
+Description = "Princess of the only Reign in the Kingdom Above. Serves as the wings of the Queen and watches over the Kingdom's peace."
+Note = "<SPDS: 22>\r\n<starting gear: 386>"
+
+Actor 54
+Nickname = ""
+Character Name = "$OniP"
+Face Name = "OniP"
+Name = "Raja"
+Description = "Warrior Princess of the Oni Reign. Said to have toppled the Queen, once."
+Note = "<SPDS: 23>\r\n<starting gear: 515>"
+
+Actor 55
+Nickname = ""
+Character Name = "$DraPIV"
+Face Name = "DragonPIV"
+Name = "Szpeta"
+Description = ""
+Note = "<SPDS: 24>\r\n<starting gear: 512>"
+
+Actor 56
+Nickname = ""
+Character Name = "$PlantP"
+Face Name = "PlantP"
+Name = "Amarylla"
+Description = "Sprouted one day in the depths of the Kingdom, has recently surges as the ruler of the Plant Reign. Noone knows how."
+Note = "<SPDS: 25>\r\n<starting gear: 580>"
+
+Actor 57
+Nickname = ""
+Character Name = "$ShadowP"
+Face Name = "ShadowP"
+Name = "Celes"
+Description = "Traitor of the Queen's rule over the Kingdom, now returned from her exile."
+Note = "<SPDS: 26>\r\n<starting gear: 760>"
+
+Actor 58
+Nickname = ""
+Character Name = "$DraPV"
+Face Name = "DragonPV"
+Name = "Gat"
+Description = ""
+Note = "<SPDS: 27>\r\n<starting gear: 769>"
+
+Actor 59
+Nickname = ""
+Character Name = "$ToyP"
+Face Name = "ToyP"
+Name = "Harriet™"
+Description = "ASD"
+Note = "<SPDS: 27>\r\n<starting gear: 820>"
+
+Actor 60
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 61
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 62
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 63
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 64
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 65
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 66
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 67
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 68
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 69
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 70
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 71
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 72
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 73
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 74
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 75
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 76
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 77
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 78
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 79
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 80
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 81
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 82
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 83
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 84
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 85
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 86
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 87
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 88
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 89
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 90
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 91
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 92
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 93
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 94
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 95
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 96
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 97
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 98
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 99
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Actor 100
+Nickname = ""
+Character Name = ""
+Face Name = ""
+Name = ""
+Description = ""
+Note = ""
+

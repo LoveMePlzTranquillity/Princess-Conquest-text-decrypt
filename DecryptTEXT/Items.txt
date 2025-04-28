@@ -1,0 +1,4995 @@
+Item 1
+Name = "Зелье"
+Description = "Восстанавливает 150 HP.\r\n"
+Note = "<category: Consumable>\r\n<image: Pot1>"
+
+Item 2
+Name = "Мега зелье"
+Description = "Восстанавливает 300 HP."
+Note = "<category: Consumable>\r\n<image: Pot2>"
+
+Item 3
+Name = "Супер зелье"
+Description = "Восстанавливает 600 HP.\r\n"
+Note = "<category: Consumable>\r\n<image: Pot3>"
+
+Item 4
+Name = "Эликсир"
+Description = "Восстанавливает 100 MP."
+Note = "<category: Consumable>\r\n<image: Elixir>"
+
+Item 5
+Name = "Мега эликсир"
+Description = "Восстанавливает 200 MP."
+Note = "<category: Consumable>\r\n<image: Elixir2>"
+
+Item 6
+Name = "Антидот"
+Description = "Устраняет отравление."
+Note = ""
+
+Item 7
+Name = "Dispel Herb"
+Description = "Treats many status ailments."
+Note = ""
+
+Item 8
+Name = "Full Recover"
+Description = "Restores all HP and MP."
+Note = "<category: Consumable>\r\n<image: FullRec>\r\n"
+
+Item 9
+Name = "Empty Soul Urn"
+Description = "A weird vase, said to be usable to contain the soul of a Princess."
+Note = "<image: Urn>"
+
+Item 10
+Name = "Slime Salts"
+Description = "Slime Princess asked you to acquire these salts with portentous properties."
+Note = "<image: SlimeSalts>"
+
+Item 11
+Name = "Frog Girl Bath Water"
+Description = "Bathing water from Frog Princess' green pond. Has many uses!"
+Note = "<category: Consumable>\r\n<image: FrogWater>"
+
+Item 12
+Name = "Royal Present"
+Description = "Any Princess would love to recieve one of these! Use it to gain 1 Affinity point with her faction!"
+Note = "<image: Gift>"
+
+Item 13
+Name = "Stone"
+Description = "Building and crafting material."
+Note = "<category: Material>"
+
+Item 14
+Name = "Bottled Fairy"
+Description = "It's a Fairy! In a bottle! Recovers 50 HP and 100 MP."
+Note = "<category: Consumable>"
+
+Item 15
+Name = "Spicy Sauce"
+Description = "Adds this to fluid bodies to spice things up!"
+Note = ""
+
+Item 16
+Name = "Swordsman Manual"
+Description = "A strange book with a hard cover. It looks normal, but it's suprisingly easy to read!"
+Note = "<category: Debug>"
+
+Item 17
+Name = "Bottled Butterfly"
+Description = "A butterfly in a jar! Recovers 10 HP and 10 MP."
+Note = "<category: Consumable>"
+
+Item 18
+Name = "Knitting Set"
+Description = "For all your knitting needs, grannies!"
+Note = ""
+
+Item 19
+Name = "Suspicious Envelope"
+Description = "Mysteryous letter you found near your tent at the Camp. It reports the needed informations to meet an informant."
+Note = "<category: Book>"
+
+Item 20
+Name = "Caveau Key"
+Description = "Key to open the passage to the Caveau of the Rattesein."
+Note = "<category: Key>"
+
+Item 21
+Name = "Human Princess Map"
+Description = "The Human Princess left it here.The map indicates a cave near the mountains South of here."
+Note = ""
+
+Item 22
+Name = "Nectar"
+Description = "Delicious nectar, directly from the Insects to YOU."
+Note = "<image: Nectar>"
+
+Item 23
+Name = "Lost Shipment"
+Description = "Deliver it to one of Hammerhead Princess' sharkmen!"
+Note = "<image: SharkPack>"
+
+Item 24
+Name = "The Death Not"
+Description = "Required for the most basic necromancy, gather bones and conjure \"life\"!"
+Note = "<category: Usable>\r\n<image: DNot>"
+
+Item 25
+Name = "Lumpy Leftovers"
+Description = "Leftovers of the Lump on a Stick you used. It could still be useful."
+Note = ""
+
+Item 26
+Name = "Crystal"
+Description = "Shiny material. Has many purposes around the Kingdom!"
+Note = "<category: Material>"
+
+Item 27
+Name = "Power Pearl"
+Description = "Converts an inanimate Princess into a living being."
+Note = ""
+
+Item 28
+Name = "Princess Spring Water"
+Description = "\"When you need to recover moisture, drink Princess Spring Water!\" "
+Note = "<category: Consumable>"
+
+Item 29
+Name = "Lump on a Stick"
+Description = "Fermented and highly nutritious meat of dubious origin. Immediately fills one's belly!"
+Note = "<category: Food>\r\n<category: Dowry>\r\n<image: StickLump>"
+
+Item 30
+Name = "Garbage"
+Description = ""
+Note = ""
+
+Item 31
+Name = "Pair of Red Thread Rings"
+Description = "Anything placed through one ring will emerge from the other."
+Note = "<image: RedRings>\r\n<category: Usable>\r\n<category: Dowry>"
+
+Item 32
+Name = ""
+Description = ""
+Note = ""
+
+Item 33
+Name = "Ghastly Hand Mirror"
+Description = "Those reflected in it have their desires appear from the mirror."
+Note = "<image: GhostMirror>\r\n<category: Usable>\r\n<category: Dowry>"
+
+Item 34
+Name = "Caveau Combination"
+Description = "\"\\V[3437]\""
+Note = "<category: Book>"
+
+Item 35
+Name = "Swirlies"
+Description = ""
+Note = ""
+
+Item 36
+Name = "Purifying Salts"
+Description = "Reduce Corruption by 2."
+Note = "<category: Consumable>\r\n<image: BlessedSalts>"
+
+Item 37
+Name = "Chunga Root"
+Description = ""
+Note = "<image: Chunga>\r\ngift item only"
+
+Item 38
+Name = "Garbage"
+Description = ""
+Note = ""
+
+Item 39
+Name = "Nya Nya Doll"
+Description = ""
+Note = "<image: NyaNya>\r\ngift item only"
+
+Item 40
+Name = "Garbage"
+Description = ""
+Note = ""
+
+Item 41
+Name = "Cinder Ribbon"
+Description = "Produces a perfect copy of the wearer!"
+Note = "<image: CinderRib>\r\n<category: Consumable>\r\n<category: Dowry>"
+
+Item 42
+Name = "Sphinx Key"
+Description = "Needed to enter the highest floors of the Pyramid."
+Note = "<category: Key>"
+
+Item 43
+Name = "Salty Water"
+Description = "Directly from the ocean, now with 50% more salt!"
+Note = ""
+
+Item 44
+Name = ""
+Description = ""
+Note = ""
+
+Item 45
+Name = "Soul Urn"
+Description = "A Princess Urn containing the Soul of a princess. A powerful catalyst, handle with care."
+Note = "<image: UrnF>"
+
+Item 46
+Name = "Swirlies Bag"
+Description = "A bag used to hold any kind of swirly treat inside."
+Note = ""
+
+Item 47
+Name = "Human Princess Key"
+Description = "The key to the room of the Human Princess."
+Note = "<category: Key>"
+
+Item 48
+Name = "Slime Princess Key"
+Description = "The key to the room of the Slime Princess."
+Note = "<category: Key>"
+
+Item 49
+Name = "Golem Princess Key"
+Description = "The key to the room of the Golem Princess."
+Note = "<category: Key>"
+
+Item 50
+Name = "Insect Princess Key"
+Description = "The key to the room of the Insect Princess."
+Note = "<category: Key>"
+
+Item 51
+Name = "Skeleton Princess Key"
+Description = "The key to the room of the Skeleton Princess."
+Note = "<category: Key>"
+
+Item 52
+Name = "Desert Princess Key"
+Description = "The key to the room of the Desert Princess."
+Note = "<category: Key>"
+
+Item 53
+Name = "Ghost Princess Key"
+Description = "The key to the room of the Ghost Princess."
+Note = "<category: Key>"
+
+Item 54
+Name = "Starchy's Key"
+Description = ""
+Note = "<category: Key>"
+
+Item 55
+Name = ""
+Description = ""
+Note = ""
+
+Item 56
+Name = "Goblin's Package"
+Description = "Goblin Princess told you to try and sell this package. You can hear something moving inside!"
+Note = "<category: Usable>\r\n<image: GobPackage>"
+
+Item 57
+Name = "Diana Portfolio"
+Description = "The whole portfolio of the traveling crystal artist, Diana. Lewder than you'd expect!"
+Note = "<category: Usable>"
+
+Item 58
+Name = ""
+Description = ""
+Note = ""
+
+Item 59
+Name = "Blue Shroom Extract"
+Description = "Give it to a Princess and she'll declare war to a random faction, regardless of their diplomacy! "
+Note = ""
+
+Item 60
+Name = "Goblin Princess Key"
+Description = "The key to the room of the Goblin Princess."
+Note = "<category: Key>"
+
+Item 61
+Name = "Gemstone Plug"
+Description = "Kobold Princess' precious gem. \"Can only be removed by a knight\"."
+Note = "<image: Plug>"
+
+Item 62
+Name = "Frozen Cave Key"
+Description = "Key to the Frozen Cave you found in the researcher's tent."
+Note = "<category: Key>"
+
+Item 63
+Name = "Rope"
+Description = "A simple rope. Maybe you can find some use for it."
+Note = ""
+
+Item 64
+Name = "Dog Princess' Room key"
+Description = "Rusty key for Dog Princess' room.\r\n"
+Note = "<category: Key>"
+
+Item 65
+Name = "Reptilian Scale"
+Description = "Scale of a huge reptile. The sand made it pretty and smooth."
+Note = "<image: ReptScale>"
+
+Item 66
+Name = "Reptilian Tooth"
+Description = "A giant snake's tooth. There is no venom canal, but it's as big as an arm."
+Note = "<image: ReptTooth>"
+
+Item 67
+Name = "Queen's Letter"
+Description = "Letter from the Dragon Queen to her daughter, Dragon Princess I."
+Note = "<category: Book>"
+
+Item 68
+Name = "Ghost Veil"
+Description = "Gives voice to thoughts. Gift this veil to a Princess in danger and she will surely accept to come with you."
+Note = "<image: GhostVeil>\r\n<category: Dowry>"
+
+Item 69
+Name = "Garbage"
+Description = ""
+Note = ""
+
+Item 70
+Name = "Fuzzy Nip"
+Description = "Increases \\i[743] Lust by 2 and decreases \\i[742] Love by 1. Everytime you burn one, you end up with 2!"
+Note = "<image: Fuzzy>\r\n<category: Consumable>\r\n<category: Dowry>"
+
+Item 71
+Name = "Queen's Plans"
+Description = "Plans of Dragon Queen regarding the future of the Kingdom."
+Note = "<category: Book>"
+
+Item 72
+Name = "Kobold Diary"
+Description = "A mysterious book that records everything about Kobold Princess!"
+Note = "<category: Diary>\r\n<image: PDiaryKob>"
+
+Item 73
+Name = "Slime Diary"
+Description = "A mysterious book that records everything about Slime Princess!"
+Note = "<category: Diary>\r\n<image: PDiarySli>"
+
+Item 74
+Name = "Human Diary"
+Description = "A mysterious book that records everything about Human Princess!"
+Note = "<category: Diary>\r\n<image: PDiaryHum>"
+
+Item 75
+Name = "Upgrade Item"
+Description = ""
+Note = ""
+
+Item 76
+Name = "Talmud Stone"
+Description = "Rare stone, very important to the Golems. Increases ATK by 1."
+Note = "<category: Consumable>\r\n<image: StoneA>"
+
+Item 77
+Name = "Mem Stone"
+Description = "Rare stone, very important to the Golems. Increases MAT by 1."
+Note = "<category: Consumable>\r\n<image: StoneMA>"
+
+Item 78
+Name = "Tav Stone"
+Description = "Rare stone, very important to the Golems. Increases MDF by 1."
+Note = "<category: Consumable>\r\n<image: StoneMD>"
+
+Item 79
+Name = "Ayin Stone"
+Description = "Rare stone, very important to the Golems. Increases AGI by 1."
+Note = "<category: Consumable>\r\n<image: StoneAG>"
+
+Item 80
+Name = "Golem Diary"
+Description = "A mysterious book that records everything about Golem Princess!"
+Note = "<category: Diary>\r\n<image: PDiaryGol>"
+
+Item 81
+Name = "MYSTERY BOX"
+Description = "What you put in this box will be yours forever!"
+Note = "<image: MYSTERY>\r\n<category: Usable>\r\n<category: Dowry>"
+
+Item 82
+Name = "Queen's Scale"
+Description = "Scale of the Dragon Queen. Dusk Princess needs it to summon the Queen herself!"
+Note = "<image: DQscale>"
+
+Item 83
+Name = "Mysterious Note"
+Description = "Note you found in Dog Princess' room."
+Note = "<category: Book>"
+
+Item 84
+Name = "Goblin Diary"
+Description = "A mysterious book that records everything about Goblin Princess!"
+Note = "<category: Diary>\r\n<image: PDiaryGob>"
+
+Item 85
+Name = "Insect Diary"
+Description = "A mysterious book that records everything about Insect Princess!"
+Note = "<category: Diary>\r\n<image: PDiaryIns>"
+
+Item 86
+Name = "Skeleton Diary"
+Description = "A mysterious book that records everything about Skeleton Princess!"
+Note = "<category: Diary>\r\n<image: PDiarySke>"
+
+Item 87
+Name = "Desert Diary"
+Description = "A mysterious book that records everything about Desert Princess!"
+Note = "<category: Diary>\r\n<image: PDiaryDes>"
+
+Item 88
+Name = "Ghost Diary"
+Description = "A mysterious book that records everything about Ghost Princess!"
+Note = "<category: Diary>\r\n<image: PDiaryGho>"
+
+Item 89
+Name = "Moth Diary"
+Description = "A mysterious book that records everything about Moth Princess!"
+Note = "<category: Diary>\r\n<image: PDiaryMot>"
+
+Item 90
+Name = "Cage Key"
+Description = "An old iron key. Use it to open the cage in the haunted house."
+Note = "<category: Key>"
+
+Item 91
+Name = "Stone of Control"
+Description = "Use this engraved tablet to check your controller's bindings."
+Note = "<category: Debug>"
+
+Item 92
+Name = "Old Paladin's Letter"
+Description = "In this letter the old man, looking for her daughter, writes his own last wills, before departing to a dangerous dungeon."
+Note = ""
+
+Item 93
+Name = "Old Paladin's Relic"
+Description = "A golden relic of the Church. There's an inscription on the back saying \"You'll always be my dearest treasure, even if we don't share the same blood\""
+Note = ""
+
+Item 94
+Name = "Moth Dust"
+Description = "Use it on a Princess at the campsite for guaranteed sex! +1 \\i[758] Corruption"
+Note = "<category: Consumable>\r\n<image: MothDust>"
+
+Item 95
+Name = "Feline's Bell"
+Description = "Swaps \\i[742] Love and \\i[743] Lust."
+Note = "<image: FelineB>\r\n<category: Usable>\r\n<category: Dowry>"
+
+Item 96
+Name = "Pendant (Left half)"
+Description = "The left half of a pendant, probably Dog Princess left it behind. Its uses are still unknown."
+Note = ""
+
+Item 97
+Name = "Pendant (Right half)"
+Description = "The right half of a pendant, you found it in the village's well. Its uses are still unknown."
+Note = ""
+
+Item 98
+Name = "Cat Diary"
+Description = "A mysterious book that records everything about Cat Princess!"
+Note = "<category: Diary>\r\n<image: PDiaryCat>"
+
+Item 99
+Name = "Dog Diary"
+Description = "A mysterious book that records everything about Dog Princess!"
+Note = "<category: Diary>\r\n<image: PDiaryDog>"
+
+Item 100
+Name = "Meat"
+Description = "Goods for the Tavern."
+Note = "<category: Material>"
+
+Item 101
+Name = "Rice"
+Description = "Goods for the Tavern."
+Note = "<category: Material>"
+
+Item 102
+Name = "Milk"
+Description = "Delicious milk. You can find it only in the Maiden's Farm. Restores 450 HP."
+Note = "<category: Food>"
+
+Item 103
+Name = "Kelp"
+Description = "Goods for the Tavern."
+Note = "<category: Material>"
+
+Item 104
+Name = "Roses"
+Description = "Goods for the Tavern."
+Note = "<category: Material>"
+
+Item 105
+Name = "Malt"
+Description = "Goods for the Tavern."
+Note = "<category: Material>"
+
+Item 106
+Name = "Premium Milk"
+Description = "High-quality milk. You can find it only in the Maiden's Farm. Restores 900 HP."
+Note = "<category: Food>"
+
+Item 107
+Name = "Unusual Crystal"
+Description = "A strange crystal. Its surface vibrates slightly at the touch."
+Note = ""
+
+Item 108
+Name = "Stolen Panties"
+Description = "A pair of used panties, stolen from the room of a Princess."
+Note = ""
+
+Item 109
+Name = "Aleph Stone"
+Description = "Rare stone, very important to the Golems. Increases DEF by 1."
+Note = "<category: Consumable>\r\n<image: StoneD>"
+
+Item 110
+Name = "Winning Dobloon"
+Description = ""
+Note = ""
+
+Item 111
+Name = "Affinity"
+Description = ""
+Note = ""
+
+Item 112
+Name = "Affinity"
+Description = ""
+Note = ""
+
+Item 113
+Name = "Affinity"
+Description = ""
+Note = ""
+
+Item 114
+Name = "Affinity"
+Description = ""
+Note = ""
+
+Item 115
+Name = "Affinity"
+Description = ""
+Note = ""
+
+Item 116
+Name = "Affinity"
+Description = ""
+Note = ""
+
+Item 117
+Name = "Affinity"
+Description = ""
+Note = ""
+
+Item 118
+Name = "Affinity"
+Description = ""
+Note = ""
+
+Item 119
+Name = "Affinity"
+Description = ""
+Note = ""
+
+Item 120
+Name = "Affinity"
+Description = ""
+Note = ""
+
+Item 121
+Name = "Affinity"
+Description = ""
+Note = ""
+
+Item 122
+Name = "Affinity"
+Description = ""
+Note = ""
+
+Item 123
+Name = "Affinity"
+Description = ""
+Note = ""
+
+Item 124
+Name = "Affinity"
+Description = ""
+Note = ""
+
+Item 125
+Name = "Affinity"
+Description = ""
+Note = ""
+
+Item 126
+Name = "Affinity"
+Description = ""
+Note = ""
+
+Item 127
+Name = "Affinity"
+Description = ""
+Note = ""
+
+Item 128
+Name = "Affinity"
+Description = ""
+Note = ""
+
+Item 129
+Name = "Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 130
+Name = "Bat Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 131
+Name = "Spider Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 132
+Name = "Scarab Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 133
+Name = "Wolf Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 134
+Name = "Catoble Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 135
+Name = "Cursed Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 136
+Name = "Snake Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 137
+Name = "Horse Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 138
+Name = "Frog Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 139
+Name = "XXX Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 140
+Name = "XXX Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 141
+Name = ""
+Description = ""
+Note = ""
+
+Item 142
+Name = "Human Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 143
+Name = "Slime Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 144
+Name = "Golem Oil"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 145
+Name = "Insect Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 146
+Name = "Bone Marrow"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 147
+Name = "Incubus Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 148
+Name = "Ghost Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 149
+Name = "Gremlin Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 150
+Name = "Moth Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 151
+Name = "Cat Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 152
+Name = "Rabbit Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 153
+Name = "Scarecrow Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 154
+Name = "Merfolk Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 155
+Name = "Avian Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 156
+Name = "Forge Liquid"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 157
+Name = "Bark Syrup"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 158
+Name = "XXX Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 159
+Name = "XXX Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 160
+Name = "XXX Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 161
+Name = "XXX Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 162
+Name = "XXX Sperm"
+Description = "Bottled genetic material! Recovers 5 HP."
+Note = "<category: Consumable>"
+
+Item 163
+Name = ""
+Description = ""
+Note = ""
+
+Item 164
+Name = "Affinity"
+Description = ""
+Note = ""
+
+Item 165
+Name = ""
+Description = ""
+Note = ""
+
+Item 166
+Name = ""
+Description = ""
+Note = ""
+
+Item 167
+Name = ""
+Description = ""
+Note = ""
+
+Item 168
+Name = ""
+Description = ""
+Note = ""
+
+Item 169
+Name = ""
+Description = ""
+Note = ""
+
+Item 170
+Name = "*Monster Mats*"
+Description = ""
+Note = ""
+
+Item 171
+Name = "Razor Wings"
+Description = "Premium material obtained from an Elite Bat!"
+Note = "<category: Material>"
+
+Item 172
+Name = "Glossy Chitin"
+Description = "Premium material obtained from an Elite Scarab!"
+Note = "<category: Material>"
+
+Item 173
+Name = "Molten Rock"
+Description = "Premium material obtained from a Molten Elemental!"
+Note = "<category: Material>"
+
+Item 174
+Name = "Scary Webbing"
+Description = "Premium material obtained from an Elite Webling!"
+Note = "<category: Material>"
+
+Item 175
+Name = "CoinCoin Purse"
+Description = "Premium material obtained from an Elite CoinCoin!"
+Note = "<category: Material>"
+
+Item 176
+Name = "Cucco Tailfeather"
+Description = "Premium material obtained from a King Cucco!"
+Note = "<category: Material>\r\n<image: CuccoFeather>"
+
+Item 177
+Name = "Potus Wig"
+Description = "Premium material obtained from an Hippopotus!"
+Note = "<category: Material>"
+
+Item 178
+Name = "Gemmed Chela"
+Description = "Premium material obtained from a Chiseled Crab!"
+Note = "<category: Material>"
+
+Item 179
+Name = "Cocca Tailfeather"
+Description = "Premium material obtained from a Queen Cocca!"
+Note = "<category: Material>\r\n<image: CoccaFeather>"
+
+Item 180
+Name = "Spika Eye"
+Description = "Premium material obtained from a Spika!"
+Note = "<category: Material>"
+
+Item 181
+Name = "Chonger Eyes"
+Description = "Premium material obtained from an Elite Chonger!"
+Note = "<category: Material>"
+
+Item 182
+Name = "Shiny Core"
+Description = "Premium material obtained from a Crystal Lizard!"
+Note = "<category: Material>"
+
+Item 183
+Name = "Unrooted Bulb"
+Description = "Premium material obtained from a Mandragora!"
+Note = "<category: Material>\r\n<image: MandraBulb>"
+
+Item 184
+Name = "Hungry Bud"
+Description = "Premium material obtained from an Elite Pippin!"
+Note = "<category: Material>\r\n<image: PippinHead>"
+
+Item 185
+Name = "Elite xxx"
+Description = ""
+Note = "<category: Material>"
+
+Item 186
+Name = ""
+Description = ""
+Note = ""
+
+Item 187
+Name = "SPRITE RELOADER"
+Description = "[Debug] Use this item to get back the sprites of your Princesses back to being at least similiar to their former selves!"
+Note = "<category: Debug>"
+
+Item 188
+Name = "PANIC BUTTON"
+Description = "[Debug] Use this item to get back to the Kingdom Map if you're stuck! You will lose some of your Swirlies in the process."
+Note = "<category: Debug>"
+
+Item 189
+Name = "Father's Gift"
+Description = "Gain small fortune for every child."
+Note = "<image: FatherG>\r\nonly for gift"
+
+Item 190
+Name = "Lump Pills"
+Description = "Children are born 3 times faster!"
+Note = "<image: LumpPill>\r\nonly for gift"
+
+Item 191
+Name = "Moonlight Charm"
+Description = "The body part it touches becomes selectively incorporeal."
+Note = "<image: GhostCharm>\r\n<category: Usable>\r\n<category: Dowry>"
+
+Item 192
+Name = "Bodiless Panties (V)"
+Description = "A pair of panties stolen from a Princess' wardrobe! You placed a Moonlight Glass inside them, on the front."
+Note = "<category: Usable>"
+
+Item 193
+Name = "Bodiless Panties (A)"
+Description = "A pair of panties stolen from a Princess' wardrobe! You placed a Moonlight Glass inside them, on the back."
+Note = "<category: Usable>"
+
+Item 194
+Name = "Gremlin Booze"
+Description = "Recovers 40 MP. May change some Princess' form!"
+Note = "<category: Food>"
+
+Item 195
+Name = "Goblin Ale"
+Description = "Recovers 80 MP. May change some Princess' form!"
+Note = "<category: Food>"
+
+Item 196
+Name = "Shamrock Fresh"
+Description = "Recovers 160 MP. Returns being Goblin Ale after a day."
+Note = "<category: Food>"
+
+Item 197
+Name = "Shorty Special"
+Description = "For the rest of the day, you will produce an overflowing amount of seed that can impregnate anyone! Recovers 400 MP."
+Note = "<category: Food>\r\n<image: ShortyS>\r\n<category: Dowry>"
+
+Item 198
+Name = "Tricky Panties (V)"
+Description = "A pair of panties stolen from a Princess' wardrobe! You placed a Red Thread Ring inside them, on the front."
+Note = "<category: Usable>"
+
+Item 199
+Name = "Tricky Panties (A)"
+Description = "A pair of panties stolen from a Princess' wardrobe! You placed a Red Thread Ring inside them, on the back."
+Note = "<category: Usable>"
+
+Item 200
+Name = "Beach Key"
+Description = ""
+Note = "<category: Key>"
+
+Item 201
+Name = "Princess Panties"
+Description = "A pair of panties stolen from a Princess' wardrobe!"
+Note = "<category: Consumable>"
+
+Item 202
+Name = "Sleep Powder"
+Description = "Just a sniff of this powder and you won't be able to wake from your sleep. Handle with caution!"
+Note = "<category: Consumable>\r\n<image: SleepPowder>"
+
+Item 203
+Name = "Testos-X"
+Description = "With its new formula, this aphrodisiac could make anyone fall at your feet! It has many uses, make sure to try it out in many occasions!"
+Note = "<category: Consumable>\r\n<image: TestosX>"
+
+Item 204
+Name = "\"Magia Naturalis\""
+Description = "Between these documents Dragon Princess II found a recipe for a powerful pleasure enhancer."
+Note = "<category: Book>"
+
+Item 205
+Name = "Celery Root"
+Description = "The item Dragon Princess II asked for. Powerful potions can be made with this root."
+Note = ""
+
+Item 206
+Name = "\"Sex and the Humans\""
+Description = "\"Sex and the Humans. Sexual Behavior in the humanoid male\". An adult book sold by Trevor."
+Note = "<category: Book>"
+
+Item 207
+Name = "\"Imps and Fairies\""
+Description = "\"Imps and Fairies XXX\". An adult book sold by Trevor."
+Note = "<category: Book>"
+
+Item 208
+Name = "\"Hot Balls\""
+Description = "\"Hot Balls, story of an half-drake\". An adult book sold by Trevor."
+Note = "<category: Book>"
+
+Item 209
+Name = "W.M. signed document"
+Description = "Document you found in the Dragon Princess' library, describing one of Wizard Master's experiments."
+Note = "<category: Book>"
+
+Item 210
+Name = "Crimson Cube"
+Description = "A powerful red gem, once possession of Dragon Princess I. She left it behind after your fight with her."
+Note = "<image: CrimsCube>\r\n<category: Dowry>"
+
+Item 211
+Name = "Wood"
+Description = "Building material. Sturdy and durable!"
+Note = "<category: Material>"
+
+Item 212
+Name = "Plump Helmets"
+Description = "Kobold rations! Meaty and nutritious mushrooms. Recovers 250 HP."
+Note = "<image: PlumpHelmets>\r\n<category: Food>"
+
+Item 213
+Name = "Key for the Slums"
+Description = "Key for the big house in the Slums."
+Note = "<category: Key>"
+
+Item 214
+Name = "Cog"
+Description = "A golem's cog. It has multiple uses!"
+Note = "<category: Material>\r\n<image: Kog>"
+
+Item 215
+Name = "Mushroom Rootbeer"
+Description = "Only the best distilled mushrooms get to become this delicious kobold finesse! Recovers 400 MP. Grants \\i[681]"
+Note = "<category: Food>"
+
+Item 216
+Name = "Pixie's Bracelet"
+Description = "Fairy Princess' precious armwear! Bring it back to her, she seemed anxious to get it back!"
+Note = ""
+
+Item 217
+Name = "Wish Wisp"
+Description = "This little wisp can grant you any wish! But it's deaf to your requests... \"Careful what you Wish Wisp for!\""
+Note = "<category: Consumable>\r\n<category: Dowry>\r\n<image: WishWisp>"
+
+Item 218
+Name = "Oxytocin Salts"
+Description = "Medicine you can use to shorten the duration of a Princess' pregnancy!"
+Note = "<category: Consumable>\r\n<image: OxSalts>"
+
+Item 219
+Name = "Mouse Diary"
+Description = "A mysterious book that records everything about Mouse Princess!"
+Note = "<category: Diary>\r\n<image: PDiaryMou>"
+
+Item 220
+Name = "Blue Lantern"
+Description = "A strange-looking lantern. It's said to never run out once lit."
+Note = ""
+
+Item 221
+Name = "Mary-Annette's Key"
+Description = "Key for a house in the Slums of the Human Reign."
+Note = "<category: Key>"
+
+Item 222
+Name = "Pink Iron"
+Description = "Costume for Human Princess."
+Note = ""
+
+Item 223
+Name = "Magic Silk"
+Description = "A bundle of Drider Princess' silk. You can shape it up as any other Princess' treasure!"
+Note = "<image: Silk>\r\n<category: Consumable>\r\n<category: Dowry>"
+
+Item 224
+Name = "Silk String"
+Description = "Just a string of Drider Princess silk. Combine more strings to get the whole thing."
+Note = "<category: Material>"
+
+Item 225
+Name = "Honey Syrup"
+Description = "Recovers 800 HP. May change some Princess' form!"
+Note = "<category: Food>\r\n<image: Nectar>"
+
+Item 226
+Name = "Rabbit Diary"
+Description = "A mysterious book that records everything about Rabbit Princess!"
+Note = "<category: Diary>\r\n<image: PDiaryRab>"
+
+Item 227
+Name = "Pocket Power Pearl"
+Description = "Gives LIFE to the inanimate, then cracks."
+Note = "<image: PowerP>\r\n<category: Consumable>\r\n<category: Dowry>"
+
+Item 228
+Name = "Ripe Grape"
+Description = "This grape has ripened perfectly and is ready to be collected!"
+Note = "<category: Material>"
+
+Item 229
+Name = "Immature Grape"
+Description = "This grape wasn't ready, it can't be used this way."
+Note = "<category: Material>"
+
+Item 230
+Name = "Diplomacy"
+Description = ""
+Note = ""
+
+Item 231
+Name = "Diplomacy"
+Description = ""
+Note = ""
+
+Item 232
+Name = "Diplomacy"
+Description = ""
+Note = ""
+
+Item 233
+Name = "Diplomacy"
+Description = ""
+Note = ""
+
+Item 234
+Name = "Diplomacy"
+Description = ""
+Note = ""
+
+Item 235
+Name = "Diplomacy"
+Description = ""
+Note = ""
+
+Item 236
+Name = "Diplomacy"
+Description = ""
+Note = ""
+
+Item 237
+Name = "Diplomacy"
+Description = ""
+Note = ""
+
+Item 238
+Name = "Diplomacy"
+Description = ""
+Note = ""
+
+Item 239
+Name = "Diplomacy"
+Description = ""
+Note = ""
+
+Item 240
+Name = "Diplomacy"
+Description = ""
+Note = ""
+
+Item 241
+Name = "Diplomacy"
+Description = ""
+Note = ""
+
+Item 242
+Name = "Diplomacy"
+Description = ""
+Note = ""
+
+Item 243
+Name = "Diplomacy"
+Description = ""
+Note = ""
+
+Item 244
+Name = "Diplomacy"
+Description = ""
+Note = ""
+
+Item 245
+Name = "Diplomacy"
+Description = ""
+Note = ""
+
+Item 246
+Name = ""
+Description = ""
+Note = ""
+
+Item 247
+Name = ""
+Description = ""
+Note = ""
+
+Item 248
+Name = ""
+Description = ""
+Note = ""
+
+Item 249
+Name = ""
+Description = ""
+Note = ""
+
+Item 250
+Name = ""
+Description = ""
+Note = ""
+
+Item 251
+Name = ""
+Description = ""
+Note = ""
+
+Item 252
+Name = "#DropRate#"
+Description = ""
+Note = ""
+
+Item 253
+Name = ""
+Description = ""
+Note = ""
+
+Item 254
+Name = "Informations"
+Description = ""
+Note = ""
+
+Item 255
+Name = "Iron"
+Description = "Building and crafting material."
+Note = "<category: Material>\r\n<image: Iron>"
+
+Item 256
+Name = "Cucco Beak"
+Description = "Premium material obtained from a King Cucco!"
+Note = "<category: Material>"
+
+Item 257
+Name = "Potus Snout"
+Description = "Premium material obtained from an Hippopotus!"
+Note = "<category: Material>"
+
+Item 258
+Name = "Hard Chela"
+Description = "Premium material obtained from a Chiseled Crab!"
+Note = "<category: Material>"
+
+Item 259
+Name = "Sharp Snakeskin"
+Description = "Premium material obtained from a Giant Tsuchinoko!"
+Note = "<category: Material>"
+
+Item 260
+Name = "Evil Vine"
+Description = "Premium material obtained from the Pumpking!"
+Note = "<category: Material>"
+
+Item 261
+Name = "Spika Flaps"
+Description = "Premium material obtained from a Spika!"
+Note = "<category: Material>"
+
+Item 262
+Name = "Spika Rostrum"
+Description = "Premium material obtained from a Spika!"
+Note = "<category: Material>"
+
+Item 263
+Name = "Mats xxx"
+Description = "Premium material obtained from a"
+Note = "<category: Material>"
+
+Item 264
+Name = "Mats xxx"
+Description = "Premium material obtained from a"
+Note = "<category: Material>"
+
+Item 265
+Name = "Mats xxx"
+Description = "Premium material obtained from a"
+Note = "<category: Material>"
+
+Item 266
+Name = "Mats xxx"
+Description = "Premium material obtained from a"
+Note = "<category: Material>"
+
+Item 267
+Name = "Mats xxx"
+Description = "Premium material obtained from a"
+Note = "<category: Material>"
+
+Item 268
+Name = "Mats xxx"
+Description = "Premium material obtained from a"
+Note = "<category: Material>"
+
+Item 269
+Name = "Mats xxx"
+Description = "Premium material obtained from a"
+Note = "<category: Material>"
+
+Item 270
+Name = "Mats xxx"
+Description = "Premium material obtained from a"
+Note = "<category: Material>"
+
+Item 271
+Name = "Missing Mats"
+Description = ""
+Note = "<category: Material>"
+
+Item 272
+Name = ""
+Description = ""
+Note = ""
+
+Item 273
+Name = ""
+Description = ""
+Note = ""
+
+Item 274
+Name = ""
+Description = ""
+Note = ""
+
+Item 275
+Name = "Cardinal Bell"
+Description = "Just a ring of this bell is enough to change the target's sex!"
+Note = "<image: Cardinal>\r\n<category: Usable>\r\n<category: Dowry>"
+
+Item 276
+Name = "Windmill Key"
+Description = "A tag is strapped to the key. \"Windmill Key\" is written on it."
+Note = "<category: Key>"
+
+Item 277
+Name = "Candy Corn"
+Description = "Recovers 50 HP.\r\n"
+Note = "<image: CandyCorn>\r\n<category: Food>"
+
+Item 278
+Name = "Withered Cornucopia"
+Description = "A horn filled with withered fruits and nuts. Population loss and gains are inverted for the reign holding this!"
+Note = "<image: WithCor>\r\n<category: Dowry>"
+
+Item 279
+Name = "Porgy Meat"
+Description = "\"Keep your companions nice and plump, with Porgy Meat!\". Recovers 1500 HP."
+Note = "<category: Food>\r\n<image: Porgy>"
+
+Item 280
+Name = "Frish"
+Description = "\"It was on the line just a couple hours ago! Demand only the freshest Frish for your companions!\". Recovers 800 HP."
+Note = "<category: Food>"
+
+Item 281
+Name = "Harvest Diary"
+Description = "A mysterious book that records everything about Harvest Princess!"
+Note = "<category: Diary>\r\n<image: PDiaryHar>"
+
+Item 282
+Name = "Wood Plank"
+Description = "A wood plank. Could be used to cross small gaps."
+Note = ""
+
+Item 283
+Name = "Sewers Key"
+Description = "Key needed to enter the sewers of the Northern region."
+Note = "<category: Key>"
+
+Item 284
+Name = "Fire Ivy Leaf"
+Description = "A poisonous leaf lost by Frog Princess in the Sewers. Luckily you've found it before it was too late!"
+Note = "<image: FireIvy>"
+
+Item 285
+Name = "Wyvern Diary"
+Description = "A mysterious book that records everything about Wyvern Princess!"
+Note = "<category: Diary>\r\n<image: PDiaryWyv>"
+
+Item 286
+Name = "Guardian's Key"
+Description = "A tag is strapped to the key. \"Guardian's Key\" is written on it."
+Note = "<category: Key>"
+
+Item 287
+Name = "Kingdom Lewdness +"
+Description = ""
+Note = ""
+
+Item 288
+Name = "Kingdom Lewdness ++"
+Description = ""
+Note = ""
+
+Item 289
+Name = "Lumpy Frish"
+Description = "Your usual Frish, with an unusual lump on its belly."
+Note = "<category: Food>"
+
+Item 290
+Name = "Ripped Fabric"
+Description = "A piece of ripped fabric, belonging to a tunic. The color pattern reminds you of the Church's vests."
+Note = ""
+
+Item 291
+Name = "Ghost Ashes"
+Description = "The burned remains of Ghost Princess! Maybe you can tell how she died by having these remains analyzed?"
+Note = "<image: GhostAshes>"
+
+Item 292
+Name = "Soul Whistle"
+Description = "With a blow of this bone whistle the souls of the dead will lend you their aid."
+Note = "<image: Whistle>\r\n<category: Usable>\r\n<category: Dowry>"
+
+Item 293
+Name = "Slaver Pass"
+Description = "Stamped by Goblin Princess, allows the bearer to partecipate in Slave Auctions!"
+Note = "<image: Contract2>"
+
+Item 294
+Name = "Sea Pass"
+Description = "Stamped by the \"Knights INC.\", allows the bearer to go through customs to the Sea Reign."
+Note = "<image: ContractSea>"
+
+Item 295
+Name = "Bubbly Soap"
+Description = "Just a rub, and your team will be enveloped in a durable bubble. Grants \\i[683] for a time."
+Note = "<image: Soap>\r\n<category: Consumable>"
+
+Item 296
+Name = "Archives Key"
+Description = "Key to the Royal Archives of the Monastery."
+Note = "<category: Key>"
+
+Item 297
+Name = "Queen Praline"
+Description = "Precious, highly nutritious, value in the Queen's Castle. Just a treat anywhere else. Recovers 800 HP and 800 MP."
+Note = "<category: Food>\r\n<image: QueenPraline>"
+
+Item 298
+Name = "Queen's Milk"
+Description = "Priceless beverage, milked directly from the Queen's udders. Mothers-to-be will fight like dragons! Grants +10% to every stat."
+Note = "<category: Food>\r\n<image: QueenMilk>\r\n<category: Dowry>"
+
+Item 299
+Name = "Soft Hair"
+Description = "Hair found in the Hourly Sisters' room."
+Note = ""
+
+Item 300
+Name = "Bones"
+Description = "only q"
+Note = "<category: Bone>"
+
+Item 301
+Name = "Ribcage"
+Description = "A creepy keepsake. Part of a whole skeleton. "
+Note = "<category: Bone>"
+
+Item 302
+Name = "Extra Bone"
+Description = "A creepy keepsake. Part of a whole skeleton. "
+Note = "<category: Bone>"
+
+Item 303
+Name = "Skeletal Arm"
+Description = "A creepy keepsake. Part of a whole skeleton. "
+Note = "<category: Bone>"
+
+Item 304
+Name = "Skull"
+Description = "A creepy keepsake. Part of a whole skeleton. "
+Note = "<category: Bone>"
+
+Item 305
+Name = "Creepy Skull"
+Description = "A creepy keepsake. Part of a whole skeleton. "
+Note = "<category: Bone>"
+
+Item 306
+Name = "Sharp Skull"
+Description = "A creepy keepsake. Part of a whole skeleton. "
+Note = "<category: Bone>"
+
+Item 307
+Name = "Demon Skull"
+Description = "A creepy keepsake. Part of a whole skeleton. "
+Note = "<category: Bone>"
+
+Item 308
+Name = "Bone Horn"
+Description = "A creepy keepsake. Part of a whole skeleton. "
+Note = "<category: Bone>"
+
+Item 309
+Name = "Neat Skull"
+Description = "A creepy keepsake. Part of a whole skeleton. "
+Note = "<category: Bone>"
+
+Item 310
+Name = "XXX Bone"
+Description = "A creepy keepsake. Part of a whole skeleton. "
+Note = "<category: Bone>"
+
+Item 311
+Name = "XXX Bone"
+Description = "A creepy keepsake. Part of a whole skeleton. "
+Note = "<category: Bone>"
+
+Item 312
+Name = "XXX Bone"
+Description = "A creepy keepsake. Part of a whole skeleton. "
+Note = "<category: Bone>"
+
+Item 313
+Name = "XXX Bone"
+Description = "A creepy keepsake. Part of a whole skeleton. "
+Note = "<category: Bone>"
+
+Item 314
+Name = "XXX Bone"
+Description = "A creepy keepsake. Part of a whole skeleton. "
+Note = "<category: Bone>"
+
+Item 315
+Name = "XXX Bone"
+Description = "A creepy keepsake. Part of a whole skeleton. "
+Note = "<category: Bone>"
+
+Item 316
+Name = "Prayer: Final Goodbye"
+Description = "From the series \"Prayers for Every Need\": a final chance to say goodbye. Restores a little HPs upon death."
+Note = "<image: ContractHoly>\r\n<category: Consumable>"
+
+Item 317
+Name = "Prayer: Lesser Dragon"
+Description = "From the series \"Prayers for Every Need\": this lesser transformation prayer will trasform one into a \"lesser dragon\"."
+Note = "<image: ContractHoly>\r\n<category: Consumable>"
+
+Item 318
+Name = "Prayer: Life Breath"
+Description = "From the series \"Prayers for Every Need\": chanting this prayer will increase the Kingdom Life Force by 20."
+Note = "<image: ContractHoly>\r\n<category: Consumable>"
+
+Item 319
+Name = "Prayer: Purify"
+Description = "From the series \"Prayers for Every Need\": chanting this prayer will reduce one's own Corruption to 0."
+Note = "<image: ContractHoly>\r\n<category: Consumable>"
+
+Item 320
+Name = "Pantheon Key"
+Description = "Key to the Queen's Spire Pantheon."
+Note = "<category: Key>"
+
+Item 321
+Name = "Sharkfin Grog"
+Description = "Recovers 40 MP. Grants \\i[681]"
+Note = "<category: Food>"
+
+Item 322
+Name = "Eel Bumbo"
+Description = "Recovers 80 MP. Grants \\i[681]"
+Note = "<category: Food>"
+
+Item 323
+Name = "Pirate's Kiss"
+Description = "Recovers 160 MP. Grants \\i[681]"
+Note = "<category: Food>"
+
+Item 324
+Name = "Bank Book"
+Description = "This piece of paper summarizes your bank account at the Rattesein. You have \\v[3899] \\G stored in their safe."
+Note = "<category: Book>"
+
+Item 325
+Name = "Study Key"
+Description = "Key to Dusk Princess' study."
+Note = "<category: Key>"
+
+Item 326
+Name = "Finhead Diary"
+Description = "A mysterious book that records everything about Finhead Princess!"
+Note = "<category: Diary>\r\n<image: PDiaryFin>"
+
+Item 327
+Name = "Candy Bar"
+Description = "Processed candies! Gives a lot of \\i[626] Swirlies when used!"
+Note = "<image: CandyBar>\r\n<category: Consumable>"
+
+Item 328
+Name = "Zpeedy"
+Description = "This precious mouse companion will automatically send the \\i[626] Swirlies in excess to your account at the \"Rattesein\"!"
+Note = "<image: ZPEEDY>"
+
+Item 329
+Name = "S.C.R.A.B."
+Description = "Jeweled crab-shaped brush with magical bristles! Increases \\i[671] Wealth by 1 but breaks upon use. \"S.C.R.A.B. it!\""
+Note = "<image: SCRAB>\r\n<category: Usable>\r\n<category: Dowry>"
+
+Item 330
+Name = "Kraken Skewer"
+Description = "Chewy and tasty. Recovers 700 HP."
+Note = "<category: Food>\r\n<image: KrakenSk>"
+
+Item 331
+Name = "Cursed Porgy Meat"
+Description = "This piece of meat doesn't seem edible. A strong Porgy scent exudes from it."
+Note = "<image: PorgyCurse>\r\n<category: Consumable>"
+
+Item 332
+Name = "Bumpkin Seeds"
+Description = "The seeds entrusted you by the Bumpkins that remained faithful to Harvest Princess. They smell good. +25% M.ATK and AGI."
+Note = "<category: Consumable>"
+
+Item 333
+Name = "Cosmic Shard"
+Description = "Shard of the \\i[732] Cosmic Shackles."
+Note = ""
+
+Item 334
+Name = "Empty Water Flask"
+Description = "Flask needed to the finheads to examine water around the Kingdom. Use it underwater to fill it."
+Note = "<category: Usable>"
+
+Item 335
+Name = "Filled Water Flask"
+Description = "Flask needed to the finheads to examine water around the Kingdom. It's full now."
+Note = ""
+
+Item 336
+Name = "Bakeneko Spirit"
+Description = "\\i[746] \"Nyaa! Get me out of here!!\""
+Note = ""
+
+Item 337
+Name = "Chateau Lapin"
+Description = "Premium wine from Rabbit Princess' vineyards. Recovers 500 MP. Grants \\i[681]"
+Note = "<category: Food>"
+
+Item 338
+Name = "Pumpkin Pie"
+Description = "Spiced dessert with a pumpkin filling. Now with 30% less Bumpkins! Recovers 1200 HP."
+Note = "<category: Food>"
+
+Item 339
+Name = "Spooky Sushi"
+Description = "Said to be inhabited by the souls of the fishes it's made of. Loathed by Finheads! Recovers 350 HP."
+Note = "<category: Food>"
+
+Item 340
+Name = "Rabbit Sangaree"
+Description = "Party drink made from wine that every rabbit loves! Recovers 85 MP. Grants \\i[681]"
+Note = "<category: Food>"
+
+Item 341
+Name = "Chocolate Whoopie-Pie"
+Description = "Creamy filling between two delicious chocolate biscuits. It's loved by rodents! Recovers 800 HP."
+Note = "<category: Food>"
+
+Item 342
+Name = "Strawberry Creampie"
+Description = "This fabled cake is light and refreshing, but there's more to it! Recovers 1000 HP and 100 MP. Increases \\i[743] Lust by 1."
+Note = "<category: Food>"
+
+Item 343
+Name = "Dippy Fries"
+Description = "Unrivalled crunchiness and taste, to serve with sauces! OIL RULES! Recovers 800 HP and 100 MP."
+Note = "<category: Food>\r\n<image: Fries>"
+
+Item 344
+Name = "Chilled Wisps"
+Description = "Wisp-flavoured ice cream the moths and larvae love to lick! Recovers 560 HP. Grants \\i[685]"
+Note = "<category: Food>\r\n<image: IcedWisp>"
+
+Item 345
+Name = "Spicy Mansaf"
+Description = "Spicy lamb meat with rice! To sweat cools off the body, making the Mansaf a popular dish between nomads crossing the desert. Recovers 700 HP. Grants \\i[685]"
+Note = "<category: Food>\r\n<image: Mansaf>"
+
+Item 346
+Name = "Oeuf a la Cucco"
+Description = "Low calory egg of a (female) King Cucco! Recovers 700 HP."
+Note = "<category: Food>\r\n<image: BoilEgg>"
+
+Item 347
+Name = "Cucco Drumstick"
+Description = "Low calory leg of a wild King Cucco. Roasted and seasoned with mild spices! Recovers 1400 HP."
+Note = "<category: Food>\r\n<image: CookCuck>"
+
+Item 348
+Name = "Beefy Baked Cucco"
+Description = "Oven-baked Cucco's breast. A light and very nutritious meal, low on fats and high on proteins! Recovers 2000 HP."
+Note = "<category: Food>\r\n<image: OvenCuck>"
+
+Item 349
+Name = "Flow-RDR"
+Description = "This strange beeping device seems to be displaying the area you're in. There's a button you can press on top of it."
+Note = "<image: Radar>\r\n<category: Usable>"
+
+Item 350
+Name = "Acerola Syrup"
+Description = "Recovers 750 MP. Grants +5 Life Force."
+Note = "<image: AceroSyrup>\r\n<category: Food>"
+
+Item 351
+Name = "Mermaid Diary"
+Description = "A mysterious book that records everything about Mermaid Princess!"
+Note = "<category: Diary>\r\n<image: PDiaryMer>"
+
+Item 352
+Name = "Mermaid Tear"
+Description = "A luminous pearl from the depths of the Kingdom. Its light faintly illumines your surroundings."
+Note = "<image: MerTear>"
+
+Item 353
+Name = "Selkie Harp"
+Description = "Timeless treasure of the Abyss."
+Note = "<image: SelkieHarp>\r\n<category: Usable>\r\n<category: Dowry>"
+
+Item 354
+Name = "Frenzy Anemone"
+Description = "Deep-sea anemone, secret war tonic of the merfolk! Lose 50 HPs, Reduces HPs by 25%, increases Crit Chance by 25%."
+Note = "<image: Anemone>\r\n<category: Food>\r\n"
+
+Item 355
+Name = "Strange Barnacle"
+Description = "Strange shell you've found under the sand of the Spika's Nest. May be a trace left by an old acquaintance of Mermaid Princess."
+Note = ""
+
+Item 356
+Name = "Kelp Sandwich"
+Description = "Bland sandwich made of seaweed and damp bread. Recovers 200 HP."
+Note = "<image: KelpWhich>\r\n<category: Food>\r\n"
+
+Item 357
+Name = "Hequet Idol"
+Description = "Frog idol of fertility. Her cult was supposedly lost since ancient times."
+Note = "<image: Hequet>"
+
+Item 358
+Name = "Spika Lure"
+Description = "Most prized shrimp of the Abyss, said to be the Spika's favorite. No squid could resist it!"
+Note = "<image: Bait>"
+
+Item 359
+Name = "Chefcargot"
+Description = "High calory delicacy prepared by the famous chef, Snail Princess! Its origins are unknown... Recovers 700 HP."
+Note = "<image: Escargot>\r\n<category: Food>"
+
+Item 360
+Name = "Foie de Potus"
+Description = "High-calory delicacy prepared by the traveling chef Princess! 100% Hippopotus Fat. Recovers 1400 HP."
+Note = "<image: Foiegras>\r\n<category: Food>"
+
+Item 361
+Name = "Stuffed Eclair"
+Description = "High calory delicacy prepared by the famous chef, Snail Princess! Only the freshest Queen Cocca eggs and holstaur milk are used! Recovers 2000 HP."
+Note = "<image: Eclair>\r\n<category: Food>"
+
+Item 362
+Name = "Dim Basalt Piece"
+Description = "Unknown piece of an alien rock, seems to be a part of something larger."
+Note = "<image: DCrownI>\r\n<category: Usable>"
+
+Item 363
+Name = "Dim Feldspar Piece"
+Description = "Unknown piece of an alien rock, seems to be a part of something larger."
+Note = "<image: DCrownII>\r\n<category: Usable>"
+
+Item 364
+Name = "Dim Pyroxene Piece"
+Description = "Unknown piece of an alien rock, seems to be a part of something larger."
+Note = "<image: DCrownIII>\r\n<category: Usable>"
+
+Item 365
+Name = "Cat Pirujo"
+Description = "Simple bread made by the Felid Bakeries. Recovers 800 HPs."
+Note = "<image: CatPirujo>\r\n<category: Food>\r\n"
+
+Item 366
+Name = "Cat Concha"
+Description = "Fancy sweet bread made by the Felid Bakeries. Recovers 1600 HPs."
+Note = "<image: CatConcha>\r\n<category: Food>\r\n"
+
+Item 367
+Name = "Cat Bun"
+Description = "Adorable and sweet bread with various stuffings made by the Felid Bakeries. Recovers 1600 HPs. Increases a random stat by 1."
+Note = "<image: CatBun>\r\n<category: Food>\r\n"
+
+Item 368
+Name = ""
+Description = ""
+Note = ""
+
+Item 369
+Name = ""
+Description = ""
+Note = ""
+
+Item 370
+Name = "Aleph Crystal"
+Description = "Alchemically improved Golem Stone. Increases DEF by 2."
+Note = "<category: Consumable>\r\n<image: StoneD+>"
+
+Item 371
+Name = "Talmud Crystal"
+Description = "Alchemically improved Golem Stone. Increases ATK by 2."
+Note = "<category: Consumable>\r\n<image: StoneA+>"
+
+Item 372
+Name = "Mem Crystal"
+Description = "Alchemically improved Golem Stone. Increases MAT by 2."
+Note = "<category: Consumable>\r\n<image: StoneMA+>"
+
+Item 373
+Name = "Tav Crystal"
+Description = "Alchemically improved Golem Stone. Increases MDF by 2."
+Note = "<category: Consumable>\r\n<image: StoneMD+>"
+
+Item 374
+Name = "Ayin Crystal"
+Description = "Alchemically improved Golem Stone. Increases AGI by 2."
+Note = "<category: Consumable>\r\n<image: StoneAG+>"
+
+Item 375
+Name = "Bird Diary"
+Description = "A mysterious book that records everything about Bird Princess!"
+Note = "<category: Diary>\r\n<image: PDiaryBir>"
+
+Item 376
+Name = "GALLERY TELEPORT"
+Description = "[Debug] Use this item to teleport to the animation gallery and back! Can only be used in the Tavern or outside Babs Hut!"
+Note = "<category: Debug>"
+
+Item 377
+Name = "Catalyst Dagger"
+Description = "Weapon retrieved from the cursed world inside Ghost Princess' Manor. Cornerstone of the ritual to lift her Curse."
+Note = "<category: Key>"
+
+Item 378
+Name = "\"Ashes and Exorcists\""
+Description = "\"Ashes and Exorcists: DIY Divination and Death Dealing 4 Dummies\""
+Note = "<category: Book>"
+
+Item 379
+Name = "Buddy's Bud"
+Description = "Ready to sprout! Bud of one of Pruna's lackeys. Hide it in a Princess' room and see what happens!"
+Note = ""
+
+Item 380
+Name = "Flower Cupcake"
+Description = "Tasty muffin made with buttercream and flowers. Recovers 800 HP."
+Note = "<image: FlowerMuff>\r\n<category: Food>"
+
+Item 381
+Name = "Floral Tea"
+Description = "Refreshing and elegant tea made with a bouquet of flowers! Recovers 200 MP. Grants \\i[682]"
+Note = "<image: FlowerTea>\r\n<category: Food>\r\n"
+
+Item 382
+Name = "Fried Zucchini"
+Description = "High calory deep-fried zucchini flower! Crispy and oily! The king of veggies! Recovers 1600 HP."
+Note = "<image: Zucchini>\r\n<category: Food>\r\n"
+
+Item 383
+Name = "Rose Note"
+Description = "Latest piece of intel regarding \\v[4136]."
+Note = "<image: RoseNote>\r\n<category: Book>"
+
+Item 384
+Name = "Bulbous Root"
+Description = ""
+Note = "gift only"
+
+Item 385
+Name = "Avocloudo"
+Description = "Delicious oily fruit that only grows in the Kingdom Above. Said to be the Queen's favourite. Recovers 700 HPs and 50 MPs."
+Note = "<image: SkyCado>\r\n<category: Food>\r\n"
+
+Item 386
+Name = "Dragon Breath"
+Description = "Icy cold dessert. You will be breathing steam, like a dragon! Recovers 100 MPs and damages for 50 HPs. Grants \\i[685]"
+Note = "<image: DragonBreath>\r\n<category: Food>\r\n"
+
+Item 387
+Name = "Migraine Medication"
+Description = "..."
+Note = "<image: MigPills>\r\n<category: Key>"
+
+Item 388
+Name = "Bird Stamp"
+Description = "Use it to STAMP important documents in Bird Princess' Launchpad and protect the Kingdom!"
+Note = "<category: Material>\r\n<image: BirdStamp>"
+
+Item 389
+Name = ""
+Description = ""
+Note = ""
+
+Item 390
+Name = "Peacock Fan"
+Description = "This large fan can be used to drive rainy clouds away. Sun will shine again, but raise \\i[759]Kingdom Lewdness by 1."
+Note = "<image: PeacockFan>\r\n<category: Usable>"
+
+Item 391
+Name = "Black Cat Jar"
+Description = "A mysterious power is enclosed in this jar, it would be advisable not to break it."
+Note = "<image: BlackJar>\r\n<category: Usable>"
+
+Item 392
+Name = "Silver Spoon"
+Description = ""
+Note = "gift only"
+
+Item 393
+Name = "Prison Key"
+Description = "Key to the Gazer Prison's administration office."
+Note = "<category: Key>"
+
+Item 394
+Name = "Queen's Roar"
+Description = "Dragon Queen and Bird Princess power combined! Pacify Reigns with the might of the Ruler!"
+Note = "<image: PeaceHorn>\r\n<category: Usable>\r\n<category: Dowry>"
+
+Item 395
+Name = "Oni Diary"
+Description = "A mysterious book that records everything about Oni Princess!"
+Note = "<category: Diary>\r\n<image: PDiaryOni>"
+
+Item 396
+Name = "Prayer: Cleanse"
+Description = "From the series \"Prayers for Every Need\": chanting this prayer will reduce the Kingdom Lewdness by 20."
+Note = "<image: ContractHoly>\r\n<category: Consumable>"
+
+Item 397
+Name = "Golden Voucher"
+Description = "Can be redeemed in Faun's Tavern to use its services for free! 1 Coupon, 1 use!"
+Note = "<image: Voucher>"
+
+Item 398
+Name = "Cauldron Pin"
+Description = "Transforming energy condensed! The witch Babs will be able to transform in anything if you have this on you!"
+Note = "<image: CauldronPin>"
+
+Item 399
+Name = "Bastardoni"
+Description = "Huge and tasty fruit once you get rid of its thorns. Recovers 1600 HPs."
+Note = "<image: Bastardoni>\r\n<category: Food>\r\n"
+
+Item 400
+Name = "Warlust Beans"
+Description = "Hardly edible. It's said the power of Oni lies within these peas. Lose 50 HP, reduces defenses by 25%, increase ATK by 25%."
+Note = "<image: WarlustBeans>\r\n<category: Food>\r\n"
+
+Item 401
+Name = "Bloodbath"
+Description = "Powerful potion and reagent of the Oni people. Lose 500 HP. Surviving grants +3 ATK/-1 DEF or +3 MAT/-1 MDF."
+Note = "<image: BloodBath>\r\n<category: Food>\r\n"
+
+Item 402
+Name = "Blood Iron"
+Description = "Premium building and crafting material."
+Note = "<category: Material>\r\n<image: BloodIron>"
+
+Item 403
+Name = "ForgeScene"
+Description = ""
+Note = "Scene Only"
+
+Item 404
+Name = "Champion Title"
+Description = ""
+Note = "Scene Only"
+
+Item 405
+Name = "Royal Jug"
+Description = "Everlasting jug of strong oni mead. Grants \\i[681]"
+Note = "<image: RoyalJug>\r\n<category: Food>\r\n"
+
+Item 406
+Name = "Demon Gauntlet"
+Description = ""
+Note = "<image: DemonGauntlet>\r\ngift item only"
+
+Item 407
+Name = "Iridea"
+Description = "Brightest rock of the Kingdom's seas, but not very precious. Its uses are unknown."
+Note = "<image: Iridea>\r\n<category: Consumable>\r\n"
+
+Item 408
+Name = "Tsun Ribbon"
+Description = "Gothic deep red satin bow. Changes your Progeny Skill to \"Tsundere\"."
+Note = "<iamge: TsundereRibbon>\r\n<category: Consumable>"
+
+Item 409
+Name = "Counter Key"
+Description = "Key found around Faun's Tavern. Maybe it opens one of the rooms upstairs...?"
+Note = "<category: Key>"
+
+Item 410
+Name = "Pristine Shell"
+Description = "Premium building and crafting material."
+Note = "<category: Material>\r\n<image: ShellTear>"
+
+Item 411
+Name = "Weird Puzzle"
+Description = "The pieces seem to rotate... is it some kind of toy? Maybe someone would be interested in it..."
+Note = "<image: PyrToy>"
+
+Item 412
+Name = "Dried Bulb"
+Description = "Worthless crafting material."
+Note = "<category: Material>\r\n<image: DriedBulb>"
+
+Item 413
+Name = "Smoked Ashes"
+Description = "Worthless crafting material."
+Note = "<category: Material>\r\n<image: SmokedAsh>"
+
+Item 414
+Name = "Abandoned Shell"
+Description = "Worthless crafting material."
+Note = "<category: Material>\r\n<image: AbandShell>"
+
+Item 415
+Name = "A look through the Glass"
+Description = "???"
+Note = "<event only>"
+
+Item 416
+Name = "Fishnet Cutter"
+Description = "Useful to get rid of nasty fishing line and... spiderweb?! Loses its sharpness after a single use!"
+Note = "<category: Material>\r\n<image: NetScissor>"
+
+Item 417
+Name = "Dark Ribbon"
+Description = "Delicate dark ribbon. A bit gloomy..."
+Note = "<category: Material>\r\n<image: DarkRibbon>"
+
+Item 418
+Name = ""
+Description = ""
+Note = ""
+
+Item 419
+Name = ""
+Description = ""
+Note = ""
+
+Item 420
+Name = "Plant Diary"
+Description = "A mysterious book that records everything about Plant Princess!"
+Note = "<category: Diary>\r\n<image: PDiaryPla>"
+
+Item 421
+Name = "Radish Jar"
+Description = "Freshly pickled from consenting Plant people. It's good for them, it's good for you. Recovers 800 HP."
+Note = "<image: RadishJar>\r\n<category: Food>\r\n"
+
+Item 422
+Name = "Leaf Pate"
+Description = "Creamy paste of shade leaves. Considered a delicacy in the whole Kingdom. Recovers 1600 HP and 100 MP."
+Note = "<image: LeafPate>\r\n<category: Food>\r\n"
+
+Item 423
+Name = "Golden Formula"
+Description = "Restores all HP and MP. Increase Plant and Slime fertility for the day."
+Note = "<image: GoldFert>\r\n<category: Food>\r\n"
+
+Item 424
+Name = "Fleeting Zeal"
+Description = "Alchemical reagent. Use it to craft stat-increasing stones."
+Note = "<category: Material>\r\n<image: LesserEssence>"
+
+Item 425
+Name = "Solid Zeal"
+Description = "Powerful alchemical reagent. Use it to craft stat-increasing stones."
+Note = "<category: Material>\r\n<image: AmplifiedEssence>"
+
+Item 426
+Name = "EX Potion Lv1"
+Description = "Potion obtained from Zeal processing. Increases ALL stats by 2. Increase max HP/MP by 10."
+Note = "<category: Consumable>\r\n<image: EXPot1>"
+
+Item 427
+Name = "EX Potion Lv2"
+Description = "Potion obtained from Zeal processing. Increases ALL stats by 5. Increase max HP/MP by 25."
+Note = "<category: Consumable>\r\n<image: EXPot2>"
+
+Item 428
+Name = "EX Potion Lv3"
+Description = "Potion obtained from Zeal processing. Increases ALL stats by 10. Increase max HP/MP by 50."
+Note = "<category: Consumable>\r\n<image: EXPot3>"
+
+Item 429
+Name = "Alchemist Ring"
+Description = "Conjured Ring. Increase chance of better yields and transmutations."
+Note = "<image: AlcheRing>"
+
+Item 430
+Name = "Zeal Tablet"
+Description = "Conjured drug. Zeal energy protects from unwanted \"visitors\". Grants \\i[1229]"
+Note = "<category: Consumable>\r\n<image: ZealTablet>"
+
+Item 431
+Name = "Zeal Pills"
+Description = "Conjured drug. Zeal energy increases battle prowess. Grants \\i[1231]"
+Note = "<category: Consumable>\r\n<image: ZealPills>"
+
+Item 432
+Name = "Replica Potion"
+Description = "Long lost Slime Alchemy. Conjure faithful replicas of one's equipment."
+Note = "<category: Consumable>\r\n<image: ClonePot>"
+
+Item 433
+Name = "LevelUp Potion"
+Description = "Long lost Human Alchemy. Grow your companions with ease! Raise Level by 1."
+Note = "<category: Consumable>\r\n<image: LevelPot>"
+
+Item 434
+Name = "Zeal Liquor"
+Description = "Long lost Goblin Alchemy. Restores all MP. Grants \\i[681] and \\i[682]"
+Note = "<category: Consumable>\r\n<image: ZealLiquor>"
+
+Item 435
+Name = "Formula: Replica Potion"
+Description = "Secret Alchemy formula, allows to conjure \\i[1243] Replica Potion."
+Note = "<image: Formula>\r\n<category: Book>"
+
+Item 436
+Name = "Formula: LevelUp Potion"
+Description = "Secret Alchemy formula, allows to conjure \\i[1244] LevelUp Potion."
+Note = "<image: Formula>\r\n<category: Book>"
+
+Item 437
+Name = "Formula: Zeal Liquor"
+Description = "Secret Alchemy formula, allows to conjure \\i[1245] Zeal Liquor."
+Note = "<image: Formula>\r\n<category: Book>"
+
+Item 438
+Name = "Formula: Golem Fuel"
+Description = "Secret Alchemy formula, allows to conjure \\i[1248] Golem Fuel."
+Note = "<image: Formula>\r\n<category: Book>"
+
+Item 439
+Name = "Formula: Undigested Bauble"
+Description = "Secret Alchemy formula, allows to conjure \\i[1249] Undigested Bauble."
+Note = "<image: Formula>\r\n<category: Book>"
+
+Item 440
+Name = "Formula: Transmute Potion"
+Description = "Secret Alchemy formula, allows to conjure \\i[1250] Transmute Potion."
+Note = "<image: Formula>\r\n<category: Book>"
+
+Item 441
+Name = "Formula: Spilled Sand"
+Description = "Secret Alchemy formula, allows to conjure \\i[1251] Spilled Sand."
+Note = "<image: Formula>\r\n<category: Book>"
+
+Item 442
+Name = "Formula: Banshee Wail"
+Description = "Secret Alchemy formula, allows to conjure \\i[1252] Banshee Wail."
+Note = "<image: Formula>\r\n<category: Book>"
+
+Item 443
+Name = "Formula: Death Potion"
+Description = "Secret Alchemy formula, allows to conjure \\i[1253] Death Potion."
+Note = "<image: Formula>\r\n<category: Book>"
+
+Item 444
+Name = "Formula: Cat's Eye"
+Description = "Secret Alchemy formula, allows to conjure \\i[1254] Cat's Eye."
+Note = "<image: Formula>\r\n<category: Book>"
+
+Item 445
+Name = "Formula: Enthralling Parfume"
+Description = "Secret Alchemy formula, allows to conjure \\i[1255] Enthralling Parfume."
+Note = "<image: Formula>\r\n<category: Book>"
+
+Item 446
+Name = "Formula: Love Potion"
+Description = "Secret Alchemy formula, allows to conjure \\i[1256] Love Potion."
+Note = "<image: Formula>\r\n<category: Book>"
+
+Item 447
+Name = "Formula: Mida Potion"
+Description = "Secret Alchemy formula, allows to conjure \\i[1257] Mida Potion."
+Note = "<image: Formula>\r\n<category: Book>"
+
+Item 448
+Name = "Formula: Merk Spawn"
+Description = "Secret Alchemy formula, allows to conjure \\i[1258] Merk Spawn."
+Note = "<image: Formula>\r\n<category: Book>"
+
+Item 449
+Name = "Formula: Raptor Claw"
+Description = "Secret Alchemy formula, allows to conjure \\i[1259] Raptor Claw."
+Note = "<image: Formula>\r\n<category: Book>"
+
+Item 450
+Name = "Formula: Vitality Brew"
+Description = "Secret Alchemy formula, allows to conjure \\i[1260] Vitality Brew."
+Note = "<image: Formula>\r\n<category: Book>"
+
+Item 451
+Name = "Formula: Artichoke Potion"
+Description = "Secret Alchemy formula, allows to conjure \\i[1261] Artichoke Potion."
+Note = "<image: Formula>\r\n<category: Book>"
+
+Item 452
+Name = "Formula: Penumbra Flask"
+Description = "Secret Alchemy formula, allows to conjure \\i[1483] Penumbra Flask."
+Note = "<image: Formula>\r\n<category: Book>"
+
+Item 453
+Name = "Formula: ###"
+Description = "Secret Alchemy formula, allows to conjure \\i[] XXX Potion."
+Note = "<image: Formula>\r\n<category: Book>"
+
+Item 454
+Name = "Formula: ###"
+Description = "Secret Alchemy formula, allows to conjure \\i[] XXX Potion."
+Note = "<image: Formula>\r\n<category: Book>"
+
+Item 455
+Name = "Golem Fuel"
+Description = "Long lost Golem Alchemy. Permanently increase an undead's Agility by 20."
+Note = "<category: Consumable>\r\n<image: GolemFuel>"
+
+Item 456
+Name = "Undigested Bauble"
+Description = "Long lost Insect Alchemy. Immediately fills one's belly! Upon use, transforms into a random dowry."
+Note = "<category: Food>\r\n<image: ConjLump>"
+
+Item 457
+Name = "Transmute Potion"
+Description = "Long lost Skeleton Alchemy. The user takes the shape of a monster. Grants \\i[1262]"
+Note = "<category: Consumable>\r\n<image: TransmutePot>"
+
+Item 458
+Name = "Spilled Sand"
+Description = "Long lost Desert Alchemy. Time seems to stop... for a while."
+Note = "<category: Consumable>\r\n<image: BrokeTime>"
+
+Item 459
+Name = "Banshee Wail"
+Description = "Long lost Ghost Alchemy. Wakes up the dead! Unleash a ghastly wail that heavily damages every enemy in the room."
+Note = "<category: Consumable>\r\n<image: GhostWail>"
+
+Item 460
+Name = "Death Potion"
+Description = "Long lost Moth Alchemy. The target... dies?! Also lower Kingdom Life Force by 10 (or 20 if used on Princesses)"
+Note = "<category: Consumable>\r\n<image: DeathPot>"
+
+Item 461
+Name = "Cat's Eye"
+Description = "Long lost Cat Alchemy. The user can see in darkness as in daylight. Grants \\i[1263]"
+Note = "<category: Consumable>\r\n<image: CatsEye>"
+
+Item 462
+Name = "Enthralling Parfume"
+Description = "Long lost Rabbit Alchemy. Allures without fail friends and foes. Increase \"rendez-vous\" damage during battle. Grants \\i[1294]"
+Note = "<category: Consumable>\r\n<image: RabPerfume>"
+
+Item 463
+Name = "Love Potion"
+Description = "Long lost Harvest Alchemy. +2 \\i[742] Love if used. Can be gifted to a Princess on her throne for +2 Relationship and +2 \\i[742] Love."
+Note = "<category: Consumable>\r\n<image: LovePot>"
+
+Item 464
+Name = "Mida Potion"
+Description = "Long lost Finhead Alchemy. Endless riches for the rest of the day! Grants \\i[1265]"
+Note = "<category: Consumable>\r\n<image: MidaPot>"
+
+Item 465
+Name = "Merk Spawn"
+Description = "Long lost Mermaid Alchemy. Spawns tentacles that hit surrounding enemies other than the main target. Grants \\i[1295]"
+Note = "<category: Consumable>\r\n<image: MermaidPot>"
+
+Item 466
+Name = "Raptor Claw"
+Description = "Long lost Bird Alchemy. Mach speed in a bottle! Grants \\i[1278]"
+Note = "<category: Consumable>\r\n<image: RaptorPot>"
+
+Item 467
+Name = "Vitality Brew"
+Description = "Long lost Oni Alchemy. The user becomes as vital as an oni! Grants \\i[1264]"
+Note = "<category: Consumable>\r\n<image: VitPot>"
+
+Item 468
+Name = "Artichoke Potion"
+Description = "Long lost Plant Alchemy. Impregnable to damage... slowly. Grants \\i[1279] Barkskin"
+Note = "<category: Consumable>\r\n<image: ArtiPot>"
+
+Item 469
+Name = "Penumbra Flask"
+Description = "Long lost Shadow Alchemy. The user will ignore enemies' elemental resistances! Grants \\i[1489]"
+Note = "<category: Consumable>\r\n<image: ShadPot>"
+
+Item 470
+Name = "Potion ###"
+Description = "Long lost Plant Alchemy. ###"
+Note = "<category: Consumable>"
+
+Item 471
+Name = "Potion ###"
+Description = "Long lost Plant Alchemy. ###"
+Note = "<category: Consumable>"
+
+Item 472
+Name = ""
+Description = ""
+Note = ""
+
+Item 473
+Name = ""
+Description = ""
+Note = ""
+
+Item 474
+Name = "Flesh Thorn"
+Description = "Prickly spine, fallen from body of the \"Queen of Thorns\". May change some Princess' form!"
+Note = "<category: Usable>\r\n<image: FleshThorn>"
+
+Item 475
+Name = "Soldier Trophy"
+Description = "Precious bauble from a defeated soldier. Can be sold for some good \\i[626] \\G!"
+Note = ""
+
+Item 476
+Name = "Chopp Nut"
+Description = "Crunchy nut, unexpectedly nutrient. It allows Chopp plantoids to fly for long distances!"
+Note = "<image: ChopNut>\r\n<category: Food>\r\n"
+
+Item 477
+Name = "Grim Crystal"
+Description = "Crystal dropped by Dusk Princess and imbued with her magic. Use it with caution."
+Note = "<image: GrimCrystal>\r\n<category: Usable>"
+
+Item 478
+Name = "Shadow Diary"
+Description = "A mysterious book that records everything about Shadow Princess!"
+Note = "<category: Diary>\r\n<image: PDiarySha>"
+
+Item 479
+Name = "Shadow Record"
+Description = "Records of the War of Conquest regarding Shadow Reign."
+Note = "<category: Book>"
+
+Item 480
+Name = "Eel Peel"
+Description = "Spoils of Shadow Reign's taint. Unedible. Lose 25 HP and 25 MP."
+Note = "<category: Food>\r\n<image: ShadEel>"
+
+Item 481
+Name = "Angel Cake"
+Description = "Tasty, fluffy cake, baked by the nuns of the Church of Conquest. Said to reduce Corruption of the flesh!"
+Note = "<category: Food>\r\n<image: AngelCake>"
+
+Item 482
+Name = "Black Pearl"
+Description = "Cursed crafting material."
+Note = "<category: Material>\r\n<image: CursedPearl>"
+
+Item 483
+Name = "Shadow Queen"
+Description = ""
+Note = "gift only"
+
+Item 484
+Name = "Glass Turtle"
+Description = "???"
+Note = "<category: Usable>\r\n<image: GlassTurtle>"
+
+Item 485
+Name = "#Shadowscope#"
+Description = ""
+Note = "<category: Key>\r\n<image: ShadScope>"
+
+Item 486
+Name = "Broken Bowl"
+Description = "Bowl of the broken pact between Shadow Princess and her Queen. Gather the wishes of the population and return to the Princess!"
+Note = "<category: Key>\r\n<image: PactBowlBroken>"
+
+Item 487
+Name = "Shadow Graal"
+Description = "Bowl of the broken pact between Shadow Princess and her Queen. It's now fixed! Get it to the Princess!"
+Note = "<category: Key>\r\n<image: PactBowl>"
+
+Item 488
+Name = "Cherry Pop!"
+Description = "Popular cherry-flavored fizzy drink. Recovers 250 MP. Grants \\i[681]"
+Note = "<category: Food>\r\n<image: CherryWine>"
+
+Item 489
+Name = "Synth Grabber"
+Description = "Biomechanically engineered to cop feels."
+Note = "<image: SynthHand>"
+
+Item 490
+Name = "Grabber Blueprint"
+Description = "Blueprint of Socket's old invention. Could be useful to recognize the real thing hidden in trash!"
+Note = ""
+
+Item 491
+Name = "Bathroom Key"
+Description = "Key to open Faun's Tavern prized bathroom."
+Note = "<category: Key>"
+
+Item 492
+Name = "Snakeskin Scroll"
+Description = "As a snakes shedding its skin, the user may lose a part of itself to grow stronger! -2 to Every Stat, +1 Distribution Point."
+Note = "<category: Usable>\r\n<image: LamiaScroll>"
+
+Item 493
+Name = ""
+Description = ""
+Note = ""
+
+Item 494
+Name = ""
+Description = ""
+Note = ""
+
+Item 495
+Name = ""
+Description = ""
+Note = ""
+
+Item 496
+Name = ""
+Description = ""
+Note = ""
+
+Item 497
+Name = ""
+Description = ""
+Note = ""
+
+Item 498
+Name = ""
+Description = ""
+Note = ""
+
+Item 499
+Name = ""
+Description = ""
+Note = ""
+
+Item 500
+Name = "Eater Eggs"
+Description = "Only a monster eater would appreciate these fine Monster Eggs! Increases DEF by 2 if properly savored."
+Note = "<category: Food>\r\n<image: EaterEggs>"
+
+Item 501
+Name = "Eater Coins"
+Description = "Only a monster eater would appreciate these mellow Monster Coins! Increases AGI by 2 if properly savored."
+Note = "<category: Food>\r\n<image: EaterCoins>"
+
+Item 502
+Name = "Eater Meat"
+Description = "Only a monster eater would appreciate this honeyed Monster Meat! Increases ATK by 2 if properly savored."
+Note = "<category: Food>\r\n<image: EaterMeat>"
+
+Item 503
+Name = "Eater Salt"
+Description = "Only a monster eater would appreciate this crunchy Monster Salt! Increases LUK by 2 if properly savored."
+Note = "<category: Food>\r\n<image: EaterSalt>"
+
+Item 504
+Name = "Eater Pepper"
+Description = "Only a monster eater would appreciate this spicy Monster Salt! Increases MDF by 2 if properly savored."
+Note = "<category: Food>\r\n<image: EaterPepper>"
+
+Item 505
+Name = "Eater Slime"
+Description = "Only a monster eater would appreciate this glazed Monster Slime! Increases AGI by 2 if properly savored."
+Note = "<category: Food>\r\n<image: EaterSlime>"
+
+Item 506
+Name = "Eater Sorbet"
+Description = "Only a monster eater would appreciate this icy Monster Sorbet! Increases MDF by 2 if properly savored."
+Note = "<category: Food>\r\n<image: EaterSorbet>"
+
+Item 507
+Name = "Eater Tentacle"
+Description = "Only a monster eater would appreciate this springy Monster Tentacle! Increases ATK by 2 if properly savored."
+Note = "<category: Food>\r\n<image: EaterTentacle>"
+
+Item 508
+Name = "Eater Shroom"
+Description = "Only a monster eater would appreciate this gamy Monster Shroom! Increases Max HP by 10 if properly savored."
+Note = "<category: Food>\r\n<image: EaterShroom>"
+
+Item 509
+Name = "Eater Core"
+Description = "Only a monster eater would appreciate this acidic Elemental Core! Increases Max MP by 10 if properly savored."
+Note = "<category: Food>\r\n<image: EaterElement>"
+
+Item 510
+Name = "Eater Cup"
+Description = "Only a monster eater would appreciate this springy Monster Cup! Increases MAT by 10 if properly savored."
+Note = "<category: Food>\r\n<image: EaterSquid>"
+
+Item 511
+Name = "Eater Salad"
+Description = "Only a monster eater would appreciate this fresh Monster Salad! Increases LUK by 10 if properly savored."
+Note = "<category: Food>\r\n<image: EaterSalad>"
+
+Item 512
+Name = "Eater Root"
+Description = "Only a monster eater would appreciate this flaky Monster Root! Increases DEF by 10 if properly savored."
+Note = "<category: Food>\r\n<image: EaterRoot>"
+
+Item 513
+Name = "Eater Mimic"
+Description = "Only a monster eater would appreciate this zesty Mimic Chest! Increases ATK by 10 if properly savored."
+Note = "<category: Food>\r\n<image: EaterMimic>"
+
+Item 514
+Name = "Eater Sugar"
+Description = "Only a monster eater would appreciate this treacly Monster Sugar! Increases AGI by 10 if properly savored."
+Note = "<category: Food>\r\n<image: EaterSugar>"
+
+Item 515
+Name = ""
+Description = ""
+Note = ""
+
+Item 516
+Name = ""
+Description = ""
+Note = ""
+
+Item 517
+Name = ""
+Description = ""
+Note = ""
+
+Item 518
+Name = ""
+Description = ""
+Note = ""
+
+Item 519
+Name = ""
+Description = ""
+Note = ""
+
+Item 520
+Name = ""
+Description = ""
+Note = ""
+
+Item 521
+Name = ""
+Description = ""
+Note = ""
+
+Item 522
+Name = ""
+Description = ""
+Note = ""
+
+Item 523
+Name = ""
+Description = ""
+Note = ""
+
+Item 524
+Name = ""
+Description = ""
+Note = ""
+
+Item 525
+Name = ""
+Description = ""
+Note = ""
+
+Item 526
+Name = ""
+Description = ""
+Note = ""
+
+Item 527
+Name = ""
+Description = ""
+Note = ""
+
+Item 528
+Name = ""
+Description = ""
+Note = ""
+
+Item 529
+Name = ""
+Description = ""
+Note = ""
+
+Item 530
+Name = ""
+Description = ""
+Note = ""
+
+Item 531
+Name = ""
+Description = ""
+Note = ""
+
+Item 532
+Name = ""
+Description = ""
+Note = ""
+
+Item 533
+Name = ""
+Description = ""
+Note = ""
+
+Item 534
+Name = ""
+Description = ""
+Note = ""
+
+Item 535
+Name = ""
+Description = ""
+Note = ""
+
+Item 536
+Name = ""
+Description = ""
+Note = ""
+
+Item 537
+Name = ""
+Description = ""
+Note = ""
+
+Item 538
+Name = ""
+Description = ""
+Note = ""
+
+Item 539
+Name = ""
+Description = ""
+Note = ""
+
+Item 540
+Name = ""
+Description = ""
+Note = ""
+
+Item 541
+Name = ""
+Description = ""
+Note = ""
+
+Item 542
+Name = ""
+Description = ""
+Note = ""
+
+Item 543
+Name = ""
+Description = ""
+Note = ""
+
+Item 544
+Name = ""
+Description = ""
+Note = ""
+
+Item 545
+Name = ""
+Description = ""
+Note = ""
+
+Item 546
+Name = ""
+Description = ""
+Note = ""
+
+Item 547
+Name = ""
+Description = ""
+Note = ""
+
+Item 548
+Name = ""
+Description = ""
+Note = ""
+
+Item 549
+Name = ""
+Description = ""
+Note = ""
+
+Item 550
+Name = ""
+Description = ""
+Note = ""
+
+Item 551
+Name = ""
+Description = ""
+Note = ""
+
+Item 552
+Name = ""
+Description = ""
+Note = ""
+
+Item 553
+Name = ""
+Description = ""
+Note = ""
+
+Item 554
+Name = ""
+Description = ""
+Note = ""
+
+Item 555
+Name = ""
+Description = ""
+Note = ""
+
+Item 556
+Name = ""
+Description = ""
+Note = ""
+
+Item 557
+Name = ""
+Description = ""
+Note = ""
+
+Item 558
+Name = ""
+Description = ""
+Note = ""
+
+Item 559
+Name = ""
+Description = ""
+Note = ""
+
+Item 560
+Name = ""
+Description = ""
+Note = ""
+
+Item 561
+Name = ""
+Description = ""
+Note = ""
+
+Item 562
+Name = ""
+Description = ""
+Note = ""
+
+Item 563
+Name = ""
+Description = ""
+Note = ""
+
+Item 564
+Name = ""
+Description = ""
+Note = ""
+
+Item 565
+Name = ""
+Description = ""
+Note = ""
+
+Item 566
+Name = ""
+Description = ""
+Note = ""
+
+Item 567
+Name = ""
+Description = ""
+Note = ""
+
+Item 568
+Name = ""
+Description = ""
+Note = ""
+
+Item 569
+Name = ""
+Description = ""
+Note = ""
+
+Item 570
+Name = ""
+Description = ""
+Note = ""
+
+Item 571
+Name = ""
+Description = ""
+Note = ""
+
+Item 572
+Name = ""
+Description = ""
+Note = ""
+
+Item 573
+Name = ""
+Description = ""
+Note = ""
+
+Item 574
+Name = ""
+Description = ""
+Note = ""
+
+Item 575
+Name = ""
+Description = ""
+Note = ""
+
+Item 576
+Name = ""
+Description = ""
+Note = ""
+
+Item 577
+Name = ""
+Description = ""
+Note = ""
+
+Item 578
+Name = ""
+Description = ""
+Note = ""
+
+Item 579
+Name = ""
+Description = ""
+Note = ""
+
+Item 580
+Name = ""
+Description = ""
+Note = ""
+
+Item 581
+Name = ""
+Description = ""
+Note = ""
+
+Item 582
+Name = ""
+Description = ""
+Note = ""
+
+Item 583
+Name = ""
+Description = ""
+Note = ""
+
+Item 584
+Name = ""
+Description = ""
+Note = ""
+
+Item 585
+Name = ""
+Description = ""
+Note = ""
+
+Item 586
+Name = ""
+Description = ""
+Note = ""
+
+Item 587
+Name = ""
+Description = ""
+Note = ""
+
+Item 588
+Name = ""
+Description = ""
+Note = ""
+
+Item 589
+Name = ""
+Description = ""
+Note = ""
+
+Item 590
+Name = ""
+Description = ""
+Note = ""
+
+Item 591
+Name = ""
+Description = ""
+Note = ""
+
+Item 592
+Name = ""
+Description = ""
+Note = ""
+
+Item 593
+Name = ""
+Description = ""
+Note = ""
+
+Item 594
+Name = ""
+Description = ""
+Note = ""
+
+Item 595
+Name = ""
+Description = ""
+Note = ""
+
+Item 596
+Name = ""
+Description = ""
+Note = ""
+
+Item 597
+Name = ""
+Description = ""
+Note = ""
+
+Item 598
+Name = ""
+Description = ""
+Note = ""
+
+Item 599
+Name = ""
+Description = ""
+Note = ""
+
+Item 600
+Name = ""
+Description = ""
+Note = ""
+
+Item 601
+Name = ""
+Description = ""
+Note = ""
+
+Item 602
+Name = ""
+Description = ""
+Note = ""
+
+Item 603
+Name = ""
+Description = ""
+Note = ""
+
+Item 604
+Name = ""
+Description = ""
+Note = ""
+
+Item 605
+Name = ""
+Description = ""
+Note = ""
+
+Item 606
+Name = ""
+Description = ""
+Note = ""
+
+Item 607
+Name = ""
+Description = ""
+Note = ""
+
+Item 608
+Name = ""
+Description = ""
+Note = ""
+
+Item 609
+Name = ""
+Description = ""
+Note = ""
+
+Item 610
+Name = ""
+Description = ""
+Note = ""
+
+Item 611
+Name = ""
+Description = ""
+Note = ""
+
+Item 612
+Name = ""
+Description = ""
+Note = ""
+
+Item 613
+Name = ""
+Description = ""
+Note = ""
+
+Item 614
+Name = ""
+Description = ""
+Note = ""
+
+Item 615
+Name = ""
+Description = ""
+Note = ""
+
+Item 616
+Name = ""
+Description = ""
+Note = ""
+
+Item 617
+Name = ""
+Description = ""
+Note = ""
+
+Item 618
+Name = ""
+Description = ""
+Note = ""
+
+Item 619
+Name = ""
+Description = ""
+Note = ""
+
+Item 620
+Name = ""
+Description = ""
+Note = ""
+
+Item 621
+Name = ""
+Description = ""
+Note = ""
+
+Item 622
+Name = ""
+Description = ""
+Note = ""
+
+Item 623
+Name = ""
+Description = ""
+Note = ""
+
+Item 624
+Name = ""
+Description = ""
+Note = ""
+
+Item 625
+Name = ""
+Description = ""
+Note = ""
+
+Item 626
+Name = ""
+Description = ""
+Note = ""
+
+Item 627
+Name = ""
+Description = ""
+Note = ""
+
+Item 628
+Name = ""
+Description = ""
+Note = ""
+
+Item 629
+Name = ""
+Description = ""
+Note = ""
+
+Item 630
+Name = ""
+Description = ""
+Note = ""
+
+Item 631
+Name = ""
+Description = ""
+Note = ""
+
+Item 632
+Name = ""
+Description = ""
+Note = ""
+
+Item 633
+Name = ""
+Description = ""
+Note = ""
+
+Item 634
+Name = ""
+Description = ""
+Note = ""
+
+Item 635
+Name = ""
+Description = ""
+Note = ""
+
+Item 636
+Name = ""
+Description = ""
+Note = ""
+
+Item 637
+Name = ""
+Description = ""
+Note = ""
+
+Item 638
+Name = ""
+Description = ""
+Note = ""
+
+Item 639
+Name = ""
+Description = ""
+Note = ""
+
+Item 640
+Name = ""
+Description = ""
+Note = ""
+
+Item 641
+Name = ""
+Description = ""
+Note = ""
+
+Item 642
+Name = ""
+Description = ""
+Note = ""
+
+Item 643
+Name = ""
+Description = ""
+Note = ""
+
+Item 644
+Name = ""
+Description = ""
+Note = ""
+
+Item 645
+Name = ""
+Description = ""
+Note = ""
+
+Item 646
+Name = ""
+Description = ""
+Note = ""
+
+Item 647
+Name = ""
+Description = ""
+Note = ""
+
+Item 648
+Name = ""
+Description = ""
+Note = ""
+
+Item 649
+Name = ""
+Description = ""
+Note = ""
+
+Item 650
+Name = ""
+Description = ""
+Note = ""
+
+Item 651
+Name = ""
+Description = ""
+Note = ""
+
+Item 652
+Name = ""
+Description = ""
+Note = ""
+
+Item 653
+Name = ""
+Description = ""
+Note = ""
+
+Item 654
+Name = ""
+Description = ""
+Note = ""
+
+Item 655
+Name = ""
+Description = ""
+Note = ""
+
+Item 656
+Name = ""
+Description = ""
+Note = ""
+
+Item 657
+Name = ""
+Description = ""
+Note = ""
+
+Item 658
+Name = ""
+Description = ""
+Note = ""
+
+Item 659
+Name = ""
+Description = ""
+Note = ""
+
+Item 660
+Name = ""
+Description = ""
+Note = ""
+
+Item 661
+Name = ""
+Description = ""
+Note = ""
+
+Item 662
+Name = ""
+Description = ""
+Note = ""
+
+Item 663
+Name = ""
+Description = ""
+Note = ""
+
+Item 664
+Name = ""
+Description = ""
+Note = ""
+
+Item 665
+Name = ""
+Description = ""
+Note = ""
+
+Item 666
+Name = ""
+Description = ""
+Note = ""
+
+Item 667
+Name = ""
+Description = ""
+Note = ""
+
+Item 668
+Name = ""
+Description = ""
+Note = ""
+
+Item 669
+Name = ""
+Description = ""
+Note = ""
+
+Item 670
+Name = ""
+Description = ""
+Note = ""
+
+Item 671
+Name = ""
+Description = ""
+Note = ""
+
+Item 672
+Name = ""
+Description = ""
+Note = ""
+
+Item 673
+Name = ""
+Description = ""
+Note = ""
+
+Item 674
+Name = ""
+Description = ""
+Note = ""
+
+Item 675
+Name = ""
+Description = ""
+Note = ""
+
+Item 676
+Name = ""
+Description = ""
+Note = ""
+
+Item 677
+Name = ""
+Description = ""
+Note = ""
+
+Item 678
+Name = ""
+Description = ""
+Note = ""
+
+Item 679
+Name = ""
+Description = ""
+Note = ""
+
+Item 680
+Name = ""
+Description = ""
+Note = ""
+
+Item 681
+Name = ""
+Description = ""
+Note = ""
+
+Item 682
+Name = ""
+Description = ""
+Note = ""
+
+Item 683
+Name = ""
+Description = ""
+Note = ""
+
+Item 684
+Name = ""
+Description = ""
+Note = ""
+
+Item 685
+Name = ""
+Description = ""
+Note = ""
+
+Item 686
+Name = ""
+Description = ""
+Note = ""
+
+Item 687
+Name = ""
+Description = ""
+Note = ""
+
+Item 688
+Name = ""
+Description = ""
+Note = ""
+
+Item 689
+Name = ""
+Description = ""
+Note = ""
+
+Item 690
+Name = ""
+Description = ""
+Note = ""
+
+Item 691
+Name = ""
+Description = ""
+Note = ""
+
+Item 692
+Name = ""
+Description = ""
+Note = ""
+
+Item 693
+Name = ""
+Description = ""
+Note = ""
+
+Item 694
+Name = ""
+Description = ""
+Note = ""
+
+Item 695
+Name = ""
+Description = ""
+Note = ""
+
+Item 696
+Name = ""
+Description = ""
+Note = ""
+
+Item 697
+Name = ""
+Description = ""
+Note = ""
+
+Item 698
+Name = ""
+Description = ""
+Note = ""
+
+Item 699
+Name = ""
+Description = ""
+Note = ""
+
+Item 700
+Name = ""
+Description = ""
+Note = ""
+
+Item 701
+Name = ""
+Description = ""
+Note = ""
+
+Item 702
+Name = ""
+Description = ""
+Note = ""
+
+Item 703
+Name = ""
+Description = ""
+Note = ""
+
+Item 704
+Name = ""
+Description = ""
+Note = ""
+
+Item 705
+Name = ""
+Description = ""
+Note = ""
+
+Item 706
+Name = ""
+Description = ""
+Note = ""
+
+Item 707
+Name = ""
+Description = ""
+Note = ""
+
+Item 708
+Name = ""
+Description = ""
+Note = ""
+
+Item 709
+Name = ""
+Description = ""
+Note = ""
+
+Item 710
+Name = ""
+Description = ""
+Note = ""
+
+Item 711
+Name = ""
+Description = ""
+Note = ""
+
+Item 712
+Name = ""
+Description = ""
+Note = ""
+
+Item 713
+Name = ""
+Description = ""
+Note = ""
+
+Item 714
+Name = ""
+Description = ""
+Note = ""
+
+Item 715
+Name = ""
+Description = ""
+Note = ""
+
+Item 716
+Name = ""
+Description = ""
+Note = ""
+
+Item 717
+Name = ""
+Description = ""
+Note = ""
+
+Item 718
+Name = ""
+Description = ""
+Note = ""
+
+Item 719
+Name = ""
+Description = ""
+Note = ""
+
+Item 720
+Name = ""
+Description = ""
+Note = ""
+
+Item 721
+Name = ""
+Description = ""
+Note = ""
+
+Item 722
+Name = ""
+Description = ""
+Note = ""
+
+Item 723
+Name = ""
+Description = ""
+Note = ""
+
+Item 724
+Name = ""
+Description = ""
+Note = ""
+
+Item 725
+Name = ""
+Description = ""
+Note = ""
+
+Item 726
+Name = ""
+Description = ""
+Note = ""
+
+Item 727
+Name = ""
+Description = ""
+Note = ""
+
+Item 728
+Name = ""
+Description = ""
+Note = ""
+
+Item 729
+Name = ""
+Description = ""
+Note = ""
+
+Item 730
+Name = ""
+Description = ""
+Note = ""
+
+Item 731
+Name = ""
+Description = ""
+Note = ""
+
+Item 732
+Name = ""
+Description = ""
+Note = ""
+
+Item 733
+Name = ""
+Description = ""
+Note = ""
+
+Item 734
+Name = ""
+Description = ""
+Note = ""
+
+Item 735
+Name = ""
+Description = ""
+Note = ""
+
+Item 736
+Name = ""
+Description = ""
+Note = ""
+
+Item 737
+Name = ""
+Description = ""
+Note = ""
+
+Item 738
+Name = ""
+Description = ""
+Note = ""
+
+Item 739
+Name = ""
+Description = ""
+Note = ""
+
+Item 740
+Name = ""
+Description = ""
+Note = ""
+
+Item 741
+Name = ""
+Description = ""
+Note = ""
+
+Item 742
+Name = ""
+Description = ""
+Note = ""
+
+Item 743
+Name = ""
+Description = ""
+Note = ""
+
+Item 744
+Name = ""
+Description = ""
+Note = ""
+
+Item 745
+Name = ""
+Description = ""
+Note = ""
+
+Item 746
+Name = ""
+Description = ""
+Note = ""
+
+Item 747
+Name = ""
+Description = ""
+Note = ""
+
+Item 748
+Name = ""
+Description = ""
+Note = ""
+
+Item 749
+Name = ""
+Description = ""
+Note = ""
+
+Item 750
+Name = ""
+Description = ""
+Note = ""
+
+Item 751
+Name = ""
+Description = ""
+Note = ""
+
+Item 752
+Name = ""
+Description = ""
+Note = ""
+
+Item 753
+Name = ""
+Description = ""
+Note = ""
+
+Item 754
+Name = ""
+Description = ""
+Note = ""
+
+Item 755
+Name = ""
+Description = ""
+Note = ""
+
+Item 756
+Name = ""
+Description = ""
+Note = ""
+
+Item 757
+Name = ""
+Description = ""
+Note = ""
+
+Item 758
+Name = ""
+Description = ""
+Note = ""
+
+Item 759
+Name = ""
+Description = ""
+Note = ""
+
+Item 760
+Name = ""
+Description = ""
+Note = ""
+
+Item 761
+Name = ""
+Description = ""
+Note = ""
+
+Item 762
+Name = ""
+Description = ""
+Note = ""
+
+Item 763
+Name = ""
+Description = ""
+Note = ""
+
+Item 764
+Name = ""
+Description = ""
+Note = ""
+
+Item 765
+Name = ""
+Description = ""
+Note = ""
+
+Item 766
+Name = ""
+Description = ""
+Note = ""
+
+Item 767
+Name = ""
+Description = ""
+Note = ""
+
+Item 768
+Name = ""
+Description = ""
+Note = ""
+
+Item 769
+Name = ""
+Description = ""
+Note = ""
+
+Item 770
+Name = ""
+Description = ""
+Note = ""
+
+Item 771
+Name = ""
+Description = ""
+Note = ""
+
+Item 772
+Name = ""
+Description = ""
+Note = ""
+
+Item 773
+Name = ""
+Description = ""
+Note = ""
+
+Item 774
+Name = ""
+Description = ""
+Note = ""
+
+Item 775
+Name = ""
+Description = ""
+Note = ""
+
+Item 776
+Name = ""
+Description = ""
+Note = ""
+
+Item 777
+Name = ""
+Description = ""
+Note = ""
+
+Item 778
+Name = ""
+Description = ""
+Note = ""
+
+Item 779
+Name = ""
+Description = ""
+Note = ""
+
+Item 780
+Name = ""
+Description = ""
+Note = ""
+
+Item 781
+Name = ""
+Description = ""
+Note = ""
+
+Item 782
+Name = ""
+Description = ""
+Note = ""
+
+Item 783
+Name = ""
+Description = ""
+Note = ""
+
+Item 784
+Name = ""
+Description = ""
+Note = ""
+
+Item 785
+Name = ""
+Description = ""
+Note = ""
+
+Item 786
+Name = ""
+Description = ""
+Note = ""
+
+Item 787
+Name = ""
+Description = ""
+Note = ""
+
+Item 788
+Name = ""
+Description = ""
+Note = ""
+
+Item 789
+Name = ""
+Description = ""
+Note = ""
+
+Item 790
+Name = ""
+Description = ""
+Note = ""
+
+Item 791
+Name = ""
+Description = ""
+Note = ""
+
+Item 792
+Name = ""
+Description = ""
+Note = ""
+
+Item 793
+Name = ""
+Description = ""
+Note = ""
+
+Item 794
+Name = ""
+Description = ""
+Note = ""
+
+Item 795
+Name = ""
+Description = ""
+Note = ""
+
+Item 796
+Name = ""
+Description = ""
+Note = ""
+
+Item 797
+Name = ""
+Description = ""
+Note = ""
+
+Item 798
+Name = ""
+Description = ""
+Note = ""
+
+Item 799
+Name = ""
+Description = ""
+Note = ""
+
+Item 800
+Name = ""
+Description = ""
+Note = ""
+
+Item 801
+Name = ""
+Description = ""
+Note = ""
+
+Item 802
+Name = ""
+Description = ""
+Note = ""
+
+Item 803
+Name = ""
+Description = ""
+Note = ""
+
+Item 804
+Name = ""
+Description = ""
+Note = ""
+
+Item 805
+Name = ""
+Description = ""
+Note = ""
+
+Item 806
+Name = ""
+Description = ""
+Note = ""
+
+Item 807
+Name = ""
+Description = ""
+Note = ""
+
+Item 808
+Name = ""
+Description = ""
+Note = ""
+
+Item 809
+Name = ""
+Description = ""
+Note = ""
+
+Item 810
+Name = ""
+Description = ""
+Note = ""
+
+Item 811
+Name = ""
+Description = ""
+Note = ""
+
+Item 812
+Name = ""
+Description = ""
+Note = ""
+
+Item 813
+Name = ""
+Description = ""
+Note = ""
+
+Item 814
+Name = ""
+Description = ""
+Note = ""
+
+Item 815
+Name = ""
+Description = ""
+Note = ""
+
+Item 816
+Name = ""
+Description = ""
+Note = ""
+
+Item 817
+Name = ""
+Description = ""
+Note = ""
+
+Item 818
+Name = ""
+Description = ""
+Note = ""
+
+Item 819
+Name = ""
+Description = ""
+Note = ""
+
+Item 820
+Name = ""
+Description = ""
+Note = ""
+
+Item 821
+Name = ""
+Description = ""
+Note = ""
+
+Item 822
+Name = ""
+Description = ""
+Note = ""
+
+Item 823
+Name = ""
+Description = ""
+Note = ""
+
+Item 824
+Name = ""
+Description = ""
+Note = ""
+
+Item 825
+Name = ""
+Description = ""
+Note = ""
+
+Item 826
+Name = ""
+Description = ""
+Note = ""
+
+Item 827
+Name = ""
+Description = ""
+Note = ""
+
+Item 828
+Name = ""
+Description = ""
+Note = ""
+
+Item 829
+Name = ""
+Description = ""
+Note = ""
+
+Item 830
+Name = ""
+Description = ""
+Note = ""
+
+Item 831
+Name = ""
+Description = ""
+Note = ""
+
+Item 832
+Name = ""
+Description = ""
+Note = ""
+
+Item 833
+Name = ""
+Description = ""
+Note = ""
+
+Item 834
+Name = ""
+Description = ""
+Note = ""
+
+Item 835
+Name = ""
+Description = ""
+Note = ""
+
+Item 836
+Name = ""
+Description = ""
+Note = ""
+
+Item 837
+Name = ""
+Description = ""
+Note = ""
+
+Item 838
+Name = ""
+Description = ""
+Note = ""
+
+Item 839
+Name = ""
+Description = ""
+Note = ""
+
+Item 840
+Name = ""
+Description = ""
+Note = ""
+
+Item 841
+Name = ""
+Description = ""
+Note = ""
+
+Item 842
+Name = ""
+Description = ""
+Note = ""
+
+Item 843
+Name = ""
+Description = ""
+Note = ""
+
+Item 844
+Name = ""
+Description = ""
+Note = ""
+
+Item 845
+Name = ""
+Description = ""
+Note = ""
+
+Item 846
+Name = ""
+Description = ""
+Note = ""
+
+Item 847
+Name = ""
+Description = ""
+Note = ""
+
+Item 848
+Name = ""
+Description = ""
+Note = ""
+
+Item 849
+Name = ""
+Description = ""
+Note = ""
+
+Item 850
+Name = ""
+Description = ""
+Note = ""
+
+Item 851
+Name = ""
+Description = ""
+Note = ""
+
+Item 852
+Name = ""
+Description = ""
+Note = ""
+
+Item 853
+Name = ""
+Description = ""
+Note = ""
+
+Item 854
+Name = ""
+Description = ""
+Note = ""
+
+Item 855
+Name = ""
+Description = ""
+Note = ""
+
+Item 856
+Name = ""
+Description = ""
+Note = ""
+
+Item 857
+Name = ""
+Description = ""
+Note = ""
+
+Item 858
+Name = ""
+Description = ""
+Note = ""
+
+Item 859
+Name = ""
+Description = ""
+Note = ""
+
+Item 860
+Name = ""
+Description = ""
+Note = ""
+
+Item 861
+Name = ""
+Description = ""
+Note = ""
+
+Item 862
+Name = ""
+Description = ""
+Note = ""
+
+Item 863
+Name = ""
+Description = ""
+Note = ""
+
+Item 864
+Name = ""
+Description = ""
+Note = ""
+
+Item 865
+Name = ""
+Description = ""
+Note = ""
+
+Item 866
+Name = ""
+Description = ""
+Note = ""
+
+Item 867
+Name = ""
+Description = ""
+Note = ""
+
+Item 868
+Name = ""
+Description = ""
+Note = ""
+
+Item 869
+Name = ""
+Description = ""
+Note = ""
+
+Item 870
+Name = ""
+Description = ""
+Note = ""
+
+Item 871
+Name = ""
+Description = ""
+Note = ""
+
+Item 872
+Name = ""
+Description = ""
+Note = ""
+
+Item 873
+Name = ""
+Description = ""
+Note = ""
+
+Item 874
+Name = ""
+Description = ""
+Note = ""
+
+Item 875
+Name = ""
+Description = ""
+Note = ""
+
+Item 876
+Name = ""
+Description = ""
+Note = ""
+
+Item 877
+Name = ""
+Description = ""
+Note = ""
+
+Item 878
+Name = ""
+Description = ""
+Note = ""
+
+Item 879
+Name = ""
+Description = ""
+Note = ""
+
+Item 880
+Name = ""
+Description = ""
+Note = ""
+
+Item 881
+Name = ""
+Description = ""
+Note = ""
+
+Item 882
+Name = ""
+Description = ""
+Note = ""
+
+Item 883
+Name = ""
+Description = ""
+Note = ""
+
+Item 884
+Name = ""
+Description = ""
+Note = ""
+
+Item 885
+Name = ""
+Description = ""
+Note = ""
+
+Item 886
+Name = ""
+Description = ""
+Note = ""
+
+Item 887
+Name = ""
+Description = ""
+Note = ""
+
+Item 888
+Name = ""
+Description = ""
+Note = ""
+
+Item 889
+Name = ""
+Description = ""
+Note = ""
+
+Item 890
+Name = ""
+Description = ""
+Note = ""
+
+Item 891
+Name = ""
+Description = ""
+Note = ""
+
+Item 892
+Name = ""
+Description = ""
+Note = ""
+
+Item 893
+Name = ""
+Description = ""
+Note = ""
+
+Item 894
+Name = ""
+Description = ""
+Note = ""
+
+Item 895
+Name = ""
+Description = ""
+Note = ""
+
+Item 896
+Name = ""
+Description = ""
+Note = ""
+
+Item 897
+Name = ""
+Description = ""
+Note = ""
+
+Item 898
+Name = ""
+Description = ""
+Note = ""
+
+Item 899
+Name = ""
+Description = ""
+Note = ""
+
+Item 900
+Name = ""
+Description = ""
+Note = ""
+
+Item 901
+Name = ""
+Description = ""
+Note = ""
+
+Item 902
+Name = ""
+Description = ""
+Note = ""
+
+Item 903
+Name = ""
+Description = ""
+Note = ""
+
+Item 904
+Name = ""
+Description = ""
+Note = ""
+
+Item 905
+Name = ""
+Description = ""
+Note = ""
+
+Item 906
+Name = ""
+Description = ""
+Note = ""
+
+Item 907
+Name = ""
+Description = ""
+Note = ""
+
+Item 908
+Name = ""
+Description = ""
+Note = ""
+
+Item 909
+Name = ""
+Description = ""
+Note = ""
+
+Item 910
+Name = ""
+Description = ""
+Note = ""
+
+Item 911
+Name = ""
+Description = ""
+Note = ""
+
+Item 912
+Name = ""
+Description = ""
+Note = ""
+
+Item 913
+Name = ""
+Description = ""
+Note = ""
+
+Item 914
+Name = ""
+Description = ""
+Note = ""
+
+Item 915
+Name = ""
+Description = ""
+Note = ""
+
+Item 916
+Name = ""
+Description = ""
+Note = ""
+
+Item 917
+Name = ""
+Description = ""
+Note = ""
+
+Item 918
+Name = ""
+Description = ""
+Note = ""
+
+Item 919
+Name = ""
+Description = ""
+Note = ""
+
+Item 920
+Name = ""
+Description = ""
+Note = ""
+
+Item 921
+Name = ""
+Description = ""
+Note = ""
+
+Item 922
+Name = ""
+Description = ""
+Note = ""
+
+Item 923
+Name = ""
+Description = ""
+Note = ""
+
+Item 924
+Name = ""
+Description = ""
+Note = ""
+
+Item 925
+Name = ""
+Description = ""
+Note = ""
+
+Item 926
+Name = ""
+Description = ""
+Note = ""
+
+Item 927
+Name = ""
+Description = ""
+Note = ""
+
+Item 928
+Name = ""
+Description = ""
+Note = ""
+
+Item 929
+Name = ""
+Description = ""
+Note = ""
+
+Item 930
+Name = ""
+Description = ""
+Note = ""
+
+Item 931
+Name = ""
+Description = ""
+Note = ""
+
+Item 932
+Name = ""
+Description = ""
+Note = ""
+
+Item 933
+Name = ""
+Description = ""
+Note = ""
+
+Item 934
+Name = ""
+Description = ""
+Note = ""
+
+Item 935
+Name = ""
+Description = ""
+Note = ""
+
+Item 936
+Name = ""
+Description = ""
+Note = ""
+
+Item 937
+Name = ""
+Description = ""
+Note = ""
+
+Item 938
+Name = ""
+Description = ""
+Note = ""
+
+Item 939
+Name = ""
+Description = ""
+Note = ""
+
+Item 940
+Name = ""
+Description = ""
+Note = ""
+
+Item 941
+Name = ""
+Description = ""
+Note = ""
+
+Item 942
+Name = ""
+Description = ""
+Note = ""
+
+Item 943
+Name = ""
+Description = ""
+Note = ""
+
+Item 944
+Name = ""
+Description = ""
+Note = ""
+
+Item 945
+Name = ""
+Description = ""
+Note = ""
+
+Item 946
+Name = ""
+Description = ""
+Note = ""
+
+Item 947
+Name = ""
+Description = ""
+Note = ""
+
+Item 948
+Name = ""
+Description = ""
+Note = ""
+
+Item 949
+Name = ""
+Description = ""
+Note = ""
+
+Item 950
+Name = ""
+Description = ""
+Note = ""
+
+Item 951
+Name = ""
+Description = ""
+Note = ""
+
+Item 952
+Name = ""
+Description = ""
+Note = ""
+
+Item 953
+Name = ""
+Description = ""
+Note = ""
+
+Item 954
+Name = ""
+Description = ""
+Note = ""
+
+Item 955
+Name = ""
+Description = ""
+Note = ""
+
+Item 956
+Name = ""
+Description = ""
+Note = ""
+
+Item 957
+Name = ""
+Description = ""
+Note = ""
+
+Item 958
+Name = ""
+Description = ""
+Note = ""
+
+Item 959
+Name = ""
+Description = ""
+Note = ""
+
+Item 960
+Name = ""
+Description = ""
+Note = ""
+
+Item 961
+Name = ""
+Description = ""
+Note = ""
+
+Item 962
+Name = ""
+Description = ""
+Note = ""
+
+Item 963
+Name = ""
+Description = ""
+Note = ""
+
+Item 964
+Name = ""
+Description = ""
+Note = ""
+
+Item 965
+Name = ""
+Description = ""
+Note = ""
+
+Item 966
+Name = ""
+Description = ""
+Note = ""
+
+Item 967
+Name = ""
+Description = ""
+Note = ""
+
+Item 968
+Name = ""
+Description = ""
+Note = ""
+
+Item 969
+Name = ""
+Description = ""
+Note = ""
+
+Item 970
+Name = ""
+Description = ""
+Note = ""
+
+Item 971
+Name = ""
+Description = ""
+Note = ""
+
+Item 972
+Name = ""
+Description = ""
+Note = ""
+
+Item 973
+Name = ""
+Description = ""
+Note = ""
+
+Item 974
+Name = ""
+Description = ""
+Note = ""
+
+Item 975
+Name = ""
+Description = ""
+Note = ""
+
+Item 976
+Name = ""
+Description = ""
+Note = ""
+
+Item 977
+Name = ""
+Description = ""
+Note = ""
+
+Item 978
+Name = ""
+Description = ""
+Note = ""
+
+Item 979
+Name = ""
+Description = ""
+Note = ""
+
+Item 980
+Name = ""
+Description = ""
+Note = ""
+
+Item 981
+Name = ""
+Description = ""
+Note = ""
+
+Item 982
+Name = ""
+Description = ""
+Note = ""
+
+Item 983
+Name = ""
+Description = ""
+Note = ""
+
+Item 984
+Name = ""
+Description = ""
+Note = ""
+
+Item 985
+Name = ""
+Description = ""
+Note = ""
+
+Item 986
+Name = ""
+Description = ""
+Note = ""
+
+Item 987
+Name = ""
+Description = ""
+Note = ""
+
+Item 988
+Name = ""
+Description = ""
+Note = ""
+
+Item 989
+Name = ""
+Description = ""
+Note = ""
+
+Item 990
+Name = ""
+Description = ""
+Note = ""
+
+Item 991
+Name = ""
+Description = ""
+Note = ""
+
+Item 992
+Name = ""
+Description = ""
+Note = ""
+
+Item 993
+Name = ""
+Description = ""
+Note = ""
+
+Item 994
+Name = ""
+Description = ""
+Note = ""
+
+Item 995
+Name = ""
+Description = ""
+Note = ""
+
+Item 996
+Name = ""
+Description = ""
+Note = ""
+
+Item 997
+Name = ""
+Description = ""
+Note = ""
+
+Item 998
+Name = ""
+Description = ""
+Note = ""
+
+Item 999
+Name = ""
+Description = ""
+Note = ""
+

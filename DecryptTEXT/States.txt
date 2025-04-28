@@ -1,0 +1,3000 @@
+State 1
+Icon Index = 17
+Message 1 = " has fallen!"
+Message 2 = " is slain!"
+Message 3 = ""
+Message 4 = " revives!"
+Name = "Death"
+Description = nil
+Note = "State #1 will be automatically added when\r\nHP reaches 0."
+
+State 2
+Icon Index = 18
+Message 1 = " is poisoned!"
+Message 2 = " is poisoned!"
+Message 3 = ""
+Message 4 = " is freed of poison!"
+Name = "Poison"
+Description = nil
+Note = ""
+
+State 3
+Icon Index = 19
+Message 1 = " becomes blind!"
+Message 2 = " is blinded!"
+Message 3 = ""
+Message 4 = " is no longer blinded!"
+Name = "Blind"
+Description = nil
+Note = ""
+
+State 4
+Icon Index = 20
+Message 1 = " cannot cast Magic!"
+Message 2 = " cannot cast Magic!"
+Message 3 = ""
+Message 4 = "'s Magic is no longer sealed!"
+Name = "Silence"
+Description = nil
+Note = ""
+
+State 5
+Icon Index = 21
+Message 1 = " becomes confused!"
+Message 2 = " is confused!"
+Message 3 = ""
+Message 4 = " is no longer confused!"
+Name = "Confusion"
+Description = nil
+Note = ""
+
+State 6
+Icon Index = 22
+Message 1 = " falls asleep!"
+Message 2 = " falls asleep!"
+Message 3 = " is sleeping......"
+Message 4 = " wakes up!"
+Name = "Sleep"
+Description = nil
+Note = ""
+
+State 7
+Icon Index = 23
+Message 1 = " becomes paralyzed!"
+Message 2 = " is paralyzed!"
+Message 3 = " is unable to move!"
+Message 4 = " is no longer paralyzed!"
+Name = "Paralysis"
+Description = nil
+Note = ""
+
+State 8
+Icon Index = 24
+Message 1 = " loses balance!"
+Message 2 = " loses balance!"
+Message 3 = " hasn't regained balance......"
+Message 4 = " regains balance!"
+Name = "Stun"
+Description = nil
+Note = ""
+
+State 9
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Guard"
+Description = ""
+Note = ""
+
+State 10
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Immortal"
+Description = ""
+Note = ""
+
+State 11
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Cover"
+Description = ""
+Note = ""
+
+State 12
+Icon Index = 25
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Provoke"
+Description = ""
+Note = ""
+
+State 13
+Icon Index = 28
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Hide"
+Description = ""
+Note = ""
+
+State 14
+Icon Index = 26
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "HP Regen"
+Description = ""
+Note = ""
+
+State 15
+Icon Index = 26
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "MP Regen"
+Description = ""
+Note = ""
+
+State 16
+Icon Index = 26
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "TP Regen"
+Description = ""
+Note = ""
+
+State 17
+Icon Index = 29
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Ironbody"
+Description = ""
+Note = ""
+
+State 18
+Icon Index = 27
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Counterattack"
+Description = ""
+Note = ""
+
+State 19
+Icon Index = 29
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Magic Evade"
+Description = ""
+Note = ""
+
+State 20
+Icon Index = 31
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Magic Reflect"
+Description = ""
+Note = ""
+
+State 21
+Icon Index = 104
+Message 1 = " acquires the power of fire!"
+Message 2 = " acquires the power of fire!"
+Message 3 = ""
+Message 4 = ""
+Name = "Fire Force"
+Description = ""
+Note = ""
+
+State 22
+Icon Index = 105
+Message 1 = " acquires the power of ice!"
+Message 2 = " acquires the power of ice!"
+Message 3 = ""
+Message 4 = ""
+Name = "Ice Force"
+Description = ""
+Note = ""
+
+State 23
+Icon Index = 106
+Message 1 = " acquires the power of thunder!"
+Message 2 = " acquires the power of thunder!"
+Message 3 = ""
+Message 4 = ""
+Name = "Thunder Force"
+Description = ""
+Note = ""
+
+State 24
+Icon Index = 29
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Ailment Guard"
+Description = ""
+Note = ""
+
+State 25
+Icon Index = 30
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "MP Cost Down"
+Description = ""
+Note = ""
+
+State 26
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "???"
+Description = ""
+Note = "<fixed equip: 5>"
+
+State 27
+Icon Index = 240
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Chained"
+Description = ""
+Note = "<fixed equip: 0, 1>"
+
+State 28
+Icon Index = 223
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Cheap Drunk"
+Description = ""
+Note = ""
+
+State 29
+Icon Index = 912
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Honey Sweet"
+Description = ""
+Note = ""
+
+State 30
+Icon Index = 122
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Lust Demon"
+Description = ""
+Note = ""
+
+State 31
+Icon Index = 1166
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Cat Nap"
+Description = ""
+Note = ""
+
+State 32
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Freeze"
+Description = ""
+Note = ""
+
+State 33
+Icon Index = 131
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Disarmed"
+Description = ""
+Note = ""
+
+State 34
+Icon Index = 712
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Pregnant"
+Description = ""
+Note = ""
+
+State 35
+Icon Index = 713
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Queen-to-be"
+Description = ""
+Note = ""
+
+State 36
+Icon Index = 681
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Heated"
+Description = ""
+Note = ""
+
+State 37
+Icon Index = 717
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Water Breathing"
+Description = ""
+Note = ""
+
+State 38
+Icon Index = 1084
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Wooly Fur"
+Description = ""
+Note = ""
+
+State 39
+Icon Index = 719
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Porgy Curse"
+Description = ""
+Note = ""
+
+State 40
+Icon Index = 610
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Mech"
+Description = ""
+Note = ""
+
+State 41
+Icon Index = 700
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Tiny!"
+Description = ""
+Note = ""
+
+State 42
+Icon Index = 729
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Harvest Blessing"
+Description = ""
+Note = ""
+
+State 43
+Icon Index = 733
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Bubbly"
+Description = ""
+Note = ""
+
+State 44
+Icon Index = 730
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Doggie"
+Description = ""
+Note = ""
+
+State 45
+Icon Index = 1350
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Djinn"
+Description = ""
+Note = ""
+
+State 46
+Icon Index = 14
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Avatar"
+Description = ""
+Note = ""
+
+State 47
+Icon Index = 673
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Final Goodbye"
+Description = ""
+Note = ""
+
+State 48
+Icon Index = 727
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Moon-Touched"
+Description = ""
+Note = ""
+
+State 49
+Icon Index = 726
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Moon-Cursed"
+Description = ""
+Note = ""
+
+State 50
+Icon Index = 685
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Cooled"
+Description = ""
+Note = ""
+
+State 51
+Icon Index = 756
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Hardened"
+Description = ""
+Note = ""
+
+State 52
+Icon Index = 761
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Drake Aspect"
+Description = ""
+Note = ""
+
+State 53
+Icon Index = 774
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Frenzied"
+Description = ""
+Note = ""
+
+State 54
+Icon Index = 904
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Fed"
+Description = ""
+Note = ""
+
+State 55
+Icon Index = 905
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Well Fed"
+Description = ""
+Note = ""
+
+State 56
+Icon Index = 906
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Fed EX"
+Description = ""
+Note = ""
+
+State 57
+Icon Index = 923
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Chillbite Blessing"
+Description = ""
+Note = ""
+
+State 58
+Icon Index = 1167
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Wendigo Form"
+Description = ""
+Note = ""
+
+State 59
+Icon Index = 682
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Immune"
+Description = ""
+Note = ""
+
+State 60
+Icon Index = 972
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Exhausted"
+Description = ""
+Note = ""
+
+State 61
+Icon Index = 975
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "STUD!"
+Description = ""
+Note = ""
+
+State 62
+Icon Index = 1003
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Abyssal Knight"
+Description = ""
+Note = ""
+
+State 63
+Icon Index = 1021
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Abyss Only"
+Description = ""
+Note = ""
+
+State 64
+Icon Index = 8
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Headless Charge"
+Description = ""
+Note = ""
+
+State 65
+Icon Index = 100
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Rock Form"
+Description = ""
+Note = ""
+
+State 66
+Icon Index = 102
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Lively!"
+Description = ""
+Note = ""
+
+State 67
+Icon Index = 1033
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Bananas!"
+Description = ""
+Note = ""
+
+State 68
+Icon Index = 1058
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Spirited"
+Description = ""
+Note = ""
+
+State 69
+Icon Index = 115
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Dexterous"
+Description = ""
+Note = "Prog Skill Only"
+
+State 70
+Icon Index = 1164
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Warm Aura"
+Description = ""
+Note = "Prog Skill Only"
+
+State 71
+Icon Index = 1165
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Cool Aura"
+Description = ""
+Note = "Prog Skill Only"
+
+State 72
+Icon Index = 1062
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Lucky Charm"
+Description = ""
+Note = "Prog Skill Only"
+
+State 73
+Icon Index = 1083
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Huge Power"
+Description = ""
+Note = "Prog Skill Only"
+
+State 74
+Icon Index = 1084
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Wooly Fur"
+Description = ""
+Note = "Prog Skill Only"
+
+State 75
+Icon Index = 1063
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Lucky Charm +"
+Description = ""
+Note = "Prog Skill Only"
+
+State 76
+Icon Index = 1064
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Lucky Charm ++"
+Description = ""
+Note = "Prog Skill Only"
+
+State 77
+Icon Index = 1065
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Swarm"
+Description = ""
+Note = "Prog Skill Only"
+
+State 78
+Icon Index = 1066
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Swarm +"
+Description = ""
+Note = "Prog Skill Only"
+
+State 79
+Icon Index = 1067
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Swarm ++"
+Description = ""
+Note = "Prog Skill Only"
+
+State 80
+Icon Index = 1075
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Armor Craze"
+Description = ""
+Note = ""
+
+State 81
+Icon Index = 1069
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Muscle-Up"
+Description = ""
+Note = ""
+
+State 82
+Icon Index = 1070
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Just Got Up"
+Description = ""
+Note = ""
+
+State 83
+Icon Index = 1071
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Sea Fighter"
+Description = ""
+Note = ""
+
+State 84
+Icon Index = 1072
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Glass Cannon"
+Description = ""
+Note = ""
+
+State 85
+Icon Index = 1073
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Sugar Rush"
+Description = ""
+Note = ""
+
+State 86
+Icon Index = 1074
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Weapon Craze"
+Description = ""
+Note = ""
+
+State 87
+Icon Index = 1068
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Bulwark"
+Description = ""
+Note = ""
+
+State 88
+Icon Index = 1076
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Meathead"
+Description = ""
+Note = ""
+
+State 89
+Icon Index = 755
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "SuccUnderW"
+Description = ""
+Note = ""
+
+State 90
+Icon Index = 1280
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "MeatFed"
+Description = ""
+Note = ""
+
+State 91
+Icon Index = 1281
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "FishFed"
+Description = ""
+Note = ""
+
+State 92
+Icon Index = 1282
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "VegFed"
+Description = ""
+Note = ""
+
+State 93
+Icon Index = 1283
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "SweetFed"
+Description = ""
+Note = ""
+
+State 94
+Icon Index = 1284
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "RockFed"
+Description = ""
+Note = ""
+
+State 95
+Icon Index = 1285
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "GhostFed"
+Description = ""
+Note = ""
+
+State 96
+Icon Index = 1286
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "CumFed"
+Description = ""
+Note = ""
+
+State 97
+Icon Index = 1287
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "DairyFed"
+Description = ""
+Note = ""
+
+State 98
+Icon Index = 1288
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "OilFed"
+Description = ""
+Note = ""
+
+State 99
+Icon Index = 744
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Over/UnderW"
+Description = ""
+Note = ""
+
+State 100
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 101
+Icon Index = 1077
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Chorus"
+Description = ""
+Note = "Prog Skill Only"
+
+State 102
+Icon Index = 1078
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Chorus +"
+Description = ""
+Note = "Prog Skill Only"
+
+State 103
+Icon Index = 1079
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Chorus ++"
+Description = ""
+Note = "Prog Skill Only"
+
+State 104
+Icon Index = 1080
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Cheerful"
+Description = ""
+Note = "Prog Skill Only"
+
+State 105
+Icon Index = 742
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Flirty"
+Description = ""
+Note = "Prog Skill Only"
+
+State 106
+Icon Index = 1081
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Coward"
+Description = ""
+Note = "Prog Skill Only"
+
+State 107
+Icon Index = 1082
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Primal"
+Description = ""
+Note = ""
+
+State 108
+Icon Index = 1085
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Shiny"
+Description = ""
+Note = "Prog Skill Only"
+
+State 109
+Icon Index = 727
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Moonlit"
+Description = ""
+Note = "Prog Skill Only"
+
+State 110
+Icon Index = 1088
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Frail"
+Description = ""
+Note = "Prog Skill Only"
+
+State 111
+Icon Index = 1089
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Dull"
+Description = ""
+Note = "Prog Skill Only"
+
+State 112
+Icon Index = 1103
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Spooky"
+Description = ""
+Note = "Prog Skill Only"
+
+State 113
+Icon Index = 1028
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Warlust"
+Description = ""
+Note = ""
+
+State 114
+Icon Index = 1116
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Sharpshooter"
+Description = ""
+Note = ""
+
+State 115
+Icon Index = 1119
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Arena Champion"
+Description = ""
+Note = ""
+
+State 116
+Icon Index = 1130
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Brawler"
+Description = ""
+Note = ""
+
+State 117
+Icon Index = 1132
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Drowning"
+Description = ""
+Note = ""
+
+State 118
+Icon Index = 936
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Frostbite"
+Description = ""
+Note = ""
+
+State 119
+Icon Index = 937
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Toxin"
+Description = ""
+Note = ""
+
+State 120
+Icon Index = 938
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Scorch"
+Description = ""
+Note = ""
+
+State 121
+Icon Index = 143
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Dual Wield"
+Description = ""
+Note = ""
+
+State 122
+Icon Index = 1157
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Tsun"
+Description = ""
+Note = "<spds stat: 0, 5>"
+
+State 123
+Icon Index = 1158
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Yan"
+Description = ""
+Note = "<spds stat: 0, 10>"
+
+State 124
+Icon Index = 1159
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Kuu"
+Description = ""
+Note = "<spds stat: 0, 5>"
+
+State 125
+Icon Index = 1173
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "TsunMalus"
+Description = ""
+Note = ""
+
+State 126
+Icon Index = 1175
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "KuuMalus"
+Description = ""
+Note = ""
+
+State 127
+Icon Index = 1160
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Dan"
+Description = ""
+Note = "<spds stat: 0, 5>"
+
+State 128
+Icon Index = 1176
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "DanMalus"
+Description = ""
+Note = ""
+
+State 129
+Icon Index = 1161
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Nemui"
+Description = ""
+Note = ""
+
+State 130
+Icon Index = 1162
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Ero"
+Description = ""
+Note = "<spds stat: 1, 5>"
+
+State 131
+Icon Index = 1178
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "EroMalus"
+Description = ""
+Note = "<spds stat: 1, 1>"
+
+State 132
+Icon Index = 1168
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Masochist"
+Description = ""
+Note = ""
+
+State 133
+Icon Index = 1179
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "BattleReady"
+Description = ""
+Note = "<spds stat: 0, 1>\r\n<spds stat: 3, 1>"
+
+State 134
+Icon Index = 1180
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "BattleReady +"
+Description = ""
+Note = "<spds stat: 0, 3>\r\n<spds stat: 3, 3>"
+
+State 135
+Icon Index = 1181
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "BattleReady ++"
+Description = ""
+Note = "<spds stat: 0, 5>\r\n<spds stat: 3, 5>"
+
+State 136
+Icon Index = 1195
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Stud Knight"
+Description = ""
+Note = "<spds stat: 1, 1>"
+
+State 137
+Icon Index = 1196
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Stud Knight +"
+Description = ""
+Note = "<spds stat: 1, 3>"
+
+State 138
+Icon Index = 1197
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Stud Knight ++"
+Description = ""
+Note = "<spds stat: 1, 5>"
+
+State 139
+Icon Index = 1211
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Pacifista"
+Description = ""
+Note = "<spds stat: 2, 1>"
+
+State 140
+Icon Index = 1212
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Pacifista +"
+Description = ""
+Note = "<spds stat: 2, 3>"
+
+State 141
+Icon Index = 1213
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Pacifista ++"
+Description = ""
+Note = "<spds stat: 2, 5>"
+
+State 142
+Icon Index = 1172
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Restrained"
+Description = ""
+Note = ""
+
+State 143
+Icon Index = 1171
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Enflamed"
+Description = ""
+Note = ""
+
+State 144
+Icon Index = 1191
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Ugly Duckling"
+Description = ""
+Note = "<spds stat: 0, -10>"
+
+State 145
+Icon Index = 1203
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Diamonds"
+Description = ""
+Note = "<spds stat: 3, 3>"
+
+State 146
+Icon Index = 1204
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Clubs"
+Description = ""
+Note = "<spds stat: 1, 3>"
+
+State 147
+Icon Index = 1205
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Spades"
+Description = ""
+Note = "<spds stat: 2, 3>"
+
+State 148
+Icon Index = 1206
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Hearts"
+Description = ""
+Note = "<spds stat: 0, 3>"
+
+State 149
+Icon Index = 1219
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Quadri"
+Description = ""
+Note = "<spds stat: 3, 3>"
+
+State 150
+Icon Index = 1220
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Fiori"
+Description = ""
+Note = "<spds stat: 1, 3>"
+
+State 151
+Icon Index = 1221
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Picche"
+Description = ""
+Note = "<spds stat: 2, 3>"
+
+State 152
+Icon Index = 1222
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Cuori"
+Description = ""
+Note = "<spds stat: 0, 3>"
+
+State 153
+Icon Index = 1207
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Juggled Up!"
+Description = ""
+Note = ""
+
+State 154
+Icon Index = 1208
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Oblivious"
+Description = ""
+Note = "<spds stat: 0, -99>\r\n<spds stat: 1, -99>\r\n<spds stat limit: 2, 99>\r\n<spds stat: 3, -99>"
+
+State 155
+Icon Index = 1229
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "SafeLust"
+Description = ""
+Note = ""
+
+State 156
+Icon Index = 1231
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Jak'd"
+Description = ""
+Note = ""
+
+State 157
+Icon Index = 1262
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Transmuted"
+Description = ""
+Note = ""
+
+State 158
+Icon Index = 1263
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Clear Vision"
+Description = ""
+Note = ""
+
+State 159
+Icon Index = 1264
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Demon Vitality"
+Description = ""
+Note = ""
+
+State 160
+Icon Index = 1265
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Mida Touch"
+Description = ""
+Note = ""
+
+State 161
+Icon Index = 1266
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Beast Knight"
+Description = ""
+Note = ""
+
+State 162
+Icon Index = 1267
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Beast Knight +"
+Description = ""
+Note = ""
+
+State 163
+Icon Index = 1268
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Beast Knight ++"
+Description = ""
+Note = ""
+
+State 164
+Icon Index = 1278
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Speedster"
+Description = ""
+Note = ""
+
+State 165
+Icon Index = 1279
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Barkskin"
+Description = ""
+Note = ""
+
+State 166
+Icon Index = 1269
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Undead Knight"
+Description = ""
+Note = ""
+
+State 167
+Icon Index = 1270
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Undead Knight +"
+Description = ""
+Note = ""
+
+State 168
+Icon Index = 1271
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Undead Knight ++"
+Description = ""
+Note = ""
+
+State 169
+Icon Index = 1294
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Sweet Scent"
+Description = ""
+Note = ""
+
+State 170
+Icon Index = 1296
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "MeatFed +"
+Description = ""
+Note = ""
+
+State 171
+Icon Index = 1297
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "FishFed +"
+Description = ""
+Note = ""
+
+State 172
+Icon Index = 1298
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "VegFed +"
+Description = ""
+Note = ""
+
+State 173
+Icon Index = 1299
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "SweetFed +"
+Description = ""
+Note = ""
+
+State 174
+Icon Index = 1300
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "RockFed +"
+Description = ""
+Note = ""
+
+State 175
+Icon Index = 1301
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "GhostFed +"
+Description = ""
+Note = ""
+
+State 176
+Icon Index = 1302
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "CumFed +"
+Description = ""
+Note = ""
+
+State 177
+Icon Index = 1303
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "DairyFed +"
+Description = ""
+Note = ""
+
+State 178
+Icon Index = 1304
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "OilFed +"
+Description = ""
+Note = ""
+
+State 179
+Icon Index = 1295
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Tentacled"
+Description = ""
+Note = ""
+
+State 180
+Icon Index = 764
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "+1STR"
+Description = ""
+Note = "<spds stat: 0, 1>"
+
+State 181
+Icon Index = 765
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "+1END"
+Description = ""
+Note = "<spds stat: 1, 1>"
+
+State 182
+Icon Index = 766
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "+1INT"
+Description = ""
+Note = "<spds stat: 2, 1>"
+
+State 183
+Icon Index = 767
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "+1DEX"
+Description = ""
+Note = "<spds stat: 3, 1>"
+
+State 184
+Icon Index = 1315
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Unholy Aura"
+Description = ""
+Note = ""
+
+State 185
+Icon Index = 1316
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Unholy Armor"
+Description = ""
+Note = ""
+
+State 186
+Icon Index = 1317
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Manly! Aura"
+Description = ""
+Note = "<spds stat: 0, 5>"
+
+State 187
+Icon Index = 1318
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Arousal"
+Description = ""
+Note = "<spds stat: 1, 2>"
+
+State 188
+Icon Index = 1328
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "+2STR"
+Description = ""
+Note = "<spds stat: 0, 2>"
+
+State 189
+Icon Index = 1329
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "+2END"
+Description = ""
+Note = "<spds stat: 1, 2>"
+
+State 190
+Icon Index = 1330
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "+2INT"
+Description = ""
+Note = "<spds stat: 2, 2>"
+
+State 191
+Icon Index = 1331
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "+2DEX"
+Description = ""
+Note = "<spds stat: 3, 2>"
+
+State 192
+Icon Index = 1332
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Null Heal"
+Description = ""
+Note = ""
+
+State 193
+Icon Index = 1333
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Immunity Aura"
+Description = ""
+Note = ""
+
+State 194
+Icon Index = 1335
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Blessing: Might"
+Description = ""
+Note = ""
+
+State 195
+Icon Index = 1336
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Blessing: Armor"
+Description = ""
+Note = ""
+
+State 196
+Icon Index = 1337
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Blessing: Vampirism"
+Description = ""
+Note = "absorb 2%"
+
+State 197
+Icon Index = 1335
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Blessing: Might+"
+Description = ""
+Note = ""
+
+State 198
+Icon Index = 1336
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Blessing: Armor+"
+Description = ""
+Note = ""
+
+State 199
+Icon Index = 1337
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Blessing: Vampirism+"
+Description = ""
+Note = "absorb 5%"
+
+State 200
+Icon Index = 1347
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Serpent King"
+Description = ""
+Note = "absorb 2% HP/MP"
+
+State 201
+Icon Index = 1342
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Misled"
+Description = ""
+Note = "<spds stat: 0, 2>"
+
+State 202
+Icon Index = 1309
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Kanabo"
+Description = ""
+Note = "knight\r\n<spds stat: 0, 2>"
+
+State 203
+Icon Index = 1309
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Kanabo"
+Description = ""
+Note = "progeny\r\n<spds stat: 2, 2>"
+
+State 204
+Icon Index = 1308
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Incapacitated"
+Description = ""
+Note = ""
+
+State 205
+Icon Index = 1289
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Pine Cover"
+Description = ""
+Note = "Prog Skill Only"
+
+State 206
+Icon Index = 1290
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Pine Cover +"
+Description = ""
+Note = "Prog Skill Only"
+
+State 207
+Icon Index = 1291
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Pine Cover ++"
+Description = ""
+Note = "Prog Skill Only"
+
+State 208
+Icon Index = 1365
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Fertilized"
+Description = ""
+Note = ""
+
+State 209
+Icon Index = 1369
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Disarmed"
+Description = ""
+Note = "<sealed equip: 0, 1>"
+
+State 210
+Icon Index = 1370
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Rooted"
+Description = ""
+Note = "Prog Skill Only"
+
+State 211
+Icon Index = 1376
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "TasBOT-Gattai"
+Description = ""
+Note = ""
+
+State 212
+Icon Index = 1377
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "TasBOT-Bee"
+Description = ""
+Note = ""
+
+State 213
+Icon Index = 1378
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "TasBOT-Cat"
+Description = ""
+Note = ""
+
+State 214
+Icon Index = 1379
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "TasBOT-Dog"
+Description = ""
+Note = ""
+
+State 215
+Icon Index = 1380
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "TasBOT-Mouse"
+Description = ""
+Note = ""
+
+State 216
+Icon Index = 1381
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "TasBOT-Rabbit"
+Description = ""
+Note = ""
+
+State 217
+Icon Index = 1382
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Low Battery"
+Description = ""
+Note = ""
+
+State 218
+Icon Index = 1384
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Dog Rush"
+Description = ""
+Note = ""
+
+State 219
+Icon Index = 1387
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Slaver Cruelty"
+Description = ""
+Note = ""
+
+State 220
+Icon Index = 1398
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Brood Aura"
+Description = ""
+Note = "absorb 5%"
+
+State 221
+Icon Index = 1388
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Prickly"
+Description = ""
+Note = ""
+
+State 222
+Icon Index = 1418
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Sleepy"
+Description = ""
+Note = ""
+
+State 223
+Icon Index = 1419
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Dead Tired"
+Description = ""
+Note = ""
+
+State 224
+Icon Index = 1420
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Good Boy"
+Description = ""
+Note = "Prog Skill Only"
+
+State 225
+Icon Index = 1421
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Feline Arrogance"
+Description = ""
+Note = "Prog Skill Only\r\n<spds stat: 0, -99>"
+
+State 226
+Icon Index = 1422
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Night Stalker"
+Description = ""
+Note = ""
+
+State 227
+Icon Index = 1272
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Fiery"
+Description = ""
+Note = ""
+
+State 228
+Icon Index = 1273
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Perfect Balance"
+Description = ""
+Note = ""
+
+State 229
+Icon Index = 1274
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Electrophorus"
+Description = ""
+Note = ""
+
+State 230
+Icon Index = 1275
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Gooey"
+Description = ""
+Note = ""
+
+State 231
+Icon Index = 1276
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Heavy Blows"
+Description = ""
+Note = ""
+
+State 232
+Icon Index = 1440
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Party's Hole"
+Description = ""
+Note = "<spds stat: 1, 3>"
+
+State 233
+Icon Index = 1441
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Got a Hole"
+Description = ""
+Note = ""
+
+State 234
+Icon Index = 1442
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Magnitude"
+Description = ""
+Note = ""
+
+State 235
+Icon Index = 1443
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Swarm +++"
+Description = ""
+Note = "Prog Skill Only"
+
+State 236
+Icon Index = 1448
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Immense Luck"
+Description = ""
+Note = ""
+
+State 237
+Icon Index = 1449
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Lucky Chap"
+Description = ""
+Note = "Prog Skill Only"
+
+State 238
+Icon Index = 1450
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Lucky Chap +"
+Description = ""
+Note = "Prog Skill Only"
+
+State 239
+Icon Index = 1451
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Lucky Chap ++"
+Description = ""
+Note = "Prog Skill Only"
+
+State 240
+Icon Index = 1452
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Dreamy Aura"
+Description = ""
+Note = "<spds stat: 1, 2>\r\n<spds stat: 2, 2>"
+
+State 241
+Icon Index = 1453
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Relaxed"
+Description = ""
+Note = "<spds stat: 0, 2>"
+
+State 242
+Icon Index = 1454
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Lucid Dreamer"
+Description = ""
+Note = ""
+
+State 243
+Icon Index = 1489
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Oblivious"
+Description = ""
+Note = ""
+
+State 244
+Icon Index = 1490
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Dame of Arms"
+Description = ""
+Note = "<spds stat: 2, 2>\r\n<spds stat: 1, -99>"
+
+State 245
+Icon Index = 1491
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Out of Water"
+Description = ""
+Note = ""
+
+State 246
+Icon Index = 1511
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Auto Immunity"
+Description = ""
+Note = ""
+
+State 247
+Icon Index = 1512
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Clockwork Immunity"
+Description = ""
+Note = ""
+
+State 248
+Icon Index = 1513
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Overclocked!"
+Description = ""
+Note = ""
+
+State 249
+Icon Index = 1514
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Water Smart"
+Description = ""
+Note = ""
+
+State 250
+Icon Index = 1529
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = "Full Love"
+Description = ""
+Note = ""
+
+State 251
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 252
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 253
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 254
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 255
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 256
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 257
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 258
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 259
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 260
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 261
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 262
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 263
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 264
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 265
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 266
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 267
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 268
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 269
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 270
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 271
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 272
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 273
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 274
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 275
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 276
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 277
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 278
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 279
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 280
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 281
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 282
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 283
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 284
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 285
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 286
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 287
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 288
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 289
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 290
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 291
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 292
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 293
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 294
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 295
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 296
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 297
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 298
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 299
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+
+State 300
+Icon Index = 0
+Message 1 = ""
+Message 2 = ""
+Message 3 = ""
+Message 4 = ""
+Name = ""
+Description = ""
+Note = ""
+

@@ -1,0 +1,2100 @@
+Enemy 1
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 2
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 3
+Battler Name = ""
+Name = "Poison Shroom"
+Description = ""
+Note = "Object\r\nChar = $shroom\r\nStepAnime"
+
+Enemy 4
+Battler Name = ""
+Name = "explocart"
+Description = nil
+Note = "Object\r\nChar = vehicle\r\nChar_index = 7\r\n"
+
+Enemy 5
+Battler Name = ""
+Name = "💀 Skeleton Boss"
+Description = nil
+Note = "Object\r\nAnimation = 123\r\nStepAnime\r\nTypeUndead\r\nArmorBone\r\nWhipRes\r\nTypeDMGDark\r\nImmovable"
+
+Enemy 6
+Battler Name = ""
+Name = "💀 Skeleton Boss2"
+Description = nil
+Note = "Object\r\nAnimation = 123\r\nStepAnime\r\nTypeUndead\r\nArmorBone\r\nWhipRes\r\nTypeDMGDark\r\nImmovable"
+
+Enemy 7
+Battler Name = ""
+Name = "💀 GrvHand"
+Description = ""
+Note = "Object\r\nTypeUndead\r\nWhipRes\r\nTypeDMGDark"
+
+Enemy 8
+Battler Name = ""
+Name = "💀 DarkDjinnshadow"
+Description = nil
+Note = "Nature = 2\r\nAnimation = 123\r\nChar = $DjinnShadow\r\nView = 40\r\nSkills = 219\r\nRecover = 90\r\nStepAnime\r\nTypeDMGDark"
+
+Enemy 9
+Battler Name = ""
+Name = "💀 DarkDjinn"
+Description = nil
+Note = "Nature = 2\r\nAnimation = 123\r\nChar = $Djinn\r\nView = 40\r\nSkills = 219\r\nRecover = 90\r\nStepAnime\r\nTypeDMGDark"
+
+Enemy 10
+Battler Name = ""
+Name = "Dark Orb"
+Description = ""
+Note = "Object\r\nChar = !other1\r\nChar_index = 3"
+
+Enemy 11
+Battler Name = ""
+Name = "Ghost's Pot"
+Description = nil
+Note = "Object\r\nChar = $ghostpot\r\nTypeDMGDark\r\n"
+
+Enemy 12
+Battler Name = ""
+Name = "💀 Lilghost"
+Description = nil
+Note = "Object\r\nStepAnime\r\nTypeDMGDark\r\nTypeDMGGhost"
+
+Enemy 13
+Battler Name = ""
+Name = "💀 Hypersonja"
+Description = nil
+Note = "Object\r\nAnimation = 127\r\nRecover = 90\r\nSkills = 210\r\nWhipRes\r\nStepAnime\r\nTypeDMGGhost\r\nTypeDMGDark\r\nResFire\r\nWeakThun"
+
+Enemy 14
+Battler Name = ""
+Name = "Destr Obj"
+Description = ""
+Note = "Object\r\nInanimate"
+
+Enemy 15
+Battler Name = ""
+Name = "💀 Webling"
+Description = nil
+Note = "Object\r\nAnimation = 13\r\nArmorChitin\r\nStepAnime\r\nTypeBeast\r\nTypeDMGBug\r\nResMech\r\nWeakFire"
+
+Enemy 16
+Battler Name = ""
+Name = "💀 Mandragora"
+Description = nil
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nArmorPlant\r\nTypeDMGGrass\r\nTypeDMGRock\r\nResWater"
+
+Enemy 17
+Battler Name = ""
+Name = "💀 Crazed Insect"
+Description = ""
+Note = "Object\r\nAnimation = 82\r\nArmorChitin\r\nStepAnime\r\nTypeDMGBug\r\nTypeDMGDark"
+
+Enemy 18
+Battler Name = ""
+Name = "💀 Brownies"
+Description = nil
+Note = "Object\r\nSkills = 221\r\nRecover = 130\r\nStepAnime\r\nTypeHumanoid\r\nArmorSkin\r\nTypeDMGFae\r\nTypeDMGWind"
+
+Enemy 19
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 20
+Battler Name = ""
+Name = "💀 Mimic"
+Description = nil
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nArmorRES\r\nResAll\r\nWeakHoly"
+
+Enemy 21
+Battler Name = ""
+Name = "💀 Scarab"
+Description = nil
+Note = "Object\r\nAnimation = 19\r\nStepAnime\r\nTypeBeast\r\nArmorChitin\r\nTypeDMGBug\r\nResFire"
+
+Enemy 22
+Battler Name = ""
+Name = "💀 Ice Maiden"
+Description = ""
+Note = "Object\r\nSkills = 223\r\nRecover = 150\r\nStepAnime\r\nTypeHumanoid\r\nWhipRes\r\nArmorSkin\r\nTypeDMGIce\r\nTypeDMGFae"
+
+Enemy 23
+Battler Name = ""
+Name = "Ice Maiden II"
+Description = ""
+Note = "Nature = 2\r\nAnimation = 118\r\nChar = people2\r\nChar_index = 5\r\nSkills = 223\r\nStepAnime\r\nArmorSkin\r\nTypeDMGIce\r\nTypeDMGFae"
+
+Enemy 24
+Battler Name = ""
+Name = "💀 Bandit"
+Description = nil
+Note = "Object\r\nAnimation = 7\r\nStepAnime\r\nTypeHumanoid\r\nArmorSkin\r\nTypeDMGNormal"
+
+Enemy 25
+Battler Name = ""
+Name = "living Destr Obj"
+Description = ""
+Note = "Object\r\nStepAnime\r\nInanimate"
+
+Enemy 26
+Battler Name = ""
+Name = "Moth Boss"
+Description = ""
+Note = "Nature = 1\r\nAnimation = 141\r\nChar = $MothBoss%(4)\r\nSkills = 241\r\nRecover = 185\r\nStepAnime\r\nTypeDMGFae"
+
+Enemy 27
+Battler Name = ""
+Name = "Moth fake"
+Description = ""
+Note = "Nature = 1\r\nAnimation = 141\r\nChar = $MothBossFake%(4)\r\nSkills = 242\r\nRecover = 125\r\nStepAnime\r\nTypeDMGFae"
+
+Enemy 28
+Battler Name = ""
+Name = "💀 Rock Elemental"
+Description = nil
+Note = "Object\r\nAnimation = 19\r\nStepAnime\r\nArmorStone\r\nTypeDMGRock\r\nImmovable"
+
+Enemy 29
+Battler Name = ""
+Name = "💀 CoingCoing"
+Description = nil
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nArmorChitin\r\nTypeDMGDark\r\nTypeDMGRock"
+
+Enemy 30
+Battler Name = ""
+Name = "💀 Molten Elemental"
+Description = nil
+Note = "Object\r\nAnimation = 19\r\nStepAnime\r\nArmorStone\r\nTypeDMGRock\r\nTypeDMGFire\r\nImmovable\r\n"
+
+Enemy 31
+Battler Name = ""
+Name = "💀 Webling Elite"
+Description = nil
+Note = "Object\r\nAnimation = 15\r\nStepAnime\r\nTypeBeast\r\nArmorChitin\r\nTypeDMGBug\r\nTypeDMGFire\r\nResMech\r\nResWind\r\nResFire"
+
+Enemy 32
+Battler Name = ""
+Name = "💀 CoingCoing Elite"
+Description = nil
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nArmorChitin\r\nTypeDMGDark\r\nTypeDMGRock"
+
+Enemy 33
+Battler Name = ""
+Name = "💀 Cat Sith"
+Description = ""
+Note = "Object\r\nSkills = 272\r\nRecover = 135\r\nStepAnime\r\nTypeBeast\r\nArmorFur\r\nTypeDMGFae\r\nTypeDMGDark"
+
+Enemy 34
+Battler Name = ""
+Name = "💀 Slicer Elite"
+Description = ""
+Note = "Object\r\nAnimation = 7\r\nStepAnime\r\nArmorFur\r\nTypeDMGNormal\r\nResIce\r\nResTech"
+
+Enemy 35
+Battler Name = ""
+Name = "💀 Slicer Elite II"
+Description = ""
+Note = "Object\r\nAnimation = 10\r\nStepAnime\r\nArmorFur\r\nTypeDMGNormal\r\nResIce\r\nResTech"
+
+Enemy 36
+Battler Name = ""
+Name = "💀 Drider Princess"
+Description = ""
+Note = "Object\r\nSkills = 199\r\nRecover = 90\r\nStepAnime\r\nWhipRes\r\nArmorChitin\r\nTypeDMGDark\r\nTypeDMGBug\r\nTypeDMGFae"
+
+Enemy 37
+Battler Name = ""
+Name = "💀 Scarab Elite"
+Description = nil
+Note = "Object\r\nAnimation = 19\r\nStepAnime\r\nTypeBeast\r\nArmorChitin\r\nTypeDMGBug\r\nResFire\r\nResRock"
+
+Enemy 38
+Battler Name = ""
+Name = "💀 Bat Elite"
+Description = nil
+Note = "Object\r\nAnimation = 16\r\nSkills = 269\r\nRecover = 150\r\nStepAnime\r\nTypeBeast\r\nArmorFur\r\nTypeDMGWind\r\nTypeDMGDark\r\nResThun"
+
+Enemy 39
+Battler Name = ""
+Name = "💀 Skullcrawler"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nTypeUndead\r\nArmorBone\r\nTypeDMGDark\r\nTypeDMGRock"
+
+Enemy 40
+Battler Name = ""
+Name = "💀 Starchy"
+Description = ""
+Note = "Object\r\nAnimation = 7\r\nStepAnime\r\nTypeHumanoid\r\nArmorSkin\r\nTypeDMGNormal\r\nTypeDMGFight\r\nResHoly"
+
+Enemy 41
+Battler Name = ""
+Name = "Starchy Up"
+Description = ""
+Note = "Nature = 0\r\nAnimation = 11\r\nRecover = 90\r\nStepAnime\r\nTypeHumanoid\r\nArmorSkin\r\nTypeDMGNormal\r\nTypeDMGFight\r\nResHoly"
+
+Enemy 42
+Battler Name = ""
+Name = "Destr Obj HP"
+Description = ""
+Note = "Object\r\nInanimate"
+
+Enemy 43
+Battler Name = ""
+Name = "💀 DP1 (cave)"
+Description = ""
+Note = "Object\r\nAnimation = 8\r\nSkills = 268\r\nRecover = 165\r\nStepAnime\r\nArmorScale\r\nTypeDMGFire\r\nTypeDMGDragon\r\nResFire"
+
+Enemy 44
+Battler Name = ""
+Name = "💀 Crusader Princess"
+Description = ""
+Note = "Object\r\nAnimation = 170\r\nStepAnime\r\nTypeHumanoid\r\nTypeUndead\r\nWhipRes\r\nArmorSkin\r\nTypeDMGFight\r\nTypeDMGFae\r\nResHoly"
+
+Enemy 45
+Battler Name = ""
+Name = "💀 Mimic Boss"
+Description = ""
+Note = "Object\r\nChar = $Mimic_Hand_Idle\r\nStepAnime\r\nWhipRes\r\nTypeDMGDark\r\nImmovable"
+
+Enemy 46
+Battler Name = ""
+Name = "💀 Golem"
+Description = nil
+Note = "Object\r\nAnimation = 19\r\nStepAnime\r\nArmorStone\r\nTypeDMGRock\r\nTypeDMGMech\r\nImmovable"
+
+Enemy 47
+Battler Name = ""
+Name = "💀 Knight Princess"
+Description = ""
+Note = "Object\r\nAnimation = 118\r\nStepAnime\r\nTypeHumanoid\r\nWhipRes\r\nArmorSkin\r\nTypeDMGFight"
+
+Enemy 48
+Battler Name = ""
+Name = "💀 DP2 (test)"
+Description = ""
+Note = "Object\r\nAnimation = 9\r\nSkills = 223\r\nRecover = 165\r\nStepAnime\r\nArmorScale\r\nTypeDMGIce\r\nTypeDMGDragon\r\nResIce"
+
+Enemy 49
+Battler Name = ""
+Name = "Dragon Princess II"
+Description = ""
+Note = "Nature = 1\r\nAnimation = 9\r\nChar = $DraPII\r\nSkills = 198\r\nRecover = 65\r\nStepAnime\r\nArmorScale\r\nTypeDMGIce\r\nTypeDMGDragon"
+
+Enemy 50
+Battler Name = ""
+Name = "💀 Bakeneko"
+Description = ""
+Note = "Object\r\nChar = $Bakeneko_Walk\r\nStepAnime\r\nTypeBeast\r\nWhipRes\r\nArmorFur\r\nTypeDMGDark\r\nTypeDMGFight"
+
+Enemy 51
+Battler Name = ""
+Name = "💀 Gazer"
+Description = nil
+Note = "Nature = 0\r\nAnimation = 13\r\nStepAnime\r\nArmorScale\r\nTypeDMGWind"
+
+Enemy 52
+Battler Name = ""
+Name = "Water Snake"
+Description = ""
+Note = "Nature = 0\r\nAnimation = 15\r\nChar = $057-Snake03\r\nStepAnime\r\nTypeSeafolk\r\nArmorScale\r\nTypeDMGWater"
+
+Enemy 53
+Battler Name = ""
+Name = "💀 Bat"
+Description = nil
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nTypeBeast\r\nArmorFur\r\nTypeDMGWind\r\nTypeDMGDark"
+
+Enemy 54
+Battler Name = ""
+Name = "Box"
+Description = ""
+Note = "Object"
+
+Enemy 55
+Battler Name = ""
+Name = "💀 Human Knight"
+Description = ""
+Note = "Object\r\nAnimation = 7\r\nStepAnime\r\nTypeHumanoid\r\nArmorSkin\r\nTypeDMGFight"
+
+Enemy 56
+Battler Name = ""
+Name = "Rock Elemental (EXCORR)"
+Description = nil
+Note = "Nature = 0\r\nAnimation = 19\r\nChar = $RockElemental\r\nStepAnime"
+
+Enemy 57
+Battler Name = ""
+Name = "💀 Succubus Shade+"
+Description = ""
+Note = "Object\r\nSkills = 270\r\nRecover = 110\r\nStepAnime\r\nWhipRes\r\nArmorSkin\r\nTypeDMGDark"
+
+Enemy 58
+Battler Name = ""
+Name = "💀 Golem Kamikaze"
+Description = ""
+Note = "Object\r\nAnimation = 57\r\nStepAnime\r\nWhipRes\r\nArmorStone\r\nTypeDMGMech"
+
+Enemy 59
+Battler Name = ""
+Name = "Balista"
+Description = ""
+Note = "Object\r\nChar = $catapult\r\nSkills = 201\r\nAuto_Attack\r\nRecover = 160\r\nStepAnime\r\nInanimate\r\nWhipRes\r\nArmorPlant\r\nTypeDMGMech"
+
+Enemy 60
+Battler Name = ""
+Name = "BalistaOff"
+Description = ""
+Note = "Object\r\nInanimate\r\nWhipRes\r\nArmorPlant\r\nTypeDMGMech"
+
+Enemy 61
+Battler Name = ""
+Name = "💀 Mercenary"
+Description = ""
+Note = "Object\r\nSkills = 271\r\nRecover = 150\r\nStepAnime\r\nTypeHumanoid\r\nArmorSkin\r\nTypeDMGNormal"
+
+Enemy 62
+Battler Name = ""
+Name = "💀 Succubus Shade"
+Description = ""
+Note = "Object\r\nSkills = 270\r\nRecover = 130\r\nStepAnime\r\nWhipRes\r\nArmorSkin\r\nTypeDMGDark"
+
+Enemy 63
+Battler Name = ""
+Name = "Golems artillery"
+Description = ""
+Note = "Object\r\nChar = $GolTurret\r\nSkills = 200\r\nAuto_Attack\r\nRecover = 90\r\nStepAnime\r\nInanimate\r\nArmorStone\r\nTypeDMGMech"
+
+Enemy 64
+Battler Name = ""
+Name = "💀 Marmalad"
+Description = ""
+Note = "Object\r\nAnimation = 221\r\nStepAnime\r\nArmorJello\r\nTypeDMGWater\r\nWeakFire"
+
+Enemy 65
+Battler Name = ""
+Name = "💀 Magilad"
+Description = ""
+Note = "Object\r\nSkills = 273\r\nRecover = 150\r\nStepAnime\r\nArmorJello\r\nTypeDMGWater\r\nWeakFire"
+
+Enemy 66
+Battler Name = ""
+Name = "💀 Jell Tower"
+Description = ""
+Note = "Object\r\nSkills = 274\r\nRecover = 200\r\nStepAnime\r\nArmorJello\r\nTypeDMGWater\r\nWeakFire\r\nImmovable"
+
+Enemy 67
+Battler Name = ""
+Name = "💀 Stinger"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nArmorChitin\r\nTypeDMGBug\r\nTypeDMGWind"
+
+Enemy 68
+Battler Name = ""
+Name = "💀 Insect Ranged"
+Description = ""
+Note = "Object\r\nSkills = 203\r\nRecover = 130\r\nStepAnime\r\nArmorChitin\r\nTypeDMGBug"
+
+Enemy 69
+Battler Name = ""
+Name = "Insect Wasps"
+Description = ""
+Note = "Nature = 1\r\nAnimation = 13\r\nChar = $Hornet\r\nRecover = 45\r\nStepAnime\r\nArmorChitin\r\nTypeDMGBug"
+
+Enemy 70
+Battler Name = ""
+Name = "💀 Insect Siege"
+Description = ""
+Note = "Object\r\nSkills = 204\r\nRecover = 180\r\nStepAnime\r\nArmorChitin\r\nTypeDMGBug\r\nResWind"
+
+Enemy 71
+Battler Name = ""
+Name = "💀 Bonehead"
+Description = ""
+Note = "Object\r\nAnimation = 7\r\nStepAnime\r\nTypeUndead\r\nArmorBone\r\nTypeDMGDark\r\nTypeDMGFight\r\nResIce"
+
+Enemy 72
+Battler Name = ""
+Name = "💀 Bonehead Elite"
+Description = ""
+Note = "Object\r\nAnimation = 7\r\nStepAnime\r\nTypeUndead\r\nArmorBone\r\nTypeDMGDark\r\nTypeDMGFight\r\nResIce"
+
+Enemy 73
+Battler Name = ""
+Name = "💀 Skeleton Necro"
+Description = ""
+Note = "Object\r\nStepAnime\r\nTypeUndead\r\nArmorBone\r\nTypeDMGDark\r\nResIce"
+
+Enemy 74
+Battler Name = ""
+Name = "Skeleton Ranged"
+Description = ""
+Note = "Nature = 1\r\nAnimation = 82\r\nChar = skelliesarmy\r\nChar_index = 2\r\nSkills = 206\r\nRecover = 80\r\nStepAnime\r\nArmorBone\r\nTypeDMGDark\r\nResIce"
+
+Enemy 75
+Battler Name = ""
+Name = "💀 Satyr"
+Description = ""
+Note = "Object\r\nAnimation = 176\r\nStepAnime\r\nTypeHumanoid\r\nArmorFur\r\nWeakHoly\r\nTypeDMGDark\r\nTypeDMGFire"
+
+Enemy 76
+Battler Name = ""
+Name = "Desert assassins"
+Description = ""
+Note = "Nature = 1\r\nAnimation = 7\r\nChar = Evil\r\nChar_index = 2\r\nSkills = 207\r\nRecover = 70\r\nStepAnime\r\nArmorSkin\r\nTypeDMGDark\r\nTypeDMGFight"
+
+Enemy 77
+Battler Name = ""
+Name = "💀 Succubus"
+Description = ""
+Note = "Object\r\nSkills = 270\r\nRecover = 170\r\nStepAnime\r\nTypeHumanoid\r\nWhipRes\r\nArmorSkin\r\nTypeDMGDark"
+
+Enemy 78
+Battler Name = ""
+Name = "💀 Martyr"
+Description = ""
+Note = "Object\r\nAnimation = 220\r\nStepAnime\r\nTypeUndead\r\nArmorSkin\r\nTypeDMGFight\r\nTypeDMGGhost"
+
+Enemy 79
+Battler Name = ""
+Name = "💀 Ghost ranged"
+Description = ""
+Note = "Object\r\nSkills = 210\r\nRecover = 180\r\nStepAnime\r\nTypeUndead\r\nArmorSkin\r\nTypeDMGGhost"
+
+Enemy 80
+Battler Name = ""
+Name = "Ghost machines 80"
+Description = ""
+Note = "Object\r\nChar = $crystals\r\nSkills = 210\r\nRecover = 150\r\nAuto_Attack\r\nStepAnime\r\nInanimate\r\nWhipRes\r\nArmorStone\r\nTypeDMGGhost"
+
+Enemy 81
+Battler Name = ""
+Name = "💀 Shiruku"
+Description = ""
+Note = "Object\r\nSkills = 208\r\nRecover = 90\r\nStepAnime\r\nWhipRes\r\nArmorChitin\r\nTypeDMGBug\r\nTypeDMGFire\r\nResFire"
+
+Enemy 82
+Battler Name = ""
+Name = "💀 Rust Boss"
+Description = ""
+Note = "Object\r\nAnimation = 19\r\nStepAnime\r\nWhipRes\r\nArmorStone\r\nTypeDMGRock\r\nTypeDMGMech\r\nImmovable"
+
+Enemy 83
+Battler Name = ""
+Name = "Slime Boss"
+Description = ""
+Note = "Nature = 1\r\nAnimation = 121\r\nChar = $slimeboss%(4)\r\nSkills = 212\r\nRecover = 100\r\nStepAnime\r\nWhipRes\r\nArmorJello\r\nTypeDMGWater\r\nWeakFire"
+
+Enemy 84
+Battler Name = ""
+Name = "Mouse spawn fire"
+Description = ""
+Note = "Nature = 0\r\nAnimation = 83\r\nChar = $flamerat_a\r\nStepAnime\r\nArmorFur\r\nTypeDMGBeast\r\nTypeDMGFire"
+
+Enemy 85
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 86
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 87
+Battler Name = ""
+Name = "💀 Fireling"
+Description = ""
+Note = "Object\r\nAnimation = 14\r\nStepAnime\r\nWhipRes\r\nArmorChitin\r\nTypeDMGBug\r\nResFire"
+
+Enemy 88
+Battler Name = ""
+Name = "💀 Lichling"
+Description = ""
+Note = "Nature = 0\r\nAnimation = 13\r\nStepAnime\r\nWhipRes\r\nArmorRES\r\nResAll\r\n"
+
+Enemy 89
+Battler Name = ""
+Name = "💀 Cat Fighter"
+Description = ""
+Note = "Object\r\nAnimation = 7\r\nStepAnime\r\nTypeBeast\r\nArmorFur\r\nTypeDMGFight\r\nWeakWater"
+
+Enemy 90
+Battler Name = ""
+Name = "💀 Chef"
+Description = ""
+Note = "Nature = 1\r\nChar = $chef\r\nSkills = 216,217\r\nRecover = 80\r\nStepAnime\r\nTypeHumanoid\r\nArmorSkin\r\nTypeDMGNormal\r\nTypeDMGFire"
+
+Enemy 91
+Battler Name = ""
+Name = "Little Snake"
+Description = ""
+Note = "Nature = 0\r\nChar = $LittleSandSnake%(4)\r\nRecover = 75\r\nStepAnime\r\nArmorScale\r\nTypeDMGBug\r\nTypeDMGRock"
+
+Enemy 92
+Battler Name = ""
+Name = "Starchy insane"
+Description = ""
+Note = "Nature = 0\r\nAnimation = 7\r\nChar = $StarchyInsane\r\nRecover = 90\r\nStepAnime\r\nArmorSkin\r\nTypeDMGFight\r\nTypeDMGDark\r\nResHoly"
+
+Enemy 93
+Battler Name = ""
+Name = "Patrol"
+Description = ""
+Note = "Nature = 0\r\nStepAnime"
+
+Enemy 94
+Battler Name = ""
+Name = "💀 Slicer"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nTypeHumanoid\r\nArmorSkin\r\nTypeDMGNormal"
+
+Enemy 95
+Battler Name = ""
+Name = "💀 Goblin Ranged"
+Description = ""
+Note = "Object\r\nSkills = 275\r\nRecover = 90\r\nStepAnime\r\nTypeHumanoid\r\nArmorSkin\r\nTypeDMGNormal"
+
+Enemy 96
+Battler Name = ""
+Name = "💀 DP4 (test)"
+Description = ""
+Note = "Object\r\nAnimation = 9\r\nSkills = 223\r\nRecover = 165\r\nStepAnime\r\nArmorScale\r\nTypeDMGWater\r\nTypeDMGDragon\r\nResWater"
+
+Enemy 97
+Battler Name = ""
+Name = "💀 DP5 (test)"
+Description = ""
+Note = "Object\r\nAnimation = 9\r\nSkills = 223\r\nRecover = 165\r\nStepAnime\r\nArmorScale\r\nTypeDMGDark\r\nTypeDMGDragon\r\nResDark"
+
+Enemy 98
+Battler Name = ""
+Name = "Moleman"
+Description = ""
+Note = "Nature = 1\r\nAnimation = 7\r\nChar = $moleman%(4)\r\nStepAnime\r\nArmorFur\r\nTypeDMGRock"
+
+Enemy 99
+Battler Name = ""
+Name = "Moleman Boss"
+Description = ""
+Note = "Nature = 1\r\nAnimation = 7\r\nChar = $molemanboss%(4)\r\nSkills = 227\r\nStepAnime\r\nArmorFur\r\nTypeDMGRock"
+
+Enemy 100
+Battler Name = ""
+Name = "Torches"
+Description = ""
+Note = "Object\r\nInanimate"
+
+Enemy 101
+Battler Name = ""
+Name = "Fairy soldiers"
+Description = ""
+Note = "Nature = 2\r\nSkills = 228\r\nRecover = 85\r\nStepAnime\r\nTypeDMGHoly"
+
+Enemy 102
+Battler Name = ""
+Name = "Dragon Pup"
+Description = ""
+Note = "Nature = 1\r\nAnimation = 57\r\nChar = $DragonPup%(4)\r\nSkills = 229\r\nRecover = 100\r\nStepAnime\r\nArmorScale\r\nTypeDMGFire"
+
+Enemy 103
+Battler Name = ""
+Name = "Spiderlings"
+Description = ""
+Note = "Nature = 1\r\nAnimation = 13\r\nChar = $spiderlings\r\nStepanime\r\nArmorChitin\r\nTypeDMGBug"
+
+Enemy 104
+Battler Name = ""
+Name = "Shroom"
+Description = ""
+Note = "Nature = 1\r\nAnimation = 131\r\nChar = $EnemyShroom%(4)\r\nStepanime\r\nInanimate\r\nArmorPlant\r\nTypeDMGDark\r\nTypeDMGGrass"
+
+Enemy 105
+Battler Name = ""
+Name = "Knight Brain"
+Description = ""
+Note = "Object\r\nWhipRes"
+
+Enemy 106
+Battler Name = ""
+Name = "💀 Wallmaster (test)"
+Description = ""
+Note = "Object\r\nAnimation = 9\r\nStepAnime\r\nArmorSkin\r\nTypeDMGDark\r\nResDark\r\nWeakHoly"
+
+Enemy 107
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 108
+Battler Name = ""
+Name = "💀 Kobold Zombie"
+Description = ""
+Note = "Object\r\nAnimation = 7\r\nStepAnime\r\nTypeUndead\r\nArmorScale\r\nTypeDMGDark\r\nTypeDMGDragon"
+
+Enemy 109
+Battler Name = ""
+Name = "💀 LewdCrawler"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nTypeUndead\r\nArmorBone\r\nTypeDMGDark\r\nTypeDMGRock\r\nWeakHoly"
+
+Enemy 110
+Battler Name = ""
+Name = "💀 Goblin Musket"
+Description = ""
+Note = "Object\r\nSkills = 275\r\nRecover = 110\r\nStepAnime\r\nTypeHumanoid\r\nArmorSkin\r\nTypeDMGNormal"
+
+Enemy 111
+Battler Name = ""
+Name = "Bushes"
+Description = ""
+Note = "Object\r\nChar = float01\r\nChar_index = 5\r\nInanimate"
+
+Enemy 112
+Battler Name = ""
+Name = "💀 Tsuchiconda"
+Description = ""
+Note = "Nature = 0\r\nChar = $GiantTsuchinoko%(6)\r\nRecover = 45\r\nStepAnime\r\nTypeBeast\r\nWhipRes\r\nArmorScale\r\nTypeDMGRock\r\nTypeDMGDragon\r\nImmovable"
+
+Enemy 113
+Battler Name = ""
+Name = "💀 Little Snake"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nTypeBeast\r\nArmorScale\r\nTypeDMGRock"
+
+Enemy 114
+Battler Name = ""
+Name = "sphinx guard"
+Description = ""
+Note = "Inanimate\r\nArmorStone\r\nTypeDMGRock\r\nTypeDMGMech\r\nResAll"
+
+Enemy 115
+Battler Name = ""
+Name = "Sphinx autatk"
+Description = ""
+Note = "Object\r\nChar = ROBOTS\r\nChar_index = 6\r\nSkills = 232\r\nAuto_Attack\r\nRecover = 100\r\nStepAnime\r\nInanimate\r\nArmorStone"
+
+Enemy 116
+Battler Name = ""
+Name = "Mummy"
+Description = ""
+Note = "Nature = 0\r\nRecover = 75\r\nStepAnime\r\nArmorCloth\r\nTypeDMGDark\r\nWeakFire"
+
+Enemy 117
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 118
+Battler Name = ""
+Name = "💀 Sphinx Boss"
+Description = ""
+Note = "Object\r\nNature = 2\r\nSkills = 234\r\nAuto_Attack\r\nRecover = 240\r\nStepAnime\r\nInanimate\r\nWhipRes\r\nArmorStone\r\nTypeDMGMech\r\nWeakWater"
+
+Enemy 119
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 120
+Battler Name = ""
+Name = "💀 Sparkturret"
+Description = ""
+Note = "Object\r\nNature = 2\r\nChar = $Sparkturret%(4)\r\nSkills = 233\r\nAuto_Attack\r\nRecover = 45\r\nStepAnime\r\nInanimate\r\nWhipRes"
+
+Enemy 121
+Battler Name = ""
+Name = "💀 Dog Princess"
+Description = ""
+Note = "Object\r\nAnimation = 82\r\nStepAnime\r\nTypeBeast\r\nWhipRes\r\nArmorFur\r\nTypeDMGNormal"
+
+Enemy 122
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 123
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 124
+Battler Name = ""
+Name = "ShotsG"
+Description = ""
+Note = "Object\r\nChar = $ShotGreen\r\nStepAnime"
+
+Enemy 125
+Battler Name = ""
+Name = "ShotsR"
+Description = ""
+Note = "Object\r\nChar = $ShotRed\r\nStepAnime"
+
+Enemy 126
+Battler Name = ""
+Name = "ShootingG"
+Description = ""
+Note = "Nature = 2\r\nChar = $chef\r\nSkills = 235,237\r\nRecover = 80\r\nStepAnime"
+
+Enemy 127
+Battler Name = ""
+Name = "ShootingR"
+Description = ""
+Note = "Nature = 2\r\nChar = $chef\r\nSkills = 236,238\r\nRecover = 80\r\nStepAnime"
+
+Enemy 128
+Battler Name = ""
+Name = "💀 Crystal Lizard"
+Description = ""
+Note = "Object\r\nAnimation = 206\r\nStepAnime\r\nArmorStone\r\nTypeDMGRock\r\nResFire\r\nResHoly\r\nResDark"
+
+Enemy 129
+Battler Name = ""
+Name = "💀 Crystal form"
+Description = ""
+Note = "Object\r\nWhipRes\r\nArmorStone\r\nTypeDMGRock\r\nResFire\r\nResHoly\r\nResDark"
+
+Enemy 130
+Battler Name = ""
+Name = "Assault bug"
+Description = ""
+Note = "Object"
+
+Enemy 131
+Battler Name = ""
+Name = "💀 Wolf"
+Description = ""
+Note = "Object\r\nAnimation = 7\r\nStepAnime\r\nTypeBeast\r\nArmorFur\r\nTypeDMGNormal"
+
+Enemy 132
+Battler Name = ""
+Name = "Ghost on Light"
+Description = ""
+Note = "Nature = 0\r\nRecover = 80\r\nStepAnime"
+
+Enemy 133
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 134
+Battler Name = ""
+Name = "💀 Dragon Guards"
+Description = ""
+Note = "Object\r\nAnimation = 8\r\nStepAnime\r\nArmorScale\r\nTypeDMGDragon\r\nTypeDMGFight"
+
+Enemy 135
+Battler Name = ""
+Name = "💀 Queen1"
+Description = ""
+Note = "Object\r\nChar = $dragonQ\r\nStepAnime\r\nWhipRes\r\nArmorScale\r\nTypeDMGDragon\r\nResAll\r\nImmovable"
+
+Enemy 136
+Battler Name = ""
+Name = "💀 Queen2"
+Description = ""
+Note = "Object\r\nNature = 2\r\nSkills = 239\r\nAuto_Attack\r\nRecover = 125\r\nStepAnime\r\nWhipRes\r\nArmorScale\r\nTypeDMGDragon\r\nResAll\r\nImmovable"
+
+Enemy 137
+Battler Name = ""
+Name = "NPC1"
+Description = ""
+Note = ""
+
+Enemy 138
+Battler Name = ""
+Name = "NPC2"
+Description = ""
+Note = ""
+
+Enemy 139
+Battler Name = ""
+Name = "NPC3"
+Description = ""
+Note = ""
+
+Enemy 140
+Battler Name = ""
+Name = "💀 Moth Ranged"
+Description = ""
+Note = "Object\r\nSkills = 243\r\nRecover = 210\r\nStepAnime\r\nArmorFur\r\nTypeDMGBug\r\nTypeDMGFae"
+
+Enemy 141
+Battler Name = ""
+Name = "💀 Caterpillar"
+Description = ""
+Note = "Object\r\nAnimation = 19\r\nStepAnime\r\nTypeBeast\r\nArmorChitin\r\nTypeDMGBug\r\nTypeDMGFae"
+
+Enemy 142
+Battler Name = ""
+Name = "Moth Mage"
+Description = ""
+Note = "Nature = 0\r\nChar = !flame\r\nChar_index = 5\r\nSkills = 243\r\nRecover = 80\r\nStepAnime\r\nArmorFur\r\nTypeDMGBug\r\nTypeDMGFae"
+
+Enemy 143
+Battler Name = ""
+Name = "Dusk P"
+Description = ""
+Note = "Object\r\nStepAnime\r\nWhipRes\r\nArmorSkin\r\nTypeDMGDark\r\nTypeDMGFae\r\nWeakHoly"
+
+Enemy 144
+Battler Name = ""
+Name = "💀 Wendigo"
+Description = ""
+Note = "Object\r\nAnimation = 7\r\nStepAnime\r\nTypeBeast\r\nArmorBone\r\nTypeDMGDark\r\nWeakHoly\r\nWeakFire"
+
+Enemy 145
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 146
+Battler Name = ""
+Name = "💀 WendigoP"
+Description = ""
+Note = "Object\r\nAnimation = 7\r\nStepAnime\r\nTypeBeast\r\nWhipRes\r\nArmorFur\r\nTypeDMGDark\r\nWeakHoly\r\nWeakFire"
+
+Enemy 147
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 148
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 149
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 150
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 151
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 152
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 153
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 154
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 155
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 156
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 157
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 158
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 159
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 160
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 161
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 162
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 163
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 164
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 165
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 166
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 167
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 168
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 169
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 170
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 171
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 172
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 173
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 174
+Battler Name = ""
+Name = "Amelie 1"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nWhipRes\r\nArmorScale\r\nTypeDMGDragon\r\nTypeDMGMech\r\nResHoly"
+
+Enemy 175
+Battler Name = ""
+Name = "Amelie 2"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nWhipRes\r\nArmorScale\r\nTypeDMGDragon\r\nTypeDMGMech\r\nResHoly"
+
+Enemy 176
+Battler Name = ""
+Name = "Amelie 3"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nWhipRes\r\nArmorScale\r\nTypeDMGDragon\r\nTypeDMGMech\r\nResHoly"
+
+Enemy 177
+Battler Name = ""
+Name = "Amelie 4"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nWhipRes\r\nArmorScale\r\nTypeDMGDragon\r\nTypeDMGMech\r\nResHoly"
+
+Enemy 178
+Battler Name = ""
+Name = "Amelie 5"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nWhipRes\r\nArmorScale\r\nTypeDMGDragon\r\nTypeDMGMech\r\nResHoly"
+
+Enemy 179
+Battler Name = ""
+Name = "Amelie 6"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nWhipRes\r\nArmorScale\r\nTypeDMGDragon\r\nTypeDMGMech\r\nResHoly"
+
+Enemy 180
+Battler Name = ""
+Name = "Amelie 7"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nWhipRes\r\nArmorScale\r\nTypeDMGDragon\r\nTypeDMGMech\r\nResHoly"
+
+Enemy 181
+Battler Name = ""
+Name = "Amelie 8"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nWhipRes\r\nArmorScale\r\nTypeDMGDragon\r\nTypeDMGMech\r\nResHoly"
+
+Enemy 182
+Battler Name = ""
+Name = "Amelie 9"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nWhipRes\r\nArmorScale\r\nTypeDMGDragon\r\nTypeDMGMech\r\nResHoly"
+
+Enemy 183
+Battler Name = ""
+Name = "Amelie 10"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nWhipRes\r\nArmorScale\r\nTypeDMGDragon\r\nTypeDMGMech\r\nResHoly"
+
+Enemy 184
+Battler Name = ""
+Name = "Michael 1"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nArmorSkin\r\nTypeDMGNormal\r\nResHoly"
+
+Enemy 185
+Battler Name = ""
+Name = "Michael 2"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nArmorSkin\r\nTypeDMGNormal\r\nResHoly"
+
+Enemy 186
+Battler Name = ""
+Name = "Michael 3"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nArmorSkin\r\nTypeDMGNormal\r\nResHoly"
+
+Enemy 187
+Battler Name = ""
+Name = "Michael 4"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nArmorSkin\r\nTypeDMGNormal\r\nResHoly"
+
+Enemy 188
+Battler Name = ""
+Name = "Michael 5"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nArmorSkin\r\nTypeDMGNormal\r\nResHoly"
+
+Enemy 189
+Battler Name = ""
+Name = "Michael 6"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nArmorSkin\r\nTypeDMGNormal\r\nResHoly"
+
+Enemy 190
+Battler Name = ""
+Name = "Michael 7"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nArmorSkin\r\nTypeDMGNormal\r\nResHoly"
+
+Enemy 191
+Battler Name = ""
+Name = "Michael 8"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nArmorSkin\r\nTypeDMGNormal\r\nResHoly"
+
+Enemy 192
+Battler Name = ""
+Name = "Michael 9"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nArmorSkin\r\nTypeDMGNormal\r\nResHoly"
+
+Enemy 193
+Battler Name = ""
+Name = "Michael 10"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nArmorSkin\r\nTypeDMGNormal\r\nResHoly"
+
+Enemy 194
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 195
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 196
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 197
+Battler Name = ""
+Name = "Mugen 1"
+Description = ""
+Note = "Object\r\nSkills = 215\r\nRecover = 130\r\nStepAnime\r\nArmorSkin\r\nResAll"
+
+Enemy 198
+Battler Name = ""
+Name = "Mugen 2"
+Description = ""
+Note = "Object\r\nSkills = 215\r\nRecover = 130\r\nStepAnime\r\nArmorSkin\r\nResAll"
+
+Enemy 199
+Battler Name = ""
+Name = "Mugen 3"
+Description = ""
+Note = "Object\r\nSkills = 215\r\nRecover = 130\r\nStepAnime\r\nArmorSkin\r\nResAll"
+
+Enemy 200
+Battler Name = ""
+Name = "Mugen 4"
+Description = ""
+Note = "Object\r\nSkills = 215\r\nRecover = 130\r\nStepAnime\r\nArmorSkin\r\nResAll"
+
+Enemy 201
+Battler Name = ""
+Name = "Mugen 5"
+Description = ""
+Note = "Object\r\nSkills = 215\r\nRecover = 130\r\nStepAnime\r\nArmorSkin\r\nResAll"
+
+Enemy 202
+Battler Name = ""
+Name = "Mugen 6"
+Description = ""
+Note = "Object\r\nSkills = 215\r\nRecover = 130\r\nStepAnime\r\nArmorSkin\r\nResAll"
+
+Enemy 203
+Battler Name = ""
+Name = "Mugen 7"
+Description = ""
+Note = "Object\r\nSkills = 215\r\nRecover = 130\r\nStepAnime\r\nArmorSkin\r\nResAll"
+
+Enemy 204
+Battler Name = ""
+Name = "Mugen 8"
+Description = ""
+Note = "Object\r\nSkills = 215\r\nRecover = 130\r\nStepAnime\r\nArmorSkin\r\nResAll"
+
+Enemy 205
+Battler Name = ""
+Name = "Mugen 9"
+Description = ""
+Note = "Object\r\nSkills = 215\r\nRecover = 130\r\nStepAnime\r\nArmorSkin\r\nResAll"
+
+Enemy 206
+Battler Name = ""
+Name = "Mugen 10"
+Description = ""
+Note = "Object\r\nSkills = 215\r\nRecover = 130\r\nStepAnime\r\nArmorSkin\r\nResAll"
+
+Enemy 207
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 208
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 209
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 210
+Battler Name = ""
+Name = "💀 Rabbit Hammer"
+Description = ""
+Note = "Object\r\nAnimation = 19\r\nStepAnime\r\nTypeBeast\r\nArmorFur\r\nTypeDMGNormal\r\nResFire\r\nResIce"
+
+Enemy 211
+Battler Name = ""
+Name = "💀 Scarecrow"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nTypeUndead\r\nArmorPlant\r\nTypeDMGGrass\r\nTypeDMGDark"
+
+Enemy 212
+Battler Name = ""
+Name = "Harvest Soldier Y HIDDEN"
+Description = ""
+Note = "Nature = 0\r\nAnimation = 7\r\nChar = $ScarecrowYField\r\nRecover = 70\r\nStepAnime\r\nTypeUndead\r\nArmorPlant\r\nTypeDMGGrass\r\nTypeDMGDark"
+
+Enemy 213
+Battler Name = ""
+Name = "💀 Michael CoC"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nTypeHumanoid\r\nArmorSkin\r\nTypeDMGNormal\r\nResHoly\r\nWeakDark"
+
+Enemy 214
+Battler Name = ""
+Name = "💀 Hippopotus"
+Description = ""
+Note = "Object\r\nChar = $HippoWalk\r\nStepAnime\r\nTypeBeast\r\nWhipRes\r\nArmorPlant\r\nTypeDMGGrass\r\nTypeDMGWater\r\nResFire\r\nResIce\r\nImmovable"
+
+Enemy 215
+Battler Name = ""
+Name = "💀 Church Maceman"
+Description = ""
+Note = "Object\r\nAnimation = 19\r\nStepAnime\r\nTypeHumanoid\r\nArmorSkin\r\nTypeDMGFight\r\nTypeDMGFae"
+
+Enemy 216
+Battler Name = ""
+Name = "Destr Obj Stepping"
+Description = ""
+Note = "Object\r\nStepAnime\r\nInanimate"
+
+Enemy 217
+Battler Name = ""
+Name = "UndestrThing"
+Description = ""
+Note = "Object\r\nStepAnime\r\nInanimate\r\nWhipRes"
+
+Enemy 218
+Battler Name = ""
+Name = "💀 Prawn Knight"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nTypeSeafolk\r\nArmorScale\r\nTypeDMGWater"
+
+Enemy 219
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 220
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 221
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 222
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 223
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 224
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 225
+Battler Name = ""
+Name = "Nun Ghost"
+Description = nil
+Note = "Nature = 0\r\nAnimation = 7\r\nStepAnime\r\nWhipRes\r\nTypeUndead\r\nArmorSkin\r\nTypeDMGFae"
+
+Enemy 226
+Battler Name = ""
+Name = "Sister Agathe"
+Description = nil
+Note = "Object\r\nChar = $nunAgatheTomb%(4)\r\nStepAnime\r\nWhipRes\r\nTypeUndead\r\nArmorStone\r\nTypeDMGFae"
+
+Enemy 227
+Battler Name = ""
+Name = "Goopy"
+Description = nil
+Note = "Nature = 1\r\nAnimation = 13\r\nChar = $Jello%(4)\r\nStepAnime\r\nArmorJello\r\nWeakAll"
+
+Enemy 228
+Battler Name = ""
+Name = "Crystal Goopy"
+Description = nil
+Note = "Object\r\nAnimation = 246\r\nStepAnime\r\nArmorJello\r\nWeakAll"
+
+Enemy 229
+Battler Name = ""
+Name = "💀 Ice Goopy"
+Description = nil
+Note = "Object\r\nAnimation = 245\r\nSkills = 267\r\nRecover = 150\r\nStepAnime\r\nArmorStone\r\nTypeDMGIce\r\nResWater\r\nResIce"
+
+Enemy 230
+Battler Name = ""
+Name = "💀 King Cucco"
+Description = ""
+Note = "Object\r\nChar = $CuccoWalk\r\nStepAnime\r\nWhipRes\r\nArmorFur\r\nTypeDMGWind\r\nImmovable"
+
+Enemy 231
+Battler Name = ""
+Name = "💀 PumpKing"
+Description = ""
+Note = "Object\r\nChar = $PumpKing\r\nStepAnime\r\nWhipRes\r\nArmorPlant\r\nTypeDMGGrass\r\nTypeDMGDark\r\nResWind\r\nImmovable"
+
+Enemy 232
+Battler Name = ""
+Name = "Crow"
+Description = nil
+Note = "Nature = 0\r\nAnimation = 13\r\nChar = $Calamitas%(4)\r\nRecover = 70\r\nStepAnime\r\nTypeDMGWind"
+
+Enemy 233
+Battler Name = ""
+Name = "💀 Wyvern"
+Description = ""
+Note = "Object\r\nAnimation = 197\r\nStepAnime\r\nArmorScale\r\nTypeDMGWind\r\nTypeDMGDragon\r\nResWind"
+
+Enemy 234
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 235
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 236
+Battler Name = ""
+Name = "💀 Dragon Guards E"
+Description = ""
+Note = "Object\r\nAnimation = 8\r\nStepAnime\r\nArmorScale\r\nTypeDMGDragon\r\nTypeDMGFight"
+
+Enemy 237
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 238
+Battler Name = ""
+Name = "Rock Crusher Boss"
+Description = nil
+Note = "Object\r\nChar = $RockElemental\r\nStepAnime\r\nArmorStone\r\nTypeDMGRock"
+
+Enemy 239
+Battler Name = ""
+Name = "💀 Moss Crusher Boss"
+Description = nil
+Note = "Object\r\nChar = $MossElemental\r\nStepAnime\r\nArmorStone\r\nTypeDMGRock\r\nTypeDMGGrass"
+
+Enemy 240
+Battler Name = ""
+Name = "Molten Crusher Boss"
+Description = nil
+Note = "Object\r\nChar = $MoltenElemental\r\nStepAnime\r\nArmorStone\r\nTypeDMGRock\r\nTypeDMGFire"
+
+Enemy 241
+Battler Name = ""
+Name = "Ghost Torches"
+Description = ""
+Note = "Nature = 0\r\nAnimation = 156\r\nStepAnime"
+
+Enemy 242
+Battler Name = ""
+Name = "💀 Dusk Mob"
+Description = nil
+Note = "Object\r\nAnimation = 8\r\nSkills = 205\r\nRecover = 240\r\nStepAnime\r\nArmorSkin\r\nTypeDMGDark\r\nTypeDMGFae"
+
+Enemy 243
+Battler Name = ""
+Name = "Dusk Vortex"
+Description = nil
+Note = "Object\r\nChar = $DuskVortex\r\nStepAnime\r\nInanimate"
+
+Enemy 244
+Battler Name = ""
+Name = "💀 Narag-Turg"
+Description = ""
+Note = "Object\r\nChar = $NaragWalk%(8)\r\nStepAnime\r\nWhipRes\r\nArmorSkin\r\nTypeDMGDark\r\nResAll\r\nWeakHoly\r\nImmovable"
+
+Enemy 245
+Battler Name = ""
+Name = "💀 HammerS"
+Description = ""
+Note = "Object\r\nAnimation = 7\r\nStepAnime\r\nTypeBeast\r\nTypeSeafolk\r\nArmorScale\r\nTypeDMGWater"
+
+Enemy 246
+Battler Name = ""
+Name = "💀 Spinel Hermit"
+Description = ""
+Note = "Object\r\nAnimation = 19\r\nStepAnime\r\nTypeSeafolk\r\nArmorStone\r\nTypeDMGWater\r\nTypeDMGRock\r\nResWater\r\nImmovable"
+
+Enemy 247
+Battler Name = ""
+Name = "💀 Sphinx Boss +"
+Description = ""
+Note = "Object\r\nNature = 2\r\nSkills = 234\r\nAuto_Attack\r\nRecover = 180\r\nStepAnime\r\nInanimate\r\nWhipRes\r\nArmorStone\r\nTypeDMGMech\r\nWeakWater\r\n\r\n"
+
+Enemy 248
+Battler Name = ""
+Name = "Stepping Obj"
+Description = ""
+Note = "Object\r\nStepAnime\r\nInanimate\r\nWhipRes"
+
+Enemy 249
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 250
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 251
+Battler Name = ""
+Name = "Djinn Princess"
+Description = ""
+Note = "Nature = 2\r\nSkills = 1\r\nChar = $DesPdji\r\nAnimation = 13\r\nRecover = 70\r\nStepAnime\r\nTypeDMGDark\r\nTypeDMGFire"
+
+Enemy 252
+Battler Name = ""
+Name = "💀 Chiseled Crab"
+Description = ""
+Note = "Object\r\nChar = $ChiselWalk\r\nStepAnime\r\nTypeSeafolk\r\nWhipRes\r\nArmorStone\r\nTypeDMGWater\r\nTypeDMGRock\r\nWeakFire\r\nImmovable"
+
+Enemy 253
+Battler Name = ""
+Name = "💀 Diamond Hermit"
+Description = ""
+Note = "Nature = 0\r\nChar = $DiamondHermit\r\nAnimation = 7\r\nRecover = 70\r\nStepAnime\r\nTypeSeafolk\r\nWhipRes\r\nArmorStone\r\nResAll\r\nWeakMech\r\nWeakThun\r\nImmovable"
+
+Enemy 254
+Battler Name = ""
+Name = "Diamond ZZZ"
+Description = ""
+Note = "Object\r\nChar = $DiamondZZZ\r\nStepAnime\r\nTypeSeafolk\r\nWhipRes\r\nArmorStone\r\nImmovable"
+
+Enemy 255
+Battler Name = ""
+Name = "💀 Chase - Dia Hermit"
+Description = ""
+Note = "Object\r\nChar = $DiamondHermit\r\nStepAnime\r\nTypeSeafolk\r\nWhipRes\r\nArmorStone\r\nResAll\r\nWeakMech\r\nWeakThun\r\nImmovable"
+
+Enemy 256
+Battler Name = ""
+Name = "💀 Daimyo Crab"
+Description = ""
+Note = "Object\r\nChar = $DaimyoWalk\r\nStepAnime\r\nTypeSeafolk\r\nWhipRes\r\nArmorChitin\r\nTypeDMGWater\r\nTypeDMGRock\r\nWeakFire\r\nImmovable"
+
+Enemy 257
+Battler Name = ""
+Name = "💀 Queen Cocca"
+Description = ""
+Note = "Object\r\nChar = $CoccaWalk\r\nStepAnime\r\nTypeBeast\r\nWhipRes\r\nArmorFur\r\nTypeDMGWind\r\nResIce\r\nImmovable"
+
+Enemy 258
+Battler Name = ""
+Name = "💀 Party Popper"
+Description = ""
+Note = "Object\r\nStepAnime\r\nWhipRes\r\nTypeDMGWind\r\nTypeDMGDark\r\nResFire"
+
+Enemy 259
+Battler Name = ""
+Name = "💀 Velenophagus"
+Description = ""
+Note = "Object\r\nAnimation = 183\r\nStepAnime\r\nTypeBeast\r\nArmorScale\r\nTypeDMGWater\r\nTypeDMGDark\r\nWeakRock\r\nResHoly"
+
+Enemy 260
+Battler Name = ""
+Name = "💀 Bandit Ranged"
+Description = ""
+Note = "Object\r\nSkills = 275\r\nRecover = 110\r\nStepAnime\r\nTypeHumanoid\r\nArmorSkin\r\nTypeDMGNormal"
+
+Enemy 261
+Battler Name = ""
+Name = "💀 Webling"
+Description = nil
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nTypeBeast\r\nArmorChitin\r\nTypeDMGBug"
+
+Enemy 262
+Battler Name = ""
+Name = "💀 RotKin"
+Description = nil
+Note = "Object\r\nSkills = 276\r\nRecover = 150\r\nStepAnime\r\nArmorPlant\r\nTypeDMGGrass\r\nTypeDMGDark\r\nWeakHoly\r\nWeakWater"
+
+Enemy 263
+Battler Name = ""
+Name = "💀 Reef Witch"
+Description = nil
+Note = "Object\r\nStepAnime\r\nTypeSeafolk\r\nWhipRes\r\nArmorScale\r\nTypeDMGWater\r\nWeakHoly\r\nWeakMech"
+
+Enemy 264
+Battler Name = ""
+Name = "💀 Chase - Spinel"
+Description = ""
+Note = "Object\r\nAnimation = 19\r\nStepAnime\r\nTypeSeafolk\r\nArmorStone\r\nTypeDMGWater\r\nTypeDMGRock\r\nResWater\r\nImmovable"
+
+Enemy 265
+Battler Name = ""
+Name = "💀 DPIII - Cat End"
+Description = nil
+Note = "Object\r\nStepAnime\r\nWhipRes\r\nArmorScale\r\nTypeDMGDragon\r\nTypeDMGRock\r\nResRock"
+
+Enemy 266
+Battler Name = ""
+Name = "💀 Dusk (vs Slime)"
+Description = nil
+Note = "Object\r\nStepAnime\r\nWhipRes\r\nArmorSkin\r\nTypeDMGDark\r\nTypeDMGFae\r\nWeakHoly"
+
+Enemy 267
+Battler Name = ""
+Name = "💀 Dusk Magic"
+Description = nil
+Note = "Object\r\nNature = 2\r\nSkills = 289\r\nAuto_Attack\r\nRecover = 180\r\nStepAnime\r\nInanimate\r\nWhipRes"
+
+Enemy 268
+Battler Name = ""
+Name = "Barrel Device"
+Description = ""
+Note = "Object\r\nInanimate\r\nStepAnime\r\nWhipRes"
+
+Enemy 269
+Battler Name = ""
+Name = "💀 Grenilla"
+Description = ""
+Note = "Object\r\nAnimation = 244\r\nStepAnime\r\nTypeBeast\r\nArmorScale\r\nTypeDMGGrass\r\nWeakRock"
+
+Enemy 270
+Battler Name = ""
+Name = "💀 Mermaid Raider"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nTypeSeafolk\r\nWhipRes\r\nArmorScale\r\nTypeDMGWater"
+
+Enemy 271
+Battler Name = ""
+Name = "💀 Slime Melee"
+Description = ""
+Note = "Object\r\nAnimation = 221\r\nStepAnime\r\nArmorJello\r\nTypeDMGWater\r\nWeakFire"
+
+Enemy 272
+Battler Name = ""
+Name = "💀 Dusk - Slime End"
+Description = nil
+Note = "Object\r\nStepAnime\r\nWhipRes\r\nArmorPlant\r\nTypeDMGGrass\r\nTypeDMGDark\r\nResDark\r\nInanimate"
+
+Enemy 273
+Battler Name = ""
+Name = "💀 Selkie"
+Description = ""
+Note = "Object\r\nAnimation = 7\r\nStepAnime\r\nTypeUndead\r\nTypeSeafolk\r\nWhipRes\r\nArmorScale\r\nTypeDMGWater\r\nTypeDMGFae"
+
+Enemy 274
+Battler Name = ""
+Name = "💀 Spika"
+Description = ""
+Note = "Object\r\nStepAnime\r\nTypeSeafolk\r\nWhipRes\r\nArmorJello\r\nTypeDMGWater\r\nTypeDMGThunder\r\nResDark\r\nImmovable"
+
+Enemy 275
+Battler Name = ""
+Name = "💀 Chonger"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nTypeBeast\r\nTypeSeafolk\r\nArmorScale\r\nTypeDMGWater"
+
+Enemy 276
+Battler Name = ""
+Name = "💀 Chilly Chonger"
+Description = ""
+Note = "Object\r\nAnimation = 15\r\nStepAnime\r\nTypeBeast\r\nTypeSeafolk\r\nArmorStone\r\nTypeDMGWater\r\nTypeDMGIce"
+
+Enemy 277
+Battler Name = ""
+Name = "💀 Chonger Elite"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nTypeBeast\r\nTypeSeafolk\r\nArmorScale\r\nTypeDMGWater\r\nTypeDMGDark"
+
+Enemy 278
+Battler Name = ""
+Name = "💀 Keaton"
+Description = nil
+Note = "Object\r\nAnimation = 7\r\nStepAnime\r\nTypeHumanoid\r\nArmorSkin\r\nTypeDMGNormal"
+
+Enemy 279
+Battler Name = ""
+Name = "💀 Zenko"
+Description = ""
+Note = "Object\r\nSkills = 241\r\nRecover = 150\r\nStepAnime\r\nTypeHumanoid\r\nWhipRes\r\nArmorFur\r\nTypeDMGFae\r\nResHoly\r\nResFire"
+
+Enemy 280
+Battler Name = ""
+Name = "💀 Rose Buddies"
+Description = ""
+Note = "Object\r\nSkills = 294\r\nRecover = 150\r\nStepAnime\r\nArmorPlant\r\nTypeDMGGrass"
+
+Enemy 281
+Battler Name = ""
+Name = "💀 Drusy"
+Description = ""
+Note = "Object\r\nRecover = 150\r\nStepAnime\r\nWhipRes\r\nArmorPlant\r\nTypeDMGGrass"
+
+Enemy 282
+Battler Name = ""
+Name = "Destr Obj Step"
+Description = ""
+Note = "Object\r\nStepAnime\r\nInanimate\r\nWhipRes"
+
+Enemy 283
+Battler Name = ""
+Name = "💀 FB Cat Fighter"
+Description = ""
+Note = "Object\r\nAnimation = 7\r\nStepAnime\r\nWhipRes\r\nArmorFur\r\nTypeDMGNormal"
+
+Enemy 284
+Battler Name = ""
+Name = "💀 Bandit(Knight) P"
+Description = ""
+Note = "Object\r\nAnimation = 118\r\nStepAnime\r\nTypeHumanoid\r\nWhipRes\r\nArmorSkin\r\nTypeDMGNormal\r\nTypeDMGFight"
+
+Enemy 285
+Battler Name = ""
+Name = "💀 Goblin Bobba"
+Description = ""
+Note = "Object\r\nStepAnime\r\nTypeHumanoid\r\nArmorSkin\r\nTypeDMGNormal"
+
+Enemy 286
+Battler Name = ""
+Name = "💀 Trauma"
+Description = ""
+Note = "Object\r\nStepAnime\r\nTypeUndead\r\nWhipRes\r\nArmorSkin\r\nTypeDMGGhost\r\nImmovable"
+
+Enemy 287
+Battler Name = ""
+Name = "💀 Bird Guard"
+Description = ""
+Note = "Object\r\nAnimation = 7\r\nStepAnime\r\nArmorFur\r\nTypeDMGWind\r\nTypeDMGFight"
+
+Enemy 288
+Battler Name = ""
+Name = "💀 Fang Princess"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nTypeBeast\r\nTypeHumanoid\r\nWhipRes\r\nArmorSkin\r\nTypeDMGNormal"
+
+Enemy 289
+Battler Name = ""
+Name = "💀 Fang Turret"
+Description = ""
+Note = "Object\r\nSkills = 133\r\nAuto_Attack\r\nRecover = 30\r\nStepAnime\r\nInanimate\r\nArmorBone\r\nTypeDMGRock"
+
+Enemy 290
+Battler Name = ""
+Name = "💀 Lezgar"
+Description = ""
+Note = "Object\r\nAnimation = 7\r\nStepAnime\r\nTypeHumanoid\r\nWhipRes\r\nArmorSkin\r\nTypeDMGFire\r\nWeakTech\r\nResThun"
+
+Enemy 291
+Battler Name = ""
+Name = "💀 Rigbu"
+Description = ""
+Note = "Object\r\nAnimation = 7\r\nStepAnime\r\nTypeHumanoid\r\nArmorSkin\r\nTypeDMGFire\r\nWeakTech\r\nResThun"
+
+Enemy 292
+Battler Name = ""
+Name = "💀 Orata"
+Description = ""
+Note = "Object\r\nChar = $Orata\r\nAnimation = 13\r\nStepAnime\r\nTypeSeafolk\r\nArmorScale\r\nTypeDMGWater\r\nTypeDMGFight"
+
+Enemy 293
+Battler Name = ""
+Name = "💀 Kaius"
+Description = ""
+Note = "Object\r\nChar = $KaiusChariot\r\nAnimation = 13\r\nStepAnime\r\nTypeUndead\r\nArmorBone\r\nTypeDMGDark\r\nTypeDMGFight"
+
+Enemy 294
+Battler Name = ""
+Name = "💀 Rabie"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nTypeBeast\r\nWhipRes\r\nArmorFur\r\nTypeDMGNormal"
+
+Enemy 295
+Battler Name = ""
+Name = "💀 SkeArcher"
+Description = ""
+Note = "Object\r\nStatic\r\nAnimation = 13\r\nStepAnime\r\nTypeUndead\r\nArmorBone\r\nTypeDMGDark"
+
+Enemy 296
+Battler Name = ""
+Name = "💀 Kaius Cart ATK"
+Description = ""
+Note = "Object\r\nSkills = 316\r\nAuto_Attack\r\nRecover = 20\r\nStepAnime\r\nTypeUndead\r\nWhipRes\r\nArmorBone\r\nTypeDMGDark\r\nTypeDMGStone"
+
+Enemy 297
+Battler Name = ""
+Name = "💀 Forge Sprite"
+Description = ""
+Note = "Object\r\nAnimation = 7\r\nStepAnime\r\nArmorBone\r\nTypeDMGFire\r\nTypeDMGMech\r\nResFire\r\nImmovable"
+
+Enemy 298
+Battler Name = ""
+Name = "💀 Triclops"
+Description = ""
+Note = "Object\r\nSkills = 317\r\nRecover = 220\r\nStepAnime\r\nTypeHumanoid\r\nWhipRes\r\nArmorSkin\r\nTypeDMGFire\r\nWeakTech\r\nResThun"
+
+Enemy 299
+Battler Name = ""
+Name = "💀 Oni Princess"
+Description = ""
+Note = "Object\r\nAnimation = 7\r\nStepAnime\r\nTypeHumanoid\r\nWhipRes\r\nArmorSkin\r\nTypeDMGFire\r\nWeakTech\r\nResThun"
+
+Enemy 300
+Battler Name = ""
+Name = "💀 Slicer Boss"
+Description = ""
+Note = "Object\r\nAnimation = 7\r\nStepAnime\r\nTypeHumanoid\r\nWhipRes\r\nArmorFur\r\nTypeDMGNormal\r\nResRock\r\nResIce\r\nResTech"
+
+Enemy 301
+Battler Name = ""
+Name = "💀 Zegre"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nWhipRes\r\nArmorScale\r\nTypeDMGDragon"
+
+Enemy 302
+Battler Name = ""
+Name = "💀 MasukaBot"
+Description = ""
+Note = "Object\r\nAnimation = 7\r\nStepAnime\r\nArmorBone\r\nTypeDMGThunder\r\nTypeDMGMech\r\nResFire\r\nResRock\r\nResTech\r\nImmovable"
+
+Enemy 303
+Battler Name = ""
+Name = "💀 GrassJaw"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nArmorPlant\r\nTypeDMGGrass\r\nResTech"
+
+Enemy 304
+Battler Name = ""
+Name = "💀 GrassJaw Elite"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nArmorPlant\r\nTypeDMGGrass\r\nResDark\r\nResTech"
+
+Enemy 305
+Battler Name = ""
+Name = "💀 DebtShark"
+Description = ""
+Note = "Object\r\nAnimation = 7\r\nStepAnime\r\nTypeBeast\r\nTypeSeafolk\r\nArmorScale\r\nTypeDMGWater"
+
+Enemy 306
+Battler Name = ""
+Name = "💀 Moth Larva"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nTypeBeast\r\nWhipRes\r\nArmorFur\r\nTypeDMGBug\r\nTypeDMGFae\r\nWeakHoly\r\nResDark"
+
+Enemy 307
+Battler Name = ""
+Name = "💀 Moth Pupa"
+Description = ""
+Note = "Object\r\nAnimation = 13\r\nStepAnime\r\nWhipRes\r\nArmorChitin\r\nTypeDMGBug\r\nTypeDMGFae\r\nWeakHoly\r\nResDark"
+
+Enemy 308
+Battler Name = ""
+Name = "💀 Moth Wall"
+Description = ""
+Note = "Object\r\nStepAnime\r\nInanimate\r\nWhipRes\r\nTypeDMGBug\r\nTypeDMGFae\r\nWeakHoly\r\nResDark"
+
+Enemy 309
+Battler Name = ""
+Name = "💀 Moth Image"
+Description = nil
+Note = "Object\r\nStepAnime\r\nAnimation = 328\r\nRecover = 60\r\nInanimate\r\nWhipRes\r\nTypeDMGBug\r\nTypeDMGFae\r\nWeakHoly\r\nResDark"
+
+Enemy 310
+Battler Name = ""
+Name = "💀 Cat Fighter Statue"
+Description = ""
+Note = "Object\r\nAnimation = 7\r\nStepAnime\r\nTypeBeast\r\nInanimate\r\nArmorStone\r\nTypeDMGRock"
+
+Enemy 311
+Battler Name = ""
+Name = "💀 Chopp"
+Description = ""
+Note = "Object\r\nAuto_Attack\r\nSkills = 332\r\nRecover = 130\r\nTypeBeast\r\nStepAnime\r\nArmorPlant\r\nTypeDMGGrass\r\nTypeDMGWind"
+
+Enemy 312
+Battler Name = ""
+Name = "💀 PawPaw"
+Description = ""
+Note = "Object\r\nAnimation = 298\r\nStepAnime\r\nWhipRes\r\nArmorFur\r\nTypeDMGDark\r\nWeakFire\r\nResDark"
+
+Enemy 313
+Battler Name = ""
+Name = "💀 Wood Golem"
+Description = nil
+Note = "Object\r\nAnimation = 19\r\nStepAnime\r\nArmorStone\r\nTypeDMGGrass\r\nTypeDMGMech\r\nWeakFire\r\nResWater\r\nImmovable"
+
+Enemy 314
+Battler Name = ""
+Name = "💀 Dryad Huntress"
+Description = ""
+Note = "Object\r\nSkills = 332\r\nRecover = 80\r\nStepAnime\r\nTypeHumanoid\r\nArmorPlant\r\nTypeDMGGrass\r\nTypeDMGFae"
+
+Enemy 315
+Battler Name = ""
+Name = "💀 Root Sprite"
+Description = ""
+Note = "Object\r\nStepAnime\r\nTypeHumanoid\r\nArmorPlant\r\nTypeDMGGrass\r\nTypeDMGFae"
+
+Enemy 316
+Battler Name = ""
+Name = "💀 Munch"
+Description = ""
+Note = "Object\r\nAnimation = 399\r\nStepAnime\r\nTypeHumanoid\r\nArmorPlant\r\nTypeDMGGrass\r\nTypeDMGFight"
+
+Enemy 317
+Battler Name = ""
+Name = "💀 MasukaMou"
+Description = ""
+Note = "Object\r\nSkills = 322\r\nRecover = 50\r\nStepAnime\r\nTypeHumanoid\r\nWhipRes\r\nArmorSkin\r\nTypeDMGNormal"
+
+Enemy 318
+Battler Name = ""
+Name = "💀 ZAP"
+Description = ""
+Note = "Object\r\nAnimation = 406\r\nStepAnime\r\nInanimate\r\nWhipRes"
+
+Enemy 319
+Battler Name = ""
+Name = "💀 Shadow Leech"
+Description = nil
+Note = "Object\r\nAnimation = 19\r\nStepAnime\r\nArmorSkin\r\nTypeDMGGhost\r\nTypeDMGDark\r\nWeakHoly"
+
+Enemy 320
+Battler Name = ""
+Name = "💀 Puntia"
+Description = ""
+Note = "Object\r\nAnimation = 376\r\nSkills = 337\r\nRecover = 22\r\nStepAnime\r\nArmorPlant\r\nTypeDMGGrass\r\nResRock\r\nWhipRes"
+
+Enemy 321
+Battler Name = ""
+Name = "💀 Puntia Turret"
+Description = ""
+Note = "Object\r\nSkills = 337\r\nAuto_Attack\r\nRecover = 10\r\nStepAnime\r\nInanimate\r\nTypeDMGGrass\r\nResRock"
+
+Enemy 322
+Battler Name = ""
+Name = "💀 Shadow Rooster"
+Description = ""
+Note = "Object\r\nChar = $ShadowCucco%(4)\r\nStepAnime\r\nWhipRes\r\nArmorFur\r\nTypeDMGWind\r\nTypeDMGDark\r\nImmovable\r\nWeakHoly"
+
+Enemy 323
+Battler Name = ""
+Name = "💀 Observer"
+Description = ""
+Note = "Object\r\nAnimation = 7\r\nStepAnime\r\nArmorBone\r\nTypeDMGThunder\r\nTypeDMGMech\r\nResAll\r\nImmovable"
+
+Enemy 324
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 325
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 326
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 327
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 328
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 329
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 330
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 331
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 332
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 333
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 334
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 335
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 336
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 337
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 338
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 339
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 340
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 341
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 342
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 343
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 344
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 345
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 346
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 347
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 348
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 349
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
+Enemy 350
+Battler Name = ""
+Name = ""
+Description = ""
+Note = ""
+
