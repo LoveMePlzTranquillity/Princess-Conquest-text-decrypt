@@ -1,0 +1,113 @@
+Display Name = ""
+Parallax Name = "Ocean Boat Int Base"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 177, 23, 19, 8, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "Chest"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ConditionalBranch([0, 413, 0])
+      TintScreen(["Tone(@red=-34.0, @green=-34.0, @blue=0.0, @gray=34.0)", 10, true])
+      Empty([])
+
+    Else([])
+      TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 10, true])
+      Empty([])
+
+    BranchEnd([])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 5
+Name = "OldNick"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([6, -1, 8])
+      Empty([])
+
+    Else([])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    Wait([15])
+    PlaySE(["RPG::SE(@name=\"BubbleShot\", @pitch=80, @volume=70)"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      Wait([45])
+      ShotBalloonIcon([-1, 8, true])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["A strange octopus is swimming inside the aquarium."])
+      Wait([15])
+      PlaySE(["RPG::SE(@name=\"BubbleShot\", @pitch=80, @volume=70)"])
+      ShowPicture([1, "Old Nick dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["???:"])
+      ShowText(["..."])
+      ErasePicture([1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["It's restrained inside a large brass cage...\\.\\.\\. did it get in there by itself?!\\.\\."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["And it doesn't look happy about it one bit,\\. while trying to open the lock of the sturdy cage with one of its tentacles' tip. "])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["But it can't do much without a key,\\. and the missing \"arms\" aren't of any use in the ordeal."])
+      Wait([15])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["The plaque reads \"\\c[18]Old Nick\\c[0]\"...\\.\\.\\. is that your name?"])
+      Wait([15])
+      ShotBalloonIcon([0, 1, false])
+      PlaySE(["RPG::SE(@name=\"BubbleShot\", @pitch=80, @volume=70)"])
+      ShowPicture([1, "Old Nick dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Old Nick:"])
+      ShowText(["..."])
+      ErasePicture([1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["A smart fellow,\\. it seems to understand what you're saying...\\.\\.\\. maybe that's why Pirate Princess is keeping it..."])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["normal dials"])
+    Wait([15])
+    ShowPicture([1, "Old Nick dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Old Nick:"])
+    ShowText(["..."])
+    ErasePicture([1])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The caged animal is still at it,\\. trying to open the lock with its stubby tentacles.\\.\\. To no avail,\\. as of yet."])
+    Comment(["### Nick Recruit ###"])
+    CallCommonEvent([14])
+    Comment(["### Nick Recruit ###"])
+    Label(["end"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "Chest"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])

@@ -1,0 +1,416 @@
+Display Name = ""
+Parallax Name = "Dog Mansion +1"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    FadeoutScreen([])
+    Wait([20])
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    ChangeSaveAccess([0])
+    CallCommonEvent([56])
+    TransferPlayer([0, 232, 5, 6, 8, 0])
+    Wait([20])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["There's no doubt.\\.\\. This thick,\\. grimy,\\. steel-like scale is what Dusk Princess asked you to get."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Many years must have passed since the Queen lost this fragment of her natural armor,\\. judging by the room's conditions...\\.\\.\\. "])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["...yet there's still power in this little thing,\\. this speckle of the mighty dragon's power."])
+    Wait([20])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["..."])
+    Wait([20])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["You take a moment weighing down all your options,\\. before picking it up...\\.\\.\\."])
+    ShowTextAttributes(["Hero", 0, 2, 2])
+    ShowText(["...\\.\\.\\."])
+    ShowText(["It's impossible to turn back now..."])
+    ShowTextAttributes(["Hero", 0, 2, 2])
+    ShowText(["Who knows how far are we from home now,\\. and I need Dusk Princess' power to make it back... "])
+    ControlSwitches([3000, 3000, 0])
+    ShowTextAttributes(["Hero", 0, 2, 2])
+    ShowText(["There's no choice,\\. I've got to pick it up and bring it to the imp..."])
+    Wait([10])
+    ChangeItems([82, 0, 0, 1])
+    Wait([30])
+    Script(["complete_objective(38, 1)"])
+    ScriptMore(["reveal_objective(38, 2)"])
+    ScriptMore(["call_quest_journal(38)"])
+    Wait([20])
+    ControlSwitches([3000, 3000, 1])
+    ConditionalBranch([12, "$game_actors[1].equips[4] == $data_armors[98]"])
+      ControlSwitches([2102, 2102, 0])
+      Empty([])
+
+    BranchEnd([])
+    Label(["end"])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "DogP"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    Wait([15])
+    ChangeSaveAccess([0])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+  Page 1
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ConditionalBranch([12, "$game_actors[1].equips[4] == $data_armors[98]"])
+      ControlVariables([24, 24, 0, 3, 5, -1, 0])
+      ConditionalBranch([1, 24, 0, 20, 2])
+        ConditionalBranch([2, "A", 1])
+          ShowTextAttributes(["", 0, 2, 1])
+          ShowText(["\\^Don't...\\.\\.\\. ...\\.\\.\\. believe...\\.\\.\\. ...\\.\\.\\.\\.\\.\\."])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      Else([])
+        ConditionalBranch([1, 24, 0, 25, 2])
+          ConditionalBranch([2, "B", 1])
+            ShowTextAttributes(["", 0, 2, 1])
+            ShowText(["\\^...\\.\\.\\. ...\\.\\.\\. \\N[1]...\\.\\.\\. ...\\.\\.\\.\\.\\.\\."])
+            ControlSelfSwitch(["B", 0])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Wait([60])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=6, @parameters=[])\", \"RPG::MoveCommand(@code=6, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[2])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=6, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=6, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[2])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+    Wait([30])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["You...\\.\\.\\."])
+    FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 20, false])
+    Wait([40])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["You notice the \\c[18]Dog Princess' Charm\\c[0] is glowing under your armor..."])
+    Wait([20])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["\\^How did you know...\\.\\.\\."])
+    Wait([20])
+    ShowPicture([1, "Dog Princess Dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dog Princess:"])
+    ShowText(["...\\.\\.\\."])
+    ErasePicture([1])
+    Wait([30])
+    ShowAnimation([14, 143, false])
+    Wait([20])
+    ControlSwitches([2159, 2159, 0])
+    Wait([10])
+    ShotBalloonIcon([-1, 1, false])
+    Wait([90])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["...\\.\\.\\. What?!\\.\\."])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Something strange is going on here..."])
+    ControlSwitches([2104, 2104, 0])
+    ControlSwitches([2102, 2102, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Wait([45])
+    SetMoveRoute([14, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    EraseEvent([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ShowTextAttributes(["Hero", 0, 2, 2])
+    ShowText(["Curtains...\\.\\.\\. and it looks like a fierce battle was fought in this room...\\.\\.\\."])
+    Wait([15])
+    FadeoutScreen([])
+    PlaySE(["RPG::SE(@name=\"Equip2\", @pitch=100, @volume=80)"])
+    Wait([20])
+    ShowTextAttributes(["Hero", 0, 2, 2])
+    ShowText(["Here you are."])
+    Wait([20])
+    ControlSwitches([2109, 2109, 0])
+    TransferPlayer([0, 232, 5, 6, 8, 0])
+    Wait([10])
+    FadeinScreen([])
+    Label(["end"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 231, 32, 4, 4, 0])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 231, 32, 4, 4, 0])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 231, 32, 4, 4, 0])
+    Empty([])
+
+CommonEvent 23
+Name = "SaveDis"
+
+  Page 0
+    ChangeSaveAccess([0])
+    Wait([15])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    ControlSwitches([2160, 2160, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    ControlSwitches([2160, 2160, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    ControlSwitches([2160, 2160, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    ShowTextAttributes(["Hero", 0, 2, 2])
+    ShowText(["This used to be her throne room..."])
+    ShowTextAttributes(["Hero", 0, 2, 2])
+    ShowText(["Where am I supposed to look?\\.\\."])
+    Wait([30])
+    ShotBalloonIcon([-1, 7, true])
+    ShowTextAttributes(["Hero", 0, 2, 2])
+    ShowText(["Didn't she leave a hint or something behind?"])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    ControlSwitches([3061, 3061, 0])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 169, 20, 6, 2, 0])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    ControlSwitches([3061, 3061, 0])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 169, 20, 6, 2, 0])
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["The door to the balcony is locked.\\.\\."])
+    Empty([])

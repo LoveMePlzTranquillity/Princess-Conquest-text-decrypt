@@ -1,0 +1,146 @@
+Display Name = ""
+Parallax Name = "DogH1"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Earth4\", @pitch=100, @volume=80)"])
+    Wait([20])
+    ControlSwitches([2108, 2108, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Earth4\", @pitch=100, @volume=80)"])
+    Wait([20])
+    ControlSwitches([2108, 2108, 0])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([12, "$game_actors[1].equips[4] == $data_armors[98]"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"$DogP\\\", 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$DogP\", 0])"])
+      ShotBalloonIcon([-1, 1, false])
+      ShakeScreen([5, 5, 45, false])
+      FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, false])
+      PlaySE(["RPG::SE(@name=\"Darkness5\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["?=x*:"])
+      ShowText(["\\^THeY KIlLeD uS alL But The dRaGOnS lOsT SomeThInG In THe ManSiON!\\|"])
+      ShakeScreen([5, 5, 45, false])
+      FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 30, false])
+      PlaySE(["RPG::SE(@name=\"Darkness5\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["?=x*:"])
+      ShowText(["\\^SoMEtHinG thE QuEeN wAntS bACk!\\|"])
+      Wait([15])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=42, @parameters=[245])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[225])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[205])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[185])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[165])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[145])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[125])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[105])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[85])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[65])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[45])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[25])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=42, @parameters=[245])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+      Unnamed(["RPG::MoveCommand(@code=42, @parameters=[225])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+      Unnamed(["RPG::MoveCommand(@code=42, @parameters=[205])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+      Unnamed(["RPG::MoveCommand(@code=42, @parameters=[185])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+      Unnamed(["RPG::MoveCommand(@code=42, @parameters=[165])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+      Unnamed(["RPG::MoveCommand(@code=42, @parameters=[145])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+      Unnamed(["RPG::MoveCommand(@code=42, @parameters=[125])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+      Unnamed(["RPG::MoveCommand(@code=42, @parameters=[105])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+      Unnamed(["RPG::MoveCommand(@code=42, @parameters=[85])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+      Unnamed(["RPG::MoveCommand(@code=42, @parameters=[65])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+      Unnamed(["RPG::MoveCommand(@code=42, @parameters=[45])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+      Unnamed(["RPG::MoveCommand(@code=42, @parameters=[25])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+      Unnamed(["RPG::MoveCommand(@code=42, @parameters=[0])"])
+      Wait([30])
+      ShakeScreen([3, 3, 120, false])
+      PlaySE(["RPG::SE(@name=\"Flash3\", @pitch=120, @volume=80)"])
+      TintScreen(["Tone(@red=255.0, @green=255.0, @blue=255.0, @gray=0.0)", 120, true])
+      Wait([60])
+      PlaySE(["RPG::SE(@name=\"Darkness5\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["?=x*:"])
+      ShowText(["\\^D\\.o\\.N\\.'t\\. T\\.r\\.u\\.S\\.t\\. T\\.h\\.e\\. I\\.m\\.P\\.!\\|"])
+      Wait([120])
+      TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 120, true])
+      Wait([30])
+      ShotBalloonIcon([-1, 7, false])
+      ControlSwitches([2104, 2104, 0])
+      Empty([])
+
+    BranchEnd([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 224, 6, 8, 6, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 224, 6, 8, 6, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ConditionalBranch([12, "$game_actors[1].equips[4] == $data_armors[98]"])
+      ControlSelfSwitch(["A", 0])
+      FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 20, false])
+      Wait([40])
+      FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 20, false])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You notice the \\c[18]Dog Princess' Charm\\c[0] glowing and shaking under your shirt!\\.\\. Is it reacting to something in this room?"])
+      Empty([])
+
+    Else([])
+      EraseEvent([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 7
+Name = "SaveDis"
+
+  Page 0
+    ChangeSaveAccess([0])
+    Wait([15])
+    Empty([])

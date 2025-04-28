@@ -1,0 +1,215 @@
+Display Name = ""
+Parallax Name = "Stud Room"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ConditionalBranch([0, 2659, 0])
+      TransferPlayer([0, 279, 20, 11, 2, 0])
+      Empty([])
+
+    Else([])
+      TransferPlayer([0, 279, 20, 12, 2, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ControlSwitches([2657, 2657, 0])
+    TransferPlayer([0, 279, 11, 7, 2, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "Stud"
+
+  Page 0
+    Comment(["<always update>"])
+    ChangeItems([197, 0, 0, 1])
+    ControlSwitches([2656, 2656, 0])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ControlVariables([850, 850, 0, 0, 1])
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Wait([90])
+    ControlVariables([850, 850, 0, 0, 3])
+    Wait([90])
+    ControlVariables([850, 850, 0, 0, 2])
+    Wait([90])
+    ControlVariables([850, 850, 0, 0, 1])
+    Empty([])
+
+CommonEvent 8
+Name = "MataCat"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ConditionalBranch([0, 763, 0])
+      ConditionalBranch([0, 4098, 0])
+        ConditionalBranch([12, "objective_active?(92, 0)"])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    SaveBGM([])
+    FadeoutBGM([3])
+    FadeoutScreen([])
+    Wait([15])
+    CallCommonEvent([90])
+    Wait([30])
+    TransferPlayer([0, 280, 17, 8, 8, 0])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    Wait([15])
+    FadeinScreen([])
+    Wait([15])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Here she is,\\. the catgirl that had been sighted near the Slave Market from one of your scouts!"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["There's no doubts about it,\\. this one IS your Princess.\\.\\. Something has happened to her by the Moon Pond,\\. but you'd recognize her between a million catgirls."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["You try to keep your cool to not scare her,\\. she has been alone for a while and doesn't react to your presence."])
+    Wait([15])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Princess?"])
+    ShowPicture([1, "Cat Princess Dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Cat Princess:"])
+    ShowText(["..."])
+    ErasePicture([1])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["I'm here now.\\.\\. Let me get these chains off...\\.\\.\\."])
+    Wait([15])
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=90)"])
+    Wait([30])
+    ControlVariables([238, 238, 0, 3, 7, 1, 0])
+    ConditionalBranch([1, 238, 0, 3, 2])
+      ChangePartyMember([23, 0, 0])
+      Empty([])
+
+    Else([])
+      Label(["getherin"])
+      ShowTextAttributes(["", 6, 0, 1])
+      ShowText(["The party is full,\\. to get her in you have to drop someone out first."])
+      ShowTextAttributes(["", 5, 0, 2])
+      ShowText(["You want to leave someone in the Tavern?"])
+      ControlVariables([2085, 2085, 0, 0, 11])
+      CallCommonEvent([563])
+      ControlVariables([2085, 2085, 0, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 23, 0])
+      ControlSwitches([3000, 3000, 0])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["We need get to the bottom of this...\\.\\.\\. she's not in herself."])
+      Wait([20])
+      Script(["complete_objective(92,0)"])
+      ScriptMore(["call_quest_journal(92)"])
+      Wait([20])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["Princess!\\.\\. Can you hear me?\\.\\. You're safe now,\\. I'll get you out of here."])
+      ControlSwitches([3000, 3000, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You're holding her paws,\\. but she doesn't make eye contact with you.\\.\\. It's like something inside her broke,\\. or left her \"self\"."])
+      Wait([15])
+      ShowPicture([1, "Cat Princess Dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Cat Princess:"])
+      ShowText(["..."])
+      ErasePicture([1])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["..."])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["We'll get you back to normal,\\. it's a promise."])
+      ControlSelfSwitch(["B", 0])
+      Empty([])
+
+    Else([])
+      JumpToLabel(["getherin"])
+      ShowPicture([1, "Cat Princess Dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["???:"])
+      ShowText(["..."])
+      ErasePicture([1])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["I'll be back soon,\\. Princess.\\.\\. Hold on just a little longer."])
+      Empty([])
+
+    BranchEnd([])
+    ReplayBGM([])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 9
+Name = "Worr"
+
+  Page 0
+    Comment(["<always update>"])
+    CallCommonEvent([474])
+    Empty([])

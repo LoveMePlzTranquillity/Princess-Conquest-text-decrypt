@@ -1,0 +1,79 @@
+Display Name = ""
+Parallax Name = "Well"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["You're right under the well now.\\.\\. Maybe now you can reach what you saw from above..."])
+    ShowTextAttributes(["Hero", 0, 2, 2])
+    ShowText(["There's something in the water...\\.\\.\\."])
+    ChangeItems([97, 0, 0, 1])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 169, 40, 8, 2, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    TintScreen(["Tone(@red=-68.0, @green=-68.0, @blue=-68.0, @gray=0.0)", 1, false])
+    Wait([5])
+    ChangeSaveAccess([0])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 4
+Name = "Lines"
+
+  Page 0
+    ConditionalBranch([12, "$game_actors[1].equips[4] == $data_armors[98]"])
+      ControlVariables([25, 25, 0, 3, 5, -1, 1])
+      ConditionalBranch([1, 25, 0, 10, 1])
+        ConditionalBranch([2, "A", 1])
+          ShowTextAttributes(["", 0, 2, 1])
+          ShowText(["\\^...\\.\\.\\. ...\\.\\.\\. \\N[1]...\\.\\.\\. ...\\.\\.\\.\\.\\.\\."])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      Else([])
+        ConditionalBranch([1, 25, 0, 5, 1])
+          ConditionalBranch([2, "B", 1])
+            ShowTextAttributes(["", 0, 2, 1])
+            ShowText(["\\^Don't...\\.\\.\\. ...\\.\\.\\. believe...\\.\\.\\. ...\\.\\.\\.\\.\\.\\."])
+            ControlSelfSwitch(["B", 0])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Wait([15])
+    Empty([])
+
+CommonEvent 5
+Name = "SaveDis"
+
+  Page 0
+    ChangeSaveAccess([0])
+    Wait([15])
+    Empty([])

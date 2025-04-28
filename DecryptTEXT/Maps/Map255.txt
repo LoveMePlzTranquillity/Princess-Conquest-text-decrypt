@@ -1,0 +1,731 @@
+Display Name = ""
+Parallax Name = "Kob FarmR"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([10])
+    TransferPlayer([0, 253, 13, 18, 8, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([10])
+    TransferPlayer([0, 253, 12, 18, 8, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    ChangeItems([212, 0, 1, 2226])
+    ControlVariables([2226, 2226, 0, 0, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    ChangeItems([212, 0, 1, 2227])
+    ControlVariables([2227, 2227, 0, 0, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    ChangeItems([212, 0, 1, 2228])
+    ControlVariables([2228, 2228, 0, 0, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    ChangeItems([212, 0, 1, 2229])
+    ControlVariables([2229, 2229, 0, 0, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    ChangeItems([212, 0, 1, 2230])
+    ControlVariables([2230, 2230, 0, 0, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    ChangeItems([212, 0, 1, 2231])
+    ControlVariables([2231, 2231, 0, 0, 0])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    ChangeItems([212, 0, 1, 2232])
+    ControlVariables([2232, 2232, 0, 0, 0])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    ChangeItems([212, 0, 1, 2233])
+    ControlVariables([2233, 2233, 0, 0, 0])
+    Empty([])
+
+CommonEvent 11
+Name = ""
+
+  Page 0
+    Empty([])
+
+  Page 1
+    ChangeItems([212, 0, 1, 2234])
+    ControlVariables([2234, 2234, 0, 0, 0])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    ChangeItems([212, 0, 1, 2235])
+    ControlVariables([2235, 2235, 0, 0, 0])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    ChangeItems([212, 0, 1, 2236])
+    ControlVariables([2236, 2236, 0, 0, 0])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    ChangeItems([212, 0, 1, 2237])
+    ControlVariables([2237, 2237, 0, 0, 0])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Script(["$game_variables[2173][3] += 1"])
+    PlaySE(["RPG::SE(@name=\"Sand\", @pitch=120, @volume=60)"])
+    CallCommonEvent([529])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Script(["$game_variables[2173][3] -= 1"])
+    PlaySE(["RPG::SE(@name=\"Fire1\", @pitch=100, @volume=80)"])
+    CallCommonEvent([529])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Script(["$game_variables[2173][3] += 1"])
+    PlaySE(["RPG::SE(@name=\"Sand\", @pitch=120, @volume=60)"])
+    CallCommonEvent([529])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Script(["$game_variables[2173][3] -= 1"])
+    PlaySE(["RPG::SE(@name=\"Fire1\", @pitch=100, @volume=80)"])
+    CallCommonEvent([529])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Script(["$game_variables[2173][3] += 1"])
+    PlaySE(["RPG::SE(@name=\"Sand\", @pitch=120, @volume=60)"])
+    CallCommonEvent([529])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Script(["$game_variables[2173][3] -= 1"])
+    PlaySE(["RPG::SE(@name=\"Fire1\", @pitch=100, @volume=80)"])
+    CallCommonEvent([529])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+CommonEvent 18
+Name = "CrysStat"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 19
+Name = "Ore1"
+
+  Page 0
+    ConditionalBranch([0, 2350, 0])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["This boulder is in the way,\\. and it's too sturdy to break it with weapons.\\.\\. I need someone to get rid of it. "])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 2, 42, 40, 2, 0])
+    Empty([])
+
+CommonEvent 20
+Name = "Ore1"
+
+  Page 0
+    ConditionalBranch([0, 2350, 0])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["This boulder is in the way,\\. and it's too sturdy to break it with weapons.\\.\\. I need someone to get rid of it. "])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 21
+Name = "Ore1"
+
+  Page 0
+    ConditionalBranch([0, 2350, 0])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["This boulder is in the way,\\. and it's too sturdy to break it with weapons.\\.\\. I need someone to get rid of it. "])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 22
+Name = "Ore1"
+
+  Page 0
+    ConditionalBranch([0, 2350, 0])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["This boulder is in the way,\\. and it's too sturdy to break it with weapons.\\.\\. I need someone to get rid of it. "])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 2, 42, 40, 2, 0])
+    Empty([])
+
+CommonEvent 23
+Name = "Ore1"
+
+  Page 0
+    ConditionalBranch([0, 2350, 0])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["This boulder is in the way,\\. and it's too sturdy to break it with weapons.\\.\\. I need someone to get rid of it. "])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 2, 42, 40, 2, 0])
+    Empty([])
+
+CommonEvent 24
+Name = "Ore1"
+
+  Page 0
+    ConditionalBranch([0, 2350, 0])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["This boulder is in the way,\\. and it's too sturdy to break it with weapons.\\.\\. I need someone to get rid of it. "])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 25
+Name = "Load"
+
+  Page 0
+    ControlVariables([2061, 2061, 0, 0, 0])
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    Wait([5])
+    CallCommonEvent([565])
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 26
+Name = "Kob1"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Knocker dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knocker:"])
+    ShowText(["Princess,\\. I won't let you down!"])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 27
+Name = "Kob2"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Knocker dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knocker:"])
+    ShowText(["Princess,\\. I won't let you down!"])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 28
+Name = "Kob3"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Knocker dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knocker:"])
+    ShowText(["Princess,\\. I won't let you down!"])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 29
+Name = "Kob4"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Knocker dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knocker:"])
+    ShowText(["Princess,\\. I won't let you down!"])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 30
+Name = "Kob5"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Knocker dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knocker:"])
+    ShowText(["Princess,\\. I won't let you down!"])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 31
+Name = "Esc1"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Knocker dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knocker:"])
+    ShowText(["These rocks are no match for us!\\.\\. Dig harder!\\.\\. For the Princess!"])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 32
+Name = "Esc2"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Knocker dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knocker:"])
+    ShowText(["These rocks are no match for us!\\.\\. Dig harder!\\.\\. For the Princess!"])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 33
+Name = "Esc3"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Knocker dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knocker:"])
+    ShowText(["These rocks are no match for us!\\.\\. Dig harder!\\.\\. For the Princess!"])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 2, 42, 40, 2, 0])
+    Empty([])
+
+CommonEvent 35
+Name = "CrysStat"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 36
+Name = "Forge"
+
+  Page 0
+    Empty([])
+
+CommonEvent 37
+Name = "Rusty"
+
+  Page 0
+    ShowPicture([1, "Rusty sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["\\N[27]:"])
+    ShowText(["WELCOME TO R-005TY FORGE."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["\\N[27]:"])
+    ShowText(["SELECT TOOLS.\\.\\. R-005TY POWER UP TOOLS."])
+    ErasePicture([1])
+    ControlSwitches([2351, 2351, 0])
+    Wait([15])
+    Label(["build"])
+    ShowChoices([["Improve Pickaxes", "Improve Farming Tools", "Improve Axes", "Forge"], 5])
+    When([0, "Improve Pickaxes"])
+      Label(["pick"])
+      ConditionalBranch([0, 2581, 0])
+        ShowPicture([1, "Rusty sad", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["\\N[27]:"])
+        ShowText(["I CANNOT POWER UP THOSE AGAIN."])
+        ErasePicture([1])
+        JumpToLabel(["build"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Improve the \\C[18]Pickaxes\\C[0] for 10 Cog and 10 Crystal?"])
+      ShowChoices([["Yes", "No"], 2])
+      When([0, "Yes"])
+        ConditionalBranch([1, 2249, 0, 10, 1])
+          ConditionalBranch([1, 2043, 0, 10, 1])
+            ControlVariables([2043, 2043, 2, 0, 10])
+            ControlVariables([2249, 2249, 2, 0, 10])
+            ChangeItems([214, 1, 0, 10])
+            ControlSwitches([2581, 2581, 0])
+            ShowPicture([1, "Rusty sad", 0, 0, 0, 0, 100, 100, 255, 0])
+            ShowTextAttributes(["", 0, 2, 2])
+            ShowText(["\\N[27]:"])
+            ShowText(["PICKAXES NOW DIG GOOD! MORE PRECIOUS!"])
+            ErasePicture([1])
+            Empty([])
+          Else([])
+            ShowTextAttributes(["", 0, 0, 2])
+            ShowText(["Not enough Crystals!"])
+            JumpToLabel(["build"])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        Else([])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["Not enough Cogs!"])
+          JumpToLabel(["build"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      When([1, "No"])
+        JumpToLabel(["build"])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    When([1, "Improve Farming Tools"])
+      Label(["farm"])
+      ConditionalBranch([0, 2582, 0])
+        ShowPicture([1, "Rusty sad", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["\\N[27]:"])
+        ShowText(["I CANNOT POWER UP THOSE AGAIN."])
+        ErasePicture([1])
+        JumpToLabel(["build"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Improve the \\C[18]Farming Tools\\C[0] for 10 Cog and 10 Crystal?"])
+      ShowChoices([["Yes", "No"], 2])
+      When([0, "Yes"])
+        ConditionalBranch([1, 2249, 0, 10, 1])
+          ConditionalBranch([1, 2043, 0, 10, 1])
+            ControlVariables([2043, 2043, 2, 0, 10])
+            ControlVariables([2249, 2249, 2, 0, 10])
+            ChangeItems([214, 1, 0, 10])
+            ControlSwitches([2582, 2582, 0])
+            ShowPicture([1, "Rusty sad", 0, 0, 0, 0, 100, 100, 255, 0])
+            ShowTextAttributes(["", 0, 2, 2])
+            ShowText(["\\N[27]:"])
+            ShowText(["BETTER TOOLS!\\.\\. BETTER EARTH!\\.\\. BETTER CROPS!"])
+            ErasePicture([1])
+            Empty([])
+          Else([])
+            ShowTextAttributes(["", 0, 0, 2])
+            ShowText(["Not enough Crystals!"])
+            JumpToLabel(["build"])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        Else([])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["Not enough Cogs!"])
+          JumpToLabel(["build"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      When([1, "No"])
+        JumpToLabel(["build"])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    When([2, "Improve Axes"])
+      Label(["axe"])
+      ConditionalBranch([0, 2583, 0])
+        ShowPicture([1, "Rusty sad", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["\\N[27]:"])
+        ShowText(["I CANNOT POWER UP THOSE AGAIN."])
+        ErasePicture([1])
+        JumpToLabel(["build"])
+        Empty([])
+      BranchEnd([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Improve the \\C[18]Woodcutters' Axes\\C[0] for 10 Cog and 10 Crystal?"])
+      ShowChoices([["Yes", "No"], 2])
+      When([0, "Yes"])
+        ConditionalBranch([1, 2249, 0, 10, 1])
+          ConditionalBranch([1, 2043, 0, 10, 1])
+            ControlVariables([2043, 2043, 2, 0, 10])
+            ControlVariables([2249, 2249, 2, 0, 10])
+            ChangeItems([214, 1, 0, 10])
+            ControlSwitches([2583, 2583, 0])
+            ShowPicture([1, "Rusty sad", 0, 0, 0, 0, 100, 100, 255, 0])
+            ShowTextAttributes(["", 0, 2, 2])
+            ShowText(["\\N[27]:"])
+            ShowText(["SHARP AXES!\\.\\. WOOD EASY!"])
+            ErasePicture([1])
+            Empty([])
+          Else([])
+            ShowTextAttributes(["", 0, 0, 2])
+            ShowText(["Not enough Crystals!"])
+            JumpToLabel(["build"])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        Else([])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["Not enough Cogs!"])
+          JumpToLabel(["build"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      When([1, "No"])
+        JumpToLabel(["build"])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    When([3, "Forge"])
+      ShowPicture([1, "Rusty sad", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["R-005TY:"])
+      ShowText(["KOBOLD WARRIORS NEED POWERFUL TOOLS."])
+      ShowPicture([1, "Rusty static", 0, 0, 0, 0, 100, 100, 255, 0])
+      Script(["$game_variables[8762] = 4"])
+      CallCommonEvent([134])
+      Script(["$game_variables[8762] = 0"])
+      JumpToLabel(["end"])
+      Empty([])
+
+    WhenCancel([])
+      JumpToLabel(["end"])
+      Empty([])
+
+    ChoicesEnd([])
+    Label(["end"])
+    Wait([15])
+    ControlSwitches([2351, 2351, 1])
+    Empty([])
+
+CommonEvent 38
+Name = "Anvil"
+
+  Page 0
+    Empty([])
+
+CommonEvent 39
+Name = "ResWin"
+
+  Page 0
+    ConditionalBranch([0, 2351, 0])
+      ControlVariables([2249, 2249, 0, 3, 0, 214, 0])
+      Script(["@win=Window_Base.new(675,125,100,50)"])
+      ScriptMore(["@win.opacity = 0"])
+      ScriptMore(["@win.z = 55"])
+      ScriptMore(["@win2=Window_Base.new(675,173,100,50)"])
+      ScriptMore(["@win2.opacity = 0"])
+      ScriptMore(["@win2.z = 55"])
+      ScriptMore(["@win3=Window_Base.new(675,221,100,50)"])
+      ScriptMore(["@win3.opacity = 0"])
+      ScriptMore(["@win3.z = 55"])
+      ScriptMore(["@win4=Window_Base.new(675,269,100,50)"])
+      ScriptMore(["@win4.opacity = 0"])
+      ScriptMore(["@win4.z = 55"])
+      ConditionalBranch([1, 2048, 0, 2, 1])
+        Script(["@win5=Window_Base.new(675,317,100,50)"])
+        ScriptMore(["@win5.opacity = 0"])
+        ScriptMore(["@win5.z = 55"])
+        Script(["$game_map.screen.pictures[253].show("])
+        ScriptMore(["\"KobRes+\", 0, 651, 117, 100, 100, 255, 0)"])
+        Empty([])
+      Else([])
+        Script(["$game_map.screen.pictures[253].show("])
+        ScriptMore(["\"KobRes\", 0, 651, 117, 100, 100, 255, 0)"])
+        Empty([])
+      BranchEnd([])
+      Loop([])
+        Script(["@wood = $game_variables[2041]"])
+        ScriptMore(["@stone = $game_variables[2042]"])
+        ScriptMore(["@crys = $game_variables[2043]"])
+        ScriptMore(["@food = $game_variables[2044]"])
+        ScriptMore(["@cogs = $game_variables[2249]"])
+        Script(["@win.contents.clear"])
+        ScriptMore(["@text = \"\\\\v[2041]\""])
+        ScriptMore(["@win.draw_text_ex(20,-2,@text)"])
+        ScriptMore(["@win2.contents.clear"])
+        ScriptMore(["@text2 = \"\\\\v[2042]\""])
+        ScriptMore(["@win2.draw_text_ex(20,-2,@text2)"])
+        ScriptMore(["@win3.contents.clear"])
+        ScriptMore(["@text3 = \"\\\\v[2043]\""])
+        ScriptMore(["@win3.draw_text_ex(20,-2,@text3)"])
+        ScriptMore(["@win4.contents.clear"])
+        ScriptMore(["@text4 = \"\\\\v[2044]\""])
+        ScriptMore(["@win4.draw_text_ex(20,-2,@text4)"])
+        ConditionalBranch([1, 2048, 0, 2, 1])
+          Script(["@win5.contents.clear"])
+          ScriptMore(["@text5 = \"\\\\v[2249]\""])
+          ScriptMore(["@win5.draw_text_ex(20,-2,@text5)"])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([0, 2351, 1])
+          BreakLoop([])
+          Empty([])
+        BranchEnd([])
+        Wait([5])
+        Empty([])
+      RepeatAbove([])
+      Script(["$game_map.screen.pictures[253].erase"])
+      Script(["@win.dispose"])
+      Script(["@win2.dispose"])
+      Script(["@win3.dispose"])
+      Script(["@win4.dispose"])
+      ConditionalBranch([1, 2048, 0, 2, 1])
+        Script(["@win5.dispose"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      Wait([5])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    Wait([5])
+    ControlVariables([2830, 2830, 0, 2, 1, 5])
+    SetMoveRoute([31, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=45, @parameters=[\\\"@move_speed = $game_variables[2830]\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=45, @parameters=[\"@move_speed = $game_variables[2830]\"])"])
+    Wait([5])
+    ControlVariables([2830, 2830, 0, 2, 1, 5])
+    SetMoveRoute([32, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=45, @parameters=[\\\"@move_speed = $game_variables[2830]\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=45, @parameters=[\"@move_speed = $game_variables[2830]\"])"])
+    Wait([5])
+    ControlVariables([2830, 2830, 0, 2, 1, 5])
+    SetMoveRoute([33, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=45, @parameters=[\\\"@move_speed = $game_variables[2830]\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=45, @parameters=[\"@move_speed = $game_variables[2830]\"])"])
+    EraseEvent([])
+    Empty([])

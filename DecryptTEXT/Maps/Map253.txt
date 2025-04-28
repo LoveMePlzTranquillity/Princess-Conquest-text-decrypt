@@ -1,0 +1,1249 @@
+Display Name = ""
+Parallax Name = "Kob Production"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "Ore1"
+
+  Page 0
+    ConditionalBranch([0, 2349, 0])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["This boulder is in the way,\\. and it's too sturdy to break it with weapons.\\.\\. I need someone to get rid of it. "])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 2
+Name = "Ore1"
+
+  Page 0
+    ConditionalBranch([0, 2349, 0])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["This boulder is in the way,\\. and it's too sturdy to break it with weapons.\\.\\. I need someone to get rid of it. "])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 3
+Name = "Ore1"
+
+  Page 0
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([12, "!$game_party.members[0].equips[0].nil?"])
+      ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(2)"])
+        ConditionalBranch([2, "D", 0])
+          Wait([15])
+          ShowAnimation([0, 7, true])
+          ControlVariables([2046, 2046, 1, 0, 1])
+          CallCommonEvent([176])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          ConditionalBranch([2, "C", 0])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["D", 0])
+            ControlSelfSwitch(["B", 1])
+            Empty([])
+          Else([])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["C", 0])
+            ControlSelfSwitch(["B", 1])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(8)"])
+          Wait([15])
+          ShowAnimation([0, 19, true])
+          CallCommonEvent([176])
+          ControlVariables([2046, 2046, 1, 0, 1])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          PlaySE(["RPG::SE(@name=\"Hammer\", @pitch=100, @volume=80)"])
+          SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=13, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=13, @parameters=[])"])
+          ControlSelfSwitch(["B", 1])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    ControlSelfSwitch(["A", 1])
+    ControlSelfSwitch(["B", 1])
+    ControlSelfSwitch(["C", 1])
+    ControlSelfSwitch(["D", 1])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 4
+Name = "Ore1"
+
+  Page 0
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([12, "!$game_party.members[0].equips[0].nil?"])
+      ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(2)"])
+        ConditionalBranch([2, "D", 0])
+          Wait([15])
+          ShowAnimation([0, 7, true])
+          ControlVariables([2046, 2046, 1, 0, 1])
+          CallCommonEvent([176])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          ConditionalBranch([2, "C", 0])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["D", 0])
+            ControlSelfSwitch(["B", 1])
+            Empty([])
+          Else([])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["C", 0])
+            ControlSelfSwitch(["B", 1])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(8)"])
+          Wait([15])
+          ShowAnimation([0, 19, true])
+          CallCommonEvent([176])
+          ControlVariables([2046, 2046, 1, 0, 1])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          PlaySE(["RPG::SE(@name=\"Hammer\", @pitch=100, @volume=80)"])
+          SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=13, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=13, @parameters=[])"])
+          ControlSelfSwitch(["B", 1])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    ControlSelfSwitch(["A", 1])
+    ControlSelfSwitch(["B", 1])
+    ControlSelfSwitch(["C", 1])
+    ControlSelfSwitch(["D", 1])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 5
+Name = "Ore1"
+
+  Page 0
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([12, "!$game_party.members[0].equips[0].nil?"])
+      ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(2)"])
+        ConditionalBranch([2, "D", 0])
+          Wait([15])
+          ShowAnimation([0, 7, true])
+          ControlVariables([2046, 2046, 1, 0, 1])
+          CallCommonEvent([176])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          ConditionalBranch([2, "C", 0])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["D", 0])
+            ControlSelfSwitch(["B", 1])
+            Empty([])
+          Else([])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["C", 0])
+            ControlSelfSwitch(["B", 1])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(8)"])
+          Wait([15])
+          ShowAnimation([0, 19, true])
+          CallCommonEvent([176])
+          ControlVariables([2046, 2046, 1, 0, 1])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          PlaySE(["RPG::SE(@name=\"Hammer\", @pitch=100, @volume=80)"])
+          SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=13, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=13, @parameters=[])"])
+          ControlSelfSwitch(["B", 1])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    ControlSelfSwitch(["A", 1])
+    ControlSelfSwitch(["B", 1])
+    ControlSelfSwitch(["C", 1])
+    ControlSelfSwitch(["D", 1])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 6
+Name = "Ore1"
+
+  Page 0
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([12, "!$game_party.members[0].equips[0].nil?"])
+      ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(2)"])
+        ConditionalBranch([2, "D", 0])
+          Wait([15])
+          ShowAnimation([0, 7, true])
+          ControlVariables([2046, 2046, 1, 0, 1])
+          CallCommonEvent([176])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          ConditionalBranch([2, "C", 0])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["D", 0])
+            ControlSelfSwitch(["B", 1])
+            Empty([])
+          Else([])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["C", 0])
+            ControlSelfSwitch(["B", 1])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(8)"])
+          Wait([15])
+          ShowAnimation([0, 19, true])
+          CallCommonEvent([176])
+          ControlVariables([2046, 2046, 1, 0, 1])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          PlaySE(["RPG::SE(@name=\"Hammer\", @pitch=100, @volume=80)"])
+          SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=13, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=13, @parameters=[])"])
+          ControlSelfSwitch(["B", 1])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    ControlSelfSwitch(["A", 1])
+    ControlSelfSwitch(["B", 1])
+    ControlSelfSwitch(["C", 1])
+    ControlSelfSwitch(["D", 1])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 7
+Name = "Ore1"
+
+  Page 0
+    ConditionalBranch([0, 2349, 0])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["This boulder is in the way,\\. and it's too sturdy to break it with weapons.\\.\\. I need someone to get rid of it. "])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "Ore1"
+
+  Page 0
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([12, "!$game_party.members[0].equips[0].nil?"])
+      ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(2)"])
+        ConditionalBranch([2, "D", 0])
+          Wait([15])
+          ShowAnimation([0, 7, true])
+          ControlVariables([2046, 2046, 1, 0, 1])
+          CallCommonEvent([176])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          ConditionalBranch([2, "C", 0])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["D", 0])
+            ControlSelfSwitch(["B", 1])
+            Empty([])
+          Else([])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["C", 0])
+            ControlSelfSwitch(["B", 1])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(8)"])
+          Wait([15])
+          ShowAnimation([0, 19, true])
+          CallCommonEvent([176])
+          ControlVariables([2046, 2046, 1, 0, 1])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          PlaySE(["RPG::SE(@name=\"Hammer\", @pitch=100, @volume=80)"])
+          SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=13, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=13, @parameters=[])"])
+          ControlSelfSwitch(["B", 1])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    ControlSelfSwitch(["A", 1])
+    ControlSelfSwitch(["B", 1])
+    ControlSelfSwitch(["C", 1])
+    ControlSelfSwitch(["D", 1])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([10])
+    TransferPlayer([0, 135, 23, 11, 4, 0])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([10])
+    TransferPlayer([0, 135, 23, 12, 4, 0])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([10])
+    ConditionalBranch([0, 2350, 0])
+      ConditionalBranch([0, 2542, 0])
+        TransferPlayer([0, 255, 12, 1, 2, 0])
+        Empty([])
+      Else([])
+        TransferPlayer([0, 267, 12, 1, 2, 0])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      TransferPlayer([0, 254, 12, 1, 2, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["This is not the time to go there.\\.\\. The roaring sound came from the \\C[18]Quarters\\C[0]!"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([10])
+    ConditionalBranch([0, 2350, 0])
+      ConditionalBranch([0, 2542, 0])
+        TransferPlayer([0, 255, 12, 1, 2, 0])
+        Empty([])
+      Else([])
+        TransferPlayer([0, 267, 12, 1, 2, 0])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      TransferPlayer([0, 254, 12, 1, 2, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["This is not the time to go there.\\.\\. The roaring sound came from the \\C[18]Quarters\\C[0]!"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Empty([])
+
+CommonEvent 13
+Name = "KobZom1"
+
+  Page 0
+    Comment(["[enemy 108]"])
+    Comment(["[localsw 0]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([2, "C", 1])
+      ControlVariables([2046, 2046, 1, 0, 1])
+      ControlVariables([585, 585, 0, 0, 45])
+      ControlSwitches([648, 648, 0])
+      ControlSelfSwitch(["C", 0])
+      Empty([])
+
+    BranchEnd([])
+    Wait([30])
+    Empty([])
+
+  Page 2
+    ControlSelfSwitch(["A", 1])
+    ControlSelfSwitch(["C", 1])
+    EraseEvent([])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 14
+Name = "KobZom1"
+
+  Page 0
+    Comment(["[enemy 108]"])
+    Comment(["[localsw 0]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([2, "C", 1])
+      ControlVariables([2046, 2046, 1, 0, 1])
+      ControlVariables([585, 585, 0, 0, 45])
+      ControlSwitches([648, 648, 0])
+      ControlSelfSwitch(["C", 0])
+      Empty([])
+
+    BranchEnd([])
+    Wait([30])
+    Empty([])
+
+  Page 2
+    ControlSelfSwitch(["A", 1])
+    ControlSelfSwitch(["C", 1])
+    EraseEvent([])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 15
+Name = "KobZom1"
+
+  Page 0
+    Comment(["[enemy 108]"])
+    Comment(["[localsw 0]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([2, "C", 1])
+      ControlVariables([2046, 2046, 1, 0, 1])
+      ControlVariables([585, 585, 0, 0, 45])
+      ControlSwitches([648, 648, 0])
+      ControlSelfSwitch(["C", 0])
+      Empty([])
+
+    BranchEnd([])
+    Wait([30])
+    Empty([])
+
+  Page 2
+    ControlSelfSwitch(["A", 1])
+    ControlSelfSwitch(["C", 1])
+    EraseEvent([])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Script(["$game_variables[2173][2] += 1"])
+    PlaySE(["RPG::SE(@name=\"Sand\", @pitch=120, @volume=60)"])
+    CallCommonEvent([529])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 2
+    Script(["$game_variables[2173][2] -= 1"])
+    PlaySE(["RPG::SE(@name=\"Fire1\", @pitch=100, @volume=80)"])
+    CallCommonEvent([529])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+CommonEvent 17
+Name = "KobZom1"
+
+  Page 0
+    Comment(["[enemy 108]"])
+    Comment(["[localsw 0]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([2, "C", 1])
+      ControlVariables([2046, 2046, 1, 0, 1])
+      ControlVariables([585, 585, 0, 0, 45])
+      ControlSwitches([648, 648, 0])
+      ControlSelfSwitch(["C", 0])
+      Empty([])
+
+    BranchEnd([])
+    Wait([30])
+    Empty([])
+
+  Page 2
+    ControlSelfSwitch(["A", 1])
+    ControlSelfSwitch(["C", 1])
+    EraseEvent([])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Script(["$game_variables[2173][2] += 1"])
+    PlaySE(["RPG::SE(@name=\"Sand\", @pitch=120, @volume=60)"])
+    CallCommonEvent([529])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 2
+    Script(["$game_variables[2173][2] -= 1"])
+    PlaySE(["RPG::SE(@name=\"Fire1\", @pitch=100, @volume=80)"])
+    CallCommonEvent([529])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+CommonEvent 19
+Name = "Ore1"
+
+  Page 0
+    ConditionalBranch([0, 2349, 0])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["This boulder is in the way,\\. and it's too sturdy to break it with weapons.\\.\\. I need someone to get rid of it. "])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 20
+Name = "Ore1"
+
+  Page 0
+    ConditionalBranch([0, 2349, 0])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["This boulder is in the way,\\. and it's too sturdy to break it with weapons.\\.\\. I need someone to get rid of it. "])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 21
+Name = "Ore1"
+
+  Page 0
+    ConditionalBranch([0, 2349, 0])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["This boulder is in the way,\\. and it's too sturdy to break it with weapons.\\.\\. I need someone to get rid of it. "])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([10])
+    TransferPlayer([0, 257, 1, 7, 6, 0])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([10])
+    TransferPlayer([0, 257, 1, 7, 6, 0])
+    Empty([])
+
+CommonEvent 24
+Name = "CrysStat"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Script(["$game_variables[2173][2] += 1"])
+    PlaySE(["RPG::SE(@name=\"Sand\", @pitch=120, @volume=60)"])
+    CallCommonEvent([529])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 2
+    Script(["$game_variables[2173][2] -= 1"])
+    PlaySE(["RPG::SE(@name=\"Fire1\", @pitch=100, @volume=80)"])
+    CallCommonEvent([529])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+CommonEvent 26
+Name = "Kob1"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([1, 2168, 0, 0, 2])
+      ShowPicture([1, "Knocker dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Knocker:"])
+      ShowText(["Our brothers down in the Mines aren't working hard enough!\\.\\."])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Knocker:"])
+      ShowText(["Today I've got nothing to sell!"])
+      ErasePicture([1])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([1, "Knocker dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knocker:"])
+    ShowText(["Welcome,\\. welcome!\\.\\."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knocker:"])
+    ShowText(["Check what we found down in the Mines!"])
+    ErasePicture([1])
+    Script(["$PU_AUTOMATIC_POPUP = false"])
+    ChangeGold([1, 0, 99999])
+    ChangeGold([0, 1, 584])
+    Script(["$PU_AUTOMATIC_POPUP = true"])
+    ControlVariables([617, 617, 0, 3, 7, 2, 0])
+    ConditionalBranch([1, 2168, 0, 10, 1])
+      ConditionalBranch([0, 2581, 0])
+        ShopProcessing([1, 68, 0, 0, true])
+        ShopItem([1, 69, 0, 0])
+        ShopItem([2, 170, 0, 0])
+        ShopItem([2, 424, 1, 5000])
+        Empty([])
+      Else([])
+        ShopProcessing([1, 68, 0, 0, true])
+        ShopItem([2, 170, 0, 0])
+        ShopItem([2, 424, 1, 5000])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["shopd"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2168, 0, 3, 1])
+      ConditionalBranch([0, 2581, 0])
+        ShopProcessing([1, 68, 0, 0, true])
+        ShopItem([1, 69, 0, 0])
+        ShopItem([2, 170, 0, 0])
+        Empty([])
+      Else([])
+        ShopProcessing([1, 68, 0, 0, true])
+        ShopItem([2, 170, 0, 0])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["shopd"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2168, 0, 1, 1])
+      ConditionalBranch([0, 2581, 0])
+        ShopProcessing([1, 68, 0, 0, true])
+        ShopItem([1, 69, 0, 0])
+        Empty([])
+      Else([])
+        ShopProcessing([1, 68, 0, 0, true])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["shopd"])
+      Empty([])
+
+    BranchEnd([])
+    Label(["shopd"])
+    ControlVariables([618, 618, 0, 3, 7, 2, 0])
+    ControlVariables([585, 585, 0, 1, 618])
+    ControlVariables([585, 585, 2, 1, 617])
+    ConditionalBranch([1, 585, 0, 0, 5])
+      ControlSwitches([648, 648, 0])
+      Wait([45])
+      Empty([])
+
+    BranchEnd([])
+    Label(["end"])
+    Empty([])
+
+CommonEvent 27
+Name = "Kob1"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([1, 2168, 0, 0, 2])
+      ShowPicture([1, "Knocker dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Knocker:"])
+      ShowText(["Our brothers down in the Mines aren't working hard enough!\\.\\."])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Knocker:"])
+      ShowText(["Today I've got nothing to sell!"])
+      ErasePicture([1])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([1, "Knocker dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knocker:"])
+    ShowText(["Welcome,\\. welcome!\\.\\."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knocker:"])
+    ShowText(["Check what we found down in the Mines!"])
+    ErasePicture([1])
+    Script(["$PU_AUTOMATIC_POPUP = false"])
+    ChangeGold([1, 0, 99999])
+    ChangeGold([0, 1, 584])
+    Script(["$PU_AUTOMATIC_POPUP = true"])
+    ControlVariables([617, 617, 0, 3, 7, 2, 0])
+    ConditionalBranch([1, 2168, 0, 10, 1])
+      ConditionalBranch([8, 210])
+        JumpToLabel(["DRgot"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 2551, 1])
+        ShopProcessing([0, 210, 1, 5000, true])
+        ShopItem([0, 76, 1, 1000])
+        ShopItem([0, 77, 1, 1000])
+        ShopItem([0, 78, 1, 1000])
+        ShopItem([0, 79, 1, 1000])
+        ShopItem([0, 109, 1, 1000])
+        Empty([])
+      Else([])
+        Label(["DRgot"])
+        ShopProcessing([0, 76, 1, 1000, true])
+        ShopItem([0, 77, 1, 1000])
+        ShopItem([0, 78, 1, 1000])
+        ShopItem([0, 79, 1, 1000])
+        ShopItem([0, 109, 1, 1000])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["shopd"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2168, 0, 7, 1])
+      ShopProcessing([0, 76, 1, 1000, true])
+      ShopItem([0, 77, 1, 1000])
+      ShopItem([0, 78, 1, 1000])
+      ShopItem([0, 79, 1, 1000])
+      ShopItem([0, 109, 1, 1000])
+      JumpToLabel(["shopd"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2168, 0, 5, 1])
+      ShopProcessing([0, 78, 1, 1000, true])
+      ShopItem([0, 79, 1, 1000])
+      ShopItem([0, 109, 1, 1000])
+      JumpToLabel(["shopd"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2168, 0, 3, 1])
+      ShopProcessing([0, 78, 1, 1000, true])
+      ShopItem([0, 79, 1, 1000])
+      JumpToLabel(["shopd"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2168, 0, 1, 1])
+      ShopProcessing([0, 78, 1, 1000, true])
+      JumpToLabel(["shopd"])
+      Empty([])
+
+    BranchEnd([])
+    Label(["shopd"])
+    ControlVariables([618, 618, 0, 3, 7, 2, 0])
+    ControlVariables([585, 585, 0, 1, 618])
+    ControlVariables([585, 585, 2, 1, 617])
+    ConditionalBranch([1, 585, 0, 0, 5])
+      ControlSwitches([648, 648, 0])
+      Wait([45])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 2540, 1])
+      ConditionalBranch([8, 210])
+        Wait([20])
+        ControlSwitches([2540, 2540, 0])
+        ShotBalloonIcon([-1, 1, false])
+        ShowTextAttributes(["Hero", 0, 0, 2])
+        ShowText(["!!!"])
+        ShowTextAttributes(["Hero", 0, 0, 2])
+        ShowText(["This \\C[18]Draconic Ruby\\C[0]...\\.\\.\\. its color...\\.\\.\\. such an intense,\\. fiery,\\. red."])
+        ShowTextAttributes(["Hero", 0, 0, 2])
+        ShowText(["Could this be...\\.\\.\\. \\C[18]hers\\C[0]?!\\.\\. Could the dragon have dropped it in the Mines after our fight?"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Label(["end"])
+    Empty([])
+
+CommonEvent 28
+Name = "Ore1"
+
+  Page 0
+    ConditionalBranch([0, 2349, 0])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["This boulder is in the way,\\. and it's too sturdy to break it with weapons.\\.\\. I need someone to get rid of it. "])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 29
+Name = "Ore1"
+
+  Page 0
+    ConditionalBranch([0, 2349, 0])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["This boulder is in the way,\\. and it's too sturdy to break it with weapons.\\.\\. I need someone to get rid of it. "])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 30
+Name = "Ore1"
+
+  Page 0
+    ConditionalBranch([0, 2349, 0])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["This boulder is in the way,\\. and it's too sturdy to break it with weapons.\\.\\. I need someone to get rid of it. "])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 31
+Name = "MapLoad"
+
+  Page 0
+    ControlVariables([2061, 2061, 0, 0, 0])
+    CallCommonEvent([529])
+    Script(["$game_map.start_sas"])
+    ScriptMore(["$game_map.sas_hud.show(true)"])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+  Page 1
+    ControlVariables([2061, 2061, 0, 0, 0])
+    Wait([5])
+    CallCommonEvent([565])
+    Script(["@k = 32"])
+    ControlVariables([2065, 2065, 0, 1, 2061])
+    Comment(["################"])
+    ConditionalBranch([1, 2065, 0, 0, 2])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["################"])
+    Loop([])
+      ControlVariables([2062, 2062, 0, 2, 5, 22])
+      ControlVariables([2063, 2063, 0, 2, 1, 17])
+      ConditionalBranch([12, "$game_map.passable?($game_variables[2062], $game_variables[2063], 2)"])
+        Script(["@x = $game_variables[2062]"])
+        ScriptMore(["@y = $game_variables[2063]"])
+        Script(["$game_map.events[@k].moveto(@x,@y)"])
+        ControlVariables([2065, 2065, 2, 0, 1])
+        Script(["@k += 1"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([1, 2065, 0, 0, 2])
+        BreakLoop([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    RepeatAbove([])
+    Comment(["################"])
+    Label(["end"])
+    Comment(["################"])
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 32
+Name = "Kob1"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Knocker dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knocker:"])
+    ShowText(["Princess,\\. I won't let you down!"])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 33
+Name = "Kob2"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Knocker dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knocker:"])
+    ShowText(["Princess,\\. I won't let you down!"])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 34
+Name = "Kob3"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Knocker dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knocker:"])
+    ShowText(["Princess,\\. I won't let you down!"])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 35
+Name = "Esc1"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Knocker dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knocker:"])
+    ShowText(["These rocks are no match for us!\\.\\. Dig harder!\\.\\. For the Princess!"])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 36
+Name = "Esc2"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Knocker dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knocker:"])
+    ShowText(["These rocks are no match for us!\\.\\. Dig harder!\\.\\. For the Princess!"])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 37
+Name = "Esc3"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Knocker dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knocker:"])
+    ShowText(["These rocks are no match for us!\\.\\. Dig harder!\\.\\. For the Princess!"])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 38
+Name = "Esc4"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Knocker dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knocker:"])
+    ShowText(["These rocks are no match for us!\\.\\. Dig harder!\\.\\. For the Princess!"])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 39
+Name = "Esc5"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Knocker dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knocker:"])
+    ShowText(["These rocks are no match for us!\\.\\. Dig harder!\\.\\. For the Princess!"])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 40
+Name = "Esc6"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Knocker dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knocker:"])
+    ShowText(["These rocks are no match for us!\\.\\. Dig harder!\\.\\. For the Princess!"])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 41
+Name = "Kob1"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([0, 2544, 0])
+      ShowPicture([1, "Knocker dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Knocker:"])
+      ShowText(["Welcome!"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Knocker:"])
+      ShowText(["We're sorry,\\. but we've got no drinks to serve for today..."])
+      ShowPicture([1, "Knocker dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Knocker:"])
+      ShowText(["Just what happened to the guys working at the \\C[18]Farm\\C[0]!"])
+      ErasePicture([1])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([1, "Knocker dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knocker:"])
+    ShowText(["Welcome!"])
+    ConditionalBranch([0, 2543, 1])
+      ControlSwitches([2543, 2543, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Knocker:"])
+      ShowText(["Have a drink!\\.\\. For you,\\. the first one is on the house!"])
+      ChangeItems([215, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([1])
+    Wait([20])
+    ShowPicture([1, "Knocker dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knocker:"])
+    ShowText(["Now...\\.\\.\\. what can I serve you?"])
+    ErasePicture([1])
+    Script(["$PU_AUTOMATIC_POPUP = false"])
+    ChangeGold([1, 0, 99999])
+    ChangeGold([0, 1, 584])
+    Script(["$PU_AUTOMATIC_POPUP = true"])
+    ControlVariables([617, 617, 0, 3, 7, 2, 0])
+    ShopProcessing([0, 215, 0, 0, true])
+    ControlVariables([618, 618, 0, 3, 7, 2, 0])
+    ControlVariables([585, 585, 0, 1, 618])
+    ControlVariables([585, 585, 2, 1, 617])
+    ControlSwitches([648, 648, 0])
+    Wait([45])
+    ShowPicture([1, "Knocker dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knocker:"])
+    ShowText(["Come back anytime~"])
+    ErasePicture([1])
+    Label(["end"])
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    Wait([5])
+    ControlVariables([2830, 2830, 0, 2, 1, 5])
+    SetMoveRoute([35, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=45, @parameters=[\\\"@move_speed = $game_variables[2830]\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=45, @parameters=[\"@move_speed = $game_variables[2830]\"])"])
+    Wait([5])
+    ControlVariables([2830, 2830, 0, 2, 1, 5])
+    SetMoveRoute([36, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=45, @parameters=[\\\"@move_speed = $game_variables[2830]\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=45, @parameters=[\"@move_speed = $game_variables[2830]\"])"])
+    Wait([5])
+    ControlVariables([2830, 2830, 0, 2, 1, 5])
+    SetMoveRoute([37, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=45, @parameters=[\\\"@move_speed = $game_variables[2830]\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=45, @parameters=[\"@move_speed = $game_variables[2830]\"])"])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    Wait([5])
+    ControlVariables([2830, 2830, 0, 2, 1, 5])
+    SetMoveRoute([38, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=45, @parameters=[\\\"@move_speed = $game_variables[2830]\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=45, @parameters=[\"@move_speed = $game_variables[2830]\"])"])
+    Wait([5])
+    ControlVariables([2830, 2830, 0, 2, 1, 5])
+    SetMoveRoute([39, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=45, @parameters=[\\\"@move_speed = $game_variables[2830]\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=45, @parameters=[\"@move_speed = $game_variables[2830]\"])"])
+    Wait([5])
+    ControlVariables([2830, 2830, 0, 2, 1, 5])
+    SetMoveRoute([40, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=45, @parameters=[\\\"@move_speed = $game_variables[2830]\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=45, @parameters=[\"@move_speed = $game_variables[2830]\"])"])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 45
+Name = "CrysStat"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])

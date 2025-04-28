@@ -1,0 +1,150 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    TransferPlayer([0, 169, 36, 16, 2, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["?\\.\\. Is there something in here?\\.\\."])
+    ShowChoices([["Touch the shelf.", "Leave it alone."], 2])
+    When([0, "Touch the shelf."])
+      FadeoutScreen([])
+      Script(["$game_map.pause_sas"])
+      ScriptMore(["$game_map.sas_hud.hide(true)"])
+      ChangeSaveAccess([0])
+      CallCommonEvent([56])
+      TransferPlayer([0, 227, 10, 7, 8, 0])
+      Wait([20])
+      FadeinScreen([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Your hand stretches out to reach the sparkle you see in the shelf...\\.\\.\\."])
+      ShowAnimation([0, 143, false])
+      Wait([10])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+      Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+      Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"$Brownies\\\", 0])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 1])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$Brownies\", 0])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 1])"])
+      ControlSelfSwitch(["A", 0])
+      Empty([])
+
+    When([1, "Leave it alone."])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    ControlSelfSwitch(["B", 0])
+    Empty([])
+
+  Page 2
+    ControlSelfSwitch(["B", 0])
+    ShowPicture([1, "Brownie dial cry", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Brownie:"])
+    ShowText(["P-\\.please!\\.\\. Don't hurt me!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Brownie:"])
+    ShowText(["I inhabited this house for as long as I can remember!\\.\\. I know nothing about where the Princess of this place is!"])
+    ErasePicture([1])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["!"])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["The Princess of this place?\\.\\. What do you mean?"])
+    Wait([30])
+    ShotBalloonIcon([0, 6, true])
+    ShowPicture([1, "Brownie dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Brownie:"])
+    ShowText(["They came for her one night!\\.\\. Fire rained down on this village...\\.\\.\\. everybody was so scared,\\. yet the door of the mansion didn't open..."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Brownie:"])
+    ShowText(["But in the end they couldn't find her...\\.\\.\\. word got around that she escaped to a faraway place..."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Brownie:"])
+    ShowText(["I don't think she'll ever come back here,\\. her people strongly resented her for that..."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Brownie:"])
+    ShowText(["Not like there's anyone left...\\.\\.\\. but this place from that day became hell."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Brownie:"])
+    ShowText(["I hid myself here,\\. and I don't plan to leave anytime soon...\\.\\.\\. those horrors outside are just too scary!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Brownie:"])
+    ShowText(["Take this...\\.\\.\\. I don't need it anymore!"])
+    ErasePicture([1])
+    Wait([10])
+    ChangeItems([96, 0, 0, 1])
+    Wait([30])
+    ShowPicture([1, "Brownie dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Brownie:"])
+    ShowText(["You too,\\. should leave as soon as you can.\\.\\. There's nothing left for you here,\\. knight."])
+    ErasePicture([1])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["..."])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Thank you...\\.\\.\\. I'll check around just a little more."])
+    ShowPicture([1, "Brownie dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Brownie:"])
+    ShowText(["Take care,\\. then.\\.\\.\\.\\. Now,\\. if you'll excuse me..."])
+    ErasePicture([1])
+    ShowAnimation([0, 143, false])
+    Wait([30])
+    ControlSelfSwitch(["C", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    Wait([5])
+    ChangeSaveAccess([0])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 4
+Name = "SaveDis"
+
+  Page 0
+    ChangeSaveAccess([0])
+    Wait([15])
+    Empty([])

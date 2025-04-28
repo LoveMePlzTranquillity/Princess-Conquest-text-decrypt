@@ -1,0 +1,237 @@
+Display Name = ""
+Parallax Name = "WatchTowerF1"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ControlSwitches([2298, 2298, 0])
+    TransferPlayer([0, 248, 5, 4, 2, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "Door"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Key\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    ControlSwitches([2299, 2299, 0])
+    Empty([])
+
+  Page 1
+    PlaySE(["RPG::SE(@name=\"Key\", @pitch=100, @volume=80)"])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "TpUp"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([10])
+    TransferPlayer([0, 250, 23, 10, 4, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "TpUp"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([10])
+    TransferPlayer([0, 250, 23, 10, 4, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ShotBalloonIcon([-1, 6, false])
+    ShowTextAttributes(["Hero", 0, 2, 2])
+    ShowText(["Leaving from here,\\. I'd end right into the enemy's mouth!"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Empty([])
+
+CommonEvent 9
+Name = "Gazer3"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[enemy 051]"])
+    Comment(["[localsw 0]"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "Gazer3"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[enemy 051]"])
+    Comment(["[localsw 0]"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 11
+Name = "Gazer3"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[enemy 051]"])
+    Comment(["[localsw 0]"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 12
+Name = "Gazer3"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[enemy 051]"])
+    Comment(["[localsw 0]"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 13
+Name = "Gazer3"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[enemy 051]"])
+    Comment(["[localsw 0]"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 14
+Name = "Gazer3"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[enemy 051]"])
+    Comment(["[localsw 0]"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 15
+Name = "Gazer3"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[enemy 051]"])
+    Comment(["[localsw 0]"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 16
+Name = "Gazer3"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[enemy 051]"])
+    Comment(["[localsw 0]"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ShowTextAttributes(["Hero", 0, 1, 2])
+    ShowText(["There's too many of them!"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ConditionalBranch([0, 2303, 0])
+      ConditionalBranch([0, 2304, 1])
+        FadeinScreen([])
+        Wait([15])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=6, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=6, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+        PlaySE(["RPG::SE(@name=\"Monster2\", @pitch=120, @volume=90)"])
+        Wait([45])
+        ShowPicture([1, "Gazer Princess Hidden", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Chief Warden:"])
+        ShowText(["?!\\.\\. W-\\.w-\\.what is that?!"])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Chief Warden:"])
+        ShowText(["They're attacking the Prison's food supplies! Gather,\\. my Gazers!"])
+        ErasePicture([1])
+        Wait([10])
+        FadeoutScreen([])
+        Wait([25])
+        PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+        Wait([35])
+        ControlSwitches([2304, 2304, 0])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])

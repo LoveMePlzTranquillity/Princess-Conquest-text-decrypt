@@ -1,0 +1,450 @@
+Display Name = ""
+Parallax Name = "Forgotten Garden"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Earth4\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    ConditionalBranch([0, 455, 0])
+      TransferPlayer([0, 70, 68, 36, 2, 0])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([0, 410, 0])
+        TransferPlayer([0, 47, 13, 13, 8, 0])
+        Empty([])
+      Else([])
+        TransferPlayer([0, 47, 25, 0, 4, 0])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 2
+Name = "Finish tent message"
+
+  Page 0
+    Wait([600])
+    ShowChoices([["Finish!", "Keep going..."], 2])
+    When([0, "Finish!"])
+      ControlSwitches([1202, 1202, 0])
+      Empty([])
+
+    When([1, "Keep going..."])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 3
+Name = "GardNPC"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1001])
+    CallCommonEvent([678])
+    Empty([])
+
+CommonEvent 4
+Name = "GardNPC"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1002])
+    CallCommonEvent([678])
+    Empty([])
+
+CommonEvent 5
+Name = "GardNPC"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1003])
+    CallCommonEvent([678])
+    Empty([])
+
+CommonEvent 6
+Name = "GardNPC"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1004])
+    CallCommonEvent([678])
+    Empty([])
+
+CommonEvent 7
+Name = "GardNPC"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1005])
+    CallCommonEvent([678])
+    Empty([])
+
+CommonEvent 8
+Name = "GardNPC"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1006])
+    CallCommonEvent([678])
+    Empty([])
+
+CommonEvent 9
+Name = "GardNPC"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1007])
+    CallCommonEvent([678])
+    Empty([])
+
+CommonEvent 10
+Name = "GardNPC"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1008])
+    CallCommonEvent([678])
+    Empty([])
+
+CommonEvent 11
+Name = "GardNPC"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1009])
+    CallCommonEvent([678])
+    Empty([])
+
+CommonEvent 12
+Name = "GardNPC"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1010])
+    CallCommonEvent([678])
+    Empty([])
+
+CommonEvent 13
+Name = "fly1"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 14
+Name = "fly1"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 15
+Name = "fly1"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 16
+Name = "MapPrep"
+
+  Page 0
+    ControlVariables([850, 850, 0, 0, 1])
+    ConditionalBranch([0, 410, 0])
+      CallCommonEvent([679])
+      Empty([])
+
+    BranchEnd([])
+    Wait([15])
+    CallCommonEvent([21])
+    CallCommonEvent([20])
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ConditionalBranch([12, "$game_player.y > 21 && $game_player.y < 23.5"])
+      ConditionalBranch([12, "$game_player.x >= 32 && $game_player.x <= 35.5"])
+        ConditionalBranch([0, 2672, 1])
+          ControlSwitches([2672, 2672, 0])
+          TintScreen(["Tone(@red=-136.0, @green=-136.0, @blue=-136.0, @gray=0.0)", 45, false])
+          Empty([])
+        BranchEnd([])
+        JumpToLabel(["end"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 2672, 0])
+      ControlSwitches([2672, 2672, 1])
+      CallCommonEvent([20])
+      Empty([])
+
+    BranchEnd([])
+    Label(["end"])
+    Wait([10])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ChangeItems([33, 0, 0, 1])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["There's something sparkling in the fountain."])
+    ChangeItems([33, 0, 0, 1])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 19
+Name = "GhoDel"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Ghost Princess dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Ghost Princess:"])
+    ShowText(["!!\\.\\. ...\\.\\.\\."])
+    ErasePicture([1])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["In darkness,\\. you sense the Princess dropping down at your feet."])
+    ControlVariables([2029, 2029, 0, 0, 8])
+    ControlVariables([3672, 3672, 0, 0, 12])
+    CallCommonEvent([531])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 21
+Name = "GhoMerch"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ShowPicture([1, "Banshee dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Banshee Merchant:"])
+    ShowText(["Weeeelcome hhhhumaaaaan~"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Banshee Merchant:"])
+    ShowText(["Buuuuuy heeeere?"])
+    ErasePicture([1])
+    Script(["$PU_AUTOMATIC_POPUP = false"])
+    ChangeGold([1, 0, 99999])
+    ChangeGold([0, 1, 584])
+    Script(["$PU_AUTOMATIC_POPUP = true"])
+    ControlVariables([617, 617, 0, 3, 7, 2, 0])
+    ConditionalBranch([1, 381, 0, 6, 1])
+      ShopProcessing([0, 339, 1, 175, true])
+      ShopItem([0, 220, 1, 1000])
+      ShopItem([0, 417, 0, 0])
+      ShopItem([0, 191, 0, 0])
+      Empty([])
+
+    Else([])
+      ShopProcessing([0, 339, 1, 175, true])
+      ShopItem([0, 220, 1, 1000])
+      ShopItem([0, 191, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    ControlVariables([618, 618, 0, 3, 7, 2, 0])
+    ControlVariables([585, 585, 0, 1, 618])
+    ControlVariables([585, 585, 2, 1, 617])
+    ConditionalBranch([1, 585, 0, 0, 5])
+      ControlSwitches([648, 648, 0])
+      Wait([45])
+      ShowPicture([1, "Banshee dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Banshee Merchant:"])
+      ShowText(["Thhhank you,\\. humaaaaan!"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Banshee Merchant:"])
+      ShowText(["Come back ssssssoon."])
+      ErasePicture([1])
+      Empty([])
+
+    Else([])
+      ShowPicture([1, "Banshee dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Banshee Merchant:"])
+      ShowText(["Away with youuuu!\\.\\. Awaaaay!\\.\\."])
+      ErasePicture([1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 22
+Name = "GhoMerch"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 23
+Name = "GhoMerch"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 24
+Name = "GhoMerch"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 25
+Name = "GhoMerch"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 26
+Name = "Worr"
+
+  Page 0
+    Comment(["<always update>"])
+    CallCommonEvent([474])
+    Empty([])
+
+CommonEvent 27
+Name = "Egg"
+
+  Page 0
+    Comment(["<always update>"])
+    CallCommonEvent([86])
+    Empty([])
+
+  Page 1
+    Empty([])

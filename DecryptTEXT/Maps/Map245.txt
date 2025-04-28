@@ -1,0 +1,1121 @@
+Display Name = ""
+Parallax Name = "Slums"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 6
+Name = "Door to Crow"
+
+  Page 0
+    ConditionalBranch([2, "A", 1])
+      ConditionalBranch([0, 2239, 0])
+        Label(["go"])
+        PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+        Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+        Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+        PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+        FadeoutScreen([])
+        Wait([15])
+        SetWeatherEffects([:none, 9, 0, false])
+        ErasePicture([9])
+        TransferPlayer([0, 246, 26, 18, 8, 0])
+        JumpToLabel(["end"])
+        Empty([])
+      Else([])
+        ConditionalBranch([0, 2238, 0])
+          JumpToLabel(["go"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      JumpToLabel(["go"])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Close2\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The door is locked."])
+    SelectKeyItem([3874])
+    ConditionalBranch([1, 3874, 0, 213, 0])
+      PlaySE(["RPG::SE(@name=\"Key\", @pitch=100, @volume=80)"])
+      Wait([30])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\C[18]Key for the Slums\\C[0] used."])
+      ControlSelfSwitch(["A", 0])
+      Empty([])
+
+    BranchEnd([])
+    Label(["end"])
+    Empty([])
+
+CommonEvent 7
+Name = "GhoDoor"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([12, "quest_revealed?(73)"])
+      Empty([])
+
+    Else([])
+      PlaySE(["RPG::SE(@name=\"Close2\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["The door is locked."])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "!objective_complete?(73,3)"])
+      ConditionalBranch([4, 12, 0])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["Hero", 0, 0, 2])
+        ShowText(["I shouldn't head in here without Ghost Princess.\\.\\. It's her \\i[640] Ashes we're talking about..."])
+        JumpToLabel(["end"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([2, "A", 0])
+      PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      FadeoutScreen([])
+      Wait([15])
+      SetWeatherEffects([:none, 9, 0, false])
+      ErasePicture([9])
+      TransferPlayer([0, 467, 8, 15, 8, 0])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Close2\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The door is locked."])
+    SelectKeyItem([3874])
+    ConditionalBranch([1, 3874, 0, 221, 0])
+      PlaySE(["RPG::SE(@name=\"Key\", @pitch=100, @volume=80)"])
+      Wait([30])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\C[18]Mary-Annette's Key\\C[0] used."])
+      ControlSelfSwitch(["A", 0])
+      Empty([])
+
+    BranchEnd([])
+    Label(["end"])
+    Empty([])
+
+CommonEvent 8
+Name = "Worr"
+
+  Page 0
+    Comment(["<always update>"])
+    CallCommonEvent([474])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Comment(["<always update>"])
+    PlaySE(["RPG::SE(@name=\"Open5\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    SetWeatherEffects([:none, 9, 0, false])
+    ErasePicture([9])
+    TransferPlayer([0, 278, 16, 18, 8, 0])
+    Empty([])
+
+CommonEvent 10
+Name = "ParManage"
+
+  Page 0
+    ControlVariables([850, 850, 0, 0, 4])
+    EraseEvent([])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([12, "quest_revealed?(39)"])
+      ControlVariables([850, 850, 0, 0, 1])
+      Wait([120])
+      ControlVariables([850, 850, 0, 0, 2])
+      Wait([120])
+      Empty([])
+
+    Else([])
+      ControlVariables([850, 850, 0, 0, 4])
+      EraseEvent([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    ControlVariables([850, 850, 0, 0, 4])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 11
+Name = "TPout"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([10])
+    ControlVariables([850, 850, 0, 0, 1])
+    ConditionalBranch([0, 44, 0])
+      TransferPlayer([0, 2, 61, 41, 2, 0])
+      Empty([])
+
+    Else([])
+      TransferPlayer([0, 4, 15, 32, 8, 0])
+      Empty([])
+
+    BranchEnd([])
+    ControlVariables([850, 850, 0, 0, 1])
+    Empty([])
+
+CommonEvent 12
+Name = "TPout"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([10])
+    ControlVariables([850, 850, 0, 0, 1])
+    ConditionalBranch([0, 44, 0])
+      TransferPlayer([0, 2, 61, 41, 2, 0])
+      Empty([])
+
+    Else([])
+      TransferPlayer([0, 4, 15, 32, 8, 0])
+      Empty([])
+
+    BranchEnd([])
+    ControlVariables([850, 850, 0, 0, 1])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    SetWeatherEffects([:none, 9, 0, false])
+    ErasePicture([9])
+    TransferPlayer([0, 246, 30, 4, 4, 0])
+    Empty([])
+
+CommonEvent 14
+Name = "FadeIn"
+
+  Page 0
+    CallCommonEvent([21])
+    CallCommonEvent([20])
+    ConditionalBranch([2, "B", 0])
+      ControlSelfSwitch(["B", 1])
+      CallCommonEvent([352])
+      Comment(["------------------------------"])
+      Empty([])
+
+    Else([])
+      Wait([15])
+      FadeinScreen([])
+      Empty([])
+
+    BranchEnd([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 15
+Name = "Calamitas"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    FadeoutScreen([])
+    Wait([15])
+    CallCommonEvent([90])
+    TransferPlayer([0, 245, 12, 3, 8, 0])
+    Wait([15])
+    FadeinScreen([])
+    Wait([20])
+    ShotBalloonIcon([15, 3, false])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Talking Crow:"])
+    ShowText(["Hahahaha...\\.\\.\\. yes,\\. go and spread,\\. bring chaos and ruin to this unfair world!\\.\\."])
+    Wait([30])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["You stop as you find yourself on the roof of the laboratory.\\.\\. Crowley said you would find your answers here...\\.\\.\\. and it seems he was right.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["You take in the sight of the odd talking bird before you,\\. looming over the ledge as more of that mind numbing gas pumped out from the chimney nearby.\\.\\. There is no doubt that you have found your culprit.\\.\\."])
+    Wait([10])
+    ShotBalloonIcon([-1, 8, false])
+    Wait([20])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["You’re a bit shocked that it’s just a bird.\\.\\. A crow,\\. even.\\.\\."])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["You!\\.\\. You’re the one who is doing all of this?\\.\\."])
+    ShotBalloonIcon([15, 1, false])
+    Wait([10])
+    SetMoveRoute([15, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The crow raises its head,\\. before turning to you.\\.\\. Its head tilts as it takes in the sight of you.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Talking Crow:"])
+    ShowText(["Oho,\\. what’s this,\\. now?\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Talking Crow:"])
+    ShowText(["I thought I saw a few specs below wandering about like drunks,\\. but I did not think you would get all the way up here.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Talking Crow:"])
+    ShowText(["So,\\. what is it,\\. then?\\.\\. Are you here to rob my poor Master of his worldly possessions?\\.\\. Humans are cruel.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Talking Crow:"])
+    ShowText(["You could at least wait until his death before you start your grave robbing.\\.\\."])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["No,\\. I’m...\\.\\.\\. wait,\\. Master?\\.\\. You can’t be...\\.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Talking Crow:"])
+    ShowText(["Yes,\\. indeed.\\.\\. I am one of dear Crowley’s pet crows.\\.\\. He has quite a few of us around.\\.\\. Not much of a talker with things that talk back.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Talking Crow:"])
+    ShowText(["Usually,\\. I kept silent because of it.\\.\\. Didn’t want to ruin the free room and board by giving it away,\\. you see.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Talking Crow:"])
+    ShowText(["Of course,\\. I suspected he knew I was the smartest of the lot,\\. but I doubt he expected this,\\. of all things...\\.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Talking Crow:"])
+    ShowText(["I must admit,\\. I didn’t expect him to get in trouble over my little ploy here.\\.\\. A shame,\\. but...\\.\\.\\."])
+    ShotBalloonIcon([15, 3, false])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Talking Crow:"])
+    ShowText(["Oh well!\\.\\. He wouldn’t have lasted long in this miasma anyway.\\.\\."])
+    ShotBalloonIcon([-1, 2, false])
+    Wait([10])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["I...\\.\\.\\. what?\\.\\. I don’t understand.\\.\\. Why would the culprit be...\\.\\.\\. a bird?\\.\\. His pet bird,\\. no less!\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Talking Crow:"])
+    ShowText(["Hah!\\.\\. Do you think me for a fool?\\.\\. A common featherbrain?\\.\\. I am no simple bird,\\. as you can clearly see!\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The crow outstretches his wings,\\. puffing his chest out proudly.\\.\\."])
+    Wait([20])
+    ControlSwitches([3000, 3000, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Talking Crow:"])
+    ShowText(["I am Calamitas!\\.\\. Lord of the Corvids!\\.\\. Bask in my dark radiance,\\. before I cast this cursed land into the abyss for its arrogance!\\.\\."])
+    Script(["complete_objective(39, 1)"])
+    ScriptMore(["reveal_objective(39, 2)"])
+    ScriptMore(["call_quest_journal(39)"])
+    Wait([20])
+    ControlSwitches([3000, 3000, 1])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Arrogance?\\.\\. Cursed land?\\.\\. What are you talking about?\\.\\. Did something happen to you?\\.\\."])
+    Wait([40])
+    ShotBalloonIcon([15, 7, false])
+    SetMoveRoute([15, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Wait([30])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["Pfhah!\\.\\. So you are more perceptive than I thought,\\. human!\\.\\. Hrm!\\.\\. Very well,\\. I suppose in this moment,\\. I could tell you a story...\\.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["Surely,\\. you are familiar with the beloved \\C[18]Harpy Princess\\C[0],\\. leader of all avians in this land.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["Beautiful,\\. kind,\\. looks upon all her subjects equally,\\. not to mention has quite the set of tail feathers...\\.\\.\\."])
+    ShowTextAttributes(["Hero", 0, 2, 2])
+    ShowText(["Oh,\\. here we go...\\.\\.\\."])
+    ShotBalloonIcon([15, 4, false])
+    SetMoveRoute([15, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["Ohoho...\\.\\.\\. and most importantly,\\. currently single and ready to mingle!\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["So,\\. I bravely flew to her nest to offer myself as a potential suitor.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["Surely,\\. if I obtained the wing of the beloved Harpy Princess,\\. all Corvid kind would benefit and raise in stature!\\.\\."])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["I’m sensing a ‘but’ coming along...\\.\\.\\."])
+    ShotBalloonIcon([15, 5, false])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["Hmph!\\.\\. Indeed!\\.\\. When I worked my charms on her...\\.\\.\\. she had the gall to refuse my proposal!\\.\\."])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Er...\\.\\.\\. I am sure she just wanted to get to know you better.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["Ho!\\.\\. I figured as much!\\.\\. So I continued,\\. I would not give up,\\. lest she be taken by some ugly chicken or pathetic vulture!\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["No,\\. she would be mine!\\.\\. I continuously approached,\\. flirted,\\. charmed,\\. even offered gifts,\\. and do you know what?\\.\\."])
+    ShotBalloonIcon([-1, 8, false])
+    Wait([40])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["She said you were better off as friends?\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["Hah...\\.\\.\\.!\\.\\. More clever than I thought!\\.\\. Yes,\\. indeed.\\.\\. The beautiful Harpy Princess herself has denied me...\\.\\.\\. I have become a joke!\\.\\. Hahaha!\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["And if this world shall treat me like a joke...\\.\\.\\. then I shall exact vengeance upon its entirety!\\.\\. I will get the last laugh.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["I have cast aside all my bonds and shackles to this kingdom,\\. and have set the course for its termination!\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["Behold,\\. one who no longer has fear or regret!\\.\\."])
+    ShotBalloonIcon([15, 3, false])
+    SetMoveRoute([15, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=8, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=6, @parameters=[])\", \"RPG::MoveCommand(@code=8, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=6, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=8, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=6, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=8, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=6, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The crow begins to cackle.\\.\\. You aren’t really sure how to feel about this development.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["This is all so...\\.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Pathetic.\\.\\."])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["...\\.\\.\\.Well,\\. either way,\\. I cannot let this happen!\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["Oho!\\.\\. You dare challenge me,\\. human!\\.\\.?\\.\\."])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["That’s right!\\.\\. I will not let you cause the death of an innocent man,\\. much less chaos through the Kingdoms,\\. over a petty failed romance!\\.\\."])
+    ShotBalloonIcon([15, 5, false])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["Petty!?\\.\\."])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Come quietly,\\. or I will be forced to slay you!\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["Pfthah!\\.\\. Did you expect that line to work?\\.\\. I have no fear!\\.\\. Come,\\. have at thee,\\. human!\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["I will show you the power of the lord,\\. no,\\. the GOD of all Corvids!\\.\\."])
+    PlayBGM(["RPG::BGM(@name=\"P&C - Battle Theme\", @volume=90, @pitch=100)"])
+    Wait([30])
+    ShotBalloonIcon([15, 5, false])
+    SetMoveRoute([15, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[45])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 1])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[45])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 1])"])
+    Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+    Wait([10])
+    FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 15, false])
+    ShowAnimation([15, 7, true])
+    FadeoutBGM([3])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["Gurgh!\\.\\."])
+    SetMoveRoute([15, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[-1, 1])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"$CalamitasWalk\\\", 0])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=34, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[-1, 1])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$CalamitasWalk\", 0])"])
+    Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=34, @parameters=[])"])
+    ShotBalloonIcon([15, 7, false])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Wait([60])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The crow crashes to the ground with a rather nasty looking thud,\\. skidding across the roof’s surface for a moment.\\.\\."])
+    Wait([10])
+    SetMoveRoute([15, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Wait([10])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["Kweh...\\.\\.\\. heheh...\\.\\.\\. you’re a strong human...\\.\\.\\. if only we had more crows with your tenacity...\\.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["His wing is injured,\\. that much you can tell.\\.\\. Combined with the rest of his injuries,\\. it’s clear Calamitas is no longer flight worthy.\\.\\."])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["This battle is over.\\.\\. Stop all this and turn yourself in.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["...\\.\\.\\.Pfhah.\\.\\. So it is.\\.\\. Fine,\\. then...\\.\\.\\. you gave me a respectable duel.\\.\\. Even one such as I can at least honor it.\\.\\."])
+    SetMoveRoute([15, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[20])\", \"RPG::MoveCommand(@code=14, @parameters=[-1, 0])\", \"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=14, @parameters=[-1, 0])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[20])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[-1, 0])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[-1, 0])"])
+    Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The crow moves to the chimney,\\. still spewing its ever present miasma.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["It reaches behind the chimney and pulls out a bag of some kind,\\. unceremoniously dropping it down the chimney pipe.\\.\\."])
+    PlaySE(["RPG::SE(@name=\"Gun1\", @pitch=60, @volume=80)"])
+    Wait([40])
+    PlaySE(["RPG::SE(@name=\"Earth9\", @pitch=80, @volume=80)"])
+    ShakeScreen([5, 3, 120, false])
+    ShotBalloonIcon([-1, 1, false])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["There’s a smash,\\. and some sort of churning,\\. the entire tower seeming to shake.\\.\\. And just like that...\\.\\.\\."])
+    Wait([15])
+    FadeoutScreen([])
+    Wait([20])
+    ControlSwitches([2239, 2239, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["...\\.\\.\\."])
+    Wait([10])
+    FadeinScreen([])
+    ControlSwitches([3000, 3000, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The Miasma stops.\\.\\. As if someone plugged a hole,\\. the cloud immediately ceased releasing.\\.\\. Already the fumes were starting to dissipate.\\.\\."])
+    Script(["complete_objective(39, 2)"])
+    ScriptMore(["reveal_objective(39, 3)"])
+    ScriptMore(["call_quest_journal(39)"])
+    Wait([20])
+    ControlSwitches([3000, 3000, 1])
+    PlayBGM(["RPG::BGM(@name=\"P&C - Town (Destroyed)\", @volume=90, @pitch=100)"])
+    SetMoveRoute([15, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["There,\\.  you’ve done your job.\\.\\. No more of that.\\.\\. Congratulations,\\. you’ve saved the kingdom.\\.\\. Huzzah.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The crow snarks as he continues to tend to his injuries.\\.\\. You don’t really care,\\. however.\\.\\. Finally,\\. this entire mess is nearly over.\\.\\."])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Thank goodness.\\.\\. Now,\\. let’s get you to Crowley...\\.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["I refuse.\\.\\."])
+    Wait([60])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["What?\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["Pfthah.\\.\\. As if I would do something as shameful as turn myself in.\\.\\. Even in my injured state...\\.\\.\\. no,\\. I definitely refuse.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["I would rather die.\\.\\."])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["You would...\\.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["Why not?\\.\\. To turn myself in...\\.\\.\\. I would surely get the death penalty in Crowley’s place.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["At least in this way,\\. I can preserve some of the honor in my corvid brethren.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["I don’t have any reason to cling to life anymore regardless,\\. now that my fair princess has cast me aside...\\.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["So come!\\.\\. I am not afraid!\\.\\. Slay me,\\. claim me as your battle prize,\\. like a Knight would!\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["Take me away from this ridiculous world!\\.\\. Ahahaha!\\.\\."])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["...\\.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["Oh,\\. do you hesitate?\\.\\. But if you spare me,\\. this would all have been for nothing,\\. no?\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["Crowley will die,\\. even if the Miasma is stopped.\\.\\. You won’t receive any reward,\\. you will have accomplished nothing.\\.\\."])
+    Wait([20])
+    ShotBalloonIcon([15, 3, false])
+    Wait([10])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["Hmmm...\\.\\.\\. ohoho.\\.\\. How about it,\\. then?\\.\\. I’ve changed my mind.\\.\\."])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["What are you on about now?\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["Spare me.\\.\\. I will trade my life for my old master’s work!\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["His most powerful potion,\\. one that dwarves even that wretched miasma in potency,\\. completely at your disposal.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["I won’t tell,\\. you won’t,\\. and the only other person that would have a clue is currently counting his days on one hand.\\.\\."])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Are you insane!?\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["Perhaps.\\.\\. Love is said to make one do crazy things,\\. no?\\.\\. I suppose that is true even for us birds.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["Those are your options.\\.\\. Oh,\\. and just so you know,\\. I may not be able to escape...\\.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Calamitas:"])
+    ShowText(["But I can certainly do enough damage to kill myself if you decide to be sneaky and “apprehend” me,\\. so there are no third options here.\\.\\."])
+    Wait([15])
+    ShotBalloonIcon([-1, 7, false])
+    Wait([20])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["This just got a lot more complicated now...\\.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["It...\\.\\.\\. should be an easy choice,\\. shouldn’t it?\\.\\. Save Crowley,\\. as you promised you would,\\. or...\\.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Save Calamitas,\\. and receive the most powerful potions in the continent...\\.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The former,\\. you will have to kill Calamitas.\\.\\. There will simply not be enough proof to show Crowley’s innocence if they do not have a culprit on hand.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The latter,\\. Crowley will be sacrificed.\\.\\. Calamitas refuses the possibility of turning himself in to save his former Master.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The only way Calamitas is leaving this laboratory alive is if you take his deal and honor it.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The choice...\\.\\.\\. should be obvious,\\. right?\\.\\. Right,\\. it’s clear,\\. there’s no question.\\.\\. You must...\\.\\.\\."])
+    ShowChoices([["Keep your word with Crowley", "Ally with Calamitas"], 0])
+    When([0, "Keep your word with Crowley"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You shake your head.\\.\\. No.\\.\\. You gave him your word.\\.\\. You get your sword at the ready and stare at the crow.\\.\\."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Calamitas:"])
+      ShowText(["...\\.\\.\\.Hmph.\\.\\. So it’s like that,\\. then?\\.\\. Very well.\\.\\. I accept my fate at the ready!\\.\\. Come,\\. slay me!\\.\\. I don’t fear you!\\.\\."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Calamitas:"])
+      ShowText(["Watch,\\. as I approach the next world,\\. anew!\\.\\. Like a phoenix,\\. I will be reborn,\\. stronger,\\. more majestic!\\.\\."])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["Forgive me,\\. sir Calamitas.\\.\\. But I cannot let you toy with an honest man’s life,\\. because of your own pride.\\.\\. "])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["For what it is worth,\\. I am sure you’ll find yourself a beautiful hen wherever fate takes you next.\\.\\. Perhaps try reincarnating as a peacock.\\.\\."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Calamitas:"])
+      ShowText(["...\\.\\.\\.Hm,\\. tempting.\\.\\. Pfthahaha!\\.\\. Well,\\. let’s get this over with!\\.\\. You have someone to save,\\. after all!\\.\\."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You nod,\\. as the crow outstretches his wings and readies himself for the final blow.\\.\\."])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Wait([15])
+      FadeoutScreen([])
+      Wait([30])
+      PlaySE(["RPG::SE(@name=\"Slash2\", @pitch=100, @volume=80)"])
+      Wait([15])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You deliver it.\\.\\. As quick as you can.\\.\\."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Calamitas is no more.\\.\\."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You shake your head and sigh,\\. looking down at the fallen crow.\\.\\. You’re going to have to carry this back...\\.\\.\\."])
+      FadeoutScreen([])
+      ControlSwitches([2242, 2242, 0])
+      Empty([])
+
+    When([1, "Ally with Calamitas"])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["...\\.\\.\\.What kind of potion?\\.\\."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Calamitas:"])
+      ShowText(["Oho,\\. so I did catch your interest after all,\\. then?\\.\\."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Calamitas:"])
+      ShowText(["Hm hm,\\. don’t you worry,\\. sir Knight.\\.\\. I’m sure you will very well appreciate what I have to offer you.\\.\\."])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["...\\.\\.\\."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Calamitas:"])
+      ShowText(["I knew we had some sort of understanding before.\\.\\. Birds of a feather,\\. as it were.\\.\\. I take it we have an arrangement,\\. then?\\.\\."])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["I...\\.\\.\\. suppose so.\\.\\."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["As pathetic as his romantic attempts were...\\.\\.\\. you feel as if the crow is being honest,\\. here.\\.\\. As honest as he was when he threatened to off himself.\\.\\."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Calamitas:"])
+      ShowText(["Don’t feel too bad.\\.\\. Yes...\\.\\.\\. since you have graciously spared me,\\. I will eagerly live this life to the fullest.\\.\\."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Calamitas:"])
+      ShowText(["Perhaps this world isn’t so bad after all!\\.\\."])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["The potions,\\. Calamitas.\\.\\. Our deal?\\.\\."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Calamitas:"])
+      ShowText(["Ah,\\. right,\\. right.\\.\\. I suppose this is business now.\\.\\. Hm,\\. well,\\. keep some distance from me,\\. and I’ll get you your well-\\.earned reward...\\.\\.\\."])
+      Wait([10])
+      ShotBalloonIcon([15, 7, false])
+      SetMoveRoute([15, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=14, @parameters=[1, 0])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=14, @parameters=[1, 1])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=14, @parameters=[1, 0])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=14, @parameters=[1, 0])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=14, @parameters=[1, 1])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=14, @parameters=[1, 1])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=14, @parameters=[1, 1])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[1, 0])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[1, 1])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[1, 0])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[1, 0])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[1, 1])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[1, 1])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[1, 1])"])
+      Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Calamitas:"])
+      ShowText(["And perhaps a potion for myself.\\.\\. Blades do a number on wings,\\. I’ve discovered today...\\.\\.\\."])
+      Wait([15])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["The crow motions you to re-\\.enter the lab.\\.\\."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["One crow,\\. for another,\\. it seems...\\.\\.\\."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You just hope that so-\\.called super potion is worth it.\\.\\."])
+      FadeoutScreen([])
+      Wait([20])
+      Empty([])
+
+    ChoicesEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Play the next part of this quest in the next versions! Get to know a new \\C[18]feathered\\C[0] girl!"])
+    ControlSwitches([2243, 2243, 0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ConditionalBranch([0, 44, 0])
+      TransferPlayer([0, 2, 61, 41, 2, 0])
+      Empty([])
+
+    Else([])
+      TransferPlayer([0, 4, 15, 32, 8, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+CommonEvent 20
+Name = "Lizz"
+
+  Page 0
+    CallCommonEvent([564])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 22
+Name = "Load"
+
+  Page 0
+    ConditionalBranch([0, 739, 1])
+      ConditionalBranch([12, "$game_player.region_id == 2"])
+        Script(["$game_map.start_sas"])
+        ScriptMore(["$game_map.sas_hud.show(true)"])
+        JumpToLabel(["end"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "$game_player.region_id == 1"])
+        Script(["$game_map.pause_sas"])
+        ScriptMore(["$game_map.sas_hud.hide(true)"])
+        JumpToLabel(["end"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Wait([15])
+    Label(["end"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 23
+Name = "Porgy"
+
+  Page 0
+    Comment(["[enemy 248]"])
+    Comment(["[localsw 0]"])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([2, "B", 1])
+      ControlVariables([585, 585, 0, 0, 5])
+      ControlSwitches([648, 648, 0])
+      ControlVariables([569, 569, 0, 2, 1, 20])
+      ConditionalBranch([1, 569, 0, 20, 0])
+        ChangeItems([331, 0, 0, 1])
+        Empty([])
+      Else([])
+        ChangeItems([279, 0, 0, 1])
+        Empty([])
+      BranchEnd([])
+      ControlSelfSwitch(["B", 0])
+      Empty([])
+
+    BranchEnd([])
+    Wait([15])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 24
+Name = "Porgy"
+
+  Page 0
+    Comment(["[enemy 248]"])
+    Comment(["[localsw 0]"])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([2, "B", 1])
+      ControlVariables([585, 585, 0, 0, 5])
+      ControlSwitches([648, 648, 0])
+      ControlVariables([569, 569, 0, 2, 1, 3])
+      ConditionalBranch([1, 569, 0, 3, 0])
+        ControlVariables([569, 569, 0, 2, 1, 20])
+        ConditionalBranch([1, 569, 0, 20, 0])
+          ChangeItems([331, 0, 0, 1])
+          Empty([])
+        Else([])
+          ChangeItems([279, 0, 0, 1])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      ControlSelfSwitch(["B", 0])
+      Empty([])
+
+    BranchEnd([])
+    Wait([15])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 25
+Name = "Dog(s)"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Dog:"])
+    ShowText(["Bark!"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Script(["$game_variables[7401]="])
+    ScriptMore(["[12,0,0,2,2,1,3,0,0,1,0,0,0,0,0,0,0,0,0,0,"])
+    ScriptMore(["0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"])
+    ScriptMore(["0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]"])
+    Script(["$game_variables[7401][60]= \"Cheerful\""])
+    ShotBalloonIcon([0, 3, false])
+    ControlSwitches([2412, 2412, 0])
+    ControlVariables([2097, 2097, 0, 0, 5301])
+    ControlVariables([2051, 2051, 0, 0, 4])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Mialee:"])
+    ShowText(["Please,\\. please,\\. please give me pets!\\.\\. Please?!"])
+    CallCommonEvent([559])
+    ControlSwitches([2412, 2412, 1])
+    CallCommonEvent([14])
+    CallCommonEvent([743])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 26
+Name = "Tentacle"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ConditionalBranch([12, "$game_self_switches[[488,2,\"A\"]] == true"])
+      Comment(["eldritch already rec"])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4318, 0])
+      Script(["@r = rand(10)"])
+      ConditionalBranch([12, "@r < 1"])
+        Empty([])
+      Else([])
+        JumpToLabel(["end"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Loop([])
+      Script(["@prex = $game_player.x"])
+      ScriptMore(["@prey = $game_player.y"])
+      Script(["@id = @event_id"])
+      ScriptMore(["@evix = $game_map.events[@id].x"])
+      ScriptMore(["@eviy = $game_map.events[@id].y"])
+      Script(["@dx = @prex - @evix"])
+      ScriptMore(["@dy = @prey - @eviy"])
+      ConditionalBranch([12, "@dx.abs <= 1.25 && @dy.abs <= 1.25"])
+        ControlVariables([3920, 3920, 0, 0, 9])
+        CallCommonEvent([159])
+        BreakLoop([])
+        Empty([])
+      BranchEnd([])
+      Wait([10])
+      Empty([])
+
+    RepeatAbove([])
+    Label(["end"])
+    EraseEvent([])
+    Label(["endF"])
+    Empty([])
+
+CommonEvent 27
+Name = "Leftover Zeal"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["You couldn't fit this \\i[1216] Zeal in your bags,\\. there's still \\v[337] here waiting for you."])
+    ShowChoices([["Fill your bags with Zeal!", "Leave it alone."], 2])
+    When([0, "Fill your bags with Zeal!"])
+      Script(["@totZ = $game_party.item_number($data_items[424])"])
+      ChangeItems([424, 0, 1, 337])
+      ControlVariables([337, 337, 2, 4, "99 - @totZ"])
+      ConditionalBranch([1, 337, 0, 0, 2])
+        ControlVariables([337, 337, 0, 0, 0])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    When([1, "Leave it alone."])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 28
+Name = "Leftover Zeal"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["You couldn't fit this \\i[1216] Zeal in your bags,\\. there's still \\v[337] here waiting for you."])
+    ShowChoices([["Fill your bags with Zeal!", "Leave it alone."], 2])
+    When([0, "Fill your bags with Zeal!"])
+      Script(["@totZ = $game_party.item_number($data_items[424])"])
+      ChangeItems([424, 0, 1, 337])
+      ControlVariables([337, 337, 2, 4, "99 - @totZ"])
+      ConditionalBranch([1, 337, 0, 0, 2])
+        ControlVariables([337, 337, 0, 0, 0])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    When([1, "Leave it alone."])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 29
+Name = "Egg"
+
+  Page 0
+    Comment(["<always update>"])
+    CallCommonEvent([86])
+    Empty([])
+
+  Page 1
+    Empty([])

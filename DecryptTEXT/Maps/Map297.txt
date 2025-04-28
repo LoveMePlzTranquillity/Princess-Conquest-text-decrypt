@@ -1,0 +1,219 @@
+Display Name = ""
+Parallax Name = "Kob Room AfterFix"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ControlSwitches([3006, 3006, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Kobold Princess is waiting for you by the altar!\\.\\. Rush there!"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    ControlSwitches([3006, 3006, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Kobold Princess is waiting for you by the altar!\\.\\. Rush there!"])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "KnockerRun1"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 8
+Name = "KnockerRun2"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ControlSwitches([3006, 3006, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Kobold Princess is waiting for you by the altar!\\.\\. Rush there!"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    ControlSwitches([3006, 3006, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "KnockerRun3"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([10])
+    ControlVariables([3656, 3656, 0, 0, 2])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$KobP\\\", 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$KobP\", 0])"])
+    TransferPlayer([0, 299, 13, 17, 8, 0])
+    CallCommonEvent([754])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([10])
+    ControlVariables([3656, 3656, 0, 0, 2])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$KobP\\\", 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$KobP\", 0])"])
+    TransferPlayer([0, 299, 13, 17, 8, 0])
+    CallCommonEvent([754])
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    ControlSwitches([1739, 1739, 0])
+    ChangeSaveAccess([0])
+    Wait([15])
+    FadeinScreen([])
+    Wait([15])
+    ChangeSaveAccess([0])
+    EraseEvent([])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([0, 2614, 1])
+      PlayBGM(["RPG::BGM(@name=\"P&C - Palace Grounds\", @volume=90, @pitch=100)"])
+      Empty([])
+
+    BranchEnd([])
+    ControlVariables([2061, 2061, 0, 0, 0])
+    Wait([5])
+    CallCommonEvent([565])
+    Script(["@k = 28"])
+    ControlVariables([2065, 2065, 0, 1, 2061])
+    Label(["count"])
+    ConditionalBranch([1, 2065, 0, 1, 1])
+      Label(["again"])
+      ControlVariables([2062, 2062, 0, 2, 1, 24])
+      ConditionalBranch([1, 2062, 0, 18, 1])
+        JumpToLabel(["again"])
+        Empty([])
+      BranchEnd([])
+      ControlVariables([2063, 2063, 0, 2, 1, 19])
+      ConditionalBranch([1, 2063, 0, 6, 2])
+        JumpToLabel(["again"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "$game_map.passable?($game_variables[2062], $game_variables[2063], 2)"])
+        Script(["@x = $game_variables[2062]"])
+        ScriptMore(["@y = $game_variables[2063]"])
+        Script(["$game_map.events[@k].moveto(@x,@y)"])
+        ControlVariables([2065, 2065, 2, 0, 1])
+        Script(["@k += 1"])
+        JumpToLabel(["count"])
+        Empty([])
+      Else([])
+        JumpToLabel(["again"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Label(["end"])
+    ConditionalBranch([0, 2348, 1])
+      Script(["$game_map.start_sas"])
+      ScriptMore(["$game_map.sas_hud.show(true)"])
+      Wait([15])
+      Empty([])
+
+    Else([])
+      Script(["$game_map.pause_sas"])
+      ScriptMore(["$game_map.sas_hud.hide(true)"])
+      Wait([15])
+      Empty([])
+
+    BranchEnd([])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 39
+Name = "CrysStat"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 40
+Name = "CrysStat"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 42
+Name = "CrysStat"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 43
+Name = "CrysStat"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 44
+Name = "CrysStat"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])

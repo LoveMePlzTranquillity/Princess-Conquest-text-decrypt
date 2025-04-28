@@ -1,0 +1,60 @@
+Display Name = ""
+Parallax Name = "ToWen"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "Load"
+
+  Page 0
+    CallCommonEvent([21])
+    CallCommonEvent([20])
+    ControlVariables([850, 850, 0, 0, 1])
+    ControlSwitches([3433, 3433, 1])
+    ControlSwitches([3435, 3435, 1])
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    Wait([10])
+    FadeinScreen([])
+    ControlVariables([801, 801, 0, 2, 0, 2])
+    ConditionalBranch([1, 801, 0, 0, 0])
+      PlayBGM(["RPG::BGM(@name=\"P&C - Map1 Loop\", @volume=90, @pitch=100)"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 801, 0, 1, 0])
+        PlayBGM(["RPG::BGM(@name=\"P&C - Map2 Loop\", @volume=90, @pitch=100)"])
+        Empty([])
+      Else([])
+        ConditionalBranch([1, 801, 0, 2, 0])
+          PlayBGM(["RPG::BGM(@name=\"P&C - Map3 Loop\", @volume=90, @pitch=100)"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 2
+Name = "TPtunnel"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    SetWeatherEffects([:none, 9, 0, false])
+    ErasePicture([9])
+    TransferPlayer([0, 270, 68, 2, 4, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "TPwen"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 272, 13, 23, 8, 0])
+    Empty([])

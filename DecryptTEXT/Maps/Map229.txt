@@ -1,0 +1,582 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Wait([180])
+    ControlSwitches([2111, 2111, 0])
+    ControlSwitches([2110, 2110, 1])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([2, "A", 1])
+      ShowPicture([1, "Dusk Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Dusk Princess:"])
+      ShowText(["Ok,\\. ok,\\. I get it.\\.\\. I know what you're playing at~"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Dusk Princess:"])
+      ShowText(["Tell me just this little piece of information and we'll have a good time together~"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Dusk Princess:"])
+      ShowText(["Didn't you have fun last time?\\.\\."])
+      ErasePicture([1])
+      ControlSelfSwitch(["A", 0])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([2, "B", 1])
+        ShowPicture([1, "Dusk Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Dusk Princess:"])
+        ShowText(["Hey,\\. I'm sure the mutt would want this too,\\. right?"])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Dusk Princess:"])
+        ShowText(["I stopped the two of you from getting killed while trying to take the Queen's head,\\. didn't I?"])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Dusk Princess:"])
+        ShowText(["Hehehe~\\.\\. This time we won't go at her from the front~"])
+        ErasePicture([1])
+        ControlSelfSwitch(["B", 0])
+        Empty([])
+      Else([])
+        ConditionalBranch([2, "C", 1])
+          ShowPicture([1, "Dusk Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+          ShowTextAttributes(["", 0, 2, 2])
+          ShowText(["Dusk Princess:"])
+          ShowText(["You're such a meanie!"])
+          ShowTextAttributes(["", 0, 2, 2])
+          ShowText(["Dusk Princess:"])
+          ShowText(["Why would you tease me so?\\.\\. Knowing where you found it could greatly help..."])
+          ShowTextAttributes(["", 0, 2, 2])
+          ShowText(["Dusk Princess:"])
+          ShowText(["...with the summoning ritual,\\. I mean...\\.\\.\\."])
+          ErasePicture([1])
+          ControlSelfSwitch(["C", 0])
+          Empty([])
+        Else([])
+          ShowPicture([1, "Dusk Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+          ShowTextAttributes(["", 0, 2, 2])
+          ShowText(["Dusk Princess:"])
+          ShowText(["...\\.\\.\\. Ghrrr...\\.\\.\\. You don't want to get in bad terms with me..."])
+          ErasePicture([1])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ShowChoices([["Tell her where you found the scale.", "..."], 0])
+    When([0, "Tell her where you found the scale."])
+      CallCommonEvent([235])
+      Empty([])
+
+    When([1, "..."])
+      ShowPicture([1, "Dusk Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Dusk Princess:"])
+      ShowText(["...\\.\\.\\. *Kch*"])
+      ErasePicture([1])
+      Wait([20])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["The Imp clicks her tongue,\\. she really wants to know where you got the Queen's Scale."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["She seems lost in her thoughts and stops looking at you."])
+      Wait([15])
+      Script(["$game_map.start_sas"])
+      ScriptMore(["$game_map.sas_hud.show(true)"])
+      ControlSwitches([2110, 2110, 0])
+      JumpToLabel(["end"])
+      Empty([])
+
+    ChoicesEnd([])
+    Label(["end"])
+    ControlSwitches([2111, 2111, 1])
+    Empty([])
+
+CommonEvent 2
+Name = "spark1"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 225, 9, 8, 2, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 225, 9, 8, 2, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 5
+Name = "DuskP"
+
+  Page 0
+    ConditionalBranch([8, 82])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["The Queen's Scale is in your inventory.\\.\\. Proceed to the next step?"])
+      ShowChoices([["Yes", "No"], 2])
+      When([0, "Yes"])
+        FadeoutScreen([])
+        Wait([20])
+        ControlSwitches([2114, 2114, 0])
+        TransferPlayer([0, 229, 11, 9, 8, 0])
+        Wait([10])
+        FadeinScreen([])
+        Wait([20])
+        ShotBalloonIcon([0, 1, false])
+        ShowPicture([1, "Dusk Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Dusk Princess:"])
+        ShowText(["Oh!\\.\\. You found it!"])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Dusk Princess:"])
+        ShowText(["Now that we have the scale of the Queen herself,\\. it won't be difficult summoning her to a place we hold an advantage in!"])
+        ErasePicture([1])
+        Wait([20])
+        ShotBalloonIcon([0, 3, false])
+        Wait([20])
+        ShowPicture([1, "Dusk Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Dusk Princess:"])
+        ShowText(["You did an excellent job,\\. Knight!\\.\\. Hehehe!"])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Dusk Princess:"])
+        ShowText(["Where did you find that?\\.\\. It looks heavy...\\.\\.\\. but I know how strong you are~"])
+        ErasePicture([1])
+        ConditionalBranch([0, 2104, 0])
+          ShowChoices([["Tell her where you found the scale.", "Ask her how she's going to use it."], 0])
+          When([0, "Tell her where you found the scale."])
+            JumpToLabel(["badend"])
+            Empty([])
+          When([1, "Ask her how she's going to use it."])
+            ShowPicture([1, "Dusk Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+            ShowTextAttributes(["", 0, 2, 2])
+            ShowText(["Dusk Princess:"])
+            ShowText(["Oh,\\. I have my methods~"])
+            ShowTextAttributes(["", 0, 2, 2])
+            ShowText(["Dusk Princess:"])
+            ShowText(["With a catalyst this strong,\\. there's nothing I can't do!"])
+            ShowTextAttributes(["", 0, 2, 2])
+            ShowText(["Dusk Princess:"])
+            ShowText(["Now,\\. about its whereabouts...\\.\\.\\. tell me,\\. I'm curious!\\.\\. Hehehe~"])
+            ErasePicture([1])
+            ShowChoices([["Tell her where you found the scale.", "..."], 0])
+            When([0, "Tell her where you found the scale."])
+              JumpToLabel(["badend"])
+              Empty([])
+            When([1, "..."])
+              ShowPicture([1, "Dusk Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+              ShowTextAttributes(["", 0, 2, 2])
+              ShowText(["Dusk Princess:"])
+              ShowText(["So?\\.\\. Aren't you going to tell me?"])
+              ShowTextAttributes(["", 0, 2, 2])
+              ShowText(["Dusk Princess:"])
+              ShowText(["Do you even want to kill the Queen or not?!"])
+              ErasePicture([1])
+              ShowChoices([["Tell her where you found the scale.", "..."], 0])
+              When([0, "Tell her where you found the scale."])
+                JumpToLabel(["badend"])
+                Empty([])
+              When([1, "..."])
+                ShowPicture([1, "Dusk Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+                ShowTextAttributes(["", 0, 2, 2])
+                ShowText(["Dusk Princess:"])
+                ShowText(["...\\.\\.\\. *Kch*"])
+                ErasePicture([1])
+                Wait([20])
+                ShowTextAttributes(["", 0, 0, 2])
+                ShowText(["The Imp clicks her tongue,\\. things aren't going the way she planned."])
+                ShowTextAttributes(["", 0, 0, 2])
+                ShowText(["She seems lost in her thoughts and stopped looking at you."])
+                Wait([15])
+                Script(["$game_map.start_sas"])
+                ScriptMore(["$game_map.sas_hud.show(true)"])
+                ControlSwitches([2110, 2110, 0])
+                JumpToLabel(["end"])
+                Empty([])
+              ChoicesEnd([])
+              Empty([])
+            ChoicesEnd([])
+            Empty([])
+          ChoicesEnd([])
+          Empty([])
+        Else([])
+          Label(["badend"])
+          CallCommonEvent([235])
+          JumpToLabel(["end"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      When([1, "No"])
+        Wait([30])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([1, "Dusk Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dusk Princess:"])
+    ShowText(["What?\\.\\. Are we going back already?"])
+    ErasePicture([1])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      ChangeSaveAccess([1])
+      ShowPicture([1, "Dusk Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Dusk Princess:"])
+      ShowText(["Here we go~\\.\\. Hold your breath!\\.\\."])
+      ErasePicture([1])
+      ShowAnimation([-1, 125, false])
+      Wait([20])
+      FadeoutScreen([])
+      Wait([20])
+      TransferPlayer([0, 75, 20, 12, 8, 0])
+      Empty([])
+
+    When([1, "No"])
+      ShowPicture([1, "Dusk Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Dusk Princess:"])
+      ShowText(["Hehehe!\\.\\. Get back to work then!"])
+      ErasePicture([1])
+      Empty([])
+
+    ChoicesEnd([])
+    Label(["end"])
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 143]"])
+    Comment(["[localsw 0]"])
+    Empty([])
+
+  Page 2
+    ControlSwitches([2112, 2112, 0])
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    CallCommonEvent([56])
+    FlashScreen(["Color(@red=255.0, @green=0.0, @blue=0.0, @alpha=255.0)", 30, true])
+    Wait([20])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Blood starts gushing out from the Imp's body.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["She was so distracted she didn't notice you quickly unsheating your sword and going for the kill."])
+    Wait([15])
+    ShowPicture([1, "Dusk Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dusk Princess:"])
+    ShowText(["Guh!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dusk Princess:"])
+    ShowText(["...\\.\\.\\. What...\\.\\.\\. is...\\.\\.\\."])
+    ErasePicture([1])
+    Wait([30])
+    ShowPicture([1, "Dusk Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dusk Princess:"])
+    ShowText(["You little...\\.\\.\\. I had you dancing in my palm...\\.\\.\\. *coff*"])
+    ErasePicture([1])
+    Wait([30])
+    ShowPicture([1, "Dusk Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dusk Princess:"])
+    ShowText(["I...\\.\\.\\. can't...\\.\\.\\. not like this..."])
+    ErasePicture([1])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Dusk Princess widens her fangs and..."])
+    PlaySE(["RPG::SE(@name=\"Monster3\", @pitch=120, @volume=80)"])
+    ShakeScreen([4, 4, 240, false])
+    TintScreen(["Tone(@red=255.0, @green=-255.0, @blue=-255.0, @gray=0.0)", 20, false])
+    ShowPicture([1, "Dusk Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dusk Princess:"])
+    ShowText(["GYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!!!"])
+    ErasePicture([1])
+    Wait([30])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["... she releases a horrifying screech.\\.\\. One you won't be able to forget for the rest of your life."])
+    FadeoutScreen([])
+    TransferPlayer([0, 75, 20, 13, 8, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 10, false])
+    SetWeatherEffects([:none, 9, 0, false])
+    ErasePicture([9])
+    ChangeSaveAccess([0])
+    Wait([20])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Darkness surrounds you,\\. just like that time."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Dog Princess disappeared right after that...\\.\\.\\. but where to?\\.\\. "])
+    ShowText(["She was a handful,\\. that's sure...\\.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["...but even now you can't stop worrying about her safety.\\.\\. "])
+    Wait([30])
+    ShowTextAttributes(["Hero", 0, 2, 2])
+    ShowText(["... I can only pray she didn't do anything rash..."])
+    Wait([45])
+    FadeinScreen([])
+    Wait([20])
+    ShowPicture([1, "Dusk Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dusk Princess:"])
+    ShowText(["Here we are!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dusk Princess:"])
+    ShowText(["Good boy,\\. good boy!\\.\\. You didn't throw up this time~"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dusk Princess:"])
+    ShowText(["Hehehe~"])
+    ErasePicture([1])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["She's more cheerful than usual after the warp,\\. and her creepy giggling just won't stop."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Must be good when things go just the way you wanted...\\.\\.\\. this is so irritating."])
+    ShowPicture([1, "Dusk Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dusk Princess:"])
+    ShowText(["Now,\\. you've got a mission to carry out,\\. dear Knight!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dusk Princess:"])
+    ShowText(["Go out there,\\. what we need is locked in the Mansion,\\. it's the bigger building in the village,\\. you cannot miss it."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dusk Princess:"])
+    ShowText(["I tried to open it myself,\\. but there's a strange lock on the door,\\. I couldn't even touch it...\\.\\.\\."])
+    ErasePicture([1])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["..."])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["And why do you think I should be able to open it,\\. instead?"])
+    ShowPicture([1, "Dusk Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dusk Princess:"])
+    ShowText(["\\^Oh,\\. but it's easy,\\. you silly!\\.\\. You two spent a lot of time toget\\.\\.\\."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dusk Princess:"])
+    ShowText(["..."])
+    ErasePicture([1])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["You were about to say...\\.\\.\\. \"you two spent a lot of time together\"...\\.\\.\\.?"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["There's no way for her to cover that slip-up.\\.\\. She clicks her tongue and adds...\\.\\.\\. "])
+    ShowPicture([1, "Dusk Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dusk Princess:"])
+    ShowText(["Hmph!\\.\\. I guess there's no way you would shut about it now...\\.\\.\\. very well...\\.\\.\\."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dusk Princess:"])
+    ShowText(["We're in Dog Princess' former village now."])
+    ErasePicture([1])
+    Wait([10])
+    ShotBalloonIcon([-1, 1, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["It took you but a moment to realize what she just said."])
+    ShowTextAttributes(["Hero", 0, 2, 2])
+    ShowText(["Dog Princess' destroyed home.\\.\\. The attack of the dragons.\\.\\. The escape...\\.\\.\\."])
+    ShowTextAttributes(["Hero", 0, 2, 2])
+    ShowText(["She kept the Princess out of this...\\.\\.\\. on purpose?\\.\\."])
+    Wait([15])
+    ShowPicture([1, "Dusk Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dusk Princess:"])
+    ShowText(["We have to enter her mansion.\\.\\. The Queen,\\. during the attack,\\. lost something of hers..."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dusk Princess:"])
+    ShowText(["She doesn't realize how dangerous it is to have something of yours laying around~\\.\\. Hehehe~\\.\\."])
+    ControlSwitches([3000, 3000, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dusk Princess:"])
+    ShowText(["Get it,\\. and I'll summon the Queen on our position.\\.\\. Alone!\\.\\."])
+    ErasePicture([1])
+    Script(["complete_objective(38, 0)"])
+    ScriptMore(["reveal_objective(38, 1)"])
+    ScriptMore(["call_quest_journal(38)"])
+    Wait([15])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["..."])
+    ControlSwitches([3000, 3000, 1])
+    Wait([15])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["It sounds too good to be true...\\.\\.\\. I hope you know what you're doing.\\.\\."])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 10, false])
+    SetWeatherEffects([:none, 9, 0, false])
+    ErasePicture([9])
+    Wait([5])
+    ChangeSaveAccess([0])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 7
+Name = "spark2"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "spark3"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "spark4"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "spark5"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "spark6"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "spark7"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "spark8"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "spark9"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "spark10"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ControlVariables([1749, 1749, 0, 2, 1, 10])
+    ConditionalBranch([0, 2158, 0])
+      Wait([15])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([0, 2157, 0])
+        Wait([30])
+        Empty([])
+      Else([])
+        Wait([45])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1749, 0, 1, 0])
+      ShowAnimation([2, 143, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1749, 0, 2, 0])
+      ShowAnimation([7, 143, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1749, 0, 3, 0])
+      ShowAnimation([8, 143, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1749, 0, 4, 0])
+      ShowAnimation([9, 143, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1749, 0, 5, 0])
+      ShowAnimation([10, 143, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1749, 0, 6, 0])
+      ShowAnimation([11, 143, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1749, 0, 7, 0])
+      ShowAnimation([12, 143, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1749, 0, 8, 0])
+      ShowAnimation([13, 143, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1749, 0, 9, 0])
+      ShowAnimation([14, 143, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 1749, 0, 10, 0])
+      ShowAnimation([15, 143, false])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 17
+Name = "SaveDis"
+
+  Page 0
+    ChangeSaveAccess([0])
+    Wait([15])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ChangeState([0, 1, 0, 26])
+    EraseEvent([])
+    Empty([])

@@ -1,0 +1,768 @@
+Display Name = ""
+Parallax Name = "SkeleChurch"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "SkellyLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 2
+Name = "SkellyLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 3
+Name = "SkellyLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 4
+Name = "SkellyLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    ConditionalBranch([0, 144, 0])
+      TransferPlayer([0, 2, 51, 76, 2, 0])
+      Empty([])
+
+    Else([])
+      TransferPlayer([0, 20, 10, 15, 8, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    ConditionalBranch([0, 144, 0])
+      TransferPlayer([0, 2, 51, 76, 2, 0])
+      Empty([])
+
+    Else([])
+      TransferPlayer([0, 20, 10, 15, 8, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 7
+Name = "SkellyLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 8
+Name = "SkellyLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 9
+Name = "SkellyLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 10
+Name = "SkellyLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 11
+Name = "SkellyLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 12
+Name = "DiscoLight2"
+
+  Page 0
+    Wait([40])
+    Script(["@xp = (rand(22) + 3) * 32"])
+    ScriptMore(["@yp = (rand(8) + 18) * 32"])
+    Script(["$game_map.screen.pictures[10].show("])
+    ScriptMore(["\"[fixed]disco\", 1, @xp,@yp, 100, 100, 85, 1)"])
+    Wait([20])
+    ErasePicture([10])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 13
+Name = "SkellyLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 15
+Name = "DiscoLight"
+
+  Page 0
+    Wait([30])
+    Script(["@xp = (rand(22) + 3) * 32"])
+    ScriptMore(["@yp = (rand(8) + 18) * 32"])
+    Script(["$game_map.screen.pictures[9].show("])
+    ScriptMore(["\"[fixed]disco\", 1, @xp,@yp, 100, 100, 85, 1)"])
+    Wait([20])
+    ErasePicture([9])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    ConditionalBranch([0, 144, 0])
+      TransferPlayer([0, 2, 51, 76, 2, 0])
+      Empty([])
+
+    Else([])
+      TransferPlayer([0, 20, 10, 15, 8, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    ConditionalBranch([0, 144, 0])
+      TransferPlayer([0, 2, 51, 76, 2, 0])
+      Empty([])
+
+    Else([])
+      TransferPlayer([0, 20, 10, 15, 8, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    ConditionalBranch([0, 144, 0])
+      TransferPlayer([0, 2, 51, 76, 2, 0])
+      Empty([])
+
+    Else([])
+      TransferPlayer([0, 20, 10, 15, 8, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 19
+Name = "BGMchanges"
+
+  Page 0
+    Script(["@s = 0"])
+    ConditionalBranch([12, "$game_player.y > 30"])
+      ConditionalBranch([12, "@s == 2"])
+        FadeoutBGM([2])
+        Wait([45])
+        Empty([])
+      BranchEnd([])
+      PlayBGM(["RPG::BGM(@name=\"P&C - Holy Harmony\", @volume=80, @pitch=100)"])
+      Script(["@s = 1"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "@s == 1"])
+        FadeoutBGM([2])
+        Wait([45])
+        Empty([])
+      BranchEnd([])
+      PlayBGM(["RPG::BGM(@name=\"P&C - Dance Club Of Death\", @volume=100, @pitch=100)"])
+      Script(["@s = 2"])
+      Empty([])
+
+    BranchEnd([])
+    Wait([5])
+    Empty([])
+
+CommonEvent 20
+Name = "FlashLight"
+
+  Page 0
+    ConditionalBranch([12, "$game_player.y < 29"])
+      FlashScreen(["Color(@red=255.0, @green=0.0, @blue=0.0, @alpha=136.0)", 50, true])
+      Empty([])
+
+    BranchEnd([])
+    Wait([20])
+    ConditionalBranch([12, "$game_player.y < 29"])
+      FlashScreen(["Color(@red=255.0, @green=255.0, @blue=0.0, @alpha=136.0)", 50, true])
+      Empty([])
+
+    BranchEnd([])
+    Wait([20])
+    ConditionalBranch([12, "$game_player.y < 29"])
+      FlashScreen(["Color(@red=0.0, @green=255.0, @blue=255.0, @alpha=136.0)", 50, true])
+      Empty([])
+
+    BranchEnd([])
+    Wait([20])
+    ConditionalBranch([12, "$game_player.y < 29"])
+      FlashScreen(["Color(@red=255.0, @green=0.0, @blue=255.0, @alpha=136.0)", 50, true])
+      Empty([])
+
+    BranchEnd([])
+    Wait([20])
+    ConditionalBranch([12, "$game_player.y < 29"])
+      FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=136.0)", 50, true])
+      Empty([])
+
+    BranchEnd([])
+    Wait([20])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 21
+Name = "FadeIn"
+
+  Page 0
+    Wait([10])
+    ControlSwitches([4134, 4134, 1])
+    ConditionalBranch([1, 3217, 0, 0, 5])
+      ConditionalBranch([12, "$game_variables[3217][25] == 1"])
+        ControlSwitches([4134, 4134, 0])
+        ControlVariables([2834, 2834, 0, 0, 0])
+        JumpToLabel(["noprep"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    CallCommonEvent([676])
+    Label(["noprep"])
+    ControlSwitches([2670, 2670, 0])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 22
+Name = "Finish tent message"
+
+  Page 0
+    Wait([600])
+    ShowChoices([["Finish!", "Keep going..."], 2])
+    When([0, "Finish!"])
+      ControlSwitches([1202, 1202, 0])
+      Empty([])
+
+    When([1, "Keep going..."])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 23
+Name = "SkeDel"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Skeleton pri dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Skeleton Princess:"])
+    ShowText(["I feel...\\.\\.\\. something must be wrong down here!\\.\\. Lay me down ,\\. \\N[1]!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Skeleton Princess:"])
+    ShowText(["Something...\\.\\.\\. something's coming out!!"])
+    ErasePicture([1])
+    ControlVariables([2029, 2029, 0, 0, 6])
+    ControlVariables([3672, 3672, 0, 0, 9])
+    CallCommonEvent([531])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 8, true])
+    Empty([])
+
+CommonEvent 25
+Name = "Priest"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 36])
+    CallCommonEvent([677])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 26
+Name = "Dancer1"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 37])
+    CallCommonEvent([677])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 27
+Name = "Dancer2"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 38])
+    CallCommonEvent([677])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 28
+Name = "Dancer3"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 39])
+    CallCommonEvent([677])
+    Empty([])
+
+  Page 3
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1055])
+    ControlSwitches([2412, 2412, 0])
+    Script(["@v = 2100 + $game_variables[2097]"])
+    ControlVariables([2051, 2051, 0, 0, 3])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Succubus:"])
+    ShowText(["Fufu~\\.\\. There's such sexual tension in the Kingdom right now~\\.\\. I feel I'm about to go crazy if I don't do something!"])
+    ShotBalloonIcon([0, 4, false])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Succubus:"])
+    ShowText(["Heyyy~\\.\\. You like what you see?\\.\\. I can feel your groin getting tense~"])
+    CallCommonEvent([559])
+    ControlSwitches([2412, 2412, 1])
+    CallCommonEvent([740])
+    CallCommonEvent([743])
+    Empty([])
+
+  Page 4
+    Empty([])
+
+CommonEvent 29
+Name = "Dancer4"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 40])
+    CallCommonEvent([677])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 30
+Name = "Dancer5"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 41])
+    CallCommonEvent([677])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 31
+Name = "DancerELite"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 42])
+    CallCommonEvent([677])
+    Empty([])
+
+  Page 3
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1117])
+    ControlSwitches([2412, 2412, 0])
+    Script(["@v = 2100 + $game_variables[2097]"])
+    ControlVariables([2051, 2051, 0, 0, 0])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dancing Courtesan:"])
+    ShowText(["Kekeke~\\.\\. These old bones haven't lost it~"])
+    ConditionalBranch([12, "$game_variables[3117][25] == 2"])
+      ShotBalloonIcon([0, 7, false])
+      ControlVariables([2051, 2051, 0, 0, 1])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Dancing Courtesan:"])
+      ShowText(["You...\\.\\.\\. do not bore me now,\\. I've got what I wanted from you."])
+      CallCommonEvent([559])
+      ControlSwitches([2412, 2412, 1])
+      Empty([])
+
+    Else([])
+      ShotBalloonIcon([0, 5, false])
+      ControlVariables([2051, 2051, 0, 0, 2])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Dancing Courtesan:"])
+      ShowText(["You!\\.\\. Get out from my dancefloor!\\.\\. I kicked everyone out for you to step on my metatarsals?!"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Dancing Courtesan:"])
+      ShowText(["I swear on my necromancery powers,\\. if you don't get out of my way this instant..."])
+      CallCommonEvent([559])
+      ControlSwitches([2412, 2412, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 32
+Name = " "
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 43])
+    CallCommonEvent([677])
+    Empty([])
+
+CommonEvent 33
+Name = "SkeNPC"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 44])
+    CallCommonEvent([677])
+    Empty([])
+
+CommonEvent 34
+Name = "SkeNPC"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 45])
+    CallCommonEvent([677])
+    Empty([])
+
+CommonEvent 35
+Name = "SkeNPC"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 46])
+    CallCommonEvent([677])
+    Empty([])
+
+CommonEvent 36
+Name = "SkeNPC"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 47])
+    CallCommonEvent([677])
+    Empty([])
+
+CommonEvent 37
+Name = "SkeNPC"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 48])
+    CallCommonEvent([677])
+    Empty([])
+
+CommonEvent 38
+Name = "SkeNPC"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 49])
+    CallCommonEvent([677])
+    Empty([])
+
+CommonEvent 39
+Name = "SkeNPC"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 50])
+    CallCommonEvent([677])
+    Empty([])
+
+CommonEvent 40
+Name = "SkeNPC"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 51])
+    CallCommonEvent([677])
+    Empty([])
+
+CommonEvent 41
+Name = "SkeNPC"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 52])
+    CallCommonEvent([677])
+    Empty([])
+
+CommonEvent 42
+Name = "SkeNPC"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 53])
+    CallCommonEvent([677])
+    Empty([])
+
+CommonEvent 43
+Name = "SkeNPC"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 54])
+    CallCommonEvent([677])
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    Comment(["<always update>"])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ChangeItems([24, 0, 0, 1])
+    Wait([20])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["There's a note inside..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\"Required for the most basic necromancy,\\. \\c[18]gather bones\\c[0] and conjure \"life\"!\""])
+    Wait([15])
+    ShotBalloonIcon([-1, 8, true])
+    Wait([15])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Sounds dangerous,\\. should I really be giving it a try?"])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["There's more inside...\\.\\.\\. bones?"])
+    ChangeItems([304, 0, 0, 1])
+    ChangeItems([303, 0, 0, 2])
+    ChangeItems([301, 0, 0, 1])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 8, true])
+    Empty([])
+
+CommonEvent 46
+Name = "EV046"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 8, true])
+    Empty([])
+
+CommonEvent 47
+Name = "Grampa Lich"
+
+  Page 0
+    Comment(["<always update>"])
+    CallCommonEvent([168])
+    Empty([])
+
+CommonEvent 48
+Name = "Worr"
+
+  Page 0
+    Comment(["<always update>"])
+    CallCommonEvent([474])
+    Comment(["---- touching ----"])
+    CallCommonEvent([353])
+    Empty([])

@@ -1,0 +1,322 @@
+Display Name = ""
+Parallax Name = "CatThroneYan"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "Trophy"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 3
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 4
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 5
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 6
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 7
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 8
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 9
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 10
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 11
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 12
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    CallCommonEvent([90])
+    ConditionalBranch([0, 413, 0])
+      TintScreen(["Tone(@red=-34.0, @green=-34.0, @blue=0.0, @gray=34.0)", 30, true])
+      Empty([])
+
+    Else([])
+      TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 30, true])
+      Empty([])
+
+    BranchEnd([])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 6
+Name = "CatProom"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "wooddoorbreak"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "Window/DogP"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 121]"])
+    Comment(["[switch 1128]"])
+    Label(["reset"])
+    ControlVariables([870, 870, 0, 2, 8, 15])
+    Label(["wait more"])
+    Wait([60])
+    ConditionalBranch([1, 871, 1, 870, 0])
+      ControlVariables([871, 871, 0, 0, 0])
+      PlaySE(["RPG::SE(@name=\"sapphire_voice_3\", @pitch=95, @volume=80)"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$DogPrunning%(4)\\\", 0])\", \"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[185])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$DogPrunning%(4)\", 0])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+      Unnamed(["RPG::MoveCommand(@code=42, @parameters=[185])"])
+      ControlSwitches([1139, 1139, 0])
+      Wait([180])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$DogP\\\", 0])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=42, @parameters=[255])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$DogP\", 0])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+      Unnamed(["RPG::MoveCommand(@code=42, @parameters=[255])"])
+      ControlSwitches([1139, 1139, 1])
+      JumpToLabel(["reset"])
+      Empty([])
+
+    Else([])
+      ControlVariables([871, 871, 1, 0, 1])
+      JumpToLabel(["wait more"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    ShotBalloonIcon([0, 7, false])
+    FadeoutBGM([3])
+    PlaySE(["RPG::SE(@name=\"Towergirls - Victory (Fixed)\", @pitch=100, @volume=80)"])
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    Wait([60])
+    ShowPicture([1, "Dog Princess Dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dog Princess:"])
+    ShowText(["I had enough of this...\\.\\.\\."])
+    ErasePicture([1])
+    FadeoutScreen([])
+    CallCommonEvent([90])
+    CallCommonEvent([56])
+    SetEventLocation([0, 0, 4, 9, 6])
+    SetEventLocation([6, 0, 5, 7, 2])
+    SetMoveRoute([6, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    TransferPlayer([0, 235, 5, 9, 4, 0])
+    Wait([45])
+    FadeinScreen([])
+    PlayBGM(["RPG::BGM(@name=\"Towergirls Track 2 - Throne Room\", @volume=100, @pitch=100)"])
+    ShowPicture([1, "Dog Princess Dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dog Princess:"])
+    ShowText(["I got it,\\. Master!\\.\\. "])
+    ShowText(["I've been a bad dog,\\. please don't hurt me anymore!"])
+    ErasePicture([1])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["As long as you don't do it ever again!\\.\\."])
+    ShowText(["Bad dog!"])
+    ShowAnimation([8, 19, false])
+    SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    ShowPicture([1, "Dog Princess Dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dog Princess:"])
+    ShowText(["*hiin*"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dog Princess:"])
+    ShowText(["Will you forgive me if I promise,\\. Master?\\.\\."])
+    ErasePicture([1])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["It's not me who should forgive you,\\. you tried to harm the Princess of this castle!\\.\\."])
+    ShowText(["Now your destiny lies in her hands!"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Wait([20])
+    ShotBalloonIcon([6, 5, false])
+    ShowPicture([1, "Cat Princess Dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Cat Princess:"])
+    ShowText(["You bastard!\\.\\. Mutt!\\.\\. Smyelly!\\.\\. Rotten!\\.\\. I'll make you pay for this!!"])
+    ErasePicture([1])
+    Wait([20])
+    ShowPicture([1, "Dog Princess Dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dog Princess:"])
+    ShowText(["...\\.\\.\\."])
+    ErasePicture([1])
+    ShotBalloonIcon([8, 8, true])
+    Wait([45])
+    ShotBalloonIcon([6, 7, true])
+    Wait([60])
+    ShowPicture([1, "Cat Princess Dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Cat Princess:"])
+    ShowText(["You will clean our litters until you repaid what you broke today!\\."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Cat Princess:"])
+    ShowText(["And conyasider yourself lucky,\\. I'd really like too see nyour head on a pike!"])
+    ErasePicture([1])
+    Wait([30])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    ShowPicture([1, "Dog Princess Dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dog Princess:"])
+    ShowText(["B\\.-but Master...\\.\\.\\."])
+    ErasePicture([1])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["No time for \"buts\" milady!\\.\\."])
+    ShowText(["Thw Princess has the right to do anything she wants for you.\\.\\. She's sparing you after you attempted to her life."])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Wait([45])
+    ShowPicture([1, "Dog Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dog Princess:"])
+    ShowText(["I'll do it!\\.\\. For Master!\\.\\."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dog Princess:"])
+    ShowText(["I...\\.\\.\\. I'll go clean the litters...\\.\\.\\."])
+    ShowPicture([1, "Cat Princess Dial catty", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Cat Princess:"])
+    ShowText(["Silence!\\.\\. Go talk to the guards outside,\\. they'll show you where to start."])
+    ErasePicture([1])
+    SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=6, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=6, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Wait([60])
+    ShowPicture([1, "Cat Princess Dial catty", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Cat Princess:"])
+    ShowText(["Nnn...\\.\\.\\. I want to believe you've got nyothing to share with her...\\.\\.\\."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Cat Princess:"])
+    ShowText(["Nyevertheless,\\. you have proven yourself useful today.\\.\\. Take this and leave."])
+    ErasePicture([1])
+    ChangeItems([95, 0, 0, 1])
+    Wait([150])
+    ControlVariables([1556, 1556, 1, 0, 2])
+    ControlVariables([1557, 1557, 1, 0, 1])
+    ControlSwitches([2008, 2008, 0])
+    ControlSwitches([2018, 2018, 1])
+    TransferPlayer([0, 218, 17, 16, 8, 0])
+    Empty([])
+
+  Page 3
+    ShotBalloonIcon([0, 4, false])
+    FadeoutBGM([3])
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    Wait([60])
+    ShowPicture([1, "Dog Princess Dial love", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dog Princess:"])
+    ShowText(["Oh my...\\.\\.\\. you're bleeding so much~"])
+    ErasePicture([1])
+    FadeoutScreen([])
+    CallCommonEvent([90])
+    SetEventLocation([0, 0, 5, 7, 2])
+    TransferPlayer([0, 235, 5, 8, 8, 0])
+    Wait([30])
+    FadeinScreen([])
+    PlayBGM(["RPG::BGM(@name=\"Towergirls - Yan & Dere\", @volume=90, @pitch=100)"])
+    Wait([30])
+    ShowTextAttributes(["Hero", 0, 2, 2])
+    ShowText(["Damn it,\\. she's too strong...\\.\\.\\."])
+    ShowPicture([1, "Dog Princess Dial love", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dog Princess:"])
+    ShowText(["Now we'll be together...\\.\\.\\. forever~"])
+    ErasePicture([1])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Wait([15])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    ShowTextAttributes(["Hero", 0, 2, 2])
+    ShowText(["\\^Ngh...\\.\\.\\. it hurts...\\.\\.\\. I can't stand...\\.\\.\\."])
+    ShowAnimation([-1, 7, false])
+    FlashScreen(["Color(@red=255.0, @green=0.0, @blue=0.0, @alpha=255.0)", 30, true])
+    FadeoutScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Without a lament,\\. you fall to the ground,\\. everything is soundless.\\.\\."])
+    ShowText(["You have just the time to realize everything is about to finish."])
+    Wait([60])
+    GameOver([])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
