@@ -1,0 +1,26 @@
+CommonEvent 728
+Name = "Mimic Icon"
+
+  Script(["@x = 227"])
+  ScriptMore(["@y = 33"])
+  Script(["@p = 250"])
+  ConditionalBranch([0, 739, 0])
+    ConditionalBranch([12, "$game_party.leader.class_id == 123"])
+      ConditionalBranch([0, 3865, 0])
+        Script(["@n = \"MimicHUDclose\""])
+        Empty([])
+
+      Else([])
+        Script(["@n = \"MimicHUDopen\""])
+        Empty([])
+
+      BranchEnd([])
+      Script(["$game_map.screen.pictures[@p].show("])
+      ScriptMore(["@n, 0, @x, @y, 100, 100, 255, 0)"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

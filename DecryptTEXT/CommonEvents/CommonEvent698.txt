@@ -1,0 +1,66 @@
+CommonEvent 698
+Name = "Key item delete?"
+
+  Script(["$PU_AUTOMATIC_POPUP = false"])
+  ConditionalBranch([0, 1927, 0])
+    ChangeItems([483, 1, 0, 1])
+    ControlSwitches([1927, 1927, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 1540, 0])
+    ChangeItems([406, 1, 0, 1])
+    ControlSwitches([1540, 1540, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 4542, 0])
+    ChangeItems([392, 1, 0, 1])
+    ControlSwitches([4542, 4542, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3756, 0])
+    ChangeItems([39, 1, 0, 1])
+    ControlSwitches([3756, 3756, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2711, 0])
+    ChangeItems([190, 1, 0, 1])
+    ControlSwitches([2711, 2711, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2712, 0])
+    ChangeItems([189, 1, 0, 1])
+    ControlSwitches([2712, 2712, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3341, 0])
+    ChangeItems([278, 1, 0, 1])
+    ControlSwitches([3341, 3341, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2727, 0])
+    ChangeItems([37, 1, 0, 1])
+    ControlSwitches([2727, 2727, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2746, 0])
+    ChangeItems([222, 1, 0, 1])
+    ControlSwitches([2746, 2746, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2334, 0])
+    ChangeItems([384, 1, 0, 1])
+    ControlSwitches([2334, 2334, 1])
+    Empty([])
+
+  BranchEnd([])
+  Script(["$PU_AUTOMATIC_POPUP = true"])
+  Empty([])

@@ -1,0 +1,29 @@
+CommonEvent 714
+Name = "CatP Dress Change"
+
+  ConditionalBranch([12, "$game_variables[2822][11] == 0"])
+    ControlVariables([2017, 2017, 0, 0, 83])
+    Empty([])
+
+  Else([])
+    ControlVariables([2017, 2017, 0, 4, "$game_variables[2822][11]"])
+    Empty([])
+
+  BranchEnd([])
+  ControlVariables([2018, 2018, 0, 0, 23])
+  CallCommonEvent([579])
+  Script(["$PU_AUTOMATIC_POPUP = false"])
+  ConditionalBranch([12, "$game_variables[2866][11] == 173"])
+    ChangeArmor([173, 0, 0, 1, false])
+    ChangeEquipment([23, 4, 173])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2866][11] == 174"])
+    ChangeArmor([174, 0, 0, 1, false])
+    ChangeEquipment([23, 4, 174])
+    Empty([])
+
+  BranchEnd([])
+  Script(["$PU_AUTOMATIC_POPUP = true"])
+  Empty([])

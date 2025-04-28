@@ -1,0 +1,29 @@
+CommonEvent 709
+Name = "SkeP Dress Change"
+
+  ConditionalBranch([12, "$game_variables[2822][6] == 0"])
+    ControlVariables([2017, 2017, 0, 0, 85])
+    Empty([])
+
+  Else([])
+    ControlVariables([2017, 2017, 0, 4, "$game_variables[2822][6]"])
+    Empty([])
+
+  BranchEnd([])
+  ControlVariables([2018, 2018, 0, 0, 9])
+  CallCommonEvent([579])
+  Script(["$PU_AUTOMATIC_POPUP = false"])
+  ConditionalBranch([12, "$game_variables[2866][6] == 173"])
+    ChangeArmor([173, 0, 0, 1, false])
+    ChangeEquipment([9, 4, 173])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2866][6] == 174"])
+    ChangeArmor([174, 0, 0, 1, false])
+    ChangeEquipment([9, 4, 174])
+    Empty([])
+
+  BranchEnd([])
+  Script(["$PU_AUTOMATIC_POPUP = true"])
+  Empty([])

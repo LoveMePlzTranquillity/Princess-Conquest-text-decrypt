@@ -1,0 +1,37 @@
+CommonEvent 733
+Name = "HagWand equipped"
+
+  Wait([60])
+  Script(["@dmg = 5"])
+  Comment(["---------------------------------------"])
+  Script(["@love=$game_party.members[0].parent_stat(0)"])
+  ConditionalBranch([12, "$game_variables[116] == \"TaintedLove\""])
+    Script(["@love+=$game_party.members[0].parent_stat(1)"])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["---------------------------------------"])
+  ConditionalBranch([12, "@love >= 5"])
+    Script(["@dmg = 1"])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([12, "@love >= 3"])
+      Script(["@dmg = 2"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Script(["while $game_party.leader.hp - @dmg < 1"])
+  ScriptMore([" @dmg -= 1"])
+  ScriptMore(["end"])
+  ScriptMore(["$game_party.leader.hp -= @dmg "])
+  ConditionalBranch([12, "$game_party.leader.hp <= 1"])
+    ControlSwitches([666, 666, 0])
+    Empty([])
+
+  BranchEnd([])
+  Script(["$game_map.sas_hud.refresh_bars"])
+  Empty([])

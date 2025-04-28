@@ -1,0 +1,27 @@
+CommonEvent 744
+Name = "QQQ Stud/Bronze in NPC sex"
+
+  JumpToLabel(["tryskip"])
+  ConditionalBranch([0, 2931, 0])
+    ConditionalBranch([12, "$game_actors[1].equips[4] == $data_armors[177]"])
+      ConditionalBranch([0, 2654, 0])
+        ControlVariables([585, 585, 0, 2, 1500, 2250])
+        Empty([])
+
+      Else([])
+        ControlVariables([585, 585, 0, 2, 500, 750])
+        Empty([])
+
+      BranchEnd([])
+      PlaySE(["RPG::SE(@name=\"Coin\", @pitch=100, @volume=80)"])
+      Script(["message = \"Family Jewels!\""])
+      ScriptMore(["$game_map.show_text($game_player,message)"])
+      ControlSwitches([648, 648, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["tryskip"])
+  Empty([])

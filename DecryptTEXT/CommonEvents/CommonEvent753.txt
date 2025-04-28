@@ -1,0 +1,7 @@
+CommonEvent 753
+Name = "Fortress Shakes"
+
+  Wait([210])
+  PlaySE(["RPG::SE(@name=\"Explosion7\", @pitch=100, @volume=60)"])
+  ShakeScreen([4, 3, 150, true])
+  Empty([])

@@ -1,0 +1,28 @@
+CommonEvent 726
+Name = "*daily EXTRA*"
+
+  ControlSwitches([2654, 2654, 1])
+  Comment(["Twin Wisps"])
+  ConditionalBranch([0, 2714, 0])
+    ControlSwitches([2714, 2714, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2713, 0])
+    ControlSwitches([2713, 2713, 1])
+    ControlSwitches([2714, 2714, 0])
+    ChangeActorGraphic([1, "$protag", 0, "Hero", 0])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2338, 0])
+    ControlVariables([2035, 2035, 2, 0, 1])
+    ConditionalBranch([1, 2035, 0, 0, 2])
+      ControlSwitches([2338, 2338, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

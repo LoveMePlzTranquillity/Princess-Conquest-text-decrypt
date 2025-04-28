@@ -1,0 +1,17 @@
+CommonEvent 763
+Name = "★👤★ Pri Costume get"
+
+  Comment(["Komachi Pri costumes"])
+  Script(["@cost = [127,128,129,130,131,132,133,134,135,136,137,138,154,169,232,248,"])
+  ScriptMore(["308,361,389,518,583,763].sample"])
+  ScriptMore(["$game_party.gain_item($data_armors[@cost],1)"])
+  ConditionalBranch([12, "$data_system.title1_name.include?\"Stable\""])
+    Comment(["STABLE"])
+    Empty([])
+
+  Else([])
+    Comment(["BETA"])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

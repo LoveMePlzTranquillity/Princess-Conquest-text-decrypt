@@ -1,0 +1,144 @@
+CommonEvent 703
+Name = "MOM str backup"
+
+  ControlSwitches([3344, 3344, 1])
+  ConditionalBranch([12, "$game_variables[2029] == 1 && $game_variables[3672] == 2"])
+    JumpToLabel(["ok"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2029] == 2 && $game_variables[3672] == 5"])
+    JumpToLabel(["ok"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2029] == 3 && $game_variables[3672] == 7"])
+    JumpToLabel(["ok"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2029] == 4 && $game_variables[3672] == 6"])
+    JumpToLabel(["ok"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2029] == 5 && $game_variables[3672] == 8"])
+    JumpToLabel(["ok"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2029] == 6 && $game_variables[3672] == 9"])
+    JumpToLabel(["ok"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2029] == 7 && $game_variables[3672] == 4"])
+    JumpToLabel(["ok"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2029] == 8 && $game_variables[3672] == 12"])
+    JumpToLabel(["ok"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2029] == 9 && $game_variables[3672] == 14"])
+    JumpToLabel(["ok"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2029] == 10 && $game_variables[3672] == 21"])
+    JumpToLabel(["ok"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2029] == 11 && $game_variables[3672] == 23"])
+    JumpToLabel(["ok"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2029] == 12 && $game_variables[3672] == 16"])
+    JumpToLabel(["ok"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2029] == 13 && $game_variables[3672] == 26"])
+    JumpToLabel(["ok"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2029] == 14 && $game_variables[3672] == 30"])
+    JumpToLabel(["ok"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2029] == 15 && $game_variables[3672] == 32"])
+    JumpToLabel(["ok"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2029] == 16 && $game_variables[3672] == 41"])
+    JumpToLabel(["ok"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2029] == 17 && $game_variables[3672] == 46"])
+    JumpToLabel(["ok"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2029] == 18 && $game_variables[3672] == 48"])
+    JumpToLabel(["ok"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2029] == 19 && $game_variables[3672] == 53"])
+    JumpToLabel(["ok"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2029] == 20 && $game_variables[3672] == 54"])
+    JumpToLabel(["ok"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2029] == 30 && $game_variables[3672] == 56"])
+    JumpToLabel(["ok"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2029] == 31 && $game_variables[3672] == 57"])
+    Label(["ok"])
+    ControlSwitches([3344, 3344, 0])
+    Script(["@rest = 4000 + $game_variables[2029]"])
+    JumpToLabel(["pdel"])
+    Empty([])
+
+  BranchEnd([])
+  Script(["@rest = $game_variables[3672]"])
+  Label(["pdel"])
+  Script(["@v = 3960"])
+  Script(["@n = 0"])
+  Loop([])
+    Script(["$game_variables[@v] ="])
+    ScriptMore(["$game_variables[@rest][@n]"])
+    Script(["@v += 1"])
+    ScriptMore(["@n += 1"])
+    ConditionalBranch([12, "@n >= 60"])
+      BreakLoop([])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "@n == 21"])
+        Script(["@n = 59"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  RepeatAbove([])
+  ControlVariables([3995, 3995, 0, 4, "@rest"])
+  Empty([])

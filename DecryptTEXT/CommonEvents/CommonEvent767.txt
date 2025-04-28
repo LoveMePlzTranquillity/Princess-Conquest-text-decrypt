@@ -1,0 +1,48 @@
+CommonEvent 767
+Name = "Carrying Drusy"
+
+  Wait([60])
+  ConditionalBranch([0, 739, 0])
+    Script(["@mhp = $game_party.leader.mhp"])
+    Script(["@hprec = @mhp / 100"])
+    Script(["@r = rand(10)"])
+    ConditionalBranch([12, "$game_actors[1].equips[4] == $data_armors[398]"])
+      Comment(["drusy +"])
+      Script(["@r = rand(7)"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@r < 1"])
+      Script(["@r = rand(3)"])
+      ConditionalBranch([12, "@r < 1"])
+        ShowAnimation([-1, 29, false])
+        ControlSwitches([1147, 1147, 0])
+        Empty([])
+
+      Else([])
+        ShowAnimation([-1, 56, false])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Monster3\\\\\\\", @pitch=80, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Monster3\\\", @pitch=80, @volume=80)\"])"])
+        ControlSwitches([986, 986, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Script(["if $game_party.leader.hp - @hprec <= 1"])
+    ScriptMore([" @hprec = $game_party.leader.hp - 1"])
+    ScriptMore(["end"])
+    ScriptMore(["$game_party.leader.hp -= @hprec"])
+    ScriptMore(["message = @hprec.to_s"])
+    ScriptMore(["$game_map.show_text($game_player,message)"])
+    ScriptMore(["$game_map.sas_hud.refresh_bars"])
+    ControlVariables([297, 297, 1, 0, 1])
+    Empty([])
+
+  Else([])
+    Wait([60])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

@@ -1,0 +1,29 @@
+CommonEvent 711
+Name = "GhoP Dress Change"
+
+  ConditionalBranch([12, "$game_variables[2822][8] == 0"])
+    ControlVariables([2017, 2017, 0, 0, 82])
+    Empty([])
+
+  Else([])
+    ControlVariables([2017, 2017, 0, 4, "$game_variables[2822][8]"])
+    Empty([])
+
+  BranchEnd([])
+  ControlVariables([2018, 2018, 0, 0, 12])
+  CallCommonEvent([579])
+  Script(["$PU_AUTOMATIC_POPUP = false"])
+  ConditionalBranch([12, "$game_variables[2866][8] == 173"])
+    ChangeArmor([173, 0, 0, 1, false])
+    ChangeEquipment([12, 4, 173])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2866][8] == 174"])
+    ChangeArmor([174, 0, 0, 1, false])
+    ChangeEquipment([12, 4, 174])
+    Empty([])
+
+  BranchEnd([])
+  Script(["$PU_AUTOMATIC_POPUP = true"])
+  Empty([])

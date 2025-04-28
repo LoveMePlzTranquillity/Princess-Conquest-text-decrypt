@@ -1,0 +1,58 @@
+CommonEvent 699
+Name = "UW damage"
+
+  ShowAnimation([-1, 138, false])
+  ConditionalBranch([0, 3438, 1])
+    Comment(["Drowning malus"])
+    Script(["@dmg = 25"])
+    Empty([])
+
+  Else([])
+    Script(["@dmg = 100"])
+    Empty([])
+
+  BranchEnd([])
+  Script(["while $game_party.leader.hp - @dmg < 1"])
+  ScriptMore([" @dmg -= 1"])
+  ScriptMore(["end"])
+  ScriptMore(["$game_party.leader.hp -= @dmg"])
+  ScriptMore(["message = @dmg.to_s"])
+  ScriptMore(["$game_map.show_text($game_player,message)"])
+  ScriptMore(["$game_map.sas_hud.refresh_bars"])
+  ConditionalBranch([12, "$game_party.leader.hp <= 1"])
+    Comment(["uw game over?"])
+    Script(["$game_switches[5155] = true"])
+    ControlSwitches([666, 666, 0])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3438, 1])
+    Comment(["Drowning malus"])
+    Wait([20])
+    Empty([])
+
+  Else([])
+    Wait([10])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.leader.state?(117) == true "])
+    Comment(["Drowning"])
+    CallCommonEvent([76])
+    ConditionalBranch([0, 3705, 0])
+      ControlSwitches([3494, 3494, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([0, 3438, 1])
+      ControlSwitches([3494, 3494, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

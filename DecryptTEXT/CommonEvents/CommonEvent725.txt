@@ -1,0 +1,17 @@
+CommonEvent 725
+Name = "Route deleting"
+
+  ConditionalBranch([0, 1183, 0])
+    ConditionalBranch([0, 1182, 0])
+      Empty([])
+
+    Else([])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["end"])
+  Empty([])

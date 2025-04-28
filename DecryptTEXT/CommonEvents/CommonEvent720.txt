@@ -1,0 +1,41 @@
+CommonEvent 720
+Name = "BirP Dress Change"
+
+  ConditionalBranch([12, "$game_variables[2822][19] == 0"])
+    ControlVariables([2017, 2017, 0, 0, 386])
+    Empty([])
+
+  Else([])
+    ControlVariables([2017, 2017, 0, 4, "$game_variables[2822][19]"])
+    Empty([])
+
+  BranchEnd([])
+  ControlVariables([2018, 2018, 0, 0, 53])
+  CallCommonEvent([579])
+  Script(["$PU_AUTOMATIC_POPUP = false"])
+  ConditionalBranch([12, "$game_variables[2866][19] == 173"])
+    ChangeArmor([173, 0, 0, 1, false])
+    ChangeEquipment([53, 4, 173])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2866][19] == 174"])
+    ChangeArmor([174, 0, 0, 1, false])
+    ChangeEquipment([53, 4, 174])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2866][19] == 176"])
+    ChangeArmor([176, 0, 0, 1, false])
+    ChangeEquipment([53, 4, 176])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2866][19] == 768"])
+    ChangeArmor([768, 0, 0, 1, false])
+    ChangeEquipment([53, 4, 768])
+    Empty([])
+
+  BranchEnd([])
+  Script(["$PU_AUTOMATIC_POPUP = true"])
+  Empty([])

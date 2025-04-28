@@ -1,0 +1,32 @@
+CommonEvent 695
+Name = "Carrying Tsukichi"
+
+  Script(["@wTsukichi = 0"])
+  Loop([])
+    ConditionalBranch([12, "$game_actors[1].equips.include?$data_armors[832]"])
+      Comment(["tsukichi equipped"])
+      Script(["if $game_switches[7515] == true"])
+      ScriptMore(["$game_switches[7515] = false"])
+      ScriptMore(["end"])
+      ScriptMore(["if @wTsukichi.nil?"])
+      ScriptMore(["@wTsukichi = 0"])
+      ScriptMore(["end"])
+      ScriptMore(["@wTsukichi += 30"])
+      Empty([])
+
+    Else([])
+      Script(["#puts(\"total wait = \" + @wTsukichi.to_s)"])
+      ScriptMore(["if @wTsukichi >= 3600 && $game_switches[7515] == false"])
+      ScriptMore(["$game_switches[7515] = true"])
+      ScriptMore(["end"])
+      ScriptMore(["@wTsukichi = 0"])
+      ControlSwitches([165, 165, 1])
+      BreakLoop([])
+      Empty([])
+
+    BranchEnd([])
+    Wait([30])
+    Empty([])
+
+  RepeatAbove([])
+  Empty([])

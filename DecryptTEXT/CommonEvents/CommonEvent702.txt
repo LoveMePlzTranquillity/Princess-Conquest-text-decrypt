@@ -1,0 +1,422 @@
+CommonEvent 702
+Name = "★👤★ Magic Silk"
+
+  ConditionalBranch([0, 75, 0])
+    JumpToLabel(["mvrk"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3979, 0])
+    JumpToLabel(["itemtak"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3016, 0])
+    JumpToLabel(["itemtak"])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["The \\i[600] \\C[18]Magic Silk\\C[0] can take the form of any other Princess' dowry."])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Use the \\i[600] \\C[18]Magic Silk\\C[0]?"])
+  ShowChoices([["Yes", "No"], 2])
+  When([0, "Yes"])
+    ChangeItems([223, 1, 0, 1])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The gossamer's shape is changing!"])
+    ShowAnimation([-1, 147, true])
+    Wait([15])
+    Label(["itemtak"])
+    Comment(["################"])
+    ControlVariables([2873, 2873, 0, 2, 1, 70])
+    ConditionalBranch([12, "$data_system.title1_name.include?\"Stable\""])
+      Comment(["STABLE"])
+      Empty([])
+
+    Else([])
+      Comment(["BETA"])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["################"])
+    ConditionalBranch([1, 2873, 0, 2, 0])
+      JumpToLabel(["itemtak"])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["################"])
+    Label(["mvrk"])
+    ConditionalBranch([1, 2873, 0, 1, 0])
+      ChangeItems([31, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 2, 0])
+      ChangeItems([33, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 3, 0])
+      ChangeItems([68, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 4, 0])
+      ChangeItems([70, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 5, 0])
+      ConditionalBranch([8, 81])
+        ShotBalloonIcon([-1, 1, false])
+        Wait([15])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["As you touch the newfound \\i[593] \\c[18]MYSTERY BOX\\c[0],\\. the one in your inventory reacts and gulps it down!"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["It looks like you can only hold one at a time."])
+        Empty([])
+
+      Else([])
+        ChangeItems([81, 0, 0, 1])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 6, 0])
+      ChangeItems([94, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 7, 0])
+      ChangeItems([95, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 8, 0])
+      ChangeItems([191, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 9, 0])
+      ChangeItems([197, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 10, 0])
+      ChangeItems([210, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 11, 0])
+      ChangeWeapons([65, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 12, 0])
+      ChangeItems([29, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 13, 0])
+      ChangeArmor([91, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 14, 0])
+      ChangeArmor([92, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 15, 0])
+      ChangeArmor([93, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 16, 0])
+      ChangeArmor([94, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 17, 0])
+      ChangeArmor([158, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 18, 0])
+      ChangeArmor([171, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 19, 0])
+      ChangeArmor([173, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 20, 0])
+      ChangeArmor([174, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 21, 0])
+      ChangeArmor([175, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 22, 0])
+      ChangeArmor([176, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 23, 0])
+      ChangeArmor([177, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 24, 0])
+      ChangeArmor([165, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 25, 0])
+      ChangeArmor([166, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 26, 0])
+      ChangeItems([41, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 27, 0])
+      ChangeItems([227, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 28, 0])
+      ChangeArmor([164, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 29, 0])
+      ChangeArmor([237, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 30, 0])
+      ChangeArmor([242, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 31, 0])
+      ChangeArmor([236, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 32, 0])
+      ChangeArmor([258, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 33, 0])
+      ChangeArmor([243, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 34, 0])
+      ChangeItems([293, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 35, 0])
+      ChangeItems([292, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 36, 0])
+      ChangeItems([298, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 37, 0])
+      ChangeItems([317, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 38, 0])
+      ChangeItems([318, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 39, 0])
+      ChangeItems([319, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 40, 0])
+      ChangeWeapons([82, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 41, 0])
+      ChangeArmor([275, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 42, 0])
+      ChangeArmor([274, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 43, 0])
+      ChangeArmor([269, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 44, 0])
+      ChangeArmor([267, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 45, 0])
+      ChangeArmor([201, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 46, 0])
+      ChangeArmor([260, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 47, 0])
+      ChangeArmor([200, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 48, 0])
+      ChangeArmor([302, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 49, 0])
+      ChangeArmor([321, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 50, 0])
+      ChangeArmor([314, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 51, 0])
+      ChangeArmor([318, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 52, 0])
+      ChangeArmor([317, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 53, 0])
+      ChangeItems([329, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 54, 0])
+      ChangeItems([390, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 55, 0])
+      ChangeItems([391, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 56, 0])
+      ChangeArmor([493, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 57, 0])
+      ChangeArmor([494, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 58, 0])
+      ChangeArmor([492, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 59, 0])
+      ChangeItems([396, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 60, 0])
+      ChangeArmor([547, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 61, 0])
+      ChangeArmor([560, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 62, 0])
+      ChangeArmor([561, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 63, 0])
+      ChangeItems([405, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 64, 0])
+      ChangeItems([407, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 65, 0])
+      ChangeItems([429, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 66, 0])
+      ChangeArmor([666, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 67, 0])
+      ChangeArmor([665, 0, 0, 1, false])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 68, 0])
+      ChangeItems([423, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 69, 0])
+      ChangeItems([480, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2873, 0, 70, 0])
+      ChangeItems([483, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    JumpToLabel(["end"])
+    Empty([])
+
+  When([1, "No"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  ChoicesEnd([])
+  Label(["end"])
+  Empty([])

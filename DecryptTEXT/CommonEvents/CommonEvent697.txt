@@ -1,0 +1,110 @@
+CommonEvent 697
+Name = "Armor -> Key item"
+
+  Script(["$PU_AUTOMATIC_POPUP = false"])
+  ConditionalBranch([10, 494, false])
+    ChangeItems([392, 0, 0, 1])
+    ControlSwitches([4542, 4542, 0])
+    Empty([])
+
+  Else([])
+    ControlSwitches([4542, 4542, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([10, 237, false])
+    ChangeItems([278, 0, 0, 1])
+    ControlSwitches([3341, 3341, 0])
+    Empty([])
+
+  Else([])
+    ControlSwitches([3341, 3341, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([10, 173, false])
+    ChangeItems([190, 0, 0, 1])
+    ControlSwitches([2711, 2711, 0])
+    Empty([])
+
+  Else([])
+    ControlSwitches([2711, 2711, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([10, 174, false])
+    ChangeItems([189, 0, 0, 1])
+    ControlSwitches([2712, 2712, 0])
+    Empty([])
+
+  Else([])
+    ControlSwitches([2712, 2712, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([10, 176, false])
+    ChangeItems([37, 0, 0, 1])
+    ControlSwitches([2727, 2727, 0])
+    Empty([])
+
+  Else([])
+    ControlSwitches([2727, 2727, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([10, 266, false])
+    ChangeItems([39, 0, 0, 1])
+    ControlSwitches([3756, 3756, 0])
+    Empty([])
+
+  Else([])
+    ControlSwitches([3756, 3756, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([10, 481, false])
+    ChangeItems([384, 0, 0, 1])
+    ControlSwitches([2334, 2334, 0])
+    Empty([])
+
+  Else([])
+    ControlSwitches([2334, 2334, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([10, 561, false])
+    ChangeItems([406, 0, 0, 1])
+    ControlSwitches([1540, 1540, 0])
+    Empty([])
+
+  Else([])
+    ControlSwitches([1540, 1540, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([10, 768, false])
+    ChangeItems([483, 0, 0, 1])
+    ControlSwitches([1927, 1927, 0])
+    Empty([])
+
+  Else([])
+    ControlSwitches([1927, 1927, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_map.map_id == 13"])
+    ConditionalBranch([10, 179, false])
+      ChangeItems([222, 0, 0, 1])
+      ControlSwitches([2746, 2746, 0])
+      Empty([])
+
+    Else([])
+      ControlSwitches([2746, 2746, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Script(["$PU_AUTOMATIC_POPUP = true"])
+  Empty([])

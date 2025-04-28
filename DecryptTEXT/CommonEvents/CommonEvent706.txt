@@ -1,0 +1,28 @@
+CommonEvent 706
+Name = "SliP Dress Change"
+
+  ConditionalBranch([12, "$game_variables[2822][3] == 0"])
+    Empty([])
+
+  Else([])
+    ControlVariables([2017, 2017, 0, 4, "$game_variables[2822][3]"])
+    ControlVariables([2018, 2018, 0, 0, 7])
+    CallCommonEvent([579])
+    Empty([])
+
+  BranchEnd([])
+  Script(["$PU_AUTOMATIC_POPUP = false"])
+  ConditionalBranch([12, "$game_variables[2866][3] == 173"])
+    ChangeArmor([173, 0, 0, 1, false])
+    ChangeEquipment([7, 4, 173])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[2866][3] == 174"])
+    ChangeArmor([174, 0, 0, 1, false])
+    ChangeEquipment([7, 4, 174])
+    Empty([])
+
+  BranchEnd([])
+  Script(["$PU_AUTOMATIC_POPUP = true"])
+  Empty([])

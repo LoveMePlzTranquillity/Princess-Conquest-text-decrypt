@@ -1,0 +1,102 @@
+CommonEvent 755
+Name = "★ Check grape delivery"
+
+  ConditionalBranch([0, 2904, 0])
+    ConditionalBranch([0, 3333, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "objective_complete?(49, 0)"])
+      ConditionalBranch([12, "objective_complete?(49, 1)"])
+        Empty([])
+
+      Else([])
+        ControlSwitches([3000, 3000, 0])
+        ConditionalBranch([12, "$game_variables[3657] == \"Ghost Princess\""])
+          ConditionalBranch([12, "$game_map.map_id == 47"])
+            JumpToLabel(["complete"])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        ConditionalBranch([12, "$game_variables[3657] == \"Goblin Princess\""])
+          ConditionalBranch([12, "$game_map.map_id == 71"])
+            JumpToLabel(["complete"])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        ConditionalBranch([12, "$game_variables[3657] == \"Moth Princess\""])
+          ConditionalBranch([12, "$game_map.map_id == 205"])
+            ControlVariables([850, 850, 0, 0, 1])
+            JumpToLabel(["complete"])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        ConditionalBranch([12, "$game_variables[3657] == \"Oni Princess\""])
+          ConditionalBranch([12, "$game_map.map_id == 496"])
+            JumpToLabel(["complete"])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        ConditionalBranch([12, "$game_variables[3657] == \"Plant Princess\""])
+          ConditionalBranch([12, "$game_map.map_id == 514"])
+            JumpToLabel(["complete"])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        ConditionalBranch([12, "$game_variables[3657] == \"Cat Princess\""])
+          ConditionalBranch([12, "$game_map.map_id == 218"])
+            Label(["complete"])
+            ControlSwitches([3000, 3000, 0])
+            ShowTextAttributes(["", 0, 0, 2])
+            ShowText(["The \\c[18]Ripe Grapes\\c[0] have been delivered to \\V[3657]!"])
+            Wait([15])
+            Script(["complete_objective(49,1)"])
+            ScriptMore(["reveal_objective(49,2)"])
+            ScriptMore(["call_quest_journal(49)"])
+            Wait([15])
+            ControlSwitches([3000, 3000, 1])
+            Loop([])
+              ChangeItems([228, 1, 0, 1])
+              ConditionalBranch([8, 228])
+                Empty([])
+
+              Else([])
+                BreakLoop([])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            RepeatAbove([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        ControlSwitches([3000, 3000, 1])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

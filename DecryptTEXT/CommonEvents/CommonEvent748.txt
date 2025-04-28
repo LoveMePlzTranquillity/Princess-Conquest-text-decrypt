@@ -1,0 +1,1061 @@
+CommonEvent 748
+Name = "★ Breeding Contract(R) Act"
+
+  ConditionalBranch([12, "$game_switches[7497] == true"])
+    ConditionalBranch([1, 3, 0, 2, 0])
+      Comment(["human"])
+      JumpToLabel(["humflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 3, 0, 3, 0])
+      Comment(["slime"])
+      JumpToLabel(["sliflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 3, 0, 4, 0])
+      Comment(["golem"])
+      JumpToLabel(["golflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 3, 0, 5, 0])
+      Comment(["insect"])
+      JumpToLabel(["insflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 3, 0, 6, 0])
+      Comment(["skeleton"])
+      JumpToLabel(["skeflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 3, 0, 7, 0])
+      Comment(["desert"])
+      JumpToLabel(["desflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 3, 0, 8, 0])
+      Comment(["ghost"])
+      JumpToLabel(["ghoflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 3, 0, 9, 0])
+      Comment(["goblin"])
+      JumpToLabel(["gobflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 3, 0, 10, 0])
+      Comment(["moth"])
+      JumpToLabel(["motflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 3, 0, 11, 0])
+      Comment(["cat"])
+      JumpToLabel(["catflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 3, 0, 13, 0])
+      Comment(["mouse"])
+      JumpToLabel(["mouflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 3, 0, 14, 0])
+      Comment(["rabbit"])
+      JumpToLabel(["rabflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 3, 0, 15, 0])
+      Comment(["harvest"])
+      JumpToLabel(["harflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 3, 0, 17, 0])
+      Comment(["finhead"])
+      JumpToLabel(["finflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 3, 0, 18, 0])
+      Comment(["mermaid"])
+      JumpToLabel(["merflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 3, 0, 19, 0])
+      Comment(["bird"])
+      JumpToLabel(["birflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 3, 0, 20, 0])
+      Comment(["oni"])
+      JumpToLabel(["oniflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 3, 0, 30, 0])
+      Comment(["plant"])
+      JumpToLabel(["plaflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 3, 0, 31, 0])
+      Comment(["shadow"])
+      JumpToLabel(["shaflood"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_switches[7403] == true"])
+    ConditionalBranch([12, "$game_variables[7525] == 0"])
+      JumpToLabel(["humflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[7525] == 1"])
+      JumpToLabel(["sliflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[7525] == 2"])
+      JumpToLabel(["golflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[7525] == 3"])
+      JumpToLabel(["insflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[7525] == 4"])
+      JumpToLabel(["skeflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[7525] == 5"])
+      JumpToLabel(["desflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[7525] == 6"])
+      JumpToLabel(["ghoflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[7525] == 7"])
+      JumpToLabel(["gobflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[7525] == 8"])
+      JumpToLabel(["motflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[7525] == 9"])
+      JumpToLabel(["catflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[7525] == 10"])
+      JumpToLabel(["mouflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[7525] == 11"])
+      JumpToLabel(["rabflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[7525] == 12"])
+      JumpToLabel(["harflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[7525] == 13"])
+      JumpToLabel(["finflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[7525] == 14"])
+      JumpToLabel(["merflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[7525] == 15"])
+      JumpToLabel(["birflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[7525] == 16"])
+      JumpToLabel(["oniflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[7525] == 17"])
+      JumpToLabel(["plaflood"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[7525] == 18"])
+      JumpToLabel(["shaflood"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 2029, 0, 2, 0])
+    ConditionalBranch([0, 44, 1])
+      ConditionalBranch([0, 2509, 1])
+        Comment(["############"])
+        Label(["humflood"])
+        Comment(["############"])
+        Script(["@r = rand(3)"])
+        ConditionalBranch([12, "@r < 1"])
+          ChangeItems([31, 0, 0, 1])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([12, "@r < 2"])
+            ChangeItems([189, 0, 0, 1])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([8, 436])
+              ChangeItems([433, 0, 0, 1])
+              Empty([])
+
+            Else([])
+              ChangeItems([436, 0, 0, 1])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        JumpToLabel(["dowryget"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 2029, 0, 3, 0])
+    ConditionalBranch([0, 50, 1])
+      ConditionalBranch([0, 2510, 1])
+        Comment(["############"])
+        Label(["sliflood"])
+        Comment(["############"])
+        Script(["@r = rand(3)"])
+        ConditionalBranch([12, "@r < 1"])
+          ChangeArmor([94, 0, 0, 1, false])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([12, "@r < 2"])
+            ChangeItems([227, 0, 0, 1])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([8, 435])
+              ChangeItems([432, 0, 0, 1])
+              Empty([])
+
+            Else([])
+              ChangeItems([435, 0, 0, 1])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        JumpToLabel(["dowryget"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 2029, 0, 4, 0])
+    ConditionalBranch([0, 54, 1])
+      ConditionalBranch([0, 2511, 1])
+        Comment(["############"])
+        Label(["golflood"])
+        Comment(["############"])
+        Script(["@r = rand(3)"])
+        ConditionalBranch([12, "@r < 1"])
+          ChangeArmor([91, 0, 0, 1, false])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([12, "@r < 2"])
+            ChangeArmor([100, 0, 0, 1, false])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([8, 438])
+              ChangeItems([455, 0, 0, 1])
+              Empty([])
+
+            Else([])
+              ChangeItems([438, 0, 0, 1])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        JumpToLabel(["dowryget"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 2029, 0, 5, 0])
+    ConditionalBranch([0, 92, 1])
+      ConditionalBranch([0, 2512, 1])
+        Comment(["############"])
+        Label(["insflood"])
+        Comment(["############"])
+        Script(["@r = rand(4)"])
+        ConditionalBranch([12, "@r < 1"])
+          ChangeArmor([92, 0, 0, 1, false])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([12, "@r < 2"])
+            ChangeArmor([173, 0, 0, 1, false])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([12, "@r < 3"])
+              ChangeItems([29, 0, 0, 1])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([8, 439])
+                ChangeItems([456, 0, 0, 1])
+                Empty([])
+
+              Else([])
+                ChangeItems([439, 0, 0, 1])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        JumpToLabel(["dowryget"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 2029, 0, 6, 0])
+    ConditionalBranch([0, 144, 1])
+      ConditionalBranch([0, 2513, 1])
+        Comment(["############"])
+        Label(["skeflood"])
+        Comment(["############"])
+        Script(["@r = rand(3)"])
+        ConditionalBranch([12, "@r < 1"])
+          ChangeWeapons([65, 0, 0, 1, false])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([12, "@r < 2"])
+            ChangeArmor([258, 0, 0, 1, false])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([8, 440])
+              ChangeItems([457, 0, 0, 1])
+              Empty([])
+
+            Else([])
+              ChangeItems([440, 0, 0, 1])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        JumpToLabel(["dowryget"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 2029, 0, 7, 0])
+    ConditionalBranch([0, 320, 1])
+      ConditionalBranch([0, 2514, 1])
+        Comment(["############"])
+        Label(["desflood"])
+        Comment(["############"])
+        Script(["@r = rand(3)"])
+        ConditionalBranch([12, "@r < 1"])
+          ChangeArmor([93, 0, 0, 1, false])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([12, "@r < 2"])
+            ChangeItems([41, 0, 0, 1])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([8, 441])
+              ChangeItems([458, 0, 0, 1])
+              Empty([])
+
+            Else([])
+              ChangeItems([441, 0, 0, 1])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        JumpToLabel(["dowryget"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 2029, 0, 8, 0])
+    ConditionalBranch([0, 455, 1])
+      ConditionalBranch([0, 2515, 1])
+        Comment(["############"])
+        Label(["ghoflood"])
+        Comment(["############"])
+        Script(["@r = rand(3)"])
+        ConditionalBranch([12, "@r < 1"])
+          ChangeItems([191, 0, 0, 1])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([12, "@r < 2"])
+            ChangeItems([68, 0, 0, 1])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([8, 442])
+              ChangeItems([459, 0, 0, 1])
+              Empty([])
+
+            Else([])
+              ChangeItems([442, 0, 0, 1])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        JumpToLabel(["dowryget"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 2029, 0, 9, 0])
+    ConditionalBranch([0, 763, 1])
+      ConditionalBranch([0, 2516, 1])
+        Comment(["############"])
+        Label(["gobflood"])
+        Comment(["############"])
+        Script(["@r = rand(4)"])
+        ConditionalBranch([12, "@r < 1"])
+          ChangeItems([197, 0, 0, 1])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([12, "@r < 2"])
+            ChangeArmor([166, 0, 0, 1, false])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([12, "@r < 3"])
+              ChangeArmor([260, 0, 0, 1, false])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([12, "@r < 4"])
+                ChangeItems([293, 0, 0, 1])
+                Empty([])
+
+              Else([])
+                ConditionalBranch([8, 437])
+                  ChangeItems([434, 0, 0, 1])
+                  Empty([])
+
+                Else([])
+                  ChangeItems([437, 0, 0, 1])
+                  Empty([])
+
+                BranchEnd([])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        JumpToLabel(["dowryget"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 2029, 0, 10, 0])
+    ConditionalBranch([0, 1620, 1])
+      ConditionalBranch([0, 2517, 1])
+        Comment(["############"])
+        Label(["motflood"])
+        Comment(["############"])
+        Script(["@r = rand(3)"])
+        ConditionalBranch([12, "@r < 1"])
+          ChangeItems([217, 0, 0, 1])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([12, "@r < 2"])
+            ChangeItems([94, 0, 0, 1])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([8, 443])
+              ChangeItems([460, 0, 0, 1])
+              Empty([])
+
+            Else([])
+              ChangeItems([443, 0, 0, 1])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        JumpToLabel(["dowryget"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 2029, 0, 11, 0])
+    ConditionalBranch([0, 1991, 1])
+      ConditionalBranch([0, 2518, 1])
+        Comment(["############"])
+        Label(["catflood"])
+        Comment(["############"])
+        Script(["@r = rand(3)"])
+        ConditionalBranch([12, "@r < 1"])
+          ChangeItems([95, 0, 0, 1])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([12, "@r < 2"])
+            ChangeArmor([266, 0, 0, 1, false])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([8, 444])
+              ChangeItems([461, 0, 0, 1])
+              Empty([])
+
+            Else([])
+              ChangeItems([444, 0, 0, 1])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        JumpToLabel(["dowryget"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 2029, 0, 13, 0])
+    ConditionalBranch([0, 2519, 1])
+      Comment(["############"])
+      Label(["mouflood"])
+      Comment(["############"])
+      Script(["@r = rand(3)"])
+      ConditionalBranch([12, "@r < 1"])
+        ChangeArmor([158, 0, 0, 1, false])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([12, "@r < 2"])
+          ChangeArmor([253, 0, 0, 1, false])
+          Empty([])
+
+        Else([])
+          ChangeArmor([254, 0, 0, 1, false])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      JumpToLabel(["dowryget"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 2029, 0, 14, 0])
+    ConditionalBranch([0, 2884, 1])
+      ConditionalBranch([0, 2926, 1])
+        Comment(["############"])
+        Label(["rabflood"])
+        Comment(["############"])
+        Script(["@r = rand(3)"])
+        ConditionalBranch([12, "@r < 1"])
+          ChangeArmor([164, 0, 0, 1, false])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([12, "@r < 2"])
+            ChangeArmor([165, 0, 0, 1, false])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([8, 445])
+              ChangeItems([462, 0, 0, 1])
+              Empty([])
+
+            Else([])
+              ChangeItems([445, 0, 0, 1])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        JumpToLabel(["dowryget"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 2029, 0, 15, 0])
+    ConditionalBranch([0, 3277, 1])
+      ConditionalBranch([0, 2521, 1])
+        Comment(["############"])
+        Label(["harflood"])
+        Comment(["############"])
+        Script(["@r = rand(3)"])
+        ConditionalBranch([12, "@r < 1"])
+          ChangeArmor([237, 0, 0, 1, false])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([12, "@r < 2"])
+            ChangeArmor([236, 0, 0, 1, false])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([8, 446])
+              ChangeItems([463, 0, 0, 1])
+              Empty([])
+
+            Else([])
+              ChangeItems([446, 0, 0, 1])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        JumpToLabel(["dowryget"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 2029, 0, 17, 0])
+    ConditionalBranch([0, 4055, 1])
+      ConditionalBranch([0, 4087, 1])
+        Comment(["############"])
+        Label(["finflood"])
+        Comment(["############"])
+        Script(["@r = rand(3)"])
+        ConditionalBranch([12, "@r < 1"])
+          ChangeArmor([314, 0, 0, 1, false])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([12, "@r < 2"])
+            ChangeArmor([317, 0, 0, 1, false])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([8, 447])
+              ChangeItems([464, 0, 0, 1])
+              Empty([])
+
+            Else([])
+              ChangeItems([447, 0, 0, 1])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        JumpToLabel(["dowryget"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 2029, 0, 18, 0])
+    ConditionalBranch([0, 4235, 1])
+      ConditionalBranch([0, 4267, 1])
+        Comment(["############"])
+        Label(["merflood"])
+        Comment(["############"])
+        Script(["@r = rand(3)"])
+        ConditionalBranch([12, "@r < 1"])
+          ChangeItems([354, 0, 0, 1])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([12, "@r < 2"])
+            ChangeItems([352, 0, 0, 1])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([8, 448])
+              ChangeItems([465, 0, 0, 1])
+              Empty([])
+
+            Else([])
+              ChangeItems([448, 0, 0, 1])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        JumpToLabel(["dowryget"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 2029, 0, 19, 0])
+    ConditionalBranch([0, 4389, 1])
+      ConditionalBranch([0, 4421, 1])
+        Comment(["############"])
+        Label(["birflood"])
+        Comment(["############"])
+        Script(["@r = rand(3)"])
+        ConditionalBranch([12, "@r < 1"])
+          ChangeItems([394, 0, 0, 1])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([12, "@r < 2"])
+            ChangeArmor([495, 0, 0, 1, false])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([8, 449])
+              ChangeItems([466, 0, 0, 1])
+              Empty([])
+
+            Else([])
+              ChangeItems([449, 0, 0, 1])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        JumpToLabel(["dowryget"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 2029, 0, 20, 0])
+    ConditionalBranch([0, 4690, 1])
+      ConditionalBranch([0, 4722, 1])
+        Comment(["############"])
+        Label(["oniflood"])
+        Comment(["############"])
+        Script(["@r = rand(4)"])
+        ConditionalBranch([12, "@r < 1"])
+          ChangeItems([405, 0, 0, 1])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([12, "@r < 2"])
+            ChangeArmor([560, 0, 0, 1, false])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([12, "@r < 3"])
+              ChangeArmor([561, 0, 0, 1, false])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([8, 450])
+                ChangeItems([467, 0, 0, 1])
+                Empty([])
+
+              Else([])
+                ChangeItems([450, 0, 0, 1])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        JumpToLabel(["dowryget"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 2029, 0, 30, 0])
+    ConditionalBranch([0, 3136, 1])
+      ConditionalBranch([0, 3168, 1])
+        Comment(["############"])
+        Label(["plaflood"])
+        Comment(["############"])
+        Script(["@r = rand(3)"])
+        ConditionalBranch([12, "@r < 1"])
+          ChangeItems([423, 0, 0, 1])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([12, "@r < 2"])
+            ChangeArmor([665, 0, 0, 1, false])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([12, "@r < 2"])
+              ChangeArmor([666, 0, 0, 1, false])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([8, 451])
+                ChangeItems([468, 0, 0, 1])
+                Empty([])
+
+              Else([])
+                ChangeItems([451, 0, 0, 1])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        JumpToLabel(["dowryget"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 2029, 0, 31, 0])
+    ConditionalBranch([0, 2816, 1])
+      ConditionalBranch([0, 2838, 1])
+        Comment(["############"])
+        Label(["shaflood"])
+        Comment(["############"])
+        Script(["@r = rand(3)"])
+        ConditionalBranch([12, "@r < 1"])
+          ChangeItems([480, 0, 0, 1])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([12, "@r < 2"])
+            ChangeItems([481, 0, 0, 1])
+            Empty([])
+
+          Else([])
+            ChangeArmor([768, 0, 0, 1, false])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        JumpToLabel(["dowryget"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  JumpToLabel(["end"])
+  Label(["dowryget"])
+  Comment(["###############################"])
+  ConditionalBranch([12, "$game_switches[7497] == true"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_switches[7403] == true"])
+    Script(["$game_switches[7403] = false"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["###############################"])
+  Script(["$PU_AUTOMATIC_POPUP = false"])
+  ChangeEquipment([1, 4, 0])
+  ChangeArmor([165, 1, 0, 1, false])
+  Script(["$PU_AUTOMATIC_POPUP = true"])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Thanks to the \\i[552] \\C[18]Breeding Contract (Rabbit)\\c[0] you've recieved a random dowry from the Princess that delivered!"])
+  Label(["end"])
+  Empty([])
