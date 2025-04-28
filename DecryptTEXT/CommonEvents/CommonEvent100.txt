@@ -1,0 +1,35 @@
+CommonEvent 100
+Name = "Fear depleted"
+
+  ConditionalBranch([0, 739, 0])
+    ConditionalBranch([12, "$game_party.leader.class_id == 122"])
+      Wait([720])
+      JumpToLabel(["fear"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_party.leader.id == 12"])
+      Wait([600])
+      JumpToLabel(["fear"])
+      ControlSwitches([985, 985, 1])
+      CallCommonEvent([101])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_party.leader.id == 9 && $game_actors[9].equips[5] == $data_armors[183]"])
+      Wait([600])
+      Label(["fear"])
+      ControlSwitches([985, 985, 1])
+      CallCommonEvent([101])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Else([])
+    ControlSwitches([985, 985, 1])
+    Empty([])
+
+  BranchEnd([])
+  Wait([30])
+  Empty([])

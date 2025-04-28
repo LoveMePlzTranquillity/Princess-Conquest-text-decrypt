@@ -1,0 +1,6 @@
+CommonEvent 122
+Name = "TicToc CD"
+
+  Wait([5])
+  ControlSwitches([1948, 1948, 1])
+  Empty([])

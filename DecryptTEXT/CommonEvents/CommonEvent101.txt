@@ -1,0 +1,58 @@
+CommonEvent 101
+Name = "Fear icon"
+
+  Script(["@x = 227"])
+  ScriptMore(["@y = 33"])
+  Script(["@p = 250"])
+  Script(["@t = 255"])
+  ConditionalBranch([0, 739, 0])
+    ConditionalBranch([12, "$game_party.leader.class_id == 122"])
+      ConditionalBranch([0, 985, 1])
+        Script(["@n = \"CrowHUD\""])
+        Empty([])
+
+      Else([])
+        Script(["@n = \"NoCrowHUD\""])
+        Empty([])
+
+      BranchEnd([])
+      Script(["$game_map.screen.pictures[@p].show("])
+      ScriptMore(["@n, 0, @x, @y, 100, 100, @t, 0)"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_party.leader.id == 12"])
+      Label(["fear"])
+      ConditionalBranch([0, 985, 1])
+        Script(["@n = \"FearHUD\""])
+        Empty([])
+
+      Else([])
+        Script(["@n = \"NoFearHUD\""])
+        Empty([])
+
+      BranchEnd([])
+      Script(["$game_map.screen.pictures[@p].show("])
+      ScriptMore(["@n, 0, @x, @y, 100, 100, @t, 0)"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_party.leader.id == 9 && $game_actors[9].equips[5] == $data_armors[183]"])
+      ConditionalBranch([0, 985, 1])
+        Script(["@n = \"FearHUD\""])
+        Empty([])
+
+      Else([])
+        Script(["@n = \"NoFearHUD\""])
+        Empty([])
+
+      BranchEnd([])
+      Script(["$game_map.screen.pictures[@p].show("])
+      ScriptMore(["@n, 0, @x, @y, 100, 100, @t, 0)"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

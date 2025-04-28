@@ -1,0 +1,13 @@
+CommonEvent 126
+Name = "Knight Save"
+
+  PlaySE(["RPG::SE(@name=\"Wolf\", @pitch=120, @volume=80)"])
+  ControlSwitches([2483, 2483, 0])
+  CallCommonEvent([125])
+  ControlSwitches([2483, 2483, 1])
+  Script(["$game_map.sas_hud.refresh_bars"])
+  ShowAnimation([-1, 113, false])
+  ControlVariables([834, 834, 0, 1, 761])
+  ControlSwitches([1077, 1077, 0])
+  ControlSwitches([666, 666, 1])
+  Empty([])

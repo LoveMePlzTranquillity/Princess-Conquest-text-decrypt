@@ -1,0 +1,13 @@
+CommonEvent 106
+Name = "Samba!"
+
+  ConditionalBranch([0, 3484, 1])
+    ShowAnimation([-1, 160, false])
+    PlaySE(["RPG::SE(@name=\"Maracas\", @pitch=100, @volume=100)"])
+    ControlSwitches([3485, 3485, 0])
+    ControlVariables([3878, 3878, 1, 0, 1])
+    CallCommonEvent([104])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

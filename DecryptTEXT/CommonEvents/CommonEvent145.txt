@@ -1,0 +1,32 @@
+CommonEvent 145
+Name = "*daily6*  Breaking Ch."
+
+  Comment(["#################"])
+  Script(["@party = $game_party.members.size - 1"])
+  Loop([])
+    ControlVariables([1738, 1738, 0, 4, "$game_party.members[@party].id"])
+    Script(["@act = $game_variables[1738]"])
+    ConditionalBranch([12, "$game_actors[@act].equips[4] == $data_armors[71] && $game_actors[@act].parent_stat(0) >= 2"])
+      Comment(["Chastity Belt + love >= 2"])
+      Script(["@act = $game_variables[1738]"])
+      ScriptMore(["$game_actors[@act].add_spds_stats(4,-1)"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_actors[@act].parent_stat(4) >= 10"])
+      CallCommonEvent([146])
+      Empty([])
+
+    BranchEnd([])
+    Script(["@party -= 1"])
+    ConditionalBranch([12, "@party < 0"])
+      BreakLoop([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  RepeatAbove([])
+  Comment(["#################"])
+  CallCommonEvent([562])
+  Empty([])

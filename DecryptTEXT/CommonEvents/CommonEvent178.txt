@@ -1,0 +1,35 @@
+CommonEvent 178
+Name = "Dragon fly stop"
+
+  ConditionalBranch([0, 1726, 0])
+    ConditionalBranch([12, "$game_party.leader.id == 18"])
+      ControlSwitches([1726, 1726, 1])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$DraP\\\", 0])\", \"RPG::MoveCommand(@code=34, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$DraP\", 0])"])
+      Unnamed(["RPG::MoveCommand(@code=34, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_party.leader.id == 11"])
+      ControlSwitches([1726, 1726, 1])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$DraPII\\\", 0])\", \"RPG::MoveCommand(@code=34, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$DraPII\", 0])"])
+      Unnamed(["RPG::MoveCommand(@code=34, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_party.leader.id == 41"])
+      ControlSwitches([1726, 1726, 1])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$WyvP\\\", 0])\", \"RPG::MoveCommand(@code=34, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$WyvP\", 0])"])
+      Unnamed(["RPG::MoveCommand(@code=34, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

@@ -1,0 +1,47 @@
+CommonEvent 125
+Name = "Switch to dog"
+
+  ConditionalBranch([12, "$game_party.leader.id == 16"])
+    Empty([])
+
+  Else([])
+    Script(["$game_party.swap_order(0,1)"])
+    Script(["$game_player.next_skill"])
+    ConditionalBranch([12, "$game_party.leader.id == 16"])
+      Empty([])
+
+    Else([])
+      Script(["$game_party.swap_order(0,2)"])
+      Script(["$game_player.next_skill"])
+      ConditionalBranch([12, "$game_party.leader.id == 16"])
+        Empty([])
+
+      Else([])
+        Script(["$game_party.swap_order(0,3)"])
+        Script(["$game_player.next_skill"])
+        ConditionalBranch([12, "$game_party.leader.id == 16"])
+          Empty([])
+
+        Else([])
+          Script(["$game_party.swap_order(0,4)"])
+          Script(["$game_player.next_skill"])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2483, 0])
+    CallCommonEvent([53])
+    Empty([])
+
+  BranchEnd([])
+  CallCommonEvent([686])
+  Script(["Multiple_Core.refresh"])
+  Empty([])

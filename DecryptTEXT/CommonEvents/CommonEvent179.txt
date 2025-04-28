@@ -1,0 +1,42 @@
+CommonEvent 179
+Name = "Switch to DPI"
+
+  ConditionalBranch([12, "$game_party.leader.id == 18"])
+    Empty([])
+
+  Else([])
+    Script(["$game_party.swap_order(0,1)"])
+    Script(["$game_player.next_skill"])
+    ConditionalBranch([12, "$game_party.leader.id == 18"])
+      Empty([])
+
+    Else([])
+      Script(["$game_party.swap_order(0,2)"])
+      Script(["$game_player.next_skill"])
+      ConditionalBranch([12, "$game_party.leader.id == 18"])
+        Empty([])
+
+      Else([])
+        Script(["$game_party.swap_order(0,3)"])
+        Script(["$game_player.next_skill"])
+        ConditionalBranch([12, "$game_party.leader.id == 18"])
+          Empty([])
+
+        Else([])
+          Script(["$game_party.swap_order(0,4)"])
+          Script(["$game_player.next_skill"])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  CallCommonEvent([53])
+  Script(["Multiple_Core.refresh"])
+  Empty([])

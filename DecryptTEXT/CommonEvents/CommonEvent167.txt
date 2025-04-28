@@ -1,0 +1,52 @@
+CommonEvent 167
+Name = "SleepDust icon"
+
+  Script(["@x = 227"])
+  ScriptMore(["@y = 33"])
+  Script(["@p = 250"])
+  Script(["@t = 255"])
+  ConditionalBranch([0, 739, 0])
+    ConditionalBranch([12, "$game_party.leader.class_id == 28"])
+      Comment(["succubi"])
+      JumpToLabel(["succ"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_party.leader.id == 21"])
+      ConditionalBranch([0, 4118, 0])
+        ConditionalBranch([0, 1786, 1])
+          Script(["@n = \"LoveHUD\""])
+          Empty([])
+
+        Else([])
+          Script(["@n = \"NoLoveHUD\""])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      Else([])
+        Label(["succ"])
+        ConditionalBranch([0, 1786, 1])
+          Script(["@n = \"SleepHUD\""])
+          Empty([])
+
+        Else([])
+          Script(["@n = \"NoSleepHUD\""])
+          Empty([])
+
+        BranchEnd([])
+        JumpToLabel(["jti"])
+        Empty([])
+
+      BranchEnd([])
+      Label(["jti"])
+      Script(["$game_map.screen.pictures[@p].show("])
+      ScriptMore(["@n, 0, @x, @y, 100, 100, @t, 0)"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

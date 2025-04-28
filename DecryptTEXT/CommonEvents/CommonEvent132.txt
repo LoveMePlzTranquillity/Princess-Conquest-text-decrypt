@@ -1,0 +1,6 @@
+CommonEvent 132
+Name = "Change swirl stop"
+
+  Wait([45])
+  ControlSwitches([648, 648, 1])
+  Empty([])

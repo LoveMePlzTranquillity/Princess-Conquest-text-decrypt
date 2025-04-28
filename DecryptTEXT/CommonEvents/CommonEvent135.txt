@@ -1,0 +1,19 @@
+CommonEvent 135
+Name = "*Sphinx RESET*"
+
+  ControlSwitches([1081, 1096, 1])
+  ControlSwitches([1098, 1113, 1])
+  ControlSwitches([1118, 1122, 1])
+  ControlVariables([838, 847, 0, 0, 0])
+  ControlVariables([852, 858, 0, 0, 0])
+  ControlVariables([860, 864, 0, 0, 0])
+  ControlSwitches([1164, 1164, 1])
+  ControlVariables([849, 849, 0, 0, 1])
+  ControlVariables([850, 850, 0, 0, 1])
+  ControlSwitches([1186, 1186, 1])
+  Script(["reset_gather_points(120)"])
+  Script(["reset_gather_points(148)"])
+  Script(["reset_gather_points(152)"])
+  Comment(["reset Sphinx Fortress CG"])
+  Script(["$game_self_switches[[120,34,\"A\"]] = true"])
+  Empty([])

@@ -1,0 +1,8 @@
+CommonEvent 105
+Name = "SambaOver!"
+
+  Wait([900])
+  ControlSwitches([3484, 3484, 1])
+  ControlVariables([3878, 3878, 0, 0, 0])
+  CallCommonEvent([104])
+  Empty([])

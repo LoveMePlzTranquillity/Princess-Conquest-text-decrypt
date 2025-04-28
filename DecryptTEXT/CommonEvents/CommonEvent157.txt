@@ -1,0 +1,41 @@
+CommonEvent 157
+Name = "Wendy"
+
+  Wait([180])
+  ControlVariables([4134, 4134, 2, 0, 1])
+  ConditionalBranch([1, 4134, 0, 1, 1])
+    Comment(["################"])
+    JumpToLabel(["end"])
+    Comment(["################"])
+    Empty([])
+
+  BranchEnd([])
+  ShowAnimation([-1, 133, false])
+  ConditionalBranch([12, "$game_party.leader.class_id == 156"])
+    Script(["$game_variables[3861] = \"$WendigoPhuman\""])
+    ConditionalBranch([0, 3064, 0])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$Field%(4)\\\", 0])\", \"RPG::MoveCommand(@code=34, @parameters=[])\", \"RPG::MoveCommand(@code=31, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$Field%(4)\", 0])"])
+      Unnamed(["RPG::MoveCommand(@code=34, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=31, @parameters=[])"])
+      Empty([])
+
+    Else([])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$WendigoPhuman\\\", 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$WendigoPhuman\", 0])"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Else([])
+    Empty([])
+
+  BranchEnd([])
+  SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+  Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+  ControlSwitches([1739, 1739, 1])
+  Script(["$game_party.leader.remove_state(58)"])
+  ControlSwitches([4450, 4450, 1])
+  Label(["end"])
+  Empty([])

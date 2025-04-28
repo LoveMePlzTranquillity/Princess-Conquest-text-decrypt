@@ -1,0 +1,18 @@
+CommonEvent 110
+Name = "thunder hit"
+
+  ControlSwitches([1013, 1013, 1])
+  Script(["$game_map.sas_hud.hide(true)"])
+  Wait([60])
+  ShowTextAttributes(["GolemP", 0, 0, 2])
+  ShowText(["Synapse Galatea:"])
+  ShowText(["*BZZZZT*...\\.\\.\\. Various systems offline.\\.\\."])
+  ShowTextAttributes(["GolemP", 0, 0, 2])
+  ShowText(["Synapse Galatea:"])
+  ShowText(["Chances of success are still above the cutoff!\\.\\. Avoiding the shocks is highly recommended."])
+  FadeoutScreen([])
+  Wait([15])
+  TransferPlayer([0, 89, 8, 7, 8, 0])
+  Wait([60])
+  TransferPlayer([0, 129, 14, 57, 8, 0])
+  Empty([])

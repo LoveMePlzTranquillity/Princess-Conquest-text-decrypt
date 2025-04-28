@@ -1,0 +1,24 @@
+CommonEvent 142
+Name = "Immunity"
+
+  Label(["immu"])
+  SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+  Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+  Wait([3])
+  SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+  Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+  Wait([3])
+  ConditionalBranch([1, 978, 0, 20, 1])
+    ControlVariables([978, 978, 0, 0, 0])
+    Empty([])
+
+  Else([])
+    ControlVariables([978, 978, 1, 0, 1])
+    JumpToLabel(["immu"])
+    Empty([])
+
+  BranchEnd([])
+  SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+  Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+  ControlSwitches([1197, 1197, 1])
+  Empty([])

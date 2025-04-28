@@ -1,0 +1,34 @@
+CommonEvent 166
+Name = "SleepDust depleted"
+
+  ConditionalBranch([0, 739, 0])
+    ConditionalBranch([12, "$game_party.leader.class_id == 28"])
+      Comment(["succubi"])
+      JumpToLabel(["succ"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_party.leader.id == 21"])
+      ConditionalBranch([0, 4118, 0])
+        Wait([30])
+        ControlSwitches([1451, 1451, 1])
+        Wait([300])
+        ControlSwitches([1347, 1347, 1])
+        Wait([240])
+        Empty([])
+
+      Else([])
+        Label(["succ"])
+        Wait([600])
+        Empty([])
+
+      BranchEnd([])
+      ControlSwitches([1786, 1786, 1])
+      CallCommonEvent([167])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

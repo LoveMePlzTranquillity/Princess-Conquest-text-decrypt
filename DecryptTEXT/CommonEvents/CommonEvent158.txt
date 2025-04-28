@@ -1,0 +1,76 @@
+CommonEvent 158
+Name = "Ghost Tracker"
+
+  ConditionalBranch([12, "$game_map.map_id == 2"])
+    Script(["@k = 135"])
+    Script(["@xT = 26"])
+    ScriptMore(["@yT = 29"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_map.map_id == 70"])
+    Script(["@k = 65"])
+    Script(["@xT = 70"])
+    ScriptMore(["@yT = 20"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_map.map_id == 319"])
+    Script(["@k = 42"])
+    Script(["@xT = 7"])
+    ScriptMore(["@yT = 16"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_map.map_id == 343"])
+    Script(["@k = 58"])
+    Script(["@xT = 0"])
+    ScriptMore(["@yT = 3"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_map.map_id == 344"])
+    Script(["@k = 26"])
+    Script(["@xT = 40"])
+    ScriptMore(["@yT = 25"])
+    Empty([])
+
+  BranchEnd([])
+  Script(["@x = $game_player.x"])
+  ScriptMore(["@y = $game_player.y"])
+  Script(["$game_map.events[@k].balloon_id = 1"])
+  ShowPicture([1, "Ghost Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+  ShowTextAttributes(["", 0, 2, 2])
+  ShowText(["Ghost Princess:"])
+  ShowText(["...\\.\\.\\. !!\\.\\."])
+  ErasePicture([1])
+  ConditionalBranch([12, "(@x - @xT).abs > (@y - @yT).abs"])
+    ConditionalBranch([12, "@x - @xT > 0"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["According to the Princess,\\. it seems as if your destination is to the West.\\.\\."])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["The Princess urges you Eastward.\\.\\. Make haste!\\.\\."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([12, "@y - @yT > 0"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["The Princess appears to want you to go North from here.\\.\\."])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You think the Princess wants you to go South.\\.\\."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

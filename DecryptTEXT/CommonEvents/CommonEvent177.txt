@@ -1,0 +1,38 @@
+CommonEvent 177
+Name = "Dragon fly"
+
+  ConditionalBranch([0, 739, 0])
+    ConditionalBranch([12, "$game_party.leader.id == 18"])
+      ControlSwitches([1726, 1726, 0])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Up1\\\\\\\", @pitch=110, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=33, @parameters=[])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"$DraPFly\\\", 0])\", \"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Up1\\\", @pitch=110, @volume=80)\"])"])
+      Unnamed(["RPG::MoveCommand(@code=33, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$DraPFly\", 0])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_party.leader.id == 11"])
+      ControlSwitches([1726, 1726, 0])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Up1\\\\\\\", @pitch=110, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=33, @parameters=[])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"$DraPIIFly\\\", 0])\", \"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Up1\\\", @pitch=110, @volume=80)\"])"])
+      Unnamed(["RPG::MoveCommand(@code=33, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$DraPIIFly\", 0])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_party.leader.id == 41"])
+      ControlSwitches([1726, 1726, 0])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Up1\\\\\\\", @pitch=110, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=33, @parameters=[])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"$WyvPf\\\", 0])\", \"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Up1\\\", @pitch=110, @volume=80)\"])"])
+      Unnamed(["RPG::MoveCommand(@code=33, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$WyvPf\", 0])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

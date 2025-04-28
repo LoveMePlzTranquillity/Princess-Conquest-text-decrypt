@@ -1,0 +1,15 @@
+CommonEvent 103
+Name = "Fear shield recover"
+
+  Wait([110])
+  ConditionalBranch([1, 3877, 0, 1, 1])
+    ControlVariables([3877, 3877, 2, 0, 1])
+    Empty([])
+
+  Else([])
+    ControlVariables([3877, 3877, 0, 0, 0])
+    ControlSwitches([3471, 3471, 1])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

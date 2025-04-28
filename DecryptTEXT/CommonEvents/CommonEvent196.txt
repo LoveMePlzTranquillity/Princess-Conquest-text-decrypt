@@ -1,0 +1,154 @@
+CommonEvent 196
+Name = "Auction HUD"
+
+  Script(["Font.default_name = [\"Porn Star Academy\"]"])
+  ScriptMore(["Font.default_size = 28"])
+  Comment(["timer"])
+  Script(["@wint=Window_Base.new(334,124,133,60)"])
+  ScriptMore(["@wint.z = 99"])
+  Comment(["swirlies"])
+  Script(["@wins=Window_Base.new(308,224,133,60)"])
+  ScriptMore(["@wins.z = 99"])
+  Comment(["Bank"])
+  Script(["@winz=Window_Base.new(312,334,133,60)"])
+  ScriptMore(["@winz.z = 99"])
+  Script(["@wins.opacity = 0"])
+  ScriptMore(["@wint.opacity = 0"])
+  ScriptMore(["@winz.opacity = 0"])
+  Comment(["win HUD"])
+  ConditionalBranch([8, 328])
+    ShowPicture([98, "SlaveHUDz", 0, 0, 0, 0, 100, 100, 255, 0])
+    ConditionalBranch([1, 3899, 0, 1000000, 1])
+      Script(["@z = 0"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 3899, 0, 100000, 1])
+        Script(["@z = 7"])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([1, 3899, 0, 10000, 1])
+          Script(["@z = 14"])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([1, 3899, 0, 1000, 1])
+            Script(["@z = 24"])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([1, 3899, 0, 100, 1])
+              Script(["@z = 29"])
+              Empty([])
+
+            Else([])
+              Script(["@z = 34"])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Script(["@winz.contents.clear"])
+    ScriptMore(["@textz = \"\\\\v[3899]\""])
+    ScriptMore(["@winz.draw_text_ex(@z,2,@textz)"])
+    Empty([])
+
+  Else([])
+    ShowPicture([98, "SlaveHUD", 0, 0, 0, 0, 100, 100, 255, 0])
+    Empty([])
+
+  BranchEnd([])
+  Loop([])
+    ShowPicture([97, "Gauge0", 0, 0, 300, 180, 100, 100, 255, 0])
+    ConditionalBranch([1, 1245, 0, 9, 2])
+      Script(["@w = 15"])
+      Empty([])
+
+    Else([])
+      Script(["@w = 5"])
+      Empty([])
+
+    BranchEnd([])
+    Script(["@wint.contents.clear"])
+    ScriptMore(["@textt = \"\\\\v[1245]\""])
+    ScriptMore(["@wint.draw_text_ex(@w,2,@textt)"])
+    ConditionalBranch([1, 1232, 0, 100000, 1])
+      Script(["@w = 0"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 1232, 0, 10000, 1])
+        Script(["@w = 10"])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([1, 1232, 0, 1000, 1])
+          Script(["@w = 20"])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([1, 1232, 0, 100, 1])
+            Script(["@w = 25"])
+            Empty([])
+
+          Else([])
+            Script(["@w = 30"])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Script(["@wins.contents.clear"])
+    ScriptMore(["@texts = \"\\\\v[1232]\""])
+    ScriptMore(["@wins.draw_text_ex(@w,2,@texts)"])
+    Script(["Font.default_name = [\"foo\"]"])
+    ScriptMore(["Font.default_size = 30"])
+    ConditionalBranch([0, 1464, 0])
+      ConditionalBranch([1, 1232, 0, 5000, 1])
+        ControlVariables([637, 637, 1, 0, 2])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([1, 1232, 0, 1000, 1])
+          ControlVariables([637, 637, 1, 0, 1])
+          Empty([])
+
+        Else([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      BreakLoop([])
+      Empty([])
+
+    BranchEnd([])
+    Wait([5])
+    Empty([])
+
+  RepeatAbove([])
+  ErasePicture([97])
+  ErasePicture([98])
+  Script(["@wint.dispose"])
+  ScriptMore(["@wins.dispose"])
+  ScriptMore(["@winz.dispose"])
+  Empty([])

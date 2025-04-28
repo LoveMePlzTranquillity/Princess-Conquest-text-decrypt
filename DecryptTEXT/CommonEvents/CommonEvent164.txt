@@ -1,0 +1,68 @@
+CommonEvent 164
+Name = "SleepDust"
+
+  Comment(["ce 581 Narcotized CD"])
+  ConditionalBranch([0, 1786, 1])
+    ConditionalBranch([12, "$game_party.leader.class_id == 28"])
+      Comment(["succubi"])
+      JumpToLabel(["succ"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_party.leader.id == 21"])
+      ConditionalBranch([0, 4118, 0])
+        ShowAnimation([-1, 53, false])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Absorb1\\\\\\\", @pitch=100, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Absorb1\\\", @pitch=100, @volume=80)\"])"])
+        ControlSwitches([1451, 1451, 0])
+        ControlSwitches([1786, 1786, 0])
+        ConditionalBranch([0, 2161, 0])
+          ConditionalBranch([0, 1347, 0])
+            ControlSwitches([1347, 1347, 1])
+            Wait([5])
+            ControlSwitches([1347, 1347, 0])
+            Empty([])
+
+          Else([])
+            ControlSwitches([1347, 1347, 0])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      Else([])
+        Label(["succ"])
+        ShowAnimation([-1, 54, false])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Absorb1\\\\\\\", @pitch=100, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Absorb1\\\", @pitch=100, @volume=80)\"])"])
+        ControlSwitches([1785, 1785, 0])
+        ControlSwitches([1786, 1786, 0])
+        ConditionalBranch([0, 2161, 0])
+          ConditionalBranch([0, 2173, 0])
+            ControlSwitches([2173, 2173, 1])
+            Wait([5])
+            ControlSwitches([2173, 2173, 0])
+            Empty([])
+
+          Else([])
+            ControlSwitches([2173, 2173, 0])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      CallCommonEvent([167])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

@@ -1,0 +1,37 @@
+CommonEvent 137
+Name = "Wendigo Icon"
+
+  Script(["@x = 227"])
+  ScriptMore(["@y = 33"])
+  Script(["@p = 250"])
+  ConditionalBranch([0, 739, 0])
+    ConditionalBranch([12, "$game_party.leader.class_id == 156"])
+      ConditionalBranch([1, 4134, 0, 0, 2])
+        Script(["@n = \"WendigoHUD0\""])
+        Empty([])
+
+      BranchEnd([])
+      ConditionalBranch([1, 4134, 0, 1, 0])
+        Script(["@n = \"WendigoHUD1\""])
+        Empty([])
+
+      BranchEnd([])
+      ConditionalBranch([1, 4134, 0, 2, 0])
+        Script(["@n = \"WendigoHUD2\""])
+        Empty([])
+
+      BranchEnd([])
+      ConditionalBranch([1, 4134, 0, 3, 1])
+        Script(["@n = \"WendigoHUD3\""])
+        Empty([])
+
+      BranchEnd([])
+      Script(["$game_map.screen.pictures[@p].show("])
+      ScriptMore(["@n, 0, @x, @y, 100, 100, 255, 0)"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

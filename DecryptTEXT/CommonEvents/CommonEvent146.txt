@@ -1,0 +1,436 @@
+CommonEvent 146
+Name = "🡆Succ🡆*which broke*"
+
+  ConditionalBranch([12, "$game_variables[6401] == 0"])
+    Script(["$game_variables[6401] ="])
+    ScriptMore(["[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"])
+    ScriptMore(["0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"])
+    ScriptMore(["0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"])
+    ScriptMore(["0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"])
+    ScriptMore(["0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1738, 0, 2, 0])
+    Script(["@a = 1"])
+    ConditionalBranch([12, "$game_variables[6401][@a] == 0"])
+      Script(["$game_variables[6401][@a] = 1"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 2879, 0, 0, 2])
+        ControlSwitches([1203, 1203, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1738, 0, 5, 0])
+    Script(["@a = 2"])
+    ConditionalBranch([12, "$game_variables[6401][@a] == 0"])
+      Script(["$game_variables[6401][@a] = 1"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 2879, 0, 0, 2])
+        ControlSwitches([1204, 1204, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1738, 0, 7, 0])
+    Script(["@a = 3"])
+    ConditionalBranch([12, "$game_variables[6401][@a] == 0"])
+      Script(["$game_variables[6401][@a] = 1"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 2879, 0, 0, 2])
+        ControlSwitches([1205, 1205, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1738, 0, 6, 0])
+    Script(["@a = 4"])
+    ConditionalBranch([12, "$game_variables[6401][@a] == 0"])
+      ConditionalBranch([0, 2452, 1])
+        Comment(["Living locking out"])
+        Script(["$game_variables[6401][@a] = 1"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 2879, 0, 0, 2])
+        ControlSwitches([1206, 1206, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1738, 0, 4, 0])
+    Script(["@a = 7"])
+    ConditionalBranch([12, "$game_variables[6401][@a] == 0"])
+      ConditionalBranch([0, 4121, 1])
+        Comment(["Djinn locking out"])
+        Script(["$game_variables[6401][@a] = 1"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 2879, 0, 0, 2])
+        ControlSwitches([1209, 1209, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1738, 0, 26, 0])
+    Script(["@a = 13"])
+    ConditionalBranch([12, "$game_variables[6401][@a] == 0"])
+      Script(["$game_variables[6401][@a] = 1"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 2879, 0, 0, 2])
+        ControlSwitches([2508, 2508, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1738, 0, 8, 0])
+    Script(["@a = 5"])
+    ConditionalBranch([12, "$game_variables[6401][@a] == 0"])
+      Script(["$game_variables[6401][@a] = 1"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 2879, 0, 0, 2])
+        ControlSwitches([1207, 1207, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1738, 0, 9, 0])
+    Script(["@a = 6"])
+    ConditionalBranch([12, "$game_variables[6401][@a] == 0"])
+      ConditionalBranch([0, 2395, 1])
+        Comment(["Living locking out"])
+        Script(["$game_variables[6401][@a] = 1"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 2879, 0, 0, 2])
+        ControlSwitches([1208, 1208, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1738, 0, 12, 0])
+    Script(["@a = 8"])
+    ConditionalBranch([12, "$game_variables[6401][@a] == 0"])
+      ConditionalBranch([0, 2454, 1])
+        Comment(["Living locking out"])
+        Script(["$game_variables[6401][@a] = 1"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 2879, 0, 0, 2])
+        ControlSwitches([1210, 1210, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1738, 0, 14, 0])
+    Script(["@a = 9"])
+    ConditionalBranch([12, "$game_variables[6401][@a] == 0"])
+      Script(["$game_variables[6401][@a] = 1"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 2879, 0, 0, 2])
+        ControlSwitches([1211, 1211, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1738, 0, 21, 0])
+    Script(["@a = 10"])
+    ConditionalBranch([12, "$game_variables[6401][@a] == 0"])
+      Script(["$game_variables[6401][@a] = 1"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 2879, 0, 0, 2])
+        ControlSwitches([1639, 1639, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2340, 1])
+    Comment(["Nekomata locking out"])
+    ConditionalBranch([1, 1738, 0, 23, 0])
+      Script(["@a = 11"])
+      ConditionalBranch([12, "$game_variables[6401][@a] == 0"])
+        Script(["$game_variables[6401][@a] = 1"])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([1, 2879, 0, 0, 2])
+          ControlSwitches([2010, 2010, 0])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1738, 0, 16, 0])
+    Script(["@a = 12"])
+    ConditionalBranch([12, "$game_variables[6401][@a] == 0"])
+      Script(["$game_variables[6401][@a] = 1"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 2879, 0, 0, 2])
+        ControlSwitches([1212, 1212, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1738, 0, 30, 0])
+    Script(["@a = 14"])
+    ConditionalBranch([12, "$game_variables[6401][@a] == 0"])
+      Script(["$game_variables[6401][@a] = 1"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 2879, 0, 0, 2])
+        ControlSwitches([2903, 2903, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1738, 0, 32, 0])
+    Script(["@a = 15"])
+    ConditionalBranch([12, "$game_variables[6401][@a] == 0"])
+      Script(["$game_variables[6401][@a] = 1"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 2879, 0, 0, 2])
+        ControlSwitches([3296, 3296, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1738, 0, 46, 0])
+    Script(["@a = 17"])
+    ConditionalBranch([12, "$game_variables[6401][@a] == 0"])
+      Script(["$game_variables[6401][@a] = 1"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 2879, 0, 0, 2])
+        ControlSwitches([4045, 4045, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1738, 0, 41, 0])
+    Script(["@a = 16"])
+    ConditionalBranch([12, "$game_variables[6401][@a] == 0"])
+      Script(["$game_variables[6401][@a] = 1"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 2879, 0, 0, 2])
+        ControlSwitches([3505, 3505, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1738, 0, 48, 0])
+    Script(["@a = 18"])
+    ConditionalBranch([12, "$game_variables[6401][@a] == 0"])
+      Script(["$game_variables[6401][@a] = 1"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 2879, 0, 0, 2])
+        ControlSwitches([4225, 4225, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1738, 0, 53, 0])
+    Script(["@a = 19"])
+    ConditionalBranch([12, "$game_variables[6401][@a] == 0"])
+      Script(["$game_variables[6401][@a] = 1"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 2879, 0, 0, 2])
+        ControlSwitches([4379, 4379, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1738, 0, 54, 0])
+    Script(["@a = 20"])
+    ConditionalBranch([12, "$game_variables[6401][@a] == 0"])
+      Script(["$game_variables[6401][@a] = 1"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 2879, 0, 0, 2])
+        ControlSwitches([4680, 4680, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1738, 0, 56, 0])
+    Script(["@a = 21"])
+    ConditionalBranch([12, "$game_variables[6401][@a] == 0"])
+      Script(["$game_variables[6401][@a] = 1"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 2879, 0, 0, 2])
+        ControlSwitches([3126, 3126, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1738, 0, 57, 0])
+    Script(["@a = 22"])
+    ConditionalBranch([12, "$game_variables[6401][@a] == 0"])
+      Script(["$game_variables[6401][@a] = 1"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 2879, 0, 0, 2])
+        ControlSwitches([2806, 2806, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  CallCommonEvent([147])
+  Empty([])

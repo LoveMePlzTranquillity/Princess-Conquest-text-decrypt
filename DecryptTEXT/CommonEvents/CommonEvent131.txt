@@ -1,0 +1,33 @@
+CommonEvent 131
+Name = "Ske Icon"
+
+  Script(["@x = 227"])
+  ScriptMore(["@y = 33"])
+  Script(["@p = 250"])
+  ConditionalBranch([0, 739, 0])
+    ConditionalBranch([1, 866, 0, 0, 0])
+      Script(["@n = \"SkullHUD0\""])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 866, 0, 1, 0])
+      Script(["@n = \"SkullHUD1\""])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 866, 0, 2, 0])
+      Script(["@n = \"SkullHUD2\""])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 866, 0, 3, 0])
+      Script(["@n = \"SkullHUD3\""])
+      Empty([])
+
+    BranchEnd([])
+    Script(["$game_map.screen.pictures[@p].show("])
+    ScriptMore(["@n, 0, @x, @y, 100, 100, 255, 0)"])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

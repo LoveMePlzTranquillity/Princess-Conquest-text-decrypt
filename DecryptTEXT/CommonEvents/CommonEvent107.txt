@@ -1,0 +1,6 @@
+CommonEvent 107
+Name = "Samba Time!"
+
+  Wait([210])
+  ControlSwitches([3485, 3485, 1])
+  Empty([])

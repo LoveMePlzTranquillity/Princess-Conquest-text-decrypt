@@ -1,0 +1,163 @@
+CommonEvent 176
+Name = "stone break"
+
+  ControlVariables([3440, 3440, 1, 0, 1])
+  ControlVariables([1192, 1192, 0, 2, 1, 50])
+  ConditionalBranch([1, 1192, 0, 50, 0])
+    ChangeItems([109, 0, 0, 1])
+    JumpToLabel(["stoned"])
+    Empty([])
+
+  Else([])
+    ControlVariables([2037, 2037, 0, 2, 1, 6])
+    ConditionalBranch([0, 3643, 0])
+      ConditionalBranch([1, 2037, 0, 1, 0])
+        Script(["@r = rand(50)"])
+        ConditionalBranch([12, "@r <= 2"])
+          ChangeArmor([190, 0, 0, 1, false])
+          JumpToLabel(["stoned"])
+          Empty([])
+
+        BranchEnd([])
+        ConditionalBranch([12, "@r <= 5"])
+          ChangeArmor([238, 0, 0, 1, false])
+          JumpToLabel(["stoned"])
+          Empty([])
+
+        BranchEnd([])
+        ConditionalBranch([12, "@r <= 10"])
+          ChangeItems([214, 0, 0, 1])
+          JumpToLabel(["stoned"])
+          Empty([])
+
+        BranchEnd([])
+        ConditionalBranch([12, "@r <= 15"])
+          ChangeItems([214, 0, 0, 1])
+          JumpToLabel(["stoned"])
+          Empty([])
+
+        BranchEnd([])
+        ConditionalBranch([12, "@r <= 20"])
+          ChangeItems([214, 0, 0, 1])
+          JumpToLabel(["stoned"])
+          Empty([])
+
+        BranchEnd([])
+        ConditionalBranch([12, "@r <= 25"])
+          ChangeItems([277, 0, 0, 1])
+          JumpToLabel(["stoned"])
+          Empty([])
+
+        BranchEnd([])
+        ConditionalBranch([12, "@r <= 30"])
+          ChangeItems([227, 0, 0, 1])
+          JumpToLabel(["stoned"])
+          Empty([])
+
+        BranchEnd([])
+        ConditionalBranch([12, "@r <= 35"])
+          ChangeItems([217, 0, 0, 1])
+          JumpToLabel(["stoned"])
+          Empty([])
+
+        BranchEnd([])
+        ConditionalBranch([12, "@r <= 40"])
+          ChangeItems([202, 0, 0, 1])
+          JumpToLabel(["stoned"])
+          Empty([])
+
+        BranchEnd([])
+        ConditionalBranch([12, "@r <= 45"])
+          ChangeItems([173, 0, 0, 1])
+          JumpToLabel(["stoned"])
+          Empty([])
+
+        BranchEnd([])
+        ChangeItems([224, 0, 0, 1])
+        JumpToLabel(["stoned"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2037, 0, 3, 0])
+      ChangeItems([13, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2037, 0, 6, 0])
+      ChangeItems([255, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["stoned"])
+  ConditionalBranch([12, "!$game_party.members[0].weapons[0].nil?"])
+    ConditionalBranch([12, "$game_party.leader.equips[0] == $data_weapons[144]"])
+      Comment(["Pestle"])
+      Script(["@r = rand(10)"])
+      JumpToLabel(["pestle"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 779, 0])
+    ConditionalBranch([12, "$game_party.members[0].id == 1"])
+      Comment(["Zealot K"])
+      JumpToLabel(["zealot"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 116, 0, 0, 5])
+    ConditionalBranch([12, "$game_variables[116] == \"Alchemist\""])
+      Label(["zealot"])
+      Script(["@r = rand(50)"])
+      Label(["pestle"])
+      Script(["@zealL = "])
+      ScriptMore(["$game_party.item_number($data_items[424])"])
+      ScriptMore(["@zealH = "])
+      ScriptMore(["$game_party.item_number($data_items[425])"])
+      ConditionalBranch([12, "@r < 2"])
+        ConditionalBranch([12, "@zealH >= 99"])
+          ControlVariables([337, 337, 1, 4, "5"])
+          Empty([])
+
+        Else([])
+          ChangeItems([425, 0, 0, 1])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([12, "@r < 6"])
+          ConditionalBranch([12, "@zealL >= 99"])
+            ControlVariables([337, 337, 1, 0, 1])
+            Empty([])
+
+          Else([])
+            ChangeItems([424, 0, 0, 1])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

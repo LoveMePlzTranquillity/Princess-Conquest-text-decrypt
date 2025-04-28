@@ -1,0 +1,20 @@
+CommonEvent 195
+Name = "Auction Timer"
+
+  Loop([])
+    Wait([60])
+    ControlVariables([1245, 1245, 2, 0, 1])
+    ConditionalBranch([1, 1245, 0, 0, 2])
+      ControlVariables([1245, 1245, 0, 0, 0])
+      BreakLoop([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  RepeatAbove([])
+  ControlSwitches([1463, 1463, 1])
+  ControlSwitches([1477, 1477, 1])
+  ControlSwitches([1464, 1464, 0])
+  ControlSwitches([1475, 1475, 1])
+  Empty([])

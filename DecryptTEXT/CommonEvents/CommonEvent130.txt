@@ -1,0 +1,111 @@
+CommonEvent 130
+Name = "potions"
+
+  Script(["$game_map.sas_hud.refresh_bars"])
+  ConditionalBranch([0, 3642, 0])
+    Script(["@r = rand(5)"])
+    ConditionalBranch([12, "@r < 1"])
+      Script(["@r = rand(7)"])
+      ConditionalBranch([12, "@r < 1"])
+        ChangeParameters([1, 35, 2, 0, 0, 1])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["The item had an additional effect! \\c[18]Attack\\c[0] increased by \\c[18]1\\c[0]!"])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([12, "@r < 2"])
+          ChangeParameters([1, 35, 3, 0, 0, 1])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["The item had an additional effect! \\c[18]Defense\\c[0] increased by \\c[18]1\\c[0]!"])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([12, "@r < 3"])
+            ChangeParameters([1, 35, 4, 0, 0, 1])
+            ShowTextAttributes(["", 0, 0, 2])
+            ShowText(["The item had an additional effect! \\c[18]Magic Attack\\c[0] increased by \\c[18]1\\c[0]!"])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([12, "@r < 4"])
+              ChangeParameters([1, 35, 5, 0, 0, 1])
+              ShowTextAttributes(["", 0, 0, 2])
+              ShowText(["The item had an additional effect! \\c[18]Magic Defense\\c[0] increased by \\c[18]1\\c[0]!"])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([12, "@r < 5"])
+                ChangeParameters([1, 35, 6, 0, 0, 1])
+                ShowTextAttributes(["", 0, 0, 2])
+                ShowText(["The item had an additional effect! \\c[18]Agility\\c[0] increased by \\c[18]1\\c[0]!"])
+                Empty([])
+
+              Else([])
+                ChangeParameters([1, 35, 7, 0, 0, 1])
+                ShowTextAttributes(["", 0, 0, 2])
+                ShowText(["The item had an additional effect! \\c[18]Luck\\c[0] increased by \\c[18]1\\c[0]!"])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Script(["@succ = $game_variables[6401][5] rescue -1"])
+  ConditionalBranch([12, "$game_actors[8].state?(29) == true && @succ != 2"])
+    ConditionalBranch([4, 8, 0])
+      ConditionalBranch([0, 2758, 1])
+        ControlSwitches([2758, 2758, 0])
+        ShowPicture([1, "Insect Princess dial love", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Insect Princess:"])
+        ShowText(["Mmmm...\\.\\.\\. Sweet,\\. sweet honey!\\.\\."])
+        ErasePicture([1])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Script(["@succ = $game_variables[6401][9] rescue -1"])
+  ConditionalBranch([12, "$game_actors[14].state?(28) == true && @succ != 2"])
+    ConditionalBranch([4, 14, 0])
+      ConditionalBranch([0, 2759, 1])
+        ControlSwitches([2759, 2759, 0])
+        ShowPicture([1, "GoblinP dial", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Goblin Princess:"])
+        ShowText(["Mhh!\\.\\. *hicc*\\.\\. This is tashty~"])
+        ShowPicture([1, "GoblinP dial aroused", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Goblin Princess:"])
+        ShowText(["Nothing better than cheap booze this hour of the day."])
+        ErasePicture([1])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  CallCommonEvent([868])
+  Empty([])

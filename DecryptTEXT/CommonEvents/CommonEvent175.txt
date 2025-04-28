@@ -1,0 +1,11 @@
+CommonEvent 175
+Name = "rest price"
+
+  Script(["$game_variables[1190] = 0"])
+  ScriptMore(["@i = 0"])
+  ScriptMore(["while @i < $game_party.members.size"])
+  ScriptMore(["$game_variables[1190] += $game_party.members[@i].level"])
+  ScriptMore(["@i += 1"])
+  ScriptMore(["end"])
+  ScriptMore(["$game_variables[1190] *= $game_variables[1191]"])
+  Empty([])

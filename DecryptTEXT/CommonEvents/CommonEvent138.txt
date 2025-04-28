@@ -1,0 +1,50 @@
+CommonEvent 138
+Name = "Wendigo Form"
+
+  ConditionalBranch([0, 3064, 0])
+    Comment(["Knight High Grass"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 739, 1])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 4450, 0])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.leader.class_id == 156"])
+    ConditionalBranch([1, 4134, 0, 3, 1])
+      ControlSwitches([1739, 1739, 0])
+      CallCommonEvent([137])
+      ShowAnimation([-1, 171, false])
+      Wait([10])
+      Script(["$game_variables[3861] = \"$WendigoP\""])
+      ConditionalBranch([0, 3064, 0])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$Field%(4)\\\", 0])\", \"RPG::MoveCommand(@code=34, @parameters=[])\", \"RPG::MoveCommand(@code=31, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$Field%(4)\", 0])"])
+        Unnamed(["RPG::MoveCommand(@code=34, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=31, @parameters=[])"])
+        Empty([])
+
+      Else([])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$WendigoP\\\", 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$WendigoP\", 0])"])
+        Empty([])
+
+      BranchEnd([])
+      CallCommonEvent([137])
+      Script(["$game_party.leader.add_state(58)"])
+      ControlSwitches([4450, 4450, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["end"])
+  Empty([])

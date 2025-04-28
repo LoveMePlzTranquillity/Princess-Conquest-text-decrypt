@@ -1,0 +1,17 @@
+CommonEvent 121
+Name = "Dash tired"
+
+  Wait([600])
+  Wait([600])
+  ControlVariables([832, 832, 0, 0, 0])
+  ControlSwitches([1076, 1076, 1])
+  ConditionalBranch([12, "$game_party.leader.id == 16"])
+    ConditionalBranch([0, 739, 0])
+      CallCommonEvent([120])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

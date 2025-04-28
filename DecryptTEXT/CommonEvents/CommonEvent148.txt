@@ -1,0 +1,69 @@
+CommonEvent 148
+Name = "DP2 Appears?"
+
+  ConditionalBranch([0, 1770, 0])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_system.menu_disabled"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_message.visible == true"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_map.interpreter.running?"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ControlVariables([1914, 1914, 0, 0, 5])
+  ConditionalBranch([0, 2259, 1])
+    ConditionalBranch([0, 1213, 0])
+      ConditionalBranch([12, "$game_map.map_id == 2"])
+        ConditionalBranch([0, 733, 1])
+          ConditionalBranch([0, 564, 1])
+            ConditionalBranch([12, "$game_actors[1].parent_stat(2) < 1"])
+              ConditionalBranch([0, 2740, 0])
+                ControlVariables([1914, 1914, 0, 2, 1, 15])
+                Empty([])
+
+              Else([])
+                ControlVariables([1914, 1914, 0, 2, 1, 5])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1914, 0, 1, 2])
+    ControlSwitches([2260, 2260, 0])
+    ControlSwitches([2569, 2569, 0])
+    ControlSwitches([1770, 1770, 0])
+    CallCommonEvent([580])
+    ControlSwitches([1770, 1770, 1])
+    ControlSwitches([2569, 2569, 1])
+    Empty([])
+
+  BranchEnd([])
+  Label(["end"])
+  Empty([])

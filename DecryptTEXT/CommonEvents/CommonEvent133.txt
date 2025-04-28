@@ -1,0 +1,118 @@
+CommonEvent 133
+Name = "Revert Fly Sprite"
+
+  Script(["@a = "])
+  ScriptMore(["$game_party.leader.character_index"])
+  Script(["@b = "])
+  ScriptMore(["$game_party.leader.face_name"])
+  Script(["@c = "])
+  ScriptMore(["$game_party.leader.face_index"])
+  ConditionalBranch([12, "$game_party.leader.class_id >= 110 && $game_party.leader.class_id <= 113"])
+    Comment(["lamia"])
+    JumpToLabel(["fly"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.leader.class_id >= 137 && $game_party.leader.class_id <= 141"])
+    Comment(["fairy"])
+    JumpToLabel(["fly"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.leader.class_id >= 149 && $game_party.leader.class_id <= 155"])
+    Comment(["Birds"])
+    JumpToLabel(["fly"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.leader.class_id == 32"])
+    Comment(["FinheadP"])
+    ConditionalBranch([0, 4593, 0])
+      JumpToLabel(["fly"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.leader.class_id == 38"])
+    Comment(["BirdP"])
+    ConditionalBranch([0, 4592, 0])
+      Empty([])
+
+    Else([])
+      JumpToLabel(["fly"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.leader.class_id == 28 || $game_party.leader.class_id == 72 || $game_party.leader.class_id == 201"])
+    Comment(["succubi"])
+    JumpToLabel(["fly"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.leader.class_id == 164"])
+    Comment(["idol"])
+    JumpToLabel(["fly"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.leader.class_id == 202"])
+    Comment(["Feather flight"])
+    JumpToLabel(["fly"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.leader.class_id == 182"])
+    Comment(["pruszka"])
+    ConditionalBranch([0, 497, 0])
+      JumpToLabel(["fly"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.leader.class_id >= 115 && $game_party.leader.class_id <= 117"])
+    Label(["fly"])
+    Script(["@s = $game_variables[629]"])
+    JumpToLabel(["REV"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.leader.class_id == 30"])
+    Script(["@s = \"$WyvP\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.leader.id == 18"])
+    Script(["@s = \"$DraP\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.leader.id == 11"])
+    Script(["@s = \"$DraPII\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.leader.id == 7"])
+    Script(["@s = \"$SliPooz\""])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.leader.id == 1"])
+    Script(["@s = \"$protag\""])
+    Empty([])
+
+  BranchEnd([])
+  Label(["REV"])
+  Script(["$game_party.leader.set_graphic(@s,@a,@b,@c)"])
+  ControlVariables([629, 629, 0, 0, 0])
+  Script(["$game_player.refresh"])
+  ShowTextAttributes(["", 0, 2, 2])
+  ShowText(["\\^\\>"])
+  Wait([15])
+  Empty([])

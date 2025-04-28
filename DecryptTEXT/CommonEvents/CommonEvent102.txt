@@ -1,0 +1,10 @@
+CommonEvent 102
+Name = "Fear Shield"
+
+  ShowAnimation([-1, 56, false])
+  SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Monster3\\\\\\\", @pitch=80, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+  Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Monster3\\\", @pitch=80, @volume=80)\"])"])
+  ControlSwitches([986, 986, 0])
+  ControlSwitches([3471, 3471, 1])
+  ControlVariables([3877, 3877, 0, 0, 0])
+  Empty([])

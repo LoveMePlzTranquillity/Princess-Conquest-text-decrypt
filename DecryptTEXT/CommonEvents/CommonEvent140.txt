@@ -1,0 +1,60 @@
+CommonEvent 140
+Name = "ADULT Gif arrows"
+
+  ConditionalBranch([12, "$game_party.leader.class_id == 123"])
+    Comment(["mimic"])
+    JumpToLabel(["noskip"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3583, 1])
+    ConditionalBranch([12, "$game_party.leader.class_id >= 50"])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["noskip"])
+  ConditionalBranch([0, 1198, 1])
+    ShowPicture([2, "frecce", 1, 1, 902, 903, 200, 200, 255, 0])
+    ConditionalBranch([0, 1197, 0])
+      ErasePicture([2])
+      ErasePicture([3])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "$game_party.members[0].hp <= 1"])
+        EraseEvent([])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([1, 908, 0, 1, 0])
+          ShowPicture([3, "arrowL", 1, 1, 902, 903, 200, 200, 255, 0])
+          Wait([1])
+          ErasePicture([3])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([1, 908, 0, 2, 0])
+            ShowPicture([3, "arrowR", 1, 1, 902, 903, 200, 200, 255, 0])
+            Wait([1])
+            ErasePicture([3])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["end"])
+  Empty([])

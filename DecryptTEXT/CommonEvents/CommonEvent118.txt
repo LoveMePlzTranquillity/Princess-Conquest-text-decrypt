@@ -1,0 +1,10 @@
+CommonEvent 118
+Name = "Dog Dash"
+
+  ControlSwitches([1739, 1739, 0])
+  ControlSwitches([1075, 1075, 0])
+  ShowAnimation([-1, 132, false])
+  ChangeState([0, 16, 0, 218])
+  ControlVariables([832, 832, 1, 0, 1])
+  CallCommonEvent([120])
+  Empty([])

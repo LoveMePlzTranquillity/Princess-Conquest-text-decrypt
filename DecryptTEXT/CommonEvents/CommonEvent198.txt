@@ -1,0 +1,7 @@
+CommonEvent 198
+Name = "Sleep Hammer"
+
+  SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Absorb1\\\\\\\", @pitch=100, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+  Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Absorb1\\\", @pitch=100, @volume=80)\"])"])
+  ControlSwitches([1785, 1785, 0])
+  Empty([])
