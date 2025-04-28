@@ -1,0 +1,1757 @@
+Display Name = ""
+Parallax Name = "Seashell Base"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "Nami/MerchantP"
+
+  Page 0
+    ShowPicture([1, "Nami dial welcome", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Nami:"])
+    ShowText(["Gyahaha!\\.\\. Welcome to my shop,\\. mammal!"])
+    ShowPicture([1, "Nami dial smile", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Nami:"])
+    ShowText(["Only fresh seafood from the surrounding seas,\\. none of that frozen stuff you get in your dry cities!"])
+    ErasePicture([1])
+    Script(["$PU_AUTOMATIC_POPUP = false"])
+    ChangeGold([1, 0, 99999])
+    ChangeGold([0, 1, 584])
+    Script(["$PU_AUTOMATIC_POPUP = true"])
+    ControlVariables([617, 617, 0, 3, 7, 2, 0])
+    ConditionalBranch([1, 3929, 0, 6, 1])
+      ShopProcessing([0, 295, 0, 0, true])
+      ShopItem([0, 330, 0, 0])
+      ShopItem([0, 416, 0, 0])
+      ShopItem([2, 318, 0, 0])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 3929, 0, 4, 1])
+        ShopProcessing([0, 295, 0, 0, true])
+        ShopItem([0, 330, 0, 0])
+        ShopItem([2, 318, 0, 0])
+        Empty([])
+      Else([])
+        ShopProcessing([0, 295, 0, 0, true])
+        ShopItem([0, 330, 0, 0])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ControlVariables([618, 618, 0, 3, 7, 2, 0])
+    ControlVariables([585, 585, 0, 1, 618])
+    ControlVariables([585, 585, 2, 1, 617])
+    ConditionalBranch([1, 585, 0, 0, 5])
+      ControlSwitches([648, 648, 0])
+      Wait([45])
+      Empty([])
+
+    BranchEnd([])
+    CallCommonEvent([868])
+    ShowPicture([1, "Nami dial welcome", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Nami:"])
+    ShowText(["Thank you for your business!\\.\\. "])
+    ConditionalBranch([1, 3929, 0, 4, 4])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Nami:"])
+      ShowText(["Stay a good friend to us,\\. mammal!\\.\\. That way I'll be allowed to sell you more of our goods!"])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([1])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ConditionalBranch([0, 1396, 0])
+      CallCommonEvent([173])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([1, "Merchant pri dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Merchant Princess:"])
+    ShowText(["Welcome traveler,\\. to my Royal Shop!\\.\\. Only the best wares from all around the Kingdom!"])
+    ErasePicture([1])
+    ConditionalBranch([0, 3769, 1])
+      ShowChoices([["Browse her counter", "Ask her to move out"], 5])
+      When([0, "Browse her counter"])
+        Empty([])
+      When([1, "Ask her to move out"])
+        CallCommonEvent([940])
+        ConditionalBranch([0, 3769, 0])
+          JumpToLabel(["mermov"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      WhenCancel([])
+        JumpToLabel(["mermov"])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([1, "Merchant pri dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Merchant Princess:"])
+    ShowText(["I'm sure you'll find on my counter just what you need for your adventure!\\.\\. Go ahead and check!"])
+    ErasePicture([1])
+    Script(["$PU_AUTOMATIC_POPUP = false"])
+    ChangeGold([1, 0, 99999])
+    ChangeGold([0, 1, 584])
+    Script(["$PU_AUTOMATIC_POPUP = true"])
+    ControlVariables([617, 617, 0, 3, 7, 2, 0])
+    ShopProcessing([0, 1, 0, 0, true])
+    ShopItem([0, 2, 0, 0])
+    ShopItem([0, 4, 0, 0])
+    ShopItem([0, 5, 0, 0])
+    ShopItem([0, 295, 0, 0])
+    ShopItem([2, 311, 0, 0])
+    ShopItem([2, 312, 0, 0])
+    ShopItem([2, 313, 0, 0])
+    ControlVariables([618, 618, 0, 3, 7, 2, 0])
+    ControlVariables([585, 585, 0, 1, 618])
+    ControlVariables([585, 585, 2, 1, 617])
+    ConditionalBranch([1, 585, 0, 0, 5])
+      ControlSwitches([648, 648, 0])
+      Wait([45])
+      Empty([])
+
+    BranchEnd([])
+    CallCommonEvent([868])
+    ShowPicture([1, "Merchant pri dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Merchant Princess:"])
+    ShowText(["Thank you,\\. come again!"])
+    ErasePicture([1])
+    Label(["mermov"])
+    Empty([])
+
+CommonEvent 2
+Name = "GateEvent"
+
+  Page 0
+    ConditionalBranch([12, "$game_player.region_id == 2"])
+      ControlSelfSwitch(["A", 0])
+      Empty([])
+
+    BranchEnd([])
+    Wait([10])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ShotBalloonIcon([41, 1, true])
+    ConditionalBranch([0, 4057, 0])
+      ShowPicture([1, "Finhead Soldier dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 7, 2, 2])
+      ShowText(["Prawn Knight:"])
+      ShowText(["?!\\.\\. Ahead the Royal Spire is,\\. that place was sacred to our Princess.\\.\\. Enter can noone!"])
+      ErasePicture([1])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4087, 0])
+      ConditionalBranch([0, 413, 0])
+        ShowPicture([1, "Finhead Soldier dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 7, 2, 2])
+        ShowText(["Prawn Knight:"])
+        ShowText(["?!\\.\\. Ahead the Royal Spire is,\\. in there the Princess rests her fins now."])
+        ErasePicture([1])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        JumpToLabel(["end"])
+        Empty([])
+      BranchEnd([])
+      Wait([30])
+      JumpToLabel(["deposed"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 413, 0])
+      Script(["@lid = $game_party.leader.id"])
+      ConditionalBranch([0, 4039, 1])
+        ConditionalBranch([12, "$game_variables[628] != 1009 && $game_switches[805] == true"])
+          Comment(["Prince Knight / +"])
+          ShotBalloonIcon([-1, 1, false])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["This would be a bad time to visit the Princess.\\.\\. It wouldn't be \\c[18]princely\\c[0] at all!"])
+          SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+          JumpToLabel(["end"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "$game_actors[@lid].equips[4] == $data_armors[302]"])
+        JumpToLabel(["shadow scarf"])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "$game_actors[@lid].equips[4] == $data_armors[172] && $game_switches[413] == true && $game_switches[523] == false"])
+          Label(["shadow scarf"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["The guard can't see you right now,\\. do you want to sneak in?"])
+          ShowChoices([["Yes", "No"], 2])
+          When([0, "Yes"])
+            JumpToLabel(["sneak in"])
+            Empty([])
+          When([1, "No"])
+            Empty([])
+          ChoicesEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 2164, 0])
+        Wait([30])
+        Label(["sleep"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["The guard is asleep,\\. do you want to sneak into the palace?"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Be careful,\\. doing so could undermine your relationship with the finheads...\\.\\.\\. if you're found out."])
+        ShowChoices([["Sneak in.", "No."], 2])
+        When([0, "Sneak in."])
+          Label(["sneak in"])
+          ControlSwitches([2161, 2161, 0])
+          PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+          FadeoutScreen([])
+          Wait([10])
+          ControlVariables([2863, 2863, 0, 0, 1])
+          CallCommonEvent([701])
+          SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=42, @parameters=[255])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+          Unnamed(["RPG::MoveCommand(@code=42, @parameters=[255])"])
+          ControlSwitches([2164, 2164, 1])
+          SetWeatherEffects([:none, 9, 0, false])
+          ErasePicture([9])
+          TransferPlayer([0, 194, 22, 27, 8, 0])
+          JumpToLabel(["end"])
+          Empty([])
+        When([1, "No."])
+          SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+          JumpToLabel(["end"])
+          Empty([])
+        ChoicesEnd([])
+        Empty([])
+      Else([])
+        Comment(["Stealth Checks"])
+        Script(["@t = 0"])
+        Loop([])
+          Comment(["##################"])
+          Comment(["Spika Check"])
+          ConditionalBranch([12, "$game_party.members[@t].class_id == 210"])
+            Script(["$game_variables[2863] = $game_party.members[@t].id"])
+            ShowChoices([["Ability: \\C[1][Biocamouflage]\\C[0]", "Talk to the guard."], 5])
+            When([0, "Ability: \\C[1][Biocamouflage]\\C[0]"])
+              FadeoutScreen([])
+              Wait([10])
+              CallCommonEvent([701])
+              Wait([10])
+              FadeinScreen([])
+              Script(["@n = \"SpikaP dial\""])
+              ScriptMore(["$game_map.screen.pictures[1].show(@n, "])
+              ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+              ShowTextAttributes(["", 0, 2, 2])
+              ShowText(["Spika Princess:"])
+              ShowText(["...\\.\\.\\. sneaky..."])
+              ErasePicture([1])
+              Wait([30])
+              ShowAnimation([-1, 418, false])
+              SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=42, @parameters=[235])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=42, @parameters=[215])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=42, @parameters=[195])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=42, @parameters=[175])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=42, @parameters=[155])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+              Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+              Unnamed(["RPG::MoveCommand(@code=42, @parameters=[235])"])
+              Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+              Unnamed(["RPG::MoveCommand(@code=42, @parameters=[215])"])
+              Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+              Unnamed(["RPG::MoveCommand(@code=42, @parameters=[195])"])
+              Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+              Unnamed(["RPG::MoveCommand(@code=42, @parameters=[175])"])
+              Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+              Unnamed(["RPG::MoveCommand(@code=42, @parameters=[155])"])
+              Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+              Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+              Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+              Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+              Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+              Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+              Wait([60])
+              JumpToLabel(["sneak in"])
+              Empty([])
+            When([1, "Talk to the guard."])
+              Empty([])
+            WhenCancel([])
+              Empty([])
+            ChoicesEnd([])
+            Empty([])
+          BranchEnd([])
+          Comment(["Moss Check"])
+          ConditionalBranch([12, "$game_party.members[@t].class_id == 119"])
+            Script(["$game_variables[2863] = $game_party.members[@t].id"])
+            ShowChoices([["Ability: \\C[11][Hikikomossi]\\C[0]", "Talk to the guard."], 5])
+            When([0, "Ability: \\C[11][Hikikomossi]\\C[0]"])
+              FadeoutScreen([])
+              Wait([10])
+              CallCommonEvent([701])
+              Wait([10])
+              FadeinScreen([])
+              ShowPicture([1, "Moss Princess dial silent", 0, 0, 0, 0, 100, 100, 255, 0])
+              ShowTextAttributes(["", 0, 2, 2])
+              ShowText(["Moss Princess:"])
+              ShowText(["L-\\.l-\\.leave it to me..."])
+              ErasePicture([1])
+              Wait([30])
+              ShowAnimation([-1, 159, false])
+              SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"$MossLump\\\", 0])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+              Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+              Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$MossLump\", 0])"])
+              Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+              Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+              Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+              Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+              Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+              Wait([60])
+              JumpToLabel(["sneak in"])
+              Empty([])
+            When([1, "Talk to the guard."])
+              Empty([])
+            WhenCancel([])
+              Empty([])
+            ChoicesEnd([])
+            Empty([])
+          BranchEnd([])
+          Comment(["##################"])
+          Script(["@t += 1"])
+          ConditionalBranch([12, "@t >= $game_party.members.size"])
+            BreakLoop([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        RepeatAbove([])
+        Comment(["Slime Check"])
+        ConditionalBranch([4, 7, 0])
+          ShowChoices([["Ability: \\C[3][Puddle]\\C[0]", "Talk to the guard."], 2])
+          When([0, "Ability: \\C[3][Puddle]\\C[0]"])
+            FadeoutScreen([])
+            Wait([10])
+            ControlVariables([2863, 2863, 0, 0, 7])
+            CallCommonEvent([701])
+            Wait([10])
+            FadeinScreen([])
+            ShowPicture([1, "Slime Princess dial glad", 0, 0, 0, 0, 100, 100, 255, 0])
+            ShowTextAttributes(["", 0, 2, 2])
+            ShowText(["Slime Princess:"])
+            ShowText(["*Blublub*\\.\\. Leave it to me!"])
+            ErasePicture([1])
+            Wait([30])
+            SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"$SliPpuddle\\\", 0])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+            Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+            Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$SliPpuddle\", 0])"])
+            Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+            Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+            Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+            Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+            Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+            Wait([60])
+            JumpToLabel(["sneak in"])
+            Empty([])
+          When([1, "Talk to the guard."])
+            Empty([])
+          ChoicesEnd([])
+          Empty([])
+        BranchEnd([])
+        ShowPicture([1, "Finhead Soldier dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 7, 2, 2])
+        ShowText(["Prawn Knight:"])
+        ShowText(["?!\\.\\. Ahead the Royal Spire is,\\. in there the Princess rests her fins now."])
+        ErasePicture([1])
+        ConditionalBranch([4, 21, 0])
+          ConditionalBranch([0, 4118, 1])
+            ShowChoices([["Ability: \\C[3][Sleep]\\C[0]", "Go away."], 2])
+            When([0, "Ability: \\C[3][Sleep]\\C[0]"])
+              FadeoutScreen([])
+              Wait([10])
+              ControlVariables([2863, 2863, 0, 0, 21])
+              CallCommonEvent([701])
+              Wait([10])
+              FadeinScreen([])
+              ShowPicture([1, "Moth Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+              ShowTextAttributes(["", 0, 2, 2])
+              ShowText(["Moth Princess:"])
+              ShowText(["Hello mister!\\.\\. Why don't you take a nap?\\.\\. "])
+              ErasePicture([1])
+              Wait([10])
+              ShotBalloonIcon([41, 6, false])
+              ShowPicture([1, "Finhead Soldier dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+              ShowTextAttributes(["", 7, 2, 2])
+              ShowText(["Prawn Knight:"])
+              ShowText(["\\^You what are ...?\\.\\."])
+              ErasePicture([1])
+              ShowAnimation([41, 29, true])
+              ControlSwitches([2164, 2164, 0])
+              Wait([45])
+              JumpToLabel(["sleep"])
+              Empty([])
+            When([1, "Go away."])
+              SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+              Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+              Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+              Empty([])
+            ChoicesEnd([])
+            Empty([])
+          Else([])
+            JumpToLabel(["powder"])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        Else([])
+          Label(["powder"])
+          ConditionalBranch([8, 202])
+            ShowChoices([["[Use Sleep Powder].", "Go away."], 2])
+            When([0, "[Use Sleep Powder]."])
+              ChangeItems([202, 1, 0, 1])
+              Wait([10])
+              ShowTextAttributes(["Hero", 0, 0, 2])
+              ShowText(["Let me just grab some of this..."])
+              Wait([10])
+              ShotBalloonIcon([41, 6, false])
+              ShowPicture([1, "Finhead Soldier dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+              ShowTextAttributes(["", 7, 2, 2])
+              ShowText(["Prawn Knight:"])
+              ShowText(["\\^You what are ...?\\.\\."])
+              ErasePicture([1])
+              ShowAnimation([41, 29, true])
+              ControlSwitches([2164, 2164, 0])
+              Wait([45])
+              JumpToLabel(["sleep"])
+              Empty([])
+            When([1, "Go away."])
+              SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+              Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+              Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+              Empty([])
+            ChoicesEnd([])
+            Empty([])
+          Else([])
+            SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+            Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+            Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      Label(["deposed"])
+      ShowPicture([1, "Finhead Soldier dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 7, 2, 2])
+      ShowText(["Prawn Knight:"])
+      ShowText(["Halt!\\.\\. Princess' past here.\\.\\. Name let me search for your...\\.\\.\\."])
+      ErasePicture([1])
+      CallCommonEvent([833])
+      Wait([20])
+      Comment(["## ########## ##"])
+      Script(["@reqaff = $game_variables[768]"])
+      Comment(["## ########## ##"])
+      ConditionalBranch([1, 628, 0, 1003, 0])
+        Comment(["Stud++"])
+        ShotBalloonIcon([41, 6, false])
+        Wait([10])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+        Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Wait([45])
+        FadeoutScreen([])
+        Wait([15])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+        JumpToLabel(["ChadWalk"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "$game_variables[3929] >= @reqaff"])
+        ShowPicture([1, "Finhead Soldier dial", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 7, 2, 2])
+        ShowText(["Prawn Knight:"])
+        ShowText(["!\\.\\. With you the Princess has business I see,\\. proceed."])
+        ErasePicture([1])
+        PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+        FadeoutScreen([])
+        Label(["ChadWalk"])
+        SetWeatherEffects([:none, 9, 0, false])
+        ErasePicture([9])
+        ConditionalBranch([0, 4080, 0])
+          TransferPlayer([0, 194, 22, 27, 8, 0])
+          Empty([])
+        Else([])
+          ConditionalBranch([0, 4065, 1])
+            TransferPlayer([0, 194, 22, 27, 8, 0])
+            Empty([])
+          Else([])
+            TransferPlayer([0, 194, 22, 21, 8, 0])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      Else([])
+        ShowPicture([1, "Finhead Soldier dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 7, 2, 2])
+        ShowText(["Prawn Knight:"])
+        ShowText(["...\\.\\.\\. no,\\. awaited you're not.\\.\\. Here you won't pass from."])
+        ErasePicture([1])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Label(["end"])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+CommonEvent 3
+Name = "Pillar"
+
+  Page 0
+    CallCommonEvent([92])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([11, 2])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 1])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 1])"])
+      ControlSelfSwitch(["A", 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([11, 4])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=14, @parameters=[-1, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[-1, 0])"])
+      ControlSelfSwitch(["A", 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([11, 6])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=14, @parameters=[1, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[1, 0])"])
+      ControlSelfSwitch(["A", 1])
+      Empty([])
+
+    BranchEnd([])
+    Wait([10])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "ShrimpStair"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Finhead Soldier dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 7, 2, 2])
+    ShowText(["Prawn Knight:"])
+    ShowText(["Duty,\\. I'm on.\\.\\. Bother me,\\. do not."])
+    ErasePicture([1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Leaving this place will cancel \\i[717] \\c[18]Water Breathing\\c[0].\\.\\. Proceed?"])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      FadeoutScreen([])
+      Wait([15])
+      TransferPlayer([0, 96, 17, 24, 2, 0])
+      Empty([])
+
+    When([1, "No"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 8
+Name = "MapPrep"
+
+  Page 0
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    Comment(["------------"])
+    ConditionalBranch([0, 4039, 1])
+      ControlVariables([376, 376, 1, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 376, 0, 24, 1])
+      TransferPlayer([0, 418, 12, 13, 2, 0])
+      ControlVariables([761, 761, 1, 0, 1])
+      ControlVariables([376, 376, 2, 0, 24])
+      ControlSwitches([1770, 1770, 1])
+      CallCommonEvent([194])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    CallCommonEvent([20])
+    ConditionalBranch([0, 413, 0])
+      ControlVariables([848, 848, 0, 0, 2])
+      Empty([])
+
+    Else([])
+      ControlVariables([848, 848, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    CallCommonEvent([984])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["\\>\\^"])
+    Script(["$game_map.refresh"])
+    FadeinScreen([])
+    Label(["end"])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Leaving this place will cancel \\i[717] \\c[18]Water Breathing\\c[0].\\.\\. Proceed?"])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      FadeoutScreen([])
+      Wait([15])
+      TransferPlayer([0, 96, 18, 24, 2, 0])
+      Empty([])
+
+    When([1, "No"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 10
+Name = "RNDcitizen1"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1163])
+    CallCommonEvent([985])
+    Empty([])
+
+CommonEvent 11
+Name = "RNDcitizen1"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1164])
+    CallCommonEvent([985])
+    Empty([])
+
+CommonEvent 12
+Name = "RNDcitizen1"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1165])
+    CallCommonEvent([985])
+    Empty([])
+
+CommonEvent 13
+Name = "RNDcitizen1"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1166])
+    CallCommonEvent([985])
+    Empty([])
+
+CommonEvent 14
+Name = "RNDcitizen1"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1167])
+    CallCommonEvent([985])
+    Empty([])
+
+CommonEvent 15
+Name = "RNDcitizen1"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1168])
+    CallCommonEvent([985])
+    Empty([])
+
+CommonEvent 16
+Name = "RNDcitizen1"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1169])
+    CallCommonEvent([985])
+    Empty([])
+
+CommonEvent 17
+Name = "RNDcitizen1"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1170])
+    CallCommonEvent([985])
+    Empty([])
+
+CommonEvent 18
+Name = "RNDcitizen1"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1171])
+    CallCommonEvent([985])
+    Empty([])
+
+CommonEvent 19
+Name = "RNDcitizen1"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1172])
+    CallCommonEvent([985])
+    Empty([])
+
+CommonEvent 20
+Name = "RNDcitizen1"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1173])
+    CallCommonEvent([985])
+    Empty([])
+
+CommonEvent 21
+Name = "RNDcitizen1"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1174])
+    CallCommonEvent([985])
+    Empty([])
+
+CommonEvent 22
+Name = "RNDcitizen1"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1175])
+    CallCommonEvent([985])
+    Empty([])
+
+CommonEvent 23
+Name = "RNDcitizen1"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1176])
+    CallCommonEvent([985])
+    Empty([])
+
+CommonEvent 24
+Name = "RNDcitizen1"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1177])
+    CallCommonEvent([985])
+    Empty([])
+
+CommonEvent 25
+Name = "NPC3"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Script(["@npc = $game_variables[1248]"])
+    ConditionalBranch([12, "@npc == 1"])
+      CallCommonEvent([556])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@npc == 2"])
+      CallCommonEvent([557])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@npc == 3"])
+      CallCommonEvent([558])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@npc == 4"])
+      CallCommonEvent([496])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@npc == 5"])
+      CallCommonEvent([492])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 26
+Name = "NPC2"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Script(["@npc = $game_variables[1247]"])
+    ConditionalBranch([12, "@npc == 1"])
+      CallCommonEvent([556])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@npc == 2"])
+      CallCommonEvent([557])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@npc == 3"])
+      CallCommonEvent([558])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@npc == 4"])
+      CallCommonEvent([496])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@npc == 5"])
+      CallCommonEvent([492])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 27
+Name = "NPC1"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Script(["@npc = $game_variables[1246]"])
+    ConditionalBranch([12, "@npc == 1"])
+      CallCommonEvent([556])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@npc == 2"])
+      CallCommonEvent([557])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@npc == 3"])
+      CallCommonEvent([558])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@npc == 4"])
+      CallCommonEvent([496])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@npc == 5"])
+      CallCommonEvent([492])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 28
+Name = "Finish tent message"
+
+  Page 0
+    Wait([600])
+    ShowChoices([["Finish!", "Keep going..."], 2])
+    When([0, "Finish!"])
+      ControlSwitches([1202, 1202, 0])
+      Empty([])
+
+    When([1, "Keep going..."])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 29
+Name = "ShrimpStair"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Finhead Soldier dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 7, 2, 2])
+    ShowText(["Prawn Knight:"])
+    ShowText(["Duty,\\. I'm on.\\.\\. Bother me,\\. do not."])
+    ErasePicture([1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 30
+Name = "ShrimpStair"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Finhead Soldier dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 7, 2, 2])
+    ShowText(["Prawn Knight:"])
+    ShowText(["Duty,\\. I'm on.\\.\\. Bother me,\\. do not."])
+    ErasePicture([1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 31
+Name = "ShrimpStair"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Finhead Soldier dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 7, 2, 2])
+    ShowText(["Prawn Knight:"])
+    ShowText(["Duty,\\. I'm on.\\.\\. Bother me,\\. do not."])
+    ErasePicture([1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 32
+Name = "DiveGuard"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Finhead Soldier dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 7, 2, 2])
+    ShowText(["Prawn Knight:"])
+    ShowText(["Stay enjoy your,\\. land-dwellers."])
+    ErasePicture([1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 33
+Name = "region"
+
+  Page 0
+    ConditionalBranch([4, 1, 6, 37])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "$game_player.region_id == 3"])
+        ControlSelfSwitch(["A", 0])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    ControlSelfSwitch(["A", 1])
+    ConditionalBranch([2, "B", 0])
+      JumpToLabel(["status"])
+      Empty([])
+
+    BranchEnd([])
+    ControlSelfSwitch(["B", 0])
+    ShotBalloonIcon([32, 1, false])
+    ShowPicture([1, "Finhead Soldier dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 7, 2, 2])
+    ShowText(["Prawn Knight:"])
+    ShowText(["Halt!"])
+    ErasePicture([1])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Wait([15])
+    ShowPicture([1, "Finhead Soldier dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 7, 2, 2])
+    ShowText(["Prawn Knight:"])
+    ShowText(["Welcome to the Diamond Seashell,\\. stranger.\\.\\. Be mindful of your surroundings and try not to foul our Sea while you stay."])
+    ShowTextAttributes(["", 7, 2, 2])
+    ShowText(["Prawn Knight:"])
+    ShowText(["By order of the one and only Princess of the Seas,\\. we offer every foreigner a way to safely enjoy their time here."])
+    ErasePicture([1])
+    Wait([15])
+    PlaySE(["RPG::SE(@name=\"Equip2\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The guard takes out little pieces of a golden substance from his satchel,\\. pointing your team to put a piece of it in your mouths."])
+    Wait([30])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["It's chewy and...\\.\\.\\. soapy...\\.\\.\\."])
+    Wait([15])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["!!"])
+    Label(["status"])
+    ChangeState([0, 0, 0, 37])
+    ShowAnimation([-1, 43, true])
+    Wait([10])
+    PlaySE(["RPG::SE(@name=\"Item Sound\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\i[717] \\c[18]Water Breathing\\c[0] has been granted to your team!"])
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 413, 12, 18, 8, 0])
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 416, 12, 18, 8, 0])
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 417, 12, 18, 8, 0])
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 415, 12, 18, 8, 0])
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 418, 12, 18, 8, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 419, 12, 18, 8, 0])
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 421, 12, 18, 8, 0])
+    Empty([])
+
+CommonEvent 41
+Name = "FinGuard"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 422, 12, 18, 8, 0])
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    Empty([])
+
+CommonEvent 44
+Name = "Bubbles"
+
+  Page 0
+    Comment(["<always update>"])
+    Wait([360])
+    Label(["again"])
+    Script(["@id = @event_id"])
+    ControlVariables([2062, 2062, 0, 2, 10, 80])
+    ControlVariables([2063, 2063, 0, 2, 10, 55])
+    Comment(["Not on player"])
+    GetLocationInfo([2949, 5, 1, 2062, 2063])
+    ConditionalBranch([12, "$game_variables[2949] != 5 && $game_variables[2949] != 9"])
+      Wait([20])
+      JumpToLabel(["again"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_map.passable?($game_variables[2062], $game_variables[2063], 2)"])
+      Script(["@x = $game_variables[2062]"])
+      ScriptMore(["@y = $game_variables[2063]"])
+      Script(["$game_map.events[@id].moveto(@x,@y)"])
+      Wait([45])
+      JumpToLabel(["again"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 45
+Name = "Bubbles"
+
+  Page 0
+    Comment(["<always update>"])
+    Wait([450])
+    Label(["again"])
+    Script(["@id = @event_id"])
+    ControlVariables([2062, 2062, 0, 2, 10, 80])
+    ControlVariables([2063, 2063, 0, 2, 10, 55])
+    Comment(["Not on player"])
+    GetLocationInfo([2949, 5, 1, 2062, 2063])
+    ConditionalBranch([12, "$game_variables[2949] != 5 && $game_variables[2949] != 9"])
+      Wait([20])
+      JumpToLabel(["again"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_map.passable?($game_variables[2062], $game_variables[2063], 2)"])
+      Script(["@x = $game_variables[2062]"])
+      ScriptMore(["@y = $game_variables[2063]"])
+      Script(["$game_map.events[@id].moveto(@x,@y)"])
+      Wait([45])
+      JumpToLabel(["again"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 46
+Name = "Bubbles"
+
+  Page 0
+    Comment(["<always update>"])
+    Wait([580])
+    Label(["again"])
+    Script(["@id = @event_id"])
+    ControlVariables([2062, 2062, 0, 2, 10, 80])
+    ControlVariables([2063, 2063, 0, 2, 10, 55])
+    Comment(["Not on player"])
+    GetLocationInfo([2949, 5, 1, 2062, 2063])
+    ConditionalBranch([12, "$game_variables[2949] != 5 && $game_variables[2949] != 9"])
+      Wait([20])
+      JumpToLabel(["again"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_map.passable?($game_variables[2062], $game_variables[2063], 2)"])
+      Script(["@x = $game_variables[2062]"])
+      ScriptMore(["@y = $game_variables[2063]"])
+      Script(["$game_map.events[@id].moveto(@x,@y)"])
+      Wait([45])
+      JumpToLabel(["again"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 47
+Name = "Bubbles"
+
+  Page 0
+    Comment(["<always update>"])
+    Wait([520])
+    Label(["again"])
+    Script(["@id = @event_id"])
+    ControlVariables([2062, 2062, 0, 2, 10, 80])
+    ControlVariables([2063, 2063, 0, 2, 10, 55])
+    Comment(["Not on player"])
+    GetLocationInfo([2949, 5, 1, 2062, 2063])
+    ConditionalBranch([12, "$game_variables[2949] != 5 && $game_variables[2949] != 9"])
+      Wait([20])
+      JumpToLabel(["again"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_map.passable?($game_variables[2062], $game_variables[2063], 2)"])
+      Script(["@x = $game_variables[2062]"])
+      ScriptMore(["@y = $game_variables[2063]"])
+      Script(["$game_map.events[@id].moveto(@x,@y)"])
+      Wait([45])
+      JumpToLabel(["again"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 48
+Name = "Bubbles"
+
+  Page 0
+    Comment(["<always update>"])
+    Wait([540])
+    Label(["again"])
+    Script(["@id = @event_id"])
+    ControlVariables([2062, 2062, 0, 2, 10, 80])
+    ControlVariables([2063, 2063, 0, 2, 10, 55])
+    Comment(["Not on player"])
+    GetLocationInfo([2949, 5, 1, 2062, 2063])
+    ConditionalBranch([12, "$game_variables[2949] != 5 && $game_variables[2949] != 9"])
+      Wait([20])
+      JumpToLabel(["again"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_map.passable?($game_variables[2062], $game_variables[2063], 2)"])
+      Script(["@x = $game_variables[2062]"])
+      ScriptMore(["@y = $game_variables[2063]"])
+      Script(["$game_map.events[@id].moveto(@x,@y)"])
+      Wait([45])
+      JumpToLabel(["again"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 49
+Name = "Bubbles"
+
+  Page 0
+    Comment(["<always update>"])
+    Wait([390])
+    Label(["again"])
+    Script(["@id = @event_id"])
+    ControlVariables([2062, 2062, 0, 2, 10, 80])
+    ControlVariables([2063, 2063, 0, 2, 10, 55])
+    Comment(["Not on player"])
+    GetLocationInfo([2949, 5, 1, 2062, 2063])
+    ConditionalBranch([12, "$game_variables[2949] != 5 && $game_variables[2949] != 9"])
+      Wait([20])
+      JumpToLabel(["again"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_map.passable?($game_variables[2062], $game_variables[2063], 2)"])
+      Script(["@x = $game_variables[2062]"])
+      ScriptMore(["@y = $game_variables[2063]"])
+      Script(["$game_map.events[@id].moveto(@x,@y)"])
+      Wait([45])
+      JumpToLabel(["again"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 50
+Name = "ShrimpStair"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Finhead Soldier dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 7, 2, 2])
+    ShowText(["Prawn Knight:"])
+    ShowText(["Here you can't leave.\\.\\. Princess order."])
+    ErasePicture([1])
+    TransferPlayer([0, 166, 54, 55, 8, 0])
+    Empty([])
+
+CommonEvent 51
+Name = "Bubbles"
+
+  Page 0
+    Comment(["<always update>"])
+    Wait([390])
+    Label(["again"])
+    Script(["@id = @event_id"])
+    ControlVariables([2062, 2062, 0, 2, 10, 80])
+    ControlVariables([2063, 2063, 0, 2, 10, 55])
+    Comment(["Not on player"])
+    GetLocationInfo([2949, 5, 1, 2062, 2063])
+    ConditionalBranch([12, "$game_variables[2949] != 5 && $game_variables[2949] != 9"])
+      Wait([20])
+      JumpToLabel(["again"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_map.passable?($game_variables[2062], $game_variables[2063], 2)"])
+      Script(["@x = $game_variables[2062]"])
+      ScriptMore(["@y = $game_variables[2063]"])
+      Script(["$game_map.events[@id].moveto(@x,@y)"])
+      Wait([45])
+      JumpToLabel(["again"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 52
+Name = "Bubbles"
+
+  Page 0
+    Comment(["<always update>"])
+    Wait([440])
+    Label(["again"])
+    Script(["@id = @event_id"])
+    ControlVariables([2062, 2062, 0, 2, 10, 80])
+    ControlVariables([2063, 2063, 0, 2, 10, 55])
+    Comment(["Not on player"])
+    GetLocationInfo([2949, 5, 1, 2062, 2063])
+    ConditionalBranch([12, "$game_variables[2949] != 5 && $game_variables[2949] != 9"])
+      Wait([20])
+      JumpToLabel(["again"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_map.passable?($game_variables[2062], $game_variables[2063], 2)"])
+      Script(["@x = $game_variables[2062]"])
+      ScriptMore(["@y = $game_variables[2063]"])
+      Script(["$game_map.events[@id].moveto(@x,@y)"])
+      Wait([45])
+      JumpToLabel(["again"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 53
+Name = "Bubbles"
+
+  Page 0
+    Comment(["<always update>"])
+    Wait([500])
+    Label(["again"])
+    Script(["@id = @event_id"])
+    ControlVariables([2062, 2062, 0, 2, 10, 80])
+    ControlVariables([2063, 2063, 0, 2, 10, 55])
+    Comment(["Not on player"])
+    GetLocationInfo([2949, 5, 1, 2062, 2063])
+    ConditionalBranch([12, "$game_variables[2949] != 5 && $game_variables[2949] != 9"])
+      Wait([20])
+      JumpToLabel(["again"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_map.passable?($game_variables[2062], $game_variables[2063], 2)"])
+      Script(["@x = $game_variables[2062]"])
+      ScriptMore(["@y = $game_variables[2063]"])
+      Script(["$game_map.events[@id].moveto(@x,@y)"])
+      Wait([45])
+      JumpToLabel(["again"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 54
+Name = "Bubbles"
+
+  Page 0
+    Comment(["<always update>"])
+    Wait([240])
+    Label(["again"])
+    Script(["@id = @event_id"])
+    ControlVariables([2062, 2062, 0, 2, 10, 80])
+    ControlVariables([2063, 2063, 0, 2, 10, 55])
+    Comment(["Not on player"])
+    GetLocationInfo([2949, 5, 1, 2062, 2063])
+    ConditionalBranch([12, "$game_variables[2949] != 5 && $game_variables[2949] != 9"])
+      Wait([20])
+      JumpToLabel(["again"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_map.passable?($game_variables[2062], $game_variables[2063], 2)"])
+      Script(["@x = $game_variables[2062]"])
+      ScriptMore(["@y = $game_variables[2063]"])
+      Script(["$game_map.events[@id].moveto(@x,@y)"])
+      Wait([45])
+      JumpToLabel(["again"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 55
+Name = "Bubbles"
+
+  Page 0
+    Comment(["<always update>"])
+    Wait([540])
+    Label(["again"])
+    Script(["@id = @event_id"])
+    ControlVariables([2062, 2062, 0, 2, 10, 80])
+    ControlVariables([2063, 2063, 0, 2, 10, 55])
+    Comment(["Not on player"])
+    GetLocationInfo([2949, 5, 1, 2062, 2063])
+    ConditionalBranch([12, "$game_variables[2949] != 5 && $game_variables[2949] != 9"])
+      Wait([20])
+      JumpToLabel(["again"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_map.passable?($game_variables[2062], $game_variables[2063], 2)"])
+      Script(["@x = $game_variables[2062]"])
+      ScriptMore(["@y = $game_variables[2063]"])
+      Script(["$game_map.events[@id].moveto(@x,@y)"])
+      Wait([45])
+      JumpToLabel(["again"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 56
+Name = "ShrimpStair"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Finhead Soldier dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 7, 2, 2])
+    ShowText(["Prawn Knight:"])
+    ShowText(["Here you can't leave.\\.\\. Princess order."])
+    ErasePicture([1])
+    TransferPlayer([0, 166, 55, 55, 8, 0])
+    Empty([])
+
+CommonEvent 57
+Name = "ShrimpStair"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Finhead Soldier dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 7, 2, 2])
+    ShowText(["Prawn Knight:"])
+    ShowText(["This Inn you can't enter.\\.\\. Princess order."])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 58
+Name = "Lamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 59
+Name = "Lamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 60
+Name = "Lamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 61
+Name = "Lamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 62
+Name = "Lamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 63
+Name = "Statues"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[collision_x 4]"])
+    Comment(["[collision_y 3]"])
+    Empty([])
+
+CommonEvent 64
+Name = "Lamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 65
+Name = "Lamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 66
+Name = "TP"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 430, 12, 18, 8, 0])
+    Empty([])
+
+CommonEvent 67
+Name = "Statues"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[collision_x 4]"])
+    Comment(["[collision_y 3]"])
+    Empty([])
+
+CommonEvent 68
+Name = "Statues"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[collision_x 4]"])
+    Comment(["[collision_y 3]"])
+    Empty([])
+
+CommonEvent 69
+Name = "Statues"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[collision_x 4]"])
+    Comment(["[collision_y 3]"])
+    Empty([])
+
+CommonEvent 70
+Name = "Statues"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[collision_x 4]"])
+    Comment(["[collision_y 3]"])
+    Empty([])
+
+CommonEvent 71
+Name = "Statues"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])

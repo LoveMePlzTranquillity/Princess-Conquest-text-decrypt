@@ -1,0 +1,358 @@
+Display Name = ""
+Parallax Name = "DQ room red"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Comment(["<always_update>"])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Comment(["<always_update>"])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Comment(["<always_update>"])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Comment(["<always_update>"])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "Door"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+CommonEvent 17
+Name = "DragonEnd"
+
+  Page 0
+    CallCommonEvent([242])
+    PlayBGM(["RPG::BGM(@name=\"P&C - Foreplay Fantaisie\", @volume=100, @pitch=100)"])
+    ControlVariables([850, 850, 0, 0, 1])
+    Wait([120])
+    Script(["Font.default_name = [\"04B_19\"]"])
+    ScriptMore(["Font.default_size = 22"])
+    Script(["@win=Window_Base.new(275,200,250,100)"])
+    ScriptMore(["@win.opacity = 255"])
+    Script(["@text = \""])
+    ScriptMore(["That night...\""])
+    ScriptMore(["@win.draw_text_ex(34,3,@text)"])
+    Script(["Font.default_name = [\"foo\"]"])
+    ScriptMore(["Font.default_size = 30"])
+    Wait([180])
+    Script(["@win.dispose"])
+    Wait([120])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Dragon Princess I:"])
+    ShowText(["You had some nerve cutting in on my meeting like that,\\. sir Knight.\\.\\."])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Mmf...\\.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Dragon Princess I:"])
+    ShowText(["Just where do you get off,\\. hmm?\\.\\. Who told you that you had any kind of p-\\.p-\\.Ower?\\.\\."])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["...\\.\\.\\.!\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Dragon Princess I:"])
+    ShowText(["I oughta cook you on the spot,\\. stepping out of line...\\.\\.\\.~"])
+    Wait([30])
+    FadeinScreen([])
+    Wait([30])
+    ShowPicture([1, "Dragon pri dial love naked", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dragon Princess I:"])
+    ShowText(["But I think this should teach you~"])
+    ErasePicture([1])
+    ControlSwitches([1455, 1455, 0])
+    Wait([120])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["...\\.\\.\\."])
+    Wait([120])
+    ShowPicture([1, "Dragon pri dial love naked", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dragon Princess I:"])
+    ShowText(["Mmmn...\\.\\.\\. you just love trying to act all cool around me.\\.\\. How ridiculous.\\.\\."])
+    ErasePicture([1])
+    Wait([180])
+    ShowPicture([1, "Dragon pri dial love naked", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dragon Princess I:"])
+    ShowText(["Do you like it when I ‘punish’ you?\\.\\. "])
+    ShowText(["Is that it?\\.\\."])
+    ErasePicture([1])
+    Wait([180])
+    ShowPicture([1, "Dragon pri dial love naked", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dragon Princess I:"])
+    ShowText(["Getting your sick nightly pleasures from me roughing you up like this?\\.\\."])
+    ErasePicture([1])
+    Wait([180])
+    ShowPicture([1, "Dragon pri dial love naked", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dragon Princess I:"])
+    ShowText(["Are you maybe addicted?\\.\\.~ Is that why?\\.\\.~"])
+    ErasePicture([1])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The Princess’ chuckles end in a pleased coo.\\.\\."])
+    ControlSwitches([1196, 1196, 0])
+    Wait([180])
+    ShowPicture([1, "Dragon pri dial love naked", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dragon Princess I:"])
+    ShowText(["I don’t know what to do with you,\\. my foolish,\\. perverted,\\. ignorant Knight.\\.\\."])
+    ErasePicture([1])
+    Wait([180])
+    ShowPicture([1, "Dragon pri dial love naked", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dragon Princess I:"])
+    ShowText(["...\\.\\.\\."])
+    ErasePicture([1])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["!!!"])
+    ControlSwitches([1454, 1454, 0])
+    Wait([300])
+    ShowPicture([1, "Dragon pri dial love naked", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dragon Princess I:"])
+    ShowText(["Heheh...\\.\\.\\. my Knight...\\.\\.\\.~"])
+    ErasePicture([1])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 18
+Name = "DraEndAni"
+
+  Page 0
+    ControlSwitches([1824, 1824, 0])
+    ControlVariables([902, 902, 0, 3, 5, -1, 3])
+    ConditionalBranch([1, 902, 0, 155, 2])
+      ControlVariables([902, 902, 0, 0, 155])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 902, 0, 645, 1])
+        ControlVariables([902, 902, 0, 0, 645])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ControlVariables([903, 903, 0, 3, 5, -1, 4])
+    ConditionalBranch([1, 903, 0, 110, 2])
+      ControlVariables([903, 903, 0, 0, 110])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 903, 0, 498, 1])
+        ControlVariables([903, 903, 0, 0, 498])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Loop([])
+      ShowPicture([99, "dpI1f1", 1, 1, 902, 903, 200, 200, 255, 0])
+      ConditionalBranch([0, 1196, 0])
+        Wait([6])
+        Empty([])
+      Else([])
+        Wait([8])
+        Empty([])
+      BranchEnd([])
+      ShowPicture([99, "dpI1f2", 1, 1, 902, 903, 200, 200, 255, 0])
+      ConditionalBranch([0, 1196, 0])
+        Wait([6])
+        Empty([])
+      Else([])
+        Wait([8])
+        Empty([])
+      BranchEnd([])
+      ShowPicture([99, "dpI1f3", 1, 1, 902, 903, 200, 200, 255, 0])
+      ConditionalBranch([0, 1196, 0])
+        Wait([6])
+        Empty([])
+      Else([])
+        Wait([8])
+        Empty([])
+      BranchEnd([])
+      ShakeScreen([3, 3, 15, false])
+      PlaySE(["RPG::SE(@name=\"Absorb1\", @pitch=140, @volume=60)"])
+      ShowPicture([99, "dpI1f4", 1, 1, 902, 903, 200, 200, 255, 0])
+      ConditionalBranch([0, 1196, 0])
+        Wait([6])
+        Empty([])
+      Else([])
+        Wait([8])
+        Empty([])
+      BranchEnd([])
+      ShowPicture([99, "dpI1f5", 1, 1, 902, 903, 200, 200, 255, 0])
+      ConditionalBranch([0, 1196, 0])
+        Wait([6])
+        Empty([])
+      Else([])
+        Wait([8])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 1454, 0])
+        BreakLoop([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    RepeatAbove([])
+    ShowPicture([99, "dpI1f1", 1, 1, 902, 903, 200, 200, 255, 0])
+    Wait([8])
+    ShowPicture([99, "dpI1f2", 1, 1, 902, 903, 200, 200, 255, 0])
+    Wait([8])
+    ShowPicture([99, "dpI1f3", 1, 1, 902, 903, 200, 200, 255, 0])
+    Wait([8])
+    ShakeScreen([3, 3, 15, false])
+    PlaySE(["RPG::SE(@name=\"Absorb1\", @pitch=140, @volume=60)"])
+    ShowPicture([99, "dpI1f4", 1, 1, 902, 903, 200, 200, 255, 0])
+    Wait([8])
+    ShowPicture([99, "dpI1f5", 1, 1, 902, 903, 200, 200, 255, 0])
+    Wait([8])
+    ShakeScreen([5, 3, 15, false])
+    PlaySE(["RPG::SE(@name=\"Absorb1\", @pitch=140, @volume=80)"])
+    ShowPicture([99, "dpI1f6", 1, 1, 902, 903, 200, 200, 255, 0])
+    Wait([8])
+    ShowPicture([99, "dpI1f7", 1, 1, 902, 903, 200, 200, 255, 0])
+    Wait([8])
+    ShowPicture([99, "dpI1f8", 1, 1, 902, 903, 200, 200, 255, 0])
+    Wait([16])
+    ShakeScreen([4, 3, 15, false])
+    PlaySE(["RPG::SE(@name=\"Absorb1\", @pitch=140, @volume=80)"])
+    ShowPicture([99, "dpI1f9", 1, 1, 902, 903, 200, 200, 255, 0])
+    Wait([8])
+    ShowPicture([99, "dpI1f10", 1, 1, 902, 903, 200, 200, 255, 0])
+    Wait([8])
+    ShowPicture([99, "dpI1f11", 1, 1, 902, 903, 200, 200, 255, 0])
+    Wait([16])
+    ShakeScreen([3, 3, 15, false])
+    PlaySE(["RPG::SE(@name=\"Absorb1\", @pitch=140, @volume=80)"])
+    ShowPicture([99, "dpI1f12", 1, 1, 902, 903, 200, 200, 255, 0])
+    Wait([8])
+    ShowPicture([99, "dpI1f13", 1, 1, 902, 903, 200, 200, 255, 0])
+    Wait([8])
+    ShowPicture([99, "dpI1f14", 1, 1, 902, 903, 200, 200, 255, 0])
+    Wait([16])
+    ShowPicture([99, "dpI1f15", 1, 1, 902, 903, 200, 200, 255, 0])
+    Wait([8])
+    ShowPicture([99, "dpI1f16", 1, 1, 902, 903, 200, 200, 255, 0])
+    Wait([8])
+    ShowPicture([99, "dpI1f17", 1, 1, 902, 903, 200, 200, 255, 0])
+    Wait([8])
+    ShowPicture([99, "dpI1f18", 1, 1, 902, 903, 200, 200, 255, 0])
+    Wait([24])
+    ShowPicture([99, "dpI1f19", 1, 1, 902, 903, 200, 200, 255, 0])
+    Wait([8])
+    ShowPicture([99, "dpI1f20", 1, 1, 902, 903, 200, 200, 255, 0])
+    Wait([8])
+    ShowPicture([99, "dpI1f21", 1, 1, 902, 903, 200, 200, 255, 0])
+    Wait([8])
+    ShowPicture([99, "dpI1f22", 1, 1, 902, 903, 200, 200, 255, 0])
+    Wait([8])
+    ShowPicture([99, "dpI1f23", 1, 1, 902, 903, 200, 200, 255, 0])
+    Wait([8])
+    ShowPicture([99, "dpI1f24", 1, 1, 902, 903, 200, 200, 255, 0])
+    Wait([8])
+    ShowPicture([99, "dpI1f25", 1, 1, 902, 903, 200, 200, 255, 0])
+    Wait([300])
+    ErasePicture([1])
+    ControlSwitches([4543, 4543, 0])
+    CallCommonEvent([199])
+    Wait([45])
+    FadeoutScreen([])
+    Wait([180])
+    Comment(["Ending Switch"])
+    Script(["$game_switches[10005] = true"])
+    ControlSwitches([742, 742, 0])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])

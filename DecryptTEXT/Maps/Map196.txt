@@ -1,0 +1,67 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 2
+Name = "butt"
+
+  Page 0
+    ShowChoices([["[0,0] >= 0", "Script [0,0] >= 0", "Script 2 >= 0", "[0,0] != 0"], 0])
+    When([0, "[0,0] >= 0"])
+      Script(["$game_variables[1] = 1"])
+      ScriptMore(["$game_variables[2] = [0,0,0]"])
+      ScriptMore(["$game_variables[99] = 15"])
+      ConditionalBranch([12, "$game_variables[1] <= $game_variables[99] && $game_variables[2] >= $game_variables[99]"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["true"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["false"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    When([1, "Script [0,0] >= 0"])
+      Script(["$game_variables[1] = [0,0]"])
+      ScriptMore(["$game_variables[2] = 3"])
+      ScriptMore(["if $game_variables[1] >= $game_variables[2]"])
+      ScriptMore(["print(\"TRUTRU\")"])
+      ScriptMore(["else"])
+      ScriptMore(["print(\"FALFAL\")"])
+      ScriptMore(["end"])
+      Empty([])
+
+    When([2, "Script 2 >= 0"])
+      Script(["$game_variables[1] = 2"])
+      Script(["if $game_variables[1] >= 1"])
+      ScriptMore(["print(\"TRUTRU\")"])
+      ScriptMore(["else"])
+      ScriptMore(["print(\"FALFAL\")"])
+      ScriptMore(["end"])
+      Empty([])
+
+    When([3, "[0,0] != 0"])
+      Script(["$game_variables[1] = [0,0]"])
+      ConditionalBranch([12, "$game_variables[1] != 0"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["true"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["false"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])

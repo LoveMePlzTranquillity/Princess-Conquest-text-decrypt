@@ -1,0 +1,508 @@
+Display Name = ""
+Parallax Name = "Kob Room personal"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "KobJewel"
+
+  Page 0
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Hm?\\.\\. The drawer is unlocked..."])
+    Wait([10])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    Wait([10])
+    ShotBalloonIcon([-1, 1, false])
+    ControlSelfSwitch(["C", 0])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Your eyes move to a big blue gem, sitting on the night table."])
+    Wait([15])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Could this be what the Princess was asking for?"])
+    ChangeItems([61, 0, 0, 1])
+    Wait([30])
+    Script(["complete_objective(24, 0)"])
+    ScriptMore(["call_quest_journal(24)"])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    ConditionalBranch([0, 2618, 0])
+      FadeoutScreen([])
+      Wait([15])
+      ControlSwitches([2732, 2732, 0])
+      TransferPlayer([0, 136, 10, 7, 8, 0])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    TransferPlayer([0, 136, 16, 14, 2, 0])
+    Label(["end"])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    ConditionalBranch([0, 2618, 0])
+      FadeoutScreen([])
+      Wait([15])
+      ControlSwitches([2732, 2732, 0])
+      TransferPlayer([0, 136, 10, 7, 8, 0])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    TransferPlayer([0, 136, 16, 14, 2, 0])
+    Label(["end"])
+    Empty([])
+
+CommonEvent 4
+Name = "KobP"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlayBGM(["RPG::BGM(@name=\"P&C - Foreplay Fantaisie\", @volume=90, @pitch=100)"])
+    SetMoveRoute([4, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$KobP\\\", 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$KobP\", 0])"])
+    SetEventLocation([4, 0, 5, 6, 6])
+    Wait([20])
+    FadeinScreen([])
+    Wait([20])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Kobold Princess:"])
+    ShowText(["Like this,\\. my Kni...\\.\\.\\. my King!\\.\\."])
+    Wait([15])
+    ControlSwitches([1198, 1198, 0])
+    ControlSwitches([1409, 1409, 0])
+    Wait([30])
+    EraseEvent([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "Finish tent message"
+
+  Page 0
+    Script(["@w = 0"])
+    Label(["wmore"])
+    ConditionalBranch([0, 2315, 0])
+      ControlSwitches([1202, 1202, 0])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    Wait([60])
+    Script(["@w += 1"])
+    ConditionalBranch([0, 3582, 0])
+      Script(["@w = 0"])
+      JumpToLabel(["wmore"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@w < 10"])
+      JumpToLabel(["wmore"])
+      Empty([])
+
+    BranchEnd([])
+    ShowChoices([["Finish!", "Keep going..."], 2])
+    When([0, "Finish!"])
+      ControlSwitches([1202, 1202, 0])
+      Empty([])
+
+    When([1, "Keep going..."])
+      Empty([])
+
+    ChoicesEnd([])
+    Label(["end"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "Bed"
+
+  Page 0
+    ConditionalBranch([0, 1198, 0])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([4, 2, 0])
+      ShowChoices([["Rest", "Sexy Time"], 5])
+      When([0, "Rest"])
+        ConditionalBranch([0, 2618, 1])
+          ConditionalBranch([0, 2615, 0])
+            Script(["@hap = $game_variables[2880]"])
+            Script(["@r = 2 + rand(3)"])
+            Script(["@day = @hap + @r"])
+            ConditionalBranch([12, "$game_variables[761] > @day"])
+              Wait([15])
+              FadeoutScreen([])
+              Wait([15])
+              ChangeMenuAccess([0])
+              ChangeSaveAccess([0])
+              ControlVariables([376, 376, 0, 0, 6])
+              ChangePartyMember([2, 1, 0])
+              CallCommonEvent([686])
+              FadeoutBGM([2])
+              Wait([120])
+              PlaySE(["RPG::SE(@name=\"Explosion3\", @pitch=100, @volume=80)"])
+              Wait([45])
+              PlaySE(["RPG::SE(@name=\"Monster3\", @pitch=110, @volume=60)"])
+              Wait([10])
+              PlaySE(["RPG::SE(@name=\"Monster3\", @pitch=120, @volume=40)"])
+              Wait([25])
+              PlaySE(["RPG::SE(@name=\"Monster3\", @pitch=100, @volume=70)"])
+              Wait([30])
+              ControlSwitches([2982, 2982, 0])
+              Wait([30])
+              RecoverAll([0, 0])
+              Script(["$game_map.sas_hud.refresh_bars"])
+              ShowTextAttributes(["", 0, 0, 2])
+              ShowText(["You raise up from the bed with a panicked Kobold Princess next to you as the loud noise shakes the very castle.\\.\\."])
+              TransferPlayer([0, 296, 5, 6, 6, 0])
+              JumpToLabel(["end"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([0, 2551, 0])
+          ConditionalBranch([0, 2561, 0])
+            ConditionalBranch([0, 2615, 1])
+              ControlVariables([2880, 2880, 0, 1, 761])
+              Wait([15])
+              FadeoutScreen([])
+              Wait([15])
+              ChangeMenuAccess([0])
+              ChangePartyMember([2, 1, 0])
+              ControlSwitches([2614, 2614, 0])
+              ControlVariables([376, 376, 0, 0, 6])
+              ControlSwitches([1739, 1739, 0])
+              CallCommonEvent([686])
+              FadeoutBGM([2])
+              Wait([120])
+              PlaySE(["RPG::SE(@name=\"Monster2\", @pitch=110, @volume=60)"])
+              Wait([45])
+              PlaySE(["RPG::SE(@name=\"Explosion3\", @pitch=100, @volume=60)"])
+              Wait([30])
+              ShowTextAttributes(["Hero", 0, 0, 2])
+              ShowText(["?\\.\\.!\\.\\."])
+              ShowTextAttributes(["", 0, 0, 2])
+              ShowText(["You had only barely managed to finally drift off to sleep when a noise wakes you.\\.\\."])
+              TransferPlayer([0, 137, 5, 6, 2, 0])
+              Wait([15])
+              FadeinScreen([])
+              ShotBalloonIcon([-1, 2, true])
+              Wait([15])
+              ShowTextAttributes(["Hero", 0, 0, 2])
+              ShowText(["What was that...\\.\\.\\. it sounded far from here,\\. but it was definitely inside the fortress...\\.\\.\\."])
+              ShowPicture([1, "Kobold Princess Dial love", 0, 0, 0, 0, 100, 100, 255, 0])
+              ShowTextAttributes(["", 0, 2, 2])
+              ShowText(["Kobold Princess:"])
+              ShowText(["Mnn...\\.\\.\\. \\N[1],\\. what’s wrong...\\.\\.\\.?\\.\\."])
+              ErasePicture([1])
+              ShowTextAttributes(["", 0, 0, 2])
+              ShowText(["You only just realize that there’s a Kobold nestled into your arms,\\. the Princess sleepily rubbing at her eyes and opening her maw to yawn.\\.\\."])
+              Wait([15])
+              ShowTextAttributes(["Hero", 0, 0, 2])
+              ShowText(["Ah...\\.\\.\\. Princess...\\.\\.\\. it’s nothing,\\. I just heard a noise...\\.\\.\\."])
+              ShowPicture([1, "Kobold Princess Dial love", 0, 0, 0, 0, 100, 100, 255, 0])
+              ShowTextAttributes(["", 0, 2, 2])
+              ShowText(["Kobold Princess:"])
+              ShowText(["Nn...\\.\\.\\. it’s probably just...\\.\\.\\. one of our subjects...\\.\\.\\. causing a ruckus again...\\.\\.\\."])
+              ErasePicture([1])
+              ShowTextAttributes(["", 0, 0, 2])
+              ShowText(["You gently rub the Princess’ head as she nuzzles your chest.\\.\\."])
+              Wait([15])
+              ShowTextAttributes(["Hero", 0, 0, 2])
+              ShowText(["I should go check,\\. Princess.\\.\\. You’re the one who tells me to always be cautious,\\. after all.\\.\\."])
+              ShowTextAttributes(["", 0, 0, 2])
+              ShowText(["The tired Kobold makes a bit of a whining noise as you carefully slide out of her embrace and pull the covers over her.\\.\\."])
+              ShowTextAttributes(["Hero", 0, 0, 2])
+              ShowText(["Wait here,\\. Princess.\\.\\. This shouldn’t take too long,\\. do not worry.\\.\\."])
+              Wait([30])
+              ShotBalloonIcon([7, 10, true])
+              ShotBalloonIcon([-1, 8, true])
+              ShowTextAttributes(["", 0, 0, 2])
+              ShowText(["It looks like she already fell asleep.\\.\\. Rebuilding a reign from the ground up was tiring work,\\. you supposed.\\.\\."])
+              ShotBalloonIcon([0, 4, true])
+              ControlSwitches([2616, 2616, 0])
+              JumpToLabel(["end"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Label(["rest"])
+        Wait([15])
+        FadeoutScreen([])
+        Wait([15])
+        TransferPlayer([0, 137, 5, 6, 2, 0])
+        ConditionalBranch([4, 2, 0])
+          ControlSwitches([2403, 2403, 0])
+          SetEventLocation([4, 0, 6, 6, 2])
+          SetMoveRoute([4, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$KobP\\\", 0])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$KobP\", 0])"])
+          Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+          CallCommonEvent([90])
+          Wait([15])
+          FadeinScreen([])
+          Wait([15])
+          ShowPicture([1, "Kobold Princess Dial love", 0, 0, 0, 0, 100, 100, 255, 0])
+          ShowTextAttributes(["", 0, 2, 2])
+          ShowText(["Kobold Princess:"])
+          ShowText(["Good night,\\. dear~.\\.\\."])
+          ErasePicture([1])
+          Wait([30])
+          FadeoutScreen([])
+          Wait([10])
+          ControlSwitches([2403, 2403, 1])
+          Empty([])
+        BranchEnd([])
+        PlayME(["RPG::ME(@name=\"Inn\", @pitch=100, @volume=100)"])
+        ControlSwitches([413, 413, 1])
+        ControlSwitches([412, 412, 0])
+        ControlVariables([472, 472, 0, 0, 0])
+        ControlVariables([471, 471, 0, 2, 0, 10])
+        ConditionalBranch([1, 471, 0, 4, 2])
+          FadeoutBGS([2])
+          Empty([])
+        Else([])
+          ConditionalBranch([1, 471, 0, 7, 2])
+            Empty([])
+          Else([])
+            FadeoutBGS([2])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        CallCommonEvent([169])
+        CallCommonEvent([686])
+        SetEventLocation([4, 0, 0, 0, 0])
+        SetMoveRoute([4, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"\\\", 0])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"\", 0])"])
+        Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+        Wait([50])
+        TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 10, false])
+        Wait([250])
+        RecoverAll([0, 0])
+        TransferPlayer([0, 137, 5, 8, 2, 0])
+        Script(["$game_map.sas_hud.refresh_bars"])
+        Comment(["######"])
+        Script(["@tI = $game_variables[376]"])
+        ScriptMore(["@tF = 7"])
+        ScriptMore(["@rest = 0"])
+        ScriptMore(["while @tI != @tF"])
+        ScriptMore(["@tI += 1"])
+        ScriptMore(["if @tI == 24"])
+        ScriptMore(["@tI = 0"])
+        ScriptMore(["end"])
+        ScriptMore(["@rest += 1"])
+        ScriptMore(["end"])
+        ScriptMore(["if @rest == 0"])
+        ScriptMore(["@rest = 24"])
+        ScriptMore(["end"])
+        ControlVariables([167, 167, 0, 4, "@rest / 2"])
+        Comment(["######"])
+        CallCommonEvent([742])
+        Comment(["######"])
+        ControlVariables([761, 761, 1, 0, 1])
+        CallCommonEvent([194])
+        ControlVariables([376, 376, 0, 0, 7])
+        Comment(["##################"])
+        ControlVariables([76, 76, 0, 4, "Array.new(100,0)"])
+        ChangeState([0, 0, 1, 222])
+        ChangeState([0, 0, 1, 223])
+        ChangeState([0, 0, 1, 242])
+        ControlVariables([75, 75, 0, 1, 376])
+        Comment(["##################"])
+        ConditionalBranch([0, 3650, 0])
+          ChangeState([0, 0, 0, 31])
+          Empty([])
+        Else([])
+          ChangeState([0, 0, 1, 31])
+          Empty([])
+        BranchEnd([])
+        FadeinScreen([])
+        JumpToLabel(["end"])
+        Empty([])
+      When([1, "Sexy Time"])
+        ConditionalBranch([12, "$game_actors[1].equips[4] == $data_armors[91] "])
+          JumpToLabel(["sexy"])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([12, "$game_actors[1].parent_stat(1) < $game_variables[2026]"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["You don't have enough \\C[14]Endurance\\C[0] to have sex again."])
+          JumpToLabel(["end"])
+          Empty([])
+        Else([])
+          Label(["sexy"])
+          FadeoutScreen([])
+          ControlSwitches([2403, 2403, 0])
+          Wait([30])
+          PlayBGM(["RPG::BGM(@name=\"P&C - Foreplay Fantaisie\", @volume=90, @pitch=100)"])
+          TransferPlayer([0, 137, 6, 6, 4, 0])
+          SetMoveRoute([4, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$KobP\\\", 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$KobP\", 0])"])
+          SetEventLocation([4, 0, 5, 6, 6])
+          CallCommonEvent([90])
+          ControlSwitches([1198, 1198, 0])
+          ControlSwitches([1409, 1409, 0])
+          Wait([15])
+          FadeinScreen([])
+          JumpToLabel(["end"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      WhenCancel([])
+        JumpToLabel(["end"])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ShowChoices([["Rest"], 5])
+    When([0, "Rest"])
+      JumpToLabel(["rest"])
+      Empty([])
+
+    WhenCancel([])
+      JumpToLabel(["end"])
+      Empty([])
+
+    ChoicesEnd([])
+    Label(["end"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["The Princess is still sleeping.\\.\\. I'll go alone,\\. probably it's nothing important."])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Wait([150])
+    ShotBalloonIcon([7, 10, true])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 10
+Name = "KobP Del"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 11
+Name = "Fireplace"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ShowPicture([1, "Kobold Princess Dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Kobold Princess:"])
+    ShowText(["\\N[1]!\\.\\. Something is about to...\\.\\.\\. come out!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Kobold Princess:"])
+    ShowText(["Lay me here and lit up the fire,\\. I'm getting cold!"])
+    ErasePicture([1])
+    ControlVariables([2029, 2029, 0, 0, 1])
+    ControlVariables([3672, 3672, 0, 0, 2])
+    CallCommonEvent([531])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 13
+Name = "Fadein"
+
+  Page 0
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, false])
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 14
+Name = "XMASGift"
+
+  Page 0
+    Comment(["<always update>"])
+    PlaySE(["RPG::SE(@name=\"Equip2\", @pitch=100, @volume=80)"])
+    Wait([10])
+    CallCommonEvent([621])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])

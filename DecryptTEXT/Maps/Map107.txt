@@ -1,0 +1,698 @@
+Display Name = ""
+Parallax Name = "Oasi"
+Note = "<tile lock parallax>\r\n"
+
+CommonEvent 1
+Name = "sliP fainted"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ControlSwitches([1839, 1839, 0])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    Wait([20])
+    ShowPicture([1, "Slime Princess dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Slime Princess:"])
+    ShowText(["\\^Aw aw aw...\\|\\.\\.\\."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Slime Princess:"])
+    ShowText(["\\^*blob*\\.\\.\\. I'm sorry that you have to carry me...\\|\\.\\.\\."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Slime Princess:"])
+    ShowText(["\\^I can't deal with hot temperatures,\\. my body dries up and hardens...\\.\\.\\. it's awful! \\.\\.*blob*|.\\.\\.\\."])
+    ErasePicture([1])
+    Wait([20])
+    SetMoveRoute([1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowPicture([1, "Slime Princess dial glad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Slime Princess:"])
+    ShowText(["\\^But I must admit...\\.\\.\\. getting carried around is not THAT bad,\\. you know?\\|\\.\\.\\."])
+    ErasePicture([1])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["What are you talking about,\\.\\. you could have died!"])
+    ShowAnimation([1, 69, false])
+    SetMoveRoute([1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    ShowPicture([1, "Slime Princess dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Slime Princess:"])
+    ShowText(["\\^Wah!\\|\\.\\.\\."])
+    ErasePicture([1])
+    Wait([30])
+    SetMoveRoute([1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$SliP\\\", 0])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$SliP\", 0])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowPicture([1, "Slime Princess dial glad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Slime Princess:"])
+    ShowText(["\\^Fresh water!\\.\\.\\. Finally!\\|\\.\\.\\."])
+    ErasePicture([1])
+    SetMoveRoute([1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Wait([30])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["\\^You look better now!\\.\\.\\. Take more care of yourself from now on...\\|\\.\\.\\."])
+    Wait([30])
+    ShowAnimation([1, 69, false])
+    SetMoveRoute([1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    Wait([20])
+    ShowAnimation([1, 69, false])
+    SetMoveRoute([1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    ShowPicture([1, "Slime Princess dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Slime Princess:"])
+    ShowText(["\\^Wah!\\. Sto*blob* \\|"])
+    ErasePicture([1])
+    ShowAnimation([1, 69, false])
+    SetMoveRoute([1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    ScrollMap([8, 10, 2])
+    TintScreen(["Tone(@red=-255.0, @green=-255.0, @blue=-255.0, @gray=0.0)", 240, false])
+    ShowPicture([1, "Slime Princess dial glad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Slime Princess:"])
+    ShowText(["\\^Ahahahah!\\.\\. Stop it \\N[1]!\\|\\.\\.\\."])
+    ErasePicture([1])
+    Wait([15])
+    ShowTextAttributes(["Hero", 0, 2, 2])
+    ShowText(["\\^Take this!\\|\\.\\.\\."])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+    FadeoutScreen([])
+    Wait([15])
+    ControlSwitches([1839, 1839, 1])
+    TransferPlayer([0, 2, 82, 72, 2, 0])
+    ControlSwitches([897, 897, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ControlSwitches([643, 643, 1])
+    ControlSwitches([625, 625, 0])
+    Wait([5])
+    ControlSwitches([625, 625, 1])
+    TransferPlayer([0, 2, 82, 72, 2, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ControlSwitches([643, 643, 1])
+    ControlSwitches([625, 625, 0])
+    Wait([5])
+    ControlSwitches([625, 625, 1])
+    TransferPlayer([0, 2, 82, 72, 2, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "TP"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ControlSwitches([643, 643, 1])
+    ControlSwitches([625, 625, 0])
+    Wait([5])
+    ControlSwitches([625, 625, 1])
+    TransferPlayer([0, 2, 82, 72, 2, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ControlSwitches([643, 643, 1])
+    ControlSwitches([625, 625, 0])
+    Wait([5])
+    ControlSwitches([625, 625, 1])
+    TransferPlayer([0, 2, 82, 72, 2, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ControlSwitches([643, 643, 1])
+    ControlSwitches([625, 625, 0])
+    Wait([5])
+    ControlSwitches([625, 625, 1])
+    TransferPlayer([0, 2, 82, 72, 2, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ControlSwitches([643, 643, 1])
+    ControlSwitches([625, 625, 0])
+    Wait([5])
+    ControlSwitches([625, 625, 1])
+    TransferPlayer([0, 2, 82, 72, 2, 0])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ControlSwitches([643, 643, 1])
+    ControlSwitches([625, 625, 0])
+    Wait([5])
+    ControlSwitches([625, 625, 1])
+    TransferPlayer([0, 2, 82, 72, 2, 0])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ControlSwitches([643, 643, 1])
+    ControlSwitches([625, 625, 0])
+    Wait([5])
+    ControlSwitches([625, 625, 1])
+    TransferPlayer([0, 2, 82, 72, 2, 0])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ControlSwitches([643, 643, 1])
+    ControlSwitches([625, 625, 0])
+    Wait([5])
+    ControlSwitches([625, 625, 1])
+    TransferPlayer([0, 2, 82, 72, 2, 0])
+    Empty([])
+
+CommonEvent 12
+Name = "Load"
+
+  Page 0
+    ErasePicture([4])
+    Comment(["-----------"])
+    ControlVariables([850, 850, 0, 0, 1])
+    CallCommonEvent([21])
+    CallCommonEvent([20])
+    ErasePicture([1])
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 13
+Name = "LamiaP"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Lamia Princess dial love2", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Lamia Princess:"])
+    ShowText(["Oh~!\\.\\. If it isn't the kind knight from back then,\\. in the \\c[18]Pyramid\\c[0]!\\.\\. *hissss*"])
+    ShowPicture([1, "Lamia Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Lamia Princess:"])
+    ShowText(["My home,\\. my \\c[18]Sanctuary\\c[0] is ahead,\\. you're welcome at any time!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Lamia Princess:"])
+    ShowText(["Finally,\\. the Princess returns!"])
+    ErasePicture([1])
+    Wait([15])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Wait([90])
+    FadeoutScreen([])
+    Wait([30])
+    ControlSwitches([3346, 3346, 0])
+    Wait([30])
+    FadeinScreen([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ControlSwitches([643, 643, 1])
+    ControlSwitches([625, 625, 0])
+    Wait([10])
+    ControlSwitches([625, 625, 1])
+    ControlSwitches([3347, 3347, 0])
+    ConditionalBranch([0, 3351, 0])
+      ControlVariables([850, 850, 0, 0, 4])
+      Empty([])
+
+    BranchEnd([])
+    TransferPlayer([0, 330, 11, 52, 8, 0])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 18
+Name = "Mimic"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["$game_map.start_sas"])
+    ScriptMore(["$game_map.sas_hud.show(true)"])
+    SaveBGM([])
+    PlayBGM(["RPG::BGM(@name=\"P&C - Battle Theme\", @volume=90, @pitch=100)"])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 20]"])
+    Comment(["[variable 219]"])
+    Comment(["[localsw 1]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    FadeoutBGM([2])
+    ControlVariables([585, 585, 0, 0, 85])
+    ControlSwitches([648, 648, 0])
+    Wait([30])
+    ControlVariables([569, 569, 0, 2, 3, 4])
+    ControlSwitches([650, 650, 0])
+    ControlVariables([2014, 2014, 0, 0, 7])
+    ControlVariables([2014, 2014, 2, 1, 219])
+    ConditionalBranch([1, 2014, 0, 0, 0])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You defeated the Mimic!\\.\\. That was the last one!"])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You defeated the Mimic!\\.\\. Only \\V[2014] left!"])
+      Empty([])
+
+    BranchEnd([])
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    ReplayBGM([])
+    ControlSelfSwitch(["C", 0])
+    Empty([])
+
+  Page 3
+    ControlSelfSwitch(["A", 1])
+    EraseEvent([])
+    Empty([])
+
+  Page 4
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ControlSwitches([643, 643, 1])
+    ControlSwitches([625, 625, 0])
+    Wait([10])
+    ControlSwitches([625, 625, 1])
+    TransferPlayer([0, 330, 4, 52, 8, 0])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ControlSwitches([643, 643, 1])
+    ControlSwitches([625, 625, 0])
+    Wait([10])
+    ControlSwitches([625, 625, 1])
+    TransferPlayer([0, 330, 4, 52, 8, 0])
+    Empty([])
+
+CommonEvent 21
+Name = "+"
+
+  Page 0
+    Script(["@sx = 7"])
+    ScriptMore(["@sy = 12"])
+    ControlVariables([2896, 2896, 0, 0, 0])
+    Script(["$game_variables[2897] = $game_player.x"])
+    ScriptMore(["$game_variables[2898] = $game_player.y"])
+    GetLocationInfo([2896, 5, 1, 2897, 2898])
+    ConditionalBranch([12, "$game_player.region_id != 1 && $game_player.region_id != 2"])
+      Script(["@m = 107"])
+      Script(["@sx = $game_player.x"])
+      ScriptMore(["@sy = $game_player.y"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 3438, 1])
+      ConditionalBranch([12, "$game_player.region_id == 2"])
+        CallCommonEvent([76])
+        ConditionalBranch([0, 3705, 0])
+          ControlSwitches([3438, 3438, 0])
+          ShowAnimation([-1, 138, false])
+          SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=42, @parameters=[155])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=42, @parameters=[155])"])
+          JumpToLabel(["end"])
+          Empty([])
+        Else([])
+          ControlVariables([3677, 3677, 0, 0, 107])
+          ControlVariables([3678, 3678, 0, 4, "@sx"])
+          ControlVariables([3679, 3679, 0, 4, "@sy"])
+          ControlSelfSwitch(["A", 0])
+          JumpToLabel(["end"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 3438, 0])
+      ConditionalBranch([12, "$game_player.region_id == 1 || $game_player.region_id == 5"])
+        ControlSwitches([3438, 3438, 1])
+        ShowAnimation([-1, 138, false])
+        ConditionalBranch([0, 2706, 1])
+          SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=42, @parameters=[255])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=42, @parameters=[255])"])
+          Empty([])
+        BranchEnd([])
+        JumpToLabel(["end"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Label(["end"])
+    Wait([5])
+    Empty([])
+
+  Page 1
+    Script(["@m = $game_variables[3677]"])
+    Script(["@sx = $game_variables[3678]"])
+    ScriptMore(["@sy = $game_variables[3679]"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    ShowAnimation([-1, 138, false])
+    Wait([20])
+    FadeoutScreen([])
+    Wait([25])
+    Script(["$game_player.reserve_transfer(@m,@sx,@sy,0)"])
+    Wait([25])
+    FadeinScreen([])
+    ShotBalloonIcon([-1, 7, true])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+CommonEvent 22
+Name = "Tentacle"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ConditionalBranch([12, "$game_self_switches[[488,2,\"A\"]] == true"])
+      Comment(["eldritch already rec"])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4318, 0])
+      Script(["@r = rand(10)"])
+      ConditionalBranch([12, "@r < 1"])
+        Empty([])
+      Else([])
+        JumpToLabel(["end"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Loop([])
+      ConditionalBranch([12, "($game_player.x - $game_map.events[@event_id].x).abs <= 1.25 && ($game_player.y - $game_map.events[@event_id].y).abs <= 1.25"])
+        ControlVariables([3920, 3920, 0, 0, 9])
+        CallCommonEvent([159])
+        BreakLoop([])
+        Empty([])
+      BranchEnd([])
+      Wait([10])
+      Empty([])
+
+    RepeatAbove([])
+    Label(["end"])
+    EraseEvent([])
+    Label(["endF"])
+    Empty([])
+
+CommonEvent 23
+Name = "DateHeart-Des"
+
+  Page 0
+    Comment(["<always update>"])
+    ControlVariables([768, 768, 0, 4, "\"BeachDes\""])
+    CallCommonEvent([72])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ControlVariables([768, 768, 0, 4, "\"BeachDes\""])
+    CallCommonEvent([72])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 24
+Name = "DateHeart-Har"
+
+  Page 0
+    Comment(["<always update>"])
+    ControlVariables([768, 768, 0, 4, "\"BeachHar\""])
+    CallCommonEvent([72])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ControlVariables([768, 768, 0, 4, "\"BeachHar\""])
+    CallCommonEvent([72])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 25
+Name = "DateHeart-Sha"
+
+  Page 0
+    Comment(["<always update>"])
+    ControlVariables([768, 768, 0, 4, "\"BeachSha\""])
+    CallCommonEvent([72])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ControlVariables([768, 768, 0, 4, "\"BeachSha\""])
+    CallCommonEvent([72])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ControlSwitches([3347, 3347, 0])
+    ControlSwitches([643, 643, 1])
+    ControlSwitches([625, 625, 0])
+    Wait([10])
+    ControlSwitches([625, 625, 1])
+    ConditionalBranch([0, 3351, 0])
+      ControlVariables([850, 850, 0, 0, 4])
+      Empty([])
+
+    BranchEnd([])
+    TransferPlayer([0, 330, 11, 52, 8, 0])
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    ConditionalBranch([0, 643, 0])
+      ConditionalBranch([2, "A", 1])
+        SetEventLocation([37, 1, 574, 575, 0])
+        SetMoveRoute([37, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+        CallCommonEvent([51])
+        ControlSelfSwitch(["A", 0])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Wait([15])
+    Empty([])
+
+  Page 1
+    ControlSelfSwitch(["A", 1])
+    ControlSelfSwitch(["B", 1])
+    ControlSelfSwitch(["C", 1])
+    ControlSelfSwitch(["D", 1])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 37
+Name = "drop1"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["n = $data_weapons[$game_variables[577]]"])
+    ScriptMore(["$game_party.gain_item(n, 1) "])
+    Script(["n = $data_armors[$game_variables[578]]"])
+    ScriptMore(["$game_party.gain_item(n, 1) "])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 38
+Name = "Medulla"
+
+  Page 0
+    CallCommonEvent([569])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])

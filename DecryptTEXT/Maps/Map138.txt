@@ -1,0 +1,207 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["''Diary of the Southern Region exploration''."])
+    ShowText(["Read it?"])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      ShowTextAttributes(["", 0, 0, 1])
+      ShowText(["Day 1: \"I finally reached the summit of the mountain today at 19 o' clock.\""])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\"It's too damn cold to proceed further, I'll start exploring the ruins tomorrow at dawn.\""])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Keep reading?"])
+      ShowChoices([["Yes", "No"], 2])
+      When([0, "Yes"])
+        ShowTextAttributes(["", 0, 0, 1])
+        ShowText(["Day 2: "])
+        ShowText(["\"I moved with the first lights, not like it mattered, considering how dark it was in there.\""])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\"I started placing torches in the galleries, this should make possible to proceed further tomorrow.\""])
+        ShowTextAttributes(["", 0, 2, 1])
+        ShowText(["\"I felt like something was tailing me in there, but I couldn't make contact with it.\""])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Keep reading?"])
+        ShowChoices([["Yes", "No"], 2])
+        When([0, "Yes"])
+          ShowTextAttributes(["", 0, 0, 1])
+          ShowText(["Day 3: "])
+          ShowText(["\"With the tunnels lit it seems like the creature stopped following me, finally I can proceed with my researches.\""])
+          ShowTextAttributes(["", 0, 2, 1])
+          ShowText(["\"Like I did read in that old tome, there are evidences this must be the place where the legendary Wizard Master retired, hiding in a secluded laboratory.\""])
+          ShowTextAttributes(["", 0, 2, 1])
+          ShowText(["\"Would I succeed here, endless fame and fortune would follow... who could tell which marvelous recipes may be hidden here?!\""])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["Keep reading?"])
+          ShowChoices([["Yes", "No"], 2])
+          When([0, "Yes"])
+            ShowTextAttributes(["", 0, 0, 1])
+            ShowText(["Day 4:"])
+            ShowText(["\"What an incredible discovery!\""])
+            ShowTextAttributes(["", 0, 2, 1])
+            ShowText(["\"It was as I tought! Just at the end of the cavern there's an incredible laboratory, it must be HIS!\""])
+            ShowTextAttributes(["", 0, 2, 1])
+            ShowText(["\"Tomorrow I'll start studying the tomes that are laying there but, for what I could read in there, they're nothing short of revolutionary!''"])
+            ShowTextAttributes(["", 0, 0, 2])
+            ShowText(["Keep reading?"])
+            ShowChoices([["Yes", "No"], 2])
+            When([0, "Yes"])
+              ShowTextAttributes(["", 0, 0, 1])
+              ShowText(["Day 5:"])
+              ShowText(["\"I spent all day studying in the abandoned laboratory, I even learnt about one of the Master's taboo researches!\""])
+              ShowTextAttributes(["", 0, 2, 1])
+              ShowText(["\"It seems like he was studying a magic source he found in the cave...  Can you believe it?\""])
+              ShowTextAttributes(["", 0, 2, 1])
+              ShowText(["\"As I was leaving the cave I felt something moving in the dark.\""])
+              ShowTextAttributes(["", 0, 0, 2])
+              ShowText(["\"It was probably the emotion playing tricks on me, but I closed the door of the cavern again, just to be safe.\""])
+              ShowTextAttributes(["", 0, 0, 2])
+              ShowText(["Keep reading?"])
+              ShowChoices([["Yes", "No"], 2])
+              When([0, "Yes"])
+                ShowTextAttributes(["", 0, 0, 2])
+                ShowText(["Looks like some pages are missing."])
+                ShowTextAttributes(["", 0, 2, 1])
+                ShowText(["Day 7:"])
+                ShowText(["\"They're coming for me. I hear their steps! Every corner!\""])
+                Empty([])
+              When([1, "No"])
+                Empty([])
+              ChoicesEnd([])
+              Empty([])
+            When([1, "No"])
+              Empty([])
+            ChoicesEnd([])
+            Empty([])
+          When([1, "No"])
+            Empty([])
+          ChoicesEnd([])
+          Empty([])
+        When([1, "No"])
+          Empty([])
+        ChoicesEnd([])
+        Empty([])
+      When([1, "No"])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    When([1, "No"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    CallCommonEvent([943])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Someone froze to death in here...\\.\\.\\. what a tragic fate..."])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["There's something near the corpse."])
+    Wait([20])
+    ChangeItems([62, 0, 0, 1])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 3
+Name = "TP"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 113, 6, 13, 2, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "Load"
+
+  Page 0
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+    ControlSwitches([3691, 3691, 1])
+    ConditionalBranch([0, 413, 0])
+      TintScreen(["Tone(@red=-34.0, @green=-34.0, @blue=0.0, @gray=34.0)", 1, true])
+      Empty([])
+
+    Else([])
+      TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+      Empty([])
+
+    BranchEnd([])
+    FadeinScreen([])
+    Wait([15])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])

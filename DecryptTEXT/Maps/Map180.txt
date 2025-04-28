@@ -1,0 +1,900 @@
+Display Name = ""
+Parallax Name = "Mossy Cave"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "grass4"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 0]"])
+    Wait([250])
+    ShowAnimation([0, 137, false])
+    Empty([])
+
+  Page 2
+    ControlSwitches([1261, 1261, 1])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 2
+Name = "grass7"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 0]"])
+    Wait([320])
+    ShowAnimation([0, 137, false])
+    Empty([])
+
+  Page 2
+    ControlSwitches([1264, 1264, 1])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 3
+Name = "grass2"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 0]"])
+    Wait([280])
+    ShowAnimation([0, 137, false])
+    Empty([])
+
+  Page 2
+    ControlSwitches([1259, 1259, 1])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 4
+Name = "LoadMapHerbs"
+
+  Page 0
+    ConditionalBranch([0, 1399, 1])
+      ControlSwitches([1258, 1266, 1])
+      ControlVariables([961, 961, 0, 2, 1, 9])
+      ConditionalBranch([1, 961, 0, 1, 0])
+        ControlSwitches([1258, 1258, 0])
+        Empty([])
+      Else([])
+        ConditionalBranch([1, 961, 0, 2, 0])
+          ControlSwitches([1259, 1259, 0])
+          Empty([])
+        Else([])
+          ConditionalBranch([1, 961, 0, 3, 0])
+            ControlSwitches([1260, 1260, 0])
+            Empty([])
+          Else([])
+            ConditionalBranch([1, 961, 0, 4, 0])
+              ControlSwitches([1261, 1261, 0])
+              Empty([])
+            Else([])
+              ConditionalBranch([1, 961, 0, 5, 0])
+                ControlSwitches([1262, 1262, 0])
+                Empty([])
+              Else([])
+                ConditionalBranch([1, 961, 0, 6, 0])
+                  ControlSwitches([1263, 1263, 0])
+                  Empty([])
+                Else([])
+                  ConditionalBranch([1, 961, 0, 7, 0])
+                    ControlSwitches([1264, 1264, 0])
+                    Empty([])
+                  Else([])
+                    ConditionalBranch([1, 961, 0, 8, 0])
+                      ControlSwitches([1265, 1265, 0])
+                      Empty([])
+                    Else([])
+                      ConditionalBranch([1, 961, 0, 9, 0])
+                        ControlSwitches([1266, 1266, 0])
+                        Empty([])
+                      BranchEnd([])
+                      Empty([])
+                    BranchEnd([])
+                    Empty([])
+                  BranchEnd([])
+                  Empty([])
+                BranchEnd([])
+                Empty([])
+              BranchEnd([])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      ControlVariables([961, 961, 0, 2, 1, 9])
+      ConditionalBranch([1, 961, 0, 1, 0])
+        ControlSwitches([1258, 1258, 0])
+        Empty([])
+      Else([])
+        ConditionalBranch([1, 961, 0, 2, 0])
+          ControlSwitches([1259, 1259, 0])
+          Empty([])
+        Else([])
+          ConditionalBranch([1, 961, 0, 3, 0])
+            ControlSwitches([1260, 1260, 0])
+            Empty([])
+          Else([])
+            ConditionalBranch([1, 961, 0, 4, 0])
+              ControlSwitches([1261, 1261, 0])
+              Empty([])
+            Else([])
+              ConditionalBranch([1, 961, 0, 5, 0])
+                ControlSwitches([1262, 1262, 0])
+                Empty([])
+              Else([])
+                ConditionalBranch([1, 961, 0, 6, 0])
+                  ControlSwitches([1263, 1263, 0])
+                  Empty([])
+                Else([])
+                  ConditionalBranch([1, 961, 0, 7, 0])
+                    ControlSwitches([1264, 1264, 0])
+                    Empty([])
+                  Else([])
+                    ConditionalBranch([1, 961, 0, 8, 0])
+                      ControlSwitches([1265, 1265, 0])
+                      Empty([])
+                    Else([])
+                      ConditionalBranch([1, 961, 0, 9, 0])
+                        ControlSwitches([1266, 1266, 0])
+                        Empty([])
+                      BranchEnd([])
+                      Empty([])
+                    BranchEnd([])
+                    Empty([])
+                  BranchEnd([])
+                  Empty([])
+                BranchEnd([])
+                Empty([])
+              BranchEnd([])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      ControlVariables([961, 961, 0, 2, 1, 9])
+      ConditionalBranch([1, 961, 0, 1, 0])
+        ControlSwitches([1258, 1258, 0])
+        Empty([])
+      Else([])
+        ConditionalBranch([1, 961, 0, 2, 0])
+          ControlSwitches([1259, 1259, 0])
+          Empty([])
+        Else([])
+          ConditionalBranch([1, 961, 0, 3, 0])
+            ControlSwitches([1260, 1260, 0])
+            Empty([])
+          Else([])
+            ConditionalBranch([1, 961, 0, 4, 0])
+              ControlSwitches([1261, 1261, 0])
+              Empty([])
+            Else([])
+              ConditionalBranch([1, 961, 0, 5, 0])
+                ControlSwitches([1262, 1262, 0])
+                Empty([])
+              Else([])
+                ConditionalBranch([1, 961, 0, 6, 0])
+                  ControlSwitches([1263, 1263, 0])
+                  Empty([])
+                Else([])
+                  ConditionalBranch([1, 961, 0, 7, 0])
+                    ControlSwitches([1264, 1264, 0])
+                    Empty([])
+                  Else([])
+                    ConditionalBranch([1, 961, 0, 8, 0])
+                      ControlSwitches([1265, 1265, 0])
+                      Empty([])
+                    Else([])
+                      ConditionalBranch([1, 961, 0, 9, 0])
+                        ControlSwitches([1266, 1266, 0])
+                        Empty([])
+                      BranchEnd([])
+                      Empty([])
+                    BranchEnd([])
+                    Empty([])
+                  BranchEnd([])
+                  Empty([])
+                BranchEnd([])
+                Empty([])
+              BranchEnd([])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      ControlVariables([961, 961, 0, 2, 1, 9])
+      ConditionalBranch([1, 961, 0, 1, 0])
+        ControlSwitches([1258, 1258, 0])
+        Empty([])
+      Else([])
+        ConditionalBranch([1, 961, 0, 2, 0])
+          ControlSwitches([1259, 1259, 0])
+          Empty([])
+        Else([])
+          ConditionalBranch([1, 961, 0, 3, 0])
+            ControlSwitches([1260, 1260, 0])
+            Empty([])
+          Else([])
+            ConditionalBranch([1, 961, 0, 4, 0])
+              ControlSwitches([1261, 1261, 0])
+              Empty([])
+            Else([])
+              ConditionalBranch([1, 961, 0, 5, 0])
+                ControlSwitches([1262, 1262, 0])
+                Empty([])
+              Else([])
+                ConditionalBranch([1, 961, 0, 6, 0])
+                  ControlSwitches([1263, 1263, 0])
+                  Empty([])
+                Else([])
+                  ConditionalBranch([1, 961, 0, 7, 0])
+                    ControlSwitches([1264, 1264, 0])
+                    Empty([])
+                  Else([])
+                    ConditionalBranch([1, 961, 0, 8, 0])
+                      ControlSwitches([1265, 1265, 0])
+                      Empty([])
+                    Else([])
+                      ConditionalBranch([1, 961, 0, 9, 0])
+                        ControlSwitches([1266, 1266, 0])
+                        Empty([])
+                      BranchEnd([])
+                      Empty([])
+                    BranchEnd([])
+                    Empty([])
+                  BranchEnd([])
+                  Empty([])
+                BranchEnd([])
+                Empty([])
+              BranchEnd([])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      ControlSwitches([1399, 1399, 0])
+      Empty([])
+
+    BranchEnd([])
+    Wait([30])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 5
+Name = "TP"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    Script(["reset_gather_points(180)"])
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    ControlVariables([850, 850, 0, 0, 1])
+    ControlSwitches([3450, 3450, 1])
+    TransferPlayer([0, 179, 21, 13, 2, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "grass5"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 0]"])
+    Wait([445])
+    ShowAnimation([0, 137, false])
+    Empty([])
+
+  Page 2
+    ControlSwitches([1265, 1265, 1])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 7
+Name = "grass9"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 0]"])
+    Wait([390])
+    ShowAnimation([0, 137, false])
+    Empty([])
+
+  Page 2
+    ControlSwitches([1266, 1266, 1])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 8
+Name = "SlimeQ"
+
+  Page 0
+    ConditionalBranch([0, 1257, 0])
+      ConditionalBranch([12, "objective_complete?(12, 1)"])
+        Empty([])
+      Else([])
+        ConditionalBranch([0, 1258, 1])
+          ConditionalBranch([0, 1259, 1])
+            ConditionalBranch([0, 1260, 1])
+              ConditionalBranch([0, 1262, 1])
+                ConditionalBranch([0, 1261, 1])
+                  ConditionalBranch([0, 1263, 1])
+                    ConditionalBranch([0, 1264, 1])
+                      ConditionalBranch([0, 1265, 1])
+                        ConditionalBranch([0, 1266, 1])
+                          ControlSwitches([1400, 1400, 0])
+                          Empty([])
+                        BranchEnd([])
+                        Empty([])
+                      BranchEnd([])
+                      Empty([])
+                    BranchEnd([])
+                    Empty([])
+                  BranchEnd([])
+                  Empty([])
+                BranchEnd([])
+                Empty([])
+              BranchEnd([])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Wait([20])
+    Empty([])
+
+  Page 1
+    ShotBalloonIcon([-1, 3, true])
+    FadeoutScreen([])
+    Wait([30])
+    TransferPlayer([0, 180, 16, 20, 8, 0])
+    ControlVariables([850, 850, 0, 0, 1])
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    CallCommonEvent([56])
+    Wait([30])
+    FadeinScreen([])
+    Wait([30])
+    ControlSwitches([3000, 3000, 0])
+    Wait([15])
+    ShowTextAttributes(["Hero", 0, 2, 2])
+    ShowText(["That was the last one of them...\\.\\.\\. good.\\.\\. Let's get out of here now."])
+    Script(["complete_objective(12, 1)"])
+    ScriptMore(["call_quest_journal(12)"])
+    Wait([15])
+    ControlSwitches([3000, 3000, 1])
+    ControlSwitches([1400, 1400, 1])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 9
+Name = "TP"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    Script(["reset_gather_points(180)"])
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    ControlVariables([850, 850, 0, 0, 1])
+    ControlSwitches([3450, 3450, 1])
+    TransferPlayer([0, 179, 22, 13, 2, 0])
+    Empty([])
+
+CommonEvent 10
+Name = "grass3"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 0]"])
+    Wait([540])
+    ShowAnimation([0, 137, false])
+    Empty([])
+
+  Page 2
+    ControlSwitches([1260, 1260, 1])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 11
+Name = "grass5"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 0]"])
+    Wait([270])
+    ShowAnimation([0, 137, false])
+    Empty([])
+
+  Page 2
+    ControlSwitches([1262, 1262, 1])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 12
+Name = "grass6"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 0]"])
+    Wait([750])
+    ShowAnimation([0, 137, false])
+    Empty([])
+
+  Page 2
+    ControlSwitches([1263, 1263, 1])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 13
+Name = "EvStart"
+
+  Page 0
+    ConditionalBranch([12, "objective_complete?(12, 1)"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "objective_complete?(12, 0)"])
+        ShowTextAttributes(["Hero", 0, 0, 2])
+        ShowText(["We have to find a way to get rid of the poisonous ones!"])
+        Script(["$game_map.start_sas"])
+        ScriptMore(["$game_map.sas_hud.show(true)"])
+        EraseEvent([])
+        Empty([])
+      Else([])
+        ConditionalBranch([0, 1257, 0])
+          ShotBalloonIcon([-1, 1, true])
+          SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+          Wait([30])
+          ShowTextAttributes(["Hero", 0, 0, 2])
+          ShowText(["Looks like poisonous plants grew in this spring.\\.\\. That has to be the cause of this mess."])
+          ShowTextAttributes(["Hero", 0, 0, 2])
+          ShowText(["... I have to find a way to get rid of them!"])
+          Script(["complete_objective(12, 0)"])
+          Script(["reveal_objective(12, 1)"])
+          Script(["$game_map.start_sas"])
+          ScriptMore(["$game_map.sas_hud.show(true)"])
+          EraseEvent([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 14
+Name = "grass1"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 0]"])
+    Wait([360])
+    ShowAnimation([0, 137, false])
+    Empty([])
+
+  Page 2
+    ControlSwitches([1258, 1258, 1])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 15
+Name = "Parallax"
+
+  Page 0
+    ConditionalBranch([12, "objective_complete?(12, 1)"])
+      ControlVariables([850, 850, 0, 0, 1])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "objective_revealed?(12, 1)"])
+        Wait([600])
+        ConditionalBranch([12, "objective_complete?(12, 1)"])
+          Empty([])
+        Else([])
+          ControlVariables([962, 962, 1, 0, 1])
+          ControlVariables([850, 850, 0, 0, 2])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Wait([20])
+    Empty([])
+
+  Page 1
+    Wait([180])
+    ControlSwitches([3450, 3450, 0])
+    ConditionalBranch([12, "objective_complete?(12, 1)"])
+      ControlVariables([850, 850, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 16
+Name = "Ore1"
+
+  Page 0
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([12, "!$game_party.members[0].equips[0].nil?"])
+      ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(2)"])
+        ConditionalBranch([2, "D", 0])
+          Wait([15])
+          ShowAnimation([0, 7, true])
+          CallCommonEvent([176])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          ConditionalBranch([2, "C", 0])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["D", 0])
+            ControlSelfSwitch(["B", 1])
+            Empty([])
+          Else([])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["C", 0])
+            ControlSelfSwitch(["B", 1])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(8)"])
+          Wait([15])
+          ShowAnimation([0, 19, true])
+          CallCommonEvent([176])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          PlaySE(["RPG::SE(@name=\"Hammer\", @pitch=100, @volume=80)"])
+          SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=13, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=13, @parameters=[])"])
+          ControlSelfSwitch(["B", 1])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    ControlSelfSwitch(["A", 1])
+    ControlSelfSwitch(["B", 1])
+    ControlSelfSwitch(["C", 1])
+    ControlSelfSwitch(["D", 1])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 17
+Name = "Ore1"
+
+  Page 0
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([12, "!$game_party.members[0].equips[0].nil?"])
+      ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(2)"])
+        ConditionalBranch([2, "D", 0])
+          Wait([15])
+          ShowAnimation([0, 7, true])
+          CallCommonEvent([176])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          ConditionalBranch([2, "C", 0])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["D", 0])
+            ControlSelfSwitch(["B", 1])
+            Empty([])
+          Else([])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["C", 0])
+            ControlSelfSwitch(["B", 1])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(8)"])
+          Wait([15])
+          ShowAnimation([0, 19, true])
+          CallCommonEvent([176])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          PlaySE(["RPG::SE(@name=\"Hammer\", @pitch=100, @volume=80)"])
+          SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=13, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=13, @parameters=[])"])
+          ControlSelfSwitch(["B", 1])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    ControlSelfSwitch(["A", 1])
+    ControlSelfSwitch(["B", 1])
+    ControlSelfSwitch(["C", 1])
+    ControlSelfSwitch(["D", 1])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 18
+Name = "Ore1"
+
+  Page 0
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([12, "!$game_party.members[0].equips[0].nil?"])
+      ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(2)"])
+        ConditionalBranch([2, "D", 0])
+          Wait([15])
+          ShowAnimation([0, 7, true])
+          CallCommonEvent([176])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          ConditionalBranch([2, "C", 0])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["D", 0])
+            ControlSelfSwitch(["B", 1])
+            Empty([])
+          Else([])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["C", 0])
+            ControlSelfSwitch(["B", 1])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(8)"])
+          Wait([15])
+          ShowAnimation([0, 19, true])
+          CallCommonEvent([176])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          PlaySE(["RPG::SE(@name=\"Hammer\", @pitch=100, @volume=80)"])
+          SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=13, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=13, @parameters=[])"])
+          ControlSelfSwitch(["B", 1])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    ControlSelfSwitch(["A", 1])
+    ControlSelfSwitch(["B", 1])
+    ControlSelfSwitch(["C", 1])
+    ControlSelfSwitch(["D", 1])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 19
+Name = "Ore1"
+
+  Page 0
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([12, "!$game_party.members[0].equips[0].nil?"])
+      ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(2)"])
+        ConditionalBranch([2, "D", 0])
+          Wait([15])
+          ShowAnimation([0, 7, true])
+          CallCommonEvent([176])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          ConditionalBranch([2, "C", 0])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["D", 0])
+            ControlSelfSwitch(["B", 1])
+            Empty([])
+          Else([])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["C", 0])
+            ControlSelfSwitch(["B", 1])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(8)"])
+          Wait([15])
+          ShowAnimation([0, 19, true])
+          CallCommonEvent([176])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          PlaySE(["RPG::SE(@name=\"Hammer\", @pitch=100, @volume=80)"])
+          SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=13, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=13, @parameters=[])"])
+          ControlSelfSwitch(["B", 1])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    ControlSelfSwitch(["A", 1])
+    ControlSelfSwitch(["B", 1])
+    ControlSelfSwitch(["C", 1])
+    ControlSelfSwitch(["D", 1])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 20
+Name = "Ore1"
+
+  Page 0
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([12, "!$game_party.members[0].equips[0].nil?"])
+      ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(2)"])
+        ConditionalBranch([2, "D", 0])
+          Wait([15])
+          ShowAnimation([0, 7, true])
+          CallCommonEvent([176])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          ConditionalBranch([2, "C", 0])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["D", 0])
+            ControlSelfSwitch(["B", 1])
+            Empty([])
+          Else([])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["C", 0])
+            ControlSelfSwitch(["B", 1])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(8)"])
+          Wait([15])
+          ShowAnimation([0, 19, true])
+          CallCommonEvent([176])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          PlaySE(["RPG::SE(@name=\"Hammer\", @pitch=100, @volume=80)"])
+          SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=13, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=13, @parameters=[])"])
+          ControlSelfSwitch(["B", 1])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    ControlSelfSwitch(["A", 1])
+    ControlSelfSwitch(["B", 1])
+    ControlSelfSwitch(["C", 1])
+    ControlSelfSwitch(["D", 1])
+    EraseEvent([])
+    Empty([])

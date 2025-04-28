@@ -1,0 +1,424 @@
+Display Name = ""
+Parallax Name = "DPI passage"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "Door"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["What looks like an ancient portal lies in front of you."])
+    Wait([15])
+    ShowTextAttributes(["Hero", 0, 1, 2])
+    ShowText(["We have to look for a way to proceed here..."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Are you ready to enter the Portal?"])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      FadeoutScreen([])
+      Wait([15])
+      FadeoutBGM([3])
+      TransferPlayer([0, 163, 16, 6, 8, 0])
+      CallCommonEvent([90])
+      SetMoveRoute([15, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$DogP\\\", 0])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$DogP\", 0])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      Wait([15])
+      FadeinScreen([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You stare at the portal in wonder.\\.\\. It had worked.\\.\\. This would,\\. if all is correct,\\. take you straight to the door of the Dragon Queen herself.\\.\\. "])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You weren’t entirely sure what you or,\\. more concerningly,\\. Dog Princess would do once you found her,\\. but it’s certain that this would be the way to do it."])
+      SetMoveRoute([15, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You feel the Princess wiggle in your arms.\\.\\. You let go of her and she approaches the portal,\\. slowly.\\.\\."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Her tail hangs behind her,\\. and there’s an oddly far off look in her eyes when she turns to look at you."])
+      Wait([15])
+      ShowPicture([1, "Dog Princess Dial yan", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Dog Princess:"])
+      ShowText(["This is it...\\.\\.\\. the portal to her castle..."])
+      ErasePicture([1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Her voice is a whisper,\\. a little murmur that you no less hear."])
+      Wait([15])
+      ShowPicture([1, "Dog Princess Dial yan", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Dog Princess:"])
+      ShowText(["I...\\.\\.\\. I’ve been waiting for this for so long.\\.\\. Finally I...!"])
+      ErasePicture([1])
+      SetMoveRoute([15, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      ShotBalloonIcon([15, 4, false])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["She shakes her head,\\. before smiling towards you.\\.\\. "])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Hope,\\. admiration,\\. love,\\. excitement.\\.\\. You could feel all of it from the look on her face."])
+      Wait([15])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["Princess..."])
+      ShowPicture([1, "Dog Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Dog Princess:"])
+      ShowText(["..."])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Dog Princess:"])
+      ShowText(["\\N[1]...\\.\\.\\. this is a one way trip...\\.\\.\\. you know that,\\. right?"])
+      ErasePicture([1])
+      SetMoveRoute([15, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      Wait([30])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["She looks a bit distraught,\\. her eyes looking towards the portal."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["For the first time for as long as you’ve been with her,\\. you see her hesitate.\\.\\. You shake your head and walk to her."])
+      SetMoveRoute([15, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[20])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[20])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      Wait([20])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["She looks at you,\\. before looking down.\\.\\. Your hand rests in hers."])
+      Wait([15])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["We can worry about it later.\\.\\. Let’s go.\\.\\. I’m not sure how long this portal stays open."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Dog Princess bites her lip.\\.\\. "])
+      ShowText(["Your arms wrap around her as she clings to your torso,\\. her face nestled into you as you see her tail wag behind her."])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      SetMoveRoute([15, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["After that moment,\\. you both look to the portal."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["No turning back.\\.\\. You take a deep breath."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Three...\\.\\.\\. Two..."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["..."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["... One!"])
+      SetMoveRoute([15, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[0, -1])\", \"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, -1])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[0, -1])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, -1])"])
+      Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+      Wait([20])
+      PlaySE(["RPG::SE(@name=\"Absorb2\", @pitch=100, @volume=80)"])
+      TintScreen(["Tone(@red=255.0, @green=255.0, @blue=255.0, @gray=255.0)", 20, false])
+      Wait([30])
+      TransferPlayer([0, 162, 10, 28, 2, 0])
+      ControlSelfSwitch(["A", 0])
+      Empty([])
+
+    When([1, "No"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 4
+Name = "FadeIn"
+
+  Page 0
+    Comment([":update:"])
+    ConditionalBranch([0, 413, 0])
+      TintScreen(["Tone(@red=-34.0, @green=-34.0, @blue=-34.0, @gray=34.0)", 10, true])
+      Empty([])
+
+    Else([])
+      TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 10, true])
+      Empty([])
+
+    BranchEnd([])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 5
+Name = "TP"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 151, 8, 16, 2, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "InstructArrow"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "Instructions"
+
+  Page 0
+    ShowTextAttributes(["", 0, 1, 2])
+    ShowText(["- How to open the portal to Mom's Castle -"])
+    ShowTextAttributes(["", 0, 1, 2])
+    ShowText(["- activate the pillars"])
+    ShowTextAttributes(["", 0, 1, 2])
+    ShowText(["- all of them"])
+    ShowTextAttributes(["", 0, 1, 2])
+    ShowText(["- remember that the passage is one-way only"])
+    ControlSwitches([1170, 1170, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["A strong catalyst is needed to activate this pillar."])
+    SelectKeyItem([893])
+    ConditionalBranch([1, 893, 0, 45, 0])
+      ChangeItems([45, 1, 0, 1])
+      PlaySE(["RPG::SE(@name=\"Magic2\", @pitch=100, @volume=80)"])
+      ControlVariables([896, 896, 1, 0, 1])
+      ControlSwitches([1171, 1171, 0])
+      ConditionalBranch([0, 1188, 1])
+        Wait([30])
+        ShowTextAttributes(["Hero", 0, 1, 2])
+        ShowText(["It's...\\.\\.\\. working!?\\.\\. But that urn contained..."])
+        ShowPicture([1, "Dog Princess Dial mad", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Dog Princess:"])
+        ShowText(["Princess' souls?\\.\\. *fufufu*\\.\\."])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Dog Princess:"])
+        ShowText(["This makes everything easier!\\.\\. We'll just have to search for more souls!"])
+        ErasePicture([1])
+        ShowTextAttributes(["Hero", 0, 1, 2])
+        ShowText(["Is this really the only way...?"])
+        ControlSwitches([1188, 1188, 0])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Nothing's happening."])
+      Wait([15])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["There has to be something powerful enough to activate these mechanism...\\.\\.\\. we need a greater \\C[18]catalyst\\C[0]."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["A strong catalyst is needed to activate this pillar."])
+    SelectKeyItem([894])
+    ConditionalBranch([1, 894, 0, 45, 0])
+      ChangeItems([45, 1, 0, 1])
+      PlaySE(["RPG::SE(@name=\"Magic2\", @pitch=100, @volume=80)"])
+      ControlVariables([896, 896, 1, 0, 1])
+      ControlSwitches([1172, 1172, 0])
+      ConditionalBranch([0, 1188, 1])
+        Wait([30])
+        ShowTextAttributes(["Hero", 0, 1, 2])
+        ShowText(["It's...\\.\\.\\. working!?\\.\\. But that urn contained..."])
+        ShowPicture([1, "Dog Princess Dial mad", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Dog Princess:"])
+        ShowText(["Princess' souls?\\.\\. *fufufu*\\.\\."])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Dog Princess:"])
+        ShowText(["This makes everything easier!\\.\\. We'll just have to search for more souls!"])
+        ErasePicture([1])
+        ShowTextAttributes(["Hero", 0, 1, 2])
+        ShowText(["Is this really the only way...?"])
+        ControlSwitches([1188, 1188, 0])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Nothing's happening."])
+      Wait([15])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["There has to be something powerful enough to activate these mechanism...\\.\\.\\. we need a greater \\C[18]catalyst\\C[0]."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["A strong catalyst is needed to activate this pillar."])
+    SelectKeyItem([895])
+    ConditionalBranch([1, 895, 0, 45, 0])
+      ChangeItems([45, 1, 0, 1])
+      PlaySE(["RPG::SE(@name=\"Magic2\", @pitch=100, @volume=80)"])
+      ControlVariables([896, 896, 1, 0, 1])
+      ControlSwitches([1173, 1173, 0])
+      ConditionalBranch([0, 1188, 1])
+        Wait([30])
+        ShowTextAttributes(["Hero", 0, 1, 2])
+        ShowText(["It's...\\.\\.\\. working!?\\.\\. But that urn contained..."])
+        ShowPicture([1, "Dog Princess Dial mad", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Dog Princess:"])
+        ShowText(["Princess' souls?\\.\\. *fufufu*\\.\\."])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Dog Princess:"])
+        ShowText(["This makes everything easier!\\.\\. We'll just have to search for more souls!"])
+        ErasePicture([1])
+        ShowTextAttributes(["Hero", 0, 1, 2])
+        ShowText(["Is this really the only way...?"])
+        ControlSwitches([1188, 1188, 0])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Nothing's happening."])
+      Wait([15])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["There has to be something powerful enough to activate these mechanism...\\.\\.\\. we need a greater \\C[18]catalyst\\C[0]."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 14
+Name = "DoorOpen"
+
+  Page 0
+    Wait([30])
+    ShakeScreen([5, 4, 420, true])
+    ShotBalloonIcon([-1, 1, true])
+    Wait([15])
+    FadeoutScreen([])
+    TransferPlayer([0, 163, 16, 6, 8, 0])
+    CallCommonEvent([90])
+    Wait([10])
+    FadeinScreen([])
+    Wait([30])
+    SetMoveRoute([1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Earth8\\\\\\\", @pitch=100, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[90])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Earth8\\\\\\\", @pitch=100, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[90])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Earth8\\\\\\\", @pitch=100, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[90])\", \"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Earth8\\\", @pitch=100, @volume=80)\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[90])"])
+    Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Earth8\\\", @pitch=100, @volume=80)\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[90])"])
+    Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Earth8\\\", @pitch=100, @volume=80)\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[90])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    ControlSwitches([1174, 1174, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 15
+Name = "dogP portal"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])

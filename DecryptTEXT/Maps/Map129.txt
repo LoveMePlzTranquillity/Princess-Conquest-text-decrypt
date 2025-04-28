@@ -1,0 +1,240 @@
+Display Name = ""
+Parallax Name = "knightNS"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "Load"
+
+  Page 0
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=42, @parameters=[255])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[255])"])
+    ConditionalBranch([4, 15, 0])
+      Script(["$game_map.sas_hud.show(true)"])
+      ChangeMenuAccess([0])
+      CallCommonEvent([96])
+      FadeinScreen([])
+      Empty([])
+
+    Else([])
+      ChangePartyMember([15, 0, 0])
+      ChangeMenuAccess([0])
+      CallCommonEvent([96])
+      FadeinScreen([])
+      Script(["$game_map.start_sas"])
+      ScriptMore(["$game_map.sas_hud.show(true)"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["GolemP", 0, 0, 2])
+    ShowText(["Synapse Galatea:"])
+    ShowText(["WAIT FOR ME, \\N[1]!"])
+    ShowTextAttributes(["GolemP", 0, 0, 2])
+    ShowText(["Synapse Galatea:"])
+    ShowText(["I WILL RESTART YOUR SYSTEM!"])
+    ControlSwitches([1770, 1770, 1])
+    ControlSwitches([1011, 1011, 0])
+    ControlSwitches([1012, 1012, 0])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 2
+Name = "SNbarrier"
+
+  Page 0
+    Comment(["[enemy 105]"])
+    Comment(["[localsw 0]"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["GolemP", 0, 0, 2])
+    ShowText(["Synapse Galatea:"])
+    ShowText(["IS IT...\\.\\.\\. IS IT WORKING?"])
+    ShowAnimation([-1, 68, false])
+    ShotBalloonIcon([-1, 6, true])
+    Wait([30])
+    FadeoutScreen([])
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    ChangePartyMember([15, 1, 0])
+    CallCommonEvent([90])
+    ControlSwitches([963, 963, 0])
+    TransferPlayer([0, 128, 12, 8, 2, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "SNbarrier"
+
+  Page 0
+    Comment(["[enemy 105]"])
+    Comment(["[localsw 0]"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["GolemP", 0, 0, 2])
+    ShowText(["Synapse Galatea:"])
+    ShowText(["IS IT...\\.\\.\\. IS IT WORKING?"])
+    ShowAnimation([-1, 68, false])
+    ShotBalloonIcon([-1, 6, true])
+    Wait([30])
+    FadeoutScreen([])
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    ChangePartyMember([15, 1, 0])
+    CallCommonEvent([90])
+    ControlSwitches([963, 963, 0])
+    TransferPlayer([0, 128, 12, 8, 2, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "SNbarrier"
+
+  Page 0
+    Comment(["[enemy 105]"])
+    Comment(["[localsw 0]"])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["GolemP", 0, 0, 2])
+    ShowText(["Synapse Galatea:"])
+    ShowText(["IS IT...\\.\\.\\. IS IT WORKING?"])
+    ShowAnimation([-1, 68, false])
+    ShotBalloonIcon([-1, 6, true])
+    Wait([30])
+    FadeoutScreen([])
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    ChangePartyMember([15, 1, 0])
+    CallCommonEvent([90])
+    ControlSwitches([963, 963, 0])
+    TransferPlayer([0, 128, 12, 8, 2, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ShowTextAttributes(["GolemP", 0, 0, 2])
+    ShowText(["Synapse Galatea:"])
+    ShowText(["THIS IS THE PLACE."])
+    ShowText(["ENGAGING HARD RESET FUNCTIONS!"])
+    ControlSwitches([1009, 1009, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ShowTextAttributes(["GolemP", 0, 0, 2])
+    ShowText(["Synapse Galatea:"])
+    ShowText(["THIS IS THE PLACE."])
+    ShowText(["ENGAGING HARD RESET FUNCTIONS!"])
+    ControlSwitches([1009, 1009, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ShowTextAttributes(["GolemP", 0, 0, 2])
+    ShowText(["Synapse Galatea:"])
+    ShowText(["THIS IS THE PLACE."])
+    ShowText(["ENGAGING HARD RESET FUNCTIONS!"])
+    ControlSwitches([1009, 1009, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "thunder struck"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ControlVariables([804, 804, 0, 2, 1, 3])
+    Label(["wait more"])
+    Wait([60])
+    ControlVariables([804, 804, 2, 0, 1])
+    ConditionalBranch([1, 804, 0, 0, 0])
+      ControlVariables([25, 25, 0, 3, 5, -1, 1])
+      ControlVariables([802, 802, 0, 2, 13, 17])
+      ConditionalBranch([1, 25, 0, 50, 3])
+        ControlVariables([803, 803, 0, 2, 48, 59])
+        Empty([])
+      Else([])
+        ConditionalBranch([1, 25, 0, 40, 3])
+          ControlVariables([803, 803, 0, 2, 35, 52])
+          Empty([])
+        Else([])
+          ConditionalBranch([1, 25, 0, 30, 3])
+            ControlVariables([803, 803, 0, 2, 28, 42])
+            Empty([])
+          Else([])
+            ConditionalBranch([1, 25, 0, 20, 3])
+              ControlVariables([803, 803, 0, 2, 18, 32])
+              Empty([])
+            Else([])
+              ConditionalBranch([1, 25, 0, 10, 3])
+                ControlVariables([803, 803, 0, 2, 13, 22])
+                Empty([])
+              BranchEnd([])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      SetEventLocation([8, 1, 802, 803, 0])
+      ControlSwitches([1010, 1010, 0])
+      Wait([120])
+      ControlSwitches([1010, 1010, 1])
+      ShowAnimation([8, 66, false])
+      ControlVariables([24, 24, 0, 3, 5, -1, 0])
+      ControlVariables([25, 25, 0, 3, 5, -1, 1])
+      ControlVariables([802, 802, 2, 1, 24])
+      ConditionalBranch([1, 802, 0, -2, 1])
+        ConditionalBranch([1, 802, 0, 2, 2])
+          ControlVariables([803, 803, 2, 1, 25])
+          ConditionalBranch([1, 803, 0, -2, 1])
+            ConditionalBranch([1, 803, 0, 2, 2])
+              FlashScreen(["Color(@red=255.0, @green=255.0, @blue=0.0, @alpha=255.0)", 15, false])
+              SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[-1, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+              Unnamed(["RPG::MoveCommand(@code=14, @parameters=[-1, 0])"])
+              ControlSwitches([1011, 1011, 1])
+              ControlSwitches([1013, 1013, 0])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      JumpToLabel(["wait more"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])

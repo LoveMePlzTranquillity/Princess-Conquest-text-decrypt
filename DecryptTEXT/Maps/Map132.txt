@@ -1,0 +1,256 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+  Page 1
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+  Page 1
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+  Page 1
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+  Page 1
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+  Page 1
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+  Page 1
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+  Page 1
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 131, 13, 23, 8, 0])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    SetWeatherEffects([:none, 9, 0, false])
+    ErasePicture([9])
+    FadeoutScreen([])
+    TransferPlayer([0, 133, 13, 7, 2, 0])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 14
+Name = ""
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ShowPicture([1, "Gremlin dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 4, 2, 2])
+    ShowText(["Gremlin:"])
+    ShowText(["Gahk!\\.\\. They got us good down here...\\.\\. I couldn't save her green majesty..."])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 16
+Name = "Inv2"
+
+  Page 0
+    Empty([])
+
+CommonEvent 17
+Name = "GobGuard2"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+  Page 4
+    Empty([])
+
+  Page 5
+    Empty([])
+
+  Page 6
+    Empty([])
+
+  Page 7
+    Empty([])
+
+  Page 8
+    Empty([])
+
+  Page 9
+    Empty([])
+
+  Page 10
+    Empty([])
+
+  Page 11
+    Empty([])
+
+CommonEvent 18
+Name = "Inv3"
+
+  Page 0
+    Empty([])
+
+CommonEvent 19
+Name = "DoorBrewery"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 20
+Name = "Inv1"
+
+  Page 0
+    Empty([])
+
+CommonEvent 21
+Name = "LoadMap"
+
+  Page 0
+    Comment(["########"])
+    Script(["@war1 = 2968"])
+    Script(["@enemyID = [25,26,27]"])
+    ScriptMore(["@nM = 2"])
+    ControlSwitches([4769, 4769, 1])
+    CallCommonEvent([113])
+    Comment(["########"])
+    CallCommonEvent([21])
+    CallCommonEvent([20])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 22
+Name = "GobGuard"
+
+  Page 0
+    Empty([])
+
+CommonEvent 23
+Name = "Statues"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[collision_x 4]"])
+    Comment(["[collision_y 3]"])
+    Empty([])
+
+CommonEvent 24
+Name = "Statues"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[collision_x 4]"])
+    Comment(["[collision_y 3]"])
+    Empty([])
+
+CommonEvent 25
+Name = "Statues"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[collision_x 4]"])
+    Comment(["[collision_y 3]"])
+    Empty([])

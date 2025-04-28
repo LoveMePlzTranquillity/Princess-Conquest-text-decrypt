@@ -1,0 +1,632 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ShowPicture([1, "Gremlin dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 4, 2, 2])
+    ShowText(["Gremlin Guard:"])
+    ShowText(["Snort...\\.\\.\\.zzz"])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 16
+Name = "HumSlave"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 17
+Name = "HolstaurSlave"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 18
+Name = "mermaid"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Empty([])
+
+CommonEvent 25
+Name = "InsSlave"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    ShowPicture([1, "Gremlin dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 4, 2, 2])
+    ShowText(["Gremlin Guard:"])
+    ShowText(["The subject is in cage number 3.\\.\\. Get to work!"])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 27
+Name = "HumCheck"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["A young human girl is kept in here,\\. staring off into space."])
+    Empty([])
+
+CommonEvent 28
+Name = "HumCheck"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["A young human girl is kept in here,\\. staring off into space."])
+    Empty([])
+
+CommonEvent 29
+Name = "HumCheck"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["A young human girl is kept in here,\\. staring off into space."])
+    Empty([])
+
+CommonEvent 30
+Name = "HolCheck"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["An holstaur bull is looking away,\\. mumbling something only he can hear."])
+    Empty([])
+
+CommonEvent 31
+Name = "HolCheck"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["An holstaur bull is looking away,\\. mumbling something only he can hear."])
+    Empty([])
+
+CommonEvent 32
+Name = "HolCheck"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["An holstaur bull is looking away,\\. mumbling something only he can hear."])
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    ControlSwitches([2693, 2693, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 35
+Name = "mermaid event"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 36
+Name = "pregnator"
+
+  Page 0
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    ShowPicture([1, "Gremlin dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 4, 2, 2])
+    ShowText(["Gremlin Guard:"])
+    ShowText(["No passage!"])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    ControlSwitches([2693, 2693, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    ControlSwitches([2693, 2693, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    ShowPicture([1, "Gremlin dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 4, 2, 2])
+    ShowText(["Gremlin Guard:"])
+    ShowText(["Snort...\\.\\.\\.zzz"])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    ControlSwitches([2693, 2693, 1])
+    Comment(["-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-"])
+    ShowPicture([1, "Mermaid Slave dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Mermaid girl:"])
+    ShowText(["Wha'...\\.\\.\\. What are ye here for?\\.\\. I told ye!\\.\\. I won't lay me first eggs in dis place!"])
+    ShowPicture([1, "Mermaid Slave dial cry", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Mermaid girl:"])
+    ShowText(["!?\\.\\. ...\\.\\.\\. Ye a h-\\.hummie?!\\.\\. Git me outta here,\\. my Princess will thank ye for helpin' one of her mermaids!\\!"])
+    ErasePicture([1])
+    ShowChoices([["Pay her no mind.", "Listen to the mermaid."], 0])
+    When([0, "Pay her no mind."])
+      Label(["mermref"])
+      ShowPicture([1, "Mermaid Slave dial cry", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Mermaid girl:"])
+      ShowText(["No,\\. I beg ye!\\.\\. ...\\.\\.\\. I can't take 'dis anymore...\\.\\.\\. I want t' go back to the Abyss!"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Mermaid girl:"])
+      ShowText(["*snort*"])
+      ErasePicture([1])
+      FadeoutScreen([])
+      ControlSwitches([917, 917, 0])
+      TransferPlayer([0, 111, 30, 17, 4, 0])
+      FadeinScreen([])
+      Wait([60])
+      ShowPicture([1, "Mermaid Slave dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Mermaid girl:"])
+      ShowText(["*sniff*...\\.\\.\\. Lemme go,\\. mistah knight!"])
+      ErasePicture([1])
+      Wait([15])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["Here,\\. drink this.\\. It should do the trick..."])
+      Wait([10])
+      SetMoveRoute([36, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      Wait([15])
+      ChangeItems([197, 1, 0, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You hand the \\i[546] \\c[18]Shorty Special\\c[0] to her \"mate\".\\.\\. With this,\\. pregnancy should be ensured."])
+      Wait([15])
+      SetMoveRoute([36, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[20])\", \"RPG::MoveCommand(@code=31, @parameters=[])\", \"RPG::MoveCommand(@code=33, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[20])"])
+      Unnamed(["RPG::MoveCommand(@code=31, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=33, @parameters=[])"])
+      ShowTextAttributes(["", 4, 0, 2])
+      ShowText(["Goblin Stud:"])
+      ShowText(["GRAAAAAH!\\.\\."])
+      Wait([15])
+      ShotBalloonIcon([-1, 8, true])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["!\\.\\. H-\\.he's frothing..."])
+      Wait([15])
+      FadeoutScreen([])
+      Wait([30])
+      ShowPicture([1, "Mermaid Slave dial cry", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Mermaid girl:"])
+      ShowText(["Oh my!\\.\\. LEMME GO!!"])
+      ErasePicture([1])
+      Wait([40])
+      ControlSwitches([902, 902, 0])
+      TransferPlayer([0, 93, 10, 6, 8, 0])
+      JumpToLabel(["end"])
+      Empty([])
+
+    When([1, "Listen to the mermaid."])
+      ShowPicture([1, "Mermaid Slave dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Mermaid girl:"])
+      ShowText(["Yer kind,\\. but 'tis useless as long as I'm stuck here...\\.\\.\\."])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Mermaid girl:"])
+      ShowText(["Unless ye want to...\\.\\.\\. ye know...\\.\\.\\. there's one way t' swim outta this in one piece..."])
+      ErasePicture([1])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["Hm?\\.\\. A way?\\.\\. A way for...\\.\\.\\. leaving this place?"])
+      ShowPicture([1, "Mermaid Slave dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Mermaid girl:"])
+      ShowText(["There be one!\\.\\. If ye...\\.\\.\\. agree t' help me,\\. dat's it."])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Mermaid girl:"])
+      ShowText(["With th' needed preparation ye could...\\.\\.\\. well...\\.\\.\\. act as my mate..."])
+      ErasePicture([1])
+      Wait([15])
+      ShotBalloonIcon([-1, 8, true])
+      Wait([15])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["Uh?\\.\\. ...\\.\\.\\. What is that you're suggesting,\\. mermaid?"])
+      ShowPicture([1, "Mermaid Slave dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Mermaid girl:"])
+      ShowText(["Ye tell the guards ye chose t'...\\.\\. impregnate me yerself..."])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Mermaid girl:"])
+      ShowText(["Ye could use that time t' free me.\\.\\. There's a passage to th' sea I can reach by th' hatch in there!"])
+      ErasePicture([1])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["I see...\\.\\.\\. but you see,\\. that..."])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["... would mean betraying Goblin Princess...\\.\\.\\. in her dungeon..."])
+      ShotBalloonIcon([-1, 8, true])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["It doesn't sound safe at all...\\.\\.\\. for me."])
+      ShowPicture([1, "Mermaid Slave dial cry", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Mermaid girl:"])
+      ShowText(["I know it's risky,\\. but I ...\\.\\.\\. I...\\.\\.\\. I dun wanna give me eggs t' \\c[18]that shortie\\c[0]!"])
+      ShowPicture([1, "Mermaid Slave dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Mermaid girl:"])
+      ShowText(["'Tis will be worth it for ye too!\\.\\. The Princess o' mermaids 's a mighty warrior o' the Abyss!"])
+      ShowPicture([1, "Mermaid Slave dial grateful", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Mermaid girl:"])
+      ShowText(["And us merfolks...\\.\\. have our ways t' show gratitude~"])
+      ErasePicture([1])
+      Wait([30])
+      ShotBalloonIcon([-1, 6, true])
+      Wait([30])
+      ShowPicture([1, "Mermaid Slave dial cry", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Mermaid girl:"])
+      ShowText(["Oh,\\. c'mon...\\.\\.\\. This place's like hell,\\. help a girl out!\\!"])
+      ErasePicture([1])
+      ShowChoices([["Go with her plan.", "Refuse."], 0])
+      When([0, "Go with her plan."])
+        ShowTextAttributes(["Hero", 0, 0, 2])
+        ShowText(["You're right.\\.\\. Let's consider this a quest on behalf of your Princess.\\.\\. "])
+        Wait([15])
+        ShotBalloonIcon([-1, 8, true])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["You gather your breath,\\. filling your lungs as you wonder if you're doing the right thing."])
+        Wait([15])
+        ShotBalloonIcon([-1, 1, false])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+        ShakeScreen([3, 3, 30, false])
+        ShowTextAttributes(["Hero", 0, 0, 2])
+        ShowText(["I won't stand for it!\\.\\. I demand the right to impregnate this mermaid myself!\\.\\. For justice!\\.\\. For the Guild!"])
+        ShowPicture([1, "Mermaid Slave dial", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Mermaid girl:"])
+        ShowText(["!!"])
+        ErasePicture([1])
+        Wait([15])
+        FadeoutScreen([])
+        Wait([15])
+        ControlSwitches([918, 918, 0])
+        TransferPlayer([0, 111, 30, 16, 4, 0])
+        Wait([15])
+        FadeinScreen([])
+        Wait([20])
+        ShowPicture([1, "Mermaid Slave dial", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Mermaid girl:"])
+        ShowText(["Here we are...\\.\\.\\. are ye ready t' do it?"])
+        ErasePicture([1])
+        ShotBalloonIcon([-1, 6, false])
+        ShowTextAttributes(["Hero", 0, 0, 2])
+        ShowText(["I-I guess so..."])
+        ShowPicture([1, "Mermaid Slave dial", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Mermaid girl:"])
+        ShowText(["Open that hatch,\\. then help me get in th' water."])
+        ErasePicture([1])
+        Wait([20])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["You sigh heavily...\\.\\.\\. if Goblin Princess were to find out what you did..."])
+        Wait([30])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=6, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=6, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+        ControlSwitches([1018, 1018, 0])
+        Wait([30])
+        ShowTextAttributes(["Hero", 0, 0, 2])
+        ShowText(["Got it open,\\. time to pick the fishy."])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=7, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=7, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+        Wait([30])
+        ShowPicture([1, "Mermaid Slave dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Mermaid girl:"])
+        ShowText(["Sorry,\\. me tail 's in the way.\\.\\. A-\\.am I too heavy?"])
+        ErasePicture([1])
+        ShowTextAttributes(["Hero", 0, 0, 2])
+        ShowText(["Don't...\\.\\.\\. mention...\\.\\.\\. it..."])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=30, @parameters=[4])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=30, @parameters=[5])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+        Unnamed(["RPG::MoveCommand(@code=30, @parameters=[4])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+        Unnamed(["RPG::MoveCommand(@code=30, @parameters=[5])"])
+        SetMoveRoute([35, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=30, @parameters=[4])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+        Unnamed(["RPG::MoveCommand(@code=30, @parameters=[4])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+        Wait([30])
+        SetMoveRoute([35, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 2])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 2])"])
+        Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+        ShowAnimation([35, 138, false])
+        Wait([20])
+        ShowPicture([1, "Mermaid Slave dial grateful", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Mermaid girl:"])
+        ShowText(["Hurray~"])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Mermaid girl:"])
+        ShowText(["Words aren't enough t' thank ye.\\.\\. Take dis,\\. use it t' pass through the customs at Hammerhead Port."])
+        ErasePicture([1])
+        Wait([15])
+        ControlVariables([4169, 4169, 1, 0, 2])
+        ChangeItems([294, 0, 0, 1])
+        Wait([15])
+        ShowPicture([1, "Mermaid Slave dial grateful", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Mermaid girl:"])
+        ShowText(["And...\\.\\.\\. uh...\\.\\.\\."])
+        ErasePicture([1])
+        Wait([15])
+        PlaySE(["RPG::SE(@name=\"Key\", @pitch=100, @volume=80)"])
+        Wait([15])
+        PlaySE(["RPG::SE(@name=\"Equip3\", @pitch=90, @volume=80)"])
+        Wait([30])
+        ChangeArmor([361, 0, 0, 1, false])
+        ShowPicture([1, "Mermaid SlaveF dial grateful", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Mermaid girl:"])
+        ShowText(["Off wit' these!"])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Mermaid girl:"])
+        ShowText(["Come visit our home soon,\\. 'tis a bit ...\\.\\.\\. deep away...\\.\\.\\. but we'll reserve you the greatest honours!"])
+        ErasePicture([1])
+        ShotBalloonIcon([35, 4, false])
+        SetMoveRoute([35, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=30, @parameters=[5])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=30, @parameters=[5])"])
+        Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+        Wait([60])
+        ShotBalloonIcon([-1, 8, false])
+        ShowTextAttributes(["Hero", 0, 0, 2])
+        ShowText(["Well now...\\.\\.\\. Time to make up an excuse for the Princess..."])
+        Wait([40])
+        ControlSwitches([902, 902, 0])
+        TransferPlayer([0, 93, 10, 18, 8, 0])
+        JumpToLabel(["end"])
+        Empty([])
+      When([1, "Refuse."])
+        ShotBalloonIcon([18, 6, false])
+        Wait([15])
+        JumpToLabel(["mermref"])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    ChoicesEnd([])
+    Label(["end"])
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    TintScreen(["Tone(@red=-34.0, @green=-34.0, @blue=-34.0, @gray=0.0)", 10, true])
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])

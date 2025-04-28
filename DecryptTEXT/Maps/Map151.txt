@@ -1,0 +1,418 @@
+Display Name = ""
+Parallax Name = "Mountains5"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Comment([":update:"])
+    ConditionalBranch([0, 413, 0])
+      TintScreen(["Tone(@red=-34.0, @green=-34.0, @blue=0.0, @gray=34.0)", 20, true])
+      ChangeParallaxBack(["StarlitSky", true, true, 0, 0])
+      Empty([])
+
+    Else([])
+      TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 20, true])
+      ChangeParallaxBack(["Mountains5", true, true, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 1064, 0])
+      FadeinScreen([])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([0, 933, 1])
+        ConditionalBranch([0, 1080, 1])
+          FadeinScreen([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Your cries fall on deaf ears.\\.\\. You firmly believe this is the end and shut your eyes."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["But instead she squeezes you to her body.\\.\\. You hear the heavy flaps of her wings.\\.\\. You open your eyes again to look.\\.\\. "])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["You’re too weak to fight her off."])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    FadeinScreen([])
+    SetMoveRoute([27, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$DraPFly\\\", 0])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$DraPFly\", 0])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["She flies.\\.\\. Out of the lair and to an unknown destination with you in her arms.\\.\\. "])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["You have no idea where you’re going and can only be happy knowing it's not into her stomach."])
+    Wait([45])
+    FadeoutScreen([])
+    Wait([120])
+    ControlSwitches([1158, 1158, 0])
+    ControlSwitches([1080, 1080, 1])
+    ControlSwitches([1160, 1160, 0])
+    ControlSwitches([1182, 1182, 0])
+    TransferPlayer([0, 162, 14, 33, 2, 0])
+    Empty([])
+
+  Page 1
+    Wait([45])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The sky is clear and Dragon Princess I dragged you once again to her room's window.\\.\\. She's exposing herself proud,\\. her gigantic jugs face the wind fearlessly."])
+    ShowPicture([1, "Dragon pri dial topless", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dragon Princess I:"])
+    ShowText(["Mmmh~...\\.\\.\\. The wind sure is chilly today..."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dragon Princess I:"])
+    ShowText(["I really need to stretch myself out,\\. I've grown lazy sitting in these rooms all day...\\.\\.\\."])
+    ErasePicture([1])
+    SetMoveRoute([27, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShotBalloonIcon([27, 8, false])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["She looks away for a moment,\\. her gaze lost in the limitless sky...\\.\\.\\. who knows what a dragon may think about in these moments...\\.\\.\\."])
+    Wait([30])
+    ShowPicture([1, "Dragon pri dial topless pensive", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dragon Princess I:"])
+    ShowText(["Could THAT be why I gained these couple tens of pounds?"])
+    ErasePicture([1])
+    Wait([45])
+    SetMoveRoute([27, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    ShowPicture([1, "Dragon pri dial topless", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dragon Princess I:"])
+    ShowText(["So?\\.\\. Are we ready to go?\\.\\."])
+    ErasePicture([1])
+    SetMoveRoute([27, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"$DraPFly\\\", 0])\", \"RPG::MoveCommand(@code=33, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$DraPFly\", 0])"])
+    Unnamed(["RPG::MoveCommand(@code=33, @parameters=[])"])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["..."])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["She helps you climb her back.\\.\\. "])
+    ShowText(["She's soft and comfortable,\\. but you can't say you don't feel your legs shaking a little.\\.\\. "])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["After all this is the first time you fly...\\.\\.\\. consciously."])
+    FadeoutScreen([])
+    ControlSwitches([1163, 1163, 1])
+    ControlVariables([892, 892, 0, 0, 1])
+    TransferPlayer([0, 164, 12, 9, 6, 0])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 27
+Name = "draPI flyaway"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 56, 24, 12, 2, 0])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["There's an envelope on the table."])
+    ChangeItems([67, 0, 0, 1])
+    Wait([60])
+    PlaySE(["RPG::SE(@name=\"Wind1\", @pitch=145, @volume=60)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["This letter has been sent from the Dragon Queen to her daughter, Dragon Princess I."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\"I hereby command my fallen vassall, Dragon Princess the First, to reach promptly the castle of I, the Dragon Queen, to discuss the events occuring in the Kingdom.\""])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Signed: The Dragon Queen"])
+    ShotBalloonIcon([-1, 1, false])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["The Dragon Queen?!\\.\\. Could it be that the Princess already left?"])
+    ShowPicture([1, "Dog Princess Dial mad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dog Princess:"])
+    ShowText(["She thinks she can just ignore us?!\\.\\. There must be a way to reach the place she's headed to!"])
+    ErasePicture([1])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["The Dragon Queen's castle?\\.\\. I've no idea where it could be.\\.\\. It could as well be on a cloud,\\. if you give heed to legends..."])
+    ShowPicture([1, "Dog Princess Dial mad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Dog Princess:"])
+    ShowText(["We must search around,\\. there could be a hint about the castle's whereabouts."])
+    ErasePicture([1])
+    ControlSwitches([1168, 1168, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 32
+Name = "TPbasement"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 163, 21, 16, 2, 0])
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])

@@ -1,0 +1,215 @@
+Display Name = ""
+Parallax Name = "Skeleton Sewer"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "SeeMan's"
+
+  Page 0
+    ControlSwitches([1279, 1279, 0])
+    ControlSwitches([3000, 3000, 0])
+    ShotBalloonIcon([2, 2, true])
+    ConditionalBranch([0, 1276, 0])
+      ConditionalBranch([12, "objective_complete?(13, 0) && objective_active?(13, 1)"])
+        ShotBalloonIcon([2, 1, true])
+        Wait([30])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["The requested sperm sample has been delivered."])
+        Script(["n = $data_items[$game_variables[977]]"])
+        ScriptMore(["$game_party.lose_item(n,1)"])
+        Wait([15])
+        Script(["complete_objective(13, 0)"])
+        ScriptMore(["complete_objective(13, 1)"])
+        ScriptMore(["reveal_objective(13,2)"])
+        ScriptMore(["call_quest_journal(13)"])
+        Wait([15])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 2054, 0])
+      ConditionalBranch([12, "objective_complete?(33, 0) && objective_active?(33, 1)"])
+        ShotBalloonIcon([2, 1, true])
+        Wait([30])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["The requested sperm sample has been delivered."])
+        Script(["n = $data_items[$game_variables[977]]"])
+        ScriptMore(["$game_party.lose_item(n,1)"])
+        Wait([15])
+        Script(["complete_objective(33, 0)"])
+        ScriptMore(["complete_objective(33, 1)"])
+        ScriptMore(["reveal_objective(33,2)"])
+        ScriptMore(["call_quest_journal(33)"])
+        Wait([15])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([1279, 1279, 1])
+    ControlSwitches([3000, 3000, 1])
+    Empty([])
+
+CommonEvent 3
+Name = "SeeMan's Balloon"
+
+  Page 0
+    Wait([120])
+    ShotBalloonIcon([2, 8, true])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ShotBalloonIcon([-1, 8, false])
+    ShowTextAttributes(["Hero", 0, 2, 2])
+    ShowText(["Is that guy...\\.\\.\\. living here?"])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ConditionalBranch([0, 413, 0])
+      TintScreen(["Tone(@red=-34.0, @green=-34.0, @blue=0.0, @gray=34.0)", 10, true])
+      Empty([])
+
+    Else([])
+      TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 10, true])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([1])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 6
+Name = "&&&"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 2, 53, 79, 2, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "&&&"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 2, 53, 79, 2, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "Lizz"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    CallCommonEvent([564])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    ShotBalloonIcon([8, 1, true])
+    Wait([30])
+    SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    ConditionalBranch([0, 2396, 0])
+      ShowPicture([1, "Lizz dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Lizz:"])
+      ShowText(["Ya didn't see a single thing."])
+      ErasePicture([1])
+      Empty([])
+
+    Else([])
+      ShowPicture([1, "Lizz dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["???:"])
+      ShowText(["Out of my way,\\. tin man!"])
+      ErasePicture([1])
+      Empty([])
+
+    BranchEnd([])
+    ShotBalloonIcon([-1, 6, false])
+    Wait([15])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Wait([15])
+    SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=5, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=5, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    ControlSwitches([2457, 2457, 0])
+    ControlVariables([2066, 2066, 0, 0, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 10
+Name = "&&&"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 288, 33, 23, 8, 0])
+    Empty([])
+
+CommonEvent 11
+Name = "Egg"
+
+  Page 0
+    Comment(["<always update>"])
+    CallCommonEvent([86])
+    Empty([])
+
+  Page 1
+    Empty([])

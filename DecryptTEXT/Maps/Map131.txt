@@ -1,0 +1,305 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "GobP room door"
+
+  Page 0
+    Comment(["<always update>"])
+    PlaySE(["RPG::SE(@name=\"Close2\", @pitch=100, @volume=80)"])
+    Wait([30])
+    PlaySE(["RPG::SE(@name=\"Close2\", @pitch=100, @volume=80)"])
+    Wait([15])
+    PlaySE(["RPG::SE(@name=\"Close2\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The Princess' room is locked,\\. you have to find the key!"])
+    Wait([20])
+    ConditionalBranch([1, 639, 0, 1, 1])
+      ShowPicture([1, "GoblinP dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Goblin Princess:"])
+      ShowText(["Who's outta me room?!\\.\\. Go away!"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Goblin Princess:"])
+      ShowText(["Leave me alone!\\. I didn't do nuffin'!"])
+      ErasePicture([1])
+      Wait([20])
+      ConditionalBranch([0, 754, 0])
+        ShowTextAttributes(["Hero", 0, 0, 2])
+        ShowText(["Princess!\\.\\. It's me,\\. I'm here to get you out!"])
+        ShowPicture([1, "GoblinP dial aroused", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Goblin Princess:"])
+        ShowText(["Is it you, \\N[1]?\\.\\. Ya took yer time, hun!"])
+        ErasePicture([1])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["Hero", 0, 0, 2])
+        ShowText(["I came to get you out of here,\\. Princess!"])
+        ShowPicture([1, "GoblinP dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Goblin Princess:"])
+        ShowText(["I dunno who you are,\\. but if yer gonna do somethin' make it quick!\\.\\. We dun have much time!"])
+        ErasePicture([1])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ShowPicture([1, "GoblinP dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Goblin Princess:"])
+      ShowText(["Quite the timing ya have,\\. \\N[1]!"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Goblin Princess:"])
+      ShowText(["Get me outta here,\\. quick!\\.\\. Ya useless knight!"])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([1, "GoblinP dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Goblin Princess:"])
+    ShowText(["Da slaves used da siege to break their chains,\\. they locked me in mah room and rushed to da dungeon to free their comrades!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Goblin Princess:"])
+    ShowText(["We got enemies in and out me walls!\\.\\. Ya have to get my sweet bum outta here!"])
+    ErasePicture([1])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Maybe one of them has the key to this room...\\.\\.\\. I'll be right back Princess!"])
+    ConditionalBranch([1, 639, 0, 1, 1])
+      ConditionalBranch([0, 754, 0])
+        ShowPicture([1, "GoblinP dial aroused", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Goblin Princess:"])
+        ShowText(["!!\\.\\. ...\\.\\.\\. How dependable,\\. hun..."])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Goblin Princess:"])
+        ShowText(["Make it quick~!\\.\\. Yer bravery got me all wet down here!"])
+        ErasePicture([1])
+        ShotBalloonIcon([-1, 6, true])
+        Empty([])
+      Else([])
+        ShowPicture([1, "GoblinP dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Goblin Princess:"])
+        ShowText(["Please,\\. reach the dungeon!\\.\\. A huge reward expects whoever gets me outta this castle!"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ShowPicture([1, "GoblinP dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Goblin Princess:"])
+      ShowText(["Ye ye,\\. countin' on ya..."])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([1, "GoblinP dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Goblin Princess:"])
+    ShowText(["To reach da dungeon keep goin' down from here!\\.\\. Entering 's not a problem,\\. but leaving it couldn't be so easy..."])
+    ErasePicture([1])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Comment([":update:"])
+    PlaySE(["RPG::SE(@name=\"Close2\", @pitch=100, @volume=80)"])
+    Wait([30])
+    PlaySE(["RPG::SE(@name=\"Close2\", @pitch=100, @volume=80)"])
+    Wait([15])
+    PlaySE(["RPG::SE(@name=\"Close2\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The wooden door won't budge!"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["You will have to search for the key to open it."])
+    Wait([20])
+    ShowPicture([1, "GoblinP dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Goblin Princess:"])
+    ShowText(["To reach da dungeon keep goin' down from here!\\.\\. Entering 's not a problem,\\. but leaving it couldn't be so easy..."])
+    ErasePicture([1])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 2
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+    TransferPlayer([0, 119, 9, 15, 8, 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+  Page 1
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+  Page 1
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+  Page 1
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ConditionalBranch([0, 2161, 0])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 242, 17, 4, 2, 0])
+      Empty([])
+
+    Else([])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      TransferPlayer([0, 130, 17, 4, 2, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 132, 27, 7, 2, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "OgreDead"
+
+  Page 0
+    Wait([60])
+    PlaySE(["RPG::SE(@name=\"Key\", @pitch=100, @volume=80)"])
+    Wait([15])
+    PlaySE(["RPG::SE(@name=\"Open5\", @pitch=100, @volume=80)"])
+    ControlSwitches([973, 973, 0])
+    Wait([45])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    TransferPlayer([0, 119, 9, 15, 8, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "DoorSneakEv"
+
+  Page 0
+    ConditionalBranch([0, 2161, 0])
+      ControlSwitches([2167, 2167, 1])
+      Empty([])
+
+    BranchEnd([])
+    FadeinScreen([])
+    Wait([15])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 9
+Name = "p1"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[enemy 093]"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 093]"])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ControlSwitches([883, 883, 1])
+    ShowPicture([1, "Gremlin dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Gremlin:"])
+    ShowText(["Who's there?!\\.\\. Quick,\\. go get him!"])
+    ErasePicture([1])
+    FadeoutScreen([])
+    ControlSwitches([884, 884, 1])
+    ConditionalBranch([12, "$game_party.members[0].equips[5] == $data_armors[260]"])
+      Comment(["Greenkin Mask"])
+      Empty([])
+
+    Else([])
+      ControlVariables([638, 638, 2, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    TransferPlayer([0, 70, 84, 48, 2, 0])
+    ControlSwitches([2161, 2161, 1])
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    CallCommonEvent([56])
+    CallCommonEvent([20])
+    FadeinScreen([])
+    Wait([60])
+    ConditionalBranch([0, 413, 0])
+      ShowTextAttributes(["Hero", 0, 2, 2])
+      ShowText(["I need to be more careful...\\.\\.\\. but there's still time before the night ends."])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["Hero", 0, 2, 2])
+      ShowText(["Morning already...\\.\\.\\. better call it off for now."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 11
+Name = "GobP corri door"
+
+  Page 0
+    Comment(["<always update>"])
+    PlaySE(["RPG::SE(@name=\"Close2\", @pitch=100, @volume=80)"])
+    Wait([30])
+    PlaySE(["RPG::SE(@name=\"Close2\", @pitch=100, @volume=80)"])
+    Wait([15])
+    PlaySE(["RPG::SE(@name=\"Close2\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The wooden door won't budge!"])
+    Empty([])
