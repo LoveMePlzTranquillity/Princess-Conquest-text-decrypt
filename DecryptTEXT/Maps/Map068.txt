@@ -1,0 +1,226 @@
+Display Name = ""
+Parallax Name = "Lighthouse TF Port"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 66, 10, 1, 8, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ConditionalBranch([0, 413, 0])
+      ConditionalBranch([1, 3882, 0, -5, 2])
+        ConditionalBranch([12, "$game_variables[3212][0] == 0"])
+          Empty([])
+        Else([])
+          CallCommonEvent([543])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 413, 0])
+      TintScreen(["Tone(@red=-34.0, @green=-34.0, @blue=0.0, @gray=34.0)", 1, true])
+      Empty([])
+
+    Else([])
+      TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+      Empty([])
+
+    BranchEnd([])
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 5
+Name = "WailGhost"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ConditionalBranch([12, "$game_variables[3212][0] == 0"])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    ControlVariables([2097, 2097, 0, 0, 1112])
+    ControlSwitches([2412, 2412, 0])
+    Script(["@v = 2100 + $game_variables[2097]"])
+    ControlVariables([2051, 2051, 0, 0, 1])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Wailing Ghost:"])
+    ShowText(["This place is so lonely...\\.\\.\\. but I can't leave it,\\. no matter how hard I try.\\.\\. My soul is bound to this lighthouse..."])
+    ShotBalloonIcon([0, 7, false])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Wailing Ghost:"])
+    ShowText(["Give me...\\.\\.\\. love...\\.\\.\\."])
+    CallCommonEvent([559])
+    ControlSwitches([2412, 2412, 1])
+    CallCommonEvent([740])
+    CallCommonEvent([743])
+    Label(["end"])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+  Page 4
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 5
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=42, @parameters=[125])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[125])"])
+    Wait([210])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Wait([2])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    Wait([2])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "Finish tent message"
+
+  Page 0
+    Wait([600])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Finish?"])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      ControlSwitches([1202, 1202, 0])
+      Empty([])
+
+    When([1, "No"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])

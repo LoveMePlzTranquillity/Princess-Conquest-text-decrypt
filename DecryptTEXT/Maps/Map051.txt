@@ -1,0 +1,163 @@
+Display Name = ""
+Parallax Name = "Crypt"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    ControlSwitches([531, 531, 0])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["There's something sparkling in the coffin."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Seems like a little mirror."])
+    ShowText(["His surface is still shiny."])
+    Wait([45])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["You keep looking in it, unable to avert the gaze."])
+    ShakeScreen([2, 2, 360, false])
+    TintScreen(["Tone(@red=-255.0, @green=-255.0, @blue=-255.0, @gray=0.0)", 240, false])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The room starts fading around you."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\|You fall into an unnatural sleep.\\|"])
+    Wait([30])
+    FadeoutScreen([])
+    ControlSelfSwitch(["A", 0])
+    FadeoutBGS([1])
+    TransferPlayer([0, 55, 23, 9, 2, 0])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    ControlSwitches([531, 531, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The exit is shut close."])
+    ShowText(["You won't be able to move this."])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Comment([":update:"])
+    PlayBGS(["RPG::BGS(@name=\"Drips\", @volume=60, @pitch=100)"])
+    TintScreen(["Tone(@red=-68.0, @green=-68.0, @blue=-68.0, @gray=0.0)", 60, true])
+    Wait([60])
+    FadeinScreen([])
+    Wait([90])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Ghost Princess:"])
+    ShowText(["I'm sorry \\N[1]."])
+    ShowText(["I don't think you'll ever leave this tomb."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Ghost Princess:"])
+    ShowText(["I discovered what you did to the owner of the soul you"])
+    ShowText(["used for my recall."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Ghost Princess:"])
+    ShowText(["She told me\\..\\..\\.."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Ghost Princess:"])
+    ShowText(["Just to be safe I think I'll leave you here to slowly die."])
+    ShowText(["You're a cruel man and I've got no mercy for the likes "])
+    ShowText(["of you."])
+    Wait([60])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Ghost Princess:"])
+    ShowText(["Farewell, \\N[1]."])
+    ControlSwitches([536, 536, 0])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Comment([":update:"])
+    TintScreen(["Tone(@red=-68.0, @green=-68.0, @blue=-68.0, @gray=0.0)", 60, true])
+    FadeinScreen([])
+    PlayBGS(["RPG::BGS(@name=\"Drips\", @volume=60, @pitch=100)"])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Here are preserved the mortal spoils of the beautiful Yulia, "])
+    ShowText(["princess of this reign, that died at 16, in the day of her"])
+    ShowText(["ascension to the throne."])
+    ShowText(["May she rest in peace."])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Here are preserved the mortal spoils of the beautiful Yulia, "])
+    ShowText(["princess of this reign, died at 16, the day of her ascension"])
+    ShowText(["to the throne."])
+    ShowText(["May she rest in peace."])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=42, @parameters=[255])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[255])"])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=42, @parameters=[255])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[255])"])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=42, @parameters=[85])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[85])"])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=42, @parameters=[85])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[85])"])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutBGS([1])
+    FadeoutScreen([])
+    ControlSwitches([535, 535, 0])
+    TransferPlayer([0, 50, 16, 30, 2, 0])
+    Empty([])

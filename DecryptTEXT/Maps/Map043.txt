@@ -1,0 +1,994 @@
+Display Name = ""
+Parallax Name = "Hive Boss"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "InsP"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 2
+Name = "InsATK"
+
+  Page 0
+    Wait([45])
+    ShowPicture([1, "Insect Princess dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["Was that...\\.\\.\\. an insect?!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["What happened to my soldiers?!\\.\\. They've gone crazy!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["Let's go \\N[1],\\. we have to find who's responsible for this!"])
+    ErasePicture([1])
+    ControlSwitches([382, 382, 0])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 3
+Name = "InsCrazed"
+
+  Page 0
+    Comment(["[enemy 017]"])
+    Comment(["[switch 710]"])
+    Comment(["[localsw 0]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    ControlVariables([585, 585, 0, 0, 55])
+    ControlSwitches([648, 648, 0])
+    ControlVariables([569, 569, 0, 0, 1])
+    CallCommonEvent([52])
+    EraseEvent([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 4
+Name = "InsCrazed"
+
+  Page 0
+    Comment(["[enemy 017]"])
+    Comment(["[switch 710]"])
+    Comment(["[localsw 0]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    ControlVariables([585, 585, 0, 0, 55])
+    ControlSwitches([648, 648, 0])
+    ControlVariables([569, 569, 0, 0, 1])
+    CallCommonEvent([52])
+    EraseEvent([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 5
+Name = "InsCrazed"
+
+  Page 0
+    Comment(["[enemy 017]"])
+    Comment(["[switch 710]"])
+    Comment(["[localsw 0]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    ControlVariables([585, 585, 0, 0, 55])
+    ControlSwitches([648, 648, 0])
+    ControlVariables([569, 569, 0, 0, 1])
+    CallCommonEvent([52])
+    EraseEvent([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 6
+Name = "InsCrazed"
+
+  Page 0
+    Comment(["[enemy 017]"])
+    Comment(["[switch 710]"])
+    Comment(["[localsw 0]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    ControlVariables([585, 585, 0, 0, 55])
+    ControlSwitches([648, 648, 0])
+    ControlVariables([569, 569, 0, 0, 1])
+    CallCommonEvent([52])
+    EraseEvent([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 7
+Name = "fairyP/Brownie"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 018]"])
+    Comment(["[localsw 0]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 2
+    ControlVariables([585, 585, 0, 0, 250])
+    ControlSwitches([648, 648, 0])
+    ControlVariables([569, 569, 0, 2, 3, 6])
+    CallCommonEvent([52])
+    Wait([120])
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    FadeoutBGM([2])
+    PlaySE(["RPG::SE(@name=\"Victory (Fixed)\", @pitch=100, @volume=80)"])
+    ControlSwitches([385, 385, 0])
+    Wait([30])
+    Script(["n = \"Insect Princess dial\""])
+    ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+    ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["Do you think I'm done with you?!\\.\\. I'll enjoy ripping your wings off before disposing of you!"])
+    ShowPicture([1, "Insect Princess dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["There couldn't be any good reason to do what you did to my subjects!"])
+    ShowPicture([1, "Brownie dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Brownie:"])
+    ShowText(["I-\\.it's payback for my brother!"])
+    ErasePicture([1])
+    ShotBalloonIcon([7, 5, true])
+    Wait([10])
+    ShowPicture([1, "Brownie dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Brownie:"])
+    ShowText(["You've abducted him!\\.\\. I know you've got him in here!\\.\\. Give him back to me!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Brownie:"])
+    ShowText(["He HAS to be in here!"])
+    Script(["n = \"Insect Princess dial\""])
+    ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+    ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["We didn't capture any fairy boy,\\. just humans in a nearby village!\\.\\."])
+    ShowPicture([1, "Insect Princess dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["You're spouting nonsense!"])
+    ErasePicture([1])
+    Wait([15])
+    ShotBalloonIcon([7, 8, true])
+    Wait([15])
+    ShowPicture([1, "Brownie dial cry", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Brownie:"])
+    ShowText(["He was there...\\.\\.\\. between them..."])
+    ShowPicture([1, "Insect Princess dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["It's of no importance!!\\.\\. Nothing can be done for your friend now."])
+    ShowPicture([1, "Brownie dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Brownie:"])
+    ShowText(["\\^No...\\.\\.\\. it's-\\.it's your fault...\\.\\.\\."])
+    ErasePicture([1])
+    ConditionalBranch([0, 379, 0])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+      ShowAnimation([7, 7, false])
+      ControlSwitches([387, 387, 0])
+      Wait([45])
+      ShowPicture([1, "Insect Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Insect Princess:"])
+      ShowText(["Very well,\\. you proved your loyalty to me once more,\\. \\N[1]."])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Insect Princess:"])
+      ShowText(["Now...\\.\\.\\."])
+      ErasePicture([1])
+      Wait([30])
+      Script(["n = \"Insect Princess dial smug\""])
+      ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+      ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Insect Princess:"])
+      ShowText(["I don't want you to look at me while I'm eating...\\.\\.\\. it's a girl thing~"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Insect Princess:"])
+      ShowText(["Come back again whenever you like,\\.\\. I will reward you properly~"])
+      ErasePicture([1])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["", 0, 0, 1])
+      ShowText(["???:"])
+      ShowText(["Stop it,\\. the two of you!!"])
+      ShotBalloonIcon([-1, 1, false])
+      ShotBalloonIcon([7, 1, false])
+      ControlVariables([24, 24, 0, 3, 5, -1, 0])
+      ControlVariables([25, 25, 0, 3, 5, -1, 1])
+      ControlVariables([25, 25, 2, 0, 2])
+      ShowAnimation([11, 130, false])
+      SetEventLocation([11, 1, 24, 25, 2])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      Wait([60])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Human Boy:"])
+      ShowText(["You shouldn't fight! "])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Human Boy:"])
+      ShowText(["After all..."])
+      ShowAnimation([11, 43, true])
+      ControlSwitches([386, 386, 0])
+      Wait([30])
+      ShowPicture([1, "Brownie dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Brownie #2:"])
+      ShowText(["I'm still alive!"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Brownie #2:"])
+      ShowText(["And all thanks to this good knight that refused to throw me in the feeding grounds! "])
+      ErasePicture([1])
+      ShotBalloonIcon([7, 3, false])
+      ShowPicture([1, "Brownie dial cry", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Brownie:"])
+      ShowText(["You-\\.You're alive!\\.\\. Owwoww..."])
+      ShowPicture([1, "Brownie dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Brownie #2:"])
+      ShowText(["Don't cry,\\. my dear brother.\\.\\. You should be worried about how you can undo what you did,\\. instead."])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Brownie #2:"])
+      ShowText(["The insects didn't hurt me in the end,\\. so you shouldn't have hurt them!"])
+      ErasePicture([1])
+      ShotBalloonIcon([7, 8, true])
+      Wait([30])
+      ShowPicture([1, "Brownie dial cry", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Brownie:"])
+      ShowText(["Yes...\\.\\.\\. you're right...\\.\\.\\."])
+      ErasePicture([1])
+      FadeoutScreen([])
+      TransferPlayer([0, 43, 7, 8, 4, 0])
+      SetEventLocation([0, 0, 6, 8, 4])
+      SetEventLocation([11, 0, 5, 7, 2])
+      Wait([60])
+      FadeinScreen([])
+      Wait([60])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      ShowAnimation([14, 42, true])
+      ControlSwitches([383, 383, 1])
+      Wait([60])
+      SetMoveRoute([7, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      ShowPicture([1, "Brownie dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Brownie:"])
+      ShowText(["I'm really sorry Princess,\\. I shouldn't have done the horrible things I did..."])
+      ShowPicture([1, "Brownie dial cry", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Brownie:"])
+      ShowText(["If only we could forget about what happened today..."])
+      ShowPicture([1, "Insect Princess dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Insect Princess:"])
+      ShowText(["It's your turn \\N[1],\\. show them what we do to whoever harms us."])
+      ErasePicture([1])
+      ShowChoices([["Kill the Brownie", "Consider giving him another chance"], 2])
+      When([0, "Kill the Brownie"])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+        ShowAnimation([7, 7, false])
+        ControlSwitches([387, 387, 0])
+        Wait([45])
+        ShowPicture([1, "Insect Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Insect Princess:"])
+        ShowText(["Very well,\\. you proved your loyalty to me once more,\\. \\N[1]."])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Insect Princess:"])
+        ShowText(["Now...\\.\\.\\."])
+        ErasePicture([1])
+        Wait([30])
+        Script(["n = \"Insect Princess dial smug\""])
+        ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+        ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Insect Princess:"])
+        ShowText(["I don't want you to look at me while I'm eating...\\.\\.\\. it's a girl thing~"])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Insect Princess:"])
+        ShowText(["Come back again whenever you like,\\.\\. I will reward you properly~"])
+        ErasePicture([1])
+        Empty([])
+      When([1, "Consider giving him another chance"])
+        ShowPicture([1, "Insect Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Insect Princess:"])
+        ShowText(["Y-\\.You think so?\\.\\. But we have no use for him...\\.\\.\\. and the larvae are hungry..."])
+        ErasePicture([1])
+        Wait([30])
+        ShotBalloonIcon([-1, 9, true])
+        Wait([30])
+        ShowPicture([1, "Insect Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Insect Princess:"])
+        ShowText(["You want to take it with you?\\.\\. Are you sure about it?"])
+        ErasePicture([1])
+        Wait([30])
+        ShowPicture([1, "Insect Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Insect Princess:"])
+        ShowText(["If that's what you want...\\.\\.\\. Put her in this jar!"])
+        ErasePicture([1])
+        ShotBalloonIcon([7, 1, true])
+        ShowPicture([1, "Brownie dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Brownie:"])
+        ShowText(["WHAT DID YOU JUST SAY?"])
+        Script(["n = \"Insect Princess dial smug\""])
+        ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+        ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Insect Princess:"])
+        ShowText(["This way we will be sure he won't run away until he served his purpose in life~!"])
+        ShowPicture([1, "Brownie dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Brownie:"])
+        ShowText(["\\^NOOOOOOO\\.\\.\\.\\.\\."])
+        ErasePicture([1])
+        ControlSwitches([388, 388, 0])
+        ChangeItems([14, 0, 0, 1])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_party.leader.id == 8"])
+      CallCommonEvent([45])
+      Empty([])
+
+    BranchEnd([])
+    ChangePartyMember([8, 1, 0])
+    ControlVariables([128, 128, 1, 0, 2])
+    ControlSwitches([375, 375, 0])
+    TransferPlayer([0, 15, 13, 6, 8, 0])
+    Empty([])
+
+  Page 3
+    Wait([60])
+    ShowPicture([1, "Insect Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["Your assistance was precious even today,\\. \\N[1]. Come back soon, \\.\\.I want to spend more time with you!"])
+    ErasePicture([1])
+    ConditionalBranch([12, "$game_party.leader.id == 8"])
+      CallCommonEvent([45])
+      Empty([])
+
+    BranchEnd([])
+    ChangePartyMember([8, 1, 0])
+    ControlVariables([128, 128, 1, 0, 2])
+    ControlSwitches([375, 375, 0])
+    TransferPlayer([0, 15, 13, 6, 8, 0])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+CommonEvent 9
+Name = "InsCrazed"
+
+  Page 0
+    Comment(["[enemy 017]"])
+    Comment(["[switch 710]"])
+    Comment(["[localsw 0]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    ControlVariables([585, 585, 0, 0, 55])
+    ControlSwitches([648, 648, 0])
+    ControlVariables([569, 569, 0, 0, 1])
+    CallCommonEvent([52])
+    EraseEvent([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 10
+Name = "InsLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 11
+Name = "FakeGuy"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 12
+Name = "InsLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ShowPicture([1, "Insect Princess dial sad", 0, 0, 5, 10, 90, 90, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["It's burnt to a crisp."])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 14
+Name = "InsGuard"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ShowPicture([1, "Insect Princess dial sad", 0, 0, 5, 10, 90, 90, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["It's burnt to a crisp."])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ShowPicture([1, "Insect Princess dial sad", 0, 0, 5, 10, 90, 90, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["It's burnt to a crisp."])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 17
+Name = "InsLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ShowPicture([1, "Insect Princess dial sad", 0, 0, 5, 10, 90, 90, 255, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["It's burnt to a crisp."])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ShowPicture([1, "Insect Princess dial sad", 0, 0, 5, 10, 90, 90, 255, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["It's burnt to a crisp."])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ShowPicture([1, "Insect Princess dial sad", 0, 0, 5, 10, 90, 90, 255, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["It's burnt to a crisp."])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+CommonEvent 22
+Name = "Load"
+
+  Page 0
+    Comment([":update:"])
+    ConditionalBranch([0, 413, 0])
+      TintScreen(["Tone(@red=-34.0, @green=-34.0, @blue=0.0, @gray=34.0)", 10, true])
+      Empty([])
+
+    BranchEnd([])
+    FadeinScreen([])
+    Script(["$game_map.start_sas"])
+    ScriptMore(["$game_map.sas_hud.show(true)"])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Empty([])
+
+CommonEvent 25
+Name = "Freeze dmg"
+
+  Page 0
+    ConditionalBranch([12, "$game_player.region_id == 3"])
+      ShotBalloonIcon([-1, 1, false])
+      Wait([5])
+      ControlSelfSwitch(["A", 0])
+      Comment(["### Remove enemies ###"])
+      Script(["@i = 3"])
+      ScriptMore(["while @i <= 6"])
+      ScriptMore(["$game_self_switches[[43,@i,\"B\"]] = true"])
+      ScriptMore(["@i += 1"])
+      ScriptMore(["end"])
+      ScriptMore(["$game_self_switches[[43,9,\"B\"]] = true"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Wait([30])
+    FadeoutScreen([])
+    FadeoutBGM([3])
+    Wait([20])
+    CallCommonEvent([90])
+    TransferPlayer([0, 43, 11, 8, 4, 0])
+    FadeinScreen([])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Wait([30])
+    ShowPicture([1, "Hornet dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Hornet Soldier:"])
+    ShowText(["No!\\.\\. Please!"])
+    ErasePicture([1])
+    ShowAnimation([14, 57, false])
+    Wait([10])
+    ControlSwitches([383, 383, 0])
+    Wait([30])
+    ShowPicture([1, "Brownie dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Brownie:"])
+    ShowText(["Serves you right,\\. murderer."])
+    ErasePicture([1])
+    ShotBalloonIcon([7, 1, true])
+    SetMoveRoute([7, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Wait([30])
+    ShowPicture([1, "Brownie dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Brownie:"])
+    ShowText(["You saw it,\\. human,\\. didn't you?!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Brownie:"])
+    ShowText(["Looks like I'll have to deal with all of you!"])
+    ShowPicture([1, "Insect Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["That's...\\.\\.\\. one of Fairy Princess' underlings!"])
+    ShowPicture([1, "Insect Princess dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["Why have you done this?\\.\\. Your Reign is far from here!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["Who're you working for?!\\.\\. Why...\\.\\.\\."])
+    ShowPicture([1, "Insect Princess dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["...it doesn't matter anymore."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["I'll kill you and feed you to the larvae!"])
+    ErasePicture([1])
+    SetMoveRoute([7, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+    ControlSwitches([711, 711, 0])
+    PlayBGM(["RPG::BGM(@name=\"P&C - Boss\", @volume=100, @pitch=100)"])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    Empty([])
+
+CommonEvent 31
+Name = "drop1"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["n = $data_weapons[$game_variables[577]]"])
+    ScriptMore(["$game_party.gain_item(n, 1) "])
+    Script(["n = $data_armors[$game_variables[578]]"])
+    ScriptMore(["$game_party.gain_item(n, 1) "])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    Comment([":update:"])
+    Wait([120])
+    ShowPicture([1, "Insect Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["The scream was coming from down here,\\. let's search for its source!"])
+    ErasePicture([1])
+    SetMoveRoute([1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    ShakeScreen([4, 4, 30, false])
+    ShowTextAttributes(["", 0, 0, 1])
+    ShowText(["???:"])
+    ShowText(["\\^HELP US! QUEENIE!\\.\\.\\.\\.\\."])
+    SetMoveRoute([1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[1, 0])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[1, 0])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    ShowPicture([1, "Insect Princess dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["EEEK!"])
+    ErasePicture([1])
+    Wait([60])
+    SetMoveRoute([1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    Wait([30])
+    Label(["addins"])
+    ShowPicture([1, "Insect Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["I'll let you come with me,\\. i\\.-it could be too dangerous for a mere human."])
+    ErasePicture([1])
+    ShotBalloonIcon([-1, 8, true])
+    Comment(["@@@@"])
+    ControlVariables([238, 238, 0, 3, 7, 1, 0])
+    ConditionalBranch([1, 238, 0, 3, 2])
+      ChangePartyMember([8, 0, 1])
+      ShowTextAttributes(["", 6, 0, 1])
+      ShowText(["Insect Princess has been added to the party!"])
+      ControlSwitches([357, 357, 1])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["", 6, 0, 1])
+      ShowText(["The party is full,\\. to get her in you have to drop someone out first."])
+      ShowTextAttributes(["", 5, 0, 2])
+      ShowText(["You want to leave someone in the Tavern?"])
+      ControlVariables([2085, 2085, 0, 0, 5])
+      CallCommonEvent([563])
+      ControlVariables([2085, 2085, 0, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["@@@@"])
+    ConditionalBranch([4, 8, 0])
+      Empty([])
+
+    Else([])
+      JumpToLabel(["addins"])
+      Empty([])
+
+    BranchEnd([])
+    CallCommonEvent([53])
+    Script(["$game_map.start_sas"])
+    ScriptMore(["$game_map.sas_hud.show(true)"])
+    ControlSwitches([381, 381, 0])
+    Empty([])
+
+  Page 1
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 35
+Name = "drop2"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["n = $data_weapons[$game_variables[579]]"])
+    ScriptMore(["$game_party.gain_item(n, 1) "])
+    Script(["n = $data_armors[$game_variables[580]]"])
+    ScriptMore(["$game_party.gain_item(n, 1) "])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 36
+Name = "drop3"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["n = $data_weapons[$game_variables[581]]"])
+    ScriptMore(["$game_party.gain_item(n, 1) "])
+    Script(["n = $data_armors[$game_variables[582]]"])
+    ScriptMore(["$game_party.gain_item(n, 1) "])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 37
+Name = "Drops"
+
+  Page 0
+    ConditionalBranch([0, 643, 0])
+      ConditionalBranch([2, "A", 1])
+        SetEventLocation([31, 1, 574, 575, 0])
+        Script(["@x = $game_variables[574]"])
+        ScriptMore(["@y = $game_variables[575]"])
+        Script(["@y -= 1"])
+        ConditionalBranch([12, "$game_map.passable?(@x, @y, 2)"])
+          SetMoveRoute([31, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, -1])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, -1])"])
+          Empty([])
+        Else([])
+          Script(["@y += 2"])
+          ConditionalBranch([12, "$game_map.passable?(@x, @y, 2)"])
+            SetMoveRoute([31, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 1])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+            Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 1])"])
+            Empty([])
+          Else([])
+            Script(["@y -= 1"])
+            Script(["@x -= 1"])
+            ConditionalBranch([12, "$game_map.passable?(@x, @y, 2)"])
+              SetMoveRoute([31, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[-1, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+              Unnamed(["RPG::MoveCommand(@code=14, @parameters=[-1, 0])"])
+              Empty([])
+            Else([])
+              Script(["@x += 2"])
+              ConditionalBranch([12, "$game_map.passable?(@x, @y, 2)"])
+                SetMoveRoute([31, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[1, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+                Unnamed(["RPG::MoveCommand(@code=14, @parameters=[1, 0])"])
+                Empty([])
+              Else([])
+                SetMoveRoute([31, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+                Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+                Empty([])
+              BranchEnd([])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        CallCommonEvent([51])
+        ControlSelfSwitch(["A", 0])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 644, 0])
+      ConditionalBranch([2, "B", 1])
+        SetEventLocation([35, 1, 574, 575, 0])
+        Script(["@x = $game_variables[574]"])
+        ScriptMore(["@y = $game_variables[575]"])
+        Script(["@y -= 1"])
+        ConditionalBranch([12, "$game_map.passable?(@x, @y, 2)"])
+          SetMoveRoute([35, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, -1])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, -1])"])
+          Empty([])
+        Else([])
+          Script(["@y += 2"])
+          ConditionalBranch([12, "$game_map.passable?(@x, @y, 2)"])
+            SetMoveRoute([35, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 1])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+            Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 1])"])
+            Empty([])
+          Else([])
+            Script(["@y -= 1"])
+            Script(["@x -= 1"])
+            ConditionalBranch([12, "$game_map.passable?(@x, @y, 2)"])
+              SetMoveRoute([35, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[-1, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+              Unnamed(["RPG::MoveCommand(@code=14, @parameters=[-1, 0])"])
+              Empty([])
+            Else([])
+              Script(["@x += 2"])
+              ConditionalBranch([12, "$game_map.passable?(@x, @y, 2)"])
+                SetMoveRoute([35, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[1, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+                Unnamed(["RPG::MoveCommand(@code=14, @parameters=[1, 0])"])
+                Empty([])
+              Else([])
+                SetMoveRoute([35, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+                Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+                Empty([])
+              BranchEnd([])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        CallCommonEvent([51])
+        ControlSelfSwitch(["B", 0])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 645, 0])
+      ConditionalBranch([2, "C", 1])
+        SetEventLocation([36, 1, 574, 575, 0])
+        Script(["@x = $game_variables[574]"])
+        ScriptMore(["@y = $game_variables[575]"])
+        Script(["@y -= 1"])
+        ConditionalBranch([12, "$game_map.passable?(@x, @y, 2)"])
+          SetMoveRoute([36, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, -1])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, -1])"])
+          Empty([])
+        Else([])
+          Script(["@y += 2"])
+          ConditionalBranch([12, "$game_map.passable?(@x, @y, 2)"])
+            SetMoveRoute([36, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 1])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+            Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 1])"])
+            Empty([])
+          Else([])
+            Script(["@y -= 1"])
+            Script(["@x -= 1"])
+            ConditionalBranch([12, "$game_map.passable?(@x, @y, 2)"])
+              SetMoveRoute([36, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[-1, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+              Unnamed(["RPG::MoveCommand(@code=14, @parameters=[-1, 0])"])
+              Empty([])
+            Else([])
+              Script(["@x += 2"])
+              ConditionalBranch([12, "$game_map.passable?(@x, @y, 2)"])
+                SetMoveRoute([36, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[1, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+                Unnamed(["RPG::MoveCommand(@code=14, @parameters=[1, 0])"])
+                Empty([])
+              Else([])
+                SetMoveRoute([36, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+                Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+                Empty([])
+              BranchEnd([])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        CallCommonEvent([51])
+        ControlSelfSwitch(["C", 0])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Wait([15])
+    Empty([])
+
+  Page 1
+    ControlSelfSwitch(["A", 1])
+    ControlSelfSwitch(["B", 1])
+    ControlSelfSwitch(["C", 1])
+    ControlSelfSwitch(["D", 1])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    Comment(["[enemy 068]"])
+    Comment(["[switch 710]"])
+    Comment(["[localsw 0]"])
+    Empty([])
+
+  Page 1
+    ControlVariables([585, 585, 0, 0, 55])
+    ControlSwitches([648, 648, 0])
+    ControlVariables([569, 569, 0, 0, 1])
+    CallCommonEvent([52])
+    EraseEvent([])
+    Empty([])

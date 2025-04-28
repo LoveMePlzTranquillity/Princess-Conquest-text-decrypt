@@ -1,0 +1,134 @@
+Display Name = ""
+Parallax Name = "Des Player room"
+Note = ""
+
+CommonEvent 1
+Name = "Door"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 3
+Name = "candle"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 5
+Name = "RoomEv"
+
+  Page 0
+    SetMoveRoute([3, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=42, @parameters=[155])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[155])"])
+    SetMoveRoute([1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=42, @parameters=[155])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[155])"])
+    TintScreen(["Tone(@red=-68.0, @green=-68.0, @blue=-68.0, @gray=0.0)", 1, true])
+    Wait([45])
+    FadeinScreen([])
+    Wait([15])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The Princess' maids brought you to a large room,\\. one of the several they prepare every time the night of the Festival approaches."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["While quite far from the Princess' quarters,\\. yours was real close to the passage the court uses to reach the square where the celebrations happen weekly."])
+    Wait([15])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Mh...\\.\\.\\. nice quarters.\\.\\. One can only imagine the rooms they've had prepared for the Princess' most noble hosts."])
+    ShowTextAttributes(["", 0, 0, 1])
+    ShowText(["Hospitality plays a vital role in desert cultures,\\. refusing it bluntly would have appeared quite rude."])
+    Wait([15])
+    ShowTextAttributes(["Hero", 0, 2, 1])
+    ShowText(["Well,\\. since we're here...\\.\\.\\."])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+    SetMoveRoute([6, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=42, @parameters=[40])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[40])"])
+    ControlSwitches([337, 337, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["A short nap in the bed the Princess had prepared for you sounded really nice after crossing the desert,\\. but something...\\.\\.\\."])
+    ShotBalloonIcon([-1, 1, false])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["... something in the corner of your vision moved.\\.\\. It was almost invisible,\\. like a shadow."])
+    Wait([15])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Who's there?\\| Show yourself,\\. if you dare!"])
+    Wait([120])
+    ShowTextAttributes(["", 0, 0, 1])
+    ShowText(["No answer comes from the dark room.\\.\\. That's when you decide..."])
+    ShowChoices([["That you should face it.", "That you're probably too tired."], 0])
+    When([0, "That you should face it."])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=14, @parameters=[2, 0])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[2, 0])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      ShotBalloonIcon([-1, 1, false])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["Show yourself!"])
+      Wait([15])
+      ControlSwitches([338, 338, 0])
+      ControlSwitches([337, 337, 1])
+      TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 60, false])
+      Wait([15])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      Wait([30])
+      ShowTextAttributes(["", 6, 0, 2])
+      ShowText(["As the shadows dissolve you realize how silly you must have looked."])
+      Wait([15])
+      ShotBalloonIcon([-1, 7, true])
+      Wait([15])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["Is my mind playing tricks on me?"])
+      Wait([30])
+      ControlVariables([231, 231, 1, 0, 1])
+      Empty([])
+
+    When([1, "That you're probably too tired."])
+      ControlSwitches([337, 337, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["The soft sheets easily captivates you much more than shadows you're likely imagining..."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You remind yourself,\\. being a knight also means to steel yourself and become impregnable to the trickeries of the mind."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Too many nights you've spent camping outside to let yourself be frightened by shadows dancing at candle light."])
+      Empty([])
+
+    ChoicesEnd([])
+    Wait([15])
+    FadeoutScreen([])
+    Wait([15])
+    Comment(["#####################"])
+    ControlVariables([76, 76, 0, 4, "Array.new(100,0)"])
+    ChangeState([0, 0, 1, 222])
+    ChangeState([0, 0, 1, 223])
+    ChangeState([0, 0, 1, 242])
+    ControlVariables([75, 75, 0, 1, 376])
+    Comment(["#####################"])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 10, false])
+    ControlSwitches([339, 339, 0])
+    TransferPlayer([0, 27, 14, 8, 8, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "Sphinx"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])

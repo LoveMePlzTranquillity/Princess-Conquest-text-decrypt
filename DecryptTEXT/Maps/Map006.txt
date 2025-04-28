@@ -1,0 +1,113 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ShowTextAttributes(["Monster1", 6, 0, 2])
+    ShowText(["???:"])
+    ShowText(["Do as I ask, please, my old friend."])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ShowTextAttributes(["Monster1", 6, 0, 2])
+    ShowText(["???:"])
+    ShowText(["Finally my dear."])
+    ShowTextAttributes(["Monster1", 6, 0, 2])
+    ShowText(["???:"])
+    ShowText(["The time has come for you to descend"])
+    ShowText(["once again in the Princess Kingdom."])
+    ShowTextAttributes(["Monster1", 6, 0, 2])
+    ShowText(["???:"])
+    ShowText(["To show these frilly, outrageous, "])
+    ShowText(["egoistical, sinful hypocrites just HOW "])
+    ShowText(["MUCH did they stray from the just way."])
+    ShowTextAttributes(["Monster1", 6, 0, 2])
+    ShowText(["???:"])
+    ShowText(["...and OH if they did..."])
+    ShowTextAttributes(["Monster1", 6, 0, 2])
+    ShowText(["???:"])
+    ShowText(["Unfortunately your old body right now"])
+    ShowText(["is...indisposed..."])
+    ShowTextAttributes(["Monster1", 6, 0, 2])
+    ShowText(["???:"])
+    ShowText(["You'll have to make do with one of "])
+    ShowText(["the vessels I managed to provide you..."])
+    Wait([60])
+    ShowTextAttributes(["Monster1", 6, 0, 2])
+    ShowText(["???:"])
+    ShowText(["Choose wisely."])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Choose the Valiant Knight?"])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      ShowTextAttributes(["Monster1", 6, 0, 2])
+      ShowText(["???:"])
+      ShowText(["As I foresought."])
+      ShowTextAttributes(["Monster1", 6, 0, 2])
+      ShowText(["???: "])
+      ShowText(["Now go and fulfill your role."])
+      ShowText(["Make them pay..."])
+      ShowTextAttributes(["Monster1", 6, 0, 2])
+      ShowText(["???:"])
+      ShowText(["Be the hero they deserve..."])
+      FadeoutScreen([])
+      ChangeActorGraphic([1, "Tgirlprotag", 6, "People4", 6])
+      TransferPlayer([0, 2, 61, 41, 2, 0])
+      Empty([])
+
+    When([1, "No"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["WIP"])
+    Empty([])
+
+  Page 1
+    ShowPicture([1, "Traprinch", 0, 0, 0, 0, 95, 95, 200, 0])
+    Wait([180])
+    ErasePicture([1])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Choose Boy Princess?"])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      ShowTextAttributes(["Monster1", 6, 0, 2])
+      ShowText(["???:"])
+      ShowText(["Well that's a peculiar choice, but"])
+      ShowText(["it doesn't matter."])
+      ShowTextAttributes(["Monster1", 6, 0, 2])
+      ShowText(["???: "])
+      ShowText(["Now go and fulfill your role."])
+      ShowText(["Make them pay, play them like a fiddle."])
+      ShowTextAttributes(["Monster1", 6, 0, 2])
+      ShowText(["???:"])
+      ShowText(["Be the hero they deserve..."])
+      FadeoutScreen([])
+      ChangeActorGraphic([1, "Actor5", 1, "Actor5", 1])
+      TransferPlayer([0, 2, 61, 41, 2, 0])
+      Empty([])
+
+    When([1, "No"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])

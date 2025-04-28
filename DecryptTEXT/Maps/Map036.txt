@@ -1,0 +1,433 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ShowTextAttributes(["People1", 0, 0, 2])
+    ShowText(["Ahahah!"])
+    ShowText(["You won't catch me!"])
+    ShowText(["I'm too fast!"])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ShowTextAttributes(["People1", 1, 0, 2])
+    ShowText(["Stop you two! Wait for meeee!"])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ConditionalBranch([1, 233, 0, 2, 0])
+      ShowTextAttributes(["People1redeyes", 1, 0, 2])
+      ShowText(["I'll get my hands on you sooner or later, "])
+      ShowText(["human boy!"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 233, 0, 1, 0])
+        ShowTextAttributes(["People1redeyes", 1, 0, 2])
+        ShowText(["Mfufufu!"])
+        ShowText(["You won't run forever!"])
+        ControlVariables([233, 233, 1, 0, 1])
+        Empty([])
+      Else([])
+        ConditionalBranch([1, 233, 0, 0, 0])
+          ShowTextAttributes(["People1redeyes", 1, 0, 2])
+          ShowText(["Geez Rashid I'll catch you soon!"])
+          ControlVariables([233, 233, 1, 0, 1])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ShowTextAttributes(["Evil", 1, 0, 2])
+    ShowText(["Snort...zzz"])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["Evil", 1, 0, 2])
+    ShowText(["L...let me sleep some more...zzz"])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ShowTextAttributes(["Evil", 2, 0, 2])
+    ShowText(["Palace Guardsman:"])
+    ShowText(["Please wait for the princess performance at the "])
+    ShowText(["festival."])
+    ShowTextAttributes(["Evil", 2, 0, 2])
+    ShowText(["Palace Guardsman:"])
+    ShowText(["All the citizens are invited AND strongly recommended "])
+    ShowText(["to come see her dance."])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ShowTextAttributes(["Evil", 2, 0, 2])
+    ShowText(["Palace Guardsman:"])
+    ShowText(["Please wait for the princess performance at the "])
+    ShowText(["festival."])
+    ShowTextAttributes(["Evil", 2, 0, 2])
+    ShowText(["Palace Guardsman:"])
+    ShowText(["All the citizens are invited AND strongly recommended "])
+    ShowText(["to come see her dance."])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ShowTextAttributes(["Evil", 2, 0, 2])
+    ShowText(["Palace Guardsman:"])
+    ShowText(["Please wait for the princess performance at the "])
+    ShowText(["festival."])
+    ShowTextAttributes(["Evil", 2, 0, 2])
+    ShowText(["Palace Guardsman:"])
+    ShowText(["All the citizens are invited AND strongly recommended "])
+    ShowText(["to come see her dance."])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ShowTextAttributes(["Evil", 2, 0, 2])
+    ShowText(["Palace Guardsman:"])
+    ShowText(["Please wait for the princess performance at the "])
+    ShowText(["festival."])
+    ShowTextAttributes(["Evil", 2, 0, 2])
+    ShowText(["Palace Guardsman:"])
+    ShowText(["All the citizens are invited AND strongly recommended "])
+    ShowText(["to come see her dance."])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ShowTextAttributes(["Evil", 2, 0, 2])
+    ShowText(["Palace Guardsman:"])
+    ShowText(["Please wait for the princess performance at the "])
+    ShowText(["festival."])
+    ShowTextAttributes(["Evil", 2, 0, 2])
+    ShowText(["Palace Guardsman:"])
+    ShowText(["All the citizens are invited AND strongly recommended "])
+    ShowText(["to come see her dance."])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ShowTextAttributes(["Actor2", 7, 0, 2])
+    ShowText(["Fortune Teller:"])
+    ShowText(["Hey traveler, want me to read your fortune?"])
+    ShowText(["Just 10G.\\$"])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      ConditionalBranch([7, 10, 0])
+        ChangeGold([1, 0, 10])
+        ShowTextAttributes(["Actor2", 7, 2, 1])
+        ShowText(["Fortune Teller:"])
+        ShowText(["Very good."])
+        ShowText(["Let's begin..."])
+        FadeoutScreen([])
+        Wait([180])
+        ShowTextAttributes(["", 0, 2, 1])
+        ShowText([" "])
+        ShowText(["Tell me..."])
+        ShowTextAttributes(["", 0, 2, 1])
+        ShowText(["What would you like me to look at?"])
+        ShowChoices([["Friendship and Love", "Power", "Wealth"], 2])
+        When([0, "Friendship and Love"])
+          Empty([])
+        When([1, "Power"])
+          Empty([])
+        When([2, "Wealth"])
+          Empty([])
+        ChoicesEnd([])
+        FadeinScreen([])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["Actor2", 7, 0, 2])
+        ShowText(["Fortune Teller:"])
+        ShowText(["Come back when you have the coin."])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    When([1, "No"])
+      ShowTextAttributes(["Actor2", 7, 0, 2])
+      ShowText(["Fortune Teller:"])
+      ShowText(["Come back again."])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 12
+Name = "ladysmoke"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 13
+Name = "Sphinx"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 14
+Name = "Desp"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Comment([":update:"])
+    Wait([60])
+    FadeinScreen([])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ShowPicture([1, "Desert Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Desert Princess:"])
+    ShowText(["Welcome everyone,\\. thank you for coming tonight."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Desert Princess:"])
+    ShowText(["Let me offer you my dance,\\. may my body appease the goddess of the desert for another moon."])
+    Wait([20])
+    ErasePicture([1])
+    PlayBGM(["RPG::BGM(@name=\"P&C - Foreplay Fantaisie\", @volume=90, @pitch=100)"])
+    ShowTextAttributes(["", 0, 2, 1])
+    ShowText(["\\^May the Goddess be pleased by our offering!\\|"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["\\^Praise the Goddess!\\|"])
+    SetMoveRoute([14, "RPG::MoveRoute(@repeat=true, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$DesPdance\\\", 0])\", \"RPG::MoveCommand(@code=33, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$DesPdance\", 0])"])
+    Unnamed(["RPG::MoveCommand(@code=33, @parameters=[])"])
+    Wait([120])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\^The princess starts dancing,\\. as her feet start to glide on the wooden stage the atmosphere of the night begins to heaten up.\\|\\.\\.\\.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\^The city women start to look unconfortable as the men and boys are glancing with hungry eyes at the princess figure.\\|\\.\\.\\.\\.\\."])
+    TintScreen(["Tone(@red=17.0, @green=-17.0, @blue=17.0, @gray=0.0)", 60, false])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["But as the pace of the dance gets faster their look shift from their husband and children to the princess' body, \\.while her feet keep stomping on the wood.\\|\\.\\.\\.\\.\\."])
+    TintScreen(["Tone(@red=51.0, @green=-17.0, @blue=51.0, @gray=0.0)", 60, false])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\^It's like a tribal dance,\\. violent and wild at times,\\. a moment later sensual and suggestive.\\|\\.\\.\\.\\.\\."])
+    TintScreen(["Tone(@red=85.0, @green=-51.0, @blue=85.0, @gray=0.0)", 60, false])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\^As the performance approaches its climax,\\. the princess private parts start getting exposed as well.\\|\\.\\.\\.\\.\\."])
+    ControlSwitches([341, 341, 0])
+    ShowTextAttributes(["", 0, 2, 1])
+    ShowText(["\\^You start seeing sweat drops pearling the princess body...\\|\\.\\.\\.\\.\\."])
+    TintScreen(["Tone(@red=119.0, @green=-51.0, @blue=119.0, @gray=0.0)", 60, false])
+    Wait([60])
+    ShowTextAttributes(["", 0, 2, 1])
+    ShowText(["\\^A boy near you starts touching himself,\\. but nobody seems to care,\\.\\. and you don't want to lose even a moment of the princess' carnal dance.\\|\\.\\.\\.\\.\\."])
+    ShowTextAttributes(["", 0, 2, 1])
+    ShowText(["\\^You start hearing muffled sounds coming from the audience...\\.\\.\\. and from the stage.\\|\\.\\.\\.\\.\\."])
+    ShowPicture([1, "Desert Princess dial love", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Desert Princess:"])
+    ShowText(["\\^Anh...\\.\\.\\.may the Goddess be pleased...\\|\\.\\.\\.\\.\\."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Desert Princess:"])
+    ShowText(["\\^Nngh...\\.a\\.h\\.n\\.n\\.n\\.\\.\\.\\.\\."])
+    ErasePicture([1])
+    SetMoveRoute([13, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[4, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[4, 0])"])
+    ShowAnimation([14, 35, false])
+    FadeoutBGM([3])
+    ControlSwitches([342, 342, 0])
+    SetMoveRoute([14, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=34, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=34, @parameters=[])"])
+    ShotBalloonIcon([-1, 1, false])
+    ShotBalloonIcon([1, 1, false])
+    ShotBalloonIcon([2, 2, false])
+    ShotBalloonIcon([3, 1, false])
+    ShotBalloonIcon([4, 2, false])
+    ShotBalloonIcon([5, 1, false])
+    ShotBalloonIcon([6, 1, false])
+    ShotBalloonIcon([7, 2, false])
+    ShotBalloonIcon([8, 1, false])
+    ShotBalloonIcon([9, 2, false])
+    ShotBalloonIcon([10, 2, false])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 120, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["In a split second something breaks,\\. and everyone realizes there's someone else on the stage."])
+    Wait([15])
+    ShowPicture([1, "Sphinx Princess dial mad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Sphinx Princess:"])
+    ShowText(["It's about time you stop this sleazy dance and start worrying about my Pyramid,\\. you harlot!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Sphinx Princess:"])
+    ShowText(["If we didn't know eachother since I was but a little kitten I would doubt you still consider me your friend!"])
+    ShotBalloonIcon([14, 5, false])
+    ShowPicture([1, "Desert Princess dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Desert Princess:"])
+    ShowText(["\\.Y\\.o\\.u\\.u\\.u"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Desert Princess:"])
+    ShowText(["How dare you interrupt my dance?! \\.\\.This ritual is centuries old!\\.\\. It's sacred to my people!\\.\\."])
+    ShotBalloonIcon([13, 5, false])
+    ShowPicture([1, "Sphinx Princess dial mad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Sphinx Princess:"])
+    ShowText(["I don't care about your traditions. \\.\\.Or do I? \\.\\.There are more urgent matters!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Sphinx Princess:"])
+    ShowText(["SHE's still in my Pyramid,\\. I don't have a place to go anymore!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Sphinx Princess:"])
+    ShowText(["You have to send your troops to the south!\\.\\. Or are you scared about the people who sent her?!"])
+    ShowPicture([1, "Desert Princess dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Desert Princess:"])
+    ShowText(["I don't want her around but this is not the place nor the time for this!\\.\\. Come to my quarters later,\\. we will settle this!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Desert Princess:"])
+    ShowText(["The ritual will resume once this matter is settled. \\.\\.Tch..."])
+    ErasePicture([1])
+    SetMoveRoute([14, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    Wait([60])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The Princess of the desert sighs,\\. then continues..."])
+    ShowPicture([1, "Desert Princess dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Desert Princess:"])
+    ShowText(["I beg your forgiveness, \\.I know this is unprecedented,\\. but we will have to hold the ritual in another moment."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Desert Princess:"])
+    ShowText(["Please,\\. enjoy our Festival."])
+    ErasePicture([1])
+    ControlSwitches([259, 259, 0])
+    ShowChoices([["Offer your help.", "You don't want no trouble."], 2])
+    When([0, "Offer your help."])
+      ShowPicture([1, "Desert Princess dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Desert Princess:"])
+      ShowText(["You would help us?\\.\\. I thank you,\\. but this is a matter me and Sphinx have to settle ourselves."])
+      ShowPicture([1, "Desert Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Desert Princess:"])
+      ShowText(["Still...\\.\\.\\. thanks,\\. it was really kind of you!"])
+      ControlVariables([232, 232, 1, 0, 1])
+      ControlVariables([231, 231, 1, 0, 1])
+      ErasePicture([1])
+      Empty([])
+
+    When([1, "You don't want no trouble."])
+      ControlVariables([232, 232, 2, 0, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You leave the audience slowly,\\. so that noone would notice."])
+      Empty([])
+
+    ChoicesEnd([])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 2, 71, 80, 2, 0])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ShowTextAttributes(["People1", 3, 0, 2])
+    ShowText(["Townswoman:"])
+    ShowText(["I really enjoy this time of the year, the city"])
+    ShowText(["gets lively and there are a lot of travelers"])
+    ShowText(["around..."])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Comment([":update:"])
+    ConditionalBranch([0, 413, 0])
+      TintScreen(["Tone(@red=-34.0, @green=-34.0, @blue=0.0, @gray=34.0)", 15, true])
+      Empty([])
+
+    BranchEnd([])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])

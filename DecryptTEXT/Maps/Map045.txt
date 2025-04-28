@@ -1,0 +1,60 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "chest"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([182, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    ControlSwitches([643, 645, 1])
+    TransferPlayer([0, 44, 6, 5, 2, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    ControlSwitches([643, 645, 1])
+    TransferPlayer([0, 44, 6, 5, 2, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    ControlSwitches([643, 645, 1])
+    TransferPlayer([0, 44, 6, 5, 2, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])

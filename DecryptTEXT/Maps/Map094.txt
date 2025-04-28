@@ -1,0 +1,122 @@
+Display Name = ""
+Parallax Name = "UnderBeach"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Script(["$game_variables[2897] = $game_player.x"])
+    ScriptMore(["$game_variables[2898] = $game_player.y"])
+    GetLocationInfo([2896, 5, 1, 2897, 2898])
+    ConditionalBranch([0, 3438, 1])
+      ConditionalBranch([12, "$game_variables[2896] == 2"])
+        CallCommonEvent([76])
+        ConditionalBranch([0, 3705, 0])
+          ControlSwitches([3438, 3438, 0])
+          ShowAnimation([-1, 138, false])
+          SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=42, @parameters=[155])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=42, @parameters=[155])"])
+          JumpToLabel(["end"])
+          Empty([])
+        Else([])
+          ControlSelfSwitch(["A", 0])
+          JumpToLabel(["end"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 3438, 0])
+      ConditionalBranch([12, "$game_variables[2896] == 1"])
+        ControlSwitches([3438, 3438, 1])
+        ShowAnimation([-1, 138, false])
+        Script(["@lid = $game_party.leader.id"])
+        ConditionalBranch([12, "$game_actors[@lid].equips[4] == $data_armors[172] && $game_switches[413] == true && $game_switches[523] == false"])
+          Comment(["CLEAR NIGHT WITH GLASS CLOAK EQUIPPED"])
+          Empty([])
+        Else([])
+          SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=42, @parameters=[255])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=42, @parameters=[255])"])
+          Empty([])
+        BranchEnd([])
+        JumpToLabel(["end"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Label(["end"])
+    Empty([])
+
+  Page 1
+    ControlSelfSwitch(["A", 1])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    ShowAnimation([-1, 138, false])
+    Wait([20])
+    FadeoutScreen([])
+    Wait([25])
+    TransferPlayer([0, 236, 39, 37, 2, 0])
+    Wait([25])
+    FadeinScreen([])
+    ShotBalloonIcon([-1, 7, true])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    SetMoveRoute([3, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=42, @parameters=[155])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[155])"])
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 3
+Name = "Chest"
+
+  Page 0
+    Comment(["<always update>"])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ChangeWeapons([81, 0, 0, 1, false])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 4
+Name = "Egg"
+
+  Page 0
+    CallCommonEvent([514])
+    ControlSwitches([3345, 3345, 0])
+    ControlVariables([2029, 2029, 0, 0, 17])
+    CallCommonEvent([551])
+    ControlSwitches([3345, 3345, 1])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 236, 48, 9, 2, 0])
+    Empty([])

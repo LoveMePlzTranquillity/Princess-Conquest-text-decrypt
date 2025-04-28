@@ -1,0 +1,271 @@
+Display Name = ""
+Parallax Name = "Human Garden"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "HumP"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 2
+Name = "Event"
+
+  Page 0
+    Wait([60])
+    ShotBalloonIcon([1, 3, false])
+    ShowPicture([1, "Human Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Human Princess:"])
+    ShowText(["Welcome,\\. loyal knight,\\. to MY \"outside\"!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Human Princess:"])
+    ShowText(["So...\\.\\.\\. What do you think about it?\\.\\. Pretty nice,\\. huh?"])
+    ErasePicture([1])
+    ShowChoices([["\"These are some nice flowers.\"", "\"This is a bit... sad.\""], 0])
+    When([0, "\"These are some nice flowers.\""])
+      ShowPicture([1, "Human Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Human Princess:"])
+      ShowText(["I guess so!\\.\\. Starchy planted them recently...\\.\\.\\. he's got a green thumb."])
+      ErasePicture([1])
+      Wait([60])
+      ShotBalloonIcon([-1, 2, false])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      ShotBalloonIcon([1, 8, true])
+      Wait([60])
+      ShowPicture([1, "Human Princess dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Human Princess:"])
+      ShowText(["...\\.\\.\\. However,\\. flowers grown between walls can never get as beautiful as wild ones..."])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Human Princess:"])
+      ShowText(["Don't you get why I brought you here?\\.\\. ...\\.\\.\\. I know it's hard for someone as used to traveling as you are,\\. but...\\.\\.\\."])
+      ShowPicture([1, "Human Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Human Princess:"])
+      ShowText(["...\\.\\.\\."])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Human Princess:"])
+      ShowText(["No,\\. it's nothing.\\.\\. Maybe I was just imagining things...\\.\\.\\."])
+      ErasePicture([1])
+      Wait([30])
+      ShotBalloonIcon([1, 8, false])
+      SetMoveRoute([1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      Wait([30])
+      ShowPicture([1, "Human Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Human Princess:"])
+      ShowText(["I'm...\\.\\.\\. sorry for ruining the mood...\\.\\.\\. I didn't want this \"tour\" to end like this."])
+      ShotBalloonIcon([1, 3, false])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Human Princess:"])
+      ShowText(["Chin up!\\.\\. I want you to be my loyal knight for the time being!\\.\\. That's well worth a smile,\\. ain't it?"])
+      ErasePicture([1])
+      Empty([])
+
+    When([1, "\"This is a bit... sad.\""])
+      ShowPicture([1, "Human Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Human Princess:"])
+      ShowText(["Maybe just a little,\\. but...\\.\\.\\. wouldn't it be hypocritical to cry at my condition?"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Human Princess:"])
+      ShowText(["I'm rich,\\. can eat a lot of delicious food and do what I want..."])
+      ShowPicture([1, "Human Princess dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Human Princess:"])
+      ShowText(["Even so..."])
+      ShowPicture([1, "Human Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Human Princess:"])
+      ShowText(["You...\\.\\.\\. touched my hand back then, you know?\\.\\. Now you'll have to listen to whatever I say!\\.\\."])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Human Princess:"])
+      ShowText(["You p\\.r\\.o\\.m\\.i\\.s\\.e\\.d~"])
+      ErasePicture([1])
+      ShowChoices([["\"Just say the word, my queen!\"", "\"It really depends on the request...\""], 0])
+      When([0, "\"Just say the word, my queen!\""])
+        ShowPicture([1, "Human Princess dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Human Princess:"])
+        ShowText(["Such insolence!\\.\\. I'm not that old,\\. you know?\\.\\. It is but a year since I became a woman..."])
+        ErasePicture([1])
+        Wait([30])
+        ShowPicture([1, "Human Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Human Princess:"])
+        ShowText(["I'm a late bloomer,\\. my younger sister already went through it when it happened."])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Human Princess:"])
+        ShowText(["Royal doctor said it could have been because of all the stress about being the next regent and everything..."])
+        ShowPicture([1, "Human Princess dial tied", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Human Princess:"])
+        ShowText(["Buuuut...\\.\\.\\."])
+        ShotBalloonIcon([1, 6, false])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Human Princess:"])
+        ShowText(["I don't know why I'm telling you this.\\.\\. It's so embarassing!"])
+        ShowPicture([1, "Human Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Human Princess:"])
+        ShowText(["And you're just too kind.\\.\\. You should have stopped me before I embarassed myself..."])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Human Princess:"])
+        ShowText(["I guess it just felt natural...\\.\\.\\. talking to you."])
+        ErasePicture([1])
+        ControlVariables([49, 49, 1, 0, 1])
+        Empty([])
+      When([1, "\"It really depends on the request...\""])
+        ShowPicture([1, "Human Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Human Princess:"])
+        ShowText(["Oh...\\.\\.\\. I guess it's reasonable.\\.\\. Nothing too fancy then,\\. mmh?"])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Human Princess:"])
+        ShowText(["I'll take my time to think about it!\\.\\. You better be ready,\\. dear knight!"])
+        ErasePicture([1])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    ChoicesEnd([])
+    ControlSwitches([179, 179, 0])
+    ShowPicture([1, "Human Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Human Princess:"])
+    ShowText(["It was nice,\\. being here with you.\\.\\. Come to me again \\n[1],\\. I'll count on it."])
+    ErasePicture([1])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 4, 15, 32, 8, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EvProcess"
+
+  Page 0
+    Comment([":update:"])
+    CallCommonEvent([20])
+    Wait([30])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 12
+Name = "merch"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 14
+Name = "GateGuard"
+
+  Page 0
+    Comment([":update_events:"])
+    Empty([])
+
+  Page 1
+    Comment([":update_events:"])
+    Empty([])
+
+CommonEvent 15
+Name = "GateGuard"
+
+  Page 0
+    Comment([":update_events:"])
+    Empty([])
+
+  Page 1
+    Comment([":update_events:"])
+    Empty([])
+
+CommonEvent 16
+Name = "GateGuard"
+
+  Page 0
+    Comment([":update_events:"])
+    Empty([])
+
+  Page 1
+    Comment([":update_events:"])
+    Empty([])

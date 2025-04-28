@@ -1,0 +1,157 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "FadeIn"
+
+  Page 0
+    ErasePicture([1])
+    CallCommonEvent([459])
+    CallCommonEvent([21])
+    CallCommonEvent([20])
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    SetWeatherEffects([:none, 9, 0, false])
+    ErasePicture([9])
+    TransferPlayer([0, 38, 19, 30, 8, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 2, 64, 89, 2, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 2, 64, 89, 2, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 2, 64, 89, 2, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    SetWeatherEffects([:none, 9, 0, false])
+    ErasePicture([9])
+    TransferPlayer([0, 153, 1, 18, 6, 0])
+    Empty([])
+
+CommonEvent 7
+Name = "Medulla"
+
+  Page 0
+    CallCommonEvent([569])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 8
+Name = "DateHeart-Des"
+
+  Page 0
+    Comment(["<always update>"])
+    ControlVariables([768, 768, 0, 4, "\"HotSpringDes\""])
+    CallCommonEvent([72])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ControlVariables([768, 768, 0, 4, "\"HotSpringDes\""])
+    CallCommonEvent([72])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 9
+Name = "DateItem-Sand"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 10
+Name = "DateItem-SandII"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 11
+Name = "DateHeart-Kob"
+
+  Page 0
+    Comment(["<always update>"])
+    ControlVariables([768, 768, 0, 4, "\"HotSpringKob\""])
+    CallCommonEvent([72])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ControlVariables([768, 768, 0, 4, "\"HotSpringKob\""])
+    CallCommonEvent([72])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 12
+Name = "DateHeart-Mou"
+
+  Page 0
+    Comment(["<always update>"])
+    ControlVariables([768, 768, 0, 4, "\"HotSpringMou\""])
+    CallCommonEvent([72])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ControlVariables([768, 768, 0, 4, "\"HotSpringMou\""])
+    CallCommonEvent([72])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Empty([])

@@ -1,0 +1,102 @@
+Display Name = ""
+Parallax Name = "Trench Tunnel"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ConditionalBranch([12, "$game_player.region_id == 3"])
+      ControlSelfSwitch(["A", 0])
+      Empty([])
+
+    BranchEnd([])
+    Wait([5])
+    Empty([])
+
+  Page 1
+    ControlSelfSwitch(["A", 1])
+    ConditionalBranch([2, "B", 1])
+      ShakeScreen([2, 4, 90, false])
+      PlaySE(["RPG::SE(@name=\"Earth9\", @pitch=90, @volume=80)"])
+      ShotBalloonIcon([-1, 1, true])
+      Wait([45])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["..."])
+      ShakeScreen([5, 4, 120, false])
+      PlaySE(["RPG::SE(@name=\"Earth9\", @pitch=90, @volume=90)"])
+      Wait([10])
+      ControlSwitches([4114, 4114, 0])
+      ChangeParallaxBack(["Trench Tunnel - Fall", true, true, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    ShowAnimation([-1, 138, false])
+    Wait([10])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Wait([60])
+    FadeoutScreen([])
+    Wait([30])
+    ConditionalBranch([2, "B", 1])
+      FadeoutBGM([3])
+      Wait([240])
+      Empty([])
+
+    BranchEnd([])
+    TransferPlayer([0, 161, 64, 30, 2, 0])
+    ControlSelfSwitch(["B", 0])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 409, 35, 5, 2, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    ConditionalBranch([0, 413, 0])
+      TintScreen(["Tone(@red=-34.0, @green=-34.0, @blue=0.0, @gray=34.0)", 1, true])
+      Empty([])
+
+    Else([])
+      TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+      Empty([])
+
+    BranchEnd([])
+    ControlVariables([848, 848, 0, 0, 1])
+    Wait([15])
+    ConditionalBranch([0, 4114, 0])
+      ChangeParallaxBack(["Trench Tunnel - Fall", true, true, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])

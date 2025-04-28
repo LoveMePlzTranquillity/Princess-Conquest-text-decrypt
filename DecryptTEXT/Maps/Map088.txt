@@ -1,0 +1,102 @@
+Display Name = ""
+Parallax Name = "Starchy Fight"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 4
+Name = "HumP"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, false])
+    ShowPicture([1, "Human Princess dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Human Princess:"])
+    ShowText(["Make it quick! \\|I have yet to finish talking to \\N[1]."])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 5
+Name = "Starchy"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 040]"])
+    Comment(["[localsw 0]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 2
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=25, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=25, @parameters=[])"])
+    Wait([30])
+    ShotBalloonIcon([0, 7, false])
+    Wait([15])
+    ShowPicture([1, "Starchy dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 6, 2, 2])
+    ShowText(["Starchy:"])
+    ShowText(["Ugh.\\| .\\| .\\| Enough..."])
+    ErasePicture([1])
+    ControlSwitches([695, 695, 0])
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    CallCommonEvent([56])
+    TransferPlayer([0, 13, 24, 12, 8, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "EvStart"
+
+  Page 0
+    ShowPicture([1, "Human Princess dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Human Princess:"])
+    ShowText(["Make it quick!\\| I'm not done talking with \\N[1]."])
+    ErasePicture([1])
+    Wait([45])
+    Script(["$game_map.start_sas"])
+    ScriptMore(["$game_map.sas_hud.show(true)"])
+    ControlSwitches([694, 694, 0])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 7
+Name = "Chest"
+
+  Page 0
+    Comment(["<always update>"])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+    ControlSwitches([2652, 2652, 0])
+    ChangeItems([31, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])

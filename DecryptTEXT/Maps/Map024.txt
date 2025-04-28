@@ -1,0 +1,528 @@
+Display Name = ""
+Parallax Name = "SkelThrone"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "door"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "SkellyLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 3
+Name = "SkellyLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 4
+Name = "SkellyLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 5
+Name = "SkellyLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 6
+Name = "SkellyLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 7
+Name = "SkellyLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 8
+Name = "SkellyLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 9
+Name = "SkellyLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 10
+Name = "SkellyLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 11
+Name = "SkellyLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 12
+Name = "SkPrincess"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 13
+Name = "SkullThrone"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Empty([])
+
+CommonEvent 21
+Name = "Event"
+
+  Page 0
+    Comment([":update:"])
+    ConditionalBranch([0, 413, 0])
+      TintScreen(["Tone(@red=-34.0, @green=-34.0, @blue=0.0, @gray=34.0)", 60, true])
+      Empty([])
+
+    BranchEnd([])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 30, true])
+    FadeinScreen([])
+    Wait([60])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["You look at yourself in the mirror...\\.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["What's reflected in the mirror is a knight that got himself into a situation he doesn't know how to survive from."])
+    ShotBalloonIcon([-1, 7, false])
+    Wait([15])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Getting married?\\.\\. That's not exactly how you had expected it to happen."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Further along the way?\\.\\. Maybe.\\.\\. But now there's still too many promises you made,\\. too much you still want to do."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\"A man only has two choices in life\",\\. you think between yourself."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["To accept everything life...\\.\\.\\. or death...\\.\\.\\. throws at him,\\. or to grab his sword and fight!"])
+    ShowChoices([["See how this spooky wedding plays out", "\"No! This marriage won't happen!\""], 0])
+    When([0, "See how this spooky wedding plays out"])
+      Empty([])
+
+    When([1, "\"No! This marriage won't happen!\""])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["I won't marry her like this!\\.\\. I WON'T!"])
+      PlaySE(["RPG::SE(@name=\"Monster3\", @pitch=110, @volume=90)"])
+      Wait([10])
+      ShotBalloonIcon([-1, 1, false])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Skeleton Princess:"])
+      ShowText(["You've said something, \\.d\\.e\\.a\\.r\\.?"])
+      ShotBalloonIcon([-1, 6, true])
+      Empty([])
+
+    ChoicesEnd([])
+    Wait([20])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=6, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=6, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    SetMoveRoute([12, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$SkeP\\\", 0])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$SkeP\", 0])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Wait([20])
+    ShowPicture([1, "Skeleton pri dial love", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Skeleton Princess:"])
+    ShowText(["You're finally here,\\. my dear!\\.\\.\\. How do I look like?"])
+    ErasePicture([1])
+    ShowChoices([["\"You're as classy as ever\"", "\"No time to chit-chat, let's do this thing!\""], 0])
+    When([0, "\"You're as classy as ever\""])
+      ShowPicture([1, "Skeleton pri dial love", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Skeleton Princess:"])
+      ShowText(["Kekekeke!\\.\\. You like it?\\.\\. It's a little old,\\. but I like the classic style~"])
+      ErasePicture([1])
+      Empty([])
+
+    When([1, "\"No time to chit-chat, let's do this thing!\""])
+      ShowPicture([1, "Skeleton pri dial love", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Skeleton Princess:"])
+      ShowText(["How fiery!\\.\\. You can't wait for tonight,\\. do you?\\.\\. Neither do I~"])
+      ErasePicture([1])
+      Empty([])
+
+    ChoicesEnd([])
+    Wait([45])
+    ShowPicture([1, "Skeleton pri dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Skeleton Princess:"])
+    ShowText(["There will be time to check all of my bones from up close,\\. show some composure now~.\\.\\."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Skeleton Princess:"])
+    ShowText(["Everyone will be at our ceremony,\\. don't make me look bad!\\.\\."])
+    ShowPicture([1, "Skeleton pri dial love", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Skeleton Princess:"])
+    ShowText(["So...\\.\\.\\. behave properly,\\. at least until tonight~!\\.\\. Kekeke!"])
+    ErasePicture([1])
+    Wait([45])
+    ShowPicture([1, "Skeleton pri dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Skeleton Princess:"])
+    ShowText(["It's time now...\\.\\.\\. I know it may feel strange to you,\\. but will you...\\.\\.\\."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Skeleton Princess:"])
+    ShowText(["...\\.\\.\\."])
+    ShowPicture([1, "Skeleton pri dial love", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Skeleton Princess:"])
+    ShowText(["Hold my hand?\\.\\. I think that would be the proper thing to do,\\. right?\\.\\. Nothing over the top...\\.\\.\\."])
+    ErasePicture([1])
+    Wait([30])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["You feel her boney knuckles grasping on your flesh.\\.\\. It feels unconfortable,\\. at the beginning..."])
+    ShotBalloonIcon([-1, 6, false])
+    Wait([10])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["You start cold sweating,\\. on the verge of asking her to let your hand go,\\. when something starts feeling different...\\.\\.\\."])
+    Wait([15])
+    ShowPicture([1, "Skeleton pri dial love", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Skeleton Princess:"])
+    ShowText(["..."])
+    ErasePicture([1])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Was she always so...\\.\\.\\. cute?\\.\\. No,\\. that's not the right word...\\.\\.\\."])
+    Wait([15])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["..."])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Lovely."])
+    ShotBalloonIcon([12, 1, false])
+    SetMoveRoute([12, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    Wait([15])
+    ShowPicture([1, "Skeleton pri dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Skeleton Princess:"])
+    ShowText(["!!!"])
+    ShowPicture([1, "Skeleton pri dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Skeleton Princess:"])
+    ShowText(["W-\\.what did you just say?"])
+    ErasePicture([1])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Oh...\\.\\.\\. I...\\.\\.\\. I'm sorry,\\. it just came out like this...\\.\\.\\."])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["This dress,\\. and you being so honest with your feelings...\\.\\.\\. I just thought that...\\.\\.\\. well...\\.\\.\\."])
+    ShotBalloonIcon([12, 7, false])
+    SetMoveRoute([12, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[1, 0])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[1, 0])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Despite having no eyelid,\\. no mimetic muscle, \\. it's not hard to tell what she's feeling."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Terror."])
+    ShowPicture([1, "Skeleton pri dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Skeleton Princess:"])
+    ShowText(["\\^You a-\\.are actually serious?\\.\\. No,\\. you have to be mocking me,\\. just like everyone else!\\.\\. I don't believe that...\\.\\.\\.\\."])
+    ShowPicture([1, "Skeleton pri dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Skeleton Princess:"])
+    ShowText(["But what if...\\.\\.\\."])
+    ShotBalloonIcon([12, 5, false])
+    SetMoveRoute([12, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    ShowPicture([1, "Skeleton pri dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Skeleton Princess:"])
+    ShowText(["N-\\.no!\\.\\. I shouldn't have anybody make a fool out of me...\\.\\.\\. y-\\.you must be lying!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Skeleton Princess:"])
+    ShowText(["Maybe you got close to me for my army,\\. or our treasures,\\. but surely not for...\\.\\.\\. surely not...\\.\\.\\. me."])
+    ErasePicture([1])
+    ShotBalloonIcon([-1, 8, false])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Princess,\\. your reaction was...\\.\\.\\. calm down!\\.\\. I didn't intend to upset you so much...\\.\\.\\."])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Wait([10])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Try to calm down,\\. breathe slowly...\\.\\.\\. if you do that,\\. I mean."])
+    ShotBalloonIcon([12, 6, false])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([12, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=5, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=5, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    ShowPicture([1, "Skeleton pri dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Skeleton Princess:"])
+    ShowText(["Eeek!\\.\\. No!\\.\\."])
+    ErasePicture([1])
+    Wait([30])
+    ShotBalloonIcon([-1, 8, true])
+    Wait([30])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["She's gone."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["You have been dumped,\\. right at the altar.\\.\\. The Princess surely is an extreme one,\\. moderation has to be something alien to her."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Uncertain about what to do next you stand in the hall,\\. dumbfounded,\\. for a good while."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["What about the guests?\\.\\. And the banquest?\\.\\. What if she already paid for the entertainers?"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Isn't there anything you can do?\\.\\. Can you really leave your spot?\\.\\."])
+    Wait([30])
+    ShotBalloonIcon([-1, 8, true])
+    Wait([30])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=5, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Move\\\\\\\", @pitch=100, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=5, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Move\\\", @pitch=100, @volume=80)\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["You promptly reach the conclusion that yes...\\.\\.\\. yes,\\. you can.\\.\\."])
+    FadeoutScreen([])
+    ControlVariables([129, 129, 1, 0, 2])
+    ControlSwitches([196, 196, 0])
+    ControlVariables([2944, 2944, 0, 1, 761])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["First things first,\\. you will have a good talk with the Princess,\\. but it's probably better to leave her alone for a little while. "])
+    Wait([30])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+    Wait([30])
+    TransferPlayer([0, 19, 2, 13, 2, 0])
+    Empty([])
+
+CommonEvent 22
+Name = "SkeP Altar"
+
+  Page 0
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])

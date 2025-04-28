@@ -1,0 +1,891 @@
+Display Name = ""
+Parallax Name = "Slime Boss"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "boss"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 083]"])
+    Comment(["[localsw 0]"])
+    ControlVariables([24, 24, 0, 3, 5, -1, 0])
+    ControlVariables([25, 25, 0, 3, 5, -1, 1])
+    ControlVariables([529, 529, 0, 3, 5, 0, 0])
+    ControlVariables([530, 530, 0, 3, 5, 0, 1])
+    ControlVariables([529, 529, 2, 1, 24])
+    ConditionalBranch([1, 529, 0, -1, 1])
+      ConditionalBranch([1, 529, 0, 1, 2])
+        ControlVariables([530, 530, 2, 1, 25])
+        ConditionalBranch([1, 530, 0, -1, 1])
+          ConditionalBranch([1, 530, 0, 1, 2])
+            Wait([20])
+            ControlVariables([24, 24, 0, 3, 5, -1, 0])
+            ControlVariables([25, 25, 0, 3, 5, -1, 1])
+            ControlVariables([529, 529, 0, 3, 5, 0, 0])
+            ControlVariables([530, 530, 0, 3, 5, 0, 1])
+            ControlVariables([529, 529, 2, 1, 24])
+            ConditionalBranch([1, 529, 0, -1, 1])
+              ConditionalBranch([1, 529, 0, 1, 2])
+                ControlVariables([530, 530, 2, 1, 25])
+                ConditionalBranch([1, 530, 0, -1, 1])
+                  ConditionalBranch([1, 530, 0, 1, 2])
+                    ShowAnimation([-1, 45, false])
+                    ConditionalBranch([0, 596, 0])
+                      ControlSwitches([596, 596, 1])
+                      Empty([])
+                    BranchEnd([])
+                    ControlSwitches([596, 596, 0])
+                    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=42, @parameters=[200])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+                    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+                    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[200])"])
+                    Empty([])
+                  BranchEnd([])
+                  Empty([])
+                BranchEnd([])
+                Empty([])
+              BranchEnd([])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Wait([10])
+    Empty([])
+
+  Page 2
+    ControlVariables([585, 585, 0, 0, 500])
+    ControlSwitches([648, 648, 0])
+    ControlVariables([569, 569, 0, 2, 4, 8])
+    CallCommonEvent([52])
+    ControlVariables([551, 551, 0, 3, 5, 0, 0])
+    ControlVariables([552, 552, 0, 3, 5, 0, 1])
+    ControlVariables([551, 551, 1, 0, 1])
+    SetEventLocation([2, 1, 551, 552, 0])
+    ControlVariables([551, 551, 2, 0, 2])
+    SetEventLocation([3, 1, 551, 552, 0])
+    ControlVariables([551, 551, 1, 0, 1])
+    ControlVariables([552, 552, 1, 0, 1])
+    SetEventLocation([4, 1, 551, 552, 0])
+    ControlSwitches([623, 623, 0])
+    Empty([])
+
+  Page 3
+    FadeoutBGM([3])
+    PlaySE(["RPG::SE(@name=\"Victory (Fixed)\", @pitch=100, @volume=80)"])
+    ControlSwitches([622, 622, 1])
+    ChangeItems([48, 0, 0, 1])
+    ControlSelfSwitch(["B", 0])
+    Empty([])
+
+  Page 4
+    Empty([])
+
+CommonEvent 2
+Name = "slimespawn1"
+
+  Page 0
+    Comment(["[enemy 065]"])
+    Comment(["[localsw 0]"])
+    Comment(["[variable 553]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 3
+Name = "slimespawn2"
+
+  Page 0
+    Comment(["[enemy 065]"])
+    Comment(["[localsw 0]"])
+    Comment(["[variable 553]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 4
+Name = "slimespawn3"
+
+  Page 0
+    Comment(["[enemy 065]"])
+    Comment(["[localsw 0]"])
+    Comment(["[variable 553]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Wait([60])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 600, false])
+    ShowTextAttributes(["", 0, 2, 1])
+    ShowText(["\\^As you feel life slipping away\\..\\..\\..\\|"])
+    ShowTextAttributes(["", 0, 2, 1])
+    ShowText(["\\^The dark waters starts getting clearer\\..\\..\\..\\|"])
+    ShowTextAttributes(["", 0, 2, 1])
+    ShowText(["\\^Something brought you in an enclosed clearing,\\. probably a monster's nest.\\|\\.\\.\\.\\.\\."])
+    ShowTextAttributes(["", 0, 2, 1])
+    ShowText(["\\^Seeing the surface getting closer you gather your strengths and jump out of the water!\\|\\.\\.\\.\\.\\."])
+    ShowAnimation([-1, 138, false])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[2, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[2, 0])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[20])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[20])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[20])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[20])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    ShowTextAttributes(["", 0, 2, 1])
+    ShowText(["\\^As you're trying to catch your breath and to free the lungs from the thick slimy water the attacker reveals itself! \\|\\|"])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 30, false])
+    ShowAnimation([1, 121, false])
+    ControlSwitches([660, 660, 0])
+    SetMoveRoute([1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[2, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[2, 0])"])
+    Wait([10])
+    ShotBalloonIcon([-1, 1, false])
+    ShowTextAttributes(["", 0, 2, 1])
+    ShowText(["\\^The monstruous slime is preparing his next attack!\\.\\. You get up and prepare yourself for the fight! \\|\\.\\.\\.\\.\\."])
+    Script(["$game_map.start_sas"])
+    ScriptMore(["$game_map.sas_hud.show(true)"])
+    PlayBGM(["RPG::BGM(@name=\"P&C - Boss\", @volume=90, @pitch=100)"])
+    ControlSwitches([622, 622, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 6
+Name = "shroom1"
+
+  Page 0
+    Comment(["[enemy 003]"])
+    Comment(["[switch 661]"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "shroom2"
+
+  Page 0
+    Comment(["[enemy 003]"])
+    Comment(["[switch 662]"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "shroom3"
+
+  Page 0
+    Comment(["[enemy 003]"])
+    Comment(["[switch 663]"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ConditionalBranch([1, 593, 0, 5, 1])
+      ShowAnimation([0, 122, false])
+      ControlVariables([593, 593, 0, 0, 0])
+      ControlVariables([24, 24, 0, 3, 5, -1, 0])
+      ControlVariables([25, 25, 0, 3, 5, -1, 1])
+      ControlVariables([24, 24, 2, 3, 5, 0, 0])
+      ControlVariables([25, 25, 2, 3, 5, 0, 1])
+      ConditionalBranch([1, 24, 0, 1, 4])
+        ConditionalBranch([1, 24, 0, -1, 3])
+          ConditionalBranch([1, 25, 0, 1, 4])
+            ConditionalBranch([1, 25, 0, -1, 3])
+              ControlSwitches([3450, 3450, 0])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      Wait([60])
+      ControlVariables([593, 593, 1, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ConditionalBranch([1, 593, 0, 5, 1])
+      ShowAnimation([0, 122, false])
+      ControlVariables([593, 593, 0, 0, 0])
+      ControlVariables([24, 24, 0, 3, 5, -1, 0])
+      ControlVariables([25, 25, 0, 3, 5, -1, 1])
+      ControlVariables([24, 24, 2, 3, 5, 0, 0])
+      ControlVariables([25, 25, 2, 3, 5, 0, 1])
+      ConditionalBranch([1, 24, 0, 1, 4])
+        ConditionalBranch([1, 24, 0, -1, 3])
+          ConditionalBranch([1, 25, 0, 1, 4])
+            ConditionalBranch([1, 25, 0, -1, 3])
+              ControlSwitches([3450, 3450, 0])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      Wait([60])
+      ControlVariables([593, 593, 1, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ConditionalBranch([1, 593, 0, 5, 1])
+      ShowAnimation([0, 122, false])
+      ControlVariables([593, 593, 0, 0, 0])
+      ControlVariables([24, 24, 0, 3, 5, -1, 0])
+      ControlVariables([25, 25, 0, 3, 5, -1, 1])
+      ControlVariables([24, 24, 2, 3, 5, 0, 0])
+      ControlVariables([25, 25, 2, 3, 5, 0, 1])
+      ConditionalBranch([1, 24, 0, 1, 4])
+        ConditionalBranch([1, 24, 0, -1, 3])
+          ConditionalBranch([1, 25, 0, 1, 4])
+            ConditionalBranch([1, 25, 0, -1, 3])
+              ControlSwitches([3450, 3450, 0])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      Wait([60])
+      ControlVariables([593, 593, 1, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ConditionalBranch([1, 593, 0, 5, 1])
+      ShowAnimation([0, 122, false])
+      ControlVariables([593, 593, 0, 0, 0])
+      ControlVariables([24, 24, 0, 3, 5, -1, 0])
+      ControlVariables([25, 25, 0, 3, 5, -1, 1])
+      ControlVariables([24, 24, 2, 3, 5, 0, 0])
+      ControlVariables([25, 25, 2, 3, 5, 0, 1])
+      ConditionalBranch([1, 24, 0, 1, 4])
+        ConditionalBranch([1, 24, 0, -1, 3])
+          ConditionalBranch([1, 25, 0, 1, 4])
+            ConditionalBranch([1, 25, 0, -1, 3])
+              ControlSwitches([3450, 3450, 0])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      Wait([60])
+      ControlVariables([593, 593, 1, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ConditionalBranch([1, 594, 0, 5, 1])
+      ControlVariables([594, 594, 0, 0, 0])
+      ShowAnimation([0, 122, false])
+      ControlVariables([24, 24, 0, 3, 5, -1, 0])
+      ControlVariables([25, 25, 0, 3, 5, -1, 1])
+      ControlVariables([24, 24, 2, 3, 5, 0, 0])
+      ControlVariables([25, 25, 2, 3, 5, 0, 1])
+      ConditionalBranch([1, 24, 0, 1, 4])
+        ConditionalBranch([1, 24, 0, -1, 3])
+          ConditionalBranch([1, 25, 0, 1, 4])
+            ConditionalBranch([1, 25, 0, -1, 3])
+              ControlSwitches([3450, 3450, 0])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      Wait([60])
+      ControlVariables([594, 594, 1, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ConditionalBranch([1, 594, 0, 5, 1])
+      ControlVariables([594, 594, 0, 0, 0])
+      ShowAnimation([0, 122, false])
+      ControlVariables([24, 24, 0, 3, 5, -1, 0])
+      ControlVariables([25, 25, 0, 3, 5, -1, 1])
+      ControlVariables([24, 24, 2, 3, 5, 0, 0])
+      ControlVariables([25, 25, 2, 3, 5, 0, 1])
+      ConditionalBranch([1, 24, 0, 1, 4])
+        ConditionalBranch([1, 24, 0, -1, 3])
+          ConditionalBranch([1, 25, 0, 1, 4])
+            ConditionalBranch([1, 25, 0, -1, 3])
+              ControlSwitches([3450, 3450, 0])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      Wait([60])
+      ControlVariables([594, 594, 1, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ConditionalBranch([1, 594, 0, 5, 1])
+      ControlVariables([594, 594, 0, 0, 0])
+      ShowAnimation([0, 122, false])
+      ControlVariables([24, 24, 0, 3, 5, -1, 0])
+      ControlVariables([25, 25, 0, 3, 5, -1, 1])
+      ControlVariables([24, 24, 2, 3, 5, 0, 0])
+      ControlVariables([25, 25, 2, 3, 5, 0, 1])
+      ConditionalBranch([1, 24, 0, 1, 4])
+        ConditionalBranch([1, 24, 0, -1, 3])
+          ConditionalBranch([1, 25, 0, 1, 4])
+            ConditionalBranch([1, 25, 0, -1, 3])
+              ControlSwitches([3450, 3450, 0])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      Wait([60])
+      ControlVariables([594, 594, 1, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ConditionalBranch([1, 594, 0, 5, 1])
+      ControlVariables([594, 594, 0, 0, 0])
+      ShowAnimation([0, 122, false])
+      ControlVariables([24, 24, 0, 3, 5, -1, 0])
+      ControlVariables([25, 25, 0, 3, 5, -1, 1])
+      ControlVariables([24, 24, 2, 3, 5, 0, 0])
+      ControlVariables([25, 25, 2, 3, 5, 0, 1])
+      ConditionalBranch([1, 24, 0, 1, 4])
+        ConditionalBranch([1, 24, 0, -1, 3])
+          ConditionalBranch([1, 25, 0, 1, 4])
+            ConditionalBranch([1, 25, 0, -1, 3])
+              ControlSwitches([3450, 3450, 0])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      Wait([60])
+      ControlVariables([594, 594, 1, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    ConditionalBranch([1, 595, 0, 5, 1])
+      ControlVariables([595, 595, 0, 0, 0])
+      ShowAnimation([0, 122, false])
+      ControlVariables([24, 24, 0, 3, 5, -1, 0])
+      ControlVariables([25, 25, 0, 3, 5, -1, 1])
+      ControlVariables([24, 24, 2, 3, 5, 0, 0])
+      ControlVariables([25, 25, 2, 3, 5, 0, 1])
+      ConditionalBranch([1, 24, 0, 1, 4])
+        ConditionalBranch([1, 24, 0, -1, 3])
+          ConditionalBranch([1, 25, 0, 1, 4])
+            ConditionalBranch([1, 25, 0, -1, 3])
+              ControlSwitches([3450, 3450, 0])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      Wait([60])
+      ControlVariables([595, 595, 1, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    ConditionalBranch([1, 595, 0, 5, 1])
+      ControlVariables([595, 595, 0, 0, 0])
+      ShowAnimation([0, 122, false])
+      ControlVariables([24, 24, 0, 3, 5, -1, 0])
+      ControlVariables([25, 25, 0, 3, 5, -1, 1])
+      ControlVariables([24, 24, 2, 3, 5, 0, 0])
+      ControlVariables([25, 25, 2, 3, 5, 0, 1])
+      ConditionalBranch([1, 24, 0, 1, 4])
+        ConditionalBranch([1, 24, 0, -1, 3])
+          ConditionalBranch([1, 25, 0, 1, 4])
+            ConditionalBranch([1, 25, 0, -1, 3])
+              ControlSwitches([3450, 3450, 0])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      Wait([60])
+      ControlVariables([595, 595, 1, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ConditionalBranch([1, 595, 0, 5, 1])
+      ControlVariables([595, 595, 0, 0, 0])
+      ShowAnimation([0, 122, false])
+      ControlVariables([24, 24, 0, 3, 5, -1, 0])
+      ControlVariables([25, 25, 0, 3, 5, -1, 1])
+      ControlVariables([24, 24, 2, 3, 5, 0, 0])
+      ControlVariables([25, 25, 2, 3, 5, 0, 1])
+      ConditionalBranch([1, 24, 0, 1, 4])
+        ConditionalBranch([1, 24, 0, -1, 3])
+          ConditionalBranch([1, 25, 0, 1, 4])
+            ConditionalBranch([1, 25, 0, -1, 3])
+              ControlSwitches([3450, 3450, 0])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      Wait([60])
+      ControlVariables([595, 595, 1, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    ConditionalBranch([1, 595, 0, 5, 1])
+      ControlVariables([595, 595, 0, 0, 0])
+      ShowAnimation([0, 122, false])
+      ControlVariables([24, 24, 0, 3, 5, -1, 0])
+      ControlVariables([25, 25, 0, 3, 5, -1, 1])
+      ControlVariables([24, 24, 2, 3, 5, 0, 0])
+      ControlVariables([25, 25, 2, 3, 5, 0, 1])
+      ConditionalBranch([1, 24, 0, 1, 4])
+        ConditionalBranch([1, 24, 0, -1, 3])
+          ConditionalBranch([1, 25, 0, 1, 4])
+            ConditionalBranch([1, 25, 0, -1, 3])
+              ControlSwitches([3450, 3450, 0])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      Wait([60])
+      ControlVariables([595, 595, 1, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Wait([120])
+    ControlSwitches([3450, 3450, 1])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    ConditionalBranch([8, 48])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You can swim back to the Slime Princess chamber from here."])
+      ShowText(["\\|Let's reach her before it's too late!"])
+      Wait([30])
+      ControlSwitches([643, 645, 1])
+      ControlSwitches([3450, 3450, 1])
+      TransferPlayer([0, 14, 4, 36, 8, 0])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Grab the \\i[240] Slime Princess Key before going back!"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 23
+Name = "SLowdown"
+
+  Page 0
+    Wait([300])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=42, @parameters=[255])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[255])"])
+    ControlSwitches([596, 596, 1])
+    Empty([])
+
+CommonEvent 24
+Name = "drop1"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["n = $data_weapons[$game_variables[577]]"])
+    ScriptMore(["$game_party.gain_item(n, 1) "])
+    Script(["n = $data_armors[$game_variables[578]]"])
+    ScriptMore(["$game_party.gain_item(n, 1) "])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 25
+Name = "DropEv"
+
+  Page 0
+    ConditionalBranch([0, 643, 0])
+      SetEventLocation([24, 1, 574, 575, 0])
+      Script(["@x = $game_variables[574]"])
+      ScriptMore(["@y = $game_variables[575]"])
+      Script(["@y -= 1"])
+      ConditionalBranch([12, "$game_map.passable?(@x, @y, 2)"])
+        SetMoveRoute([24, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, -1])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, -1])"])
+        Empty([])
+      Else([])
+        Script(["@y += 2"])
+        ConditionalBranch([12, "$game_map.passable?(@x, @y, 2)"])
+          SetMoveRoute([24, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 1])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 1])"])
+          Empty([])
+        Else([])
+          Script(["@y -= 1"])
+          Script(["@x -= 1"])
+          ConditionalBranch([12, "$game_map.passable?(@x, @y, 2)"])
+            SetMoveRoute([24, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[-1, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+            Unnamed(["RPG::MoveCommand(@code=14, @parameters=[-1, 0])"])
+            Empty([])
+          Else([])
+            Script(["@x += 2"])
+            ConditionalBranch([12, "$game_map.passable?(@x, @y, 2)"])
+              SetMoveRoute([24, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[1, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+              Unnamed(["RPG::MoveCommand(@code=14, @parameters=[1, 0])"])
+              Empty([])
+            Else([])
+              SetMoveRoute([24, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+              Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      CallCommonEvent([51])
+      EraseEvent([])
+      Empty([])
+
+    BranchEnd([])
+    Wait([15])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    ChangeState([0, 0, 1, 2])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 27
+Name = "Ore1"
+
+  Page 0
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([12, "!$game_party.members[0].equips[0].nil?"])
+      ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(2)"])
+        ConditionalBranch([2, "D", 0])
+          Wait([15])
+          ShowAnimation([0, 7, true])
+          CallCommonEvent([176])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          ConditionalBranch([2, "C", 0])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["D", 0])
+            ControlSelfSwitch(["B", 1])
+            Empty([])
+          Else([])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["C", 0])
+            ControlSelfSwitch(["B", 1])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(8)"])
+          Wait([15])
+          ShowAnimation([0, 19, true])
+          CallCommonEvent([176])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          PlaySE(["RPG::SE(@name=\"Hammer\", @pitch=100, @volume=80)"])
+          SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=13, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=13, @parameters=[])"])
+          ControlSelfSwitch(["B", 1])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 28
+Name = "Ore1"
+
+  Page 0
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([12, "!$game_party.members[0].equips[0].nil?"])
+      ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(2)"])
+        ConditionalBranch([2, "D", 0])
+          Wait([15])
+          ShowAnimation([0, 7, true])
+          CallCommonEvent([176])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          ConditionalBranch([2, "C", 0])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["D", 0])
+            ControlSelfSwitch(["B", 1])
+            Empty([])
+          Else([])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["C", 0])
+            ControlSelfSwitch(["B", 1])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(8)"])
+          Wait([15])
+          ShowAnimation([0, 19, true])
+          CallCommonEvent([176])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          PlaySE(["RPG::SE(@name=\"Hammer\", @pitch=100, @volume=80)"])
+          SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=13, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=13, @parameters=[])"])
+          ControlSelfSwitch(["B", 1])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    Empty([])

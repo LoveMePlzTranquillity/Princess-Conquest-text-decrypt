@@ -1,0 +1,380 @@
+Display Name = ""
+Parallax Name = "Kob Room"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    ShowPicture([1, "Knocker dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 4, 2, 2])
+    ShowText(["\\>Knocker:"])
+    ShowText(["We need to secure the river to the south or the humans will ask for more tolls...\\.\\."])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ShowPicture([1, "Knocker dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 4, 2, 2])
+    ShowText(["\\>Knocker:"])
+    ShowText(["Things got harder for us Kobolds after all the miners disappeared.\\.\\. Like life wasn't hard enough before that..."])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ShowPicture([1, "Knocker dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 4, 2, 2])
+    ShowText(["\\>Knocker:"])
+    ShowText(["Me and Ugnok can go scout the bridge to the south to check if it's clear,\\. then we'll signal you.\\.\\. Don't make us wait alone out there."])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 6
+Name = "Map"
+
+  Page 0
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ShowPicture([1, "Knocker dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 4, 2, 2])
+    ShowText(["\\>Knocker:"])
+    ShowText(["Watch where you step,\\. knight.\\.\\. This is our Princess' castle,\\. remember that!"])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 8
+Name = "Knocker Rest"
+
+  Page 0
+    ShowPicture([1, "Knocker dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 4, 2, 2])
+    ShowText(["\\>Knocker:"])
+    ShowText(["Rest for 8 \\G?"])
+    ErasePicture([1])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      ConditionalBranch([1, 584, 0, 8, 1])
+        ControlVariables([585, 585, 0, 0, -8])
+        ControlSwitches([648, 648, 0])
+        FadeoutScreen([])
+        PlayME(["RPG::ME(@name=\"Inn\", @pitch=100, @volume=100)"])
+        Wait([300])
+        RecoverAll([0, 0])
+        Script(["$game_map.sas_hud.refresh_bars"])
+        FadeinScreen([])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["You don't have enough \\G!"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    When([1, "No"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    Script(["$PU_AUTOMATIC_POPUP = true"])
+    TransferPlayer([0, 31, 10, 23, 8, 0])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["You've done all you could in the throne room.\\.\\. It's time to head down,\\. into the mines."])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    Script(["$PU_AUTOMATIC_POPUP = true"])
+    TransferPlayer([0, 31, 10, 23, 8, 0])
+    Empty([])
+
+  Page 1
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["You've done all you could in the throne room.\\.\\. It's time to head down,\\. into the mines."])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+    Empty([])
+
+CommonEvent 11
+Name = "MineDoor"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Key\", @pitch=100, @volume=80)"])
+    ConditionalBranch([0, 324, 0])
+      ConditionalBranch([2, "A", 1])
+        ShowPicture([1, "Kobold Princess Dial", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Kobold Princess:"])
+        ShowText(["Our Mines are down here.\\.\\. We have to reach the deepest part of them,\\. where the miners disappeared."])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Kobold Princess:"])
+        ShowText(["Let's keep our eyes peeled,\\. it will get darker as we proceed."])
+        ErasePicture([1])
+        ControlSelfSwitch(["A", 0])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 32, 13, 3, 2, 0])
+    Empty([])
+
+CommonEvent 12
+Name = "Load"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["$game_map.refresh"])
+    ChangeTransparency([1])
+    ConditionalBranch([12, "$game_self_switches[[30,15,\"A\"]] == true"])
+      Comment(["KOB MAID"])
+      ConditionalBranch([12, "$game_variables[7250] == 0"])
+        Script(["@prog = 7250"])
+        Script(["$game_variables[@prog] = Array.new(60, 0)"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "$game_variables[7250][0] == 0"])
+        Script(["@prog = 7250"])
+        Script(["$game_variables[@prog][0] = 1"])
+        Script(["$game_variables[@prog][1] = 0"])
+        Script(["$game_variables[@prog][3] = 1"])
+        Script(["$game_variables[@prog][4] = rand(5)"])
+        Script(["$game_variables[@prog][5] = rand(4)"])
+        Script(["$game_variables[@prog][6] = rand(4)"])
+        Script(["$game_variables[@prog][7] = rand(5)"])
+        Script(["$game_variables[@prog][17] = 3"])
+        Empty([])
+      BranchEnd([])
+      Comment(["KOB MAID END"])
+      CallCommonEvent([543])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+      Wait([15])
+      Empty([])
+
+    BranchEnd([])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Knocker dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 4, 2, 2])
+    ShowText(["\\>Knocker:"])
+    ShowText(["Head down the mines,\\. as the Princess commands."])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Knocker dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 4, 2, 2])
+    ShowText(["\\>Knocker:"])
+    ShowText(["Head down the mines,\\. as the Princess commands."])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 15
+Name = "Knocker Rest"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["-------------------"])
+    ControlVariables([2097, 2097, 0, 0, 5150])
+    ControlSwitches([2412, 2412, 0])
+    Comment(["-------------------"])
+    ConditionalBranch([2, "B", 1])
+      ControlVariables([2051, 2051, 0, 0, 2])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Kobold Maid:"])
+      ShowText(["Hmph!\\.\\. This is far beyond my usual tasks,\\. but the Princess wants you to be treated well..."])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Kobold Maid:"])
+      ShowText(["I don't lift my tail for humans,\\. but if the Princess commands so...\\.\\.\\."])
+      CallCommonEvent([559])
+      Wait([10])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["-------------------"])
+    ControlSelfSwitch(["B", 0])
+    Comment(["-------------------"])
+    ShotBalloonIcon([0, 8, true])
+    Wait([15])
+    ShotBalloonIcon([0, 1, true])
+    Wait([15])
+    ControlVariables([2051, 2051, 0, 0, 4])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Kobold Maid:"])
+    ShowText(["Oh!?\\.\\. What's that I smell?"])
+    ShotBalloonIcon([0, 4, false])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Kobold Maid:"])
+    ShowText(["Are you hiding \\c[18]\\i[626] \\G\\c[0] on you,\\. dearie~?"])
+    ControlVariables([2051, 2051, 0, 0, 0])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 4, 2, 2])
+    ShowText(["Kobold Maid:"])
+    ShowText(["...\\.\\.\\. if that's the case...\\.\\.\\. what about \\c[18]75 \\G\\c[0]?"])
+    CallCommonEvent([559])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      ConditionalBranch([1, 584, 0, 75, 1])
+        ControlVariables([585, 585, 0, 0, -75])
+        ControlSwitches([648, 648, 0])
+        ShotBalloonIcon([0, 3, false])
+        Wait([30])
+        ControlVariables([2051, 2051, 0, 0, 4])
+        ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 4, 2, 2])
+        ShowText(["Kobold Maid:"])
+        ShowText(["*slurp*\\.\\. sweet sweet \\G...\\.\\.\\. and you're not bad yourself~"])
+        CallCommonEvent([559])
+        CallCommonEvent([740])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["You don't have enough \\G!"])
+        JumpToLabel(["end"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    When([1, "No"])
+      ShotBalloonIcon([0, 7, false])
+      ControlVariables([2051, 2051, 0, 0, 2])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 4, 2, 2])
+      ShowText(["Kobold Maid:"])
+      ShowText(["Yea,\\. as I was saying...\\.\\.\\. FAR beyond my tasks!!"])
+      JumpToLabel(["end"])
+      Empty([])
+
+    ChoicesEnd([])
+    Label(["end"])
+    CallCommonEvent([559])
+    ControlSwitches([2412, 2412, 1])
+    Empty([])
+
+CommonEvent 16
+Name = "Finish tent message"
+
+  Page 0
+    Wait([600])
+    ShowChoices([["Finish!", "Keep going..."], 2])
+    When([0, "Finish!"])
+      ControlSwitches([1202, 1202, 0])
+      Empty([])
+
+    When([1, "Keep going..."])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 17
+Name = "KobGuard"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Knocker dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 4, 2, 2])
+    ShowText(["\\>Knocker:"])
+    ShowText(["The Princess is waiting.\\.\\. Go on,\\. human,\\. to the next room."])
+    ErasePicture([1])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ShowPicture([1, "Knocker dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 4, 2, 2])
+    ShowText(["\\>Knocker:"])
+    ShowText(["Head down the mines,\\. as the Princess commands."])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 18
+Name = "KobGuard"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Knocker dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 4, 2, 2])
+    ShowText(["\\>Knocker:"])
+    ShowText(["The Princess is waiting.\\.\\. Go on,\\. human,\\. to the next room."])
+    ErasePicture([1])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ShowPicture([1, "Knocker dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 4, 2, 2])
+    ShowText(["\\>Knocker:"])
+    ShowText(["Head down the mines,\\. as the Princess commands."])
+    ErasePicture([1])
+    Empty([])

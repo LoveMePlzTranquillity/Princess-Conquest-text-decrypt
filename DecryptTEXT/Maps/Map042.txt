@@ -1,0 +1,570 @@
+Display Name = ""
+Parallax Name = "Hive Boss"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "InsP"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 2
+Name = "InsGuard"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 3
+Name = "InsGuard"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 4
+Name = "InsGuard"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 5
+Name = "InsGuard"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 6
+Name = "InsGuard"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 7
+Name = "InsGuard"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 8
+Name = "Corp"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 9
+Name = "Corp"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 10
+Name = "Corp"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 11
+Name = "Corp"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 12
+Name = "Corp"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 13
+Name = "Corp"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "Corp"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    Comment([":update:"])
+    Wait([60])
+    FadeinScreen([])
+    ShowPicture([1, "Insect Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["Here we are..."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["I'll show you where the Hive provides for his sustenance."])
+    ShowPicture([1, "Insect Princess dial love", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["Welcome to the OUR feeding grounds."])
+    ErasePicture([1])
+    ScrollMap([4, 20, 4])
+    Wait([300])
+    FadeoutScreen([])
+    ScrollMap([6, 20, 6])
+    Wait([90])
+    FadeinScreen([])
+    Wait([30])
+    ShowPicture([1, "Insect Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["In here the worker insects drain the nourishment out of the enemies we capture."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["Follow me..."])
+    ErasePicture([1])
+    Wait([30])
+    SetMoveRoute([1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=30, @parameters=[5])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=30, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    ShowPicture([1, "Insect Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["\\^Our reign as of now cannot sustain itself without gathering resources from the outside.\\|\\.\\.\\."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["\\^The Hive cannot generate food out of thin air after all, \\.and the insects are no farmers.\\|\\.\\.\\."])
+    ShowPicture([1, "Insect Princess dial love", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["\\^So we must fight to survive,\\. and when there isn't an enemy to fight...\\.\\.\\. we have to find one...\\|\\.\\.\\."])
+    ErasePicture([1])
+    Wait([60])
+    ShowPicture([1, "Insect Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["\\^You understand what I'm saying?\\|"])
+    ErasePicture([1])
+    ShowChoices([["It's kill or get killed, I get it.", "Do YOU understand what you're saying?"], 0])
+    When([0, "It's kill or get killed, I get it."])
+      ShowPicture([1, "Insect Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Insect Princess:"])
+      ShowText(["\\^It's not like we are hostile ourselves, \\.\\.but if the Hive is endangered we need to find resources somehow.\\|\\.\\.\\."])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Insect Princess:"])
+      ShowText(["For this we train all life long and there is a strict selection of who's going to work inside the Hive and who's going outside to hunt for food.\\|\\.\\.\\."])
+      ErasePicture([1])
+      Empty([])
+
+    When([1, "Do YOU understand what you're saying?"])
+      ShowPicture([1, "Insect Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Insect Princess:"])
+      ShowText(["\\^Yes,\\. I do.\\.\\. We are talking about self preservation here. \\|\\.\\.\\."])
+      ShowPicture([1, "Insect Princess dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Insect Princess:"])
+      ShowText(["\\^Don't blame us if the Human's Reign has fallen, \\.\\.they brought war upon themselves.\\|\\.\\.\\."])
+      ShowPicture([1, "Insect Princess dial love", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Insect Princess:"])
+      ShowText(["\\^Would they have been less prone to war they would probably still be around.\\|\\.\\.\\."])
+      ErasePicture([1])
+      Empty([])
+
+    ChoicesEnd([])
+    Wait([60])
+    ShowPicture([1, "Insect Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["\\^So...\\|\\.\\.\\."])
+    ShowPicture([1, "Insect Princess dial love", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["\\^How does it feel to look at your kindlings becoming food for our babies?\\|\\.\\.\\."])
+    ShowPicture([1, "Insect Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["\\^Does anything of this even faze you?\\|\\.\\.\\."])
+    ErasePicture([1])
+    ShowChoices([["The weak dies in these times, it's only natural.", "Don't provoke me princess."], 0])
+    When([0, "The weak dies in these times, it's only natural."])
+      ShowPicture([1, "Insect Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Insect Princess:"])
+      ShowText(["\\^To be completely honest I was expecting some kind of empathy from you.\\|\\.\\.\\."])
+      ShowPicture([1, "Insect Princess dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Insect Princess:"])
+      ShowText(["\\^You're...\\.\\.\\. unsettling...\\.\\.\\. even for me,\\. and that's nothing to scoff at.\\|\\.\\.\\."])
+      ControlVariables([128, 128, 2, 0, 1])
+      ErasePicture([1])
+      Empty([])
+
+    When([1, "Don't provoke me princess."])
+      ShowPicture([1, "Insect Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Insect Princess:"])
+      ShowText(["\\^Oh,\\. I'm sorry,\\. I do it all the times...\\|\\.\\.\\."])
+      ShowPicture([1, "Insect Princess dial love", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Insect Princess:"])
+      ShowText(["\\^I must admit I tried to get some kind of reaction out of you.\\.\\. I guess I succeeded.\\|\\.\\.\\."])
+      ErasePicture([1])
+      Wait([60])
+      ShowPicture([1, "Insect Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Insect Princess:"])
+      ShowText(["\\^But don't get your hopes up,\\. I'm not going to ask for your forgiveness,\\.\\. it wouldn't suit my position...\\|\\.\\.\\."])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Insect Princess:"])
+      ShowText(["\\^What I can say,\\. at least,\\. is that I took it maybe too far.\\.\\. I don't know how would I have reacted in your place.\\|\\.\\.\\."])
+      ControlVariables([128, 128, 1, 0, 1])
+      ErasePicture([1])
+      Empty([])
+
+    ChoicesEnd([])
+    ShowPicture([1, "Insect Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["\\^I hope you've come to understand us,\\. and that your loyalty to me will be ever more certain.\\|\\.\\.\\."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["\\^Take these stairs to return to the surface,\\. I need to get back to the throne room.\\|\\.\\.\\."])
+    ShowPicture([1, "Insect Princess dial love", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Insect Princess:"])
+    ShowText(["\\^Come to the Hive again soon.\\.\\. Next time I promise I'll be...\\.\\.\\. softer,\\. on you.\\|\\.\\.\\."])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+    ErasePicture([1])
+    ControlSwitches([374, 374, 0])
+    TransferPlayer([0, 15, 14, 5, 8, 0])
+    Empty([])
+
+CommonEvent 35
+Name = "InsLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 36
+Name = "InsLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 37
+Name = "InsLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    Comment([":update:"])
+    ConditionalBranch([0, 413, 0])
+      TintScreen(["Tone(@red=-34.0, @green=-34.0, @blue=0.0, @gray=34.0)", 60, true])
+      Empty([])
+
+    BranchEnd([])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])

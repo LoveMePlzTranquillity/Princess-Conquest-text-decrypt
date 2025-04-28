@@ -1,0 +1,412 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 3
+Name = "KnightP"
+
+  Page 0
+    Script(["complete_objective(20, 0) "])
+    ScriptMore(["call_quest_journal(20)"])
+    Wait([30])
+    ShowPicture([1, "Knight Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knight Princess:"])
+    ShowText(["Hm...\\.\\.\\."])
+    ErasePicture([1])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Surely you weren't expecting a warm welcome from her,\\. but this composed Knight showed no reaction to your arrival."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Her gaze urges you to state what brought you to her campsite."])
+    Wait([15])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Hello,\\. did...\\.\\.\\. did we meet somewhere before?\\.\\."])
+    ConditionalBranch([0, 65, 0])
+      ShowPicture([1, "Knight Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Knight Princess:"])
+      ShowText(["Hm!\\.\\."])
+      ErasePicture([1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Unexpectedly,\\. she remembers you."])
+      Wait([15])
+      ShowPicture([1, "Knight Princess dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Knight Princess:"])
+      ShowText(["You were there back then,\\. uh?\\.\\. In that bandits' camp."])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Knight Princess:"])
+      ShowText(["That's not something I wanted to remember...\\.\\.\\. now less than ever...\\.\\.\\."])
+      ErasePicture([1])
+      Empty([])
+
+    Else([])
+      ShowPicture([1, "Knight Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Knight Princess:"])
+      ShowText(["Don't think so.\\.\\. I was to my Princess' side for all my life...\\.\\.\\. until...\\.\\.\\. ggghr...\\.\\.\\."])
+      Empty([])
+
+    BranchEnd([])
+    ShotBalloonIcon([0, 5, false])
+    ShowPicture([1, "Knight Princess dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knight Princess:"])
+    ShowText(["If only I were born man!\\.\\. Nobody could have defeated us then!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knight Princess:"])
+    ShowText(["And now,\\. on top of it,\\. those monsters!\\.\\. Those insects!\\.\\. Decided to surface so close to our old castle!"])
+    ErasePicture([1])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["She's venting her anger,\\. her frustation..."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Angry and defeated,\\. just what is she doing in here?"])
+    Wait([15])
+    ShowPicture([1, "Knight Princess dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knight Princess:"])
+    ShowText(["And you?\\.\\. What about you?\\.\\. Aren't you a Knight too?\\.\\. A human knight??"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knight Princess:"])
+    ShowText(["Doesn't it make your blood boil?!\\.\\. Our Princess should have been the one standing on top of everyone!"])
+    ErasePicture([1])
+    Wait([20])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["..."])
+    ShowPicture([1, "Knight Princess dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knight Princess:"])
+    ShowText(["?\\.\\."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knight Princess:"])
+    ShowText(["...\\.\\.\\."])
+    ShowPicture([1, "Knight Princess dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Knight Princess:"])
+    ShowText(["Whatever.\\.\\. State your business,\\. what are you here for?"])
+    ErasePicture([1])
+    Label(["knif"])
+    ShowChoices([["Insect Princess gave you a mission", "You're both humans, after all...", "Try to get out of this"], 0])
+    When([0, "Insect Princess gave you a mission"])
+      ShowPicture([1, "Knight Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Knight Princess:"])
+      ShowText(["Hmph.\\.\\. That's not what I wanted to hear."])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Knight Princess:"])
+      ShowText(["I can't turn back now,\\. not now that we're up against a wall."])
+      ErasePicture([1])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["That's just how it is...\\.\\.\\. Now Insect Princess is a recognised Princess and you're in her borders."])
+      Wait([15])
+      PlaySE(["RPG::SE(@name=\"Sword3\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Her sword is now unsheathed.\\.\\. It's the point of no return."])
+      Wait([15])
+      ShowPicture([1, "Knight Princess dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Knight Princess:"])
+      ShowText(["Talking time is over!\\.\\. Let me show you how a TRUE human goes down."])
+      ErasePicture([1])
+      Script(["$game_map.start_sas"])
+      ScriptMore(["$game_map.sas_hud.show(true)"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 3])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 3])"])
+      Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+      ControlSwitches([720, 720, 0])
+      PlayBGM(["RPG::BGM(@name=\"P&C - Battle Theme\", @volume=100, @pitch=100)"])
+      Empty([])
+
+    When([1, "You're both humans, after all..."])
+      FadeoutScreen([])
+      Wait([15])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["This new route will be ready soon!"])
+      Wait([15])
+      FadeinScreen([])
+      JumpToLabel(["knif"])
+      Empty([])
+
+    When([2, "Try to get out of this"])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["Uh,\\. not much,\\. I was just passing by."])
+      ShowPicture([1, "Knight Princess dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Knight Princess:"])
+      ShowText(["...\\.\\.\\."])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Knight Princess:"])
+      ShowText(["I'll pretend to believe you...\\.\\.\\. go now,\\. I'm busy here."])
+      ErasePicture([1])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 047]"])
+    Comment(["[switch 721]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 2
+    ControlSwitches([720, 720, 1])
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    CallCommonEvent([56])
+    FadeoutBGM([3])
+    ConditionalBranch([0, 722, 0])
+      Wait([30])
+      ShowPicture([1, "Knight Princess dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Knight Princess:"])
+      ShowText(["KH.\\..\\.!\\.\\. You...\\.\\.\\."])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Knight Princess:"])
+      ShowText(["Finish me off!"])
+      ErasePicture([1])
+      ShowChoices([["Finish her off", "Spare her"], 2])
+      When([0, "Finish her off"])
+        Label(["slay"])
+        Wait([15])
+        ShowAnimation([0, 7, true])
+        ShowPicture([1, "Knight Princess dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Knight Princess:"])
+        ShowText(["KH\\..\\..\\.. damn you!"])
+        ErasePicture([1])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$Knight_PrincessDMG\\\", 0])\", \"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$Knight_PrincessDMG\", 0])"])
+        Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+        ShowPicture([1, "Knight Princess dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Knight Princess:"])
+        ShowText(["...\\.\\.\\. Ugh...\\.\\.\\."])
+        ErasePicture([1])
+        Wait([15])
+        Script(["complete_objective(20, 1) "])
+        ScriptMore(["call_quest_journal(20)"])
+        Wait([15])
+        FadeoutScreen([])
+        Wait([30])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Knight Princess has been defeated. Time to report to the Insects."])
+        ControlSwitches([1688, 1688, 0])
+        ControlSwitches([390, 390, 0])
+        Wait([15])
+        FadeinScreen([])
+        JumpToLabel(["end"])
+        Empty([])
+      When([1, "Spare her"])
+        ShowPicture([1, "Knight Princess dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Knight Princess:"])
+        ShowText(["What's this,\\. all of a sudden?\\.\\. Mercy?\\.\\. Don't make me laugh!"])
+        ShowPicture([1, "Knight Princess dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Knight Princess:"])
+        ShowText(["Ah..\\.\\.\\ah!\\.\\. You will regret this,\\. mark my words!"])
+        ErasePicture([1])
+        Script(["complete_objective(20, 1) "])
+        ScriptMore(["call_quest_journal(20)"])
+        Wait([15])
+        FadeoutScreen([])
+        Wait([30])
+        ControlSwitches([391, 391, 0])
+        ControlSwitches([390, 390, 0])
+        Wait([15])
+        FadeinScreen([])
+        JumpToLabel(["end"])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    Else([])
+      JumpToLabel(["slay"])
+      Empty([])
+
+    BranchEnd([])
+    Label(["end"])
+    Empty([])
+
+  Page 3
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The little otherworldy flame is dancing in front of your eyes.\\.\\."])
+    ConditionalBranch([8, 9])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Use one \\i[643] \\c[18]Empty Princess Urn\\c[0] to contain her Soul?"])
+      ShowChoices([["Yes", "No"], 2])
+      When([0, "Yes"])
+        ChangeItems([9, 1, 0, 1])
+        ChangeItems([45, 0, 0, 1])
+        ControlSwitches([1216, 1216, 0])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["You fill the urn with Knight Princess' soul."])
+        Empty([])
+      When([1, "No"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Her Soul will wander the Kingdom a little longer."])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 4
+    Empty([])
+
+  Page 5
+    Empty([])
+
+  Page 6
+    Empty([])
+
+  Page 7
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    ControlSwitches([643, 645, 1])
+    TransferPlayer([0, 2, 54, 59, 2, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    ControlSwitches([643, 645, 1])
+    TransferPlayer([0, 2, 54, 59, 2, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    ControlSwitches([643, 645, 1])
+    TransferPlayer([0, 2, 54, 59, 2, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Comment([":update:"])
+    CallCommonEvent([21])
+    CallCommonEvent([20])
+    ErasePicture([1])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 8
+Name = "drop1"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["n = $data_weapons[$game_variables[577]]"])
+    ScriptMore(["$game_party.gain_item(n, 1) "])
+    Script(["n = $data_armors[$game_variables[578]]"])
+    ScriptMore(["$game_party.gain_item(n, 1) "])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    ControlSwitches([643, 645, 1])
+    TransferPlayer([0, 45, 8, 15, 8, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ConditionalBranch([0, 643, 0])
+      SetEventLocation([8, 1, 574, 575, 0])
+      Script(["@x = $game_variables[574]"])
+      ScriptMore(["@y = $game_variables[575]"])
+      Script(["@y -= 1"])
+      ConditionalBranch([12, "$game_map.passable?(@x, @y, 2)"])
+        SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, -1])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, -1])"])
+        Empty([])
+      Else([])
+        Script(["@y += 2"])
+        ConditionalBranch([12, "$game_map.passable?(@x, @y, 2)"])
+          SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 1])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 1])"])
+          Empty([])
+        Else([])
+          Script(["@y -= 1"])
+          Script(["@x -= 1"])
+          ConditionalBranch([12, "$game_map.passable?(@x, @y, 2)"])
+            SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[-1, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+            Unnamed(["RPG::MoveCommand(@code=14, @parameters=[-1, 0])"])
+            Empty([])
+          Else([])
+            Script(["@x += 2"])
+            ConditionalBranch([12, "$game_map.passable?(@x, @y, 2)"])
+              SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[1, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+              Unnamed(["RPG::MoveCommand(@code=14, @parameters=[1, 0])"])
+              Empty([])
+            Else([])
+              SetMoveRoute([8, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+              Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      CallCommonEvent([51])
+      EraseEvent([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])

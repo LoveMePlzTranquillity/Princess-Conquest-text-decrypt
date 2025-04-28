@@ -1,0 +1,51 @@
+Display Name = ""
+Parallax Name = ""
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "YSE.patch_start"
+
+  Page 0
+    JumpToLabel(["nop"])
+    Script(["YSE.patch_start"])
+    Script(["YSE.dlc_start"])
+    Script(["YSE.dlc2_start"])
+    Script(["YSE.dlc3_start"])
+    Label(["nop"])
+    ConditionalBranch([12, "$game_variables[3000] != 0"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["A new adventure is about to begin!\\.\\. "])
+      ShowText(["Do you want to switch to \\c[18]REMIX Mode\\c[0]?\\!"])
+      ShowChoices([["No", "Yes"], 1])
+      When([0, "No"])
+        Script(["$game_switches[7700] = false"])
+        Empty([])
+      When([1, "Yes"])
+        Script(["$game_switches[7700] = true"])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_switches[7700] == true"])
+      TransferPlayer([0, 493, 12, 10, 8, 0])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    TintScreen(["Tone(@red=-255.0, @green=-255.0, @blue=-255.0, @gray=0.0)", 1, true])
+    Wait([10])
+    ChangeParallaxBack(["StartBG", true, true, 0, 0])
+    Wait([30])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 180, false])
+    ConditionalBranch([0, 2359, 0])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+    CallCommonEvent([584])
+    Label(["end"])
+    EraseEvent([])
+    Empty([])

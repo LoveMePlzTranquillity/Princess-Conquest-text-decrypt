@@ -1,0 +1,69 @@
+Display Name = ""
+Parallax Name = "Sky Lift F1"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 53, 7, 1, 8, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "Lift"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 3
+Name = "&&&"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Operate the \\c[18]Sky Lift\\c[0] from here?"])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      PlaySE(["RPG::SE(@name=\"Switch2\", @pitch=100, @volume=80)"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      Wait([15])
+      CallCommonEvent([865])
+      Empty([])
+
+    When([1, "No"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    ConditionalBranch([0, 413, 0])
+      TintScreen(["Tone(@red=-34.0, @green=-34.0, @blue=0.0, @gray=34.0)", 10, true])
+      Empty([])
+
+    Else([])
+      TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 10, true])
+      Empty([])
+
+    BranchEnd([])
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 5
+Name = "Protag-Lift"
+
+  Page 0
+    Comment(["<always_update>"])
+    Empty([])

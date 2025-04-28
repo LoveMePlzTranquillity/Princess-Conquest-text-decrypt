@@ -1,0 +1,379 @@
+Display Name = ""
+Parallax Name = "Parallax Desert"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Comment([":update:"])
+    ControlSwitches([339, 339, 1])
+    Wait([45])
+    FadeinScreen([])
+    ShowTextAttributes(["", 0, 0, 1])
+    ShowText(["The Desert Festival started!\\.\\. Let's take a look around!"])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Comment([":update:"])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ShowTextAttributes(["Evil", 2, 0, 2])
+    ShowText(["Palace Guardsman:"])
+    ShowText(["Look forward for the princess performance at the Festival."])
+    ShowTextAttributes(["Evil", 2, 0, 2])
+    ShowText(["Palace Guardsman:"])
+    ShowText(["All the visitors are invited to join!"])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ShowTextAttributes(["Evil", 2, 0, 2])
+    ShowText(["Palace Guardsman:"])
+    ShowText(["Look forward for the princess performance at the Festival."])
+    ShowTextAttributes(["Evil", 2, 0, 2])
+    ShowText(["Palace Guardsman:"])
+    ShowText(["All the visitors are invited to join!"])
+    Empty([])
+
+CommonEvent 11
+Name = "Egg"
+
+  Page 0
+    ControlSwitches([3345, 3345, 0])
+    ControlVariables([2029, 2029, 0, 0, 16])
+    CallCommonEvent([551])
+    ControlSwitches([3345, 3345, 1])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 12
+Name = "DesNomad"
+
+  Page 0
+    ConditionalBranch([2, "A", 0])
+      JumpToLabel(["2nd"])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([1, "DesDweller dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Desert Nomad:"])
+    ShowText(["We of the Red Men of the Desert travel these lands since before this Reign was even founded."])
+    ShowPicture([1, "DesDweller dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Desert Nomad:"])
+    ShowText(["But now,\\. with wars all around us,\\. we cannot trade as we used to.\\.\\. "])
+    ShowPicture([1, "DesDweller dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Desert Nomad:"])
+    ShowText(["Our caravans get regularly attacked by bandits...\\.\\.\\. it's becoming harder and harder to trade our goods with the neighbouring reigns...\\.\\.\\."])
+    ErasePicture([1])
+    ShotBalloonIcon([0, 8, true])
+    Wait([15])
+    Label(["2nd"])
+    ShowPicture([1, "DesDweller dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Desert Nomad:"])
+    ShowText(["It pains me to do so but...\\.\\.\\. we've found \\c[18]this\\c[0] buried in the sand,\\. about a month ago...\\.\\.\\. "])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Desert Nomad:"])
+    ShowText(["At first we thought it could fetch us a good price,\\. but...\\.\\.\\."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Desert Nomad:"])
+    ShowText(["Since when we found it no noise could be heard coming from it,\\. \\c[18]its content\\c[0] was probably already dead by the time we retrieved it.\\.\\. "])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Desert Nomad:"])
+    ShowText(["However,\\. it could make for a fancy paperweight!"])
+    ErasePicture([1])
+    ShotBalloonIcon([0, 8, true])
+    Wait([15])
+    ShowPicture([1, "DesDweller dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Desert Nomad:"])
+    ShowText(["What about...\\.\\.\\. 2000 \\G?"])
+    ErasePicture([1])
+    ControlSelfSwitch(["A", 0])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      ConditionalBranch([1, 584, 0, 2000, 1])
+        ControlVariables([585, 585, 0, 0, -2000])
+        ControlSwitches([648, 648, 0])
+        Wait([45])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["You don't have enough \\G!"])
+        JumpToLabel(["end"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    When([1, "No"])
+      JumpToLabel(["end"])
+      Empty([])
+
+    ChoicesEnd([])
+    ShowPicture([1, "DesDweller dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Desert Nomad:"])
+    ShowText(["Thank you!\\.\\. Now my tribe will be able to survive until we find new trade routes!"])
+    ErasePicture([1])
+    FadeoutScreen([])
+    Wait([30])
+    TransferPlayer([0, 35, 20, 15, 8, 0])
+    ControlSwitches([3087, 3087, 0])
+    Wait([30])
+    FadeinScreen([])
+    Label(["end"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ShowTextAttributes(["", 3, 0, 2])
+    ShowText(["I really like Festivals!\\.\\. If only we could have more!\\.\\. At least once a week!\\.\\. I should ask Dad...\\.\\.\\."])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ShotBalloonIcon([0, 10, true])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([1, 233, 0, 2, 0])
+      ShowTextAttributes(["", 1, 0, 2])
+      ShowText(["I'll get my hands on you sooner or later,\\.\\. human boy!"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 233, 0, 1, 0])
+        ShowTextAttributes(["", 1, 0, 2])
+        ShowText(["Mfufufu!\\.\\. You can't run forever!"])
+        ControlVariables([233, 233, 1, 0, 1])
+        Empty([])
+      Else([])
+        ConditionalBranch([1, 233, 0, 0, 0])
+          ShowTextAttributes(["", 1, 0, 2])
+          ShowText(["Geez Rashid,\\. I'll get you!"])
+          ControlVariables([233, 233, 1, 0, 1])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 1, 0, 2])
+    ShowText(["Stop,\\. you two!\\.\\. Wait for meeee!"])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Ahahah!\\.\\. You won't catch me!\\.\\. I'm too fast!"])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    Empty([])
+
+CommonEvent 20
+Name = "ladysmoke"
+
+  Page 0
+    ShowTextAttributes(["", 7, 0, 2])
+    ShowText(["Festival Manager:"])
+    ShowText(["Hey fella!"])
+    ShowTextAttributes(["", 7, 0, 2])
+    ShowText(["Festival Manager:"])
+    ShowText(["This is where the princess will do her dance,\\. but the place isn't ready."])
+    ShowTextAttributes(["", 7, 0, 2])
+    ShowText(["Festival Manager:"])
+    ShowText(["Come again later,\\. would ya?"])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Comment([":update:"])
+    ConditionalBranch([1, 234, 0, 120, 0])
+      ControlSelfSwitch(["A", 0])
+      Empty([])
+
+    Else([])
+      Wait([60])
+      ControlVariables([234, 234, 1, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Comment([":update:"])
+    ShowPicture([1, "Desert Princess dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Desert Princess:"])
+    ShowText(["The time has come,\\. my precious followers!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Desert Princess:"])
+    ShowText(["The ritual dance we hold once every moon is beginning!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Desert Princess:"])
+    ShowText(["Come everyone, \\.\\.and recieve the blessing of the Goddess!"])
+    ErasePicture([1])
+    FadeoutScreen([])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 60, false])
+    SetWeatherEffects([:none, 9, 0, false])
+    ErasePicture([9])
+    TransferPlayer([0, 36, 8, 14, 8, 0])
+    Empty([])
+
+CommonEvent 22
+Name = "merch"
+
+  Page 0
+    ShowPicture([1, "Merchant pri dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Merchant Princess:"])
+    ShowText(["Come and take advantage of this opportunity!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Merchant Princess:"])
+    ShowText(["Everything is on sale!\\.\\. Just\\.\\. for\\.\\. tonight!"])
+    ErasePicture([1])
+    Script(["$PU_AUTOMATIC_POPUP = false"])
+    ChangeGold([1, 0, 99999])
+    ChangeGold([0, 1, 584])
+    Script(["$PU_AUTOMATIC_POPUP = true"])
+    ControlVariables([617, 617, 0, 3, 7, 2, 0])
+    ShopProcessing([0, 1, 1, 45, true])
+    ShopItem([0, 2, 1, 135])
+    ShopItem([0, 4, 1, 225])
+    ShopItem([0, 9, 1, 135])
+    ShopItem([0, 41, 1, 1665])
+    ShopItem([1, 71, 1, 2250])
+    ShopItem([1, 72, 1, 2250])
+    ShopItem([1, 73, 1, 2250])
+    ControlVariables([618, 618, 0, 3, 7, 2, 0])
+    ControlVariables([585, 585, 0, 1, 618])
+    ControlVariables([585, 585, 2, 1, 617])
+    ControlSwitches([648, 648, 0])
+    Wait([15])
+    ShowPicture([1, "Merchant pri dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Merchant Princess:"])
+    ShowText(["I'll be here all night!\\.\\. Come back again after you looked around!"])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Comment([":update:"])
+    CallCommonEvent([21])
+    CallCommonEvent([20])
+    EraseEvent([])
+    Empty([])

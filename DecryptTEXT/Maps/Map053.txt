@@ -1,0 +1,1929 @@
+Display Name = ""
+Parallax Name = "Sky Lift"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "Lift"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[collision_x 10]"])
+    Comment(["[collision_y 4]"])
+    ConditionalBranch([0, 4357, 0])
+      JumpToLabel(["ctrl"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4358, 0])
+      Label(["ctrl"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Ride the Sky Lift?"])
+      ShowChoices([["Yes", "No"], 2])
+      When([0, "Yes"])
+        SetMoveRoute([30, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+        CallCommonEvent([865])
+        Empty([])
+      When([1, "No"])
+        Empty([])
+      ChoicesEnd([])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["The lift is here,\\. but I don't know how to start it...\\.\\.\\."])
+    Label(["end"])
+    Empty([])
+
+CommonEvent 2
+Name = "Load"
+
+  Page 0
+    ConditionalBranch([0, 412, 0])
+      ControlVariables([850, 850, 0, 0, 1])
+      ControlVariables([848, 848, 0, 0, 1])
+      Empty([])
+
+    Else([])
+      ControlVariables([850, 850, 0, 0, 2])
+      ControlVariables([848, 848, 0, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 413, 0])
+      TintScreen(["Tone(@red=-34.0, @green=-34.0, @blue=0.0, @gray=34.0)", 10, true])
+      Empty([])
+
+    Else([])
+      TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 10, true])
+      Empty([])
+
+    BranchEnd([])
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([0, 412, 0])
+      ControlVariables([850, 850, 0, 0, 1])
+      ControlVariables([848, 848, 0, 0, 1])
+      Empty([])
+
+    Else([])
+      ControlVariables([850, 850, 0, 0, 2])
+      ControlVariables([848, 848, 0, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 413, 0])
+      TintScreen(["Tone(@red=-34.0, @green=-34.0, @blue=0.0, @gray=34.0)", 10, true])
+      Empty([])
+
+    Else([])
+      TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 10, true])
+      Empty([])
+
+    BranchEnd([])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    SetEventLocation([1, 0, 12, 1, 0])
+    SetEventLocation([31, 0, 12, 0, 0])
+    Wait([5])
+    ControlSwitches([3053, 3053, 0])
+    Wait([15])
+    PlaySE(["RPG::SE(@name=\"Lift\", @pitch=100, @volume=80)"])
+    SetMoveRoute([1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[2])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[2])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+    SetMoveRoute([31, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[2])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[2])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+    Wait([15])
+    FadeinScreen([])
+    Wait([165])
+    FadeoutScreen([])
+    Wait([15])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+    ConditionalBranch([0, 413, 0])
+      TransferPlayer([0, 2, 26, 30, 2, 0])
+      Empty([])
+
+    Else([])
+      TransferPlayer([0, 53, 12, 15, 2, 0])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([3053, 3053, 1])
+    ControlSwitches([3557, 3557, 1])
+    Wait([45])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ControlVariables([850, 850, 0, 0, 1])
+    ControlVariables([848, 848, 0, 0, 1])
+    TransferPlayer([0, 2, 26, 30, 2, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ControlVariables([850, 850, 0, 0, 1])
+    ControlVariables([848, 848, 0, 0, 1])
+    TransferPlayer([0, 2, 26, 30, 2, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ControlVariables([850, 850, 0, 0, 1])
+    ControlVariables([848, 848, 0, 0, 1])
+    TransferPlayer([0, 2, 26, 30, 2, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "GateGuard"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, false])
+    Wait([10])
+    ShowPicture([1, "GuardianNun dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Guardian Nun:"])
+    ShowText(["Hmph!\\.\\. The counter is there for a reason~"])
+    ErasePicture([1])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+  Page 4
+    Empty([])
+
+CommonEvent 7
+Name = "&&&"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ControlVariables([850, 850, 0, 0, 1])
+    ControlVariables([848, 848, 0, 0, 1])
+    TransferPlayer([0, 54, 7, 9, 2, 0])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Empty([])
+
+CommonEvent 14
+Name = "LiftRide"
+
+  Page 0
+    ConditionalBranch([12, "$game_party.leader.id == 1"])
+      ConditionalBranch([4, 1, 5, 229])
+        ShowPicture([1, "GuardianNun dial", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Guardian Nun:"])
+        ShowText(["They're waiting for you in the Monastery?\\.\\. Go forth,\\. brother."])
+        ErasePicture([1])
+        CallCommonEvent([865])
+        JumpToLabel(["end"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ShowPicture([1, "GuardianNun dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Guardian Nun:"])
+      ShowText(["Welcome to the holy Sky Lift,\\. wanderer."])
+      ShowPicture([1, "GuardianNun dial vision", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Guardian Nun:"])
+      ShowText(["This facility leads to the \\c[18]Kingdom Above\\c[0],\\. a place of peace and happiness,\\. but only the purest souls are allowed to ride it."])
+      ShowPicture([1, "GuardianNun dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Guardian Nun:"])
+      ShowText(["Now speak,\\. and be sure that your actions prove the truth of your words..."])
+      ErasePicture([1])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 3513, 0])
+      ConditionalBranch([12, "objective_revealed?(62,2)"])
+        ConditionalBranch([12, "objective_complete?(62,2)"])
+          Empty([])
+        Else([])
+          ShowChoices([["Ask about the \\i[633] \\c[18]Ripped Fabric\\c[0]", "Ride the lift"], 0])
+          When([0, "Ask about the \\i[633] \\c[18]Ripped Fabric\\c[0]"])
+            ShowPicture([1, "GuardianNun dial", 0, 0, 0, 0, 100, 100, 255, 0])
+            ShowTextAttributes(["", 0, 2, 2])
+            ShowText(["Guardian Nun:"])
+            ShowText(["Oh?\\.\\. That's a piece of the holy fabric used to sew and embroider our tunics!\\.\\. How did you get your hands on it,\\. hunf?\\.\\."])
+            ControlSwitches([3000, 3000, 0])
+            ShowPicture([1, "GuardianNun dial vision", 0, 0, 0, 0, 100, 100, 255, 0])
+            ShowTextAttributes(["", 0, 2, 2])
+            ShowText(["Guardian Nun:"])
+            ShowText(["It's so beautiful,\\. can you feel the serenity and grace emanating from it?"])
+            ShowTextAttributes(["", 0, 2, 2])
+            ShowText(["Guardian Nun:"])
+            ShowText(["Treat it as an holy relic,\\. something superior,\\. only used for the \\c[18]Saints\\c[0] and \\c[18]Pious\\c[0] watching over us from the Kingdom Above!"])
+            ErasePicture([1])
+            Script(["complete_objective(62,2)"])
+            ScriptMore(["reveal_objective(62,3)"])
+            ScriptMore(["call_quest_journal(62)"])
+            ControlSwitches([3000, 3000, 1])
+            JumpToLabel(["end"])
+            Empty([])
+          When([1, "Ride the lift"])
+            Empty([])
+          ChoicesEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([1, "GuardianNun dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Guardian Nun:"])
+    ShowText(["Are you,\\. asking to ride the Sky Lift up to the \\c[18]Kingdom Above\\c[0],\\. as pure as white clouds? "])
+    ErasePicture([1])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      CallCommonEvent([866])
+      ConditionalBranch([1, 1197, 0, 0, 0])
+        ShowPicture([1, "GuardianNun dial", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Guardian Nun:"])
+        ShowText(["Ohhh,\\. nice.\\.\\. What a joy,\\. there's not a single shred of \\i[758] \\c[27]Corruption\\c[0] afflicting you!\\.\\."])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Guardian Nun:"])
+        ShowText(["Please,\\. go ahead!\\.\\. The Kingdom Above is waiting for you!"])
+        ErasePicture([1])
+        CallCommonEvent([865])
+        Empty([])
+      Else([])
+        ShowPicture([1, "GuardianNun dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Guardian Nun:"])
+        ShowText(["What's this I'm sensing,\\. fee-fi-fo-fum!\\.\\."])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Guardian Nun:"])
+        ShowText(["\\i[758] \\c[27]Corruption\\c[0]!!\\.\\. I cannot let you ascend to the Kingdom Above with such an impure party!"])
+        ErasePicture([1])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["end"])
+      Empty([])
+
+    When([1, "No"])
+      ShowPicture([1, "GuardianNun dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Guardian Nun:"])
+      ShowText(["Then step back,\\. there's no place up There for the likes of you."])
+      ErasePicture([1])
+      Empty([])
+
+    ChoicesEnd([])
+    Label(["end"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ControlVariables([850, 850, 0, 0, 1])
+    ControlVariables([848, 848, 0, 0, 1])
+    TransferPlayer([0, 288, 2, 4, 2, 0])
+    Empty([])
+
+CommonEvent 16
+Name = "&&&"
+
+  Page 0
+    ShotBalloonIcon([6, 5, false])
+    Wait([10])
+    ShowPicture([1, "GuardianNun dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 3, 2, 2])
+    ShowText(["Gardian Nun:"])
+    ShowText(["I sense a curse on you,\\. unholy being!\\.\\. Leave!\\.\\. You're not welcome here!"])
+    ErasePicture([1])
+    Wait([10])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 2, 26, 30, 2, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 17
+Name = "Chest"
+
+  Page 0
+    Comment(["<always update>"])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ChangeArmor([304, 0, 0, 1, false])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 18
+Name = "NerveQ Cour"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([12, "objective_complete?(87,0)"])
+      ShotBalloonIcon([0, 8, false])
+      ControlVariables([2097, 2097, 0, 0, 1115])
+      ControlSwitches([2412, 2412, 0])
+      ControlVariables([2051, 2051, 0, 0, 1])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Rabbit Courtesan:"])
+      ShowText(["A servant,\\. oui?\\.\\. Go fetch something bon for mon lapins,\\. I have to go back to the Dame soon."])
+      CallCommonEvent([559])
+      ControlSwitches([2412, 2412, 1])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    ControlVariables([2097, 2097, 0, 0, 1115])
+    ControlSwitches([2412, 2412, 0])
+    ControlVariables([2051, 2051, 0, 0, 0])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Rabbit Courtesan:"])
+    ShowText(["Oui?\\.\\. You aren't one of the servants,\\. non?"])
+    ShotBalloonIcon([0, 7, false])
+    ControlVariables([2051, 2051, 0, 0, 1])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Rabbit Courtesan:"])
+    ShowText(["Pauvre de moi!\\.\\. Distinguer you Kingdom maggots it's so hard!"])
+    CallCommonEvent([559])
+    ControlSwitches([2412, 2412, 1])
+    ShowChoices([["Deliver one of your Progeny to her.", "Bid her farewell."], 2])
+    When([0, "Deliver one of your Progeny to her."])
+      Empty([])
+
+    When([1, "Bid her farewell."])
+      Label(["refuse"])
+      ControlVariables([2097, 2097, 0, 0, 1115])
+      ControlSwitches([2412, 2412, 0])
+      ShotBalloonIcon([0, 8, false])
+      ControlVariables([2051, 2051, 0, 0, 1])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Rabbit Courtesan:"])
+      ShowText(["..."])
+      ControlVariables([2051, 2051, 0, 0, 2])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Rabbit Courtesan:"])
+      ShowText(["I'll try to pretendre we've never met."])
+      CallCommonEvent([559])
+      ControlSwitches([2412, 2412, 1])
+      JumpToLabel(["end"])
+      Empty([])
+
+    ChoicesEnd([])
+    Comment(["-.-.-.-.-.-.-.-.-.-.-.-.-..-.-.-.-"])
+    Script(["@ac = -1"])
+    ShowChoices([["\\P[1]", "\\P[2]", "\\P[3]", "\\P[4]"], 5])
+    When([0, "\\P[1]"])
+      Script(["@npm = 0"])
+      Empty([])
+
+    When([1, "\\P[2]"])
+      Script(["@npm = 1"])
+      Empty([])
+
+    When([2, "\\P[3]"])
+      Script(["@npm = 2"])
+      Empty([])
+
+    When([3, "\\P[4]"])
+      Script(["@npm = 3"])
+      Empty([])
+
+    WhenCancel([])
+      JumpToLabel(["refuse"])
+      Empty([])
+
+    ChoicesEnd([])
+    Script(["@ac = $game_party.members[@npm].id rescue -1"])
+    ConditionalBranch([12, "@ac == -1"])
+      JumpToLabel(["refuse"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@ac >= 35 && @ac <= 39"])
+      ControlVariables([2863, 2863, 0, 4, "@ac"])
+      ControlVariables([2868, 2868, 0, 4, "@ac"])
+      CallCommonEvent([479])
+      Script(["@prog = $game_variables[2868]"])
+      JumpToLabel(["acceptable"])
+      Empty([])
+
+    BranchEnd([])
+    JumpToLabel(["refuse"])
+    Label(["acceptable"])
+    ConditionalBranch([12, "$game_variables[@prog][1] == 1"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["She asked for a female."])
+      JumpToLabel(["refuse"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[@prog][0] == 99"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You cannot deliver the Courtesan an \\c[18]Egg\\c[0]!"])
+      JumpToLabel(["refuse"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[@prog][51] != 0 && $game_variables[@prog][51] != 2"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["This is not a Progeny of yours.\\.\\. The Courtesan only accepts your offsprings."])
+      JumpToLabel(["refuse"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\c[18]This action is irreversible.\\c[0]"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\c[18]Do you really want to deliver this Progeny to the Courtesan?\\c[0]"])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      Script(["@npm = $game_variables[890]"])
+      ScriptMore(["$game_party.remove_actor(@ac) "])
+      ControlVariables([2033, 2033, 2, 0, 1])
+      Script(["$game_variables[6001] = "])
+      ScriptMore(["$game_variables[@prog][2]"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You wave \\v[6001] goodbye."])
+      Wait([15])
+      ControlSwitches([3000, 3000, 0])
+      Script(["$game_variables[@prog][17] = 8"])
+      Script(["$game_variables[2097] = @prog"])
+      ScriptMore(["$game_variables[2097] -= 2100"])
+      ControlSwitches([2412, 2412, 0])
+      ControlVariables([2051, 2051, 0, 0, 1])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["New Courtesan:"])
+      ShowText(["...\\.\\.\\. Goodbye,\\. dad...\\.\\.\\."])
+      CallCommonEvent([559])
+      ControlSwitches([2412, 2412, 1])
+      Script(["$game_variables[@prog]="])
+      ScriptMore(["[0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,"])
+      ScriptMore(["0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"])
+      ScriptMore(["0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]"])
+      Wait([20])
+      Script(["complete_objective(87,0)"])
+      ScriptMore(["call_quest_journal(87)"])
+      Wait([20])
+      ControlVariables([2097, 2097, 0, 0, 1115])
+      ControlSwitches([2412, 2412, 0])
+      ControlVariables([2051, 2051, 0, 0, 1])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Rabbit Courtesan:"])
+      ShowText(["We'll be going then.\\.\\. Your petit will have a good life with us."])
+      CallCommonEvent([559])
+      ControlSwitches([2412, 2412, 1])
+      ControlSwitches([3000, 3000, 1])
+      JumpToLabel(["end"])
+      Empty([])
+
+    When([1, "No"])
+      JumpToLabel(["refuse"])
+      Empty([])
+
+    ChoicesEnd([])
+    Label(["end"])
+    Empty([])
+
+CommonEvent 19
+Name = "RabCol"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 3, false])
+    ShowPicture([1, "ColonyF dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Young Courtesan:"])
+    ShowText(["Miss Maman told me I shouldn't speak to servants."])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 20
+Name = "RabCol"
+
+  Page 0
+    Comment(["<always update>"])
+    SetMoveRoute([18, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShowPicture([1, "ColonyM dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Young Courtesan:"])
+    ShowText(["Miss Maman will hear us..."])
+    ShowPicture([1, "ColonyM dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Young Courtesan:"])
+    ShowText(["Please don't talk to me...\\.\\.\\. I'll get in trouble...\\.\\.\\."])
+    ErasePicture([1])
+    SetMoveRoute([18, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    Empty([])
+
+CommonEvent 21
+Name = "CatCourt"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ControlSelfSwitch(["A", 1])
+    ShotBalloonIcon([0, 8, true])
+    Wait([20])
+    ConditionalBranch([12, "objective_complete?(97,0)"])
+      ControlVariables([2097, 2097, 0, 0, 1209])
+      ControlSwitches([2412, 2412, 0])
+      ControlVariables([2051, 2051, 0, 0, 2])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Cat Courtesan:"])
+      ShowText(["..."])
+      CallCommonEvent([559])
+      ControlSwitches([2412, 2412, 1])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    ControlVariables([2097, 2097, 0, 0, 1209])
+    ControlSwitches([2412, 2412, 0])
+    ControlVariables([2051, 2051, 0, 0, 2])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Cat Courtesan:"])
+    ShowText(["Do not approach me further.\\.\\. If you have what our Queen requires,\\. deliver it to one of my kittens."])
+    CallCommonEvent([559])
+    ControlSwitches([2412, 2412, 1])
+    ShowChoices([["Deliver one of your Recruits to her.", "Bid her farewell."], 2])
+    When([0, "Deliver one of your Recruits to her."])
+      Empty([])
+
+    When([1, "Bid her farewell."])
+      Label(["refuse"])
+      ShotBalloonIcon([0, 7, true])
+      ControlVariables([2097, 2097, 0, 0, 1209])
+      ControlSwitches([2412, 2412, 0])
+      Wait([20])
+      ControlVariables([2051, 2051, 0, 0, 2])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Cat Courtesan:"])
+      ShowText([".\\|.\\|.\\|"])
+      ControlVariables([2051, 2051, 0, 0, 2])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Cat Courtesan:"])
+      ShowText(["\\^Do it.\\.\\.\\.\\."])
+      CallCommonEvent([559])
+      ControlSwitches([2412, 2412, 1])
+      ConditionalBranch([12, "$game_player.x <= 3"])
+        ConditionalBranch([12, "$game_player.y <= 5"])
+          Comment(["topL"])
+          Script(["$game_self_switches[[53,24,\"A\"]] = true"])
+          Empty([])
+        Else([])
+          Comment(["botL"])
+          Script(["$game_self_switches[[53,23,\"A\"]] = true"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      Else([])
+        Comment(["botR"])
+        Script(["$game_self_switches[[53,22,\"A\"]] = true"])
+        Empty([])
+      BranchEnd([])
+      Wait([40])
+      JumpToLabel(["end"])
+      Empty([])
+
+    ChoicesEnd([])
+    Comment(["-.-.-.-.-.-.-.-.-.-.-.-.-..-.-.-.-"])
+    ShowChoices([["\\P[1]", "\\P[2]", "\\P[3]", "\\P[4]"], 5])
+    When([0, "\\P[1]"])
+      ControlVariables([890, 890, 0, 3, 6, 0, 0])
+      Empty([])
+
+    When([1, "\\P[2]"])
+      ControlVariables([890, 890, 0, 3, 6, 1, 0])
+      Empty([])
+
+    When([2, "\\P[3]"])
+      ControlVariables([890, 890, 0, 3, 6, 2, 0])
+      Empty([])
+
+    When([3, "\\P[4]"])
+      ControlVariables([890, 890, 0, 3, 6, 3, 0])
+      Empty([])
+
+    WhenCancel([])
+      JumpToLabel(["refuse"])
+      Empty([])
+
+    ChoicesEnd([])
+    Script(["@ac = $game_variables[890]"])
+    ConditionalBranch([12, "@ac == 0"])
+      JumpToLabel(["refuse"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@ac >= 35 && @ac <= 39"])
+      ControlVariables([2863, 2863, 0, 4, "@ac"])
+      ControlVariables([2868, 2868, 0, 4, "@ac"])
+      CallCommonEvent([479])
+      Script(["@prog = $game_variables[2868]"])
+      JumpToLabel(["acceptable"])
+      Empty([])
+
+    BranchEnd([])
+    JumpToLabel(["refuse"])
+    Label(["acceptable"])
+    Script(["@npm = $game_variables[890]"])
+    ConditionalBranch([12, "$game_variables[@prog][0] == 99"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You cannot deliver the courtesan an \\c[18]Egg\\c[0]!"])
+      JumpToLabel(["refuse"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[@prog][51] != 3"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["This is not a Recruit.\\.\\. The Courtesan only accepts the ones you've recruited using the \\i[763] Hero Banner."])
+      JumpToLabel(["refuse"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_actors[@npm].parent_stat(2) < 5"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["This recruit doesn't have the required \\i[668] Power."])
+      JumpToLabel(["refuse"])
+      Empty([])
+
+    BranchEnd([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\c[18]This action is irreversible.\\c[0]"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\c[18]Do you really want to deliver this Progeny to the Courtesan?\\c[0]"])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      Script(["@npm = $game_variables[890]"])
+      ScriptMore(["$game_party.remove_actor(@npm) "])
+      ControlVariables([2033, 2033, 2, 0, 1])
+      Script(["$game_variables[6001] = "])
+      ScriptMore(["$game_variables[@prog][2]"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You wave \\v[6001] goodbye."])
+      Wait([15])
+      ControlSwitches([3000, 3000, 0])
+      Script(["$game_variables[@prog][17] = 6"])
+      Script(["$game_variables[2097] = @prog"])
+      ScriptMore(["$game_variables[2097] -= 2100"])
+      ControlSwitches([2412, 2412, 0])
+      ControlVariables([2051, 2051, 0, 0, 0])
+      Comment(["name"])
+      ConditionalBranch([12, "$game_variables[@prog][52] == 0"])
+        ControlVariables([2054, 2054, 0, 4, "\"Leader\""])
+        Empty([])
+      Else([])
+        ControlVariables([2054, 2054, 0, 4, "$game_variables[@prog][52]"])
+        Empty([])
+      BranchEnd([])
+      Comment(["name"])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Queen Recruit:"])
+      ShowText(["Goodbye,\\. \\v[2054].\\.\\. I'll make good use of this opportunity."])
+      CallCommonEvent([559])
+      ControlSwitches([2412, 2412, 1])
+      Script(["$game_variables[@prog]="])
+      ScriptMore(["[0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,"])
+      ScriptMore(["0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"])
+      ScriptMore(["0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]"])
+      Wait([20])
+      Script(["complete_objective(97,0)"])
+      ScriptMore(["call_quest_journal(97)"])
+      Wait([20])
+      ControlVariables([2097, 2097, 0, 0, 1209])
+      ControlSwitches([2412, 2412, 0])
+      ControlVariables([2051, 2051, 0, 0, 2])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Cat Courtesan:"])
+      ShowText([".\\|.\\|.\\| You'll be held responsible if this new recruit won't satisfy our standards..."])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Cat Courtesan:"])
+      ShowText(["Providing the Queen faulty tools equates to treason."])
+      CallCommonEvent([559])
+      ControlSwitches([2412, 2412, 1])
+      ControlSwitches([3000, 3000, 1])
+      JumpToLabel(["end"])
+      Empty([])
+
+    When([1, "No"])
+      JumpToLabel(["refuse"])
+      Empty([])
+
+    ChoicesEnd([])
+    Label(["end"])
+    Empty([])
+
+CommonEvent 22
+Name = "CatCourt"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["$game_self_switches[[53,21,\"A\"]] = true"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ControlSelfSwitch(["A", 1])
+    Wait([10])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"AngryCat\\\\\\\", @pitch=90, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Wind1\\\\\\\", @pitch=140, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"$CatFighterPATK\\\", 0])\", \"RPG::MoveCommand(@code=15, @parameters=[7])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"$CatFighterP\\\", 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"AngryCat\\\", @pitch=90, @volume=80)\"])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Wind1\\\", @pitch=140, @volume=80)\"])"])
+    Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$CatFighterPATK\", 0])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[7])"])
+    Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$CatFighterP\", 0])"])
+    ShotBalloonIcon([-1, 1, false])
+    ShowAnimation([-1, 7, false])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    Wait([10])
+    Empty([])
+
+CommonEvent 23
+Name = "CatCourt"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["$game_self_switches[[53,21,\"A\"]] = true"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ControlSelfSwitch(["A", 1])
+    Wait([10])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"AngryCat\\\\\\\", @pitch=90, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Wind1\\\\\\\", @pitch=140, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"$CatFighterPATK\\\", 0])\", \"RPG::MoveCommand(@code=15, @parameters=[7])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"$CatFighterP\\\", 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"AngryCat\\\", @pitch=90, @volume=80)\"])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Wind1\\\", @pitch=140, @volume=80)\"])"])
+    Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$CatFighterPATK\", 0])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[7])"])
+    Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$CatFighterP\", 0])"])
+    ShotBalloonIcon([-1, 1, false])
+    ShowAnimation([-1, 7, false])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    Wait([10])
+    Empty([])
+
+CommonEvent 24
+Name = "CatCourt"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["$game_self_switches[[53,21,\"A\"]] = true"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ControlSelfSwitch(["A", 1])
+    Wait([10])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"AngryCat\\\\\\\", @pitch=90, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Wind1\\\\\\\", @pitch=140, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"$CatFighterPATK\\\", 0])\", \"RPG::MoveCommand(@code=15, @parameters=[7])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"$CatFighterP\\\", 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"AngryCat\\\", @pitch=90, @volume=80)\"])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Wind1\\\", @pitch=140, @volume=80)\"])"])
+    Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$CatFighterPATK\", 0])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[7])"])
+    Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$CatFighterP\", 0])"])
+    ShotBalloonIcon([-1, 1, false])
+    ShowAnimation([-1, 7, false])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    Wait([10])
+    Empty([])
+
+CommonEvent 25
+Name = "Lam"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["$game_variables[7415]="])
+    ScriptMore(["[22,0,0,2,1,3,0,3,0,0,0,4,0,0,0,0,0,9,0,0,"])
+    ScriptMore(["0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"])
+    ScriptMore(["0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]"])
+    ConditionalBranch([0, 4340, 0])
+      JumpToLabel(["soldday"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([2, "B", 1])
+      ControlSelfSwitch(["B", 0])
+      ControlSwitches([2412, 2412, 0])
+      ControlVariables([2097, 2097, 0, 0, 5315])
+      ControlVariables([2051, 2051, 0, 0, 3])
+      ShotBalloonIcon([0, 3, false])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["???:"])
+      ShowText(["*Hissssss*\\.\\.~"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["???:"])
+      ShowText(["You got ssssomething good?\\.\\. Something for Sssserpentia~?"])
+      CallCommonEvent([559])
+      ControlSwitches([2412, 2412, 1])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2412, 2412, 0])
+    ControlVariables([2097, 2097, 0, 0, 5315])
+    ControlVariables([2051, 2051, 0, 0, 3])
+    ShotBalloonIcon([0, 3, false])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Serpentia:"])
+    ShowText(["Ssssso?~\\.\\. Got anything...\\.\\.\\. tassssssty~?"])
+    CallCommonEvent([559])
+    ControlSwitches([2412, 2412, 1])
+    Label(["acch"])
+    ShowChoices([["\\P[1]", "\\P[2]", "\\P[3]", "\\P[4]"], 5])
+    When([0, "\\P[1]"])
+      Script(["@ac = $game_party.members[0].id rescue -1"])
+      Empty([])
+
+    When([1, "\\P[2]"])
+      Script(["@ac = $game_party.members[1].id rescue -1"])
+      Empty([])
+
+    When([2, "\\P[3]"])
+      Script(["@ac = $game_party.members[2].id rescue -1"])
+      Empty([])
+
+    When([3, "\\P[4]"])
+      Script(["@ac = $game_party.members[3].id rescue -1"])
+      Empty([])
+
+    WhenCancel([])
+      Label(["refuse"])
+      ControlSwitches([2412, 2412, 0])
+      ControlVariables([2097, 2097, 0, 0, 5315])
+      ControlVariables([2051, 2051, 0, 0, 2])
+      ShotBalloonIcon([0, 3, false])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Serpentia:"])
+      ShowText(["Don't mock me...\\.\\.\\. I ssssseek to hibernate...\\.\\.\\. I've got no time to losssse."])
+      CallCommonEvent([559])
+      ControlSwitches([2412, 2412, 1])
+      JumpToLabel(["end"])
+      Empty([])
+
+    ChoicesEnd([])
+    Comment(["################"])
+    Script(["@okEgg = 0"])
+    Comment(["################"])
+    ConditionalBranch([12, "@ac == -1"])
+      ShotBalloonIcon([0, 8, false])
+      Wait([10])
+      ControlSwitches([2412, 2412, 0])
+      ControlVariables([2097, 2097, 0, 0, 5315])
+      ControlVariables([2051, 2051, 0, 0, 1])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Serpentia:"])
+      ShowText(["*Hisssss*"])
+      CallCommonEvent([559])
+      ControlSwitches([2412, 2412, 1])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@ac >= 35 && @ac <= 39"])
+      ControlVariables([2863, 2863, 0, 4, "@ac"])
+      ControlVariables([2868, 2868, 0, 4, "@ac"])
+      CallCommonEvent([479])
+      Script(["@prog = $game_variables[2868]"])
+      ConditionalBranch([12, "$game_variables[@prog][0] == 99"])
+        Script(["@okEgg = 1"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["################"])
+    ConditionalBranch([12, "@okEgg == 1"])
+      ShotBalloonIcon([0, 4, false])
+      ControlSwitches([2412, 2412, 0])
+      ControlVariables([2097, 2097, 0, 0, 5315])
+      ControlVariables([2051, 2051, 0, 0, 3])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Serpentia:"])
+      ShowText(["Yessss~\\.\\. Delicious eggssss~"])
+      ControlVariables([2051, 2051, 0, 0, 4])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Serpentia:"])
+      ShowText(["Give it here...\\.\\.\\. we'll treat it...\\.\\.\\. *hissssss*~\\.\\. nicely..."])
+      CallCommonEvent([559])
+      ControlSwitches([2412, 2412, 1])
+      ShowChoices([["Give the \\i[939] to Serpentia", "Refuse"], 2])
+      When([0, "Give the \\i[939] to Serpentia"])
+        ControlVariables([2033, 2033, 2, 0, 1])
+        Script(["$game_party.remove_actor(@ac) "])
+        Script(["$game_variables[6001] = "])
+        ScriptMore(["$game_variables[@prog][2]"])
+        ControlVariables([3876, 3876, 1, 0, 1])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["You hand \\v[6001] to Serpentia.\\.\\. You hope he'll live a good life."])
+        Script(["$game_variables[@prog]="])
+        ScriptMore(["[0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,"])
+        ScriptMore(["0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"])
+        ScriptMore(["0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]"])
+        Wait([15])
+        ControlSwitches([2412, 2412, 0])
+        ControlVariables([2097, 2097, 0, 0, 5315])
+        ControlVariables([2051, 2051, 0, 0, 3])
+        ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Serpentia:"])
+        ShowText(["Sssso cute...\\.\\.\\. sssso warm~\\.\\. Take thissss,\\. for your troublessss~"])
+        CallCommonEvent([559])
+        ControlSwitches([2412, 2412, 1])
+        Script(["@r = rand(6)"])
+        ConditionalBranch([12, "@r < 1"])
+          ChangeItems([316, 0, 0, 1])
+          Empty([])
+        Else([])
+          ConditionalBranch([12, "@r < 2"])
+            ChangeItems([317, 0, 0, 1])
+            Empty([])
+          Else([])
+            ConditionalBranch([12, "@r < 3"])
+              ChangeItems([318, 0, 0, 1])
+              Empty([])
+            Else([])
+              ConditionalBranch([12, "@r < 4"])
+                ChangeItems([319, 0, 0, 1])
+                Empty([])
+              Else([])
+                ChangeItems([297, 0, 0, 1])
+                Empty([])
+              BranchEnd([])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Wait([40])
+        Label(["soldday"])
+        ControlSwitches([2412, 2412, 0])
+        ControlVariables([2097, 2097, 0, 0, 5315])
+        ControlVariables([2051, 2051, 0, 0, 0])
+        ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Serpentia:"])
+        ShowText(["Me and my sistersss thank you~"])
+        CallCommonEvent([559])
+        ControlSwitches([2412, 2412, 1])
+        ControlSwitches([4340, 4340, 0])
+        JumpToLabel(["end"])
+        Empty([])
+      When([1, "Refuse"])
+        JumpToLabel(["refuse"])
+        Empty([])
+      ChoicesEnd([])
+      Empty([])
+
+    Else([])
+      ControlSwitches([2412, 2412, 0])
+      ControlVariables([2097, 2097, 0, 0, 5315])
+      ControlVariables([2051, 2051, 0, 0, 1])
+      ShotBalloonIcon([0, 3, false])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Serpentia:"])
+      ShowText(["Thissss is not good...\\.\\.\\. too old...\\.\\.\\. not crunchy...\\.\\.\\."])
+      CallCommonEvent([559])
+      ControlSwitches([2412, 2412, 1])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    Label(["end"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 26
+Name = "VSLift"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 3
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 4
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 5
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 6
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 7
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 8
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 9
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 10
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 11
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 12
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 13
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 14
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 15
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 16
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 17
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 18
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 19
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 20
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 21
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 22
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 23
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 24
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 25
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 26
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 27
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+CommonEvent 27
+Name = "VSLift"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 3
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 4
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 5
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 6
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 7
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 8
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 9
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 10
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 11
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 12
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 13
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 14
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 15
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 16
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 17
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 18
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 19
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 20
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 21
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 22
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 23
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 24
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 25
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 26
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 27
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+CommonEvent 28
+Name = "VSLift"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 3
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 4
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 5
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 6
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 7
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 8
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 9
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 10
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 11
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 12
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 13
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 14
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 15
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 16
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 17
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 18
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 19
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 20
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 21
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 22
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 23
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 24
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 25
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 26
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 27
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+CommonEvent 29
+Name = "VSLift"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 3
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 4
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 5
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 6
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 7
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 8
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 9
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 10
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 11
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 12
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 13
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 14
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 15
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 16
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 17
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 18
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 19
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 20
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 21
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 22
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 23
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 24
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 25
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 26
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+  Page 27
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 5, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Soldiers have taken control of the Sky Lift!\\.\\. You are free to rise to the Kingdom Above."])
+    Empty([])
+
+CommonEvent 30
+Name = "ArrowLift"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 31
+Name = "Protag-Lift"
+
+  Page 0
+    Comment(["<always_update>"])
+    Empty([])
