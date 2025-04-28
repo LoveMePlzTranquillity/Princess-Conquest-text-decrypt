@@ -1,0 +1,11 @@
+CommonEvent 9
+Name = "GobLead slow"
+
+  Wait([120])
+  ConditionalBranch([0, 2034, 1])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

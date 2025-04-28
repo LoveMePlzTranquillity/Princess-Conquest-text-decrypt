@@ -1,0 +1,6 @@
+CommonEvent 41
+Name = "Menu Screen"
+
+  PlaySE(["RPG::SE(@name=\"Decision3\", @pitch=100, @volume=80)"])
+  OpenMenuScreen([])
+  Empty([])

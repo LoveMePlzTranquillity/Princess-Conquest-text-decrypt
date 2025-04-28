@@ -1,0 +1,67 @@
+CommonEvent 70
+Name = "-IFRAMES-"
+
+  ConditionalBranch([0, 1735, 0])
+    ControlVariables([1454, 1454, 0, 4, "$game_party.members[0].agi"])
+    ConditionalBranch([1, 1454, 0, 80, 1])
+      ControlVariables([1453, 1453, 0, 4, "0.25*$game_party.members[0].agi"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 1454, 0, 75, 1])
+        ControlVariables([1453, 1453, 0, 4, "0.24*$game_party.members[0].agi"])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([1, 1454, 0, 70, 1])
+          ControlVariables([1453, 1453, 0, 4, "0.22*$game_party.members[0].agi"])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([1, 1454, 0, 65, 1])
+            ControlVariables([1453, 1453, 0, 4, "0.18*$game_party.members[0].agi"])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([1, 1454, 0, 60, 1])
+              ControlVariables([1453, 1453, 0, 4, "0.16*$game_party.members[0].agi"])
+              Empty([])
+
+            Else([])
+              ControlVariables([1453, 1453, 0, 4, "0.15*$game_party.members[0].agi"])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ControlVariables([1453, 1453, 4, 0, 1])
+    Label(["iframes"])
+    Wait([1])
+    ControlVariables([1453, 1453, 2, 0, 1])
+    ConditionalBranch([1, 1453, 0, 0, 2])
+      ControlVariables([1453, 1453, 0, 0, 0])
+      ControlSwitches([1735, 1735, 1])
+      ControlSwitches([874, 874, 1])
+      Empty([])
+
+    BranchEnd([])
+    JumpToLabel(["iframes"])
+    Empty([])
+
+  Else([])
+    Wait([35])
+    ControlSwitches([874, 874, 1])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

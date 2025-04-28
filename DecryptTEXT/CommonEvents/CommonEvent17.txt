@@ -1,0 +1,1707 @@
+CommonEvent 17
+Name = "Farm calc"
+
+  Comment(["0 => hum/des/ins/ske"])
+  CommentMore(["1 => hum/ske/gol/har"])
+  CommentMore(["2 => rab/gho/gob"])
+  CommentMore(["3 => finhead"])
+  Script(["@zone = 0"])
+  Label(["otherz"])
+  ControlVariables([145, 145, 0, 0, 0])
+  ControlVariables([220, 220, 0, 0, 0])
+  ControlVariables([143, 143, 0, 0, 0])
+  ControlVariables([141, 141, 0, 0, 0])
+  ControlVariables([144, 144, 0, 0, 0])
+  ControlVariables([142, 142, 0, 0, 0])
+  ControlVariables([439, 439, 0, 0, 0])
+  ControlVariables([654, 654, 0, 0, 0])
+  ControlVariables([1384, 1384, 0, 0, 0])
+  ControlVariables([1576, 1576, 0, 0, 0])
+  ControlVariables([3575, 3575, 0, 0, 0])
+  ControlVariables([3783, 3783, 0, 0, 0])
+  ControlVariables([3917, 3917, 0, 0, 0])
+  ControlVariables([4233, 4233, 0, 0, 0])
+  ControlVariables([4304, 4304, 0, 0, 0])
+  ControlVariables([4384, 4384, 0, 0, 0])
+  ControlVariables([4484, 4484, 0, 0, 0])
+  Comment(["_._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._."])
+  ConditionalBranch([12, "@zone != 3"])
+    JumpToLabel(["notfin"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 4235, 1])
+    ControlVariables([4233, 4233, 1, 1, 4166])
+    ControlVariables([4233, 4233, 1, 1, 4163])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 4277, 0])
+    ControlVariables([4233, 4233, 1, 1, 4166])
+    ControlVariables([4233, 4233, 1, 1, 4163])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([0, 3943, 0])
+      ControlVariables([142, 142, 1, 1, 14])
+      ControlVariables([142, 142, 1, 1, 38])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([0, 3942, 0])
+        ControlVariables([144, 144, 1, 1, 8])
+        ControlVariables([144, 144, 1, 1, 37])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([0, 3941, 0])
+          ControlVariables([145, 145, 1, 1, 4])
+          ControlVariables([145, 145, 1, 1, 36])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([0, 3947, 0])
+            ControlVariables([439, 439, 1, 1, 379])
+            ControlVariables([439, 439, 1, 1, 387])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([0, 3944, 0])
+              ControlVariables([141, 141, 1, 1, 65])
+              ControlVariables([141, 141, 1, 1, 62])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([0, 3945, 0])
+                ControlVariables([143, 143, 1, 1, 100])
+                ControlVariables([143, 143, 1, 1, 109])
+                Empty([])
+
+              Else([])
+                ConditionalBranch([0, 3948, 0])
+                  ControlVariables([654, 654, 1, 1, 633])
+                  ControlVariables([654, 654, 1, 1, 637])
+                  Empty([])
+
+                Else([])
+                  ConditionalBranch([0, 3949, 0])
+                    ControlVariables([1384, 1384, 1, 1, 1362])
+                    ControlVariables([1384, 1384, 1, 1, 1359])
+                    Empty([])
+
+                  Else([])
+                    ConditionalBranch([0, 3950, 0])
+                      ControlVariables([1576, 1576, 1, 1, 1553])
+                      ControlVariables([1576, 1576, 1, 1, 1550])
+                      Empty([])
+
+                    Else([])
+                      ConditionalBranch([0, 3952, 0])
+                        ControlVariables([3575, 3575, 1, 1, 3551])
+                        ControlVariables([3575, 3575, 1, 1, 3548])
+                        Empty([])
+
+                      Else([])
+                        ConditionalBranch([0, 3953, 0])
+                          ControlVariables([3783, 3783, 1, 1, 3758])
+                          ControlVariables([3783, 3783, 1, 1, 3755])
+                          Empty([])
+
+                        Else([])
+                          ConditionalBranch([0, 3946, 0])
+                            ControlVariables([220, 220, 1, 1, 188])
+                            ControlVariables([220, 220, 1, 1, 192])
+                            Empty([])
+
+                          Else([])
+                            ConditionalBranch([0, 4698, 0])
+                              ControlVariables([4384, 4384, 1, 1, 4326])
+                              ControlVariables([4384, 4384, 1, 1, 4323])
+                              Empty([])
+
+                            Else([])
+                              ConditionalBranch([0, 3144, 0])
+                                ControlVariables([4484, 4484, 1, 1, 4426])
+                                ControlVariables([4484, 4484, 1, 1, 4423])
+                                Empty([])
+
+                              Else([])
+                                ControlVariables([3917, 3917, 1, 1, 3926])
+                                ControlVariables([3917, 3917, 1, 1, 3923])
+                                Empty([])
+
+                              BranchEnd([])
+                              Empty([])
+
+                            BranchEnd([])
+                            Empty([])
+
+                          BranchEnd([])
+                          Empty([])
+
+                        BranchEnd([])
+                        Empty([])
+
+                      BranchEnd([])
+                      Empty([])
+
+                    BranchEnd([])
+                    Empty([])
+
+                  BranchEnd([])
+                  Empty([])
+
+                BranchEnd([])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 4276, 0])
+    ControlVariables([4233, 4233, 1, 1, 4166])
+    ControlVariables([4233, 4233, 1, 1, 4163])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([0, 3963, 0])
+      ControlVariables([142, 142, 1, 1, 14])
+      ControlVariables([142, 142, 1, 1, 38])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([0, 3962, 0])
+        ControlVariables([144, 144, 1, 1, 8])
+        ControlVariables([144, 144, 1, 1, 37])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([0, 3961, 0])
+          ControlVariables([145, 145, 1, 1, 4])
+          ControlVariables([145, 145, 1, 1, 36])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([0, 3967, 0])
+            ControlVariables([439, 439, 1, 1, 379])
+            ControlVariables([439, 439, 1, 1, 387])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([0, 3964, 0])
+              ControlVariables([141, 141, 1, 1, 65])
+              ControlVariables([141, 141, 1, 1, 62])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([0, 3965, 0])
+                ControlVariables([143, 143, 1, 1, 100])
+                ControlVariables([143, 143, 1, 1, 109])
+                Empty([])
+
+              Else([])
+                ConditionalBranch([0, 3968, 0])
+                  ControlVariables([654, 654, 1, 1, 633])
+                  ControlVariables([654, 654, 1, 1, 637])
+                  Empty([])
+
+                Else([])
+                  ConditionalBranch([0, 3969, 0])
+                    ControlVariables([1384, 1384, 1, 1, 1362])
+                    ControlVariables([1384, 1384, 1, 1, 1359])
+                    Empty([])
+
+                  Else([])
+                    ConditionalBranch([0, 3970, 0])
+                      ControlVariables([1576, 1576, 1, 1, 1553])
+                      ControlVariables([1576, 1576, 1, 1, 1550])
+                      Empty([])
+
+                    Else([])
+                      ConditionalBranch([0, 3972, 0])
+                        ControlVariables([3575, 3575, 1, 1, 3551])
+                        ControlVariables([3575, 3575, 1, 1, 3548])
+                        Empty([])
+
+                      Else([])
+                        ConditionalBranch([0, 3973, 0])
+                          ControlVariables([3783, 3783, 1, 1, 3758])
+                          ControlVariables([3783, 3783, 1, 1, 3755])
+                          Empty([])
+
+                        Else([])
+                          ConditionalBranch([0, 3966, 0])
+                            ControlVariables([220, 220, 1, 1, 188])
+                            ControlVariables([220, 220, 1, 1, 192])
+                            Empty([])
+
+                          Else([])
+                            ConditionalBranch([0, 4736, 0])
+                              ControlVariables([4384, 4384, 1, 1, 4326])
+                              ControlVariables([4384, 4384, 1, 1, 4323])
+                              Empty([])
+
+                            Else([])
+                              ConditionalBranch([0, 3182, 0])
+                                ControlVariables([4484, 4484, 1, 1, 4426])
+                                ControlVariables([4484, 4484, 1, 1, 4423])
+                                Empty([])
+
+                              Else([])
+                                ControlVariables([3917, 3917, 1, 1, 3926])
+                                ControlVariables([3917, 3917, 1, 1, 3923])
+                                Empty([])
+
+                              BranchEnd([])
+                              Empty([])
+
+                            BranchEnd([])
+                            Empty([])
+
+                          BranchEnd([])
+                          Empty([])
+
+                        BranchEnd([])
+                        Empty([])
+
+                      BranchEnd([])
+                      Empty([])
+
+                    BranchEnd([])
+                    Empty([])
+
+                  BranchEnd([])
+                  Empty([])
+
+                BranchEnd([])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["notfin"])
+  Comment(["_._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._."])
+  ConditionalBranch([12, "@zone != 2"])
+    JumpToLabel(["notgob"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 4280, 0])
+    ControlVariables([4233, 4233, 1, 1, 4166])
+    ControlVariables([4233, 4233, 1, 1, 4163])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([0, 871, 0])
+      ControlVariables([142, 142, 1, 1, 14])
+      ControlVariables([142, 142, 1, 1, 38])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([0, 870, 0])
+        ControlVariables([144, 144, 1, 1, 8])
+        ControlVariables([144, 144, 1, 1, 37])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([0, 872, 0])
+          ControlVariables([141, 141, 1, 1, 65])
+          ControlVariables([141, 141, 1, 1, 62])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([0, 873, 0])
+            ControlVariables([143, 143, 1, 1, 100])
+            ControlVariables([143, 143, 1, 1, 109])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([0, 2858, 0])
+              ControlVariables([3575, 3575, 1, 1, 3551])
+              ControlVariables([3575, 3575, 1, 1, 3548])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([0, 867, 0])
+                ControlVariables([220, 220, 1, 1, 188])
+                ControlVariables([220, 220, 1, 1, 192])
+                Empty([])
+
+              Else([])
+                ConditionalBranch([0, 868, 0])
+                  ControlVariables([439, 439, 1, 1, 379])
+                  ControlVariables([439, 439, 1, 1, 387])
+                  Empty([])
+
+                Else([])
+                  ConditionalBranch([0, 1600, 0])
+                    ControlVariables([1384, 1384, 1, 1, 1362])
+                    ControlVariables([1384, 1384, 1, 1, 1359])
+                    Empty([])
+
+                  Else([])
+                    ConditionalBranch([0, 1968, 0])
+                      ControlVariables([1576, 1576, 1, 1, 1553])
+                      ControlVariables([1576, 1576, 1, 1, 1550])
+                      Empty([])
+
+                    Else([])
+                      ConditionalBranch([0, 869, 0])
+                        ControlVariables([145, 145, 1, 1, 4])
+                        ControlVariables([145, 145, 1, 1, 36])
+                        Empty([])
+
+                      Else([])
+                        ConditionalBranch([0, 3248, 0])
+                          ControlVariables([3783, 3783, 1, 1, 3758])
+                          ControlVariables([3783, 3783, 1, 1, 3755])
+                          Empty([])
+
+                        Else([])
+                          ConditionalBranch([0, 4730, 0])
+                            ControlVariables([4384, 4384, 1, 1, 4326])
+                            ControlVariables([4384, 4384, 1, 1, 4323])
+                            Empty([])
+
+                          Else([])
+                            ConditionalBranch([0, 3176, 0])
+                              ControlVariables([4484, 4484, 1, 1, 4426])
+                              ControlVariables([4484, 4484, 1, 1, 4423])
+                              Empty([])
+
+                            Else([])
+                              ControlVariables([654, 654, 1, 1, 633])
+                              ControlVariables([654, 654, 1, 1, 637])
+                              Empty([])
+
+                            BranchEnd([])
+                            Empty([])
+
+                          BranchEnd([])
+                          Empty([])
+
+                        BranchEnd([])
+                        Empty([])
+
+                      BranchEnd([])
+                      Empty([])
+
+                    BranchEnd([])
+                    Empty([])
+
+                  BranchEnd([])
+                  Empty([])
+
+                BranchEnd([])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["notgob"])
+  Comment(["_._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._."])
+  ConditionalBranch([12, "@zone != 2"])
+    JumpToLabel(["notgho"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 495, 0])
+    ControlVariables([142, 142, 1, 1, 14])
+    ControlVariables([142, 142, 1, 1, 38])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([0, 494, 0])
+      ControlVariables([144, 144, 1, 1, 8])
+      ControlVariables([144, 144, 1, 1, 37])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([0, 496, 0])
+        ControlVariables([141, 141, 1, 1, 65])
+        ControlVariables([141, 141, 1, 1, 62])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([0, 470, 0])
+          ControlVariables([143, 143, 1, 1, 100])
+          ControlVariables([143, 143, 1, 1, 109])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([0, 2857, 0])
+            ControlVariables([3575, 3575, 1, 1, 3551])
+            ControlVariables([3575, 3575, 1, 1, 3548])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([0, 451, 0])
+              ControlVariables([220, 220, 1, 1, 188])
+              ControlVariables([220, 220, 1, 1, 192])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([0, 771, 0])
+                ControlVariables([654, 654, 1, 1, 633])
+                ControlVariables([654, 654, 1, 1, 637])
+                Empty([])
+
+              Else([])
+                ConditionalBranch([0, 1599, 0])
+                  ControlVariables([1384, 1384, 1, 1, 1362])
+                  ControlVariables([1384, 1384, 1, 1, 1359])
+                  Empty([])
+
+                Else([])
+                  ConditionalBranch([0, 1967, 0])
+                    ControlVariables([1576, 1576, 1, 1, 1553])
+                    ControlVariables([1576, 1576, 1, 1, 1550])
+                    Empty([])
+
+                  Else([])
+                    ConditionalBranch([0, 493, 0])
+                      ControlVariables([145, 145, 1, 1, 4])
+                      ControlVariables([145, 145, 1, 1, 36])
+                      Empty([])
+
+                    Else([])
+                      ConditionalBranch([0, 3247, 0])
+                        ControlVariables([3783, 3783, 1, 1, 3758])
+                        ControlVariables([3783, 3783, 1, 1, 3755])
+                        Empty([])
+
+                      Else([])
+                        ConditionalBranch([0, 4729, 0])
+                          ControlVariables([4384, 4384, 1, 1, 4326])
+                          ControlVariables([4384, 4384, 1, 1, 4323])
+                          Empty([])
+
+                        Else([])
+                          ConditionalBranch([0, 3175, 0])
+                            ControlVariables([4484, 4484, 1, 1, 4426])
+                            ControlVariables([4484, 4484, 1, 1, 4423])
+                            Empty([])
+
+                          Else([])
+                            ControlVariables([439, 439, 1, 1, 379])
+                            ControlVariables([439, 439, 1, 1, 387])
+                            Empty([])
+
+                          BranchEnd([])
+                          Empty([])
+
+                        BranchEnd([])
+                        Empty([])
+
+                      BranchEnd([])
+                      Empty([])
+
+                    BranchEnd([])
+                    Empty([])
+
+                  BranchEnd([])
+                  Empty([])
+
+                BranchEnd([])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["notgho"])
+  Comment(["_._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._."])
+  ConditionalBranch([12, "@zone != 2"])
+    JumpToLabel(["notrab"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2863, 0])
+    ControlVariables([142, 142, 1, 1, 14])
+    ControlVariables([142, 142, 1, 1, 38])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([0, 2862, 0])
+      ControlVariables([144, 144, 1, 1, 8])
+      ControlVariables([144, 144, 1, 1, 37])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([0, 2864, 0])
+        ControlVariables([141, 141, 1, 1, 65])
+        ControlVariables([141, 141, 1, 1, 62])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([0, 2865, 0])
+          ControlVariables([143, 143, 1, 1, 100])
+          ControlVariables([143, 143, 1, 1, 109])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([0, 2867, 0])
+            ControlVariables([439, 439, 1, 1, 379])
+            ControlVariables([439, 439, 1, 1, 387])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([0, 2866, 0])
+              ControlVariables([220, 220, 1, 1, 188])
+              ControlVariables([220, 220, 1, 1, 192])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([0, 2868, 0])
+                ControlVariables([654, 654, 1, 1, 633])
+                ControlVariables([654, 654, 1, 1, 637])
+                Empty([])
+
+              Else([])
+                ConditionalBranch([0, 2869, 0])
+                  ControlVariables([1384, 1384, 1, 1, 1362])
+                  ControlVariables([1384, 1384, 1, 1, 1359])
+                  Empty([])
+
+                Else([])
+                  ConditionalBranch([0, 2870, 0])
+                    ControlVariables([1576, 1576, 1, 1, 1553])
+                    ControlVariables([1576, 1576, 1, 1, 1550])
+                    Empty([])
+
+                  Else([])
+                    ConditionalBranch([0, 2861, 0])
+                      ControlVariables([145, 145, 1, 1, 4])
+                      ControlVariables([145, 145, 1, 1, 36])
+                      Empty([])
+
+                    Else([])
+                      ConditionalBranch([0, 3251, 0])
+                        ControlVariables([3783, 3783, 1, 1, 3758])
+                        ControlVariables([3783, 3783, 1, 1, 3755])
+                        Empty([])
+
+                      Else([])
+                        ConditionalBranch([0, 4734, 0])
+                          ControlVariables([4384, 4384, 1, 1, 4326])
+                          ControlVariables([4384, 4384, 1, 1, 4323])
+                          Empty([])
+
+                        Else([])
+                          ConditionalBranch([0, 3180, 0])
+                            ControlVariables([4484, 4484, 1, 1, 4426])
+                            ControlVariables([4484, 4484, 1, 1, 4423])
+                            Empty([])
+
+                          Else([])
+                            ControlVariables([3575, 3575, 1, 1, 3551])
+                            ControlVariables([3575, 3575, 1, 1, 3548])
+                            Empty([])
+
+                          BranchEnd([])
+                          Empty([])
+
+                        BranchEnd([])
+                        Empty([])
+
+                      BranchEnd([])
+                      Empty([])
+
+                    BranchEnd([])
+                    Empty([])
+
+                  BranchEnd([])
+                  Empty([])
+
+                BranchEnd([])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["notrab"])
+  Comment(["_._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._."])
+  ConditionalBranch([12, "@zone != 0 && @zone != 1 && @zone != 3"])
+    JumpToLabel(["nothum"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 37, 0])
+    ControlVariables([142, 142, 1, 1, 14])
+    ControlVariables([142, 142, 1, 1, 38])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([0, 40, 0])
+      ControlVariables([144, 144, 1, 1, 8])
+      ControlVariables([144, 144, 1, 1, 37])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([0, 80, 0])
+        ControlVariables([141, 141, 1, 1, 65])
+        ControlVariables([141, 141, 1, 1, 62])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([0, 243, 0])
+          ControlVariables([143, 143, 1, 1, 100])
+          ControlVariables([143, 143, 1, 1, 109])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([0, 477, 0])
+            ControlVariables([439, 439, 1, 1, 379])
+            ControlVariables([439, 439, 1, 1, 387])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([0, 270, 0])
+              ControlVariables([220, 220, 1, 1, 188])
+              ControlVariables([220, 220, 1, 1, 192])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([0, 765, 0])
+                ControlVariables([654, 654, 1, 1, 633])
+                ControlVariables([654, 654, 1, 1, 637])
+                Empty([])
+
+              Else([])
+                ConditionalBranch([0, 1593, 0])
+                  ControlVariables([1384, 1384, 1, 1, 1362])
+                  ControlVariables([1384, 1384, 1, 1, 1359])
+                  Empty([])
+
+                Else([])
+                  ConditionalBranch([0, 1961, 0])
+                    ControlVariables([1576, 1576, 1, 1, 1553])
+                    ControlVariables([1576, 1576, 1, 1, 1550])
+                    Empty([])
+
+                  Else([])
+                    ConditionalBranch([0, 2851, 0])
+                      ControlVariables([3575, 3575, 1, 1, 3551])
+                      ControlVariables([3575, 3575, 1, 1, 3548])
+                      Empty([])
+
+                    Else([])
+                      ConditionalBranch([0, 3241, 0])
+                        ControlVariables([3783, 3783, 1, 1, 3758])
+                        ControlVariables([3783, 3783, 1, 1, 3755])
+                        Empty([])
+
+                      Else([])
+                        ConditionalBranch([0, 4723, 0])
+                          ControlVariables([4384, 4384, 1, 1, 4326])
+                          ControlVariables([4384, 4384, 1, 1, 4323])
+                          Empty([])
+
+                        Else([])
+                          ConditionalBranch([0, 3169, 0])
+                            ControlVariables([4484, 4484, 1, 1, 4426])
+                            ControlVariables([4484, 4484, 1, 1, 4423])
+                            Empty([])
+
+                          Else([])
+                            ControlVariables([145, 145, 1, 1, 4])
+                            ControlVariables([145, 145, 1, 1, 36])
+                            Empty([])
+
+                          BranchEnd([])
+                          Empty([])
+
+                        BranchEnd([])
+                        Empty([])
+
+                      BranchEnd([])
+                      Empty([])
+
+                    BranchEnd([])
+                    Empty([])
+
+                  BranchEnd([])
+                  Empty([])
+
+                BranchEnd([])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["nothum"])
+  Comment(["_._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._."])
+  ConditionalBranch([12, "@zone != 1 && @zone != 3"])
+    JumpToLabel(["notgol"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 4279, 0])
+    ControlVariables([4233, 4233, 1, 1, 4166])
+    ControlVariables([4233, 4233, 1, 1, 4163])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([0, 41, 0])
+      ControlVariables([145, 145, 1, 1, 4])
+      ControlVariables([145, 145, 1, 1, 36])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([0, 159, 0])
+        ControlVariables([144, 144, 1, 1, 8])
+        ControlVariables([144, 144, 1, 1, 37])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([0, 86, 0])
+          ControlVariables([141, 141, 1, 1, 65])
+          ControlVariables([141, 141, 1, 1, 62])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([0, 139, 0])
+            ControlVariables([143, 143, 1, 1, 100])
+            ControlVariables([143, 143, 1, 1, 109])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([0, 299, 0])
+              ControlVariables([439, 439, 1, 1, 379])
+              ControlVariables([439, 439, 1, 1, 387])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([0, 479, 0])
+                ControlVariables([220, 220, 1, 1, 188])
+                ControlVariables([220, 220, 1, 1, 192])
+                Empty([])
+
+              Else([])
+                ConditionalBranch([0, 767, 0])
+                  ControlVariables([654, 654, 1, 1, 633])
+                  ControlVariables([654, 654, 1, 1, 637])
+                  Empty([])
+
+                Else([])
+                  ConditionalBranch([0, 1595, 0])
+                    ControlVariables([1384, 1384, 1, 1, 1362])
+                    ControlVariables([1384, 1384, 1, 1, 1359])
+                    Empty([])
+
+                  Else([])
+                    ConditionalBranch([0, 1963, 0])
+                      ControlVariables([1576, 1576, 1, 1, 1553])
+                      ControlVariables([1576, 1576, 1, 1, 1550])
+                      Empty([])
+
+                    Else([])
+                      ConditionalBranch([0, 2853, 0])
+                        ControlVariables([3575, 3575, 1, 1, 3551])
+                        ControlVariables([3575, 3575, 1, 1, 3548])
+                        Empty([])
+
+                      Else([])
+                        ConditionalBranch([0, 3243, 0])
+                          ControlVariables([3783, 3783, 1, 1, 3758])
+                          ControlVariables([3783, 3783, 1, 1, 3755])
+                          Empty([])
+
+                        Else([])
+                          ConditionalBranch([0, 4725, 0])
+                            ControlVariables([4384, 4384, 1, 1, 4326])
+                            ControlVariables([4384, 4384, 1, 1, 4323])
+                            Empty([])
+
+                          Else([])
+                            ConditionalBranch([0, 3171, 0])
+                              ControlVariables([4484, 4484, 1, 1, 4426])
+                              ControlVariables([4484, 4484, 1, 1, 4423])
+                              Empty([])
+
+                            Else([])
+                              ControlVariables([142, 142, 1, 1, 14])
+                              ControlVariables([142, 142, 1, 1, 38])
+                              Empty([])
+
+                            BranchEnd([])
+                            Empty([])
+
+                          BranchEnd([])
+                          Empty([])
+
+                        BranchEnd([])
+                        Empty([])
+
+                      BranchEnd([])
+                      Empty([])
+
+                    BranchEnd([])
+                    Empty([])
+
+                  BranchEnd([])
+                  Empty([])
+
+                BranchEnd([])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["notgol"])
+  Comment(["_._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._."])
+  ConditionalBranch([12, "@zone != 1 && @zone != 3"])
+    JumpToLabel(["nothar"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3252, 0])
+    ControlVariables([145, 145, 1, 1, 4])
+    ControlVariables([145, 145, 1, 1, 36])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([0, 3253, 0])
+      ControlVariables([144, 144, 1, 1, 8])
+      ControlVariables([144, 144, 1, 1, 37])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([0, 3255, 0])
+        ControlVariables([141, 141, 1, 1, 65])
+        ControlVariables([141, 141, 1, 1, 62])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([0, 3256, 0])
+          ControlVariables([143, 143, 1, 1, 100])
+          ControlVariables([143, 143, 1, 1, 109])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([0, 3257, 0])
+            ControlVariables([439, 439, 1, 1, 379])
+            ControlVariables([439, 439, 1, 1, 387])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([0, 3258, 0])
+              ControlVariables([220, 220, 1, 1, 188])
+              ControlVariables([220, 220, 1, 1, 192])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([0, 3259, 0])
+                ControlVariables([654, 654, 1, 1, 633])
+                ControlVariables([654, 654, 1, 1, 637])
+                Empty([])
+
+              Else([])
+                ConditionalBranch([0, 3260, 0])
+                  ControlVariables([1384, 1384, 1, 1, 1362])
+                  ControlVariables([1384, 1384, 1, 1, 1359])
+                  Empty([])
+
+                Else([])
+                  ConditionalBranch([0, 3261, 0])
+                    ControlVariables([1576, 1576, 1, 1, 1553])
+                    ControlVariables([1576, 1576, 1, 1, 1550])
+                    Empty([])
+
+                  Else([])
+                    ConditionalBranch([0, 3262, 0])
+                      ControlVariables([3575, 3575, 1, 1, 3551])
+                      ControlVariables([3575, 3575, 1, 1, 3548])
+                      Empty([])
+
+                    Else([])
+                      ConditionalBranch([0, 3254, 0])
+                        ControlVariables([142, 142, 1, 1, 14])
+                        ControlVariables([142, 142, 1, 1, 38])
+                        Empty([])
+
+                      Else([])
+                        ConditionalBranch([0, 4735, 0])
+                          ControlVariables([4384, 4384, 1, 1, 4326])
+                          ControlVariables([4384, 4384, 1, 1, 4323])
+                          Empty([])
+
+                        Else([])
+                          ConditionalBranch([0, 3181, 0])
+                            ControlVariables([4484, 4484, 1, 1, 4426])
+                            ControlVariables([4484, 4484, 1, 1, 4423])
+                            Empty([])
+
+                          Else([])
+                            ControlVariables([3783, 3783, 1, 1, 3758])
+                            ControlVariables([3783, 3783, 1, 1, 3755])
+                            Empty([])
+
+                          BranchEnd([])
+                          Empty([])
+
+                        BranchEnd([])
+                        Empty([])
+
+                      BranchEnd([])
+                      Empty([])
+
+                    BranchEnd([])
+                    Empty([])
+
+                  BranchEnd([])
+                  Empty([])
+
+                BranchEnd([])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["nothar"])
+  Comment(["_._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._."])
+  ConditionalBranch([12, "@zone != 0 && @zone != 3"])
+    JumpToLabel(["notins"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 78, 0])
+    ControlVariables([142, 142, 1, 1, 14])
+    ControlVariables([142, 142, 1, 1, 38])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([0, 228, 0])
+      ControlVariables([144, 144, 1, 1, 8])
+      ControlVariables([144, 144, 1, 1, 37])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([0, 336, 0])
+        ControlVariables([145, 145, 1, 1, 4])
+        ControlVariables([145, 145, 1, 1, 36])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([0, 137, 0])
+          ControlVariables([143, 143, 1, 1, 100])
+          ControlVariables([143, 143, 1, 1, 109])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([0, 480, 0])
+            ControlVariables([439, 439, 1, 1, 379])
+            ControlVariables([439, 439, 1, 1, 387])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([0, 286, 0])
+              ControlVariables([220, 220, 1, 1, 188])
+              ControlVariables([220, 220, 1, 1, 192])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([0, 768, 0])
+                ControlVariables([654, 654, 1, 1, 633])
+                ControlVariables([654, 654, 1, 1, 637])
+                Empty([])
+
+              Else([])
+                ConditionalBranch([0, 1596, 0])
+                  ControlVariables([1384, 1384, 1, 1, 1362])
+                  ControlVariables([1384, 1384, 1, 1, 1359])
+                  Empty([])
+
+                Else([])
+                  ConditionalBranch([0, 1964, 0])
+                    ControlVariables([1576, 1576, 1, 1, 1553])
+                    ControlVariables([1576, 1576, 1, 1, 1550])
+                    Empty([])
+
+                  Else([])
+                    ConditionalBranch([0, 2854, 0])
+                      ControlVariables([3575, 3575, 1, 1, 3551])
+                      ControlVariables([3575, 3575, 1, 1, 3548])
+                      Empty([])
+
+                    Else([])
+                      ConditionalBranch([0, 3244, 0])
+                        ControlVariables([3783, 3783, 1, 1, 3758])
+                        ControlVariables([3783, 3783, 1, 1, 3755])
+                        Empty([])
+
+                      Else([])
+                        ConditionalBranch([0, 4726, 0])
+                          ControlVariables([4384, 4384, 1, 1, 4326])
+                          ControlVariables([4384, 4384, 1, 1, 4323])
+                          Empty([])
+
+                        Else([])
+                          ConditionalBranch([0, 3172, 0])
+                            ControlVariables([4484, 4484, 1, 1, 4426])
+                            ControlVariables([4484, 4484, 1, 1, 4423])
+                            Empty([])
+
+                          Else([])
+                            ConditionalBranch([0, 70, 0])
+                              ControlVariables([141, 141, 1, 1, 65])
+                              ControlVariables([141, 141, 1, 1, 62])
+                              Empty([])
+
+                            BranchEnd([])
+                            Empty([])
+
+                          BranchEnd([])
+                          Empty([])
+
+                        BranchEnd([])
+                        Empty([])
+
+                      BranchEnd([])
+                      Empty([])
+
+                    BranchEnd([])
+                    Empty([])
+
+                  BranchEnd([])
+                  Empty([])
+
+                BranchEnd([])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["notins"])
+  Comment(["_._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._."])
+  ConditionalBranch([12, "@zone != 0 && @zone != 1 && @zone != 3"])
+    JumpToLabel(["notske"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 140, 0])
+    ControlVariables([142, 142, 1, 1, 14])
+    ControlVariables([142, 142, 1, 1, 38])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([0, 255, 0])
+      ControlVariables([144, 144, 1, 1, 8])
+      ControlVariables([144, 144, 1, 1, 37])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([0, 230, 0])
+        ControlVariables([145, 145, 1, 1, 4])
+        ControlVariables([145, 145, 1, 1, 36])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([0, 138, 0])
+          ControlVariables([141, 141, 1, 1, 65])
+          ControlVariables([141, 141, 1, 1, 62])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([0, 469, 0])
+            ControlVariables([439, 439, 1, 1, 379])
+            ControlVariables([439, 439, 1, 1, 387])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([0, 278, 0])
+              ControlVariables([220, 220, 1, 1, 188])
+              ControlVariables([220, 220, 1, 1, 192])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([0, 769, 0])
+                ControlVariables([654, 654, 1, 1, 633])
+                ControlVariables([654, 654, 1, 1, 637])
+                Empty([])
+
+              Else([])
+                ConditionalBranch([0, 1597, 0])
+                  ControlVariables([1384, 1384, 1, 1, 1362])
+                  ControlVariables([1384, 1384, 1, 1, 1359])
+                  Empty([])
+
+                Else([])
+                  ConditionalBranch([0, 1965, 0])
+                    ControlVariables([1576, 1576, 1, 1, 1553])
+                    ControlVariables([1576, 1576, 1, 1, 1550])
+                    Empty([])
+
+                  Else([])
+                    ConditionalBranch([0, 2855, 0])
+                      ControlVariables([3575, 3575, 1, 1, 3551])
+                      ControlVariables([3575, 3575, 1, 1, 3548])
+                      Empty([])
+
+                    Else([])
+                      ConditionalBranch([0, 3245, 0])
+                        ControlVariables([3783, 3783, 1, 1, 3758])
+                        ControlVariables([3783, 3783, 1, 1, 3755])
+                        Empty([])
+
+                      Else([])
+                        ConditionalBranch([0, 4727, 0])
+                          ControlVariables([4384, 4384, 1, 1, 4326])
+                          ControlVariables([4384, 4384, 1, 1, 4323])
+                          Empty([])
+
+                        Else([])
+                          ConditionalBranch([0, 3173, 0])
+                            ControlVariables([4484, 4484, 1, 1, 4426])
+                            ControlVariables([4484, 4484, 1, 1, 4423])
+                            Empty([])
+
+                          Else([])
+                            ControlVariables([143, 143, 1, 1, 100])
+                            ControlVariables([143, 143, 1, 1, 109])
+                            Empty([])
+
+                          BranchEnd([])
+                          Empty([])
+
+                        BranchEnd([])
+                        Empty([])
+
+                      BranchEnd([])
+                      Empty([])
+
+                    BranchEnd([])
+                    Empty([])
+
+                  BranchEnd([])
+                  Empty([])
+
+                BranchEnd([])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["notske"])
+  Comment(["_._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._."])
+  ConditionalBranch([12, "@zone != 0 && @zone != 3"])
+    JumpToLabel(["notdes"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 313, 0])
+    ControlVariables([142, 142, 1, 1, 14])
+    ControlVariables([142, 142, 1, 1, 38])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([0, 312, 0])
+      ControlVariables([144, 144, 1, 1, 8])
+      ControlVariables([144, 144, 1, 1, 37])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([0, 271, 0])
+        ControlVariables([145, 145, 1, 1, 4])
+        ControlVariables([145, 145, 1, 1, 36])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([0, 450, 0])
+          ControlVariables([439, 439, 1, 1, 379])
+          ControlVariables([439, 439, 1, 1, 387])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([0, 287, 0])
+            ControlVariables([141, 141, 1, 1, 65])
+            ControlVariables([141, 141, 1, 1, 62])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([0, 279, 0])
+              ControlVariables([143, 143, 1, 1, 100])
+              ControlVariables([143, 143, 1, 1, 109])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([0, 770, 0])
+                ControlVariables([654, 654, 1, 1, 633])
+                ControlVariables([654, 654, 1, 1, 637])
+                Empty([])
+
+              Else([])
+                ConditionalBranch([0, 1598, 0])
+                  ControlVariables([1384, 1384, 1, 1, 1362])
+                  ControlVariables([1384, 1384, 1, 1, 1359])
+                  Empty([])
+
+                Else([])
+                  ConditionalBranch([0, 1966, 0])
+                    ControlVariables([1576, 1576, 1, 1, 1553])
+                    ControlVariables([1576, 1576, 1, 1, 1550])
+                    Empty([])
+
+                  Else([])
+                    ConditionalBranch([0, 2856, 0])
+                      ControlVariables([3575, 3575, 1, 1, 3551])
+                      ControlVariables([3575, 3575, 1, 1, 3548])
+                      Empty([])
+
+                    Else([])
+                      ConditionalBranch([0, 3246, 0])
+                        ControlVariables([3783, 3783, 1, 1, 3758])
+                        ControlVariables([3783, 3783, 1, 1, 3755])
+                        Empty([])
+
+                      Else([])
+                        ConditionalBranch([0, 4728, 0])
+                          ControlVariables([4384, 4384, 1, 1, 4326])
+                          ControlVariables([4384, 4384, 1, 1, 4323])
+                          Empty([])
+
+                        Else([])
+                          ConditionalBranch([0, 3174, 0])
+                            ControlVariables([4484, 4484, 1, 1, 4426])
+                            ControlVariables([4484, 4484, 1, 1, 4423])
+                            Empty([])
+
+                          Else([])
+                            ControlVariables([220, 220, 1, 1, 188])
+                            ControlVariables([220, 220, 1, 1, 192])
+                            Empty([])
+
+                          BranchEnd([])
+                          Empty([])
+
+                        BranchEnd([])
+                        Empty([])
+
+                      BranchEnd([])
+                      Empty([])
+
+                    BranchEnd([])
+                    Empty([])
+
+                  BranchEnd([])
+                  Empty([])
+
+                BranchEnd([])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["notdes"])
+  Comment(["_._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._._."])
+  Script(["@a = $game_variables[145]"])
+  ScriptMore(["@b = $game_variables[144]"])
+  ScriptMore(["@c = $game_variables[142]"])
+  ScriptMore(["@d = $game_variables[141]"])
+  ScriptMore(["@e = $game_variables[143]"])
+  ScriptMore(["@f = $game_variables[220]"])
+  ScriptMore(["@g = $game_variables[439]"])
+  ScriptMore(["@h = $game_variables[654]"])
+  Script(["@i = $game_variables[1384]"])
+  ScriptMore(["@j = $game_variables[1576]"])
+  ScriptMore(["@k = $game_variables[3575]"])
+  ScriptMore(["@l = $game_variables[3783]"])
+  ScriptMore(["@m = $game_variables[3917]"])
+  ScriptMore(["@n = $game_variables[4233]"])
+  ScriptMore(["@o = $game_variables[4304]"])
+  ScriptMore(["@p = $game_variables[4384]"])
+  ScriptMore(["@q = $game_variables[4484]"])
+  Script(["@res= [@a,@b,@c,@d,@e,@f,@g,@h,@i,"])
+  ScriptMore(["@j,@k,@l,@m,@n,@o,@p,@q].sort"])
+  ControlVariables([370, 370, 0, 0, 0])
+  ControlVariables([371, 371, 0, 0, 0])
+  ControlVariables([372, 372, 0, 0, 0])
+  ControlVariables([373, 373, 0, 0, 0])
+  ControlVariables([374, 374, 0, 0, 0])
+  ControlVariables([375, 375, 0, 0, 0])
+  ControlVariables([438, 438, 0, 0, 0])
+  ControlVariables([655, 655, 0, 0, 0])
+  ControlVariables([1379, 1379, 0, 0, 0])
+  ControlVariables([1571, 1571, 0, 0, 0])
+  ControlVariables([3570, 3570, 0, 0, 0])
+  ControlVariables([3778, 3778, 0, 0, 0])
+  ControlVariables([3947, 3947, 0, 0, 0])
+  ControlVariables([4191, 4191, 0, 0, 0])
+  ControlVariables([4262, 4262, 0, 0, 0])
+  ControlVariables([4342, 4342, 0, 0, 0])
+  ControlVariables([4440, 4440, 0, 0, 0])
+  ConditionalBranch([0, 4119, 0])
+    ConditionalBranch([4, 32, 0])
+      ConditionalBranch([1, 3756, 0, 2, 0])
+        ControlVariables([370, 370, 0, 0, 1])
+        ControlVariables([371, 371, 0, 0, 1])
+        ControlVariables([372, 372, 0, 0, 1])
+        ControlVariables([373, 373, 0, 0, 1])
+        ControlVariables([374, 374, 0, 0, 1])
+        ControlVariables([375, 375, 0, 0, 1])
+        ControlVariables([3778, 3778, 0, 0, 1])
+        ControlVariables([4262, 4262, 0, 0, 1])
+        Empty([])
+
+      BranchEnd([])
+      ConditionalBranch([1, 3756, 0, 70, 0])
+        ControlVariables([438, 438, 0, 0, 1])
+        ControlVariables([655, 655, 0, 0, 1])
+        ControlVariables([1379, 1379, 0, 0, 1])
+        ControlVariables([1571, 1571, 0, 0, 1])
+        ControlVariables([3570, 3570, 0, 0, 1])
+        ControlVariables([4342, 4342, 0, 0, 1])
+        ControlVariables([4440, 4440, 0, 0, 1])
+        Empty([])
+
+      BranchEnd([])
+      ConditionalBranch([1, 3756, 0, 343, 0])
+        ControlVariables([3947, 3947, 0, 0, 1])
+        ControlVariables([4191, 4191, 0, 0, 1])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@res[16] == @a"])
+    ControlVariables([370, 370, 0, 0, 1])
+    Script(["@lea = 1"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@res[16] == @b"])
+    ControlVariables([371, 371, 0, 0, 1])
+    Script(["@lea = 2"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@res[16] == @c"])
+    ControlVariables([372, 372, 0, 0, 1])
+    Script(["@lea = 3"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@res[16] == @d"])
+    ControlVariables([373, 373, 0, 0, 1])
+    Script(["@lea = 4"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@res[16] == @e"])
+    ControlVariables([374, 374, 0, 0, 1])
+    Script(["@lea = 5"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@res[16] == @f"])
+    ControlVariables([375, 375, 0, 0, 1])
+    Script(["@lea = 6"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@res[16] == @g"])
+    ControlVariables([438, 438, 0, 0, 1])
+    Script(["@lea = 7"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@res[16] == @h"])
+    ControlVariables([655, 655, 0, 0, 1])
+    Script(["@lea = 8"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@res[16] == @i"])
+    ControlVariables([1379, 1379, 0, 0, 1])
+    Script(["@lea = 9"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@res[16] == @j"])
+    ControlVariables([1571, 1571, 0, 0, 1])
+    Script(["@lea = 10"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@res[16] == @k"])
+    ControlVariables([3570, 3570, 0, 0, 1])
+    Script(["@lea = 11"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@res[16] == @l"])
+    ControlVariables([3778, 3778, 0, 0, 1])
+    Script(["@lea = 12"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@res[16] == @m"])
+    ControlVariables([3947, 3947, 0, 0, 1])
+    Script(["@lea = 13"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@res[16] == @n"])
+    ControlVariables([4191, 4191, 0, 0, 1])
+    Script(["@lea = 14"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@res[16] == @o"])
+    ControlVariables([4262, 4262, 0, 0, 1])
+    Script(["@lea = 15"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@res[16] == @p"])
+    ControlVariables([4342, 4342, 0, 0, 1])
+    Script(["@lea = 16"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@res[16] == @q"])
+    ControlVariables([4440, 4440, 0, 0, 1])
+    Script(["@lea = 17"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@zone == 0"])
+    ControlVariables([3426, 3426, 0, 4, "@lea"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@zone == 1"])
+    ControlVariables([3427, 3427, 0, 4, "@lea"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@zone == 2"])
+    ControlVariables([3428, 3428, 0, 4, "@lea"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@zone == 3"])
+    ControlVariables([3429, 3429, 0, 4, "@lea"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3587, 0])
+    Script(["@zone += 1"])
+    ConditionalBranch([12, "@zone <= 3"])
+      JumpToLabel(["otherz"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([12, "@zone == 0"])
+      Script(["@zone = 3"])
+      JumpToLabel(["otherz"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3653, 0])
+    ControlVariables([370, 370, 0, 0, 1])
+    ControlVariables([371, 371, 0, 0, 1])
+    ControlVariables([372, 372, 0, 0, 1])
+    ControlVariables([373, 373, 0, 0, 1])
+    ControlVariables([374, 374, 0, 0, 1])
+    ControlVariables([375, 375, 0, 0, 1])
+    ControlVariables([438, 438, 0, 0, 1])
+    ControlVariables([655, 655, 0, 0, 1])
+    ControlVariables([1379, 1379, 0, 0, 1])
+    ControlVariables([1571, 1571, 0, 0, 1])
+    ControlVariables([3570, 3570, 0, 0, 1])
+    ControlVariables([3778, 3778, 0, 0, 1])
+    ControlVariables([3947, 3947, 0, 0, 1])
+    ControlVariables([4191, 4191, 0, 0, 1])
+    ControlVariables([4342, 4342, 0, 0, 1])
+    ControlVariables([4440, 4440, 0, 0, 1])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["always fed by DQ"])
+  ControlVariables([4262, 4262, 0, 0, 1])
+  Empty([])

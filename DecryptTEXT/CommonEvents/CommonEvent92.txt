@@ -1,0 +1,12 @@
+CommonEvent 92
+Name = "MoveOnEvent"
+
+  Script(["@i = 0"])
+  ScriptMore(["while @i <= 5"])
+  ScriptMore(["@mx = ($game_player.x + $game_map.events[@event_id].x)/2"])
+  ScriptMore(["@my = ($game_player.y + $game_map.events[@event_id].y)/2"])
+  ScriptMore(["$game_player.moveto(@mx,@my)"])
+  ScriptMore(["@i += 1"])
+  ScriptMore(["wait(3)"])
+  ScriptMore(["end"])
+  Empty([])

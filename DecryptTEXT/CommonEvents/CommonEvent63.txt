@@ -1,0 +1,73 @@
+CommonEvent 63
+Name = "Shield off"
+
+  ConditionalBranch([0, 3064, 0])
+    Comment(["Knight High Grass"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2991, 0])
+    Comment(["Rabbit transformed"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.leader.id == 1"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$protag\\\", 0])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$protag\", 0])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+    ControlSwitches([746, 746, 1])
+    ControlSwitches([748, 748, 0])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([12, "$game_party.leader.id == 5"])
+      ConditionalBranch([0, 4116, 0])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$HumanPpor\\\", 0])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$HumanPpor\", 0])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+        Empty([])
+
+      Else([])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$HumanP\\\", 0])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$HumanP\", 0])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+        Empty([])
+
+      BranchEnd([])
+      ControlSwitches([746, 746, 1])
+      ControlSwitches([748, 748, 0])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "$game_party.leader.class_id == 121"])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$CrusaderP\\\", 0])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$CrusaderP\", 0])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+        ControlSwitches([746, 746, 1])
+        ControlSwitches([748, 748, 0])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([12, "$game_party.leader.class_id == 209"])
+          Comment(["DeeKnight"])
+          SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$DeeKnight\\\", 0])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$DeeKnight\", 0])"])
+          Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+          ControlSwitches([746, 746, 1])
+          ControlSwitches([748, 748, 0])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["end"])
+  Empty([])

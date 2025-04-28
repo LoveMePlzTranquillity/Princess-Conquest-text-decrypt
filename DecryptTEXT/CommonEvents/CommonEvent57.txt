@@ -1,0 +1,7 @@
+CommonEvent 57
+Name = "Turtle Wait..."
+
+  Wait([600])
+  PlaySE(["RPG::SE(@name=\"Whispers\", @pitch=100, @volume=100)"])
+  ControlSwitches([155, 155, 0])
+  Empty([])

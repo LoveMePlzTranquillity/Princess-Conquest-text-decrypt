@@ -1,0 +1,6 @@
+CommonEvent 67
+Name = "CRIT!"
+
+  Wait([25])
+  ControlSwitches([749, 749, 1])
+  Empty([])

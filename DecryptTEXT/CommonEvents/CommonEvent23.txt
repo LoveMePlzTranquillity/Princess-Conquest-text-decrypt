@@ -1,0 +1,32 @@
+CommonEvent 23
+Name = "★🧸ß★ Diplo rndm"
+
+  Comment(["rnd -2 diplo - OFF"])
+  ConditionalBranch([12, "!$data_system.title1_name.include?\"Stable\""])
+    Comment(["BETA"])
+    Script(["@bad = [554,555,556,557,558,559,560,995,1638,2009,2902,3295,4071,4251,4405,4706,3152,"])
+    ScriptMore(["2832,2777]"])
+    Empty([])
+
+  Else([])
+    Comment(["STABLE"])
+    Script(["@bad = [554,555,556,557,558,559,560,995,1638,2009,2902,3295,4071,4251,4405,4706,3152,"])
+    ScriptMore(["2832,0]"])
+    Empty([])
+
+  BranchEnd([])
+  Script(["@n = 0"])
+  ScriptMore(["while @n < @bad.length"])
+  ScriptMore(["@w = @bad[@n]"])
+  ScriptMore(["if @w != 0"])
+  ScriptMore(["$game_switches[@w] = false"])
+  ScriptMore(["end"])
+  ScriptMore(["@n += 1"])
+  ScriptMore(["end"])
+  Comment(["rnd -2 diplo - ON"])
+  Script(["@w = @bad.sample"])
+  ScriptMore(["while @w == 0"])
+  ScriptMore(["@w = @bad.sample"])
+  ScriptMore(["end"])
+  ScriptMore(["$game_switches[@w] = true"])
+  Empty([])

@@ -1,0 +1,74 @@
+CommonEvent 34
+Name = "WhipFuck Damage"
+
+  ConditionalBranch([12, "$game_party.members[0].state?(155) == true"])
+    Comment(["SafeLust"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2932, 0])
+    Empty([])
+
+  Else([])
+    ControlVariables([905, 905, 0, 3, 6, 0, 0])
+    ControlVariables([1223, 1223, 1, 0, 5])
+    ConditionalBranch([0, 792, 0])
+      ControlVariables([1223, 1223, 0, 0, 10])
+      ControlVariables([1224, 1224, 0, 4, "$game_party.members[0].parent_stat(1) + 1"])
+      ControlVariables([2874, 2874, 0, 4, "$game_party.members[0].parent_stat(1)"])
+      Empty([])
+
+    Else([])
+      ControlVariables([1224, 1224, 0, 4, "$game_party.members[0].parent_stat(4) + 1"])
+      ControlVariables([2874, 2874, 0, 4, "$game_party.members[0].parent_stat(1)"])
+      ConditionalBranch([12, "$game_variables[116] == \"TaintedLove\""])
+        ControlVariables([2874, 2874, 1, 4, "$game_party.members[0].parent_stat(0)"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 2874, 0, 0, 2])
+      ControlVariables([2874, 2874, 0, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["###   DMG CALC   ###"])
+    ControlVariables([2025, 2025, 0, 1, 1223])
+    ControlVariables([2025, 2025, 3, 1, 1224])
+    ControlVariables([2025, 2025, 4, 1, 2874])
+    Comment(["###   DMG CALC   ###"])
+    ConditionalBranch([12, "$game_party.leader.state?(169) == true"])
+      ControlVariables([2025, 2025, 3, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_party.leader.id == 21"])
+      ConditionalBranch([0, 4118, 0])
+        ControlVariables([2025, 2025, 4, 0, 2])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_party.members[0].equips[3] == $data_armors[158] && $game_variables[584] >= 1"])
+      PlaySE(["RPG::SE(@name=\"Coin\", @pitch=100, @volume=80)"])
+      ControlVariables([585, 585, 0, 0, 0])
+      ControlVariables([585, 585, 2, 1, 2025])
+      ControlSwitches([648, 648, 0])
+      Empty([])
+
+    Else([])
+      ChangeHP([1, 905, 1, 1, 2025, false])
+      Script(["$game_map.sas_hud.refresh_bars"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["end"])
+  Empty([])

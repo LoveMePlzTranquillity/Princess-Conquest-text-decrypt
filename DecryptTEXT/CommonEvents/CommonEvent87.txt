@@ -1,0 +1,74 @@
+CommonEvent 87
+Name = "puddle icon"
+
+  Script(["@x = 227"])
+  ScriptMore(["@y = 33"])
+  Script(["@p = 250"])
+  ConditionalBranch([0, 739, 0])
+    ConditionalBranch([12, "$game_party.leader.id == 7"])
+      Script(["@n = \"SlimeHUD\""])
+      ConditionalBranch([0, 892, 1])
+        ConditionalBranch([1, 723, 0, 0, 0])
+          Script(["@t = 255"])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([1, 723, 0, 1, 0])
+            Script(["@t = 205"])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([1, 723, 0, 2, 0])
+              Script(["@t = 155"])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([1, 723, 0, 3, 0])
+                Script(["@t = 105"])
+                Empty([])
+
+              Else([])
+                ConditionalBranch([1, 723, 0, 4, 0])
+                  Script(["@t = 55"])
+                  Empty([])
+
+                Else([])
+                  ConditionalBranch([1, 723, 0, 5, 1])
+                    Script(["@t = 0"])
+                    Empty([])
+
+                  Else([])
+                    Empty([])
+
+                  BranchEnd([])
+                  Empty([])
+
+                BranchEnd([])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      Else([])
+        Script(["@t = 0"])
+        Empty([])
+
+      BranchEnd([])
+      Script(["$game_map.screen.pictures[@p].show("])
+      ScriptMore(["@n, 0, @x, @y, 100, 100, @t, 0)"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

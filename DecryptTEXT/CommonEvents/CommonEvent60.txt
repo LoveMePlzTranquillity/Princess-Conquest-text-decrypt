@@ -1,0 +1,18 @@
+CommonEvent 60
+Name = "Enable Save"
+
+  ChangeSaveAccess([1])
+  ConditionalBranch([12, "$game_map.map_id == 261"])
+    Comment(["slime pool (SliP single fight)"])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([0, 3451, 1])
+      CallCommonEvent([90])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

@@ -1,0 +1,16 @@
+CommonEvent 27
+Name = "Des remove from team"
+
+  Wait([60])
+  ConditionalBranch([1, 197, 0, -1, 0])
+    ConditionalBranch([12, "$game_party.leader.id == 4"])
+      CallCommonEvent([45])
+      Empty([])
+
+    BranchEnd([])
+    ChangePartyMember([4, 1, 0])
+    ControlSwitches([994, 994, 1])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

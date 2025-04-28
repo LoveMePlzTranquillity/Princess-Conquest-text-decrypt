@@ -1,0 +1,59 @@
+CommonEvent 94
+Name = "Golem-Rain"
+
+  ConditionalBranch([4, 6, 0])
+    ConditionalBranch([12, "$game_party.leader.class_id == 6"])
+      Empty([])
+
+    Else([])
+      JumpToLabel(["skip event"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Else([])
+    JumpToLabel(["skip event"])
+    Empty([])
+
+  BranchEnd([])
+  Script(["@succD = "])
+  ScriptMore(["$game_variables[6401][4] rescue 0"])
+  ConditionalBranch([12, "@succD == 2"])
+    JumpToLabel(["skip event"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 523, 1])
+    JumpToLabel(["skip event"])
+    Empty([])
+
+  BranchEnd([])
+  ControlVariables([755, 755, 1, 0, 1])
+  ConditionalBranch([1, 755, 0, 20, 0])
+    JumpToLabel(["tospeech"])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([0, 1033, 1])
+      ConditionalBranch([1, 755, 0, 10, 0])
+        Label(["tospeech"])
+        ControlSwitches([2569, 2569, 0])
+        ControlSwitches([1770, 1770, 0])
+        CallCommonEvent([95])
+        ControlSwitches([1770, 1770, 1])
+        ControlSwitches([2569, 2569, 1])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  JumpToLabel(["after+1"])
+  Label(["skip event"])
+  ControlVariables([755, 755, 0, 0, 0])
+  Label(["after+1"])
+  Empty([])

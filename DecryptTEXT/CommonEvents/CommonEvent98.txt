@@ -1,0 +1,39 @@
+CommonEvent 98
+Name = "Fear"
+
+  ConditionalBranch([0, 985, 1])
+    ConditionalBranch([12, "$game_party.leader.class_id == 122"])
+      ShowAnimation([-1, 56, false])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Crow\\\\\\\", @pitch=120, @volume=90)\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Crow\\\", @pitch=120, @volume=90)\"])"])
+      ControlVariables([3442, 3442, 0, 0, 0])
+      ControlSwitches([3793, 3793, 0])
+      JumpToLabel(["fear"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_party.leader.id == 12"])
+      ShowAnimation([-1, 56, false])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Monster3\\\\\\\", @pitch=80, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Monster3\\\", @pitch=80, @volume=80)\"])"])
+      Label(["fear"])
+      ControlSwitches([985, 985, 0])
+      ControlSwitches([986, 986, 0])
+      CallCommonEvent([101])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_party.leader.id == 9 && $game_actors[9].equips[5] == $data_armors[183]"])
+      ShowAnimation([-1, 56, false])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Monster3\\\\\\\", @pitch=80, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Monster3\\\", @pitch=80, @volume=80)\"])"])
+      ControlSwitches([985, 985, 0])
+      ControlSwitches([986, 986, 0])
+      CallCommonEvent([101])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

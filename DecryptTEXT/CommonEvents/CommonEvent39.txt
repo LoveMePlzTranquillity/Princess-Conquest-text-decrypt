@@ -1,0 +1,86 @@
+CommonEvent 39
+Name = "campfire icon"
+
+  ConditionalBranch([0, 1213, 1])
+    ErasePicture([10])
+    ControlSwitches([2687, 2687, 1])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_map.map_id == 2 || $game_map.map_id == 70 || $game_map.map_id == 319 || $game_map.map_id == 343 || $game_map.map_id == 344"])
+    ConditionalBranch([0, 1770, 1])
+      ConditionalBranch([0, 579, 1])
+        ConditionalBranch([0, 568, 1])
+          ConditionalBranch([0, 3778, 1])
+            Loop([])
+              ConditionalBranch([1, 506, 0, 9, 2])
+                ControlSwitches([2687, 2687, 0])
+                Wait([30])
+                ConditionalBranch([12, "$game_switches[579] == true || $game_switches[3451] == true || $game_switches[1770] == true"])
+                  ControlVariables([506, 506, 1, 0, 1])
+                  JumpToLabel(["end"])
+                  Empty([])
+
+                BranchEnd([])
+                ConditionalBranch([12, "WolfPad.plugged_in?"])
+                  ShowPicture([10, "campfireiconGamepad", 0, 0, 0, 0, 100, 100, 185, 0])
+                  Empty([])
+
+                Else([])
+                  ShowPicture([10, "campfireicon", 0, 0, 0, 0, 100, 100, 185, 0])
+                  Empty([])
+
+                BranchEnd([])
+                Wait([30])
+                ConditionalBranch([12, "$game_switches[579] == true || $game_switches[3451] == true || $game_switches[1770] == true"])
+                  ControlVariables([506, 506, 1, 0, 1])
+                  JumpToLabel(["end"])
+                  Empty([])
+
+                BranchEnd([])
+                ErasePicture([10])
+                ControlVariables([506, 506, 1, 0, 1])
+                Comment(["day turn icon off"])
+                ConditionalBranch([0, 412, 0])
+                  ControlSwitches([2687, 2687, 1])
+                  ErasePicture([10])
+                  BreakLoop([])
+                  Empty([])
+
+                BranchEnd([])
+                Empty([])
+
+              Else([])
+                ControlSwitches([2687, 2687, 1])
+                ErasePicture([10])
+                BreakLoop([])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            RepeatAbove([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Else([])
+    ControlSwitches([2687, 2687, 1])
+    ErasePicture([10])
+    BreakLoop([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["end"])
+  Empty([])

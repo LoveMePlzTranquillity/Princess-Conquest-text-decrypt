@@ -1,0 +1,18 @@
+CommonEvent 32
+Name = "Cancel Transmute"
+
+  ConditionalBranch([0, 1151, 0])
+    Script(["@revId = $game_variables[8787][0]"])
+    ConditionalBranch([12, "$game_party.leader.id == @revId"])
+      ControlSwitches([1151, 1151, 1])
+      Script(["$game_actors[@revId].remove_state(157)"])
+      ScriptMore(["$game_actors[@revId].set_graphic($game_variables[8787][1],$game_variables[8787][2],"])
+      ScriptMore(["$game_variables[8787][3],$game_variables[8787][4])"])
+      ScriptMore(["$game_player.refresh"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

@@ -1,0 +1,72 @@
+CommonEvent 66
+Name = "shield icon"
+
+  Script(["@max = 3"])
+  ConditionalBranch([12, "$game_party.leader.id == 5"])
+    Script(["@max = 5"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.leader.class_id == 209"])
+    Comment(["DeeKnight"])
+    Script(["@max = 3"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.leader.equips.include?$data_armors[694]"])
+    Script(["@max += 2"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.leader.id == 1"])
+    Script(["@n = \"ShieldHUD\""])
+    Empty([])
+
+  Else([])
+    Script(["@n = \"ShieldHUDF\""])
+    Empty([])
+
+  BranchEnd([])
+  Script(["@x = 227"])
+  ScriptMore(["@y = 33"])
+  Script(["@p = 250"])
+  Comment(["#####################"])
+  ConditionalBranch([0, 739, 0])
+    ConditionalBranch([12, "!$game_party.leader.equips[1].nil?"])
+      ConditionalBranch([0, 747, 1])
+        Script(["@hits = $game_variables[630]"])
+        ScriptMore(["@t = 255 - ($game_variables[630]*(255/@max))"])
+        ScriptMore(["if @t <= 0"])
+        ScriptMore(["@t = 0"])
+        ScriptMore(["end"])
+        Empty([])
+
+      Else([])
+        Script(["@t = 0"])
+        Empty([])
+
+      BranchEnd([])
+      Script(["$game_map.screen.pictures[@p].show("])
+      ScriptMore(["@n, 0, @x, @y, 100, 100, @t, 0)"])
+      Empty([])
+
+    Else([])
+      ErasePicture([95])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["###################"])
+  ConditionalBranch([12, "$game_party.members[0].equips.include?$data_armors[243]"])
+    ConditionalBranch([1, 3877, 0, 2, 1])
+      CallCommonEvent([102])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["###################"])
+  Empty([])

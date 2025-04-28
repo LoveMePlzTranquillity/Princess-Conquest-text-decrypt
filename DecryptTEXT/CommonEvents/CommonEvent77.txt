@@ -1,0 +1,82 @@
+CommonEvent 77
+Name = "Force UW"
+
+  ConditionalBranch([12, "$game_actors[1].state?(37) == true"])
+    Comment(["Water B."])
+    JumpToLabel(["acP"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_actors[1].state?(62) == true"])
+    Comment(["Abyssal"])
+    JumpToLabel(["acP"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_actors[1].equips[3] == $data_armors[374]"])
+    Comment(["abyss flaps"])
+    JumpToLabel(["acP"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_actors[1].equips[5] == $data_armors[252]"])
+    Comment(["fish lungs"])
+    Label(["acP"])
+    Script(["@hp = $game_actors[1].hp"])
+    ConditionalBranch([12, "@hp <= 1"])
+      Script(["$game_actors[1].change_hp(1,false)"])
+      Empty([])
+
+    BranchEnd([])
+    CallCommonEvent([90])
+    Empty([])
+
+  Else([])
+    Comment(["check next actor UW"])
+    Script(["@swt = 0"])
+    Script(["@n = 1"])
+    Label(["aguwsw"])
+    Script(["@party = $game_party.members.size"])
+    ScriptMore(["@party -= 1"])
+    Script(["@id = $game_party.members[@n].id rescue -1"])
+    ConditionalBranch([12, "@id != -1"])
+      Script(["@cl = $game_party.members[@n].class_id"])
+      ConditionalBranch([12, "@cl != 49"])
+        Comment(["no egg"])
+        ControlSwitches([2358, 2358, 0])
+        CallCommonEvent([76])
+        ConditionalBranch([0, 3705, 0])
+          Script(["@hp = $game_party.members[@n].hp"])
+          ConditionalBranch([12, "@hp <= 1"])
+            Script(["$game_party.members[@n].change_hp(1,false)"])
+            Empty([])
+
+          BranchEnd([])
+          JumpToLabel(["skipuwcheck"])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      ConditionalBranch([12, "@swt == 1"])
+        Script(["$game_party.swap_order(1,3)"])
+        Script(["@swt = 2"])
+        JumpToLabel(["aguwsw"])
+        Empty([])
+
+      BranchEnd([])
+      ConditionalBranch([12, "@swt == 0"])
+        Script(["$game_party.swap_order(1,2)"])
+        Script(["@swt = 1"])
+        JumpToLabel(["aguwsw"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

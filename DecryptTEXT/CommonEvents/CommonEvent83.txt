@@ -1,0 +1,77 @@
+CommonEvent 83
+Name = "Slime/Plant Skill OFF"
+
+  ConditionalBranch([12, "$game_party.leader.id == 56"])
+    ConditionalBranch([0, 3600, 0])
+      Script(["$game_variables[3861] = \"$PlantP\""])
+      ConditionalBranch([0, 3064, 0])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$Field%(4)\\\", 0])\", \"RPG::MoveCommand(@code=34, @parameters=[])\", \"RPG::MoveCommand(@code=31, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$Field%(4)\", 0])"])
+        Unnamed(["RPG::MoveCommand(@code=34, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=31, @parameters=[])"])
+        Empty([])
+
+      Else([])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Rustle\\\\\\\", @pitch=100, @volume=100)\\\"])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"$PlantP\\\", 0])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=34, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Rustle\\\", @pitch=100, @volume=100)\"])"])
+        Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$PlantP\", 0])"])
+        Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=34, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+        Empty([])
+
+      BranchEnd([])
+      ControlSwitches([3600, 3600, 1])
+      ControlSwitches([2569, 2569, 1])
+      CallCommonEvent([969])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Else([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.leader.id == 7"])
+    ConditionalBranch([12, "$game_party.leader.class_id == 7"])
+      Script(["$game_variables[3861] = \"$SliP\""])
+      PlaySE(["RPG::SE(@name=\"Splat\", @pitch=100, @volume=80)"])
+      ConditionalBranch([0, 3064, 0])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$Field%(4)\\\", 0])\", \"RPG::MoveCommand(@code=34, @parameters=[])\", \"RPG::MoveCommand(@code=31, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$Field%(4)\", 0])"])
+        Unnamed(["RPG::MoveCommand(@code=34, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=31, @parameters=[])"])
+        Empty([])
+
+      Else([])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$SliP\\\", 0])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$SliP\", 0])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([0, 3064, 0])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$Field%(4)\\\", 0])\", \"RPG::MoveCommand(@code=34, @parameters=[])\", \"RPG::MoveCommand(@code=31, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$Field%(4)\", 0])"])
+        Unnamed(["RPG::MoveCommand(@code=34, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=31, @parameters=[])"])
+        Empty([])
+
+      Else([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([894, 894, 0])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

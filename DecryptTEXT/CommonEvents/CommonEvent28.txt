@@ -1,0 +1,31 @@
+CommonEvent 28
+Name = "★🧸ß★ Rndm WARS"
+
+  ConditionalBranch([12, "!$data_system.title1_name.include?\"Stable\""])
+    Comment(["BETA"])
+    Script(["@wars = [7,13,29,63,103,195,388,642,1357,1548,1,3546,3753,3921,4161,4241,"])
+    ScriptMore(["4321,4421,4490,4701]"])
+    ScriptMore(["@wonb = [21,22,28,58,102,190,385,662,1386,1578,1,3577,3785,3924,4164,4244,"])
+    ScriptMore(["4324,4424,4493,4704]"])
+    Empty([])
+
+  Else([])
+    Comment(["STABLE"])
+    Script(["@wars = [7,13,29,63,103,195,388,642,1357,1548,1,3546,3753,3921,4161,4241,"])
+    ScriptMore(["4321,4421,4490,1]"])
+    ScriptMore(["@wonb = [21,22,28,58,102,190,385,662,1386,1578,1,3577,3785,3924,4164,4244,"])
+    ScriptMore(["4324,4424,4493,1]"])
+    Empty([])
+
+  BranchEnd([])
+  Script(["@ch = 0"])
+  ScriptMore(["while @ch <= 18"])
+  ScriptMore(["@sw = @wars[@ch]"])
+  ScriptMore(["@var = @wonb[@ch]"])
+  ScriptMore(["@r = rand(2)"])
+  ScriptMore(["if $game_variables[@sw] >= 1 && @r < 1 && @sw != 1"])
+  ScriptMore(["$game_variables[@var] += (rand(5)-2).round()"])
+  ScriptMore(["end"])
+  ScriptMore(["@ch += 1"])
+  ScriptMore(["end"])
+  Empty([])

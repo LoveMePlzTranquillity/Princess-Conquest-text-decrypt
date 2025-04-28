@@ -1,0 +1,102 @@
+CommonEvent 61
+Name = "Shield"
+
+  ConditionalBranch([0, 739, 1])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3064, 0])
+    Comment(["Knight High Grass"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2991, 0])
+    Comment(["Rabbit transformed"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 747, 1])
+    ConditionalBranch([12, "$game_party.leader.id == 1"])
+      ConditionalBranch([12, "!$game_party.leader.equips[1].nil?"])
+        PlaySE(["RPG::SE(@name=\"Equip1\", @pitch=80, @volume=80)"])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$protagShield\\\", 0])\", \"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$protagShield\", 0])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+        ControlSwitches([748, 748, 1])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "$game_party.leader.id == 5"])
+        ConditionalBranch([12, "!$game_party.leader.equips[1].nil?"])
+          PlaySE(["RPG::SE(@name=\"Equip1\", @pitch=80, @volume=80)"])
+          ConditionalBranch([0, 4116, 0])
+            SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$HumanPporshield\\\", 0])\", \"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+            Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$HumanPporshield\", 0])"])
+            Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+            Empty([])
+
+          Else([])
+            SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$HumanPshield\\\", 0])\", \"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+            Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$HumanPshield\", 0])"])
+            Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+            Empty([])
+
+          BranchEnd([])
+          ControlSwitches([748, 748, 1])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([12, "$game_party.leader.class_id == 121"])
+          ConditionalBranch([0, 3751, 1])
+            ConditionalBranch([12, "!$game_party.leader.equips[1].nil?"])
+              PlaySE(["RPG::SE(@name=\"Equip1\", @pitch=80, @volume=80)"])
+              SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$CrusaderPshield\\\", 0])\", \"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+              Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$CrusaderPshield\", 0])"])
+              Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+              ControlSwitches([748, 748, 1])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([12, "$game_party.leader.class_id == 209"])
+            Comment(["DeeKnight"])
+            ConditionalBranch([12, "!$game_party.leader.equips[1].nil?"])
+              PlaySE(["RPG::SE(@name=\"Equip1\", @pitch=80, @volume=80)"])
+              SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$DeeKnightShield\\\", 0])\", \"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+              Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$DeeKnightShield\", 0])"])
+              Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+              ControlSwitches([748, 748, 1])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["end"])
+  Empty([])

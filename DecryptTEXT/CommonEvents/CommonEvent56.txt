@@ -1,0 +1,14 @@
+CommonEvent 56
+Name = "Team memb icons cancel"
+
+  Comment(["##################"])
+  ErasePicture([51])
+  ErasePicture([91])
+  ErasePicture([92])
+  ErasePicture([93])
+  ErasePicture([95])
+  ErasePicture([96])
+  Script(["screen.pictures[249].erase"])
+  Script(["screen.pictures[250].erase"])
+  CallCommonEvent([60])
+  Empty([])

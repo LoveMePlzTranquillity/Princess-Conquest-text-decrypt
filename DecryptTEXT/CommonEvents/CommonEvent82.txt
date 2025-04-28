@@ -1,0 +1,50 @@
+CommonEvent 82
+Name = "Slime/Plant Skill"
+
+  ConditionalBranch([0, 3064, 0])
+    CallCommonEvent([83])
+    Comment(["Knight High Grass"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.leader.id == 56"])
+    ConditionalBranch([0, 3600, 1])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=33, @parameters=[])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Rustle\\\\\\\", @pitch=100, @volume=100)\\\"])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"$PlantPdug\\\", 0])\", \"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=33, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Rustle\\\", @pitch=100, @volume=100)\"])"])
+      Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$PlantPdug\", 0])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+      ControlSwitches([3600, 3600, 0])
+      ControlSwitches([2569, 2569, 0])
+      CallCommonEvent([969])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Else([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 892, 1])
+    ConditionalBranch([12, "$game_party.leader.id == 7"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Splat\\\\\\\", @pitch=100, @volume=90)\\\"])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"$SliPpuddle\\\", 0])\", \"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Splat\\\", @pitch=100, @volume=90)\"])"])
+      Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$SliPpuddle\", 0])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+      ControlSwitches([894, 894, 1])
+      Empty([])
+
+    Else([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["end"])
+  Empty([])

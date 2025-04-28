@@ -1,0 +1,14 @@
+CommonEvent 99
+Name = "Fear off"
+
+  ConditionalBranch([12, "$game_party.leader.class_id == 122"])
+    Wait([240])
+    Empty([])
+
+  Else([])
+    Wait([180])
+    Empty([])
+
+  BranchEnd([])
+  ControlSwitches([986, 986, 1])
+  Empty([])

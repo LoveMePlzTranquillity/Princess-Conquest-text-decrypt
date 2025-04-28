@@ -1,0 +1,5 @@
+CommonEvent 59
+Name = "Disable Save"
+
+  ChangeSaveAccess([0])
+  Empty([])

@@ -1,0 +1,82 @@
+CommonEvent 90
+Name = "Switch to player"
+
+  ConditionalBranch([12, "$game_actors[1].equips[5] != $data_armors[252] && $game_switches[3438] == true"])
+    Comment(["UW + no FIsh Lungs"])
+    ConditionalBranch([12, "$game_actors[1].state?(37) == true"])
+      Comment(["Water B."])
+      JumpToLabel(["noFL"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_actors[1].state?(62) == true"])
+      Comment(["Abyssal"])
+      JumpToLabel(["noFL"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_actors[1].equips[3] == $data_armors[374]"])
+      Comment(["abyss flaps"])
+      JumpToLabel(["noFL"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([10, 252, false])
+      Script(["$game_actors[1].change_equip_by_id(5, 252)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\i[694] \\c[18]Fish Lungs\\c[0] equipped."])
+      Empty([])
+
+    Else([])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["noFL"])
+  ConditionalBranch([12, "$game_party.leader.id == 1"])
+    Empty([])
+
+  Else([])
+    Script(["$game_party.swap_order(0,1)"])
+    ConditionalBranch([12, "$game_party.leader.id == 1"])
+      JumpToLabel(["swapped"])
+      Empty([])
+
+    Else([])
+      Script(["$game_party.swap_order(0,2)"])
+      ConditionalBranch([12, "$game_party.leader.id == 1"])
+        JumpToLabel(["swapped"])
+        Empty([])
+
+      Else([])
+        Script(["$game_party.swap_order(0,3)"])
+        ConditionalBranch([12, "$game_party.leader.id == 1"])
+          JumpToLabel(["swapped"])
+          Empty([])
+
+        Else([])
+          Script(["$game_party.swap_order(0,4)"])
+          Label(["swapped"])
+          Script(["$game_player.next_skill"])
+          Script(["Multiple_Core.refresh"])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ControlSwitches([1725, 1725, 0])
+  ControlSwitches([3065, 3065, 1])
+  CallCommonEvent([686])
+  Script(["$game_switches[7335] = true"])
+  Label(["end"])
+  Empty([])

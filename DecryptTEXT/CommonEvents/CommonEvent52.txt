@@ -1,0 +1,73 @@
+CommonEvent 52
+Name = "drop place"
+
+  ConditionalBranch([12, "$game_party.members[0].equips.include?$data_armors[269]"])
+    Comment(["      # Bone Magnet # "])
+    Script(["@r = rand(3)"])
+    ConditionalBranch([12, "@r > 1"])
+      CallCommonEvent([942])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.members[0].equips.include?$data_armors[687]"])
+    Comment(["      # Monster Lenses # "])
+    Script(["@r = rand(3)"])
+    ConditionalBranch([12, "@r <= 1"])
+      ControlSwitches([784, 784, 0])
+      CallCommonEvent([51])
+      ControlSwitches([784, 784, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3651, 0])
+    ControlVariables([576, 576, 0, 2, 1, 3])
+    Empty([])
+
+  Else([])
+    ControlVariables([576, 576, 0, 2, 1, 4])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 576, 0, 2, 0])
+    Comment(["###############"])
+    ControlVariables([574, 574, 0, 4, "$game_map.events[@event_id].x"])
+    ControlVariables([575, 575, 0, 4, "$game_map.events[@event_id].y"])
+    Comment(["###############"])
+    ConditionalBranch([0, 781, 0])
+      ControlVariables([574, 574, 0, 4, "$game_player.x"])
+      ControlVariables([575, 575, 0, 4, "$game_player.y"])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["###############"])
+    ConditionalBranch([0, 643, 1])
+      ControlSwitches([643, 643, 0])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([0, 644, 1])
+        ControlSwitches([644, 644, 0])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([0, 645, 1])
+          ControlSwitches([645, 645, 0])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

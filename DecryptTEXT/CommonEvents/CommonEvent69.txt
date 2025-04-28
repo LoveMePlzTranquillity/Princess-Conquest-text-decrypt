@@ -1,0 +1,22 @@
+CommonEvent 69
+Name = "Slave Market"
+
+  ConditionalBranch([2, "A", 1])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["At the Slave Market you'll be able to find new recruits from the fallen reigns."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Search for promising young soldiers to increase your ranks! "])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 913, 0])
+    Empty([])
+
+  Else([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["You need the Princess' authorization in order to partecipate!"])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])
