@@ -1,0 +1,27 @@
+CommonEvent 999
+Name = "Diff Book"
+
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Changing this setting will make it easier or harder to hit enemies by increasing or decreasing the reach of your attacks."])
+  ConditionalBranch([1, 394, 0, 0, 0])
+    ControlVariables([394, 394, 0, 4, "\"Normal\""])
+    Empty([])
+
+  BranchEnd([])
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["The current difficulty level is: \\c[18]\\v[394]\\c[0]"])
+  ShowChoices([["Easy", "Normal", "Hard"], 0])
+  When([0, "Easy"])
+    ControlVariables([394, 394, 0, 4, "\"Easy\""])
+    Empty([])
+
+  When([1, "Normal"])
+    ControlVariables([394, 394, 0, 4, "\"Normal\""])
+    Empty([])
+
+  When([2, "Hard"])
+    ControlVariables([394, 394, 0, 4, "\"Hard\""])
+    Empty([])
+
+  ChoicesEnd([])
+  Empty([])
