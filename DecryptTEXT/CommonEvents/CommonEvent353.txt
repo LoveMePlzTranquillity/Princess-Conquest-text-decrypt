@@ -1,0 +1,56 @@
+CommonEvent 353
+Name = "NPC Unstuck"
+
+  Script(["@id = @event_id"])
+  Script(["@x = $game_map.events[@id].x"])
+  ScriptMore(["@y = $game_map.events[@id].y "])
+  ScriptMore(["@xp = $game_player.x"])
+  ScriptMore(["@yp = $game_player.y"])
+  Script(["@xd = @x - @xp"])
+  ScriptMore(["@yd = @y - @yp"])
+  ConditionalBranch([12, "@xd.abs < 0.9 && @yd.abs < 0.9"])
+    Label(["chkdir"])
+    Script(["@xp = $game_player.x"])
+    ScriptMore(["@yp = $game_player.y"])
+    ConditionalBranch([12, "$game_player.direction == 2"])
+      Script(["@yt = @yp - 1"])
+      ScriptMore(["@xt = @xp"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_player.direction == 4"])
+      Script(["@xt = @xp + 1"])
+      ScriptMore(["@yt = @yp"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_player.direction == 6"])
+      Script(["@xt = @xp - 1"])
+      ScriptMore(["@yt = @yp"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_player.direction == 8"])
+      Script(["@yt = @yp + 1"])
+      ScriptMore(["@xt = @xp"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_map.passable?(@xt, @yt, 2)"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=13, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=13, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+      Empty([])
+
+    Else([])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=20, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=20, @parameters=[])"])
+      JumpToLabel(["chkdir"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

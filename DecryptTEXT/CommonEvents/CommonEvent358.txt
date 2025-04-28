@@ -1,0 +1,29 @@
+CommonEvent 358
+Name = "*Controller Check*"
+
+  ControlSwitches([465, 465, 0])
+  ConditionalBranch([12, "WolfPad.plugged_in?(0) || WolfPad.plugged_in?(1) || WolfPad.plugged_in?"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\i[1101] External Gamepad detected! Switch your controls to \\i[1101] Gamepad mode?"])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      ControlSwitches([1320, 1320, 0])
+      Empty([])
+
+    When([1, "No"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["\\^You can switch your control scheme at any time in the System options.\\|"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Else([])
+    ControlSwitches([1320, 1320, 1])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\^No connection to \\i[1101] External Gamepad!\\.\\. Reverting to \\i[1102] Default controls.\\|"])
+    ControlSwitches([465, 465, 1])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

@@ -1,0 +1,332 @@
+CommonEvent 346
+Name = "★👤★  *Assign CTRL*"
+
+  ControlVariables([2961, 2961, 0, 0, 2])
+  ConditionalBranch([0, 44, 0])
+    ConditionalBranch([1, 2842, 0, 0, 5])
+      ConditionalBranch([12, "$game_variables[2842][0] != 0"])
+        ControlVariables([2961, 2961, 0, 4, "$game_variables[2842][0]"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ControlVariables([2962, 2962, 0, 0, 3])
+  ConditionalBranch([0, 50, 0])
+    ConditionalBranch([1, 2843, 0, 0, 5])
+      ConditionalBranch([12, "$game_variables[2843][0] != 0"])
+        ControlVariables([2962, 2962, 0, 4, "$game_variables[2843][0]"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ControlVariables([2963, 2963, 0, 0, 4])
+  ConditionalBranch([0, 54, 0])
+    ConditionalBranch([1, 2844, 0, 0, 5])
+      ConditionalBranch([12, "$game_variables[2844][0] != 0"])
+        ControlVariables([2963, 2963, 0, 4, "$game_variables[2844][0]"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ControlVariables([2964, 2964, 0, 0, 5])
+  ConditionalBranch([0, 92, 0])
+    ConditionalBranch([1, 2845, 0, 0, 5])
+      ConditionalBranch([12, "$game_variables[2845][0] != 0"])
+        ControlVariables([2964, 2964, 0, 4, "$game_variables[2845][0]"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ControlVariables([2965, 2965, 0, 0, 6])
+  ConditionalBranch([0, 144, 0])
+    ConditionalBranch([1, 2846, 0, 0, 5])
+      ConditionalBranch([12, "$game_variables[2846][0] != 0"])
+        ControlVariables([2965, 2965, 0, 4, "$game_variables[2846][0]"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ControlVariables([2966, 2966, 0, 0, 7])
+  ConditionalBranch([0, 320, 0])
+    ConditionalBranch([1, 2847, 0, 0, 5])
+      ConditionalBranch([12, "$game_variables[2847][0] != 0"])
+        ControlVariables([2966, 2966, 0, 4, "$game_variables[2847][0]"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ControlVariables([2967, 2967, 0, 0, 8])
+  ConditionalBranch([0, 455, 0])
+    ConditionalBranch([1, 2848, 0, 0, 5])
+      ConditionalBranch([12, "$game_variables[2848][0] != 0"])
+        ControlVariables([2967, 2967, 0, 4, "$game_variables[2848][0]"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ControlVariables([2968, 2968, 0, 0, 9])
+  ConditionalBranch([0, 763, 0])
+    ConditionalBranch([1, 2849, 0, 0, 5])
+      ConditionalBranch([12, "$game_variables[2849][0] != 0"])
+        ControlVariables([2968, 2968, 0, 4, "$game_variables[2849][0]"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ControlVariables([2969, 2969, 0, 0, 10])
+  ConditionalBranch([0, 1620, 0])
+    ConditionalBranch([1, 2850, 0, 0, 5])
+      ConditionalBranch([12, "$game_variables[2850][0] != 0"])
+        ControlVariables([2969, 2969, 0, 4, "$game_variables[2850][0]"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ControlVariables([2970, 2970, 0, 0, 11])
+  ConditionalBranch([0, 1991, 0])
+    ConditionalBranch([1, 2851, 0, 0, 5])
+      ConditionalBranch([12, "$game_variables[2851][0] != 0"])
+        ControlVariables([2970, 2970, 0, 4, "$game_variables[2851][0]"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ControlVariables([2971, 2971, 0, 0, 14])
+  ConditionalBranch([0, 2884, 0])
+    ConditionalBranch([1, 2854, 0, 0, 5])
+      ConditionalBranch([12, "$game_variables[2854][0] != 0"])
+        ControlVariables([2971, 2971, 0, 4, "$game_variables[2854][0]"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ControlVariables([2972, 2972, 0, 0, 15])
+  ConditionalBranch([0, 3277, 0])
+    ConditionalBranch([1, 2855, 0, 0, 5])
+      ConditionalBranch([12, "$game_variables[2855][0] != 0"])
+        ControlVariables([2972, 2972, 0, 4, "$game_variables[2855][0]"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ControlVariables([2973, 2973, 0, 0, 17])
+  ConditionalBranch([0, 3988, 1])
+    ConditionalBranch([0, 3941, 0])
+      ControlVariables([2973, 2973, 0, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 3942, 0])
+      ControlVariables([2973, 2973, 0, 0, 3])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 3943, 0])
+      ControlVariables([2973, 2973, 0, 0, 4])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 3944, 0])
+      ControlVariables([2973, 2973, 0, 0, 5])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 3945, 0])
+      ControlVariables([2973, 2973, 0, 0, 6])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 3946, 0])
+      ControlVariables([2973, 2973, 0, 0, 7])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 3947, 0])
+      ControlVariables([2973, 2973, 0, 0, 8])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 3948, 0])
+      ControlVariables([2973, 2973, 0, 0, 9])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 3949, 0])
+      ControlVariables([2973, 2973, 0, 0, 10])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 3950, 0])
+      ControlVariables([2973, 2973, 0, 0, 11])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 3952, 0])
+      ControlVariables([2973, 2973, 0, 0, 14])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 3953, 0])
+      ControlVariables([2973, 2973, 0, 0, 15])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4277, 0])
+      ControlVariables([2973, 2973, 0, 0, 18])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4698, 0])
+      ControlVariables([2973, 2973, 0, 0, 20])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ControlVariables([2974, 2974, 0, 0, 17])
+  ConditionalBranch([0, 4055, 0])
+    ConditionalBranch([1, 2856, 0, 0, 5])
+      ConditionalBranch([12, "$game_variables[2856][0] != 0"])
+        ControlVariables([2974, 2974, 0, 4, "$game_variables[2856][0]"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ControlVariables([2975, 2975, 0, 0, 18])
+  ConditionalBranch([0, 4235, 0])
+    ConditionalBranch([1, 2858, 0, 0, 5])
+      ConditionalBranch([12, "$game_variables[2858][0] != 0"])
+        ControlVariables([2975, 2975, 0, 4, "$game_variables[2858][0]"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ControlVariables([2976, 2976, 0, 0, 19])
+  ConditionalBranch([0, 4389, 0])
+    ConditionalBranch([1, 2859, 0, 0, 5])
+      ConditionalBranch([12, "$game_variables[2859][0] != 0"])
+        ControlVariables([2976, 2976, 0, 4, "$game_variables[2859][0]"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ControlVariables([2977, 2977, 0, 0, 20])
+  ConditionalBranch([0, 4690, 0])
+    ConditionalBranch([1, 2860, 0, 0, 5])
+      ConditionalBranch([12, "$game_variables[2860][0] != 0"])
+        ControlVariables([2977, 2977, 0, 4, "$game_variables[2860][0]"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ControlVariables([2979, 2979, 0, 0, 30])
+  ConditionalBranch([0, 3136, 0])
+    ConditionalBranch([1, 3016, 0, 0, 5])
+      ConditionalBranch([12, "$game_variables[3016][0] != 0"])
+        ControlVariables([2979, 2979, 0, 4, "$game_variables[3016][0]"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ControlVariables([2980, 2980, 0, 0, 31])
+  ConditionalBranch([0, 2816, 0])
+    ConditionalBranch([1, 3017, 0, 0, 5])
+      ConditionalBranch([12, "$game_variables[3017][0] != 0"])
+        ControlVariables([2980, 2980, 0, 4, "$game_variables[3017][0]"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ControlVariables([2978, 2978, 0, 1, 4260])
+  Empty([])

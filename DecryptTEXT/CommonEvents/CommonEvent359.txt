@@ -1,0 +1,9 @@
+CommonEvent 359
+Name = "Discharge Skill"
+
+  ShowAnimation([-1, 310, false])
+  Wait([10])
+  ControlSwitches([485, 485, 0])
+  Wait([60])
+  ControlSwitches([485, 485, 1])
+  Empty([])

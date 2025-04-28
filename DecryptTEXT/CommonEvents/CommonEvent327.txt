@@ -1,0 +1,55 @@
+CommonEvent 327
+Name = "Sli War ani"
+
+  ConditionalBranch([0, 4600, 0])
+    JumpToLabel(["FFFFF"])
+    Empty([])
+
+  BranchEnd([])
+  ControlSwitches([2481, 2481, 0])
+  PlaySE(["RPG::SE(@name=\"Fanfare (SFX)\", @pitch=100, @volume=80)"])
+  ConditionalBranch([0, 2510, 0])
+    Wait([45])
+    Empty([])
+
+  Else([])
+    ShowPicture([1, "SliWar1", 0, 0, 0, 0, 200, 200, 255, 0])
+    Wait([15])
+    ShowPicture([1, "SliWar2", 0, 0, 0, 0, 200, 200, 255, 0])
+    Wait([10])
+    ShowPicture([1, "SliWar3", 0, 0, 0, 0, 200, 200, 255, 0])
+    Wait([10])
+    ShowPicture([1, "SliWar4", 0, 0, 0, 0, 200, 200, 255, 0])
+    Wait([60])
+    ErasePicture([1])
+    Empty([])
+
+  BranchEnd([])
+  ControlSwitches([2481, 2481, 1])
+  Label(["FFFFF"])
+  ConditionalBranch([0, 3449, 0])
+    ConditionalBranch([1, 628, 0, 12, 0])
+      ControlVariables([9, 9, 1, 0, 1])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Thanks to \\c[18]Devil's Advocate\\c[0] your \\c[18]Affinity\\c[0] with the Slime Reign raises by \\c[18]1\\c[0]! "])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 628, 0, 112, 0])
+      ControlVariables([9, 9, 1, 0, 3])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Thanks to \\c[18]Devil's Advocate\\c[0] your \\c[18]Affinity\\c[0] with the Slime Reign raises by \\c[18]3\\c[0]! "])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 628, 0, 1012, 0])
+      ControlVariables([9, 9, 1, 0, 5])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Thanks to \\c[18]Devil's Advocate\\c[0] your \\c[18]Affinity\\c[0] with the Slime Reign raises by \\c[18]5\\c[0]! "])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])
