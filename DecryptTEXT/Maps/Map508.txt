@@ -1,0 +1,106 @@
+Display Name = ""
+Parallax Name = "RestorationTent"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "TPout"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ControlSwitches([2314, 2314, 1])
+    ControlSwitches([2650, 2651, 1])
+    TransferPlayer([0, 506, 11, 28, 2, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "TPout"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ControlSwitches([2314, 2314, 1])
+    ControlSwitches([2650, 2651, 1])
+    TransferPlayer([0, 506, 11, 28, 2, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "Worr"
+
+  Page 0
+    Comment(["<always update>"])
+    CallCommonEvent([474])
+    Empty([])
+
+CommonEvent 6
+Name = "Finish tent message"
+
+  Page 0
+    Script(["@w = 0"])
+    Label(["wmore"])
+    ConditionalBranch([0, 2315, 0])
+      ControlSwitches([1202, 1202, 0])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    Wait([60])
+    Script(["@w += 1"])
+    ConditionalBranch([0, 3582, 0])
+      Script(["@w = 0"])
+      JumpToLabel(["wmore"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@w < 10"])
+      JumpToLabel(["wmore"])
+      Empty([])
+
+    BranchEnd([])
+    ShowChoices([["Finish!", "Keep going..."], 2])
+    When([0, "Finish!"])
+      ControlSwitches([1202, 1202, 0])
+      Empty([])
+
+    When([1, "Keep going..."])
+      Empty([])
+
+    ChoicesEnd([])
+    Label(["end"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "FadeIn"
+
+  Page 0
+    CallCommonEvent([90])
+    ConditionalBranch([0, 413, 0])
+      TintScreen(["Tone(@red=-34.0, @green=-34.0, @blue=0.0, @gray=34.0)", 1, true])
+      Empty([])
+
+    Else([])
+      TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+      Empty([])
+
+    BranchEnd([])
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 11
+Name = "TPout"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ControlSwitches([2314, 2314, 1])
+    ControlSwitches([2650, 2651, 1])
+    TransferPlayer([0, 506, 11, 28, 2, 0])
+    Empty([])

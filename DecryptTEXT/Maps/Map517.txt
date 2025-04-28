@@ -1,0 +1,15 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Script(["$game_map.screen.start_fadeout(1)"])
+    Script(["@map = $game_variables[7251][0]"])
+    ScriptMore(["@x = $game_variables[7251][1]"])
+    ScriptMore(["@y = $game_variables[7251][2]"])
+    ScriptMore(["$game_player.reserve_transfer(@map,@x,@y)"])
+    EraseEvent([])
+    Empty([])

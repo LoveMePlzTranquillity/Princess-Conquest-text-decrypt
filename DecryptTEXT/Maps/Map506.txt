@@ -1,0 +1,420 @@
+Display Name = ""
+Parallax Name = "ColyseumEmpty"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "NightSpawn"
+
+  Page 0
+    Comment(["<always update>"])
+    ChangeItems([399, 0, 0, 1])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ChangeItems([400, 0, 0, 1])
+    ControlSelfSwitch(["B", 1])
+    Empty([])
+
+CommonEvent 2
+Name = "NightSpawn"
+
+  Page 0
+    Comment(["<always update>"])
+    ChangeItems([399, 0, 0, 1])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ChangeItems([400, 0, 0, 1])
+    ControlSelfSwitch(["B", 1])
+    Empty([])
+
+CommonEvent 3
+Name = "NightSpawn"
+
+  Page 0
+    Comment(["<always update>"])
+    ChangeItems([399, 0, 0, 1])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ChangeItems([400, 0, 0, 1])
+    ControlSelfSwitch(["B", 1])
+    Empty([])
+
+CommonEvent 4
+Name = "NightSpawn"
+
+  Page 0
+    Comment(["<always update>"])
+    ChangeItems([399, 0, 0, 1])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ChangeItems([400, 0, 0, 1])
+    ControlSelfSwitch(["B", 1])
+    Empty([])
+
+CommonEvent 5
+Name = "NightSpawn"
+
+  Page 0
+    Comment(["<always update>"])
+    ChangeItems([399, 0, 0, 1])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ChangeItems([400, 0, 0, 1])
+    ControlSelfSwitch(["B", 1])
+    Empty([])
+
+CommonEvent 6
+Name = "NightSpawn"
+
+  Page 0
+    Comment(["<always update>"])
+    ChangeItems([399, 0, 0, 1])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ChangeItems([400, 0, 0, 1])
+    ControlSelfSwitch(["B", 1])
+    Empty([])
+
+CommonEvent 7
+Name = "NightSpawn"
+
+  Page 0
+    Comment(["<always update>"])
+    ChangeItems([399, 0, 0, 1])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ChangeItems([400, 0, 0, 1])
+    ControlSelfSwitch(["B", 1])
+    Empty([])
+
+CommonEvent 8
+Name = "RNDworker1"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1243])
+    CallCommonEvent([991])
+    Empty([])
+
+CommonEvent 9
+Name = "RNDworker2"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1244])
+    CallCommonEvent([991])
+    Empty([])
+
+CommonEvent 10
+Name = "RNDworker3"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1245])
+    CallCommonEvent([991])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    SetWeatherEffects([:none, 9, 0, false])
+    ErasePicture([9])
+    TransferPlayer([0, 348, 12, 2, 2, 0])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    SetWeatherEffects([:none, 9, 0, false])
+    ErasePicture([9])
+    TransferPlayer([0, 348, 12, 2, 2, 0])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    SetWeatherEffects([:none, 9, 0, false])
+    ErasePicture([9])
+    TransferPlayer([0, 348, 12, 2, 2, 0])
+    Empty([])
+
+CommonEvent 14
+Name = "ArenaDoor"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    SetWeatherEffects([:none, 9, 0, false])
+    ErasePicture([9])
+    TransferPlayer([0, 348, 12, 2, 2, 0])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    SetWeatherEffects([:none, 9, 0, false])
+    ErasePicture([9])
+    TransferPlayer([0, 348, 12, 2, 2, 0])
+    Empty([])
+
+CommonEvent 17
+Name = "TrainGTP"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 496, 27, 45, 8, 0])
+    Empty([])
+
+CommonEvent 18
+Name = "OniFlag"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 19
+Name = "TrainGTP"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 496, 27, 45, 8, 0])
+    Empty([])
+
+CommonEvent 20
+Name = "TrainGTP"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 496, 27, 45, 8, 0])
+    Empty([])
+
+CommonEvent 21
+Name = "Load"
+
+  Page 0
+    CallCommonEvent([21])
+    CallCommonEvent([20])
+    CallCommonEvent([543])
+    ControlSwitches([3706, 3706, 1])
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 22
+Name = "StairDown"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 508, 16, 27, 8, 0])
+    Empty([])
+
+CommonEvent 23
+Name = "Finish tent message"
+
+  Page 0
+    Wait([600])
+    ShowChoices([["Finish!", "Keep going..."], 2])
+    When([0, "Finish!"])
+      ControlSwitches([1202, 1202, 0])
+      Empty([])
+
+    When([1, "Keep going..."])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 24
+Name = "DemGauntlet"
+
+  Page 0
+    Comment(["<always update>"])
+    ChangeArmor([561, 0, 0, 1, false])
+    ControlSelfSwitch(["B", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 25
+Name = "Statues"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 26
+Name = "Statues"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 27
+Name = "Statues"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[collision_x 4]"])
+    Comment(["[collision_y 3]"])
+    Empty([])
+
+CommonEvent 28
+Name = "Statues"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[collision_x 4]"])
+    Comment(["[collision_y 3]"])
+    Empty([])
+
+CommonEvent 29
+Name = "Statues"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 66
+Name = "OniFlag"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 67
+Name = "OniFlag"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 68
+Name = "OniFlag"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 69
+Name = "OniFlag"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 70
+Name = "OniFlag"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 71
+Name = "OniFlag"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 72
+Name = "OniFlag"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 73
+Name = "OniFlag"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 74
+Name = "OniFlag"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 75
+Name = "OniFlag"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])

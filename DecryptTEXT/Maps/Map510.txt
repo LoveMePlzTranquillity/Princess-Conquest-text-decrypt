@@ -1,0 +1,2260 @@
+Display Name = ""
+Parallax Name = "Colyseum-Flipper"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "Gift"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 2
+Name = "Gift"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 3
+Name = "Gift"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 4
+Name = "Gift"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 5
+Name = "Gift"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 6
+Name = "Gift"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 7
+Name = "Statues"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 8
+Name = "OniAni"
+
+  Page 0
+    Script(["@x = 580"])
+    ScriptMore(["@y = 250"])
+    Loop([])
+      ControlSwitches([4601, 4601, 0])
+      Comment(["###########################"])
+      Script(["$game_map.screen.pictures[99].show("])
+      ScriptMore(["\"oni1f1\", 1, @x, @y, 200, 200, 255, 0)"])
+      ConditionalBranch([0, 1196, 0])
+        Wait([5])
+        Empty([])
+      Else([])
+        Wait([6])
+        Empty([])
+      BranchEnd([])
+      ShakeScreen([2, 2, 15, false])
+      PlaySE(["RPG::SE(@name=\"Absorb1\", @pitch=110, @volume=50)"])
+      Script(["$game_map.screen.pictures[99].show("])
+      ScriptMore(["\"oni1f2\", 1, @x, @y, 200, 200, 255, 0)"])
+      ConditionalBranch([0, 1196, 0])
+        Wait([5])
+        Empty([])
+      Else([])
+        Wait([6])
+        Empty([])
+      BranchEnd([])
+      Script(["$game_map.screen.pictures[99].show("])
+      ScriptMore(["\"oni1f3\", 1, @x, @y, 200, 200, 255, 0)"])
+      ConditionalBranch([0, 1196, 0])
+        Wait([5])
+        Empty([])
+      Else([])
+        Wait([6])
+        Empty([])
+      BranchEnd([])
+      Script(["$game_map.screen.pictures[99].show("])
+      ScriptMore(["\"oni1f4\", 1, @x, @y, 200, 200, 255, 0)"])
+      ConditionalBranch([0, 1196, 0])
+        Wait([5])
+        Empty([])
+      Else([])
+        Wait([6])
+        Empty([])
+      BranchEnd([])
+      Script(["$game_map.screen.pictures[99].show("])
+      ScriptMore(["\"oni1f5\", 1, @x, @y, 200, 200, 255, 0)"])
+      ConditionalBranch([0, 1196, 0])
+        Wait([5])
+        Empty([])
+      Else([])
+        Wait([6])
+        Empty([])
+      BranchEnd([])
+      Comment(["###########################"])
+      ConditionalBranch([2, "B", 0])
+        BreakLoop([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    RepeatAbove([])
+    Comment(["###########################"])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f1\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    ShakeScreen([2, 2, 15, false])
+    PlaySE(["RPG::SE(@name=\"Absorb1\", @pitch=110, @volume=50)"])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f2\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f3\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f4\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f5\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f6\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f7\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f8\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    PlaySE(["RPG::SE(@name=\"Splat\", @pitch=150, @volume=80)"])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f9\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f10\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f11\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    PlaySE(["RPG::SE(@name=\"Absorb1\", @pitch=120, @volume=80)"])
+    ShakeScreen([4, 3, 15, false])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f12\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f13\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    PlaySE(["RPG::SE(@name=\"Absorb1\", @pitch=120, @volume=70)"])
+    ShakeScreen([3, 3, 15, false])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f14\", 1, @x, @y, 200, 200, 255, 0) "])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f15\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f16\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f17\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f18\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    PlaySE(["RPG::SE(@name=\"Absorb1\", @pitch=120, @volume=70)"])
+    ShakeScreen([3, 3, 15, false])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f19\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f20\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f21\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f22\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f23\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    PlaySE(["RPG::SE(@name=\"Absorb1\", @pitch=120, @volume=70)"])
+    ShakeScreen([3, 3, 15, false])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f24\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f25\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f26\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f27\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f28\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    PlaySE(["RPG::SE(@name=\"Absorb1\", @pitch=110, @volume=60)"])
+    ShakeScreen([2, 2, 15, false])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f29\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f30\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f31\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f32\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f33\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f34\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f35\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f36\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    PlaySE(["RPG::SE(@name=\"Splat\", @pitch=120, @volume=80)"])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f37\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f38\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f39\", 1, @x, @y, 200, 200, 255, 0)"])
+    Wait([6])
+    Script(["$game_map.screen.pictures[99].show("])
+    ScriptMore(["\"oni1f40\", 1, @x, @y, 200, 200, 255, 0)"])
+    Comment(["###########################"])
+    ConditionalBranch([12, "$game_variables[2785][20] == 1"])
+      ConditionalBranch([12, "$game_actors[1].equips[4] == $data_armors[177]"])
+        Script(["$game_variables[2780] = [20,3,0]"])
+        CallCommonEvent([505])
+        Empty([])
+      Else([])
+        Script(["$game_variables[2780] = [20,3,1]"])
+        CallCommonEvent([505])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ControlVariables([4367, 4367, 1, 0, 5])
+      ConditionalBranch([12, "$game_actors[1].equips[4] == $data_armors[177]"])
+        ConditionalBranch([0, 2654, 0])
+          ControlVariables([585, 585, 0, 2, 1500, 2250])
+          Empty([])
+        Else([])
+          ControlVariables([585, 585, 0, 2, 500, 750])
+          Empty([])
+        BranchEnd([])
+        PlaySE(["RPG::SE(@name=\"Coin\", @pitch=100, @volume=80)"])
+        Script(["message = \"Family Jewels!\""])
+        ScriptMore(["$game_map.show_text($game_player,message)"])
+        ControlSwitches([648, 648, 0])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "$game_switches[2654] == true"])
+          ControlVariables([4373, 4373, 1, 2, 5, 10])
+          Empty([])
+        Else([])
+          ControlVariables([4373, 4373, 1, 2, 1, 3])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["###########################"])
+    Comment(["END 2"])
+    Comment(["###########################"])
+    Wait([180])
+    ControlSwitches([1196, 1196, 1])
+    ErasePicture([99])
+    ControlSelfSwitch(["B", 1])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+CommonEvent 9
+Name = "Statues"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 10
+Name = "Statues"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[collision_x 4]"])
+    Comment(["[collision_y 3]"])
+    Empty([])
+
+CommonEvent 11
+Name = "Statues"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[collision_x 4]"])
+    Comment(["[collision_y 3]"])
+    Empty([])
+
+CommonEvent 12
+Name = "Statues"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 13
+Name = "OniP"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 14
+Name = "ArenaDoor"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 18
+Name = "OniFlag"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 21
+Name = "FadeIn"
+
+  Page 0
+    Comment(["--- RESETS ---"])
+    CallCommonEvent([225])
+    Comment(["^^^ RESETS ^^^"])
+    CallCommonEvent([21])
+    CallCommonEvent([20])
+    ControlSwitches([3706, 3706, 1])
+    ScrollMap([8, 5, 6])
+    Wait([30])
+    JumpToLabel(["skipErase"])
+    Comment(["erase all Oni Crowd"])
+    Script(["@k = 24"])
+    ScriptMore(["while @k <= 60"])
+    ScriptMore(["$game_map.events[@k].erase"])
+    ScriptMore(["@k += 1"])
+    ScriptMore(["end"])
+    Label(["skipErase"])
+    Wait([15])
+    FadeinScreen([])
+    PlaySE(["RPG::SE(@name=\"SkeletonCheer\", @pitch=85, @volume=80)"])
+    ShotBalloonIcon([13, 1, false])
+    Comment(["RND excl / note"])
+    Script(["@k = 24"])
+    ScriptMore(["while @k <= 60"])
+    ScriptMore(["@r = rand(4)"])
+    ScriptMore(["if @r < 1"])
+    ScriptMore(["$game_map.events[@k].balloon_id = 1"])
+    ScriptMore(["elsif @r < 2"])
+    ScriptMore(["$game_map.events[@k].balloon_id = 3"])
+    ScriptMore(["end"])
+    ScriptMore(["@k += 1"])
+    ScriptMore(["end"])
+    Wait([15])
+    ShotBalloonIcon([-1, 8, true])
+    Wait([15])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Everyone is watching you.\\.\\. Expecting something to happen.\\.\\. Expecting you to do something.\\.\\. But what?\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["...\\.\\.\\. Well,\\. you don't even really need to ask.\\.\\. You know full well where you're standing."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["You feel like the Oni won't be very patient.\\.\\. It's time for you to move and make your stand...\\.\\.\\."])
+    ShowChoices([["Showtime", "Exit Stage Back"], 0])
+    When([0, "Showtime"])
+      ControlSwitches([3000, 3000, 1])
+      PlaySE(["RPG::SE(@name=\"Sword4\", @pitch=100, @volume=80)"])
+      Wait([15])
+      ShotBalloonIcon([13, 1, false])
+      Comment(["RND excl"])
+      Script(["@k = 24"])
+      ScriptMore(["while @k <= 60"])
+      ScriptMore(["@r = rand(3)"])
+      ScriptMore(["if @r < 1"])
+      ScriptMore(["$game_map.events[@k].balloon_id = 1"])
+      ScriptMore(["end"])
+      ScriptMore(["@k += 1"])
+      ScriptMore(["end"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["These Onis don't want words,\\. they want action!"])
+      Wait([15])
+      ShotBalloonIcon([-1, 1, false])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["Well?\\.\\. Send me your champion!\\.\\."])
+      Script(["n = \"OniP dial rage\""])
+      ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+      ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Oni Princess:"])
+      ShowText(["...\\.\\.\\. ...\\.\\.\\."])
+      ShotBalloonIcon([13, 3, false])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Oni Princess:"])
+      ShowText(["...\\.\\.\\. ...\\.\\.\\. Hm."])
+      ErasePicture([1])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+      ControlSwitches([4667, 4667, 1])
+      CallCommonEvent([223])
+      JumpToLabel(["end"])
+      Empty([])
+
+    When([1, "Exit Stage Back"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[45])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[45])"])
+      ShotBalloonIcon([-1, 8, false])
+      Wait([15])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You glance towards the entrance you came from. The large gate remained open."])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=13, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=13, @parameters=[])"])
+      Wait([15])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["Gotta get out of here...!\\.\\."])
+      PlaySE(["RPG::SE(@name=\"Evasion1\", @pitch=100, @volume=80)"])
+      ShotBalloonIcon([13, 8, false])
+      ShotBalloonIcon([-1, 6, false])
+      ScrollMap([8, 10, 4])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+      Wait([60])
+      PlaySE(["RPG::SE(@name=\"SkeletonCheer\", @pitch=85, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You weren't ready for a fight. You'd rather embarrass yourself and live another day than get crushed for the whims and entertainment of these brutes."])
+      Wait([30])
+      FadeoutScreen([])
+      Wait([60])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["Maybe I'll come around at a better time...\\.\\.\\."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["But,\\. for now,\\. you make your escape."])
+      Wait([30])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+      Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+      TransferPlayer([0, 70, 28, 24, 6, 0])
+      JumpToLabel(["end"])
+      Empty([])
+
+    ChoicesEnd([])
+    Label(["end"])
+    Empty([])
+
+CommonEvent 22
+Name = "OniGuard1"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 23
+Name = "OniGuard2"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 24
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 25
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 26
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 27
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 28
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 29
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 30
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 31
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 32
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 33
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 34
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 35
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 36
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 37
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 38
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 39
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 40
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 41
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 42
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 43
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 44
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 45
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 46
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 47
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 48
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 49
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 50
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 51
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 52
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 53
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 54
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 55
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 56
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 57
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 58
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 59
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 60
+Name = "OniCrowd"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 64
+Name = "ArenaFighter"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 294]"])
+    Comment(["[localsw 1]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    CallCommonEvent([224])
+    Empty([])
+
+CommonEvent 66
+Name = "OniFlag"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 67
+Name = "OniFlag"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 68
+Name = "OniFlag"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 69
+Name = "OniFlag"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 70
+Name = "OniFlag"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 71
+Name = "OniFlag"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 72
+Name = "OniFlag"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 73
+Name = "OniFlag"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 74
+Name = "OniFlag"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 75
+Name = "OniFlag"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 76
+Name = "RabiBall"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Script(["@fighter = 64"])
+    Comment(["***********************"])
+    Script(["@id = @event_id"])
+    Script(["@x = $game_map.events[@id].x"])
+    ScriptMore(["@y = $game_map.events[@id].y "])
+    ScriptMore(["@xp = $game_player.x"])
+    ScriptMore(["@yp = $game_player.y"])
+    Script(["@xd = @x - @xp"])
+    ScriptMore(["@yd = @y - @yp"])
+    Comment(["***********************"])
+    Script(["@dir = $game_map.events[@fighter].direction "])
+    Script(["@time = 600"])
+    PlaySE(["RPG::SE(@name=\"Evasion1\", @pitch=100, @volume=80)"])
+    ConditionalBranch([12, "@dir == 2"])
+      ConditionalBranch([12, "@xd.abs <= 3"])
+        Script(["@dir = 2"])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@xd >= 0"])
+          Script(["@dir = 1"])
+          Empty([])
+        Else([])
+          Script(["@dir = 3"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["dirchange"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 4"])
+      ConditionalBranch([12, "@yd.abs <= 3"])
+        Script(["@dir = 4"])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@yd >= 0"])
+          Script(["@dir = 7"])
+          Empty([])
+        Else([])
+          Script(["@dir = 1"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["dirchange"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 6"])
+      ConditionalBranch([12, "@yd.abs <= 3"])
+        Script(["@dir = 6"])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@yd >= 0"])
+          Script(["@dir = 9"])
+          Empty([])
+        Else([])
+          Script(["@dir = 3"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["dirchange"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 8"])
+      ConditionalBranch([12, "@xd.abs <= 3"])
+        Script(["@dir = 8"])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@xd >= 0"])
+          Script(["@dir = 7"])
+          Empty([])
+        Else([])
+          Script(["@dir = 9"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["dirchange"])
+      Empty([])
+
+    BranchEnd([])
+    Label(["dirchange"])
+    ShowAnimation([0, 1, false])
+    Label(["speedonly"])
+    ConditionalBranch([12, "@dir == 1"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=5, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=5, @parameters=[])"])
+      Script(["@dirCH = [6,9,8]"])
+      ScriptMore(["@newDir = [3,9,7]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 2"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Script(["@dirCH = [9,8,7]"])
+      ScriptMore(["@newDir = [6,8,4]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 3"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=6, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=6, @parameters=[])"])
+      Script(["@dirCH = [8,7,4]"])
+      ScriptMore(["@newDir = [9,7,1]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 4"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Script(["@dirCH = [3,6,9]"])
+      ScriptMore(["@newDir = [2,6,8]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 6"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      Script(["@dirCH = [7,4,1]"])
+      ScriptMore(["@newDir = [8,4,2]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 7"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=7, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=7, @parameters=[])"])
+      Script(["@dirCH = [2,3,6]"])
+      ScriptMore(["@newDir = [1,3,9]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 8"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Script(["@dirCH = [1,2,3]"])
+      ScriptMore(["@newDir = [4,2,6]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 9"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=8, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=8, @parameters=[])"])
+      Script(["@dirCH = [4,1,2]"])
+      ScriptMore(["@newDir = [7,1,3]"])
+      Empty([])
+
+    BranchEnd([])
+    Loop([])
+      Comment(["######################"])
+      Script(["@reg = $game_map.events[@id].region_id"])
+      ConditionalBranch([12, "@dirCH.include?@reg"])
+        Script(["@dir = @reg"])
+        Script(["@i = 0"])
+        ScriptMore(["while @i <= 2"])
+        ScriptMore(["if @reg == @dirCH[@i]"])
+        ScriptMore(["@break = @i"])
+        ScriptMore(["break"])
+        ScriptMore(["end"])
+        ScriptMore(["@i += 1"])
+        ScriptMore(["end"])
+        ScriptMore(["@dir = @newDir[@break]"])
+        JumpToLabel(["dirchange"])
+        Empty([])
+      BranchEnd([])
+      Comment(["######################"])
+      Script(["@prex = $game_player.x"])
+      ScriptMore(["@prey = $game_player.y"])
+      Script(["@id = @event_id"])
+      ScriptMore(["@evix = $game_map.events[@id].x"])
+      ScriptMore(["@eviy = $game_map.events[@id].y"])
+      Script(["@dx = @prex - @evix"])
+      ScriptMore(["@dy = @prey - @eviy"])
+      Script(["@reg = $game_map.events[@id].region_id"])
+      ConditionalBranch([12, "@dx.abs <= 1.1 && @dy.abs <= 1.1"])
+        Script(["$game_map.events[@fighter].attack"])
+        BreakLoop([])
+        Empty([])
+      BranchEnd([])
+      Wait([2])
+      Script(["@time -= 2"])
+      ConditionalBranch([12, "@time == 330"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time == 240"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time == 180"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time == 90"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[2])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[2])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time == 30"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[1])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[1])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time <= 0"])
+        BreakLoop([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    RepeatAbove([])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+CommonEvent 77
+Name = "RabiBall"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Script(["@fighter = 64"])
+    Comment(["***********************"])
+    Script(["@id = @event_id"])
+    Script(["@x = $game_map.events[@id].x"])
+    ScriptMore(["@y = $game_map.events[@id].y "])
+    ScriptMore(["@xp = $game_player.x"])
+    ScriptMore(["@yp = $game_player.y"])
+    Script(["@xd = @x - @xp"])
+    ScriptMore(["@yd = @y - @yp"])
+    Comment(["***********************"])
+    Script(["@dir = $game_map.events[@fighter].direction "])
+    Script(["@time = 600"])
+    PlaySE(["RPG::SE(@name=\"Evasion1\", @pitch=100, @volume=80)"])
+    ConditionalBranch([12, "@dir == 2"])
+      ConditionalBranch([12, "@xd.abs <= 3"])
+        Script(["@dir = 2"])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@xd >= 0"])
+          Script(["@dir = 1"])
+          Empty([])
+        Else([])
+          Script(["@dir = 3"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["dirchange"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 4"])
+      ConditionalBranch([12, "@yd.abs <= 3"])
+        Script(["@dir = 4"])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@yd >= 0"])
+          Script(["@dir = 7"])
+          Empty([])
+        Else([])
+          Script(["@dir = 1"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["dirchange"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 6"])
+      ConditionalBranch([12, "@yd.abs <= 3"])
+        Script(["@dir = 6"])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@yd >= 0"])
+          Script(["@dir = 9"])
+          Empty([])
+        Else([])
+          Script(["@dir = 3"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["dirchange"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 8"])
+      ConditionalBranch([12, "@xd.abs <= 3"])
+        Script(["@dir = 8"])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@xd >= 0"])
+          Script(["@dir = 7"])
+          Empty([])
+        Else([])
+          Script(["@dir = 9"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["dirchange"])
+      Empty([])
+
+    BranchEnd([])
+    Label(["dirchange"])
+    ShowAnimation([0, 1, false])
+    Label(["speedonly"])
+    ConditionalBranch([12, "@dir == 1"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=5, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=5, @parameters=[])"])
+      Script(["@dirCH = [6,9,8]"])
+      ScriptMore(["@newDir = [3,9,7]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 2"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Script(["@dirCH = [9,8,7]"])
+      ScriptMore(["@newDir = [6,8,4]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 3"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=6, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=6, @parameters=[])"])
+      Script(["@dirCH = [8,7,4]"])
+      ScriptMore(["@newDir = [9,7,1]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 4"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Script(["@dirCH = [3,6,9]"])
+      ScriptMore(["@newDir = [2,6,8]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 6"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      Script(["@dirCH = [7,4,1]"])
+      ScriptMore(["@newDir = [8,4,2]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 7"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=7, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=7, @parameters=[])"])
+      Script(["@dirCH = [2,3,6]"])
+      ScriptMore(["@newDir = [1,3,9]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 8"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Script(["@dirCH = [1,2,3]"])
+      ScriptMore(["@newDir = [4,2,6]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 9"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=8, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=8, @parameters=[])"])
+      Script(["@dirCH = [4,1,2]"])
+      ScriptMore(["@newDir = [7,1,3]"])
+      Empty([])
+
+    BranchEnd([])
+    Loop([])
+      Comment(["######################"])
+      Script(["@reg = $game_map.events[@id].region_id"])
+      ConditionalBranch([12, "@dirCH.include?@reg"])
+        Script(["@dir = @reg"])
+        Script(["@i = 0"])
+        ScriptMore(["while @i <= 2"])
+        ScriptMore(["if @reg == @dirCH[@i]"])
+        ScriptMore(["@break = @i"])
+        ScriptMore(["break"])
+        ScriptMore(["end"])
+        ScriptMore(["@i += 1"])
+        ScriptMore(["end"])
+        ScriptMore(["@dir = @newDir[@break]"])
+        JumpToLabel(["dirchange"])
+        Empty([])
+      BranchEnd([])
+      Comment(["######################"])
+      Script(["@prex = $game_player.x"])
+      ScriptMore(["@prey = $game_player.y"])
+      Script(["@id = @event_id"])
+      ScriptMore(["@evix = $game_map.events[@id].x"])
+      ScriptMore(["@eviy = $game_map.events[@id].y"])
+      Script(["@dx = @prex - @evix"])
+      ScriptMore(["@dy = @prey - @eviy"])
+      Script(["@reg = $game_map.events[@id].region_id"])
+      ConditionalBranch([12, "@dx.abs <= 1.1 && @dy.abs <= 1.1"])
+        Script(["$game_map.events[@fighter].attack"])
+        BreakLoop([])
+        Empty([])
+      BranchEnd([])
+      Wait([2])
+      Script(["@time -= 2"])
+      ConditionalBranch([12, "@time == 330"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time == 240"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time == 180"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time == 90"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[2])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[2])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time == 30"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[1])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[1])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time <= 0"])
+        BreakLoop([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    RepeatAbove([])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+CommonEvent 78
+Name = "RabiBall"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Script(["@fighter = 64"])
+    Comment(["***********************"])
+    Script(["@id = @event_id"])
+    Script(["@x = $game_map.events[@id].x"])
+    ScriptMore(["@y = $game_map.events[@id].y "])
+    ScriptMore(["@xp = $game_player.x"])
+    ScriptMore(["@yp = $game_player.y"])
+    Script(["@xd = @x - @xp"])
+    ScriptMore(["@yd = @y - @yp"])
+    Comment(["***********************"])
+    Script(["@dir = $game_map.events[@fighter].direction "])
+    Script(["@time = 600"])
+    PlaySE(["RPG::SE(@name=\"Evasion1\", @pitch=100, @volume=80)"])
+    ConditionalBranch([12, "@dir == 2"])
+      ConditionalBranch([12, "@xd.abs <= 3"])
+        Script(["@dir = 2"])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@xd >= 0"])
+          Script(["@dir = 1"])
+          Empty([])
+        Else([])
+          Script(["@dir = 3"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["dirchange"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 4"])
+      ConditionalBranch([12, "@yd.abs <= 3"])
+        Script(["@dir = 4"])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@yd >= 0"])
+          Script(["@dir = 7"])
+          Empty([])
+        Else([])
+          Script(["@dir = 1"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["dirchange"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 6"])
+      ConditionalBranch([12, "@yd.abs <= 3"])
+        Script(["@dir = 6"])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@yd >= 0"])
+          Script(["@dir = 9"])
+          Empty([])
+        Else([])
+          Script(["@dir = 3"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["dirchange"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 8"])
+      ConditionalBranch([12, "@xd.abs <= 3"])
+        Script(["@dir = 8"])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@xd >= 0"])
+          Script(["@dir = 7"])
+          Empty([])
+        Else([])
+          Script(["@dir = 9"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["dirchange"])
+      Empty([])
+
+    BranchEnd([])
+    Label(["dirchange"])
+    ShowAnimation([0, 1, false])
+    Label(["speedonly"])
+    ConditionalBranch([12, "@dir == 1"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=5, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=5, @parameters=[])"])
+      Script(["@dirCH = [6,9,8]"])
+      ScriptMore(["@newDir = [3,9,7]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 2"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Script(["@dirCH = [9,8,7]"])
+      ScriptMore(["@newDir = [6,8,4]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 3"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=6, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=6, @parameters=[])"])
+      Script(["@dirCH = [8,7,4]"])
+      ScriptMore(["@newDir = [9,7,1]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 4"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Script(["@dirCH = [3,6,9]"])
+      ScriptMore(["@newDir = [2,6,8]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 6"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      Script(["@dirCH = [7,4,1]"])
+      ScriptMore(["@newDir = [8,4,2]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 7"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=7, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=7, @parameters=[])"])
+      Script(["@dirCH = [2,3,6]"])
+      ScriptMore(["@newDir = [1,3,9]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 8"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Script(["@dirCH = [1,2,3]"])
+      ScriptMore(["@newDir = [4,2,6]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 9"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=8, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=8, @parameters=[])"])
+      Script(["@dirCH = [4,1,2]"])
+      ScriptMore(["@newDir = [7,1,3]"])
+      Empty([])
+
+    BranchEnd([])
+    Loop([])
+      Comment(["######################"])
+      Script(["@reg = $game_map.events[@id].region_id"])
+      ConditionalBranch([12, "@dirCH.include?@reg"])
+        Script(["@dir = @reg"])
+        Script(["@i = 0"])
+        ScriptMore(["while @i <= 2"])
+        ScriptMore(["if @reg == @dirCH[@i]"])
+        ScriptMore(["@break = @i"])
+        ScriptMore(["break"])
+        ScriptMore(["end"])
+        ScriptMore(["@i += 1"])
+        ScriptMore(["end"])
+        ScriptMore(["@dir = @newDir[@break]"])
+        JumpToLabel(["dirchange"])
+        Empty([])
+      BranchEnd([])
+      Comment(["######################"])
+      Script(["@prex = $game_player.x"])
+      ScriptMore(["@prey = $game_player.y"])
+      Script(["@id = @event_id"])
+      ScriptMore(["@evix = $game_map.events[@id].x"])
+      ScriptMore(["@eviy = $game_map.events[@id].y"])
+      Script(["@dx = @prex - @evix"])
+      ScriptMore(["@dy = @prey - @eviy"])
+      Script(["@reg = $game_map.events[@id].region_id"])
+      ConditionalBranch([12, "@dx.abs <= 1.1 && @dy.abs <= 1.1"])
+        Script(["$game_map.events[@fighter].attack"])
+        BreakLoop([])
+        Empty([])
+      BranchEnd([])
+      Wait([2])
+      Script(["@time -= 2"])
+      ConditionalBranch([12, "@time == 330"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time == 240"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time == 180"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time == 90"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[2])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[2])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time == 30"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[1])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[1])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time <= 0"])
+        BreakLoop([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    RepeatAbove([])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+CommonEvent 79
+Name = "RabiBall"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Script(["@fighter = 64"])
+    Comment(["***********************"])
+    Script(["@id = @event_id"])
+    Script(["@x = $game_map.events[@id].x"])
+    ScriptMore(["@y = $game_map.events[@id].y "])
+    ScriptMore(["@xp = $game_player.x"])
+    ScriptMore(["@yp = $game_player.y"])
+    Script(["@xd = @x - @xp"])
+    ScriptMore(["@yd = @y - @yp"])
+    Comment(["***********************"])
+    Script(["@dir = $game_map.events[@fighter].direction "])
+    Script(["@time = 600"])
+    PlaySE(["RPG::SE(@name=\"Evasion1\", @pitch=100, @volume=80)"])
+    ConditionalBranch([12, "@dir == 2"])
+      ConditionalBranch([12, "@xd.abs <= 3"])
+        Script(["@dir = 2"])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@xd >= 0"])
+          Script(["@dir = 1"])
+          Empty([])
+        Else([])
+          Script(["@dir = 3"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["dirchange"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 4"])
+      ConditionalBranch([12, "@yd.abs <= 3"])
+        Script(["@dir = 4"])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@yd >= 0"])
+          Script(["@dir = 7"])
+          Empty([])
+        Else([])
+          Script(["@dir = 1"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["dirchange"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 6"])
+      ConditionalBranch([12, "@yd.abs <= 3"])
+        Script(["@dir = 6"])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@yd >= 0"])
+          Script(["@dir = 9"])
+          Empty([])
+        Else([])
+          Script(["@dir = 3"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["dirchange"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 8"])
+      ConditionalBranch([12, "@xd.abs <= 3"])
+        Script(["@dir = 8"])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@xd >= 0"])
+          Script(["@dir = 7"])
+          Empty([])
+        Else([])
+          Script(["@dir = 9"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["dirchange"])
+      Empty([])
+
+    BranchEnd([])
+    Label(["dirchange"])
+    ShowAnimation([0, 1, false])
+    Label(["speedonly"])
+    ConditionalBranch([12, "@dir == 1"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=5, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=5, @parameters=[])"])
+      Script(["@dirCH = [6,9,8]"])
+      ScriptMore(["@newDir = [3,9,7]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 2"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Script(["@dirCH = [9,8,7]"])
+      ScriptMore(["@newDir = [6,8,4]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 3"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=6, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=6, @parameters=[])"])
+      Script(["@dirCH = [8,7,4]"])
+      ScriptMore(["@newDir = [9,7,1]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 4"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Script(["@dirCH = [3,6,9]"])
+      ScriptMore(["@newDir = [2,6,8]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 6"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      Script(["@dirCH = [7,4,1]"])
+      ScriptMore(["@newDir = [8,4,2]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 7"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=7, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=7, @parameters=[])"])
+      Script(["@dirCH = [2,3,6]"])
+      ScriptMore(["@newDir = [1,3,9]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 8"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Script(["@dirCH = [1,2,3]"])
+      ScriptMore(["@newDir = [4,2,6]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 9"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=8, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=8, @parameters=[])"])
+      Script(["@dirCH = [4,1,2]"])
+      ScriptMore(["@newDir = [7,1,3]"])
+      Empty([])
+
+    BranchEnd([])
+    Loop([])
+      Comment(["######################"])
+      Script(["@reg = $game_map.events[@id].region_id"])
+      ConditionalBranch([12, "@dirCH.include?@reg"])
+        Script(["@dir = @reg"])
+        Script(["@i = 0"])
+        ScriptMore(["while @i <= 2"])
+        ScriptMore(["if @reg == @dirCH[@i]"])
+        ScriptMore(["@break = @i"])
+        ScriptMore(["break"])
+        ScriptMore(["end"])
+        ScriptMore(["@i += 1"])
+        ScriptMore(["end"])
+        ScriptMore(["@dir = @newDir[@break]"])
+        JumpToLabel(["dirchange"])
+        Empty([])
+      BranchEnd([])
+      Comment(["######################"])
+      Script(["@prex = $game_player.x"])
+      ScriptMore(["@prey = $game_player.y"])
+      Script(["@id = @event_id"])
+      ScriptMore(["@evix = $game_map.events[@id].x"])
+      ScriptMore(["@eviy = $game_map.events[@id].y"])
+      Script(["@dx = @prex - @evix"])
+      ScriptMore(["@dy = @prey - @eviy"])
+      Script(["@reg = $game_map.events[@id].region_id"])
+      ConditionalBranch([12, "@dx.abs <= 1.1 && @dy.abs <= 1.1"])
+        Script(["$game_map.events[@fighter].attack"])
+        BreakLoop([])
+        Empty([])
+      BranchEnd([])
+      Wait([2])
+      Script(["@time -= 2"])
+      ConditionalBranch([12, "@time == 330"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time == 240"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time == 180"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time == 90"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[2])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[2])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time == 30"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[1])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[1])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time <= 0"])
+        BreakLoop([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    RepeatAbove([])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+CommonEvent 80
+Name = "RabiBall"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Script(["@fighter = 64"])
+    Comment(["***********************"])
+    Script(["@id = @event_id"])
+    Script(["@x = $game_map.events[@id].x"])
+    ScriptMore(["@y = $game_map.events[@id].y "])
+    ScriptMore(["@xp = $game_player.x"])
+    ScriptMore(["@yp = $game_player.y"])
+    Script(["@xd = @x - @xp"])
+    ScriptMore(["@yd = @y - @yp"])
+    Comment(["***********************"])
+    Script(["@dir = $game_map.events[@fighter].direction "])
+    Script(["@time = 600"])
+    PlaySE(["RPG::SE(@name=\"Evasion1\", @pitch=100, @volume=80)"])
+    ConditionalBranch([12, "@dir == 2"])
+      ConditionalBranch([12, "@xd.abs <= 3"])
+        Script(["@dir = 2"])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@xd >= 0"])
+          Script(["@dir = 1"])
+          Empty([])
+        Else([])
+          Script(["@dir = 3"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["dirchange"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 4"])
+      ConditionalBranch([12, "@yd.abs <= 3"])
+        Script(["@dir = 4"])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@yd >= 0"])
+          Script(["@dir = 7"])
+          Empty([])
+        Else([])
+          Script(["@dir = 1"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["dirchange"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 6"])
+      ConditionalBranch([12, "@yd.abs <= 3"])
+        Script(["@dir = 6"])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@yd >= 0"])
+          Script(["@dir = 9"])
+          Empty([])
+        Else([])
+          Script(["@dir = 3"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["dirchange"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 8"])
+      ConditionalBranch([12, "@xd.abs <= 3"])
+        Script(["@dir = 8"])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@xd >= 0"])
+          Script(["@dir = 7"])
+          Empty([])
+        Else([])
+          Script(["@dir = 9"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["dirchange"])
+      Empty([])
+
+    BranchEnd([])
+    Label(["dirchange"])
+    ShowAnimation([0, 1, false])
+    Label(["speedonly"])
+    ConditionalBranch([12, "@dir == 1"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=5, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=5, @parameters=[])"])
+      Script(["@dirCH = [6,9,8]"])
+      ScriptMore(["@newDir = [3,9,7]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 2"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Script(["@dirCH = [9,8,7]"])
+      ScriptMore(["@newDir = [6,8,4]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 3"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=6, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=6, @parameters=[])"])
+      Script(["@dirCH = [8,7,4]"])
+      ScriptMore(["@newDir = [9,7,1]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 4"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Script(["@dirCH = [3,6,9]"])
+      ScriptMore(["@newDir = [2,6,8]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 6"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      Script(["@dirCH = [7,4,1]"])
+      ScriptMore(["@newDir = [8,4,2]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 7"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=7, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=7, @parameters=[])"])
+      Script(["@dirCH = [2,3,6]"])
+      ScriptMore(["@newDir = [1,3,9]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 8"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Script(["@dirCH = [1,2,3]"])
+      ScriptMore(["@newDir = [4,2,6]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 9"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=8, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=8, @parameters=[])"])
+      Script(["@dirCH = [4,1,2]"])
+      ScriptMore(["@newDir = [7,1,3]"])
+      Empty([])
+
+    BranchEnd([])
+    Loop([])
+      Comment(["######################"])
+      Script(["@reg = $game_map.events[@id].region_id"])
+      ConditionalBranch([12, "@dirCH.include?@reg"])
+        Script(["@dir = @reg"])
+        Script(["@i = 0"])
+        ScriptMore(["while @i <= 2"])
+        ScriptMore(["if @reg == @dirCH[@i]"])
+        ScriptMore(["@break = @i"])
+        ScriptMore(["break"])
+        ScriptMore(["end"])
+        ScriptMore(["@i += 1"])
+        ScriptMore(["end"])
+        ScriptMore(["@dir = @newDir[@break]"])
+        JumpToLabel(["dirchange"])
+        Empty([])
+      BranchEnd([])
+      Comment(["######################"])
+      Script(["@prex = $game_player.x"])
+      ScriptMore(["@prey = $game_player.y"])
+      Script(["@id = @event_id"])
+      ScriptMore(["@evix = $game_map.events[@id].x"])
+      ScriptMore(["@eviy = $game_map.events[@id].y"])
+      Script(["@dx = @prex - @evix"])
+      ScriptMore(["@dy = @prey - @eviy"])
+      Script(["@reg = $game_map.events[@id].region_id"])
+      ConditionalBranch([12, "@dx.abs <= 1.1 && @dy.abs <= 1.1"])
+        Script(["$game_map.events[@fighter].attack"])
+        BreakLoop([])
+        Empty([])
+      BranchEnd([])
+      Wait([2])
+      Script(["@time -= 2"])
+      ConditionalBranch([12, "@time == 330"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time == 240"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time == 180"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time == 90"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[2])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[2])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time == 30"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[1])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[1])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time <= 0"])
+        BreakLoop([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    RepeatAbove([])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+CommonEvent 81
+Name = "RabiBall"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Script(["@fighter = 64"])
+    Comment(["***********************"])
+    Script(["@id = @event_id"])
+    Script(["@x = $game_map.events[@id].x"])
+    ScriptMore(["@y = $game_map.events[@id].y "])
+    ScriptMore(["@xp = $game_player.x"])
+    ScriptMore(["@yp = $game_player.y"])
+    Script(["@xd = @x - @xp"])
+    ScriptMore(["@yd = @y - @yp"])
+    Comment(["***********************"])
+    Script(["@dir = $game_map.events[@fighter].direction "])
+    Script(["@time = 600"])
+    PlaySE(["RPG::SE(@name=\"Evasion1\", @pitch=100, @volume=80)"])
+    ConditionalBranch([12, "@dir == 2"])
+      ConditionalBranch([12, "@xd.abs <= 3"])
+        Script(["@dir = 2"])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@xd >= 0"])
+          Script(["@dir = 1"])
+          Empty([])
+        Else([])
+          Script(["@dir = 3"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["dirchange"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 4"])
+      ConditionalBranch([12, "@yd.abs <= 3"])
+        Script(["@dir = 4"])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@yd >= 0"])
+          Script(["@dir = 7"])
+          Empty([])
+        Else([])
+          Script(["@dir = 1"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["dirchange"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 6"])
+      ConditionalBranch([12, "@yd.abs <= 3"])
+        Script(["@dir = 6"])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@yd >= 0"])
+          Script(["@dir = 9"])
+          Empty([])
+        Else([])
+          Script(["@dir = 3"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["dirchange"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 8"])
+      ConditionalBranch([12, "@xd.abs <= 3"])
+        Script(["@dir = 8"])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@xd >= 0"])
+          Script(["@dir = 7"])
+          Empty([])
+        Else([])
+          Script(["@dir = 9"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["dirchange"])
+      Empty([])
+
+    BranchEnd([])
+    Label(["dirchange"])
+    ShowAnimation([0, 1, false])
+    Label(["speedonly"])
+    ConditionalBranch([12, "@dir == 1"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=5, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=5, @parameters=[])"])
+      Script(["@dirCH = [6,9,8]"])
+      ScriptMore(["@newDir = [3,9,7]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 2"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Script(["@dirCH = [9,8,7]"])
+      ScriptMore(["@newDir = [6,8,4]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 3"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=6, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=6, @parameters=[])"])
+      Script(["@dirCH = [8,7,4]"])
+      ScriptMore(["@newDir = [9,7,1]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 4"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Script(["@dirCH = [3,6,9]"])
+      ScriptMore(["@newDir = [2,6,8]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 6"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      Script(["@dirCH = [7,4,1]"])
+      ScriptMore(["@newDir = [8,4,2]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 7"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=7, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=7, @parameters=[])"])
+      Script(["@dirCH = [2,3,6]"])
+      ScriptMore(["@newDir = [1,3,9]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 8"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Script(["@dirCH = [1,2,3]"])
+      ScriptMore(["@newDir = [4,2,6]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@dir == 9"])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=true, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=8, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=8, @parameters=[])"])
+      Script(["@dirCH = [4,1,2]"])
+      ScriptMore(["@newDir = [7,1,3]"])
+      Empty([])
+
+    BranchEnd([])
+    Loop([])
+      Comment(["######################"])
+      Script(["@reg = $game_map.events[@id].region_id"])
+      ConditionalBranch([12, "@dirCH.include?@reg"])
+        Script(["@dir = @reg"])
+        Script(["@i = 0"])
+        ScriptMore(["while @i <= 2"])
+        ScriptMore(["if @reg == @dirCH[@i]"])
+        ScriptMore(["@break = @i"])
+        ScriptMore(["break"])
+        ScriptMore(["end"])
+        ScriptMore(["@i += 1"])
+        ScriptMore(["end"])
+        ScriptMore(["@dir = @newDir[@break]"])
+        JumpToLabel(["dirchange"])
+        Empty([])
+      BranchEnd([])
+      Comment(["######################"])
+      Script(["@prex = $game_player.x"])
+      ScriptMore(["@prey = $game_player.y"])
+      Script(["@id = @event_id"])
+      ScriptMore(["@evix = $game_map.events[@id].x"])
+      ScriptMore(["@eviy = $game_map.events[@id].y"])
+      Script(["@dx = @prex - @evix"])
+      ScriptMore(["@dy = @prey - @eviy"])
+      Script(["@reg = $game_map.events[@id].region_id"])
+      ConditionalBranch([12, "@dx.abs <= 1.1 && @dy.abs <= 1.1"])
+        Script(["$game_map.events[@fighter].attack"])
+        BreakLoop([])
+        Empty([])
+      BranchEnd([])
+      Wait([2])
+      Script(["@time -= 2"])
+      ConditionalBranch([12, "@time == 330"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time == 240"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time == 180"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time == 90"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[2])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[2])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time == 30"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[1])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[1])"])
+        JumpToLabel(["speedonly"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "@time <= 0"])
+        BreakLoop([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    RepeatAbove([])
+    ControlSelfSwitch(["A", 1])
+    Empty([])

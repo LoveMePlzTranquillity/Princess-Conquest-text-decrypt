@@ -1,0 +1,44 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 2
+Name = "TPtoDLC"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 500, 21, 15, 6, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "TPtoDLC"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 502, 26, 15, 6, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "FadeIn"
+
+  Page 0
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 15
+Name = "DLC#1 Desc"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["DLC Package #2"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Content: DeLiCiously New Popular Companions II (in short, DLC NPCs)!"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Instructions: Click on the characters and they'll get sent to Dear's Progeny Box!"])
+    Empty([])

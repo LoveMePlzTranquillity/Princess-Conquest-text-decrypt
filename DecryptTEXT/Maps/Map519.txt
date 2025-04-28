@@ -1,0 +1,240 @@
+Display Name = ""
+Parallax Name = "RootBase"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "TPout"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 514, 25, 73, 2, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "TPout"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 514, 25, 73, 2, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "TPout"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 514, 25, 73, 2, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "Load"
+
+  Page 0
+    Comment(["reset Downroot CG"])
+    Script(["map_effects.clear"])
+    Script(["$game_self_switches[[520,7,\"B\"]] = true"])
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 5
+Name = "TPdown"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["There's seems to be a way down..."])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      Wait([10])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Rustle\\\\\\\", @pitch=100, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Rustle\\\", @pitch=100, @volume=80)\"])"])
+      Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+      PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+      FadeoutScreen([])
+      Wait([15])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+      ConditionalBranch([0, 800, 0])
+        ControlVariables([118, 118, 0, 0, 2])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 838, 0])
+        ControlVariables([118, 118, 0, 0, 0])
+        Empty([])
+      BranchEnd([])
+      TransferPlayer([0, 520, 8, 2, 8, 0])
+      Empty([])
+
+    When([1, "No"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 6
+Name = "DryadHuntress"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([0, 838, 0])
+      ShotBalloonIcon([0, 3, false])
+      Script(["n = \"DryadHuntress dial\""])
+      ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+      ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Dryad Huntress:"])
+      ShowText(["No monster to report about anymore..."])
+      Script(["n = \"DryadHuntress dial prey\""])
+      ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+      ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Dryad Huntress:"])
+      ShowText(["Good job down there,\\. human~!"])
+      ErasePicture([1])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 800, 0])
+      ShotBalloonIcon([0, 1, false])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+      Script(["n = \"DryadHuntress dial sad\""])
+      ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+      ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Dryad Huntress:"])
+      ShowText(["Watch out if you plan to go down,\\. Knight!!"])
+      Script(["n = \"DryadHuntress dial rage\""])
+      ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+      ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Dryad Huntress:"])
+      ShowText(["\\c[18]Monsters\\c[0] have appeared down there!\\.\\. Arm yourself and watch your back!"])
+      ErasePicture([1])
+      Empty([])
+
+    Else([])
+      ShotBalloonIcon([0, 7, false])
+      Wait([10])
+      Script(["n = \"DryadHuntress dial sad\""])
+      ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+      ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Dryad Huntress:"])
+      ShowText(["I've been assigned to guard this fort...\\.\\.\\."])
+      ShotBalloonIcon([0, 5, false])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+      Script(["n = \"DryadHuntress dial rage\""])
+      ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+      ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Dryad Huntress:"])
+      ShowText(["But there's nothing to guard here!\\.\\. Give me a target!!"])
+      ErasePicture([1])
+      Empty([])
+
+    BranchEnd([])
+    Label(["end"])
+    Empty([])
+
+CommonEvent 7
+Name = "Nip"
+
+  Page 0
+    Comment(["<always update>"])
+    PlaySE(["RPG::SE(@name=\"Rustle\", @pitch=120, @volume=90)"])
+    Script(["n = \"Nip dial\""])
+    ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+    ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Weird Turnip:"])
+    ShowText(["...\\.\\.\\. !!"])
+    ErasePicture([1])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The weird vegetable points its puny arms at the makeshift bed."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["It seems to be asking if you want to sleep in there."])
+    ConditionalBranch([12, "$game_actors[1].state?(161) == true || $game_actors[1].state?(162) == true || $game_actors[1].state?(163) == true"])
+      Comment(["Beast Knight - No Inns"])
+      ShotBalloonIcon([-1, 6, true])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["The \\c[18]Beast Knight\\c[0] Trait won't let you rest in Inns!"])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    ControlVariables([1191, 1191, 0, 0, 12])
+    CallCommonEvent([175])
+    ShowTextAttributes(["", 0, 0, 1])
+    ShowText(["Rest for \\v[1190] \\G?"])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      ConditionalBranch([1, 584, 1, 1190, 1])
+        Wait([15])
+        FadeoutScreen([])
+        Wait([15])
+        CallCommonEvent([745])
+        Wait([20])
+        ConditionalBranch([1, 628, 0, 1010, 0])
+          Comment(["Stranded ++"])
+          CallCommonEvent([65])
+          JumpToLabel(["end"])
+          Empty([])
+        BranchEnd([])
+        TransferPlayer([0, 519, 10, 11, 2, 0])
+        Script(["$game_map.sas_hud.refresh_bars"])
+        Wait([10])
+        FadeinScreen([])
+        JumpToLabel(["end"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["You don't have enough \\G!"])
+        JumpToLabel(["end"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    When([1, "No"])
+      PlaySE(["RPG::SE(@name=\"LeavesRustle\", @pitch=130, @volume=100)"])
+      ShotBalloonIcon([0, 7, false])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+      Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+      Script(["n = \"Nip dial rage\""])
+      ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+      ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Weird Turnip:"])
+      ShowText(["!!?"])
+      ErasePicture([1])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 8
+Name = "Worr"
+
+  Page 0
+    Comment(["<always update>"])
+    CallCommonEvent([474])
+    Empty([])

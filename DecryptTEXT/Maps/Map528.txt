@@ -1,0 +1,590 @@
+Display Name = ""
+Parallax Name = "BlackLanding"
+Note = "<tile lock parallax>\r\n"
+
+CommonEvent 1
+Name = "ChurchSign2"
+
+  Page 0
+    ShowTextAttributes(["", 0, 1, 2])
+    ShowText(["\"By her absolute Power, the Goddess has created a place out of the reach of Death and Famine.\""])
+    ShowTextAttributes(["", 0, 1, 2])
+    ShowText(["\"All despair abandon ye who enter here!\""])
+    Empty([])
+
+CommonEvent 2
+Name = "ChurchSign"
+
+  Page 0
+    ShowTextAttributes(["", 0, 1, 2])
+    ShowText(["\"Ahead lies the Black River, leave your sins and mortal belongings behind,\\. for you're entering a Reign of wonder.\""])
+    Empty([])
+
+CommonEvent 3
+Name = "Door"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The portal is currently closed."])
+    Wait([15])
+    ShotBalloonIcon([-1, 8, false])
+    Wait([10])
+    ShowTextAttributes(["Hero", 0, 1, 2])
+    ShowText(["...\\.\\.\\. is there an easier way to get here?"])
+    Empty([])
+
+CommonEvent 4
+Name = "OfferBowl"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 1, 2])
+    ShowText(["Drop your belongings in the Bowl of Greed to be allowed in Shadow Reign."])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Drop everything in here?"])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      ControlSwitches([2848, 2848, 0])
+      CallCommonEvent([3])
+      Empty([])
+
+    When([1, "No"])
+      ShowTextAttributes(["Hero", 0, 1, 2])
+      ShowText(["This is not the time...\\.\\.\\. yet."])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Get your stuff back?"])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      ControlSwitches([2848, 2848, 1])
+      ControlSwitches([2849, 2849, 0])
+      CallCommonEvent([3])
+      ControlSwitches([2849, 2849, 1])
+      Empty([])
+
+    When([1, "No"])
+      ShowTextAttributes(["Hero", 0, 1, 2])
+      ShowText(["The shadow calls me..."])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 1, 2])
+    ShowText(["Drop your belongings in the Bowl of Greed to be allowed in Shadow Reign."])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 1, 2])
+    ShowText(["A bit too late for that..."])
+    Empty([])
+
+CommonEvent 5
+Name = "DanceNun1"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["@n = \"Nun dial glad\""])
+    Script(["$game_map.screen.pictures[1].show("])
+    ScriptMore(["@n, 0, 0, 0, 100, 100, 255, 0)"])
+    ShowTextAttributes(["", 3, 2, 2])
+    ShowText(["Dancing Nun:"])
+    ShowText(["Leave it behind! Leave it behind! If you can't use it, leave it behind~!"])
+    ErasePicture([1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "NunGate"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["@n = \"Nun dial\""])
+    Script(["$game_map.screen.pictures[1].show("])
+    ScriptMore(["@n, 0, 0, 0, 100, 100, 255, 0)"])
+    ShowTextAttributes(["", 3, 2, 2])
+    ShowText(["Nun:"])
+    ShowText(["Ahead lies a life without death,\\. hunger,\\. or sickness...\\.\\.\\."])
+    ShotBalloonIcon([0, 4, false])
+    Script(["@n = \"Nun dial vision\""])
+    Script(["$game_map.screen.pictures[1].show("])
+    ScriptMore(["@n, 0, 0, 0, 100, 100, 255, 0)"])
+    ShowTextAttributes(["", 3, 2, 2])
+    ShowText(["Nun:"])
+    ShowText(["The Goddess sure loves us very much!!\\.\\. She even prepared these \\i[1434] Angel Cakes for you!"])
+    Script(["@n = \"Nun dial\""])
+    Script(["$game_map.screen.pictures[1].show("])
+    ScriptMore(["@n, 0, 0, 0, 100, 100, 255, 0)"])
+    ShowTextAttributes(["", 3, 2, 2])
+    ShowText(["Nun:"])
+    ShowText(["Provided...\\.\\.\\. you leave an offer for our Church~"])
+    ErasePicture([1])
+    Script(["$PU_AUTOMATIC_POPUP = false"])
+    ChangeGold([1, 0, 99999])
+    ChangeGold([0, 1, 584])
+    Script(["$PU_AUTOMATIC_POPUP = true"])
+    ControlVariables([617, 617, 0, 3, 7, 2, 0])
+    ShopProcessing([0, 481, 0, 0, true])
+    ControlVariables([618, 618, 0, 3, 7, 2, 0])
+    ControlVariables([585, 585, 0, 1, 618])
+    ControlVariables([585, 585, 2, 1, 617])
+    ControlSwitches([648, 648, 0])
+    Wait([45])
+    Script(["@n = \"Nun dial vision\""])
+    Script(["$game_map.screen.pictures[1].show("])
+    ScriptMore(["@n, 0, 0, 0, 100, 100, 255, 0)"])
+    ShowTextAttributes(["", 3, 2, 2])
+    ShowText(["Nun:"])
+    ShowText(["May the Goddess smile upon you."])
+    ErasePicture([1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "NunGate"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["@n = \"Nun dial\""])
+    Script(["$game_map.screen.pictures[1].show("])
+    ScriptMore(["@n, 0, 0, 0, 100, 100, 255, 0)"])
+    ShowTextAttributes(["", 3, 2, 2])
+    ShowText(["Nun:"])
+    ShowText(["Drop your belongings in the bowl by the altar,\\. you won't be needing those where you're going."])
+    ErasePicture([1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "Indolent1"
+
+  Page 0
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1278])
+    CallCommonEvent([988])
+    Empty([])
+
+CommonEvent 9
+Name = "Indolent2"
+
+  Page 0
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1279])
+    CallCommonEvent([988])
+    Empty([])
+
+CommonEvent 10
+Name = "Indolent3"
+
+  Page 0
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1280])
+    CallCommonEvent([988])
+    Empty([])
+
+CommonEvent 11
+Name = "Indolent4"
+
+  Page 0
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1281])
+    CallCommonEvent([988])
+    Empty([])
+
+CommonEvent 12
+Name = "DanceNun2"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["@n = \"Nun dial glad\""])
+    Script(["$game_map.screen.pictures[1].show("])
+    ScriptMore(["@n, 0, 0, 0, 100, 100, 255, 0)"])
+    ShowTextAttributes(["", 3, 2, 2])
+    ShowText(["Dancing Nun:"])
+    ShowText(["Leave it behind! Leave it behind! If you can't use it, leave it behind~!"])
+    ErasePicture([1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 13
+Name = "FadeIn"
+
+  Page 0
+    ControlVariables([3452, 3452, 0, 0, 4])
+    ConditionalBranch([0, 2816, 0])
+      PlayBGM(["RPG::BGM(@name=\"P&C - Town (Destroyed)\", @volume=90, @pitch=100)"])
+      ControlVariables([3452, 3452, 0, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 413, 1])
+      ControlVariables([850, 850, 0, 0, 1])
+      ControlVariables([848, 848, 0, 0, 1])
+      ControlVariables([849, 849, 0, 0, 1])
+      TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+      Empty([])
+
+    Else([])
+      ControlVariables([850, 850, 0, 0, 2])
+      ControlVariables([848, 848, 0, 0, 2])
+      ControlVariables([849, 849, 0, 0, 2])
+      TintScreen(["Tone(@red=-17.0, @green=-17.0, @blue=0.0, @gray=17.0)", 1, true])
+      Empty([])
+
+    BranchEnd([])
+    CallCommonEvent([543])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+    Comment(["------------------------------"])
+    Comment(["weather(8, 5 \"Confetti_01\") #Confetti RND"])
+    Script(["weather(8, 5, \"Confetti_01\") #Confetti RND"])
+    ConditionalBranch([0, 4600, 0])
+      ControlSelfSwitch(["A", 0])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Label(["end"])
+    Empty([])
+
+  Page 1
+    CallCommonEvent([686])
+    ControlSwitches([2848, 2848, 1])
+    ControlSwitches([2849, 2849, 0])
+    CallCommonEvent([3])
+    ControlSwitches([2849, 2849, 1])
+    ControlSwitches([4600, 4600, 1])
+    Wait([30])
+    Script(["$game_player.refresh"])
+    FadeinScreen([])
+    Wait([10])
+    ConditionalBranch([12, "objective_active?(115,0)"])
+      ShotBalloonIcon([-1, 1, false])
+      Wait([10])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["!!!"])
+      Wait([30])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=true, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=24, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[20])\", \"RPG::MoveCommand(@code=24, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+      Unnamed(["RPG::MoveCommand(@code=24, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[20])"])
+      Unnamed(["RPG::MoveCommand(@code=24, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You're back outside?!\\.\\. You're back...\\.\\.\\. \"before\"?!"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["It means breaking that turtle did the trick?\\.\\. If that's the case...\\.\\.\\."])
+      Wait([15])
+      ShotBalloonIcon([-1, 1, false])
+      Wait([10])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      Wait([20])
+      Script(["complete_objective(115, 0)"])
+      ScriptMore(["reveal_objective(115, 1)"])
+      ScriptMore(["call_quest_journal(115)"])
+      Wait([20])
+      ShowTextAttributes(["Hero", 0, 1, 2])
+      ShowText(["I HAVE to help the Princess leave her Reign!"])
+      Empty([])
+
+    BranchEnd([])
+    EraseEvent([])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ConditionalBranch([0, 2848, 0])
+      ShowTextAttributes(["Hero", 0, 1, 2])
+      ShowText(["All my stuff is back in there.\\.\\. I should head to the Shadow Reign now..."])
+      Wait([15])
+      TransferPlayer([0, 528, 37, 12, 4, 0])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 319, 8, 52, 6, 0])
+    Label(["end"])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ConditionalBranch([0, 2848, 0])
+      ShowTextAttributes(["Hero", 0, 1, 2])
+      ShowText(["All my stuff is back in there.\\.\\. I should head to the Shadow Reign now..."])
+      Wait([15])
+      TransferPlayer([0, 528, 37, 12, 4, 0])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 319, 8, 52, 6, 0])
+    Label(["end"])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ConditionalBranch([0, 2848, 0])
+      ShowTextAttributes(["Hero", 0, 1, 2])
+      ShowText(["All my stuff is back in there.\\.\\. I should head to the Shadow Reign now..."])
+      Wait([15])
+      TransferPlayer([0, 528, 37, 12, 4, 0])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 319, 8, 52, 6, 0])
+    Label(["end"])
+    Empty([])
+
+CommonEvent 17
+Name = "PieSmoke"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 18
+Name = "TP"
+
+  Page 0
+    Loop([])
+      ConditionalBranch([12, "$game_player.x < 5"])
+        BreakLoop([])
+        Empty([])
+      BranchEnd([])
+      Wait([20])
+      Empty([])
+
+    RepeatAbove([])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Script(["@n = \"GuardianNun dial glad\""])
+    Script(["$game_map.screen.pictures[1].show("])
+    ScriptMore(["@n, 0, 0, 0, 100, 100, 255, 0)"])
+    ShowTextAttributes(["", 3, 2, 2])
+    ShowText(["Dragon Nun:"])
+    ShowText(["You won't be needing all that where you're heading..."])
+    ShotBalloonIcon([23, 1, false])
+    Script(["@n = \"GuardianNun dial rage\""])
+    Script(["$game_map.screen.pictures[1].show("])
+    ScriptMore(["@n, 0, 0, 0, 100, 100, 255, 0)"])
+    ShowTextAttributes(["", 3, 2, 2])
+    ShowText(["Dragon Nun:"])
+    ShowText(["Drop everything by the altar if you want to proceed!!"])
+    ErasePicture([1])
+    TransferPlayer([0, 528, 5, 12, 6, 0])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 19
+Name = "ShaDummy"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ShowTextAttributes(["", 0, 1, 2])
+      ShowText(["This is a \\c[18]Shadow Dummy\\c[0]!"])
+      ShowTextAttributes(["", 0, 1, 2])
+      ShowText(["Check it daily for new Shadow Progeny to look at before they're released!"])
+      Empty([])
+
+    BranchEnd([])
+    Script(["$game_variables[3368][17] = [0,1,2,3,4,5,6,7,8,13,15,16].sample"])
+    Comment(["####################"])
+    Label(["back"])
+    ControlSwitches([2412, 2412, 0])
+    ControlVariables([2097, 2097, 0, 0, 1268])
+    ControlVariables([2051, 2051, 0, 0, 66])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Shadow Dummy:"])
+    ShowText(["..."])
+    CallCommonEvent([559])
+    Comment(["###########"])
+    ControlVariables([2051, 2051, 0, 0, 1])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Shadow Dummy:"])
+    ShowText(["...\\.\\.\\. !?\\.\\. Why am I here?\\.\\. ..."])
+    CallCommonEvent([559])
+    Comment(["###########"])
+    ControlSwitches([2412, 2412, 1])
+    Comment(["ReRand"])
+    ControlSwitches([2412, 2412, 0])
+    ControlVariables([2100, 2100, 0, 0, 1268])
+    CallCommonEvent([93])
+    Script(["if $game_variables[3368][1] == 0"])
+    ScriptMore([" $game_variables[3368][28] = [0,0,0,0,0,0,0,0,0,1].sample"])
+    ScriptMore(["else"])
+    ScriptMore([" $game_variables[3368][28] = 0"])
+    ScriptMore(["end"])
+    ControlSwitches([2412, 2412, 1])
+    ShowAnimation([0, 238, false])
+    Wait([5])
+    CallCommonEvent([549])
+    Comment(["###################"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 530, 28, 62, 4, 0])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 530, 28, 62, 4, 0])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 530, 28, 62, 4, 0])
+    Empty([])
+
+CommonEvent 23
+Name = "DraNun"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["@n = \"GuardianNun dial glad\""])
+    Script(["$game_map.screen.pictures[1].show("])
+    ScriptMore(["@n, 0, 0, 0, 100, 100, 255, 0)"])
+    ShowTextAttributes(["", 3, 2, 2])
+    ShowText(["Dragon Nun:"])
+    ShowText(["You won't be needing all that where you're heading..."])
+    ShotBalloonIcon([0, 1, false])
+    Script(["@n = \"GuardianNun dial rage\""])
+    Script(["$game_map.screen.pictures[1].show("])
+    ScriptMore(["@n, 0, 0, 0, 100, 100, 255, 0)"])
+    ShowTextAttributes(["", 3, 2, 2])
+    ShowText(["Dragon Nun:"])
+    ShowText(["Drop everything by the altar if you want to proceed!!"])
+    ErasePicture([1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 24
+Name = "Jar"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Plant the \\i[830] Buddy's Bud in here?"])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      ChangeItems([379, 1, 0, 1])
+      Comment(["### SELF SW A OFF ALL JARS ###"])
+      ControlVariables([3920, 3920, 0, 0, 1])
+      CallCommonEvent([159])
+      ControlVariables([3920, 3920, 0, 0, 0])
+      Comment(["### ### ### ### ### ### ### "])
+      ControlSelfSwitch(["A", 0])
+      Wait([15])
+      ShotBalloonIcon([-1, 8, true])
+      Wait([15])
+      Script(["complete_objective(103,0)"])
+      ScriptMore(["call_quest_journal(103)"])
+      Empty([])
+
+    When([1, "No"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 25
+Name = "DraNun"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["@n = \"GuardianNun dial glad\""])
+    Script(["$game_map.screen.pictures[1].show("])
+    ScriptMore(["@n, 0, 0, 0, 100, 100, 255, 0)"])
+    ShowTextAttributes(["", 3, 2, 2])
+    ShowText(["Dragon Nun:"])
+    ShowText(["You've dropped everything?\\.\\. Good for you!\\.\\. You don't need all that stuff."])
+    ShowTextAttributes(["", 3, 2, 2])
+    ShowText(["Dragon Nun:"])
+    ShowText(["You can proceed now,\\. Goddess be with you."])
+    ErasePicture([1])
+    Empty([])
+
+  Page 1
+    Empty([])
