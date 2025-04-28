@@ -1,0 +1,7 @@
+CommonEvent 970
+Name = "Amelie Recover"
+
+  Wait([600])
+  ControlSwitches([3786, 3786, 1])
+  CallCommonEvent([969])
+  Empty([])

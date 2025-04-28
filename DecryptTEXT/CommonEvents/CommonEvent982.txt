@@ -1,0 +1,7 @@
+CommonEvent 982
+Name = "Candy Bar use"
+
+  ControlVariables([585, 585, 0, 0, 2000])
+  ControlSwitches([648, 648, 0])
+  Wait([40])
+  Empty([])

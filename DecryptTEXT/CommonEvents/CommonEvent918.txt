@@ -1,0 +1,102 @@
+CommonEvent 918
+Name = "Rnd Bir P"
+
+  Script(["@prog = 4019"])
+  ConditionalBranch([0, 3422, 1])
+    Script(["$game_variables[@prog][0] = 19"])
+    Empty([])
+
+  Else([])
+    Script(["$game_variables[@prog][0] = 0"])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["* babby sex *"])
+  Script(["$game_variables[@prog][1] = 0"])
+  Comment(["* babby bodyT *"])
+  Script(["$game_variables[@prog][3] = rand(5)"])
+  Comment(["* babby color *"])
+  Script(["$game_variables[@prog][4] = rand(7)"])
+  Comment(["* babby hairC*"])
+  Script(["$game_variables[@prog][5] = rand(8)"])
+  Comment(["* babby haircut*"])
+  Script(["$game_variables[@prog][7] = rand(7)"])
+  Comment(["* babby det Gla*"])
+  Script(["@r = rand(3)"])
+  ConditionalBranch([12, "@r > 0"])
+    Script(["@r = rand(3)"])
+    ConditionalBranch([12, "@r > 0"])
+      ConditionalBranch([12, "$game_variables[@prog][3] <= 2"])
+        Comment(["std/swl/par"])
+        Script(["$game_variables[@prog][6] = rand(3)"])
+        Empty([])
+
+      BranchEnd([])
+      ConditionalBranch([12, "$game_variables[@prog][3] == 3"])
+        Comment(["sec"])
+        Script(["$game_variables[@prog][6] = 1"])
+        Empty([])
+
+      BranchEnd([])
+      ConditionalBranch([12, "$game_variables[@prog][3] == 4"])
+        Comment(["swa"])
+        Script(["$game_variables[@prog][6] = 2"])
+        Empty([])
+
+      BranchEnd([])
+      ConditionalBranch([12, "$game_variables[@prog][3] == 5"])
+        Comment(["haw"])
+        Script(["$game_variables[@prog][6] = 3"])
+        Empty([])
+
+      BranchEnd([])
+      ConditionalBranch([12, "$game_variables[@prog][3] == 6"])
+        Comment(["fla"])
+        Script(["$game_variables[@prog][6] = 4"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      Script(["$game_variables[@prog][6] = rand(5)"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["* babby det Exp*"])
+  Script(["@r = rand(3)"])
+  ConditionalBranch([12, "@r > 0"])
+    Script(["@r = rand(3)"])
+    ConditionalBranch([12, "@r > 0"])
+      ConditionalBranch([12, "$game_variables[@prog][3] <= 4"])
+        Script(["$game_variables[@prog][11] ="])
+        ScriptMore(["$game_variables[@prog][3]"])
+        Empty([])
+
+      BranchEnd([])
+      ConditionalBranch([12, "$game_variables[@prog][3] >= 5"])
+        Script(["$game_variables[@prog][11] = rand(3)"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      Comment(["* babby exp*"])
+      Script(["$game_variables[@prog][11] = rand(6)"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 2730, 0])
+    ControlSwitches([2360, 2360, 1])
+    Empty([])
+
+  BranchEnd([])
+  Label(["sexch"])
+  Empty([])

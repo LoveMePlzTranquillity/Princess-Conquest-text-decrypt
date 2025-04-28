@@ -1,0 +1,38 @@
+CommonEvent 979
+Name = "Achi Queue"
+
+  ConditionalBranch([0, 3910, 0])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["Achi Strings"])
+  Script(["@v = 3903"])
+  ScriptMore(["while @v <= 3905"])
+  ScriptMore(["if $game_variables[@v] == 0"])
+  ScriptMore(["$game_variables[@v] = Array.new(60, 0)"])
+  ScriptMore(["end"])
+  ScriptMore(["@v += 1"])
+  ScriptMore(["end"])
+  ScriptMore(["if $game_variables[3914] == 0"])
+  ScriptMore(["$game_variables[3914] = Array.new(60, 0)"])
+  ScriptMore(["end"])
+  ConditionalBranch([0, 3907, 0])
+    Script(["@n = 0"])
+    Label(["achstr"])
+    ConditionalBranch([12, "$game_variables[3914][@n] == 0"])
+      Script(["$game_variables[3914][@n] = "])
+      ScriptMore(["$game_variables[3907]"])
+      Empty([])
+
+    Else([])
+      Script(["@n += 1"])
+      JumpToLabel(["achstr"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["end"])
+  Empty([])

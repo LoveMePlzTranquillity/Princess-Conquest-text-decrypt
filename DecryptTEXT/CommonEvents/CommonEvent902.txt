@@ -1,0 +1,38 @@
+CommonEvent 902
+Name = "Rnd Sli P"
+
+  Script(["@prog = 4003"])
+  ConditionalBranch([0, 3422, 1])
+    Script(["$game_variables[@prog][0] = 3"])
+    Empty([])
+
+  Else([])
+    Script(["$game_variables[@prog][0] = 0"])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["* babby sex *"])
+  Script(["$game_variables[@prog][1] = 0"])
+  Comment(["* babby UpBodyT *"])
+  Script(["$game_variables[@prog][3] = rand(3)"])
+  Comment(["* babby color *"])
+  Script(["$game_variables[@prog][4] = rand(4)"])
+  ConditionalBranch([12, "$game_variables[@prog][4] >= 1"])
+    Script(["$game_variables[@prog][4] = rand(4)"])
+    ConditionalBranch([12, "$game_variables[@prog][4] >= 1"])
+      Script(["$game_variables[@prog][4] = rand(4)"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["* babby det#1 Acc*"])
+  Script(["$game_variables[@prog][5] = rand(3)"])
+  Comment(["* babby det#2 Lower Body*"])
+  Script(["$game_variables[@prog][6] = rand(3)"])
+  Comment(["* babby det#3 hair*"])
+  Script(["$game_variables[@prog][7] = rand(5)"])
+  Comment(["* babby reg*"])
+  Script(["$game_variables[@prog][17] = 1"])
+  Empty([])

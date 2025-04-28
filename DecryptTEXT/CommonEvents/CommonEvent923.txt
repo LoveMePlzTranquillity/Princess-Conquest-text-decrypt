@@ -1,0 +1,38 @@
+CommonEvent 923
+Name = "Rnd Sha P"
+
+  Script(["@prog = 4031"])
+  ConditionalBranch([0, 3422, 1])
+    Script(["$game_variables[@prog][0] = 31"])
+    Empty([])
+
+  Else([])
+    Script(["$game_variables[@prog][0] = 0"])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["* babby sex *"])
+  Script(["$game_variables[@prog][1] = 0"])
+  Comment(["* babby bodyT *"])
+  Script(["$game_variables[@prog][3] = [0,2].sample"])
+  Comment(["* babby color *"])
+  Script(["$game_variables[@prog][4] = [0,1,2,3].sample"])
+  Comment(["* babby hairC*"])
+  Script(["$game_variables[@prog][6] = [0,1,2,3,4].sample"])
+  Comment(["* babby haircut*"])
+  Script(["$game_variables[@prog][7] = [0,2,3,5].sample"])
+  Comment(["* babby tatcol*"])
+  Script(["$game_variables[@prog][5] = [2,6].sample"])
+  Comment(["* babby ears*"])
+  Script(["$game_variables[@prog][11] = 0"])
+  Comment(["* babby exp*"])
+  Script(["$game_variables[@prog][12] = [0,3].sample"])
+  Comment(["* babby pierce*"])
+  Script(["$game_variables[@prog][13] = [0,1].sample"])
+  ConditionalBranch([0, 2730, 0])
+    ControlSwitches([2360, 2360, 1])
+    Empty([])
+
+  BranchEnd([])
+  Label(["sexch"])
+  Empty([])

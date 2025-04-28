@@ -1,0 +1,38 @@
+CommonEvent 938
+Name = "SkeProg to guests"
+
+  Script(["@prog = 2250"])
+  Script(["@guest = 3221"])
+  Label(["again"])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 6"])
+    ConditionalBranch([12, "$game_variables[@prog][17] != 0 && $game_variables[@prog][17] != 2 && $game_variables[@prog][17] != 4 && $game_variables[@prog][17] != 5"])
+      Script(["$game_variables[@guest] = "])
+      ScriptMore(["$game_variables[@prog]"])
+      Script(["@guest += 1"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Script(["@prog += 1"])
+  ConditionalBranch([12, "@prog <= 2750"])
+    ConditionalBranch([12, "@guest <= 3240"])
+      JumpToLabel(["again"])
+      Empty([])
+
+    Else([])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Else([])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  Label(["end"])
+  ControlSwitches([3782, 3782, 0])
+  Empty([])

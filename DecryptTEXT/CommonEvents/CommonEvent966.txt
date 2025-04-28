@@ -1,0 +1,38 @@
+CommonEvent 966
+Name = "Crusader Recover"
+
+  Wait([600])
+  ConditionalBranch([12, "$game_party.leader.class_id == 121"])
+    ControlSwitches([1739, 1739, 0])
+    PlaySE(["RPG::SE(@name=\"Saint3\", @pitch=100, @volume=80)"])
+    FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 5, true])
+    PlaySE(["RPG::SE(@name=\"Short Choir\", @pitch=100, @volume=80)"])
+    Script(["$game_variables[3861] = \"$CrusaderP\""])
+    ConditionalBranch([0, 3064, 0])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$Field%(4)\\\", 0])\", \"RPG::MoveCommand(@code=34, @parameters=[])\", \"RPG::MoveCommand(@code=31, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$Field%(4)\", 0])"])
+      Unnamed(["RPG::MoveCommand(@code=34, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=31, @parameters=[])"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "$game_party.leader.equips[5] == $data_armors[304]"])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$CrusaderPX1\\\", 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$CrusaderPX1\", 0])"])
+        Empty([])
+
+      Else([])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$CrusaderP\\\", 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$CrusaderP\", 0])"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([1739, 1739, 1])
+    Empty([])
+
+  BranchEnd([])
+  ControlSwitches([3751, 3751, 1])
+  Empty([])

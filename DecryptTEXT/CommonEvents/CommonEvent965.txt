@@ -1,0 +1,49 @@
+CommonEvent 965
+Name = "Crusader Icon"
+
+  JumpToLabel(["end"])
+  ConditionalBranch([12, "!$game_party.leader.equips[1].nil?"])
+    Script(["@sh = $game_party.leader.armors[0].atype_id"])
+    ConditionalBranch([12, "@sh == 5 || @sh == 6"])
+      Script(["@x = 277"])
+      ScriptMore(["@y = 33"])
+      Script(["@p = 51"])
+      Empty([])
+
+    Else([])
+      Script(["@x = 227"])
+      ScriptMore(["@y = 33"])
+      Script(["@p = 95"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Else([])
+    Script(["@x = 227"])
+    ScriptMore(["@y = 33"])
+    Script(["@p = 95"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 739, 0])
+    ConditionalBranch([12, "$game_party.leader.class_id == 121"])
+      ConditionalBranch([0, 3751, 1])
+        Script(["@n = \"CrusaderHUD\""])
+        Empty([])
+
+      Else([])
+        Script(["@n = \"NoCrusaderHUD\""])
+        Empty([])
+
+      BranchEnd([])
+      Script(["$game_map.screen.pictures[@p].show("])
+      ScriptMore(["@n, 0, @x, @y, 100, 100, 255, 0)"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["end"])
+  Empty([])

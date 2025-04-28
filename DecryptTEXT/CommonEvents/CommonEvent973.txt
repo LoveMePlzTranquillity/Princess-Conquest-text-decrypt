@@ -1,0 +1,20 @@
+CommonEvent 973
+Name = "Port Prep"
+
+  ConditionalBranch([0, 413, 0])
+    ConditionalBranch([0, 3814, 0])
+      Script(["@k = 50"])
+      CallCommonEvent([543])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 3815, 0])
+      Script(["@k = 51"])
+      CallCommonEvent([543])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

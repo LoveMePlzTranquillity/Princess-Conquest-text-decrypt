@@ -1,0 +1,70 @@
+CommonEvent 942
+Name = "Get Bone"
+
+  Script(["@r = rand(111)"])
+  ConditionalBranch([12, "@r <= 30"])
+    ChangeItems([303, 0, 0, 1])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([12, "@r <= 60"])
+      ChangeItems([302, 0, 0, 1])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "@r <= 75"])
+        ChangeItems([301, 0, 0, 1])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([12, "@r <= 85"])
+          ChangeItems([308, 0, 0, 1])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([12, "@r <= 95"])
+            ChangeItems([304, 0, 0, 1])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([12, "@r <= 100"])
+              ChangeItems([305, 0, 0, 1])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([12, "@r <= 105"])
+                ChangeItems([306, 0, 0, 1])
+                Empty([])
+
+              Else([])
+                ConditionalBranch([12, "@r <= 110"])
+                  ChangeItems([307, 0, 0, 1])
+                  Empty([])
+
+                Else([])
+                  ChangeItems([309, 0, 0, 1])
+                  Empty([])
+
+                BranchEnd([])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

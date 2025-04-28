@@ -1,0 +1,40 @@
+CommonEvent 931
+Name = "Narag-darkness"
+
+  ConditionalBranch([1, 3919, 0, 0, 2])
+    TintScreen(["Tone(@red=-17.0, @green=-17.0, @blue=-17.0, @gray=0.0)", 30, false])
+    ControlVariables([3919, 3919, 0, 0, 0])
+    JumpToLabel(["d"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 3919, 0, 1, 0])
+    TintScreen(["Tone(@red=-51.0, @green=-51.0, @blue=-51.0, @gray=51.0)", 30, false])
+    JumpToLabel(["d"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 3919, 0, 2, 0])
+    TintScreen(["Tone(@red=-85.0, @green=-85.0, @blue=-85.0, @gray=102.0)", 30, false])
+    JumpToLabel(["d"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 3919, 0, 3, 1])
+    ControlVariables([3919, 3919, 0, 0, 3])
+    TintScreen(["Tone(@red=-119.0, @green=-119.0, @blue=-119.0, @gray=153.0)", 30, false])
+    JumpToLabel(["d"])
+    Empty([])
+
+  BranchEnd([])
+  Label(["d"])
+  ConditionalBranch([1, 3919, 0, 1, 2])
+    ControlSwitches([3935, 3935, 0])
+    Empty([])
+
+  Else([])
+    ControlSwitches([3935, 3935, 1])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

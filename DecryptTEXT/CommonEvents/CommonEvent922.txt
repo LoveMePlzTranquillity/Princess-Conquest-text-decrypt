@@ -1,0 +1,30 @@
+CommonEvent 922
+Name = "Rnd Pla P"
+
+  Script(["@prog = 4030"])
+  ConditionalBranch([0, 3422, 1])
+    Script(["$game_variables[@prog][0] = 30"])
+    Empty([])
+
+  Else([])
+    Script(["$game_variables[@prog][0] = 0"])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["* babby sex *"])
+  Script(["$game_variables[@prog][1] = 0"])
+  Comment(["* babby bodyT *"])
+  Script(["$game_variables[@prog][3] = rand(2)"])
+  Comment(["* babby color *"])
+  Script(["$game_variables[@prog][4] = rand(5)"])
+  Comment(["* babby hairC*"])
+  Script(["$game_variables[@prog][6] = rand(5)"])
+  Comment(["* babby haircut*"])
+  Script(["$game_variables[@prog][7] = rand(7)"])
+  ConditionalBranch([0, 2730, 0])
+    ControlSwitches([2360, 2360, 1])
+    Empty([])
+
+  BranchEnd([])
+  Label(["sexch"])
+  Empty([])

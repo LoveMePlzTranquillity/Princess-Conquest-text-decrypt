@@ -1,0 +1,46 @@
+CommonEvent 964
+Name = "OutCath prep"
+
+  ControlVariables([2768, 2768, 0, 0, 10])
+  Script(["@k = 39"])
+  Script(["@i = 0"])
+  Script(["@savX = Array.new(50, 0)"])
+  ScriptMore(["@savY = Array.new(50, 0)"])
+  CallCommonEvent([543])
+  Label(["count"])
+  ConditionalBranch([1, 2768, 0, 1, 1])
+    Label(["again"])
+    ControlVariables([2062, 2062, 0, 2, 2, 52])
+    ControlVariables([2063, 2063, 0, 2, 9, 46])
+    GetLocationInfo([2949, 5, 1, 2062, 2063])
+    ConditionalBranch([12, "$game_variables[2949] == 5"])
+      Script(["@x = $game_variables[2062]"])
+      ScriptMore(["@y = $game_variables[2063]"])
+      ConditionalBranch([12, "@savX.include?@x"])
+        ConditionalBranch([12, "@savY.include?@y"])
+          JumpToLabel(["again"])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Script(["$game_map.events[@k].moveto(@x,@y)"])
+      ControlVariables([2768, 2768, 2, 0, 1])
+      Script(["@k += 1"])
+      Script(["@savX[@i] = @x"])
+      ScriptMore(["@savY[@i] = @y"])
+      Script(["@i += 1"])
+      JumpToLabel(["count"])
+      Empty([])
+
+    Else([])
+      JumpToLabel(["again"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["end"])
+  Empty([])

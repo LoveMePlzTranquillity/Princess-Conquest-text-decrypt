@@ -1,0 +1,21 @@
+CommonEvent 959
+Name = "Explosion"
+
+  ControlSwitches([3701, 3701, 0])
+  Wait([7])
+  ControlSwitches([3701, 3701, 0])
+  Wait([7])
+  ControlSwitches([3701, 3701, 0])
+  Wait([7])
+  ControlSwitches([3701, 3701, 0])
+  Wait([7])
+  ControlSwitches([3701, 3701, 0])
+  Wait([7])
+  ControlSwitches([3701, 3701, 0])
+  Wait([7])
+  ControlSwitches([3701, 3701, 0])
+  Wait([7])
+  ControlVariables([2040, 2040, 0, 0, 0])
+  ControlSwitches([3701, 3701, 1])
+  ControlSwitches([3700, 3700, 1])
+  Empty([])

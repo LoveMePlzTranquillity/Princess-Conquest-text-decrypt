@@ -1,0 +1,21 @@
+CommonEvent 986
+Name = "TERROR"
+
+  ControlSwitches([3936, 3936, 0])
+  Wait([7])
+  ControlSwitches([3936, 3936, 0])
+  Wait([7])
+  ControlSwitches([3936, 3936, 0])
+  Wait([7])
+  ControlSwitches([3936, 3936, 0])
+  Wait([7])
+  ControlSwitches([3936, 3936, 0])
+  Wait([7])
+  ControlSwitches([3936, 3936, 0])
+  Wait([7])
+  ControlSwitches([3936, 3936, 0])
+  Wait([7])
+  ControlVariables([3442, 3442, 0, 0, 0])
+  ControlSwitches([3936, 3936, 1])
+  ControlSwitches([3793, 3793, 1])
+  Empty([])

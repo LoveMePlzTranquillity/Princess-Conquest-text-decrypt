@@ -1,0 +1,76 @@
+CommonEvent 941
+Name = "Sprite Revert"
+
+  ConditionalBranch([0, 2991, 0])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3064, 0])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ChangeActorGraphic([1, "$protag", 0, "Hero", 0])
+  ConditionalBranch([4, 1, 5, 230])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$protagPumpkin\\\", 0])\", \"RPG::MoveCommand(@code=34, @parameters=[])\", \"RPG::MoveCommand(@code=31, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$protagPumpkin\", 0])"])
+    Unnamed(["RPG::MoveCommand(@code=34, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=31, @parameters=[])"])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([4, 1, 5, 252])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$protagFish\\\", 0])\", \"RPG::MoveCommand(@code=34, @parameters=[])\", \"RPG::MoveCommand(@code=31, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$protagFish\", 0])"])
+      Unnamed(["RPG::MoveCommand(@code=34, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=31, @parameters=[])"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([4, 1, 5, 260])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$protagGob\\\", 0])\", \"RPG::MoveCommand(@code=34, @parameters=[])\", \"RPG::MoveCommand(@code=31, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$protagGob\", 0])"])
+        Unnamed(["RPG::MoveCommand(@code=34, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=31, @parameters=[])"])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([4, 1, 5, 229])
+          SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$protagNun\\\", 0])\", \"RPG::MoveCommand(@code=34, @parameters=[])\", \"RPG::MoveCommand(@code=31, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$protagNun\", 0])"])
+          Unnamed(["RPG::MoveCommand(@code=34, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=31, @parameters=[])"])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([4, 1, 5, 254])
+            SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$protagGas\\\", 0])\", \"RPG::MoveCommand(@code=34, @parameters=[])\", \"RPG::MoveCommand(@code=31, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+            Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$protagGas\", 0])"])
+            Unnamed(["RPG::MoveCommand(@code=34, @parameters=[])"])
+            Unnamed(["RPG::MoveCommand(@code=31, @parameters=[])"])
+            Empty([])
+
+          Else([])
+            SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$protag\\\", 0])\", \"RPG::MoveCommand(@code=34, @parameters=[])\", \"RPG::MoveCommand(@code=31, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+            Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$protag\", 0])"])
+            Unnamed(["RPG::MoveCommand(@code=34, @parameters=[])"])
+            Unnamed(["RPG::MoveCommand(@code=31, @parameters=[])"])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  CallCommonEvent([898])
+  Label(["end"])
+  Empty([])

@@ -1,0 +1,114 @@
+CommonEvent 937
+Name = "Royal Family?"
+
+  Script(["@race = $game_variables[3900]"])
+  ControlSwitches([3858, 3858, 1])
+  ConditionalBranch([12, "$game_variables[114].include? \"Heir\""])
+    Comment(["Heir Skill"])
+    ControlSwitches([3858, 3858, 0])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  Script(["@n = 0"])
+  Label(["again"])
+  Script(["@ac = $game_party.members[@n].id"])
+  ConditionalBranch([12, "@ac >= 35 && @ac <= 39"])
+    Script(["@nam = $game_actors[@ac].name"])
+    Script(["@prog = 2250"])
+    Label(["checkname"])
+    ConditionalBranch([12, "$game_variables[@prog][2] == @nam"])
+      Empty([])
+
+    Else([])
+      Script(["@prog += 1"])
+      JumpToLabel(["checkname"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@race == 0"])
+      Comment(["LF any Princess"])
+      ConditionalBranch([12, "$game_variables[@prog][19] == 2"])
+        JumpToLabel(["royal"])
+        Empty([])
+
+      BranchEnd([])
+      ConditionalBranch([12, "$game_variables[@prog][0] == 18  && $game_variables[@prog][17] == 9"])
+        Comment(["mermaids no regalia -> nun"])
+        JumpToLabel(["royal"])
+        Empty([])
+
+      BranchEnd([])
+      ConditionalBranch([12, "$game_variables[@prog][17] == 1"])
+        Comment(["royal get"])
+        JumpToLabel(["royal"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "$game_variables[@prog][0] == @race && $game_variables[@prog][19] == 2"])
+        JumpToLabel(["royal"])
+        Empty([])
+
+      BranchEnd([])
+      ConditionalBranch([12, "$game_variables[@prog][0] == @race && $game_variables[@prog][0] == 18  && $game_variables[@prog][17] == 9"])
+        Comment(["mermaids no regalia -> nun"])
+        JumpToLabel(["royal"])
+        Empty([])
+
+      BranchEnd([])
+      ConditionalBranch([12, "$game_variables[@prog][0] == @race && $game_variables[@prog][17] == 1"])
+        Label(["royal"])
+        Comment(["royal get"])
+        ControlSwitches([3858, 3858, 0])
+        JumpToLabel(["end"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Script(["@n += 1"])
+    ConditionalBranch([12, "@n >= 4"])
+      BreakLoop([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@n >= $game_party.members.size"])
+      BreakLoop([])
+      Empty([])
+
+    BranchEnd([])
+    JumpToLabel(["again"])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([12, "@race == 0"])
+      ConditionalBranch([12, "@ac != 1"])
+        Comment(["Princess in team"])
+        JumpToLabel(["royal"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Script(["@n += 1"])
+    ConditionalBranch([12, "@n >= 4"])
+      BreakLoop([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@n >= $game_party.members.size"])
+      BreakLoop([])
+      Empty([])
+
+    BranchEnd([])
+    JumpToLabel(["again"])
+    Empty([])
+
+  BranchEnd([])
+  Label(["end"])
+  Empty([])

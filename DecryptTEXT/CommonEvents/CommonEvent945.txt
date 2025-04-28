@@ -1,0 +1,112 @@
+CommonEvent 945
+Name = "Check OK necro"
+
+  ConditionalBranch([12, "$game_variables[1881][0] != 0 && $game_variables[1881][1] != 0 && $game_variables[2947][2] != 0 && $game_variables[2947][2] != \"\""])
+    Empty([])
+
+  Else([])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["Got Head/Rib/Name"])
+  Script(["@horns = 0"])
+  Script(["@arms = 0"])
+  Script(["@xbone = 0"])
+  Comment(["Arm #"])
+  Script(["@n = 2"])
+  Label(["armmore"])
+  ConditionalBranch([12, "$game_variables[1881][@n] == \"Skeletal Arm\""])
+    ConditionalBranch([12, "@n >= 3"])
+      Script(["@arms += 1"])
+      Empty([])
+
+    Else([])
+      Script(["@xbone += 0.5"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Script(["@n += 1"])
+  ConditionalBranch([12, "@n < 7"])
+    JumpToLabel(["armmore"])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["Horn #"])
+  Script(["@n = 2"])
+  Label(["hornmore"])
+  ConditionalBranch([12, "$game_variables[1881][@n] == \"Bone Horn\""])
+    ConditionalBranch([12, "@n == 3 || @n == 5"])
+      Script(["@horns += 2"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "@n >= 3"])
+        Script(["@horns += 1"])
+        Empty([])
+
+      Else([])
+        Script(["@xbone += 0.5"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Script(["@n += 1"])
+  ConditionalBranch([12, "@n < 7"])
+    JumpToLabel(["hornmore"])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["XBone #"])
+  Script(["@n = 2"])
+  Label(["xbmore"])
+  ConditionalBranch([12, "$game_variables[1881][@n] == \"Extra Bone\""])
+    ConditionalBranch([12, "@n == 3 || @n == 5"])
+      Script(["@horns += 0.5"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "@n >= 3"])
+        Script(["@arms += 0.5"])
+        Empty([])
+
+      Else([])
+        Script(["@xbone += 1"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Script(["@n += 1"])
+  ConditionalBranch([12, "@n < 7"])
+    JumpToLabel(["xbmore"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@arms >= 2"])
+    Empty([])
+
+  Else([])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["NECROMANCY!"])
+  ControlSwitches([3720, 3720, 0])
+  Script(["$game_variables[1881][18] = @arms"])
+  ScriptMore(["$game_variables[1881][19] = @horns"])
+  ScriptMore(["$game_variables[1881][20] = @xbone"])
+  Label(["end"])
+  Empty([])

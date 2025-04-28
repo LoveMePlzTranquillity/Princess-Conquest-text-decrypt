@@ -1,0 +1,16 @@
+CommonEvent 939
+Name = "Cathedral End Prep"
+
+  Script(["@k = 92"])
+  Loop([])
+    CallCommonEvent([543])
+    Script(["@k += 1"])
+    ConditionalBranch([12, "@k > 111"])
+      BreakLoop([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  RepeatAbove([])
+  Empty([])

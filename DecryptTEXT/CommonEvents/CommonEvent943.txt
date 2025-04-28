@@ -1,0 +1,12 @@
+CommonEvent 943
+Name = "Bone #"
+
+  Label(["moreb"])
+  CallCommonEvent([942])
+  Script(["@r = rand(3)"])
+  ConditionalBranch([12, "@r > 1"])
+    JumpToLabel(["moreb"])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])
