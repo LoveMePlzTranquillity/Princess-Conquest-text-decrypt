@@ -1,0 +1,505 @@
+Display Name = ""
+Parallax Name = "HumbleKobold"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "Load"
+
+  Page 0
+    ConditionalBranch([12, "$game_self_switches[[408,3,\"A\"]] == false"])
+      Script(["$game_self_switches[[408,11,\"B\"]] = true"])
+      Empty([])
+
+    Else([])
+      Script(["$game_self_switches[[408,11,\"B\"]] = false"])
+      Empty([])
+
+    BranchEnd([])
+    ControlVariables([849, 849, 0, 0, 1])
+    ConditionalBranch([0, 413, 0])
+      Script(["$game_map.events[11].moveto(24.5,7)"])
+      SetEventLocation([3, 0, 23, 6, 2])
+      ConditionalBranch([12, "$game_variables[3288][0] != 0"])
+        CallCommonEvent([543])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      Script(["@r = rand(4)"])
+      ConditionalBranch([12, "@r < 1"])
+        SetEventLocation([3, 0, 5, 5, 2])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@r < 2"])
+          SetEventLocation([3, 0, 22, 7, 8])
+          Empty([])
+        Else([])
+          SetEventLocation([3, 0, 23, 10, 6])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 3
+Name = "Kheera"
+
+  Page 0
+    Comment(["<always update>"])
+    ControlSelfSwitch(["A", 0])
+    ShotBalloonIcon([0, 6, false])
+    ShowPicture([1, "Kheera dial scared", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Kheera:"])
+    ShowText(["I-\\.\\. I'm sorry,\\. Mister.\\.\\. I'll be with you in a moment for anything you'd ask of me!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Kheera:"])
+    ShowText(["I just n-\\.need to finish with the laundry first,\\. or the nobles will punish me...\\.\\.\\."])
+    ErasePicture([1])
+    ConditionalBranch([0, 3513, 0])
+      ShotBalloonIcon([0, 2, false])
+      ShowPicture([1, "Kheera dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Kheera:"])
+      ShowText(["O-\\.or maybe you're here for something else,\\. kind Mister?"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Kheera:"])
+      ShowText(["T-\\.to see a human and a dragon s-\\.so close to each other...\\.\\.\\. maybe you'd like it...\\.\\.\\."])
+      ErasePicture([1])
+      ShopProcessing([2, 487, 1, 5000, true])
+      ShowPicture([1, "Kheera dial scared", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Kheera:"])
+      ShowText(["P-\\.please don't tell anyone I'm asking for \\G...!"])
+      ErasePicture([1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ConditionalBranch([2, "B", 1])
+      ControlSelfSwitch(["B", 0])
+      Script(["n = \"Kheera dial2 rage\""])
+      ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+      ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["???:"])
+      ShowText(["..."])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["???:"])
+      ShowText(["The way they treat us...\\.\\.\\. unforgivable."])
+      ErasePicture([1])
+      ShotBalloonIcon([0, 5, true])
+      Wait([15])
+      Script(["n = \"Kheera dial2 rage\""])
+      ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+      ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["???:"])
+      ShowText(["That Queen...\\.\\.\\. all those dragons...\\.\\.\\. the Princesses too!!\\.\\. I'll never forgive them."])
+      Script(["n = \"Kheera dial2\""])
+      ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+      ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["???:"])
+      ShowText(["I have no name anymore...\\.\\.\\. that was stripped from me long ago.\\.\\. Friends do call me the \\c[18]Ochre Pimpernel\\c[0]."])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Ochre:"])
+      ShowText(["Call me Ochre.\\.\\. We need all the help we can get to fuel our revolution...\\.\\.\\. starting from those \\i[626] \\G of you land people."])
+      ErasePicture([1])
+      Empty([])
+
+    Else([])
+      Script(["n = \"Kheera dial2\""])
+      ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+      ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Ochre:"])
+      ShowText(["See...\\.\\.\\. the \\c[18]Tearoom\\c[0] is within our reach...\\.\\.\\. and we like to treat our Princesses well..."])
+      ConditionalBranch([0, 486, 1])
+        Script(["n = \"Kheera dial2 rage\""])
+        ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+        ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Ochre:"])
+        ShowText(["You think some of them would like a \\c[18]Special Blend\\c[0]?"])
+        ErasePicture([1])
+        ShowChoices([["\\i[1125] Green Tea", "\\i[1126] Red Tea", "\\i[1127] Purple Tea"], 5])
+        When([0, "\\i[1125] Green Tea"])
+          ShotBalloonIcon([0, 8, false])
+          Script(["n = \"Kheera dial2\""])
+          ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+          ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+          ShowTextAttributes(["", 0, 2, 2])
+          ShowText(["Ochre:"])
+          ShowText(["Green,\\. calming.\\.\\. May the Tyrant and her Princesses rest soon,\\. as they deserve.\\.\\. And when they sleep,\\. we will act."])
+          ErasePicture([1])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["Serve \\i[1125] \\c[3]Green Tea\\c[0] at the next Tea Party for \\c[18]2000\\c[0] \\G?"])
+          ShowChoices([["Yes", "No"], 2])
+          When([0, "Yes"])
+            ConditionalBranch([1, 584, 0, 2000, 1])
+              SaveBGM([])
+              FadeoutBGM([3])
+              ControlVariables([585, 585, 0, 0, 0])
+              ControlVariables([585, 585, 2, 0, 2000])
+              ControlSwitches([648, 648, 0])
+              Wait([45])
+              ControlSwitches([486, 486, 0])
+              ControlVariables([4387, 4387, 0, 0, 1])
+              ShotBalloonIcon([0, 3, true])
+              Script(["n = \"Kheera dial2 rage\""])
+              ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+              ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+              ShowTextAttributes(["", 0, 2, 2])
+              ShowText(["Ochre:"])
+              ShowText(["Good...\\.\\.\\. *Nehehehe*~\\.\\. I'll get to brewing."])
+              ErasePicture([1])
+              Empty([])
+            Else([])
+              ShowTextAttributes(["", 0, 0, 2])
+              ShowText(["You don't have enough \\G!"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          When([1, "No"])
+            JumpToLabel(["refTea"])
+            Empty([])
+          ChoicesEnd([])
+          Empty([])
+        When([1, "\\i[1126] Red Tea"])
+          ShotBalloonIcon([0, 3, false])
+          Script(["n = \"Kheera dial2 rage\""])
+          ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+          ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+          ShowTextAttributes(["", 0, 2, 2])
+          ShowText(["Ochre:"])
+          ShowText(["Red as blood...\\.\\.\\. fitting for those murderers.\\.\\. They'll start bickering like they always do,\\. those fools!"])
+          ErasePicture([1])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["Serve \\i[1126] \\c[18]Red Tea\\c[0] at the next Tea Party for \\c[18]5000\\c[0] \\G?"])
+          ShowChoices([["Yes", "No"], 2])
+          When([0, "Yes"])
+            ConditionalBranch([1, 584, 0, 5000, 1])
+              SaveBGM([])
+              FadeoutBGM([3])
+              ControlVariables([585, 585, 0, 0, 0])
+              ControlVariables([585, 585, 2, 0, 5000])
+              ControlSwitches([648, 648, 0])
+              Wait([45])
+              ControlSwitches([486, 486, 0])
+              ControlVariables([4387, 4387, 0, 0, 2])
+              ShotBalloonIcon([0, 3, true])
+              Script(["n = \"Kheera dial2 rage\""])
+              ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+              ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+              ShowTextAttributes(["", 0, 2, 2])
+              ShowText(["Ochre:"])
+              ShowText(["Good...\\.\\.\\. *Nehehehe*~\\.\\. I'll get to brewing."])
+              ErasePicture([1])
+              Empty([])
+            Else([])
+              ShowTextAttributes(["", 0, 0, 2])
+              ShowText(["You don't have enough \\G!"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          When([1, "No"])
+            JumpToLabel(["refTea"])
+            Empty([])
+          ChoicesEnd([])
+          Empty([])
+        When([2, "\\i[1127] Purple Tea"])
+          ShotBalloonIcon([0, 1, false])
+          Script(["n = \"Kheera dial2 rage\""])
+          ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+          ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+          ShowTextAttributes(["", 0, 2, 2])
+          ShowText(["Ochre:"])
+          ShowText(["Oooo...\\.\\.\\. you think we should...?\\.\\. Well,\\. that's a costly blend,\\. with some irreversible effects..."])
+          ErasePicture([1])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["Serve \\i[1127] \\c[30]Purple Tea\\c[0] at the next Tea Party for \\c[18]50000\\c[0] \\G?"])
+          ShowChoices([["Yes", "No"], 2])
+          When([0, "Yes"])
+            ConditionalBranch([1, 584, 0, 50000, 1])
+              SaveBGM([])
+              FadeoutBGM([3])
+              ControlVariables([585, 585, 0, 0, 0])
+              ControlVariables([585, 585, 2, 0, 50000])
+              ControlSwitches([648, 648, 0])
+              Wait([45])
+              ControlSwitches([486, 486, 0])
+              ControlVariables([4387, 4387, 0, 0, 3])
+              ShotBalloonIcon([0, 3, true])
+              Script(["n = \"Kheera dial2 rage\""])
+              ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+              ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+              ShowTextAttributes(["", 0, 2, 2])
+              ShowText(["Ochre:"])
+              ShowText(["Good...\\.\\.\\. *Nehehehe*~\\.\\. I'll get to brewing."])
+              ErasePicture([1])
+              Empty([])
+            Else([])
+              ShowTextAttributes(["", 0, 0, 2])
+              ShowText(["You don't have enough \\G!"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          When([1, "No"])
+            JumpToLabel(["refTea"])
+            Empty([])
+          ChoicesEnd([])
+          Empty([])
+        WhenCancel([])
+          Label(["refTea"])
+          ShotBalloonIcon([0, 8, false])
+          Wait([10])
+          Script(["n = \"Kheera dial2\""])
+          ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+          ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+          ShowTextAttributes(["", 0, 2, 2])
+          ShowText(["Ochre:"])
+          ShowText(["Our revolution will happen.\\.\\. Whether you want it or not,\\. \\N[1]."])
+          ErasePicture([1])
+          Empty([])
+        ChoicesEnd([])
+        Empty([])
+      Else([])
+        ConditionalBranch([1, 4387, 0, 1, 0])
+          Script(["n = \"Kheera dial2\""])
+          ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+          ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+          ShowTextAttributes(["", 0, 2, 2])
+          ShowText(["Ochre:"])
+          ShowText(["The \\i[1125] Green Tea will be ready soon.\\.\\. We can't afford any misstep now,\\. let me do my job."])
+          ErasePicture([1])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([1, 4387, 0, 2, 0])
+          Script(["n = \"Kheera dial2\""])
+          ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+          ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+          ShowTextAttributes(["", 0, 2, 2])
+          ShowText(["Ochre:"])
+          ShowText(["The \\i[1126] Red Tea will be ready soon.\\.\\. We can't afford any misstep now,\\. let me do my job."])
+          ErasePicture([1])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([1, 4387, 0, 3, 0])
+          Script(["n = \"Kheera dial2 rage\""])
+          ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+          ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+          ShowTextAttributes(["", 0, 2, 2])
+          ShowText(["Ochre:"])
+          ShowText(["The \\i[1127] Purple Tea will be ready soon.\\.\\. We can't afford any misstep now,\\. let me do my job."])
+          ErasePicture([1])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 8
+Name = "Panties"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 9
+Name = "Panties"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 10
+Name = "Panties"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 11
+Name = "ArchivesKey"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([3, 1, true])
+    Script(["n = \"Kheera dial2 rage\""])
+    ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+    ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Ochre:"])
+    ShowText(["That key?\\.\\. ...\\.\\.\\. it's just an useless old thing..."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Ochre:"])
+    ShowText(["But if you want it,\\. how about..."])
+    ErasePicture([1])
+    Wait([15])
+    ShotBalloonIcon([3, 8, true])
+    Wait([15])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Buy the \\i[243] useless key for \\c[18]35000\\c[0] \\G?"])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      ConditionalBranch([1, 584, 0, 35000, 1])
+        ChangeItems([296, 0, 0, 1])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+        SaveBGM([])
+        FadeoutBGM([3])
+        ControlVariables([585, 585, 0, 0, 0])
+        ControlVariables([585, 585, 2, 0, 35000])
+        ControlSwitches([648, 648, 0])
+        Wait([45])
+        ShotBalloonIcon([3, 3, true])
+        Script(["n = \"Kheera dial2 rage\""])
+        ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+        ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Ochre:"])
+        ShowText(["Good...\\.\\.\\. I knew you were a smart one!"])
+        ErasePicture([1])
+        ControlSelfSwitch(["A", 0])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["You don't have enough \\G!"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    When([1, "No"])
+      JumpToLabel(["refTea"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 367, 28, 22, 2, 0])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 367, 29, 22, 2, 0])
+    Empty([])
+
+CommonEvent 14
+Name = "KobServ1"
+
+  Page 0
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1188])
+    CallCommonEvent([891])
+    Empty([])
+
+CommonEvent 15
+Name = "KobServ2"
+
+  Page 0
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1189])
+    CallCommonEvent([891])
+    Empty([])
+
+CommonEvent 16
+Name = "KobServ3"
+
+  Page 0
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1190])
+    CallCommonEvent([891])
+    Empty([])
+
+CommonEvent 17
+Name = "XMASGift"
+
+  Page 0
+    Comment(["<always update>"])
+    PlaySE(["RPG::SE(@name=\"Equip2\", @pitch=100, @volume=80)"])
+    Wait([10])
+    CallCommonEvent([621])
+    ControlSelfSwitch(["A", 1])
+    Empty([])

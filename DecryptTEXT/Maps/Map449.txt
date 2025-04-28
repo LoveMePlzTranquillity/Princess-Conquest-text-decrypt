@@ -1,0 +1,334 @@
+Display Name = ""
+Parallax Name = "Frog Throne"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "FrogP"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ShotBalloonIcon([0, 3, false])
+      Wait([15])
+      ShowPicture([1, "FrogP dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Frog Princess:"])
+      ShowText(["Welcome to my palace,\\. weirdo.\\.\\. Thanks to your \\i[777] \\c[18]idol\\c[0] it hoppened!"])
+      ShowPicture([1, "FrogP dial pleased", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Frog Princess:"])
+      ShowText(["I get to Princess in my own froggy reign!"])
+      ErasePicture([1])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["\\^Uh...\\.\\.\\. wow.\\.\\. That's...\\.\\."])
+      ShowPicture([1, "FrogP dial poker", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Frog Princess:"])
+      ShowText(["And you can be the \\c[18]Frog Prince\\c[0],\\. like I've promised you.\\.\\."])
+      ShowPicture([1, "FrogP dial pleased", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Frog Princess:"])
+      ShowText(["Think of all the tadpoles your snake will hop me make!"])
+      ErasePicture([1])
+      ShotBalloonIcon([-1, 1, false])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([1, "FrogP dial poker", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Frog Princess:"])
+    ShowText(["Hey there,\\. Frog Prince.\\.\\. What will it be toaday?"])
+    ErasePicture([1])
+    ShowChoices([["Talk to the Princess", "Egg time!", "Shop"], 5])
+    When([0, "Talk to the Princess"])
+      Script(["@r = rand(3)"])
+      ConditionalBranch([12, "@r < 1"])
+        ShowPicture([1, "FrogP dial poker", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Frog Princess:"])
+        ShowText(["Toad you that pond wasn't shallow,\\. it goes all the way to this Sewers. *rib*"])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Frog Princess:"])
+        ShowText(["I can hop between here and there anytime I need a fresh snack."])
+        ErasePicture([1])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@r < 2"])
+          ShowPicture([1, "FrogP dial", 0, 0, 0, 0, 100, 100, 255, 0])
+          ShowTextAttributes(["", 0, 2, 2])
+          ShowText(["Frog Princess:"])
+          ShowText(["This water carries all kind of stuff,\\. sometimes even treasures!"])
+          ShowPicture([1, "FrogP dial poker", 0, 0, 0, 0, 100, 100, 255, 0])
+          ShowTextAttributes(["", 0, 2, 2])
+          ShowText(["Frog Princess:"])
+          ShowText(["Your \\g will toadly help expand this place,\\. pervy knight~"])
+          ErasePicture([1])
+          Empty([])
+        Else([])
+          ShowPicture([1, "FrogP dial poker", 0, 0, 0, 0, 100, 100, 255, 0])
+          ShowTextAttributes(["", 0, 2, 2])
+          ShowText(["Frog Princess:"])
+          ShowText(["\\i[777] That's our deity,\\. a toadally awesome frog that hopped out the Kingdom centuries ago."])
+          ShowPicture([1, "FrogP dial", 0, 0, 0, 0, 100, 100, 255, 0])
+          ShowTextAttributes(["", 0, 2, 2])
+          ShowText(["Frog Princess:"])
+          ShowText(["*ribbit*\\.\\. That idol will be the steppingstone for frogs' greatness returning to this place!\\.\\. You'll see."])
+          ErasePicture([1])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    When([1, "Egg time!"])
+      ConditionalBranch([12, "$game_actors[1].equips[4] != $data_armors[91] "])
+        ConditionalBranch([12, "$game_actors[1].parent_stat(1) < $game_variables[2026]"])
+          ShowTextAttributes(["", 0, 0, 2])
+          ShowText(["You don't have enough \\i[765] \\C[14]Endurance\\C[0] to have sex again."])
+          JumpToLabel(["end"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      ControlVariables([2026, 2026, 1, 0, 1])
+      ShowPicture([1, "FrogP dial pleased", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Frog Princess:"])
+      ShowText(["*rib ribbit*\\.\\. Time to hop on eachother~"])
+      ErasePicture([1])
+      CallCommonEvent([739])
+      JumpToLabel(["end"])
+      Empty([])
+
+    When([2, "Shop"])
+      Script(["$PU_AUTOMATIC_POPUP = false"])
+      ChangeGold([1, 0, 99999])
+      ChangeGold([0, 1, 584])
+      Script(["$PU_AUTOMATIC_POPUP = true"])
+      Script(["$game_switches[7405] = true"])
+      ControlVariables([617, 617, 0, 3, 7, 2, 0])
+      ShopProcessing([0, 11, 1, 500, true])
+      ControlVariables([618, 618, 0, 3, 7, 2, 0])
+      ControlVariables([585, 585, 0, 1, 618])
+      ControlVariables([585, 585, 2, 1, 617])
+      ConditionalBranch([1, 585, 0, 0, 5])
+        ControlSwitches([648, 648, 0])
+        Wait([45])
+        Empty([])
+      BranchEnd([])
+      Script(["$game_switches[7405] = false"])
+      JumpToLabel(["end"])
+      Empty([])
+
+    WhenCancel([])
+      ShowPicture([1, "FrogP dial poker", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Frog Princess:"])
+      ShowText(["Don't froget.\\.\\. Your Princess will be waiting for you to hop in here again."])
+      ErasePicture([1])
+      JumpToLabel(["end"])
+      Empty([])
+
+    ChoicesEnd([])
+    Label(["end"])
+    Empty([])
+
+CommonEvent 2
+Name = "Egg"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["It's eggs you've toadally helped the Princess lay.\\.\\. They're nice and plump."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["It's eggs you've toadally helped the Princess lay.\\.\\. They're nice and plump."])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["It's eggs you've toadally helped the Princess lay.\\.\\. They're nice and plump."])
+    Empty([])
+
+CommonEvent 3
+Name = "Egg"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["It's eggs you've toadally helped the Princess lay.\\.\\. They're nice and plump."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["It's eggs you've toadally helped the Princess lay.\\.\\. They're nice and plump."])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["It's eggs you've toadally helped the Princess lay.\\.\\. They're nice and plump."])
+    Empty([])
+
+CommonEvent 4
+Name = "Egg"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["It's eggs you've toadally helped the Princess lay.\\.\\. They're nice and plump."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["It's eggs you've toadally helped the Princess lay.\\.\\. They're nice and plump."])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["It's eggs you've toadally helped the Princess lay.\\.\\. They're nice and plump."])
+    Empty([])
+
+CommonEvent 5
+Name = "Egg"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["It's eggs you've toadally helped the Princess lay.\\.\\. They're nice and plump."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["It's eggs you've toadally helped the Princess lay.\\.\\. They're nice and plump."])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["It's eggs you've toadally helped the Princess lay.\\.\\. They're nice and plump."])
+    Empty([])
+
+CommonEvent 14
+Name = "ManneQ"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ConditionalBranch([12, "$game_variables[2822][25] == 0"])
+        ConditionalBranch([12, "$game_switches[2995] == true"])
+          Script(["$game_variables[2822][25] = 193"])
+          Empty([])
+        Else([])
+          Script(["$game_variables[2822][25] = 365"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ControlVariables([2821, 2821, 0, 0, 25])
+    CallCommonEvent([674])
+    Empty([])
+
+CommonEvent 15
+Name = "Finish tent message"
+
+  Page 0
+    Wait([600])
+    ShowChoices([["Finish!", "Keep going..."], 2])
+    When([0, "Finish!"])
+      ControlSwitches([1202, 1202, 0])
+      Empty([])
+
+    When([1, "Keep going..."])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 16
+Name = "LoadEv"
+
+  Page 0
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+      Wait([15])
+      FadeinScreen([])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["An unusual room,\\. a passage you've never seen before..."])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Something has happened in these sewers."])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    Wait([15])
+    FadeinScreen([])
+    Label(["end"])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 17
+Name = "TP"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 345, 27, 21, 2, 0])
+    Empty([])
+
+CommonEvent 18
+Name = "TP"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 345, 27, 21, 2, 0])
+    Empty([])
+
+CommonEvent 19
+Name = "TP"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 345, 27, 21, 2, 0])
+    Empty([])
+
+CommonEvent 20
+Name = "Trunk1"
+
+  Page 0
+    ChangeItems([25, 0, 0, 1])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])

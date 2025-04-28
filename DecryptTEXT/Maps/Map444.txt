@@ -1,0 +1,319 @@
+Display Name = ""
+Parallax Name = "Mermaid Hole #3"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "TP"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 97, 60, 20, 2, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+    Script(["s = $game_map.effect_surface"])
+    ScriptMore(["s.set_color(0,0,80)"])
+    ScriptMore(["s.set_alpha(45)"])
+    CallCommonEvent([81])
+    ControlVariables([2100, 2100, 0, 0, 5117])
+    CallCommonEvent([549])
+    ControlVariables([850, 850, 0, 0, 1])
+    ControlVariables([848, 848, 0, 0, 1])
+    Wait([30])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 3
+Name = "Male#3"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 5117])
+    CallCommonEvent([44])
+    Empty([])
+
+CommonEvent 4
+Name = "Kelp"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[enemy 025]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ConditionalBranch([12, "!$game_party.members[0].equips[0].nil?"])
+      ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(1)"])
+        Wait([15])
+        ShowAnimation([0, 7, true])
+        ControlSelfSwitch(["A", 0])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(2)"])
+          Wait([15])
+          ShowAnimation([0, 7, true])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(4)"])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["A", 0])
+            Empty([])
+          Else([])
+            ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(5)"])
+              Wait([15])
+              ShowAnimation([0, 7, true])
+              ControlSelfSwitch(["A", 0])
+              Empty([])
+            Else([])
+              ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(7)"])
+                Wait([15])
+                ShowAnimation([0, 7, true])
+                ControlSelfSwitch(["A", 0])
+                Empty([])
+              Else([])
+                Wait([15])
+                PlaySE(["RPG::SE(@name=\"Blow2\", @pitch=100, @volume=80)"])
+                ShowAnimation([0, 140, true])
+                ControlSelfSwitch(["B", 1])
+                Empty([])
+              BranchEnd([])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    ControlSelfSwitch(["A", 1])
+    ControlSelfSwitch(["B", 1])
+    ControlSelfSwitch(["C", 1])
+    ControlSelfSwitch(["D", 1])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 5
+Name = "Kelp"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[enemy 025]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ConditionalBranch([12, "!$game_party.members[0].equips[0].nil?"])
+      ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(1)"])
+        Wait([15])
+        ShowAnimation([0, 7, true])
+        ControlSelfSwitch(["A", 0])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(2)"])
+          Wait([15])
+          ShowAnimation([0, 7, true])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(4)"])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["A", 0])
+            Empty([])
+          Else([])
+            ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(5)"])
+              Wait([15])
+              ShowAnimation([0, 7, true])
+              ControlSelfSwitch(["A", 0])
+              Empty([])
+            Else([])
+              ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(7)"])
+                Wait([15])
+                ShowAnimation([0, 7, true])
+                ControlSelfSwitch(["A", 0])
+                Empty([])
+              Else([])
+                Wait([15])
+                PlaySE(["RPG::SE(@name=\"Blow2\", @pitch=100, @volume=80)"])
+                ShowAnimation([0, 140, true])
+                ControlSelfSwitch(["B", 1])
+                Empty([])
+              BranchEnd([])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    ControlSelfSwitch(["A", 1])
+    ControlSelfSwitch(["B", 1])
+    ControlSelfSwitch(["C", 1])
+    ControlSelfSwitch(["D", 1])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 6
+Name = "Kelp"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[enemy 025]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ConditionalBranch([12, "!$game_party.members[0].equips[0].nil?"])
+      ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(1)"])
+        Wait([15])
+        ShowAnimation([0, 7, true])
+        ControlSelfSwitch(["A", 0])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(2)"])
+          Wait([15])
+          ShowAnimation([0, 7, true])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        Else([])
+          ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(4)"])
+            Wait([15])
+            ShowAnimation([0, 7, true])
+            ControlSelfSwitch(["A", 0])
+            Empty([])
+          Else([])
+            ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(5)"])
+              Wait([15])
+              ShowAnimation([0, 7, true])
+              ControlSelfSwitch(["A", 0])
+              Empty([])
+            Else([])
+              ConditionalBranch([12, "$game_party.members[0].wtype_equipped?(7)"])
+                Wait([15])
+                ShowAnimation([0, 7, true])
+                ControlSelfSwitch(["A", 0])
+                Empty([])
+              Else([])
+                Wait([15])
+                PlaySE(["RPG::SE(@name=\"Blow2\", @pitch=100, @volume=80)"])
+                ShowAnimation([0, 140, true])
+                ControlSelfSwitch(["B", 1])
+                Empty([])
+              BranchEnd([])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    ControlSelfSwitch(["A", 1])
+    ControlSelfSwitch(["B", 1])
+    ControlSelfSwitch(["C", 1])
+    ControlSelfSwitch(["D", 1])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 7
+Name = "Egg"
+
+  Page 0
+    CallCommonEvent([514])
+    ControlSwitches([3345, 3345, 0])
+    ControlVariables([2029, 2029, 0, 0, 18])
+    CallCommonEvent([551])
+    ControlSwitches([3345, 3345, 1])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+CommonEvent 8
+Name = "light"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[light 0]"])
+    Empty([])
+
+CommonEvent 9
+Name = "Bubbles"
+
+  Page 0
+    Comment(["<always update>"])
+    Label(["wmore"])
+    Wait([430])
+    Label(["again"])
+    Script(["@px = $game_player.x"])
+    ScriptMore(["@py = $game_player.y"])
+    ControlVariables([2062, 2062, 0, 4, "@px - 3 + rand(6)"])
+    ControlVariables([2063, 2063, 0, 4, "@py - 3 + rand(6)"])
+    ConditionalBranch([12, "$game_variables[2062] >= 25 || $game_variables[2062] <= 0 || $game_variables[2063] >= 20 || $game_variables[2063] <= 0"])
+      Wait([20])
+      JumpToLabel(["again"])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["Not on player"])
+    GetLocationInfo([2949, 5, 1, 2062, 2063])
+    ConditionalBranch([12, "$game_variables[2949] == 2"])
+      ConditionalBranch([12, "$game_map.passable?($game_variables[2062], $game_variables[2063], 2)"])
+        Script(["@x = $game_variables[2062]"])
+        ScriptMore(["@y = $game_variables[2063]"])
+        Script(["$game_map.events[@event_id].moveto(@x,@y)"])
+        Wait([45])
+        JumpToLabel(["wmore"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      Wait([20])
+      JumpToLabel(["again"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])

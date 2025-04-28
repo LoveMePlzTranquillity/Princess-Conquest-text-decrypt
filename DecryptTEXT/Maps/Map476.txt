@@ -1,0 +1,386 @@
+Display Name = ""
+Parallax Name = "GhostTown"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "GhoLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 2
+Name = "Tree"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 3
+Name = "GhoLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 4
+Name = "GhoLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 5
+Name = "Door"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 6
+Name = "GhostWandering"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "GhostWandering"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+  Page 4
+    Empty([])
+
+  Page 5
+    Empty([])
+
+  Page 6
+    Empty([])
+
+  Page 7
+    Empty([])
+
+  Page 8
+    Empty([])
+
+  Page 9
+    Empty([])
+
+CommonEvent 9
+Name = "GhoLamp"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 12
+Name = "Door"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 13
+Name = "Reveal"
+
+  Page 0
+    ConditionalBranch([12, "$game_player.y <= 13"])
+      ControlSelfSwitch(["A", 0])
+      Empty([])
+
+    BranchEnd([])
+    Wait([5])
+    Empty([])
+
+  Page 1
+    FadeoutBGM([3])
+    Wait([30])
+    ShotBalloonIcon([-1, 1, false])
+    ShowAnimation([-1, 261, false])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["!!"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The \\i[829] Catalyst Dagger reacts!"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 476, 13, 13, 8, 0])
+    Script(["$game_self_switches[[476,14,\"A\"]] = true"])
+    SetEventLocation([14, 0, 13, 14, 8])
+    CallCommonEvent([90])
+    Wait([30])
+    FadeinScreen([])
+    Wait([15])
+    ScrollMap([8, 3, 2])
+    Wait([180])
+    Script(["$game_self_switches[[476,52,\"A\"]] = true"])
+    Wait([30])
+    PlaySE(["RPG::SE(@name=\"Darkness4\", @pitch=130, @volume=80)"])
+    FlashScreen(["Color(@red=136.0, @green=204.0, @blue=255.0, @alpha=255.0)", 20, false])
+    Comment(["########################"])
+    Script(["$game_self_switches[[476,14,\"A\"]] = true"])
+    Script(["$game_self_switches[[476,12,\"A\"]] = true"])
+    ChangeParallaxBack(["GhostTownNoM", true, true, 0, 0])
+    ShowPicture([2, "GhostCastle", 0, 0, 122, -10, 100, 100, 255, 0])
+    PlayBGS(["RPG::BGS(@name=\"Darkness\", @volume=20, @pitch=100)"])
+    Comment(["########################"])
+    Wait([240])
+    Script(["$game_self_switches[[476,52,\"B\"]] = true"])
+    MovePicture([2, nil, 0, 0, 122, -150, 100, 100, 0, 0, 300, false])
+    Wait([240])
+    ShowTextAttributes(["Hero", 0, 0, 0])
+    ShowText(["The mansion is...\\.\\.\\. !!\\.\\. Gone?!"])
+    Wait([120])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["..."])
+    ShotBalloonIcon([-1, 8, false])
+    Wait([15])
+    ShotBalloonIcon([14, 6, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["It's time to get to the bottom of this."])
+    ShowPicture([1, "Ghost Princess dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Ghost Princess:"])
+    ShowText(["..."])
+    ErasePicture([1])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    SetMoveRoute([14, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    PlayBGS(["RPG::BGS(@name=\"Darkness\", @volume=40, @pitch=100)"])
+    Wait([45])
+    FadeoutScreen([])
+    Wait([15])
+    PlaySE(["RPG::SE(@name=\"Equip1\", @pitch=70, @volume=80)"])
+    PlayBGS(["RPG::BGS(@name=\"Darkness\", @volume=50, @pitch=100)"])
+    Wait([30])
+    PlaySE(["RPG::SE(@name=\"Equip1\", @pitch=70, @volume=80)"])
+    PlayBGS(["RPG::BGS(@name=\"Darkness\", @volume=60, @pitch=100)"])
+    Wait([30])
+    PlaySE(["RPG::SE(@name=\"Equip1\", @pitch=70, @volume=80)"])
+    PlayBGS(["RPG::BGS(@name=\"Darkness\", @volume=70, @pitch=100)"])
+    Wait([60])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, false])
+    SetWeatherEffects([:none, 9, 0, false])
+    ErasePicture([9])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+    TransferPlayer([0, 477, 13, 29, 4, 0])
+    Label(["end"])
+    Empty([])
+
+CommonEvent 14
+Name = "GhostFollowing"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 3
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 15
+Name = "TPout"
+
+  Page 0
+    ChangePartyMember([12, 0, 0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 70, 68, 36, 2, 0])
+    Empty([])
+
+CommonEvent 16
+Name = "TPout"
+
+  Page 0
+    ChangePartyMember([12, 0, 0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 70, 68, 36, 2, 0])
+    Empty([])
+
+CommonEvent 17
+Name = "TPout"
+
+  Page 0
+    ChangePartyMember([12, 0, 0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 70, 68, 36, 2, 0])
+    Empty([])
+
+CommonEvent 18
+Name = "TPout"
+
+  Page 0
+    ChangePartyMember([12, 0, 0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 70, 68, 36, 2, 0])
+    Empty([])
+
+CommonEvent 19
+Name = "TPout"
+
+  Page 0
+    ChangePartyMember([12, 0, 0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 70, 68, 36, 2, 0])
+    Empty([])
+
+CommonEvent 20
+Name = "TPout"
+
+  Page 0
+    ChangePartyMember([12, 0, 0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 70, 68, 36, 2, 0])
+    Empty([])
+
+CommonEvent 21
+Name = "TPout"
+
+  Page 0
+    ChangePartyMember([12, 0, 0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 70, 68, 36, 2, 0])
+    Empty([])
+
+CommonEvent 22
+Name = "TPout"
+
+  Page 0
+    ChangePartyMember([12, 0, 0])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 70, 68, 36, 2, 0])
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    ControlVariables([850, 850, 0, 0, 1])
+    ConditionalBranch([12, "$game_self_switches[[476,12,\"A\"]] == true"])
+      ChangeParallaxBack(["GhostTownNoM", true, true, 0, 0])
+      Empty([])
+
+    Else([])
+      ChangeParallaxBack(["GhostTown", true, true, 0, 0])
+      Empty([])
+
+    BranchEnd([])
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+  Page 4
+    Empty([])
+
+  Page 5
+    Empty([])
+
+  Page 6
+    Empty([])
+
+  Page 7
+    Empty([])
+
+  Page 8
+    Empty([])
+
+  Page 9
+    Empty([])
+
+CommonEvent 52
+Name = "GhoMovingCastle"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])

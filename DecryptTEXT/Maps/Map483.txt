@@ -1,0 +1,193 @@
+Display Name = ""
+Parallax Name = "BirdHouse-IV"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "Stair"
+
+  Page 0
+    Comment(["<always update>"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 466, 31, 29, 2, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "Stair"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 3
+Name = "WaterTank"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 4
+Name = "FadeIn"
+
+  Page 0
+    CallCommonEvent([90])
+    ConditionalBranch([0, 413, 0])
+      TintScreen(["Tone(@red=-34.0, @green=-34.0, @blue=0.0, @gray=34.0)", 1, true])
+      Empty([])
+
+    Else([])
+      TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+      Empty([])
+
+    BranchEnd([])
+    FadeinScreen([])
+    Wait([15])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 5
+Name = "BirdMom"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([2, "A", 0])
+      ShotBalloonIcon([0, 8, true])
+      ControlSwitches([2412, 2412, 0])
+      ControlVariables([2097, 2097, 0, 0, 1234])
+      ControlVariables([2051, 2051, 0, 0, 4])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Bird Citizen:"])
+      ShowText(["Don't get ahead of yourself laddie,\\. you had your chance,\\. I've got other clients waiting~"])
+      CallCommonEvent([559])
+      ControlSwitches([2412, 2412, 1])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    ControlSwitches([2412, 2412, 0])
+    ControlVariables([2097, 2097, 0, 0, 1234])
+    ControlVariables([2051, 2051, 0, 0, 4])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Bird Citizen:"])
+    ShowText(["A human,\\. huh?\\.\\. Since you're no dragon,\\. it won't be free."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Bird Citizen:"])
+    ShowText(["Let me check the rates..."])
+    CallCommonEvent([559])
+    ControlSwitches([2412, 2412, 1])
+    Wait([15])
+    ControlVariables([1190, 1190, 0, 0, 750])
+    ConditionalBranch([1, 4241, 0, 2, 1])
+      ControlVariables([1190, 1190, 3, 0, 2])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 4341, 0])
+      ControlVariables([1190, 1190, 3, 0, 3])
+      Empty([])
+
+    BranchEnd([])
+    ShotBalloonIcon([0, 8, true])
+    Wait([30])
+    ControlSwitches([2412, 2412, 0])
+    ControlVariables([2097, 2097, 0, 0, 1234])
+    ControlVariables([2051, 2051, 0, 0, 4])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Bird Citizen:"])
+    ShowText(["For you lot,\\. it will cost \\v[1190] \\G?"])
+    CallCommonEvent([559])
+    ControlSwitches([2412, 2412, 1])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      ConditionalBranch([1, 584, 1, 1190, 1])
+        ControlSelfSwitch(["A", 0])
+        ShotBalloonIcon([0, 3, false])
+        PlaySE(["RPG::SE(@name=\"Coin\", @pitch=100, @volume=80)"])
+        ControlVariables([585, 585, 0, 0, 0])
+        ControlVariables([585, 585, 2, 1, 1190])
+        ControlSwitches([648, 648, 0])
+        Wait([60])
+        CallCommonEvent([740])
+        Empty([])
+      Else([])
+        ShotBalloonIcon([0, 7, false])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["You don't have enough \\G!"])
+        JumpToLabel(["end"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    When([1, "No"])
+      ControlSwitches([2412, 2412, 0])
+      ControlVariables([2097, 2097, 0, 0, 1234])
+      ControlVariables([2051, 2051, 0, 0, 1])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Bird Citizen:"])
+      ShowText(["No deal,\\. huh?\\.\\. Oh,\\. how featherless..."])
+      CallCommonEvent([559])
+      Wait([15])
+      PlaySE(["RPG::SE(@name=\"Equip2\", @pitch=100, @volume=80)"])
+      Wait([10])
+      Comment(["# UNDRESS #"])
+      ControlVariables([1190, 1190, 0, 4, "$game_variables[3334][17]"])
+      Script(["$game_variables[3334][17] = 2"])
+      Comment(["# UNDRESS #"])
+      ShotBalloonIcon([-1, 1, true])
+      Wait([15])
+      ControlVariables([2051, 2051, 0, 0, 4])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Bird Citizen:"])
+      ShowText(["If you change your mind...\\.\\.\\. I'll be waiting in here..."])
+      CallCommonEvent([559])
+      ControlSwitches([2412, 2412, 1])
+      Comment(["# DRESS #"])
+      Script(["$game_variables[3334][17] ="])
+      ScriptMore(["$game_variables[1190]"])
+      Comment(["# DRESS #"])
+      JumpToLabel(["end"])
+      Empty([])
+
+    ChoicesEnd([])
+    Label(["end"])
+    CallCommonEvent([743])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "Finish tent message"
+
+  Page 0
+    Wait([600])
+    ShowChoices([["Finish!", "Keep going..."], 2])
+    When([0, "Finish!"])
+      ControlSwitches([1202, 1202, 0])
+      Empty([])
+
+    When([1, "Keep going..."])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "Egg"
+
+  Page 0
+    Comment(["<always update>"])
+    CallCommonEvent([86])
+    Empty([])
+
+  Page 1
+    Empty([])

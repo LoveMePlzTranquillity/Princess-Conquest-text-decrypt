@@ -1,0 +1,264 @@
+Display Name = ""
+Parallax Name = "Coral House - G"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "Bubbles"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ConditionalBranch([1, 3443, 0, 2, 2])
+      ControlVariables([3443, 3443, 0, 0, 0])
+      Empty([])
+
+    Else([])
+      ControlVariables([3443, 3443, 0, 0, 4])
+      Empty([])
+
+    BranchEnd([])
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    TransferPlayer([0, 166, 27, 38, 2, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ConditionalBranch([1, 3443, 0, 2, 2])
+      ControlVariables([3443, 3443, 0, 0, 0])
+      Empty([])
+
+    Else([])
+      ControlVariables([3443, 3443, 0, 0, 4])
+      Empty([])
+
+    BranchEnd([])
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    TransferPlayer([0, 166, 27, 38, 2, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    ConditionalBranch([1, 3443, 0, 2, 2])
+      ControlVariables([3443, 3443, 0, 0, 0])
+      Empty([])
+
+    Else([])
+      ControlVariables([3443, 3443, 0, 0, 4])
+      Empty([])
+
+    BranchEnd([])
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    TransferPlayer([0, 166, 27, 38, 2, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ConditionalBranch([1, 3443, 0, 4, 1])
+      SetEventLocation([7, 0, 12, 10, 2])
+      Empty([])
+
+    BranchEnd([])
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 6
+Name = "Chest"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=80, @volume=60)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ChangeArmor([323, 0, 0, 1, false])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 3
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 7
+Name = "CitHouse"
+
+  Page 0
+    Comment(["<always update>"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, 0])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=5, @parameters=[])\", \"RPG::MoveCommand(@code=5, @parameters=[])\", \"RPG::MoveCommand(@code=5, @parameters=[])\", \"RPG::MoveCommand(@code=5, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 0])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=5, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=5, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=5, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=5, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Wait([20])
+    ControlVariables([2097, 2097, 0, 0, 1180])
+    ControlSwitches([2412, 2412, 0])
+    ControlVariables([2051, 2051, 0, 0, 1])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Finhead Citizen:"])
+    ShowText(["Oh fishes!\\.\\. Help me!\\.\\. A bunch of \\c[18]Spinel Hermits\\c[0] got inside!"])
+    CallCommonEvent([559])
+    ControlSwitches([2412, 2412, 1])
+    SaveBGM([])
+    PlayBGM(["RPG::BGM(@name=\"P&C - Battle Theme\", @volume=90, @pitch=100)"])
+    Script(["$game_map.start_sas"])
+    ScriptMore(["$game_map.sas_hud.show(true)"])
+    EraseEvent([])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1180])
+    ControlSwitches([2412, 2412, 0])
+    ControlVariables([2051, 2051, 0, 0, 0])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Finhead Citizen:"])
+    ShowText(["Thank you for dealing with those monsters back then!"])
+    ConditionalBranch([12, "$game_self_switches[[416,6,\"A\"]] == true"])
+      ControlVariables([2051, 2051, 0, 0, 1])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Finhead Citizen:"])
+      ShowText(["Too bad one of them ended up eating my precious shield...\\.\\.\\."])
+      ControlVariables([2051, 2051, 0, 0, 0])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Finhead Citizen:"])
+      ShowText(["But life's more important than that!"])
+      Empty([])
+
+    Else([])
+      ControlVariables([2051, 2051, 0, 0, 0])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Finhead Citizen:"])
+      ShowText(["If it wasn't for you my cute coral would have become their lair!"])
+      ConditionalBranch([12, "$game_self_switches[[416,6,\"B\"]] == false"])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Finhead Citizen:"])
+        ShowText(["Please,\\. take this!"])
+        Script(["$game_self_switches[[416,6,\"B\"]]=true"])
+        ChangeArmor([323, 0, 0, 1, false])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    CallCommonEvent([559])
+    ControlSwitches([2412, 2412, 1])
+    Empty([])
+
+CommonEvent 8
+Name = "SpinelHermit"
+
+  Page 0
+    Comment(["[enemy 246]"])
+    Comment(["[variable 3443]"])
+    Comment(["[erase]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 9
+Name = "SpinelHermit"
+
+  Page 0
+    Comment(["[enemy 246]"])
+    Comment(["[variable 3443]"])
+    Comment(["[erase]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "SpinelHermit"
+
+  Page 0
+    Comment(["[enemy 246]"])
+    Comment(["[variable 3443]"])
+    Comment(["[erase]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Wait([10])
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    ReplayBGM([])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 12
+Name = "Finish tent message"
+
+  Page 0
+    Wait([600])
+    ShowChoices([["Finish!", "Keep going..."], 2])
+    When([0, "Finish!"])
+      ControlSwitches([1202, 1202, 0])
+      Empty([])
+
+    When([1, "Keep going..."])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])

@@ -1,0 +1,90 @@
+Display Name = ""
+Parallax Name = "Coral House - Y"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "Bubbles"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 166, 45, 13, 2, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 166, 45, 13, 2, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 166, 45, 13, 2, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 6
+Name = "CitHouse"
+
+  Page 0
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1186])
+    ControlSwitches([2412, 2412, 0])
+    ControlVariables([2051, 2051, 0, 0, 2])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Finhead Citizen:"])
+    ShowText(["What are you doing in here,\\. human?\\.\\. Don't you know it's rude to barge in someone's house uninvited?!"])
+    ShotBalloonIcon([0, 5, false])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Finhead Citizen:"])
+    ShowText(["I've paid a lot to get my coral house as close as possible to the Princess,\\. and this is what I get for it?!"])
+    CallCommonEvent([559])
+    ControlSwitches([2412, 2412, 1])
+    Empty([])
+
+CommonEvent 7
+Name = "Finish tent message"
+
+  Page 0
+    Wait([600])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Finish?"])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      ControlSwitches([1202, 1202, 0])
+      Empty([])
+
+    When([1, "No"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])

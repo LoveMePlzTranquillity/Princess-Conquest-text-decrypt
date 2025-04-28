@@ -1,0 +1,1028 @@
+Display Name = ""
+Parallax Name = "Dusk Passage"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "TP-load"
+
+  Page 0
+    TintScreen(["Tone(@red=-17.0, @green=-17.0, @blue=-17.0, @gray=0.0)", 10, true])
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+  Page 1
+    TintScreen(["Tone(@red=-17.0, @green=-17.0, @blue=-17.0, @gray=0.0)", 10, true])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=8, @parameters=[])\", \"RPG::MoveCommand(@code=8, @parameters=[])\", \"RPG::MoveCommand(@code=8, @parameters=[])\", \"RPG::MoveCommand(@code=8, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=6, @parameters=[])\", \"RPG::MoveCommand(@code=6, @parameters=[])\", \"RPG::MoveCommand(@code=6, @parameters=[])\", \"RPG::MoveCommand(@code=6, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=8, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=8, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=8, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=8, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=6, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=6, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=6, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=6, @parameters=[])"])
+    Wait([15])
+    FadeinScreen([])
+    Wait([60])
+    ShotBalloonIcon([-1, 8, false])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["\\^What sort of office has a secret passage...\\.\\.\\. where even am I...?\\.\\. \\|\\|\\|"])
+    Wait([30])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\\^You whisper to yourself as you quietly travel down the lone, dark corridor.\\.\\. \\|\\|\\|"])
+    Loop([])
+      Wait([5])
+      ConditionalBranch([12, "$game_player.x >= 18"])
+        BreakLoop([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    RepeatAbove([])
+    FadeoutScreen([])
+    Wait([30])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["This passage was very well hidden,\\. and considering the office was locked, you get the feeling whoever made it did not want others to know about this place.\\.\\."])
+    Wait([30])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Your heart pounds,\\. the excitement and anxiousness of knowing you are seeing things someone doesn't want you to see filling you.\\.\\."])
+    Comment(["###############K"])
+    Wait([30])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+    TransferPlayer([0, 403, 1, 9, 6, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "Vortex1"
+
+  Page 0
+    Comment(["[enemy 243]"])
+    Comment(["[variable 3438]"])
+    Comment(["[switch 3891]"])
+    Script(["@r = rand(240) + 180"])
+    Label(["wmore"])
+    Wait([5])
+    Script(["@r -= 5"])
+    ConditionalBranch([12, "@r <= 0"])
+      Empty([])
+
+    Else([])
+      JumpToLabel(["wmore"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Wait([15])
+    FlashScreen(["Color(@red=0.0, @green=0.0, @blue=0.0, @alpha=255.0)", 20, false])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Darkness6\\\\\\\", @pitch=100, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Darkness6\\\", @pitch=100, @volume=80)\"])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([10])
+    ControlSwitches([1834, 1834, 0])
+    Wait([5])
+    ControlSwitches([1834, 1834, 1])
+    Wait([5])
+    TransferPlayer([0, 401, 20, 6, 2, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "Vortex4"
+
+  Page 0
+    Comment(["[enemy 243]"])
+    Comment(["[variable 3438]"])
+    Comment(["[switch 3894]"])
+    Script(["@r = rand(240) + 180"])
+    Label(["wmore"])
+    Wait([5])
+    Script(["@r -= 5"])
+    ConditionalBranch([12, "@r <= 0"])
+      Empty([])
+
+    Else([])
+      JumpToLabel(["wmore"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Wait([15])
+    FlashScreen(["Color(@red=0.0, @green=0.0, @blue=0.0, @alpha=255.0)", 20, false])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Darkness6\\\\\\\", @pitch=100, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Darkness6\\\", @pitch=100, @volume=80)\"])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 5
+Name = "Vortex2"
+
+  Page 0
+    Comment(["[enemy 243]"])
+    Comment(["[variable 3438]"])
+    Comment(["[switch 3892]"])
+    Script(["@r = rand(240) + 180"])
+    Label(["wmore"])
+    Wait([5])
+    Script(["@r -= 5"])
+    ConditionalBranch([12, "@r <= 0"])
+      Empty([])
+
+    Else([])
+      JumpToLabel(["wmore"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Wait([15])
+    FlashScreen(["Color(@red=0.0, @green=0.0, @blue=0.0, @alpha=255.0)", 20, false])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Darkness6\\\\\\\", @pitch=100, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Darkness6\\\", @pitch=100, @volume=80)\"])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 6
+Name = "Vortex3"
+
+  Page 0
+    Comment(["[enemy 243]"])
+    Comment(["[variable 3438]"])
+    Comment(["[switch 3893]"])
+    Script(["@r = rand(240) + 180"])
+    Label(["wmore"])
+    Wait([5])
+    Script(["@r -= 5"])
+    ConditionalBranch([12, "@r <= 0"])
+      Empty([])
+
+    Else([])
+      JumpToLabel(["wmore"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Wait([15])
+    FlashScreen(["Color(@red=0.0, @green=0.0, @blue=0.0, @alpha=255.0)", 20, false])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Darkness6\\\\\\\", @pitch=100, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Darkness6\\\", @pitch=100, @volume=80)\"])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([1, 3438, 0, 4, 1])
+      Wait([30])
+      ShowAnimation([0, 175, false])
+      Wait([20])
+      ControlSelfSwitch(["A", 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 8
+Name = "Dusk  Mob"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([1, 3438, 0, 4, 4])
+      Script(["@r = rand(1200) + 480"])
+      Label(["wmore"])
+      Wait([5])
+      Script(["@r -= 5"])
+      ConditionalBranch([12, "@r <= 0"])
+        Label(["ag"])
+        ConditionalBranch([1, 3438, 0, 4, 4])
+          Script(["@r = rand(5)"])
+          ConditionalBranch([12, "@r <= 1"])
+            ConditionalBranch([0, 3891, 1])
+              SetEventLocation([0, 0, 4, 10, 2])
+              JumpToLabel(["ch1"])
+              Empty([])
+            Else([])
+              JumpToLabel(["ag"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([12, "@r <= 2"])
+            ConditionalBranch([0, 3892, 1])
+              SetEventLocation([0, 0, 10, 10, 2])
+              JumpToLabel(["ch1"])
+              Empty([])
+            Else([])
+              JumpToLabel(["ag"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([12, "@r <= 3"])
+            ConditionalBranch([0, 3893, 1])
+              SetEventLocation([0, 0, 7, 7, 2])
+              JumpToLabel(["ch1"])
+              Empty([])
+            Else([])
+              JumpToLabel(["ag"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([12, "@r <= 4"])
+            ConditionalBranch([0, 3894, 1])
+              SetEventLocation([0, 0, 11, 6, 2])
+              Label(["ch1"])
+              PlaySE(["RPG::SE(@name=\"Darkness3\", @pitch=100, @volume=80)"])
+              FlashScreen(["Color(@red=0.0, @green=0.0, @blue=0.0, @alpha=255.0)", 45, false])
+              Wait([10])
+              SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=25, @parameters=[])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"$DuskMob\\\", 0])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+              Unnamed(["RPG::MoveCommand(@code=25, @parameters=[])"])
+              Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$DuskMob\", 0])"])
+              Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+              ControlSelfSwitch(["A", 0])
+              JumpToLabel(["ch"])
+              Empty([])
+            Else([])
+              JumpToLabel(["ag"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      Else([])
+        JumpToLabel(["wmore"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Label(["ch"])
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 242]"])
+    Comment(["[localsw 1]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Script(["@r = rand(300) + 300"])
+    Label(["wmore"])
+    Wait([5])
+    Script(["@r -= 5"])
+    ConditionalBranch([12, "@r <= 0"])
+      ControlSelfSwitch(["A", 1])
+      ControlSelfSwitch(["B", 1])
+      Empty([])
+
+    Else([])
+      JumpToLabel(["wmore"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 3
+    ControlSelfSwitch(["A", 1])
+    ControlSelfSwitch(["B", 1])
+    EraseEvent([])
+    Empty([])
+
+  Page 4
+    Empty([])
+
+  Page 5
+    Empty([])
+
+CommonEvent 9
+Name = " "
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([1, 3438, 0, 4, 4])
+      Script(["@r = rand(1200) + 480"])
+      Label(["wmore"])
+      Wait([5])
+      Script(["@r -= 5"])
+      ConditionalBranch([12, "@r <= 0"])
+        Label(["ag"])
+        ConditionalBranch([1, 3438, 0, 4, 4])
+          Script(["@r = rand(5)"])
+          ConditionalBranch([12, "@r <= 1"])
+            ConditionalBranch([0, 3891, 1])
+              SetEventLocation([0, 0, 4, 10, 2])
+              JumpToLabel(["ch1"])
+              Empty([])
+            Else([])
+              JumpToLabel(["ag"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([12, "@r <= 2"])
+            ConditionalBranch([0, 3892, 1])
+              SetEventLocation([0, 0, 10, 10, 2])
+              JumpToLabel(["ch1"])
+              Empty([])
+            Else([])
+              JumpToLabel(["ag"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([12, "@r <= 3"])
+            ConditionalBranch([0, 3893, 1])
+              SetEventLocation([0, 0, 7, 7, 2])
+              JumpToLabel(["ch1"])
+              Empty([])
+            Else([])
+              JumpToLabel(["ag"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([12, "@r <= 4"])
+            ConditionalBranch([0, 3894, 1])
+              SetEventLocation([0, 0, 11, 6, 2])
+              Label(["ch1"])
+              PlaySE(["RPG::SE(@name=\"Darkness3\", @pitch=100, @volume=80)"])
+              FlashScreen(["Color(@red=0.0, @green=0.0, @blue=0.0, @alpha=255.0)", 45, false])
+              Wait([10])
+              SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=25, @parameters=[])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"$DuskMob\\\", 0])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+              Unnamed(["RPG::MoveCommand(@code=25, @parameters=[])"])
+              Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$DuskMob\", 0])"])
+              Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+              ControlSelfSwitch(["A", 0])
+              JumpToLabel(["ch"])
+              Empty([])
+            Else([])
+              JumpToLabel(["ag"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      Else([])
+        JumpToLabel(["wmore"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Label(["ch"])
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 242]"])
+    Comment(["[localsw 1]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Script(["@r = rand(300) + 300"])
+    Label(["wmore"])
+    Wait([5])
+    Script(["@r -= 5"])
+    ConditionalBranch([12, "@r <= 0"])
+      ControlSelfSwitch(["A", 1])
+      ControlSelfSwitch(["B", 1])
+      Empty([])
+
+    Else([])
+      JumpToLabel(["wmore"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 3
+    ControlSelfSwitch(["A", 1])
+    ControlSelfSwitch(["B", 1])
+    EraseEvent([])
+    Empty([])
+
+  Page 4
+    Empty([])
+
+  Page 5
+    Empty([])
+
+CommonEvent 10
+Name = "Dusk  Mob 3"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([1, 3438, 0, 4, 4])
+      Script(["@r = rand(1200) + 480"])
+      Label(["wmore"])
+      Wait([5])
+      Script(["@r -= 5"])
+      ConditionalBranch([12, "@r <= 0"])
+        Label(["ag"])
+        ConditionalBranch([1, 3438, 0, 4, 4])
+          Script(["@r = rand(5)"])
+          ConditionalBranch([12, "@r <= 1"])
+            ConditionalBranch([0, 3891, 1])
+              SetEventLocation([0, 0, 4, 10, 2])
+              JumpToLabel(["ch1"])
+              Empty([])
+            Else([])
+              JumpToLabel(["ag"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([12, "@r <= 2"])
+            ConditionalBranch([0, 3892, 1])
+              SetEventLocation([0, 0, 10, 10, 2])
+              JumpToLabel(["ch1"])
+              Empty([])
+            Else([])
+              JumpToLabel(["ag"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([12, "@r <= 3"])
+            ConditionalBranch([0, 3893, 1])
+              SetEventLocation([0, 0, 7, 7, 2])
+              JumpToLabel(["ch1"])
+              Empty([])
+            Else([])
+              JumpToLabel(["ag"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([12, "@r <= 4"])
+            ConditionalBranch([0, 3894, 1])
+              SetEventLocation([0, 0, 11, 6, 2])
+              Label(["ch1"])
+              PlaySE(["RPG::SE(@name=\"Darkness3\", @pitch=100, @volume=80)"])
+              FlashScreen(["Color(@red=0.0, @green=0.0, @blue=0.0, @alpha=255.0)", 45, false])
+              Wait([10])
+              SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=25, @parameters=[])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"$DuskMob\\\", 0])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+              Unnamed(["RPG::MoveCommand(@code=25, @parameters=[])"])
+              Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$DuskMob\", 0])"])
+              Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+              ControlSelfSwitch(["A", 0])
+              JumpToLabel(["ch"])
+              Empty([])
+            Else([])
+              JumpToLabel(["ag"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      Else([])
+        JumpToLabel(["wmore"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Label(["ch"])
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 242]"])
+    Comment(["[localsw 1]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Script(["@r = rand(300) + 300"])
+    Label(["wmore"])
+    Wait([5])
+    Script(["@r -= 5"])
+    ConditionalBranch([12, "@r <= 0"])
+      ControlSelfSwitch(["A", 1])
+      ControlSelfSwitch(["B", 1])
+      Empty([])
+
+    Else([])
+      JumpToLabel(["wmore"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 3
+    ControlSelfSwitch(["A", 1])
+    ControlSelfSwitch(["B", 1])
+    EraseEvent([])
+    Empty([])
+
+  Page 4
+    Empty([])
+
+  Page 5
+    Empty([])
+
+CommonEvent 11
+Name = "Dusk  Mob 4"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([1, 3438, 0, 4, 4])
+      Script(["@r = rand(1200) + 480"])
+      Label(["wmore"])
+      Wait([5])
+      Script(["@r -= 5"])
+      ConditionalBranch([12, "@r <= 0"])
+        Label(["ag"])
+        ConditionalBranch([1, 3438, 0, 4, 4])
+          Script(["@r = rand(5)"])
+          ConditionalBranch([12, "@r <= 1"])
+            ConditionalBranch([0, 3891, 1])
+              SetEventLocation([0, 0, 4, 10, 2])
+              JumpToLabel(["ch1"])
+              Empty([])
+            Else([])
+              JumpToLabel(["ag"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([12, "@r <= 2"])
+            ConditionalBranch([0, 3892, 1])
+              SetEventLocation([0, 0, 10, 10, 2])
+              JumpToLabel(["ch1"])
+              Empty([])
+            Else([])
+              JumpToLabel(["ag"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([12, "@r <= 3"])
+            ConditionalBranch([0, 3893, 1])
+              SetEventLocation([0, 0, 7, 7, 2])
+              JumpToLabel(["ch1"])
+              Empty([])
+            Else([])
+              JumpToLabel(["ag"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([12, "@r <= 4"])
+            ConditionalBranch([0, 3894, 1])
+              SetEventLocation([0, 0, 11, 6, 2])
+              Label(["ch1"])
+              PlaySE(["RPG::SE(@name=\"Darkness3\", @pitch=100, @volume=80)"])
+              FlashScreen(["Color(@red=0.0, @green=0.0, @blue=0.0, @alpha=255.0)", 45, false])
+              Wait([10])
+              SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=25, @parameters=[])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"$DuskMob\\\", 0])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+              Unnamed(["RPG::MoveCommand(@code=25, @parameters=[])"])
+              Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$DuskMob\", 0])"])
+              Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+              ControlSelfSwitch(["A", 0])
+              JumpToLabel(["ch"])
+              Empty([])
+            Else([])
+              JumpToLabel(["ag"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      Else([])
+        JumpToLabel(["wmore"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Label(["ch"])
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 242]"])
+    Comment(["[localsw 1]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Script(["@r = rand(300) + 300"])
+    Label(["wmore"])
+    Wait([5])
+    Script(["@r -= 5"])
+    ConditionalBranch([12, "@r <= 0"])
+      ControlSelfSwitch(["A", 1])
+      ControlSelfSwitch(["B", 1])
+      Empty([])
+
+    Else([])
+      JumpToLabel(["wmore"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 3
+    ControlSelfSwitch(["A", 1])
+    ControlSelfSwitch(["B", 1])
+    EraseEvent([])
+    Empty([])
+
+  Page 4
+    Empty([])
+
+  Page 5
+    Empty([])
+
+CommonEvent 12
+Name = "Dusk  Mob 5"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([1, 3438, 0, 4, 4])
+      Script(["@r = rand(1200) + 480"])
+      Label(["wmore"])
+      Wait([5])
+      Script(["@r -= 5"])
+      ConditionalBranch([12, "@r <= 0"])
+        Label(["ag"])
+        ConditionalBranch([1, 3438, 0, 4, 4])
+          Script(["@r = rand(5)"])
+          ConditionalBranch([12, "@r <= 1"])
+            ConditionalBranch([0, 3891, 1])
+              SetEventLocation([0, 0, 4, 10, 2])
+              JumpToLabel(["ch1"])
+              Empty([])
+            Else([])
+              JumpToLabel(["ag"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([12, "@r <= 2"])
+            ConditionalBranch([0, 3892, 1])
+              SetEventLocation([0, 0, 10, 10, 2])
+              JumpToLabel(["ch1"])
+              Empty([])
+            Else([])
+              JumpToLabel(["ag"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([12, "@r <= 3"])
+            ConditionalBranch([0, 3893, 1])
+              SetEventLocation([0, 0, 7, 7, 2])
+              JumpToLabel(["ch1"])
+              Empty([])
+            Else([])
+              JumpToLabel(["ag"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([12, "@r <= 4"])
+            ConditionalBranch([0, 3894, 1])
+              SetEventLocation([0, 0, 11, 6, 2])
+              Label(["ch1"])
+              PlaySE(["RPG::SE(@name=\"Darkness3\", @pitch=100, @volume=80)"])
+              FlashScreen(["Color(@red=0.0, @green=0.0, @blue=0.0, @alpha=255.0)", 45, false])
+              Wait([10])
+              SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=25, @parameters=[])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"$DuskMob\\\", 0])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+              Unnamed(["RPG::MoveCommand(@code=25, @parameters=[])"])
+              Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$DuskMob\", 0])"])
+              Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+              ControlSelfSwitch(["A", 0])
+              JumpToLabel(["ch"])
+              Empty([])
+            Else([])
+              JumpToLabel(["ag"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      Else([])
+        JumpToLabel(["wmore"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Label(["ch"])
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 242]"])
+    Comment(["[localsw 1]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Script(["@r = rand(300) + 300"])
+    Label(["wmore"])
+    Wait([5])
+    Script(["@r -= 5"])
+    ConditionalBranch([12, "@r <= 0"])
+      ControlSelfSwitch(["A", 1])
+      ControlSelfSwitch(["B", 1])
+      Empty([])
+
+    Else([])
+      JumpToLabel(["wmore"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 3
+    ControlSelfSwitch(["A", 1])
+    ControlSelfSwitch(["B", 1])
+    EraseEvent([])
+    Empty([])
+
+  Page 4
+    Empty([])
+
+  Page 5
+    Empty([])
+
+CommonEvent 13
+Name = "Dusk  Mob 6"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([1, 3438, 0, 4, 4])
+      Script(["@r = rand(1200) + 480"])
+      Label(["wmore"])
+      Wait([5])
+      Script(["@r -= 5"])
+      ConditionalBranch([12, "@r <= 0"])
+        Label(["ag"])
+        ConditionalBranch([1, 3438, 0, 4, 4])
+          Script(["@r = rand(5)"])
+          ConditionalBranch([12, "@r <= 1"])
+            ConditionalBranch([0, 3891, 1])
+              SetEventLocation([0, 0, 4, 10, 2])
+              JumpToLabel(["ch1"])
+              Empty([])
+            Else([])
+              JumpToLabel(["ag"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([12, "@r <= 2"])
+            ConditionalBranch([0, 3892, 1])
+              SetEventLocation([0, 0, 10, 10, 2])
+              JumpToLabel(["ch1"])
+              Empty([])
+            Else([])
+              JumpToLabel(["ag"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([12, "@r <= 3"])
+            ConditionalBranch([0, 3893, 1])
+              SetEventLocation([0, 0, 7, 7, 2])
+              JumpToLabel(["ch1"])
+              Empty([])
+            Else([])
+              JumpToLabel(["ag"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          ConditionalBranch([12, "@r <= 4"])
+            ConditionalBranch([0, 3894, 1])
+              SetEventLocation([0, 0, 11, 6, 2])
+              Label(["ch1"])
+              PlaySE(["RPG::SE(@name=\"Darkness3\", @pitch=100, @volume=80)"])
+              FlashScreen(["Color(@red=0.0, @green=0.0, @blue=0.0, @alpha=255.0)", 45, false])
+              Wait([10])
+              SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=25, @parameters=[])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"$DuskMob\\\", 0])\", \"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+              Unnamed(["RPG::MoveCommand(@code=25, @parameters=[])"])
+              Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$DuskMob\", 0])"])
+              Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+              ControlSelfSwitch(["A", 0])
+              JumpToLabel(["ch"])
+              Empty([])
+            Else([])
+              JumpToLabel(["ag"])
+              Empty([])
+            BranchEnd([])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      Else([])
+        JumpToLabel(["wmore"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Label(["ch"])
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 242]"])
+    Comment(["[localsw 1]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Script(["@r = rand(300) + 300"])
+    Label(["wmore"])
+    Wait([5])
+    Script(["@r -= 5"])
+    ConditionalBranch([12, "@r <= 0"])
+      ControlSelfSwitch(["A", 1])
+      ControlSelfSwitch(["B", 1])
+      Empty([])
+
+    Else([])
+      JumpToLabel(["wmore"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 3
+    ControlSelfSwitch(["A", 1])
+    ControlSelfSwitch(["B", 1])
+    EraseEvent([])
+    Empty([])
+
+  Page 4
+    Empty([])
+
+  Page 5
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 403, 1, 9, 6, 0])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 403, 1, 9, 6, 0])
+    Empty([])
+
+CommonEvent 16
+Name = "Diana"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["n = \"Diana dial sad\""])
+    ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+    ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+    ConditionalBranch([0, 11, 1])
+      ShowTextAttributes(["", 4, 2, 2])
+      ShowText(["???:"])
+      ShowText(["O.\\.\\. It's ahead...\\.\\.\\. nothing can be done now..."])
+      Empty([])
+
+    Else([])
+      ShowTextAttributes(["", 4, 2, 2])
+      ShowText(["Diana:"])
+      ShowText(["O.\\.\\. It's ahead...\\.\\.\\. nothing can be done now..."])
+      Empty([])
+
+    BranchEnd([])
+    ErasePicture([1])
+    Empty([])
+
+  Page 1
+    Empty([])

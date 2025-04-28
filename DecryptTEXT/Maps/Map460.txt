@@ -1,0 +1,1154 @@
+Display Name = ""
+Parallax Name = "SpookFest"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "Fire"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[light 40]"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[light 42]"])
+    Empty([])
+
+CommonEvent 2
+Name = "DanceBump1"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Bumpkin dial cheer", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Bumpkin:"])
+    ShowText(["Dance,\\. comrades,\\. for the true Princess of these fields!!!"])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 3
+Name = "DanceScare2"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([12, "$game_self_switches[[460,44,\"A\"]] == true"])
+      ShotBalloonIcon([0, 3, false])
+      ShowPicture([1, "Scarecrow dial cheer", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Scarecrow:"])
+      ShowText(["Princess!!\\.\\. Take me next!"])
+      ErasePicture([1])
+      Empty([])
+
+    Else([])
+      ShotBalloonIcon([0, 1, false])
+      ShowPicture([1, "Scarecrow dial cheer", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Scarecrow:"])
+      ShowText(["It's SpookFest!\\.\\. Where's our Princess?!"])
+      ErasePicture([1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 4
+Name = "DanceBump7"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([0, 3335, 0])
+      ShowPicture([1, "Bumpkin dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Bumpkin:"])
+      ShowText(["Even now that you're gone,\\. Boss,\\. we'll respect the Spookfest!"])
+      ErasePicture([1])
+      Empty([])
+
+    Else([])
+      ShowPicture([1, "Bumpkin dial cheer", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Bumpkin:"])
+      ShowText(["Let's dance,\\. comrades!\\.\\. It's SpookFest night!"])
+      ErasePicture([1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 5
+Name = "DanceScarec"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([12, "$game_self_switches[[460,44,\"A\"]] == true"])
+      ShotBalloonIcon([0, 3, false])
+      ShowPicture([1, "Scarecrow dial cheer", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Scarecrow:"])
+      ShowText(["*KAKAKAKAKA*"])
+      ErasePicture([1])
+      Empty([])
+
+    Else([])
+      ShotBalloonIcon([0, 3, false])
+      ShowPicture([1, "Scarecrow dial cheer", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Scarecrow:"])
+      ShowText(["*KWA KWA*"])
+      ErasePicture([1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 6
+Name = "DanceScare3"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([12, "$game_self_switches[[460,44,\"A\"]] == true"])
+      ShotBalloonIcon([0, 3, false])
+      ShowPicture([1, "Scarecrow dial cheer", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Scarecrow:"])
+      ShowText(["Heigh ho the derry-o,\\. the Princess takes a knight~"])
+      ErasePicture([1])
+      Empty([])
+
+    Else([])
+      ShotBalloonIcon([0, 3, false])
+      ShowPicture([1, "Scarecrow dial cheer", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Scarecrow:"])
+      ShowText(["Heigh ho the derry-o,\\. the farmer takes a wife,\\. the wife takes the child..."])
+      ErasePicture([1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 7
+Name = "DanceBump3"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Bumpkin dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Bumpkin:"])
+    ShowText(["Let's dance,\\. comrades!\\.\\. It's SpookFest night!"])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 8
+Name = "DanceBump4"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Bumpkin dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Bumpkin:"])
+    ShowText(["Dance with the Bumpkins!\\.\\. For the endless night!"])
+    ErasePicture([1])
+    Empty([])
+
+CommonEvent 9
+Name = "StairBumpkin"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Bumpkin dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Bumpkin:"])
+    ShowText(["Oi nuthead.\\.\\. You're not allowed over here!"])
+    ErasePicture([1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Comment(["Leave"])
+    Script(["s = $game_map.effect_surface"])
+    ScriptMore(["s.change_color(60,0,0,80,0)"])
+    Script(["l = $game_map.lantern"])
+    ScriptMore(["l.hide"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 318, 61, 40, 2, 0])
+    ControlVariables([849, 849, 0, 0, 1])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    Comment(["Leave"])
+    Script(["s = $game_map.effect_surface"])
+    ScriptMore(["s.change_color(60,0,0,80,0)"])
+    Script(["l = $game_map.lantern"])
+    ScriptMore(["l.hide"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 318, 61, 40, 2, 0])
+    ControlVariables([849, 849, 0, 0, 1])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    Comment(["Leave"])
+    Script(["s = $game_map.effect_surface"])
+    ScriptMore(["s.change_color(60,0,0,80,0)"])
+    Script(["l = $game_map.lantern"])
+    ScriptMore(["l.hide"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 318, 61, 40, 2, 0])
+    ControlVariables([849, 849, 0, 0, 1])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    Comment(["Leave"])
+    Script(["s = $game_map.effect_surface"])
+    ScriptMore(["s.change_color(60,0,0,80,0)"])
+    Script(["l = $game_map.lantern"])
+    ScriptMore(["l.hide"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 318, 61, 40, 2, 0])
+    ControlVariables([849, 849, 0, 0, 1])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    Comment(["Leave"])
+    Script(["s = $game_map.effect_surface"])
+    ScriptMore(["s.change_color(60,0,0,80,0)"])
+    Script(["l = $game_map.lantern"])
+    ScriptMore(["l.hide"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 318, 61, 40, 2, 0])
+    ControlVariables([849, 849, 0, 0, 1])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Comment(["Leave"])
+    Script(["s = $game_map.effect_surface"])
+    ScriptMore(["s.change_color(60,0,0,80,0)"])
+    Script(["l = $game_map.lantern"])
+    ScriptMore(["l.hide"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 318, 61, 40, 2, 0])
+    ControlVariables([849, 849, 0, 0, 1])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 17
+Name = "SpookFest Prep"
+
+  Page 0
+    TintScreen(["Tone(@red=-17.0, @green=-17.0, @blue=-17.0, @gray=0.0)", 1, true])
+    ConditionalBranch([0, 4323, 0])
+      JumpToLabel(["stopscanam"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "RTime::month == 10 && RTime::day >= 28"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "RTime::month == 11 && RTime::day <= 2"])
+        Empty([])
+      Else([])
+        Comment(["No ScareFlee in normal SpookFests"])
+        JumpToLabel(["stopscanam"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["###SCAREFLEE###"])
+    Comment(["check next actor UW"])
+    Script(["@n = 0"])
+    Label(["agscare"])
+    Script(["@party = $game_party.members.size"])
+    ScriptMore(["@party -= 1"])
+    ConditionalBranch([12, "@party < @n"])
+      JumpToLabel(["stopchsca"])
+      Empty([])
+
+    BranchEnd([])
+    Script(["@id = $game_party.members[@n].id rescue -1"])
+    ConditionalBranch([12, "@id != -1"])
+      Script(["@cl = $game_actors[@id].class_id"])
+      ConditionalBranch([12, "@cl == 122"])
+        Comment(["scarecrow"])
+        ControlVariables([767, 767, 0, 4, "@id"])
+        Comment(["#########################"])
+        Script(["@npm = $game_variables[767]"])
+        ScriptMore(["$game_party.remove_actor(@npm) "])
+        ControlSwitches([1303, 1303, 0])
+        ControlVariables([2033, 2033, 2, 0, 1])
+        ControlSwitches([2480, 2480, 0])
+        CallCommonEvent([537])
+        ControlSwitches([2480, 2480, 1])
+        Comment(["#########################"])
+        JumpToLabel(["stopchsca"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Script(["@n += 1"])
+    JumpToLabel(["agscare"])
+    Label(["stopchsca"])
+    Script(["@prog = 2250"])
+    Label(["scaname"])
+    ConditionalBranch([12, "$game_variables[@prog][0] == \"scarecrow\""])
+      Comment(["Away for SpookFest"])
+      ControlSwitches([4323, 4323, 0])
+      Script(["$game_variables[@prog][8] = 20"])
+      JumpToLabel(["stopscanam"])
+      Empty([])
+
+    Else([])
+      Script(["@prog += 1"])
+      ConditionalBranch([12, "@prog <= 2750"])
+        JumpToLabel(["scaname"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["###SCAREFLEE###"])
+    Label(["stopscanam"])
+    Comment(["###NPC SPRITES###"])
+    CallCommonEvent([543])
+    Comment(["###SPOOK!###"])
+    Script(["s = $game_map.effect_surface"])
+    ScriptMore(["s.set_color(100,0,0)"])
+    ScriptMore(["s.set_alpha(90)"])
+    PlayBGM(["RPG::BGM(@name=\"P&C - Scarecrow Spook\", @volume=90, @pitch=110)"])
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 18
+Name = "PumpKing"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowPicture([1, "Pumpking dial grin", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["PumpKing:"])
+    ShowText(["Our Princess 's the one making the best parties,\\. ain't her?\\.\\. The \\c[18]SpookFest\\c[0] is all about cute dresses and candies!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["PumpKing:"])
+    ShowText(["Treats 'r needed to your kin to survive,\\. s'that right?"])
+    ErasePicture([1])
+    ShowChoices([["Talk to the PumpKing", "Offer him \\i[846] Candy Corn"], 5])
+    When([0, "Talk to the PumpKing"])
+      ShowPicture([1, "Pumpking dial grin", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["PumpKing:"])
+      ShowText(["No fighting tonight,\\. sport,\\. our Princess wants it to be a party."])
+      ErasePicture([1])
+      SaveBGM([])
+      FadeoutBGM([1])
+      Wait([15])
+      ShotBalloonIcon([0, 8, true])
+      Wait([15])
+      ShowPicture([1, "Pumpking dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["PumpKing:"])
+      ShowText(["You don't plan to do anything stupid,\\. do ya?"])
+      ErasePicture([1])
+      ReplayBGM([])
+      JumpToLabel(["end"])
+      Empty([])
+
+    When([1, "Offer him \\i[846] Candy Corn"])
+      ShowPicture([1, "Pumpking dial grin", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["PumpKing:"])
+      ShowText(["Candies?\\.\\. Give them here,\\. ye'll please the True Princess!"])
+      ShowPicture([1, "Pumpking dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["PumpKing:"])
+      ShowText(["She insisted preparing these \\i[892] costumes for all ya guests...\\.\\.\\. I tried stopping her,\\. but...\\.\\.\\. eh...\\.\\.\\."])
+      Comment(["#########"])
+      Script(["$game_variables[8762] = 6"])
+      CallCommonEvent([134])
+      Script(["$game_variables[8762] = 0"])
+      Comment(["#########"])
+      JumpToLabel(["end"])
+      Empty([])
+
+    WhenCancel([])
+      Empty([])
+
+    ChoicesEnd([])
+    Label(["end"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 19
+Name = "Finish tent message"
+
+  Page 0
+    Wait([600])
+    ShowChoices([["Finish!", "Keep going..."], 2])
+    When([0, "Finish!"])
+      ControlSwitches([1202, 1202, 0])
+      Empty([])
+
+    When([1, "Keep going..."])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 20
+Name = "Spook"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[light 40]"])
+    Empty([])
+
+CommonEvent 21
+Name = "Spook"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[light 40]"])
+    Empty([])
+
+CommonEvent 22
+Name = "Spook"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[light 40]"])
+    Empty([])
+
+CommonEvent 23
+Name = "Spook"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[light 40]"])
+    Empty([])
+
+CommonEvent 24
+Name = "Spook"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[light 40]"])
+    Empty([])
+
+CommonEvent 25
+Name = "SpookFest"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 5125])
+    CallCommonEvent([498])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 26
+Name = "SpookFest"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 5126])
+    CallCommonEvent([498])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 27
+Name = "SpookFest"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 5127])
+    CallCommonEvent([498])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 28
+Name = "SpookFest"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 5128])
+    CallCommonEvent([498])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 29
+Name = "SpookFest"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 5129])
+    CallCommonEvent([498])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 30
+Name = "SpookFest"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 5130])
+    CallCommonEvent([498])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 31
+Name = "SpookFest"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 5131])
+    CallCommonEvent([498])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 32
+Name = "SpookFest"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 5132])
+    CallCommonEvent([498])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 33
+Name = "SpookFest"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 5133])
+    CallCommonEvent([498])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 34
+Name = "SpookFest"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 5134])
+    CallCommonEvent([498])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 35
+Name = "Spook"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[light 40]"])
+    Empty([])
+
+CommonEvent 36
+Name = "Spook"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[light 40]"])
+    Empty([])
+
+CommonEvent 37
+Name = "SnailP"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ShowPicture([1, "SnailP dial sad", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Snail Princess:"])
+      ShowText(["Huh?\\.\\."])
+      ErasePicture([1])
+      ShotBalloonIcon([0, 8, true])
+      Wait([15])
+      ShowPicture([1, "SnailP dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Snail Princess:"])
+      ShowText(["You people sure like your parties,\\. huh?\\.\\. But you shouldn't do that on an empty stomach."])
+      ShowPicture([1, "SnailP dial", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Snail Princess:"])
+      ShowText(["Come,\\. eat some.\\.\\. You're all wrinkled and battered,\\. let your Snail Princess feed you something tasty."])
+      ErasePicture([1])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    ShowPicture([1, "SnailP dial disgust", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Snail Princess:"])
+    ShowText(["What's with all this sugar around here?!\\.\\. You should get some fat on those bones of yours,\\. trust this snail!"])
+    ErasePicture([1])
+    Script(["$PU_AUTOMATIC_POPUP = false"])
+    ChangeGold([1, 0, 99999])
+    ChangeGold([0, 1, 584])
+    Script(["$PU_AUTOMATIC_POPUP = true"])
+    ControlVariables([617, 617, 0, 3, 7, 2, 0])
+    ShopProcessing([0, 359, 0, 0, true])
+    ShopItem([0, 360, 0, 0])
+    ShopItem([0, 361, 0, 0])
+    ControlVariables([618, 618, 0, 3, 7, 2, 0])
+    ControlVariables([585, 585, 0, 1, 618])
+    ControlVariables([585, 585, 2, 1, 617])
+    ConditionalBranch([1, 585, 0, 0, 5])
+      ControlSwitches([648, 648, 0])
+      Wait([45])
+      Empty([])
+
+    BranchEnd([])
+    CallCommonEvent([868])
+    ShowPicture([1, "SnailP dial horny", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Snail Princess:"])
+    ShowText(["Good,\\. good.\\.\\. I want to see you get nice and plump~"])
+    ErasePicture([1])
+    Label(["end"])
+    Empty([])
+
+CommonEvent 38
+Name = "PumpkinHead"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 39
+Name = "PumpkinHead"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 40
+Name = "PumpkinHead"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 41
+Name = "PumpkinHead"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 42
+Name = "Disappearences"
+
+  Page 0
+    Label(["nookspk"])
+    ConditionalBranch([12, "RTime::month == 10"])
+      ConditionalBranch([12, "RTime::day >= 28"])
+        Comment(["ScareApp"])
+        JumpToLabel(["okspk"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "RTime::month == 11"])
+        ConditionalBranch([12, "RTime::day <= 2"])
+          Comment(["ScareApp"])
+          JumpToLabel(["okspk"])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Wait([60])
+    JumpToLabel(["nookspk"])
+    Label(["okspk"])
+    Script(["@r = 60 + rand(120)"])
+    Label(["wmore"])
+    Comment(["Setting vvv"])
+    Wait([15])
+    Comment(["Setting ^^^"])
+    ConditionalBranch([12, "@r.nil?"])
+      Script(["@r = 60 + rand(120)"])
+      JumpToLabel(["wmore"])
+      Empty([])
+
+    Else([])
+      Script(["@r -= 1"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@r <= 0"])
+      Script(["@r = rand(3)"])
+      ConditionalBranch([12, "@r < 1"])
+        Empty([])
+      Else([])
+        Script(["@r = 60 + rand(120)"])
+        JumpToLabel(["wmore"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "$game_message.visible == true"])
+        JumpToLabel(["wmore"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 1195, 0])
+        JumpToLabel(["wmore"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 1200, 0])
+        JumpToLabel(["wmore"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 1198, 0])
+        JumpToLabel(["wmore"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 1814, 0])
+        JumpToLabel(["wmore"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 1770, 0])
+        JumpToLabel(["wmore"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([0, 3416, 0])
+        JumpToLabel(["wmore"])
+        Empty([])
+      BranchEnd([])
+      ConditionalBranch([12, "$game_message.visible == true"])
+        JumpToLabel(["wmore"])
+        Empty([])
+      BranchEnd([])
+      ControlSelfSwitch(["A", 0])
+      Empty([])
+
+    Else([])
+      JumpToLabel(["wmore"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    ConditionalBranch([12, "$game_self_switches[[460,25,\"A\"]] == true && $game_self_switches[[460,26,\"A\"]] == true && $game_self_switches[[460,27,\"A\"]] == true && $game_self_switches[[460,28,\"A\"]] == true && $game_self_switches[[460,29,\"A\"]] == true && $game_self_switches[[460,30,\"A\"]] == true && $game_self_switches[[460,31,\"A\"]] == true && $game_self_switches[[460,32,\"A\"]] == true && $game_self_switches[[460,33,\"A\"]] == true && $game_self_switches[[460,34,\"A\"]] == true"])
+      Comment(["#All Disappeared #"])
+      ConditionalBranch([12, "RTime::month == 10"])
+        ConditionalBranch([12, "RTime::day >= 28"])
+          ControlSelfSwitch(["B", 0])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "RTime::month == 11"])
+          ConditionalBranch([12, "RTime::day <= 2"])
+            ControlSelfSwitch(["B", 0])
+            Empty([])
+          BranchEnd([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    SaveBGM([])
+    FadeoutBGM([3])
+    PlaySE(["RPG::SE(@name=\"Close3\", @pitch=110, @volume=65)"])
+    TintScreen(["Tone(@red=-170.0, @green=-170.0, @blue=-170.0, @gray=0.0)", 1, false])
+    Wait([120])
+    ShotBalloonIcon([-1, 8, true])
+    Script(["loop do"])
+    ScriptMore(["@k = 25 + rand(10)"])
+    ScriptMore(["if @k >= 34"])
+    ScriptMore(["@k = 34"])
+    ScriptMore(["end"])
+    ScriptMore(["if $game_self_switches[[460,@k,\"A\"]]==false"])
+    ScriptMore(["break"])
+    ScriptMore(["end"])
+    ScriptMore(["end"])
+    Script(["$game_self_switches[[460,@k,\"A\"]] = true"])
+    ScriptMore(["$game_map.events[@k].erase"])
+    Script(["@prog = 7200 + @k "])
+    Script(["$game_variables[@prog]="])
+    ScriptMore(["[0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,"])
+    ScriptMore(["0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"])
+    ScriptMore(["0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]"])
+    Wait([120])
+    PlaySE(["RPG::SE(@name=\"Bow4\", @pitch=120, @volume=80)"])
+    TintScreen(["Tone(@red=-68.0, @green=-68.0, @blue=-68.0, @gray=0.0)", 10, true])
+    TintScreen(["Tone(@red=-170.0, @green=-170.0, @blue=-170.0, @gray=0.0)", 6, true])
+    TintScreen(["Tone(@red=-68.0, @green=-68.0, @blue=-68.0, @gray=0.0)", 10, true])
+    TintScreen(["Tone(@red=-170.0, @green=-170.0, @blue=-170.0, @gray=0.0)", 6, true])
+    TintScreen(["Tone(@red=-68.0, @green=-68.0, @blue=-68.0, @gray=0.0)", 10, true])
+    TintScreen(["Tone(@red=-170.0, @green=-170.0, @blue=-170.0, @gray=0.0)", 6, true])
+    TintScreen(["Tone(@red=-68.0, @green=-68.0, @blue=-68.0, @gray=0.0)", 10, true])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 60, true])
+    Wait([60])
+    ReplayBGM([])
+    Label(["end"])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+  Page 2
+    ControlSelfSwitch(["A", 1])
+    FadeoutScreen([])
+    Wait([15])
+    Script(["s = $game_map.effect_surface"])
+    ScriptMore(["s.set_color(125,50,50)"])
+    ScriptMore(["s.set_alpha(180)"])
+    TransferPlayer([0, 460, 11, 17, 8, 0])
+    CallCommonEvent([90])
+    Wait([15])
+    FadeinScreen([])
+    Wait([60])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["..."])
+    Wait([30])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Darkness fills the room as the lights dim.\\.\\. The silence within the room is deafening in its own way.\\.\\."])
+    Wait([30])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["You hadn't thought about it before,\\. but when did this party clear out?\\.\\. No one else is here...\\.\\.\\."])
+    Wait([15])
+    ShotBalloonIcon([-1, 1, false])
+    ShowTextAttributes(["", 4, 0, 2])
+    ShowText(["???:"])
+    ShowText(["Kakakaka...\\.\\.\\. those who stalk the fields~\\.\\. Kakakaka...\\.\\.\\."])
+    ShowTextAttributes(["", 4, 0, 2])
+    ShowText(["???:"])
+    ShowText(["I thank you for coming,\\. from the bottom of my beating heart~"])
+    Wait([60])
+    PlaySE(["RPG::SE(@name=\"Bow4\", @pitch=120, @volume=80)"])
+    TintScreen(["Tone(@red=-68.0, @green=-68.0, @blue=-68.0, @gray=0.0)", 10, true])
+    TintScreen(["Tone(@red=-170.0, @green=-170.0, @blue=-170.0, @gray=0.0)", 6, true])
+    ShowAnimation([44, 56, false])
+    TintScreen(["Tone(@red=-68.0, @green=-68.0, @blue=-68.0, @gray=0.0)", 10, true])
+    Script(["$game_self_switches[[460,1,\"A\"]] = true"])
+    Script(["$game_self_switches[[460,44,\"A\"]] = true"])
+    Script(["$game_self_switches[[460,9,\"A\"]] = true"])
+    TintScreen(["Tone(@red=-170.0, @green=-170.0, @blue=-170.0, @gray=0.0)", 6, true])
+    TintScreen(["Tone(@red=-68.0, @green=-68.0, @blue=-68.0, @gray=0.0)", 10, true])
+    TintScreen(["Tone(@red=-170.0, @green=-170.0, @blue=-170.0, @gray=0.0)", 6, true])
+    TintScreen(["Tone(@red=-68.0, @green=-68.0, @blue=-68.0, @gray=0.0)", 10, true])
+    Script(["s = $game_map.effect_surface"])
+    ScriptMore(["s.set_color(100,0,0)"])
+    ScriptMore(["s.set_alpha(90)"])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 60, true])
+    Wait([60])
+    ReplayBGM([])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["An unhealthy glow settles on the stage.\\.\\. A gust of wind passes through the walls,\\. clearing the fog.\\.\\. There,\\. a figure stands...\\.\\.\\."])
+    Wait([15])
+    ShowPicture([1, "ScarecrowP dial X1 evil", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Scarecrow Princess:"])
+    ShowText(["Kakakaka~!\\.\\. Welcome to Spookfest,\\. my freaks and friends~!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Scarecrow Princess:"])
+    ShowText(["It's so nice to have you come visit on this night,\\. our night~!"])
+    ErasePicture([1])
+    Wait([15])
+    PlaySE(["RPG::SE(@name=\"SkeletonCheer\", @pitch=110, @volume=80)"])
+    Wait([15])
+    Comment(["### CHEERING ###"])
+    Script(["@nc = 0"])
+    Script(["@cmax = 4 + rand(4)"])
+    Label(["rc1"])
+    Script(["@c = 2 + rand(8)"])
+    ScriptMore(["if @c >= 9"])
+    ScriptMore(["@c = 9"])
+    ScriptMore(["end"])
+    Script(["@nc += 1"])
+    Script(["@i = 3 + rand(2)"])
+    ScriptMore(["if @i > 4"])
+    ScriptMore(["@i = 4"])
+    ScriptMore(["end"])
+    Script(["$game_map.events[@c].balloon_id = @i"])
+    ConditionalBranch([12, "@nc <= @cmax"])
+      JumpToLabel(["rc1"])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["### CHEERING ###"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The bumpkins and scarecrows applaud.\\.\\."])
+    Wait([15])
+    ShowPicture([1, "ScarecrowP dial X1 love", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Scarecrow Princess:"])
+    ShowText(["Oh,\\. y'all are too kind,\\. too kind~\\.\\."])
+    ShowPicture([1, "ScarecrowP dial X1 sack", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Scarecrow Princess:"])
+    ShowText(["I hope ya have a real killer time,\\. cuz this night is extra special...\\.\\.\\. it'll be a night to remember,\\. kakakakakaka~!"])
+    ErasePicture([1])
+    Wait([15])
+    PlaySE(["RPG::SE(@name=\"SkeletonCheer\", @pitch=110, @volume=80)"])
+    Wait([15])
+    Comment(["### CHEERING ###"])
+    Script(["@nc = 0"])
+    Script(["@cmax = 4 + rand(4)"])
+    Label(["rc2"])
+    Script(["@c = 2 + rand(8)"])
+    ScriptMore(["if @c >= 9"])
+    ScriptMore(["@c = 9"])
+    ScriptMore(["end"])
+    Script(["@nc += 1"])
+    Script(["@i = 3 + rand(2)"])
+    ScriptMore(["if @i > 4"])
+    ScriptMore(["@i = 4"])
+    ScriptMore(["end"])
+    Script(["$game_map.events[@c].balloon_id = @i"])
+    ConditionalBranch([12, "@nc <= @cmax"])
+      JumpToLabel(["rc2"])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["### CHEERING ###"])
+    Wait([30])
+    Comment(["### ACHI SPOOKSCA ###"])
+    ConditionalBranch([12, "$game_variables[3905][19] == 0"])
+      Wait([2])
+      ControlVariables([3907, 3907, 0, 0, 220])
+      CallCommonEvent([979])
+      ControlSwitches([3907, 3907, 0])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["### ACHI SPOOKSCA ###"])
+    ControlSelfSwitch(["C", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 44
+Name = "ScareP"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Script(["@r = rand(3)"])
+    ConditionalBranch([12, "@r < 1"])
+      ShotBalloonIcon([0, 2, false])
+      ShowPicture([1, "ScarecrowP dial X1 love", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Scarecrow Princess:"])
+      ShowText(["Oh?\\.\\. Oh?\\.\\. What's this I see?\\.\\. Are my li'l eyes deceiving me?\\.\\."])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Scarecrow Princess:"])
+      ShowText(["Well aren't you standing out,\\. Mister Knight boy~"])
+      ShowPicture([1, "ScarecrowP dial X1 evil", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Scarecrow Princess:"])
+      ShowText(["Kakaka...\\.\\.\\. 'case ya haven't noticed,\\. this little party is more for me an' my subjects,\\. ya see?\\.\\."])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Scarecrow Princess:"])
+      ShowText(["Yer the only non scarecrow or bumpkin here,\\. ain't ya?\\.\\."])
+      ShowPicture([1, "ScarecrowP dial X1 love", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Scarecrow Princess:"])
+      ShowText(["...\\.\\.\\. Well,\\. I guess that's fine,\\. I do like ya,\\. kaka~\\.\\."])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Scarecrow Princess:"])
+      ShowText(["Just for tonight,\\. yer a fellow scarecrow,\\. okay?\\.\\."])
+      ShotBalloonIcon([0, 3, false])
+      ShowPicture([1, "ScarecrowP dial X1 evil", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Scarecrow Princess:"])
+      ShowText(["...\\.\\.\\.'less,\\. o' course,\\. your thinkin' of bein' one for more than one night,\\. now there's an idea~"])
+      ErasePicture([1])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "@r < 2"])
+        ShowPicture([1, "ScarecrowP dial X1 love", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Scarecrow Princess:"])
+        ShowText(["Are ya likin' my dress~?\\.\\. I do hope it's a good one,\\. it took a real long time to get changed,\\. like ya wouldn't believe~"])
+        ShotBalloonIcon([0, 7, false])
+        ShowPicture([1, "ScarecrowP dial X1 sad", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Scarecrow Princess:"])
+        ShowText(["Sigh...\\.\\.\\. it took a whole lotta \"energy\" to get this look.\\.\\."])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Scarecrow Princess:"])
+        ShowText(["I was this late to my own party,\\. harumph!\\.\\. I almost thought I wouldn't get it in time at all!\\.\\."])
+        ShowPicture([1, "ScarecrowP dial X1 love", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Scarecrow Princess:"])
+        ShowText(["Hmmm?\\.\\. A good costume?\\.\\. Oh!\\.\\."])
+        ShowPicture([1, "ScarecrowP dial X1", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Scarecrow Princess:"])
+        ShowText(["You mean my dress?\\.\\. ...\\.\\.\\. ...\\.\\.\\. ...\\.\\.\\."])
+        ShotBalloonIcon([0, 3, false])
+        ShowPicture([1, "ScarecrowP dial X1 sack", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Scarecrow Princess:"])
+        ShowText(["Kakakakakakaka!\\.\\. Right,\\. sure,\\. it's a costume alright,\\. one to die for,\\. ain't it so?\\.\\."])
+        ErasePicture([1])
+        Empty([])
+      Else([])
+        ShowPicture([1, "ScarecrowP dial X1", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Scarecrow Princess:"])
+        ShowText(["I do so appreciate all the fellas and ladies that came to my party.\\.\\."])
+        ShowPicture([1, "ScarecrowP dial X1 evil", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Scarecrow Princess:"])
+        ShowText(["I dare say it couldn't have been as successful without 'em~"])
+        ShowPicture([1, "ScarecrowP dial X1 sad", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Scarecrow Princess:"])
+        ShowText(["Sniff,\\. it's a shame they aren't here to see the results,\\. really.\\.\\."])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Scarecrow Princess:"])
+        ShowText(["They had to \"leave early\",\\. ya see.\\.\\. But I'm sure they had a good time before I sent them on their way!\\.\\."])
+        ShotBalloonIcon([0, 4, false])
+        ShowPicture([1, "ScarecrowP dial X1 evil", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Scarecrow Princess:"])
+        ShowText(["Mmmhm.\\.\\. A mighty shame~\\.\\. But I'll thank 'em and keep goin' for their sakes~\\.\\. Wouldn't want their sacrifice to be wasted,\\. right?\\.\\.~"])
+        ErasePicture([1])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 45
+Name = "Chest"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([399, 0, 0, 1, false])
+    Empty([])
+
+  Page 1
+    Empty([])

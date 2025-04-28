@@ -1,0 +1,97 @@
+Display Name = ""
+Parallax Name = "Cave-In"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\"Royal Treasury\""])
+    PlaySE(["RPG::SE(@name=\"Lift\", @pitch=140, @volume=80)"])
+    Wait([240])
+    ConditionalBranch([4, 6, 0])
+      JumpToLabel(["royal"])
+      Empty([])
+
+    BranchEnd([])
+    ControlVariables([3900, 3900, 0, 0, 4])
+    CallCommonEvent([937])
+    ConditionalBranch([0, 3858, 0])
+      Label(["royal"])
+      PlaySE(["RPG::SE(@name=\"Chime2\", @pitch=100, @volume=80)"])
+      Wait([60])
+      PlaySE(["RPG::SE(@name=\"Key\", @pitch=100, @volume=80)"])
+      ShotBalloonIcon([0, 1, true])
+      Wait([30])
+      PlaySE(["RPG::SE(@name=\"Open3\", @pitch=120, @volume=80)"])
+      Wait([10])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      ControlSelfSwitch(["A", 0])
+      Empty([])
+
+    Else([])
+      PlaySE(["RPG::SE(@name=\"Buzzer1\", @pitch=100, @volume=80)"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Cannot recognize user.\\.\\. Unauthorized access.\\.\\."])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ChangeArmor([328, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 3
+Name = "TPout"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 264, 12, 7, 2, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    FadeinScreen([])
+    Wait([15])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 5
+Name = "Diana"
+
+  Page 0
+    Comment(["<always update>"])
+    CallCommonEvent([162])
+    Empty([])

@@ -1,0 +1,361 @@
+Display Name = ""
+Parallax Name = "WendigoPT"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "Load"
+
+  Page 0
+    ConditionalBranch([12, "$game_self_switches[[461,14,\"A\"]] == false || $game_self_switches[[461,17,\"A\"]] == false || $game_self_switches[[461,18,\"A\"]] == false"])
+      Script(["$game_self_switches[[461,14,\"A\"]] = false"])
+      ScriptMore(["$game_self_switches[[461,17,\"A\"]] = false"])
+      ScriptMore(["$game_self_switches[[461,18,\"A\"]] = false"])
+      Script(["$game_map.start_sas"])
+      ScriptMore(["$game_map.sas_hud.show(true)"])
+      Empty([])
+
+    Else([])
+      Script(["$game_map.pause_sas"])
+      ScriptMore(["$game_map.sas_hud.hide(true)"])
+      Empty([])
+
+    BranchEnd([])
+    TintScreen(["Tone(@red=-17.0, @green=-17.0, @blue=-17.0, @gray=0.0)", 1, true])
+    Script(["s = $game_map.effect_surface"])
+    ScriptMore(["s.set_color(50,0,0)"])
+    ScriptMore(["s.set_alpha(70)"])
+    PlayBGM(["RPG::BGM(@name=\"P&C - Scarecrow Spook\", @volume=90, @pitch=110)"])
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 2
+Name = "Fire"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[light 40]"])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[light 41]"])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[light 41]"])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[light 41]"])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[light 41]"])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[light 41]"])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[light 41]"])
+    Empty([])
+
+CommonEvent 9
+Name = "Bones"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["This was a corpse not long ago,\\. the leftovers bones have been almost completely emptied of their marrow."])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[light 41]"])
+    Empty([])
+
+CommonEvent 11
+Name = "WereP"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([12, "$game_self_switches[[461,14,\"A\"]] == false || $game_self_switches[[461,17,\"A\"]] == false || $game_self_switches[[461,18,\"A\"]] == false"])
+      Comment(["still enemies around"])
+      ShowPicture([1, "WendigoP dial HUM scared", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Wendigo Princess:"])
+      ShowText(["W-\\.why you're inside?\\.\\. It's d-\\.dangerous in here,\\. you shouldn't...\\.\\.\\. I...\\.\\.\\. I'm sorry..."])
+      ErasePicture([1])
+      Empty([])
+
+    Else([])
+      ShowPicture([1, "WendigoP dial HUM scared", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Wendigo Princess:"])
+      ShowText(["...\\.\\.\\. K-\\.knight,\\. please go!\\.\\. It's d-\\.dangerous in here...\\.\\.\\. "])
+      ShowPicture([1, "WendigoP dial HUM calm", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Wendigo Princess:"])
+      ShowText(["...\\.\\.\\. \"They are gone\"?\\.\\. I d-\\.don't understand..."])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Wendigo Princess:"])
+      ShowText(["Oh,\\. that's n-\\.not it...\\.\\.\\. I...\\.\\.\\. saw things in here...\\.\\.\\."])
+      ShowPicture([1, "WendigoP dial HUM desperate", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Wendigo Princess:"])
+      ShowText(["Leave now...\\.\\.\\. there's something m-\\.much worse in this tower!"])
+      ErasePicture([1])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=7, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=5, @parameters=[])\", \"RPG::MoveCommand(@code=5, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=7, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=5, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=5, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+      Wait([60])
+      FadeoutScreen([])
+      Wait([60])
+      FadeinScreen([])
+      ControlSwitches([4330, 4330, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 12
+Name = "Jell"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["A blob of slime...\\.\\.\\. It's not moving."])
+    Empty([])
+
+CommonEvent 13
+Name = "Bones"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Most bones have been crashed and gnawed..."])
+    Empty([])
+
+CommonEvent 14
+Name = "Dusk  Mob"
+
+  Page 0
+    Comment(["[enemy 242]"])
+    Comment(["[localsw 0]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["A human femur,\\. no doubts about it."])
+    ChangeItems([302, 0, 0, 1])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 16
+Name = "Door"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 17
+Name = "Dusk  Mob"
+
+  Page 0
+    Comment(["[enemy 242]"])
+    Comment(["[localsw 0]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 18
+Name = "Dusk  Mob"
+
+  Page 0
+    Comment(["[enemy 242]"])
+    Comment(["[localsw 0]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 462, 21, 4, 6, 0])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 462, 21, 4, 6, 0])
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 462, 21, 4, 6, 0])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 462, 3, 4, 4, 0])
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 462, 3, 4, 4, 0])
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 462, 3, 4, 4, 0])
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 272, 14, 15, 2, 0])
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 272, 14, 15, 2, 0])
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 272, 14, 15, 2, 0])
+    Empty([])
+
+CommonEvent 28
+Name = "CHEST"
+
+  Page 0
+    Comment(["<always update>"])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Wait([15])
+    ChangeArmor([385, 0, 0, 1, false])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 29
+Name = "XMASGift"
+
+  Page 0
+    Comment(["<always update>"])
+    PlaySE(["RPG::SE(@name=\"Equip2\", @pitch=100, @volume=80)"])
+    Wait([10])
+    CallCommonEvent([621])
+    ControlSelfSwitch(["A", 1])
+    Empty([])

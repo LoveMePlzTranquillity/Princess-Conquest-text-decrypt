@@ -1,0 +1,360 @@
+Display Name = ""
+Parallax Name = "WendigoP1"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "Load"
+
+  Page 0
+    ConditionalBranch([12, "$game_self_switches[[462,12,\"A\"]] == false || $game_self_switches[[462,13,\"A\"]] == false || $game_self_switches[[462,14,\"A\"]] == false || $game_self_switches[[462,15,\"A\"]] == false"])
+      Script(["$game_self_switches[[462,12,\"A\"]] = false"])
+      ScriptMore(["$game_self_switches[[462,13,\"A\"]] = false"])
+      ScriptMore(["$game_self_switches[[462,14,\"A\"]] = false"])
+      ScriptMore(["$game_self_switches[[462,15,\"A\"]] = false"])
+      Script(["$game_map.start_sas"])
+      ScriptMore(["$game_map.sas_hud.show(true)"])
+      Empty([])
+
+    Else([])
+      Script(["$game_map.pause_sas"])
+      ScriptMore(["$game_map.sas_hud.hide(true)"])
+      Empty([])
+
+    BranchEnd([])
+    TintScreen(["Tone(@red=-17.0, @green=-17.0, @blue=-17.0, @gray=0.0)", 1, true])
+    Script(["s = $game_map.effect_surface"])
+    ScriptMore(["s.set_color(50,0,0)"])
+    ScriptMore(["s.set_alpha(70)"])
+    PlayBGM(["RPG::BGM(@name=\"P&C - Scarecrow Spook\", @volume=90, @pitch=110)"])
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[light 41]"])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[light 41]"])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[light 41]"])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[light 41]"])
+    Empty([])
+
+CommonEvent 6
+Name = "Candles"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The candles are out..."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[light 24]"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The candles are flickering strangely..."])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Comment(["[light 42]"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The candles are lit.\\.\\. Their flames are dancing around the rune on the floor."])
+    Empty([])
+
+CommonEvent 7
+Name = "Candles"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The candles are out..."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[light 24]"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The candles are flickering strangely..."])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Comment(["[light 42]"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The candles are lit.\\.\\. Their flames are dancing around the rune on the floor."])
+    Empty([])
+
+CommonEvent 8
+Name = "Candles"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The candles are out..."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[light 24]"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The candles are flickering strangely..."])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Comment(["[light 42]"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The candles are lit.\\.\\. Their flames are dancing around the rune on the floor."])
+    Empty([])
+
+CommonEvent 9
+Name = "Candles"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The candles are out..."])
+    ConditionalBranch([0, 4332, 0])
+      Script(["s.set_alpha(75)"])
+      Wait([5])
+      Script(["s.set_alpha(80)"])
+      Wait([5])
+      Script(["s.set_alpha(85)"])
+      Wait([5])
+      ShotBalloonIcon([-1, 1, false])
+      Script(["s.set_alpha(90)"])
+      Wait([5])
+      Script(["s.set_alpha(95)"])
+      Wait([5])
+      Script(["s.set_alpha(100)"])
+      Wait([20])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["The room grows darker and darker as you gaze the candles on the floor."])
+      Wait([15])
+      ShowPicture([1, "dialogueframe", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["???:"])
+      ShowText(["...\\.\\.\\."])
+      ErasePicture([1])
+      Comment(["####################"])
+      Script(["s.set_alpha(95)"])
+      Wait([5])
+      Script(["s.set_alpha(90)"])
+      Wait([5])
+      Script(["s.set_alpha(85)"])
+      Wait([5])
+      Script(["s.set_alpha(80)"])
+      Wait([5])
+      Script(["s.set_alpha(75)"])
+      Wait([5])
+      Script(["s.set_alpha(70)"])
+      Wait([20])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[light 24]"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The candles are flickering strangely..."])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Comment(["[light 42]"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The candles are lit.\\.\\. Their flames are dancing around the rune on the floor."])
+    Empty([])
+
+CommonEvent 10
+Name = "Bones"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["This was a corpse not long ago,\\. the leftovers bones have been almost completely emptied of their marrow."])
+    Empty([])
+
+CommonEvent 11
+Name = "Bones"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["This was a corpse not long ago,\\. the leftovers bones have been almost completely emptied of their marrow."])
+    Empty([])
+
+CommonEvent 12
+Name = "Dusk  Mob"
+
+  Page 0
+    Comment(["[enemy 242]"])
+    Comment(["[localsw 0]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 13
+Name = "Dusk  Mob"
+
+  Page 0
+    Comment(["[enemy 242]"])
+    Comment(["[localsw 0]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 14
+Name = "Dusk  Mob"
+
+  Page 0
+    Comment(["[enemy 242]"])
+    Comment(["[localsw 0]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 15
+Name = "Dusk  Mob"
+
+  Page 0
+    Comment(["[enemy 242]"])
+    Comment(["[localsw 0]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 16
+Name = "WereP"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([12, "$game_self_switches[[461,14,\"A\"]] == false || $game_self_switches[[461,17,\"A\"]] == false || $game_self_switches[[461,18,\"A\"]] == false"])
+      Comment(["still enemies around"])
+      ShowPicture([1, "WendigoP dial HUM scared", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Wendigo Princess:"])
+      ShowText(["Oh,\\. no...\\.\\.\\. nononono...\\.\\.\\. g-\\.et away...\\.\\.\\."])
+      ErasePicture([1])
+      Empty([])
+
+    Else([])
+      ShotBalloonIcon([0, 1, false])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=25, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=25, @parameters=[])"])
+      Wait([15])
+      ShowPicture([1, "WendigoP dial HUM desperate", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Wendigo Princess:"])
+      ShowText(["N-\\.no!\\.\\. I told you not to come!!"])
+      ErasePicture([1])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[5])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=5, @parameters=[])\", \"RPG::MoveCommand(@code=5, @parameters=[])\", \"RPG::MoveCommand(@code=5, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[5])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=5, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=5, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=5, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+      Wait([60])
+      FadeoutScreen([])
+      Wait([60])
+      FadeinScreen([])
+      ControlSwitches([4331, 4331, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 17
+Name = "EV017"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 463, 19, 19, 8, 0])
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 463, 19, 19, 8, 0])
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 463, 19, 19, 8, 0])
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 461, 2, 5, 4, 0])
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 461, 22, 5, 6, 0])
+    Empty([])

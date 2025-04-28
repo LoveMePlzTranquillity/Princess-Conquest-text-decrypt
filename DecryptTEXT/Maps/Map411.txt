@@ -1,0 +1,322 @@
+Display Name = ""
+Parallax Name = "Ninja -1"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "Torch"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 2
+Name = "Torch"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 3
+Name = "NinjaP"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 410, 21, 5, 2, 0])
+    Empty([])
+
+CommonEvent 6
+Name = "Door"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([0, 413, 0])
+      Empty([])
+
+    BranchEnd([])
+    PlaySE(["RPG::SE(@name=\"Open5\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Empty([])
+
+CommonEvent 7
+Name = "SS chest"
+
+  Page 0
+    Comment(["<always update>"])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSwitches([1354, 1354, 0])
+    ChangeArmor([302, 0, 0, 1])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 8
+Name = "SS chest"
+
+  Page 0
+    Comment(["<always update>"])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["...\\.\\.\\. This one's empty."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ConditionalBranch([0, 1354, 0])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["Empty...\\.\\.\\. and big enough to...\\.\\.\\.\\!"])
+      ShowChoices([["Enter the chest.", "Stay out of it."], 2])
+      When([0, "Enter the chest."])
+        PlaySE(["RPG::SE(@name=\"Jump1\", @pitch=100, @volume=80)"])
+        ConditionalBranch([6, -1, 8])
+          SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=14, @parameters=[0, -1])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, -1])"])
+          Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+          Empty([])
+        Else([])
+          SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=14, @parameters=[1, 0])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=14, @parameters=[1, 0])"])
+          Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+          Empty([])
+        BranchEnd([])
+        ControlSwitches([2723, 2723, 0])
+        Wait([30])
+        PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+        Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+        Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+        Wait([30])
+        FadeoutScreen([])
+        SaveBGM([])
+        FadeoutBGM([3])
+        Wait([240])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["The chest looked way larger from the outside.\\.\\. You're having a hard time keeping your head between your knees,\\. taking care to not bump on the lid."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["The air is getting hot inside...\\.\\.\\. is this how mimics feel all the time?"])
+        ShowChoices([["This is stupid, leave the chest.", "She could be right outside, enjoying the scene.", "There has to be another way, leave the chest.", "Endure it for a little longer."], 0])
+        When([0, "This is stupid, leave the chest."])
+          JumpToLabel(["jumpout"])
+          Empty([])
+        When([1, "She could be right outside, enjoying the scene."])
+          JumpToLabel(["jumpout"])
+          Empty([])
+        When([2, "There has to be another way, leave the chest."])
+          JumpToLabel(["jumpout"])
+          Empty([])
+        When([3, "Endure it for a little longer."])
+          Empty([])
+        ChoicesEnd([])
+        Wait([480])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["You start to sweat.\\.\\. No sound can be heard from outside the chest,\\. so you have to make sure you don't make the faintest noise."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["In order to catch that catgirl off guard you need to be smarter than her...\\.\\.\\. nimbler,\\. even.\\.\\. You can't lose focus now!"])
+        Wait([45])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["But the wooden walls around you aren't getting any larger,\\. it won't be long until your mind loses itself into this darkness,\\. if you don't leave soon."])
+        ShowChoices([["This is stupid, leave the chest.", "She could be right outside, enjoying the scene.", "There has to be another way, leave the chest.", "Endure it for a little longer."], 0])
+        When([0, "This is stupid, leave the chest."])
+          JumpToLabel(["jumpout"])
+          Empty([])
+        When([1, "She could be right outside, enjoying the scene."])
+          JumpToLabel(["jumpout"])
+          Empty([])
+        When([2, "There has to be another way, leave the chest."])
+          JumpToLabel(["jumpout"])
+          Empty([])
+        When([3, "Endure it for a little longer."])
+          Empty([])
+        ChoicesEnd([])
+        Wait([360])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["\\^This went too far.\\.\\. You don't know how long you've been in here,\\. but it's now time to\\.\\.\\.\\."])
+        ShakeScreen([3, 3, 20, false])
+        PlaySE(["RPG::SE(@name=\"Beat2\", @pitch=80, @volume=80)"])
+        Wait([15])
+        ShowTextAttributes(["Hero", 0, 0, 2])
+        ShowText(["!"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Something landed on the wooden chest?!\\.\\. Something that moved without making any noise until then?!"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["A little push on the lid and you notice it's not moving.\\.\\. Yes,\\. there's someone just above your head!"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["It used the walls?\\.\\. The ceiling??\\.\\. You have to get out of here before...\\.\\.\\."])
+        PlaySE(["RPG::SE(@name=\"Key\", @pitch=100, @volume=80)"])
+        Wait([10])
+        ShowTextAttributes(["Hero", 0, 0, 2])
+        ShowText(["!!!!"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["The lock has been closed."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["No use hiding your presence,\\. if someone closed the lock it means you're not \"hidden\" anymore.\\.\\. You're \"\\c[18]trapped\\c[0]\"!"])
+        PlaySE(["RPG::SE(@name=\"Beat2\", @pitch=90, @volume=95)"])
+        Wait([20])
+        PlaySE(["RPG::SE(@name=\"Beat2\", @pitch=90, @volume=95)"])
+        ShowTextAttributes(["Hero", 0, 0, 2])
+        ShowText(["Hey!\\.\\. I'm in here!\\.\\. Open the lock!"])
+        ShakeScreen([4, 3, 40, false])
+        PlaySE(["RPG::SE(@name=\"Beat2\", @pitch=95, @volume=100)"])
+        Wait([20])
+        PlaySE(["RPG::SE(@name=\"Beat2\", @pitch=95, @volume=100)"])
+        Wait([20])
+        PlaySE(["RPG::SE(@name=\"Beat2\", @pitch=95, @volume=100)"])
+        ShowTextAttributes(["Hero", 0, 0, 2])
+        ShowText(["It's not funny!\\.\\. Open the lock!\\.\\. NOW!"])
+        Wait([45])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["No answer comes from outside your wooden prison.\\.\\. Is this the end for you?"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Feeling defeated and humiliated,\\. you close your eyes,\\. losing track of time."])
+        Wait([180])
+        ShakeScreen([4, 3, 40, false])
+        PlaySE(["RPG::SE(@name=\"Earth4\", @pitch=120, @volume=80)"])
+        Wait([90])
+        PlaySE(["RPG::SE(@name=\"Earth4\", @pitch=120, @volume=80)"])
+        Wait([90])
+        PlaySE(["RPG::SE(@name=\"Earth4\", @pitch=120, @volume=80)"])
+        Wait([30])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Someone's dragging the chest.\\.\\. It doesn't matter anymore,\\. you can't do much about it except for screaming,\\. but you're too tired for that now."])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Whatever destiny awaits you,\\. it is now out of your control."])
+        Wait([240])
+        ControlVariables([1419, 1419, 0, 0, 3])
+        ControlSwitches([2522, 2522, 0])
+        ControlSelfSwitch(["B", 0])
+        ControlSwitches([2723, 2723, 1])
+        TransferPlayer([0, 360, 16, 13, 2, 0])
+        JumpToLabel(["end"])
+        Comment(["########################"])
+        Label(["jumpout"])
+        FadeinScreen([])
+        ReplayBGM([])
+        PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+        Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+        Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+        PlaySE(["RPG::SE(@name=\"Jump1\", @pitch=100, @volume=80)"])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=14, @parameters=[0, 1])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+        Unnamed(["RPG::MoveCommand(@code=14, @parameters=[0, 1])"])
+        ControlSwitches([2723, 2723, 1])
+        JumpToLabel(["end"])
+        Empty([])
+      When([1, "Stay out of it."])
+        Empty([])
+      ChoicesEnd([])
+      Label(["end"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    Script(["@x = $game_player.x"])
+    Script(["@y = $game_player.y"])
+    ConditionalBranch([12, "@x <= 17"])
+      ConditionalBranch([12, "@y <= 8"])
+        ControlSelfSwitch(["A", 0])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    ControlSelfSwitch(["B", 0])
+    Wait([15])
+    ShotBalloonIcon([-1, 8, true])
+    ControlSwitches([3000, 3000, 0])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["This place is her true hideout...\\.\\.\\. she's bound to come back here eventually."])
+    Wait([20])
+    Script(["reveal_objective(84, 2)"])
+    ScriptMore(["call_quest_journal(84)"])
+    Wait([20])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[20])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[20])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShotBalloonIcon([-1, 7, true])
+    Wait([15])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Look at all this stuff...\\.\\.\\. so much for the \"innocent catgirl\" act."])
+    ControlSwitches([3000, 3000, 1])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])

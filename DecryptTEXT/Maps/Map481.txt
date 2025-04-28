@@ -1,0 +1,77 @@
+Display Name = ""
+Parallax Name = "BirdHouse-II"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "Stair"
+
+  Page 0
+    Comment(["<always update>"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 466, 33, 40, 2, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "Stair"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 3
+Name = "WaterTank"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 4
+Name = "FadeIn"
+
+  Page 0
+    CallCommonEvent([90])
+    ConditionalBranch([0, 413, 0])
+      TintScreen(["Tone(@red=-34.0, @green=-34.0, @blue=0.0, @gray=34.0)", 1, true])
+      Empty([])
+
+    Else([])
+      TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+      Empty([])
+
+    BranchEnd([])
+    FadeinScreen([])
+    Wait([15])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 5
+Name = "BirdChub"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["$game_variables[3332][28] = 1"])
+    ControlSwitches([2412, 2412, 0])
+    ControlVariables([2097, 2097, 0, 0, 1232])
+    ShotBalloonIcon([0, 3, false])
+    ControlVariables([2051, 2051, 0, 0, 0])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Bird Citizen:"])
+    ShowText(["*TWEEET*~\\.\\. This is nice...\\.\\.\\. *SLURP*"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Bird Citizen:"])
+    ShowText(["I love to import fancy food from all over the Kingdom below us~ *CHIRP*"])
+    ControlVariables([2051, 2051, 0, 0, 5])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Bird Citizen:"])
+    ShowText(["It's not like there's much else to do in here,\\. anyway..."])
+    CallCommonEvent([559])
+    ControlSwitches([2412, 2412, 1])
+    CallCommonEvent([743])
+    Empty([])
+
+  Page 1
+    Empty([])

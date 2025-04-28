@@ -1,0 +1,157 @@
+Display Name = ""
+Parallax Name = "BirdHouse-I"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "Stair"
+
+  Page 0
+    Comment(["<always update>"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 466, 9, 44, 2, 0])
+    Empty([])
+
+CommonEvent 2
+Name = "Stair"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 3
+Name = "WaterTank"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 4
+Name = "FadeIn"
+
+  Page 0
+    CallCommonEvent([90])
+    ConditionalBranch([0, 413, 0])
+      TintScreen(["Tone(@red=-34.0, @green=-34.0, @blue=0.0, @gray=34.0)", 1, true])
+      Empty([])
+
+    Else([])
+      TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_self_switches[[480,6,\"A\"]] == true"])
+      Script(["$game_self_switches[[480,5,\"A\"]] = true"])
+      SetEventLocation([5, 0, 13, 14, 2])
+      Empty([])
+
+    BranchEnd([])
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 5
+Name = "BirdMom"
+
+  Page 0
+    Comment(["<always update>"])
+    ControlSwitches([2412, 2412, 0])
+    ControlVariables([2097, 2097, 0, 0, 1231])
+    ConditionalBranch([12, "$game_self_switches[[480,6,\"A\"]] == false"])
+      ShotBalloonIcon([0, 6, false])
+      ControlVariables([2051, 2051, 0, 0, 1])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Bird Citizen:"])
+      ShowText(["Hubby left me in here,\\. to watch over our little one...\\.\\.\\. but truly,\\. I'd like for him to be freed from this golden cage..."])
+      Empty([])
+
+    Else([])
+      ShotBalloonIcon([0, 6, false])
+      ControlVariables([2051, 2051, 0, 0, 1])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Bird Citizen:"])
+      ShowText(["..."])
+      Empty([])
+
+    BranchEnd([])
+    CallCommonEvent([559])
+    ControlSwitches([2412, 2412, 1])
+    CallCommonEvent([743])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ControlSwitches([2412, 2412, 0])
+    ControlVariables([2097, 2097, 0, 0, 1231])
+    ShotBalloonIcon([0, 6, false])
+    ControlVariables([2051, 2051, 0, 0, 1])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Bird Citizen:"])
+    ShowText(["*CHIRP*\\.\\. I'm cold...\\.\\.\\. I'm always so cold...\\.\\.\\."])
+    ConditionalBranch([2, "B", 1])
+      ControlSelfSwitch(["B", 0])
+      ControlVariables([2051, 2051, 0, 0, 1])
+      ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 0, 2, 2])
+      ShowText(["Bird Citizen:"])
+      ShowText(["Will you...\\.\\.\\. heat my body up?\\.\\."])
+      CallCommonEvent([740])
+      Empty([])
+
+    BranchEnd([])
+    CallCommonEvent([559])
+    ControlSwitches([2412, 2412, 1])
+    CallCommonEvent([743])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 6
+Name = "BirdEgg"
+
+  Page 0
+    ControlSwitches([3345, 3345, 0])
+    ControlVariables([2029, 2029, 0, 0, 19])
+    CallCommonEvent([551])
+    ControlSwitches([3345, 3345, 1])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "Finish tent message"
+
+  Page 0
+    Wait([600])
+    ShowChoices([["Finish!", "Keep going..."], 2])
+    When([0, "Finish!"])
+      ControlSwitches([1202, 1202, 0])
+      Empty([])
+
+    When([1, "Keep going..."])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "XMASGift"
+
+  Page 0
+    Comment(["<always update>"])
+    PlaySE(["RPG::SE(@name=\"Equip2\", @pitch=100, @volume=80)"])
+    Wait([10])
+    CallCommonEvent([621])
+    ControlSelfSwitch(["A", 1])
+    Empty([])

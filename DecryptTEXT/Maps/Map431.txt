@@ -1,0 +1,258 @@
+Display Name = ""
+Parallax Name = "Church Bake"
+Note = "<tile lock parallax>"
+
+CommonEvent 4
+Name = "&&&"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 2, 67, 42, 2, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 5
+Name = "&&&"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 2, 67, 42, 2, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "&&&"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 2, 67, 42, 2, 0])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ControlVariables([849, 849, 0, 0, 1])
+    ConditionalBranch([0, 413, 0])
+      TintScreen(["Tone(@red=-34.0, @green=-34.0, @blue=0.0, @gray=34.0)", 10, true])
+      Empty([])
+
+    Else([])
+      TintScreen(["Tone(@red=-17.0, @green=-17.0, @blue=0.0, @gray=17.0)", 10, true])
+      Empty([])
+
+    BranchEnd([])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 16
+Name = "ScaredNun"
+
+  Page 0
+    Comment(["<always update>"])
+    ConditionalBranch([0, 4150, 0])
+      ShotBalloonIcon([0, 6, false])
+      ShowPicture([1, "Nun dial rage", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 3, 2, 2])
+      ShowText(["Nun:"])
+      ShowText(["Begone,\\. monster!"])
+      ErasePicture([1])
+      Empty([])
+
+    Else([])
+      ShotBalloonIcon([0, 1, false])
+      ShowPicture([1, "Nun dial vision", 0, 0, 0, 0, 100, 100, 255, 0])
+      ShowTextAttributes(["", 3, 2, 2])
+      ShowText(["Nun:"])
+      ShowText(["The Goddess protected me!\\.\\. Glory to Her!"])
+      ErasePicture([1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 17
+Name = "Bakeneko"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 050]"])
+    Comment(["[localsw 0]"])
+    CallCommonEvent([746])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    FadeoutBGM([3])
+    ControlSwitches([4150, 4150, 1])
+    Wait([30])
+    ShotBalloonIcon([0, 6, false])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    ShakeScreen([3, 3, 40, false])
+    PlaySE(["RPG::SE(@name=\"AngryCat\", @pitch=70, @volume=70)"])
+    Wait([40])
+    PlaySE(["RPG::SE(@name=\"GlassClink\", @pitch=110, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$BakenekoSpirit\\\", 0])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$BakenekoSpirit\", 0])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    ControlSwitches([2973, 2973, 1])
+    ControlVariables([585, 585, 0, 2, 750, 1150])
+    ControlSwitches([648, 648, 0])
+    Wait([60])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The enraged spirit disappears from the room.\\.\\. In its place...\\.\\.\\. !"])
+    ShotBalloonIcon([-1, 8, true])
+    Wait([15])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Liquor?"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=true, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    ChangeItems([336, 0, 0, 1])
+    Wait([45])
+    ShotBalloonIcon([-1, 1, false])
+    ControlSwitches([3000, 3000, 0])
+    ShakeScreen([3, 3, 40, false])
+    PlaySE(["RPG::SE(@name=\"AngryCat\", @pitch=70, @volume=70)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Bakeneko:"])
+    ShowText(["NYaaAAAaA!! FreEe meEe!"])
+    Wait([20])
+    Script(["complete_objective(93,0)"])
+    ScriptMore(["call_quest_journal(93)"])
+    Wait([30])
+    Script(["complete_objective(92,1)"])
+    ScriptMore(["call_quest_journal(92)"])
+    ConditionalBranch([12, "quest_complete?(92)"])
+      Wait([30])
+      Script(["complete_objective(81,6)"])
+      ScriptMore(["reveal_objective(81,7)"])
+      ScriptMore(["call_quest_journal(81)"])
+      Empty([])
+
+    BranchEnd([])
+    Wait([20])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Bakeneko:"])
+    ShowText(["ThE LaDy WiLl CoMe ForRrr Me!\\.\\. FReE me,\\. FoOlIsH HumAN!"])
+    ControlSwitches([3000, 3000, 1])
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    PlayBGM(["RPG::BGM(@name=\"P&C - Town (Destroyed)\", @volume=100, @pitch=100)"])
+    ControlSelfSwitch(["B", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 18
+Name = "EV018"
+
+  Page 0
+    SetMoveRoute([17, "RPG::MoveRoute(@repeat=true, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=10, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=10, @parameters=[])"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 19
+Name = "EV019"
+
+  Page 0
+    ConditionalBranch([12, "$game_player.region_id == 1"])
+      ControlSelfSwitch(["A", 0])
+      Empty([])
+
+    BranchEnd([])
+    Wait([10])
+    Empty([])
+
+  Page 1
+    ControlSelfSwitch(["A", 1])
+    FadeoutBGM([2])
+    FadeoutScreen([])
+    Wait([30])
+    CallCommonEvent([90])
+    TransferPlayer([0, 431, 17, 17, 8, 0])
+    Wait([30])
+    PlayBGM(["RPG::BGM(@name=\"P&C - Pre-Boss\", @volume=100, @pitch=100)"])
+    Wait([30])
+    FadeinScreen([])
+    Wait([15])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[2])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[2])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+    Wait([30])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["You make your way up to the altar,\\. avoiding the graveyard of broken benches and crashed relics."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The Chapel that everyone living on this side of the Kingdom knows has been trashed!\\.\\. You'd expect to find a whole flock of Cuccos being the cause,\\. but..."])
+    Wait([30])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["What you find,\\. about to pounce on a terrified nun,\\. is something completely different."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["A monster noone in this Kingdom has ever seen before."])
+    ShakeScreen([4, 4, 45, false])
+    ShotBalloonIcon([17, 5, false])
+    PlaySE(["RPG::SE(@name=\"AngryCat\", @pitch=100, @volume=80)"])
+    Wait([15])
+    ShowPicture([1, "Bakeneko dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["???:"])
+    ShowText(["NYaaAAAaA!!"])
+    ErasePicture([1])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["!!"])
+    SetMoveRoute([17, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    ShowPicture([1, "Bakeneko dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["???:"])
+    ShowText(["\\c[18]ThE LAdY\\c[0] CoMMAnDs Me To PURrrrrGe This KiNGDom!\\.\\. I WilL DEStroY THe ChuRCH\\.\\. I WilL DEStroY THe QuEEn!\\.\\."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["???:"])
+    ShowText(["I CaNNyoT bE STopPed!\\.\\. My RaGE WoN't eVEr EXtingUisSSH!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["???:"])
+    ShowText(["YoU CAMe HeRrrrRe to STop ME?!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Bakeneko:"])
+    ShowText(["I'm ThE CuRSe BoRRrrN FrOm RaGE aND DeSPaiR!\\.\\. I'm THe \\c[18]BaKENeKO\\c[0]!\\.\\. \\|AnD YoU WilL die."])
+    ErasePicture([1])
+    Comment(["meeting"])
+    PlayBGM(["RPG::BGM(@name=\"P&C - Boss\", @volume=100, @pitch=100)"])
+    Script(["$game_map.start_sas"])
+    ScriptMore(["$game_map.sas_hud.show(true)"])
+    ControlSwitches([4150, 4150, 0])
+    ControlSelfSwitch(["B", 0])
+    Empty([])
+
+  Page 2
+    Empty([])

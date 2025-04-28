@@ -1,0 +1,5686 @@
+Display Name = ""
+Parallax Name = "CatPrince1"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "FadeIn"
+
+  Page 0
+    Script(["$game_self_switches[[469,207,\"A\"]] = false"])
+    ScriptMore(["$game_self_switches[[469,208,\"A\"]] = false"])
+    ScriptMore(["$game_self_switches[[469,209,\"A\"]] = false"])
+    ScriptMore(["$game_self_switches[[469,210,\"A\"]] = false"])
+    ScriptMore(["$game_self_switches[[469,229,\"A\"]] = false"])
+    ConditionalBranch([1, 1703, 0, 6, 1])
+      ChangeParallaxBack(["CatPrince1-Frozen", true, true, 0, 0])
+      TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([1, 1703, 0, 1, 1])
+        Script(["$game_map.start_sas"])
+        ScriptMore(["$game_map.sas_hud.show(true)"])
+        ChangeParallaxBack(["CatPrince1-Frozen", true, true, 0, 0])
+        TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=255.0)", 1, true])
+        Empty([])
+      Else([])
+        ChangeParallaxBack(["CatPrince1", true, true, 0, 0])
+        TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([2, "B", 0])
+      ControlSelfSwitch(["B", 1])
+      Script(["n = \"Dungeon-GhostM1\""])
+      ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+      ScriptMore(["0, 0, 0, 100, 100, 255, 0)"])
+      Wait([5])
+      FadeinScreen([])
+      Script(["@t = 255"])
+      ScriptMore(["@w = 0"])
+      Loop([])
+        Script(["n = \"Dungeon-GhostM1\""])
+        ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+        ScriptMore(["0, 0, 0, 100, 100, @t, 0)"])
+        Wait([3])
+        Script(["n = \"Dungeon-GhostM2\""])
+        ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+        ScriptMore(["0, 0, 0, 100, 100, @t, 0)"])
+        Wait([3])
+        Script(["n = \"Dungeon-GhostM3\""])
+        ScriptMore(["$game_map.screen.pictures[1].show(n, "])
+        ScriptMore(["0, 0, 0, 100, 100, @t, 0)"])
+        Wait([3])
+        Script(["@w += 1"])
+        ConditionalBranch([12, "@w == 20"])
+          FadeoutScreen([])
+          Empty([])
+        BranchEnd([])
+        ConditionalBranch([12, "@w == 30"])
+          ErasePicture([1])
+          BreakLoop([])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      RepeatAbove([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([2, "A", 1])
+      ControlSelfSwitch(["A", 0])
+      ControlSwitches([2723, 2723, 0])
+      Wait([60])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[20])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[40])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[20])"])
+      Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[40])"])
+      Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+      Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+      Wait([15])
+      FadeinScreen([])
+      Wait([15])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["Moments after touching the \"thing\" on the Princess' throne,\\. you find yourself into an overly large room,\\. mostly empty."])
+      Wait([30])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["What is this place...?\\.\\.\\."])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["Are we still inside the castle,\\. Princess?"])
+      Loop([])
+        ConditionalBranch([6, -1, 2])
+          BreakLoop([])
+          Empty([])
+        BranchEnd([])
+        Wait([5])
+        Empty([])
+      RepeatAbove([])
+      Wait([30])
+      ShotBalloonIcon([-1, 8, true])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["This is too quiet...\\.\\.\\. even for her."])
+      ScrollMap([8, 6, 2])
+      Wait([15])
+      ShowTextAttributes(["Hero", 0, 0, 2])
+      ShowText(["...\\.\\.\\. she didn't follow?\\.\\. How strange...\\.\\.\\. maybe she can't enter this place?"])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[45])\", \"RPG::MoveCommand(@code=45, @parameters=[\\\"$game_player.balloon_id = 1\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+      Unnamed(["RPG::MoveCommand(@code=15, @parameters=[45])"])
+      Unnamed(["RPG::MoveCommand(@code=45, @parameters=[\"$game_player.balloon_id = 1\"])"])
+      Wait([15])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["But as soon as you start worrying about the missing Princess..."])
+      Wait([30])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["... a familiar figure on top of a flight of stairs gets your attention."])
+      Comment(["---------------"])
+      ScrollMap([2, 6, 2])
+      SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+      Wait([45])
+      ControlSwitches([2723, 2723, 1])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    Wait([15])
+    FadeinScreen([])
+    Label(["end"])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 2
+Name = "GhostPortalA"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ConditionalBranch([12, "$game_player.x >= 10.5 && $game_player.x <= 11.5"])
+      ConditionalBranch([12, "$game_player.y >= 45.5 && $game_player.y <= 46.5"])
+        Comment(["final scene trigger"])
+        PlaySE(["RPG::SE(@name=\"Saint3\", @pitch=100, @volume=80)"])
+        FlashScreen(["Color(@red=255.0, @green=255.0, @blue=255.0, @alpha=255.0)", 15, false])
+        ShakeScreen([3, 3, 15, false])
+        Wait([5])
+        TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=255.0)", 1, true])
+        Script(["$game_map.start_sas"])
+        ScriptMore(["$game_map.sas_hud.show(true)"])
+        ControlVariables([1703, 1703, 0, 0, 1])
+        ChangeParallaxBack(["CatPrince1-Frozen", true, true, 0, 0])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Wait([15])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 3
+Name = "GhostPortalB"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 4
+Name = "CatDagger"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["...\\.\\.\\. I can't take it if it's like this..."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["###########################"])
+    Script(["$game_self_switches[[55,1,\"A\"]] = true"])
+    ScriptMore(["$game_self_switches[[55,42,\"A\"]] = true"])
+    Comment(["###########################"])
+    ChangeItems([377, 0, 0, 1])
+    CallCommonEvent([804])
+    ControlSelfSwitch(["B", 0])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 5
+Name = "SithPass"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["@x = rand(15) + 2"])
+    ScriptMore(["@y = rand(50) + 5"])
+    ScriptMore(["$game_map.events[@event_id].moveto(@x,@y)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=42, @parameters=[25])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[50])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[75])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[100])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[125])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[150])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[175])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[200])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[250])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[255])\", \"RPG::MoveCommand(@code=45, @parameters=[\\\"@move_speed = rand(3)\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[25])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[50])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[75])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[100])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[125])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[150])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[175])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[200])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[250])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[255])"])
+    Unnamed(["RPG::MoveCommand(@code=45, @parameters=[\"@move_speed = rand(3)\"])"])
+    Loop([])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      ConditionalBranch([12, "$game_map.events[@event_id].x >= 36"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=42, @parameters=[0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=42, @parameters=[0])"])
+        BreakLoop([])
+        Empty([])
+      BranchEnd([])
+      Wait([5])
+      Empty([])
+
+    RepeatAbove([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 6
+Name = "SithPass"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["@x = rand(15) + 2"])
+    ScriptMore(["@y = rand(50) + 5"])
+    ScriptMore(["$game_map.events[@event_id].moveto(@x,@y)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=42, @parameters=[25])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[50])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[75])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[100])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[125])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[150])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[175])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[200])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[250])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[255])\", \"RPG::MoveCommand(@code=45, @parameters=[\\\"@move_speed = rand(3)\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[25])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[50])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[75])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[100])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[125])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[150])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[175])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[200])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[250])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[255])"])
+    Unnamed(["RPG::MoveCommand(@code=45, @parameters=[\"@move_speed = rand(3)\"])"])
+    Loop([])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      ConditionalBranch([12, "$game_map.events[@event_id].x >= 36"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=42, @parameters=[0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=42, @parameters=[0])"])
+        BreakLoop([])
+        Empty([])
+      BranchEnd([])
+      Wait([5])
+      Empty([])
+
+    RepeatAbove([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 7
+Name = "SithPass"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["@x = rand(25) + 7"])
+    ScriptMore(["@y = rand(50) + 5"])
+    ScriptMore(["$game_map.events[@event_id].moveto(@x,@y)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=42, @parameters=[25])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[50])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[75])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[100])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[125])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[150])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[175])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[200])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[250])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[255])\", \"RPG::MoveCommand(@code=45, @parameters=[\\\"@move_speed = rand(4)\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[25])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[50])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[75])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[100])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[125])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[150])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[175])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[200])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[250])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[255])"])
+    Unnamed(["RPG::MoveCommand(@code=45, @parameters=[\"@move_speed = rand(4)\"])"])
+    Loop([])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      ConditionalBranch([12, "$game_map.events[@event_id].x <= 2"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=42, @parameters=[0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=42, @parameters=[0])"])
+        BreakLoop([])
+        Empty([])
+      BranchEnd([])
+      Wait([5])
+      Empty([])
+
+    RepeatAbove([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 8
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 9
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 10
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 11
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 12
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 13
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 14
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 15
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 16
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 17
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 18
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 19
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 20
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 21
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 22
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 23
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 24
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 25
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 26
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 27
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 28
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 29
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 30
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 31
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 32
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 33
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 34
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 35
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 36
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 37
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 38
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 39
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 40
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 41
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 42
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 43
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 44
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 45
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 46
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 47
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 48
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 49
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 50
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 51
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 52
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 53
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 54
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 55
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 56
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 57
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 58
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 59
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 60
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 61
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 62
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 63
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 64
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 65
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 66
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 67
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 68
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 69
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 70
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 71
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 72
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 73
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 74
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 75
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 76
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 77
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 78
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 79
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 80
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 81
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 82
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 83
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 84
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 85
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 86
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 87
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 88
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 89
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 90
+Name = "Ghost"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 8, true])
+    Wait([30])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Is it...\\.\\.\\. the Princess?!\\.\\. It can't be.\\.\\. In a place like this...\\.\\.\\. she's supposed to be waiting \"outside\"..."])
+    Wait([15])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=25, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=25, @parameters=[])"])
+    ShowPicture([1, "Ghost Princess dial Hum silent", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["???:"])
+    ShowText(["..."])
+    ErasePicture([1])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["She seems to finally notice you approaching.\\.\\. If anyone knows what's happening here,\\. it has to be her."])
+    Wait([15])
+    ShotBalloonIcon([-1, 1, false])
+    ShowPicture([1, "Ghost Princess dial Hum silent", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["???:"])
+    ShowText(["That girl...\\.\\.\\. she let you in,\\. huh?"])
+    ErasePicture([1])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["P-\\.Princess!\\.\\. Y-you...\\.\\.\\. spoke...\\.\\.\\."])
+    ShowPicture([1, "Ghost Princess dial Hum silent", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["???:"])
+    ShowText(["If you're here...\\.\\.\\. it can't be helped,\\. you'll have to deal with what she's keeping in here...\\.\\.\\."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["???:"])
+    ShowText(["Do that,\\. and she'll let go of the \\i[829] \\c[18]Catalyst Dagger\\c[0] you seek."])
+    ErasePicture([1])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Wait!\\.\\. You...\\.\\.\\."])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["But it's already too late.\\.\\. The familiar figure ignores your plea and heads to the strange,\\. unclear object it was standing next to..."])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=29, @parameters=[2])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[2])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Wait([10])
+    ShowAnimation([0, 261, false])
+    ControlSelfSwitch(["A", 0])
+    Wait([5])
+    Script(["$game_self_switches[[469,122,\"A\"]] = true"])
+    Wait([45])
+    ShotBalloonIcon([-1, 8, true])
+    Wait([15])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Now it can be used."])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 91
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 92
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 93
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 94
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 95
+Name = "SithPass"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["@x = rand(25) + 7"])
+    ScriptMore(["@y = rand(50) + 5"])
+    ScriptMore(["$game_map.events[@event_id].moveto(@x,@y)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=42, @parameters=[25])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[50])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[75])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[100])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[125])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[150])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[175])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[200])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[250])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[255])\", \"RPG::MoveCommand(@code=45, @parameters=[\\\"@move_speed = rand(4)\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[25])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[50])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[75])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[100])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[125])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[150])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[175])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[200])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[250])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[255])"])
+    Unnamed(["RPG::MoveCommand(@code=45, @parameters=[\"@move_speed = rand(4)\"])"])
+    Loop([])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      ConditionalBranch([12, "$game_map.events[@event_id].x <= 2"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=42, @parameters=[0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=42, @parameters=[0])"])
+        BreakLoop([])
+        Empty([])
+      BranchEnd([])
+      Wait([5])
+      Empty([])
+
+    RepeatAbove([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 96
+Name = "SithPass"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["@x = rand(25) + 7"])
+    ScriptMore(["@y = rand(50) + 5"])
+    ScriptMore(["$game_map.events[@event_id].moveto(@x,@y)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=42, @parameters=[25])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[50])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[75])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[100])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[125])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[150])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[175])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[200])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[250])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[255])\", \"RPG::MoveCommand(@code=45, @parameters=[\\\"@move_speed = rand(4)\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[25])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[50])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[75])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[100])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[125])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[150])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[175])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[200])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[250])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[255])"])
+    Unnamed(["RPG::MoveCommand(@code=45, @parameters=[\"@move_speed = rand(4)\"])"])
+    Loop([])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+      ConditionalBranch([12, "$game_map.events[@event_id].x <= 2"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=42, @parameters=[0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=42, @parameters=[0])"])
+        BreakLoop([])
+        Empty([])
+      BranchEnd([])
+      Wait([5])
+      Empty([])
+
+    RepeatAbove([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 97
+Name = "SithPass"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["@x = rand(15) + 2"])
+    ScriptMore(["@y = rand(50) + 5"])
+    ScriptMore(["$game_map.events[@event_id].moveto(@x,@y)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=42, @parameters=[25])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[50])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[75])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[100])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[125])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[150])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[175])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[200])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[250])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[255])\", \"RPG::MoveCommand(@code=45, @parameters=[\\\"@move_speed = rand(3)\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[25])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[50])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[75])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[100])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[125])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[150])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[175])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[200])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[250])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[255])"])
+    Unnamed(["RPG::MoveCommand(@code=45, @parameters=[\"@move_speed = rand(3)\"])"])
+    Loop([])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      ConditionalBranch([12, "$game_map.events[@event_id].x >= 36"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=42, @parameters=[0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=42, @parameters=[0])"])
+        BreakLoop([])
+        Empty([])
+      BranchEnd([])
+      Wait([5])
+      Empty([])
+
+    RepeatAbove([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 98
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 99
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 100
+Name = "Gate"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["...\\.\\.\\. I can't open it if it's like this..."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Wait([15])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Earth4\\\\\\\", @pitch=100, @volume=95)\\\"])\", \"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[10])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[20])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[20])\", \"RPG::MoveCommand(@code=35, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Earth4\\\", @pitch=100, @volume=95)\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[10])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[20])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[20])"])
+    Unnamed(["RPG::MoveCommand(@code=35, @parameters=[])"])
+    Wait([15])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 470, 17, 8, 8, 0])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 470, 17, 8, 8, 0])
+    Empty([])
+
+CommonEvent 101
+Name = "Overlay"
+
+  Page 0
+    ConditionalBranch([1, 850, 0, 1, 5])
+      ControlVariables([850, 850, 0, 0, 1])
+      Empty([])
+
+    Else([])
+      Wait([60])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Wait([5])
+    ControlVariables([850, 850, 0, 0, 2])
+    Wait([5])
+    ControlVariables([850, 850, 0, 0, 3])
+    Wait([5])
+    ControlVariables([850, 850, 0, 0, 4])
+    Empty([])
+
+  Page 2
+    ConditionalBranch([1, 850, 0, 1, 5])
+      ControlVariables([850, 850, 0, 0, 1])
+      Empty([])
+
+    Else([])
+      Wait([60])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 102
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 103
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 104
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 105
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 106
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 107
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 108
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 109
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 110
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 111
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 112
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 113
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 114
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 115
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 116
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 117
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 118
+Name = "SithPass"
+
+  Page 0
+    Comment(["<always update>"])
+    Script(["@x = rand(15) + 2"])
+    ScriptMore(["@y = rand(50) + 5"])
+    ScriptMore(["$game_map.events[@event_id].moveto(@x,@y)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=42, @parameters=[25])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[50])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[75])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[100])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[125])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[150])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[175])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[200])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[250])\", \"RPG::MoveCommand(@code=15, @parameters=[5])\", \"RPG::MoveCommand(@code=42, @parameters=[255])\", \"RPG::MoveCommand(@code=45, @parameters=[\\\"@move_speed = rand(3)\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[25])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[50])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[75])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[100])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[125])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[150])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[175])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[200])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[250])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[5])"])
+    Unnamed(["RPG::MoveCommand(@code=42, @parameters=[255])"])
+    Unnamed(["RPG::MoveCommand(@code=45, @parameters=[\"@move_speed = rand(3)\"])"])
+    Loop([])
+      SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+      Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+      ConditionalBranch([12, "$game_map.events[@event_id].x >= 36"])
+        SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=42, @parameters=[0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=42, @parameters=[0])"])
+        BreakLoop([])
+        Empty([])
+      BranchEnd([])
+      Wait([5])
+      Empty([])
+
+    RepeatAbove([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 119
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 120
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 121
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 122
+Name = "GhoSwitch"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["...\\.\\.\\. I can't move it if it's like this..."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["\"Hippocampal Suppressor\""])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Pull the lever?"])
+    ShowChoices([["Yes", "No"], 5])
+    When([0, "Yes"])
+      Empty([])
+
+    When([1, "No"])
+      JumpToLabel(["end"])
+      Empty([])
+
+    WhenCancel([])
+      Empty([])
+
+    ChoicesEnd([])
+    PlaySE(["RPG::SE(@name=\"Open1\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ScrollMap([2, 5, 4])
+    Wait([90])
+    ShowAnimation([2, 261, false])
+    Wait([10])
+    Script(["$game_self_switches[[469,2,\"A\"]] = true"])
+    Wait([90])
+    ScrollMap([8, 5, 4])
+    Wait([30])
+    ControlSelfSwitch(["B", 0])
+    Label(["end"])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 123
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 124
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 125
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 126
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 127
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 128
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 129
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 130
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 131
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 132
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 133
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 134
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 135
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 136
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 137
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 138
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 139
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 140
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 141
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 142
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 143
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 144
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 145
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 146
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 147
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 148
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 149
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 150
+Name = "TP"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 470, 5, 16, 2, 0])
+    Empty([])
+
+CommonEvent 151
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 152
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 153
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 154
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 155
+Name = "GhostOreP"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 156
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 157
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 158
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 159
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 160
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 161
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 162
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 163
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 164
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 165
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 166
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 167
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 168
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 169
+Name = "Ghost"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 4, true])
+    Wait([240])
+    Empty([])
+
+CommonEvent 170
+Name = "protagAngel"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 171
+Name = "Ghost"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 3, true])
+    Wait([240])
+    ShotBalloonIcon([172, 3, true])
+    Wait([240])
+    Empty([])
+
+CommonEvent 172
+Name = "protagSushi"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 173
+Name = "Sushi"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 174
+Name = "Sushi"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 175
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 0]"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 176
+Name = "GhostOreP"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 177
+Name = "GhostOreP"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 178
+Name = "GhostOreP"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 179
+Name = "GhostOreP"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 180
+Name = "GhostOreP"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 181
+Name = "GhostOreP"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 182
+Name = "GhostOreP"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 183
+Name = "GhostOreP"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 184
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 185
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 186
+Name = "GhostOreP"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 187
+Name = "GhostOreP"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 188
+Name = "GhostOreP"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 189
+Name = "GhostOreP"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 190
+Name = "GhostOreP"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 191
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 192
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 193
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 194
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 195
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 196
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 197
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 198
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 199
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 200
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 201
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 202
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 203
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 204
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 205
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 206
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 207
+Name = "Sith"
+
+  Page 0
+    Comment(["<always update>"])
+    ControlSwitches([1770, 1770, 0])
+    ConditionalBranch([2, "A", 0])
+      JumpToLabel(["toD"])
+      Empty([])
+
+    BranchEnd([])
+    ControlSelfSwitch(["A", 0])
+    ShotBalloonIcon([0, 1, true])
+    Wait([15])
+    ShowAnimation([0, 261, false])
+    Wait([10])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$GhoPlive\\\", 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$GhoPlive\", 0])"])
+    Wait([90])
+    Label(["toD"])
+    ShotBalloonIcon([0, 6, false])
+    Wait([15])
+    ShowPicture([1, "Ghost Princess dial Hum silent", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["???:"])
+    ShowText(["...\\.\\.\\. ...\\.\\.\\. ...\\.\\.\\."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["???:"])
+    ShowText([".\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\..\\.\\.\\.\\. *sniffle*"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["???:"])
+    ShowText(["It's all over for me.\\.\\. There's no hope.\\.\\.\\.\\. ...\\.\\.\\.\\.\\. BoohoOOooOoo!\\.\\."])
+    ErasePicture([1])
+    ShowChoices([["Slay it.", "Leave it alone."], 2])
+    When([0, "Slay it."])
+      Empty([])
+
+    When([1, "Leave it alone."])
+      JumpToLabel(["end"])
+      Empty([])
+
+    ChoicesEnd([])
+    Comment(["###########################"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    Wait([5])
+    ShowAnimation([0, 7, false])
+    Wait([5])
+    ControlSelfSwitch(["B", 0])
+    ControlVariables([1703, 1703, 1, 0, 1])
+    Script(["$game_self_switches[[469,233,\"A\"]] = true"])
+    ShowAnimation([-1, 262, true])
+    Wait([10])
+    Comment(["###########################"])
+    Label(["end"])
+    ControlSwitches([1770, 1770, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 208
+Name = "Sith"
+
+  Page 0
+    Comment(["<always update>"])
+    ControlSwitches([1770, 1770, 0])
+    ConditionalBranch([2, "A", 0])
+      JumpToLabel(["toD"])
+      Empty([])
+
+    BranchEnd([])
+    ControlSelfSwitch(["A", 0])
+    ShotBalloonIcon([0, 1, true])
+    Wait([15])
+    ShowAnimation([0, 261, false])
+    Wait([10])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$GhoPlive\\\", 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$GhoPlive\", 0])"])
+    Wait([90])
+    Label(["toD"])
+    ShotBalloonIcon([0, 5, false])
+    Wait([15])
+    ShowPicture([1, "Ghost Princess dial Hum silent", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["???:"])
+    ShowText(["That cat...\\.\\.\\. how could he!?\\.\\. It's his fault I won't see papa again!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["???:"])
+    ShowText(["Papa too!\\.\\. It's his fault too!\\.\\. This is not right!!\\.\\. IT'S ALL THEIR FAULT!!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["???:"])
+    ShowText(["I WILL \\c[18]NEVER\\c[0] FORGIVE THEM!!\\.\\. HOW COULD THEY DO SOMETHING LIKE THAT TO ME!!?"])
+    ErasePicture([1])
+    ShowChoices([["Slay it.", "Leave it alone."], 2])
+    When([0, "Slay it."])
+      Empty([])
+
+    When([1, "Leave it alone."])
+      JumpToLabel(["end"])
+      Empty([])
+
+    ChoicesEnd([])
+    Comment(["###########################"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    Wait([5])
+    ShowAnimation([0, 7, false])
+    Wait([5])
+    ControlSelfSwitch(["B", 0])
+    ControlVariables([1703, 1703, 1, 0, 1])
+    Script(["$game_self_switches[[469,234,\"A\"]] = true"])
+    ShowAnimation([-1, 262, true])
+    Wait([10])
+    Comment(["###########################"])
+    Label(["end"])
+    ControlSwitches([1770, 1770, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 209
+Name = "Sith"
+
+  Page 0
+    Comment(["<always update>"])
+    ControlSwitches([1770, 1770, 0])
+    ConditionalBranch([2, "A", 0])
+      JumpToLabel(["toD"])
+      Empty([])
+
+    BranchEnd([])
+    ControlSelfSwitch(["A", 0])
+    ShotBalloonIcon([0, 1, true])
+    Wait([15])
+    ShowAnimation([0, 261, false])
+    Wait([10])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$GhoPlive\\\", 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$GhoPlive\", 0])"])
+    Wait([90])
+    Label(["toD"])
+    ShotBalloonIcon([0, 2, false])
+    Wait([15])
+    ShowPicture([1, "Ghost Princess dial Hum silent", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["???:"])
+    ShowText(["What happened to me is...\\.\\.\\. just not possible!\\.\\. I was there,\\. in my room,\\. and nothing bad happened!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["???:"])
+    ShowText(["Papa would never allow something bad happening to his precious daughter!\\.\\. To his little Princess!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["???:"])
+    ShowText(["No,\\.\\. I'm sure...\\.\\.\\. I got it wrong!"])
+    ErasePicture([1])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["These are her...\\.\\.\\. thoughts?!\\.\\. The Princess is keeping them locked and hidden in this place."])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Should I...\\.\\.\\. help her get rid of them?"])
+    ShowChoices([["Slay it.", "Leave it alone."], 2])
+    When([0, "Slay it."])
+      Empty([])
+
+    When([1, "Leave it alone."])
+      JumpToLabel(["end"])
+      Empty([])
+
+    ChoicesEnd([])
+    Comment(["###########################"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    Wait([5])
+    ShowAnimation([0, 7, false])
+    Wait([5])
+    ControlSelfSwitch(["B", 0])
+    ControlVariables([1703, 1703, 1, 0, 1])
+    Script(["$game_self_switches[[469,230,\"A\"]] = true"])
+    ShowAnimation([-1, 262, true])
+    Wait([10])
+    Comment(["###########################"])
+    Label(["end"])
+    ControlSwitches([1770, 1770, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 210
+Name = "Sith"
+
+  Page 0
+    Comment(["<always update>"])
+    ControlSwitches([1770, 1770, 0])
+    ConditionalBranch([2, "A", 0])
+      JumpToLabel(["toD"])
+      Empty([])
+
+    BranchEnd([])
+    ControlSelfSwitch(["A", 0])
+    ShotBalloonIcon([0, 1, true])
+    Wait([15])
+    ShowAnimation([0, 261, false])
+    Wait([10])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$GhoPlive\\\", 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$GhoPlive\", 0])"])
+    Wait([90])
+    Label(["toD"])
+    ShotBalloonIcon([0, 7, false])
+    Wait([15])
+    ShowPicture([1, "Ghost Princess dial Hum silent", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["???:"])
+    ShowText(["After what happened...\\.\\.\\. I'm sure papa is worried about me.\\.\\."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["???:"])
+    ShowText(["I'll go back there and talk things out...\\.\\.\\. with my family and my betrothed...\\.\\.\\."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["???:"])
+    ShowText(["I mustn't be late."])
+    ErasePicture([1])
+    ShowChoices([["Slay it.", "Leave it alone."], 2])
+    When([0, "Slay it."])
+      Empty([])
+
+    When([1, "Leave it alone."])
+      JumpToLabel(["end"])
+      Empty([])
+
+    ChoicesEnd([])
+    Comment(["###########################"])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=true, @wait=false, @list=[\"RPG::MoveCommand(@code=12, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=12, @parameters=[])"])
+    Wait([5])
+    ShowAnimation([0, 7, false])
+    Wait([5])
+    ControlSelfSwitch(["B", 0])
+    ControlVariables([1703, 1703, 1, 0, 1])
+    Script(["$game_self_switches[[469,231,\"A\"]] = true"])
+    ShowAnimation([-1, 262, true])
+    Wait([10])
+    Comment(["###########################"])
+    Label(["end"])
+    ControlSwitches([1770, 1770, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 211
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 212
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 213
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 214
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 215
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 216
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 217
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 218
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 219
+Name = "Treas"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 0]"])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ChangeArmor([484, 0, 0, 1, false])
+    ControlSelfSwitch(["B", 0])
+    Empty([])
+
+  Page 3
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 220
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 221
+Name = "Cat Fighter"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 283] "])
+    Comment(["[localsw 0] "])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Label(["wmore"])
+    Wait([180])
+    Script(["@r = rand(5)"])
+    ConditionalBranch([12, "@r < 3"])
+      JumpToLabel(["wmore"])
+      Empty([])
+
+    BranchEnd([])
+    Script(["@r = rand(3)"])
+    ScriptMore(["if @r < 1"])
+    ScriptMore(["@x = 1"])
+    ScriptMore(["@y = rand(50) + 5"])
+    ScriptMore(["else"])
+    ScriptMore(["@x = 37"])
+    ScriptMore(["@y = rand(50) + 5"])
+    ScriptMore(["end"])
+    Script(["$game_map.events[@event_id].moveto(@x,@y)"])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 222
+Name = "Cat Fighter"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 283] "])
+    Comment(["[localsw 0] "])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Label(["wmore"])
+    Wait([180])
+    Script(["@r = rand(5)"])
+    ConditionalBranch([12, "@r < 3"])
+      JumpToLabel(["wmore"])
+      Empty([])
+
+    BranchEnd([])
+    Script(["@r = rand(3)"])
+    ScriptMore(["if @r < 1"])
+    ScriptMore(["@x = 1"])
+    ScriptMore(["@y = rand(50) + 5"])
+    ScriptMore(["else"])
+    ScriptMore(["@x = 37"])
+    ScriptMore(["@y = rand(50) + 5"])
+    ScriptMore(["end"])
+    Script(["$game_map.events[@event_id].moveto(@x,@y)"])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 223
+Name = "Cat Fighter"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 283] "])
+    Comment(["[localsw 0] "])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Label(["wmore"])
+    Wait([180])
+    Script(["@r = rand(5)"])
+    ConditionalBranch([12, "@r < 3"])
+      JumpToLabel(["wmore"])
+      Empty([])
+
+    BranchEnd([])
+    Script(["@r = rand(3)"])
+    ScriptMore(["if @r < 1"])
+    ScriptMore(["@x = 1"])
+    ScriptMore(["@y = rand(50) + 5"])
+    ScriptMore(["else"])
+    ScriptMore(["@x = 37"])
+    ScriptMore(["@y = rand(50) + 5"])
+    ScriptMore(["end"])
+    Script(["$game_map.events[@event_id].moveto(@x,@y)"])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 224
+Name = "Cat Fighter"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 283] "])
+    Comment(["[localsw 0] "])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Label(["wmore"])
+    Wait([180])
+    Script(["@r = rand(5)"])
+    ConditionalBranch([12, "@r < 3"])
+      JumpToLabel(["wmore"])
+      Empty([])
+
+    BranchEnd([])
+    Script(["@r = rand(3)"])
+    ScriptMore(["if @r < 1"])
+    ScriptMore(["@x = 1"])
+    ScriptMore(["@y = rand(50) + 5"])
+    ScriptMore(["else"])
+    ScriptMore(["@x = 37"])
+    ScriptMore(["@y = rand(50) + 5"])
+    ScriptMore(["end"])
+    Script(["$game_map.events[@event_id].moveto(@x,@y)"])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 225
+Name = "Cat Fighter"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 283] "])
+    Comment(["[localsw 0] "])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 2
+    Comment(["<always update>"])
+    Label(["wmore"])
+    Wait([180])
+    Script(["@r = rand(5)"])
+    ConditionalBranch([12, "@r < 3"])
+      JumpToLabel(["wmore"])
+      Empty([])
+
+    BranchEnd([])
+    Script(["@r = rand(3)"])
+    ScriptMore(["if @r < 1"])
+    ScriptMore(["@x = 1"])
+    ScriptMore(["@y = rand(50) + 5"])
+    ScriptMore(["else"])
+    ScriptMore(["@x = 37"])
+    ScriptMore(["@y = rand(50) + 5"])
+    ScriptMore(["end"])
+    Script(["$game_map.events[@event_id].moveto(@x,@y)"])
+    ControlSelfSwitch(["A", 1])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 226
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 227
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 228
+Name = "Stop"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 229
+Name = "Sith"
+
+  Page 0
+    Comment(["<always update>"])
+    ControlSwitches([1770, 1770, 0])
+    ConditionalBranch([2, "A", 0])
+      JumpToLabel(["toD"])
+      Empty([])
+
+    BranchEnd([])
+    ControlSelfSwitch(["A", 0])
+    ShotBalloonIcon([0, 1, true])
+    Wait([15])
+    ShowAnimation([0, 261, false])
+    Wait([10])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$GhoPlive\\\", 0])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$GhoPlive\", 0])"])
+    Wait([90])
+    Label(["toD"])
+    ShotBalloonIcon([0, 8, false])
+    Wait([15])
+    ShowPicture([1, "Ghost Princess dial Hum silent", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["???:"])
+    ShowText(["What happened...\\.\\.\\. I can't go back,\\. can I?\\.\\. Then I suppose...\\.\\.\\."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["???:"])
+    ShowText(["I need to deal with it...\\.\\.\\. day-by-day.\\.\\."])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["???:"])
+    ShowText(["Yes.\\.\\. It WILL get better!\\.\\. I must make good use of this second chance!"])
+    ErasePicture([1])
+    Wait([30])
+    ShotBalloonIcon([0, 8, false])
+    ShotBalloonIcon([-1, 1, false])
+    ShowPicture([1, "Ghost Princess dial Hum love", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["???:"])
+    ShowText(["Thank you...\\.\\.\\. my knight.\\.\\. ...\\.\\.\\. \\N[1]."])
+    ErasePicture([1])
+    Comment(["###########################"])
+    ShotBalloonIcon([0, 3, true])
+    Wait([15])
+    ControlVariables([1703, 1703, 1, 0, 1])
+    Comment(["###########################"])
+    Script(["$game_self_switches[[469,232,\"A\"]] = true"])
+    Wait([10])
+    ControlSelfSwitch(["B", 0])
+    Script(["$game_self_switches[[469,221,\"B\"]] = true"])
+    ScriptMore(["$game_self_switches[[469,222,\"B\"]] = true"])
+    ScriptMore(["$game_self_switches[[469,223,\"B\"]] = true"])
+    ScriptMore(["$game_self_switches[[469,224,\"B\"]] = true"])
+    ScriptMore(["$game_self_switches[[469,225,\"B\"]] = true"])
+    ScriptMore(["$game_self_switches[[470,21,\"B\"]] = true"])
+    ScriptMore(["$game_self_switches[[470,22,\"B\"]] = true"])
+    ScriptMore(["$game_self_switches[[470,23,\"B\"]] = true"])
+    Script(["$game_self_switches[[469,5,\"B\"]] = true"])
+    ScriptMore(["$game_self_switches[[469,6,\"B\"]] = true"])
+    ScriptMore(["$game_self_switches[[469,7,\"B\"]] = true"])
+    ScriptMore(["$game_self_switches[[469,95,\"B\"]] = true"])
+    ScriptMore(["$game_self_switches[[469,96,\"B\"]] = true"])
+    ScriptMore(["$game_self_switches[[469,97,\"B\"]] = true"])
+    ScriptMore(["$game_self_switches[[469,118,\"B\"]] = true"])
+    Comment(["###########################"])
+    ShowAnimation([-1, 262, true])
+    Comment(["###########################"])
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 180, false])
+    Wait([90])
+    ShotBalloonIcon([-1, 1, true])
+    Wait([15])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Colours!\\.\\. This is...\\.\\.\\. good?\\.\\. At least,\\. I think so...\\.\\.\\."])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["Is the Princess ready to let go of the \\i[829] Catalyst Dagger?"])
+    ControlSwitches([1770, 1770, 1])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 230
+Name = "SithF-UL"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 231
+Name = "SithF-DL"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 232
+Name = "SithF-D"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 233
+Name = "SithF-DR"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 234
+Name = "SithF-R"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 235
+Name = "End"
+
+  Page 0
+    ConditionalBranch([12, "$game_player.x <= 5"])
+      ConditionalBranch([12, "$game_player.y >= 42 && $game_player.y <= 45"])
+        ConditionalBranch([12, "$game_self_switches[[469,230,\"A\"]] == true && $game_self_switches[[469,231,\"A\"]] == true && $game_self_switches[[469,232,\"A\"]] == true && $game_self_switches[[469,233,\"A\"]] == true && $game_self_switches[[469,234,\"A\"]] == true"])
+          Comment(["final scene trigger"])
+          ControlSwitches([2723, 2723, 0])
+          FadeoutBGM([3])
+          FadeoutScreen([])
+          Wait([30])
+          TransferPlayer([0, 469, 4, 42, 8, 0])
+          Wait([30])
+          FadeinScreen([])
+          Wait([15])
+          Comment(["##################"])
+          SetMoveRoute([230, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+          SetMoveRoute([231, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=8, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=8, @parameters=[])"])
+          SetMoveRoute([232, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+          SetMoveRoute([233, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=7, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=7, @parameters=[])"])
+          SetMoveRoute([234, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=2, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+          Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+          Unnamed(["RPG::MoveCommand(@code=2, @parameters=[])"])
+          Comment(["##################"])
+          ShowAnimation([4, 261, false])
+          Wait([10])
+          Script(["$game_self_switches[[469,4,\"A\"]] = true"])
+          ScriptMore(["$game_self_switches[[469,230,\"B\"]] = true"])
+          ScriptMore(["$game_self_switches[[469,231,\"B\"]] = true"])
+          ScriptMore(["$game_self_switches[[469,232,\"B\"]] = true"])
+          ScriptMore(["$game_self_switches[[469,233,\"B\"]] = true"])
+          ScriptMore(["$game_self_switches[[469,234,\"B\"]] = true"])
+          ControlSwitches([2723, 2723, 1])
+          ControlSelfSwitch(["A", 0])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Wait([15])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 236
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 237
+Name = "GhostOre"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([-1, 8, true])
+    ShowTextAttributes(["Hero", 0, 0, 2])
+    ShowText(["If it's like this...\\.\\.\\. I can't move it out of the way."])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[enemy 014]"])
+    Comment(["[localsw 1]"])
+    Empty([])
+
+  Page 2
+    Wait([15])
+    CallCommonEvent([573])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 3
+    Empty([])
+
+CommonEvent 238
+Name = "EV238"
+
+  Page 0
+    ShowAnimation([-1, 261, false])
+    Wait([10])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Wait([120])
+    FadeoutScreen([])
+    Wait([30])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    ChangePartyMember([12, 0, 0])
+    TransferPlayer([0, 55, 6, 8, 2, 0])
+    Empty([])
+
+CommonEvent 239
+Name = "EV239"
+
+  Page 0
+    ShowAnimation([-1, 261, false])
+    Wait([10])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Wait([120])
+    FadeoutScreen([])
+    Wait([30])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    ChangePartyMember([12, 0, 0])
+    TransferPlayer([0, 55, 6, 8, 2, 0])
+    Empty([])
+
+CommonEvent 240
+Name = "EV240"
+
+  Page 0
+    ShowAnimation([-1, 261, false])
+    Wait([10])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Wait([120])
+    FadeoutScreen([])
+    Wait([30])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    ChangePartyMember([12, 0, 0])
+    TransferPlayer([0, 55, 6, 8, 2, 0])
+    Empty([])
+
+CommonEvent 241
+Name = "EV241"
+
+  Page 0
+    ShowAnimation([-1, 261, false])
+    Wait([10])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Wait([120])
+    FadeoutScreen([])
+    Wait([30])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    ChangePartyMember([12, 0, 0])
+    TransferPlayer([0, 55, 6, 8, 2, 0])
+    Empty([])
+
+CommonEvent 242
+Name = "EV242"
+
+  Page 0
+    ShowAnimation([-1, 261, false])
+    Wait([10])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=39, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=39, @parameters=[])"])
+    Wait([120])
+    FadeoutScreen([])
+    Wait([30])
+    SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=40, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=40, @parameters=[])"])
+    ChangePartyMember([12, 0, 0])
+    TransferPlayer([0, 55, 6, 8, 2, 0])
+    Empty([])

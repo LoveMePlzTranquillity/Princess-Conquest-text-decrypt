@@ -1,0 +1,29 @@
+Display Name = ""
+Parallax Name = ""
+Note = ""
+
+CommonEvent 1
+Name = "EV001"
+
+  Page 0
+    Wait([180])
+    Label(["ag"])
+    ConditionalBranch([12, "$game_message.visible == false"])
+      ShowPicture([1, "AchiMBelow", 0, 0, 0, 0, 100, 100, 255, 0])
+      Empty([])
+
+    Else([])
+      Wait([30])
+      JumpToLabel(["ag"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["asd"])
+    Empty([])

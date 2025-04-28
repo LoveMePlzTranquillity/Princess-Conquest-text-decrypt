@@ -1,0 +1,106 @@
+Display Name = ""
+Parallax Name = "SeaLift"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "Load"
+
+  Page 0
+    Script(["s = $game_map.effect_surface"])
+    ScriptMore(["s.set_color(0,0,80)"])
+    ScriptMore(["s.set_alpha(45)"])
+    CallCommonEvent([81])
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    Wait([30])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 2
+Name = "light"
+
+  Page 0
+    Comment(["<always update>"])
+    Comment(["[light 0]"])
+    Empty([])
+
+CommonEvent 3
+Name = "TP"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 139, 64, 10, 2, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "Protag-Lift"
+
+  Page 0
+    Comment(["<always_update>"])
+    Empty([])
+
+CommonEvent 5
+Name = "Lift"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Comment(["[light 1]"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Take the lift?"])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      CallCommonEvent([865])
+      Empty([])
+
+    When([1, "No"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+CommonEvent 6
+Name = "Cover"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 7
+Name = "Bubbs"
+
+  Page 0
+    Comment(["<always update>"])
+    Wait([15])
+    PlaySE(["RPG::SE(@name=\"Switch2\", @pitch=100, @volume=80)"])
+    ControlSelfSwitch(["A", 0])
+    ShotBalloonIcon([-1, 1, false])
+    Wait([15])
+    SetEventLocation([5, 0, 13, 10, 0])
+    Script(["$game_self_switches[[446,5,\"A\"]] = true"])
+    Script(["$game_self_switches[[446,6,\"A\"]] = true"])
+    Wait([30])
+    PlaySE(["RPG::SE(@name=\"Blub\", @pitch=60, @volume=85)"])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=29, @parameters=[2])\", \"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=38, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=29, @parameters=[2])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=38, @parameters=[])"])
+    Wait([150])
+    Script(["$game_self_switches[[446,6,\"A\"]] = false"])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])

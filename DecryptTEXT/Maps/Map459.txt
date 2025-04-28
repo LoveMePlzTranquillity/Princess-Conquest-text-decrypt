@@ -1,0 +1,885 @@
+Display Name = ""
+Parallax Name = "PrisonCatWalk"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "Gazer1"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 2
+Name = "Gazer1"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 3
+Name = "Gazer1"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 4
+Name = "Gazer1"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 5
+Name = "Spect"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 6
+Name = "Spect"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 7
+Name = "Spect"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 8
+Name = "Spect"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 9
+Name = "Spect"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 10
+Name = "Spect"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 11
+Name = "Spect"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 12
+Name = "Spect"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 13
+Name = "Spect"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 14
+Name = "Spect"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 15
+Name = "Spect"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 16
+Name = "Spect"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 17
+Name = "Spect"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 18
+Name = "Spect"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 19
+Name = "GazerP"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 20
+Name = "Spect"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 21
+Name = "Spect"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 22
+Name = "AutRun"
+
+  Page 0
+    Script(["@GazScore = Array.new(5, 0)"])
+    Script(["@sc = 0"])
+    CallCommonEvent([21])
+    CallCommonEvent([20])
+    Comment(["#################"])
+    CallCommonEvent([514])
+    CallCommonEvent([543])
+    Wait([10])
+    ControlVariables([850, 850, 0, 0, 1])
+    ScrollMap([8, 3, 6])
+    Wait([30])
+    FadeinScreen([])
+    Wait([15])
+    ShotBalloonIcon([19, 3, true])
+    ShowPicture([1, "Gazer Princess dial smug", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Gazer Princess:"])
+    ShowText(["Oyoyo!\\.\\. Welcome,\\. gentlemen from all over the Kingdom!"])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Gazer Princess:"])
+    ShowText(["Make sure to get an eyeful of the beauties gathered here today~!"])
+    ShowPicture([1, "Gazer Princess dial love", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Gazer Princess:"])
+    ShowText(["Let's beaut-eye-fy this Kingdom!!"])
+    ErasePicture([1])
+    ScrollMap([8, 2, 3])
+    SetMoveRoute([19, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=37, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=8, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=37, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=8, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Wait([30])
+    Comment(["#############"])
+    PlayBGM(["RPG::BGM(@name=\"P&C - Dance Club Of Death\", @volume=100, @pitch=100)"])
+    Comment(["MUSIC"])
+    Comment(["#############"])
+    Wait([75])
+    SetMoveRoute([32, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    SetMoveRoute([33, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    SetMoveRoute([34, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    SetMoveRoute([35, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    SetMoveRoute([31, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=8, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=45, @parameters=[\\\"$game_map.events[31].balloon_id = 2\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=8, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+    Unnamed(["RPG::MoveCommand(@code=45, @parameters=[\"$game_map.events[31].balloon_id = 2\"])"])
+    Wait([300])
+    Comment(["#############"])
+    Comment(["5-29"])
+    CommentMore([""])
+    CommentMore(["19-22-24"])
+    Comment(["CHEERS"])
+    Script(["@nc = 0"])
+    Script(["@cmax = 4 + rand(10)"])
+    Label(["rc1"])
+    Script(["@c = 5 + rand(25)"])
+    ScriptMore(["if @c >= 29"])
+    ScriptMore(["@c = 29"])
+    ScriptMore(["end"])
+    ConditionalBranch([12, "@c == 19 || @c == 22 || @c == 24"])
+      JumpToLabel(["rc1"])
+      Empty([])
+
+    BranchEnd([])
+    Script(["@nc += 1"])
+    Script(["@i = 3 + rand(2)"])
+    ScriptMore(["if @i > 4"])
+    ScriptMore(["@i = 4"])
+    ScriptMore(["end"])
+    Script(["$game_map.events[@c].balloon_id = @i"])
+    ConditionalBranch([12, "@nc <= @cmax"])
+      JumpToLabel(["rc1"])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["#############"])
+    Wait([30])
+    Comment(["#############"])
+    Comment(["Gazer Comment #1"])
+    Comment(["#############"])
+    ControlSwitches([2466, 2466, 0])
+    ControlVariables([1918, 1918, 0, 0, 1066])
+    CallCommonEvent([729])
+    Script(["@prog = 2250 + $game_variables[1918]"])
+    Comment(["####################"])
+    ConditionalBranch([1, 295, 0, 4, 1])
+      ShotBalloonIcon([36, 4, false])
+      Empty([])
+
+    BranchEnd([])
+    Script(["@GazScore[@sc] += $game_variables[295]"])
+    Script(["@sc += 1"])
+    Comment(["####################"])
+    ControlVariables([2051, 2051, 0, 4, "$game_variables[@prog][14]"])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    Wait([120])
+    CallCommonEvent([559])
+    ControlSwitches([2466, 2466, 1])
+    SetMoveRoute([31, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=6, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=6, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([33, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    SetMoveRoute([34, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    SetMoveRoute([35, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    SetMoveRoute([32, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=8, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=45, @parameters=[\\\"$game_map.events[31].balloon_id = 2\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=8, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+    Unnamed(["RPG::MoveCommand(@code=45, @parameters=[\"$game_map.events[31].balloon_id = 2\"])"])
+    Wait([300])
+    Comment(["#############"])
+    Comment(["5-29"])
+    CommentMore([""])
+    CommentMore(["19-22-24"])
+    Comment(["CHEERS"])
+    PlaySE(["RPG::SE(@name=\"Applause2\", @pitch=140, @volume=80)"])
+    Script(["@nc = 0"])
+    Script(["@cmax = 4 + rand(10)"])
+    Label(["rc2"])
+    Script(["@c = 5 + rand(25)"])
+    ScriptMore(["if @c >= 29"])
+    ScriptMore(["@c = 29"])
+    ScriptMore(["end"])
+    ConditionalBranch([12, "@c == 19 || @c == 22 || @c == 24"])
+      JumpToLabel(["rc2"])
+      Empty([])
+
+    BranchEnd([])
+    Script(["@nc += 1"])
+    Script(["@i = 3 + rand(2)"])
+    ScriptMore(["if @i > 4"])
+    ScriptMore(["@i = 4"])
+    ScriptMore(["end"])
+    Script(["$game_map.events[@c].balloon_id = @i"])
+    ConditionalBranch([12, "@nc <= @cmax"])
+      JumpToLabel(["rc2"])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["#############"])
+    Wait([30])
+    Comment(["#############"])
+    Comment(["Gazer Comment #2"])
+    Comment(["#############"])
+    ControlSwitches([2466, 2466, 0])
+    ControlVariables([1918, 1918, 0, 0, 1067])
+    CallCommonEvent([729])
+    Script(["@prog = 2250 + $game_variables[1918]"])
+    Comment(["####################"])
+    ConditionalBranch([1, 295, 0, 4, 1])
+      ShotBalloonIcon([36, 4, false])
+      Empty([])
+
+    BranchEnd([])
+    Script(["@GazScore[@sc] += $game_variables[295]"])
+    Script(["@sc += 1"])
+    Comment(["####################"])
+    ControlVariables([2051, 2051, 0, 4, "$game_variables[@prog][14]"])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    Wait([120])
+    CallCommonEvent([559])
+    ControlSwitches([2466, 2466, 1])
+    SetMoveRoute([33, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=8, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=45, @parameters=[\\\"$game_map.events[31].balloon_id = 2\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=8, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+    Unnamed(["RPG::MoveCommand(@code=45, @parameters=[\"$game_map.events[31].balloon_id = 2\"])"])
+    SetMoveRoute([34, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    SetMoveRoute([35, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    SetMoveRoute([32, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=6, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=6, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    Wait([300])
+    Comment(["#############"])
+    Comment(["5-29"])
+    CommentMore([""])
+    CommentMore(["19-22-24"])
+    Comment(["CHEERS"])
+    PlaySE(["RPG::SE(@name=\"Applause2\", @pitch=140, @volume=80)"])
+    Script(["@nc = 0"])
+    Script(["@cmax = 4 + rand(10)"])
+    Label(["rc3"])
+    Script(["@c = 5 + rand(25)"])
+    ScriptMore(["if @c >= 29"])
+    ScriptMore(["@c = 29"])
+    ScriptMore(["end"])
+    ConditionalBranch([12, "@c == 19 || @c == 22 || @c == 24"])
+      JumpToLabel(["rc3"])
+      Empty([])
+
+    BranchEnd([])
+    Script(["@nc += 1"])
+    Script(["@i = 3 + rand(2)"])
+    ScriptMore(["if @i > 4"])
+    ScriptMore(["@i = 4"])
+    ScriptMore(["end"])
+    Script(["$game_map.events[@c].balloon_id = @i"])
+    ConditionalBranch([12, "@nc <= @cmax"])
+      JumpToLabel(["rc3"])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["#############"])
+    Wait([30])
+    Comment(["#############"])
+    Comment(["Gazer Comment #3"])
+    Comment(["#############"])
+    ControlSwitches([2466, 2466, 0])
+    ControlVariables([1918, 1918, 0, 0, 1068])
+    CallCommonEvent([729])
+    Script(["@prog = 2250 + $game_variables[1918]"])
+    Comment(["####################"])
+    ConditionalBranch([1, 295, 0, 4, 1])
+      ShotBalloonIcon([36, 4, false])
+      Empty([])
+
+    BranchEnd([])
+    Script(["@GazScore[@sc] += $game_variables[295]"])
+    Script(["@sc += 1"])
+    Comment(["####################"])
+    ControlVariables([2051, 2051, 0, 4, "$game_variables[@prog][14]"])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    Wait([120])
+    CallCommonEvent([559])
+    ControlSwitches([2466, 2466, 1])
+    SetMoveRoute([34, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=8, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=45, @parameters=[\\\"$game_map.events[31].balloon_id = 2\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=8, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+    Unnamed(["RPG::MoveCommand(@code=45, @parameters=[\"$game_map.events[31].balloon_id = 2\"])"])
+    SetMoveRoute([35, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    SetMoveRoute([33, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=6, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=6, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    Wait([300])
+    Comment(["#############"])
+    Comment(["5-29"])
+    CommentMore([""])
+    CommentMore(["19-22-24"])
+    Comment(["CHEERS"])
+    PlaySE(["RPG::SE(@name=\"Applause2\", @pitch=140, @volume=80)"])
+    Script(["@nc = 0"])
+    Script(["@cmax = 4 + rand(10)"])
+    Label(["rc4"])
+    Script(["@c = 5 + rand(25)"])
+    ScriptMore(["if @c >= 29"])
+    ScriptMore(["@c = 29"])
+    ScriptMore(["end"])
+    ConditionalBranch([12, "@c == 19 || @c == 22 || @c == 24"])
+      JumpToLabel(["rc4"])
+      Empty([])
+
+    BranchEnd([])
+    Script(["@nc += 1"])
+    Script(["@i = 3 + rand(2)"])
+    ScriptMore(["if @i > 4"])
+    ScriptMore(["@i = 4"])
+    ScriptMore(["end"])
+    Script(["$game_map.events[@c].balloon_id = @i"])
+    ConditionalBranch([12, "@nc <= @cmax"])
+      JumpToLabel(["rc4"])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["#############"])
+    Wait([30])
+    Comment(["#############"])
+    Comment(["Gazer Comment #4"])
+    Comment(["#############"])
+    ControlSwitches([2466, 2466, 0])
+    ControlVariables([1918, 1918, 0, 0, 1069])
+    CallCommonEvent([729])
+    Script(["@prog = 2250 + $game_variables[1918]"])
+    Comment(["####################"])
+    ConditionalBranch([1, 295, 0, 4, 1])
+      ShotBalloonIcon([36, 4, false])
+      Empty([])
+
+    BranchEnd([])
+    Script(["@GazScore[@sc] += $game_variables[295]"])
+    Script(["@sc += 1"])
+    Comment(["####################"])
+    ControlVariables([2051, 2051, 0, 4, "$game_variables[@prog][14]"])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    Wait([120])
+    CallCommonEvent([559])
+    ControlSwitches([2466, 2466, 1])
+    SetMoveRoute([35, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=8, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=19, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[15])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[30])\", \"RPG::MoveCommand(@code=45, @parameters=[\\\"$game_map.events[31].balloon_id = 2\\\"])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=8, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=19, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[15])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[30])"])
+    Unnamed(["RPG::MoveCommand(@code=45, @parameters=[\"$game_map.events[31].balloon_id = 2\"])"])
+    SetMoveRoute([34, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=6, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=6, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    Wait([300])
+    Comment(["#############"])
+    Comment(["5-29"])
+    CommentMore([""])
+    CommentMore(["19-22-24"])
+    Comment(["CHEERS"])
+    PlaySE(["RPG::SE(@name=\"Applause2\", @pitch=140, @volume=80)"])
+    Script(["@nc = 0"])
+    Script(["@cmax = 4 + rand(10)"])
+    Label(["rc5"])
+    Script(["@c = 5 + rand(25)"])
+    ScriptMore(["if @c >= 29"])
+    ScriptMore(["@c = 29"])
+    ScriptMore(["end"])
+    ConditionalBranch([12, "@c == 19 || @c == 22 || @c == 24"])
+      JumpToLabel(["rc5"])
+      Empty([])
+
+    BranchEnd([])
+    Script(["@nc += 1"])
+    Script(["@i = 3 + rand(2)"])
+    ScriptMore(["if @i > 4"])
+    ScriptMore(["@i = 4"])
+    ScriptMore(["end"])
+    Script(["$game_map.events[@c].balloon_id = @i"])
+    ConditionalBranch([12, "@nc <= @cmax"])
+      JumpToLabel(["rc5"])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["#############"])
+    Wait([30])
+    Comment(["#############"])
+    Comment(["Gazer Comment #P"])
+    Comment(["#############"])
+    ControlSwitches([2466, 2466, 0])
+    ConditionalBranch([12, "$game_variables[7224] == 1"])
+      ControlVariables([1918, 1918, 0, 4, "$game_variables[3446] - 2250"])
+      Empty([])
+
+    Else([])
+      ControlVariables([1918, 1918, 0, 0, 1070])
+      Empty([])
+
+    BranchEnd([])
+    CallCommonEvent([729])
+    Script(["@prog = 2250 + $game_variables[1918]"])
+    Comment(["####################"])
+    ConditionalBranch([1, 295, 0, 4, 1])
+      ShotBalloonIcon([36, 4, false])
+      Empty([])
+
+    BranchEnd([])
+    Script(["@GazScore[@sc] += $game_variables[295]"])
+    Comment(["####################"])
+    ControlVariables([2051, 2051, 0, 4, "$game_variables[@prog][14]"])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    Wait([120])
+    CallCommonEvent([559])
+    ControlSwitches([2466, 2466, 1])
+    SetMoveRoute([35, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=4, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=6, @parameters=[])\", \"RPG::MoveCommand(@code=3, @parameters=[])\", \"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=4, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=6, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=3, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    SetMoveRoute([19, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=5, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=1, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=5, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=1, @parameters=[])"])
+    FadeoutBGM([3])
+    Wait([90])
+    ShowPicture([1, "Gazer Princess dial love", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Gazer Princess:"])
+    ShowText(["Oyoyo!\\.\\. Thank you for joining us today!\\.\\. All of you were so beaut-eye,\\. I'm almost tearing up!"])
+    ShowPicture([1, "Gazer Princess dial smug", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Gazer Princess:"])
+    ShowText(["See you all in the next GazeWalk!\\.\\. And don't forget...\\.\\.\\."])
+    ShowPicture([1, "Gazer Princess dial love", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Gazer Princess:"])
+    ShowText(["Let's beaut-eye-fy this Kingdom!!"])
+    ErasePicture([1])
+    Comment(["#############"])
+    Comment(["5-29"])
+    CommentMore([""])
+    CommentMore(["19-22-24"])
+    Comment(["CHEERS"])
+    PlaySE(["RPG::SE(@name=\"Applause2\", @pitch=140, @volume=80)"])
+    Script(["@nc = 0"])
+    Script(["@cmax = 4 + rand(10)"])
+    Label(["rc6"])
+    Script(["@c = 5 + rand(25)"])
+    ScriptMore(["if @c >= 29"])
+    ScriptMore(["@c = 29"])
+    ScriptMore(["end"])
+    ConditionalBranch([12, "@c == 19 || @c == 22 || @c == 24"])
+      JumpToLabel(["rc6"])
+      Empty([])
+
+    BranchEnd([])
+    Script(["@nc += 1"])
+    Script(["@i = 3 + rand(2)"])
+    ScriptMore(["if @i > 4"])
+    ScriptMore(["@i = 4"])
+    ScriptMore(["end"])
+    Script(["$game_map.events[@c].balloon_id = @i"])
+    ConditionalBranch([12, "@nc <= @cmax"])
+      JumpToLabel(["rc6"])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["#############"])
+    Wait([60])
+    FadeoutScreen([])
+    Wait([15])
+    ControlSwitches([4322, 4322, 1])
+    ConditionalBranch([12, "$game_self_switches[[184,14,\"A\"]] == false"])
+      ConditionalBranch([12, "$game_variables[7224] != 0"])
+        Script(["@maxS = @GazScore.max"])
+        ConditionalBranch([12, "@maxS == @GazScore[4]"])
+          ControlSwitches([4322, 4322, 0])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    SetWeatherEffects([:none, 9, 0, false])
+    ErasePicture([9])
+    TransferPlayer([0, 184, 10, 14, 2, 0])
+    Empty([])
+
+CommonEvent 23
+Name = "Spect"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 24
+Name = "Gazer1"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 25
+Name = "Spect"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 26
+Name = "Spect"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 27
+Name = "Spect"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 28
+Name = "Spect"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 29
+Name = "Spect"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 30
+Name = "Gazer1"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 31
+Name = "Gazed#1"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 32
+Name = "Gazed#2"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 33
+Name = "Gazed#3"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 34
+Name = "Gazed#4"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 35
+Name = "Gazed#P"
+
+  Page 0
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 36
+Name = "Queen's Balloon"
+
+  Page 0
+    Empty([])

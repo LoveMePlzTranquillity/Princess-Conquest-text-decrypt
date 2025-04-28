@@ -1,0 +1,152 @@
+Display Name = ""
+Parallax Name = "Coral House - INN"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "Bubbles"
+
+  Page 0
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 2
+Name = "EV002"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 166, 36, 37, 2, 0])
+    Empty([])
+
+CommonEvent 3
+Name = "EV003"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 166, 36, 37, 2, 0])
+    Empty([])
+
+CommonEvent 4
+Name = "EV004"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Move\", @pitch=100, @volume=80)"])
+    FadeoutScreen([])
+    Wait([15])
+    TransferPlayer([0, 166, 36, 37, 2, 0])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 6
+Name = "CitHouse"
+
+  Page 0
+    Comment(["<always update>"])
+    ControlVariables([2097, 2097, 0, 0, 1181])
+    Label(["back"])
+    ControlSwitches([2412, 2412, 0])
+    ControlVariables([2051, 2051, 0, 0, 0])
+    ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Finhead Innkeeper:"])
+    ShowText(["Welcome to the \\c[18]Medusa Head\\c[0]!\\.\\. The best inn of the whole Seashell!"])
+    CallCommonEvent([559])
+    ControlSwitches([2412, 2412, 1])
+    ConditionalBranch([12, "$game_actors[1].state?(161) == true || $game_actors[1].state?(162) == true || $game_actors[1].state?(163) == true"])
+      Comment(["Beast Knight - No Inns"])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["The \\c[18]Beast Knight\\c[0] Trait won't let you rest in Inns!"])
+      JumpToLabel(["end"])
+      Empty([])
+
+    BranchEnd([])
+    ControlVariables([1191, 1191, 0, 0, 18])
+    CallCommonEvent([175])
+    ShowTextAttributes(["", 0, 0, 1])
+    ShowText(["Rest for \\v[1190] \\G?"])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      ConditionalBranch([1, 584, 1, 1190, 1])
+        ControlSwitches([2412, 2412, 0])
+        ControlVariables([2051, 2051, 0, 0, 0])
+        ShowPicture([1, "RND", 0, 0, 0, 0, 100, 100, 255, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["Finhead Innkeeper:"])
+        ShowText(["Please,\\. make your way upstairs~\\.\\. We've got a nice room ready for land dwe...\\.\\.\\. for you and your companions~"])
+        CallCommonEvent([559])
+        ControlSwitches([2412, 2412, 1])
+        Wait([15])
+        FadeoutScreen([])
+        Wait([15])
+        CallCommonEvent([745])
+        Wait([20])
+        ConditionalBranch([1, 628, 0, 1010, 0])
+          Comment(["Stranded ++"])
+          ControlSwitches([3438, 3438, 1])
+          ControlSwitches([1447, 1447, 1])
+          CallCommonEvent([65])
+          JumpToLabel(["end"])
+          Empty([])
+        BranchEnd([])
+        TransferPlayer([0, 418, 5, 11, 2, 0])
+        Script(["$game_map.sas_hud.refresh_bars"])
+        TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+        Wait([10])
+        FadeinScreen([])
+        JumpToLabel(["end"])
+        Empty([])
+      Else([])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["You don't have enough \\G!"])
+        JumpToLabel(["end"])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    When([1, "No"])
+      Empty([])
+
+    ChoicesEnd([])
+    Label(["end"])
+    Empty([])
+
+CommonEvent 7
+Name = "BubbleStop"
+
+  Page 0
+    Comment(["<always update>"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The current is too strong.\\.\\. Is this what they use to avoid intrusions??"])
+    Empty([])
+
+CommonEvent 8
+Name = "Finish tent message"
+
+  Page 0
+    Wait([600])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Finish?"])
+    ShowChoices([["Yes", "No"], 2])
+    When([0, "Yes"])
+      ControlSwitches([1202, 1202, 0])
+      Empty([])
+
+    When([1, "No"])
+      Empty([])
+
+    ChoicesEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])

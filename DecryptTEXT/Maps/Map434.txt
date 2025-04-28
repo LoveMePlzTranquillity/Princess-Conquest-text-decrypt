@@ -1,0 +1,1094 @@
+Display Name = ""
+Parallax Name = "CreamBattle"
+Note = "<tile lock parallax>"
+
+CommonEvent 1
+Name = "Creams"
+
+  Page 0
+    Comment(["<always update>"])
+    ShotBalloonIcon([0, 4, false])
+    ShowPicture([1, "CreamyEmi dial", 0, 0, 0, 0, 100, 100, 255, 0])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Creamy&Emi:"])
+    ShowText(["Thou art so impressive,\\. naughty Knight~"])
+    ErasePicture([1])
+    ControlVariables([2879, 2879, 1, 0, 5])
+    ControlSelfSwitch(["A", 0])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    ControlSelfSwitch(["A", 1])
+    PlaySE(["RPG::SE(@name=\"Saint6\", @pitch=70, @volume=80)"])
+    Script(["$game_map.pause_sas"])
+    ScriptMore(["$game_map.sas_hud.hide(true)"])
+    CallCommonEvent([56])
+    TintScreen(["Tone(@red=255.0, @green=255.0, @blue=255.0, @gray=0.0)", 180, true])
+    Wait([120])
+    ShowTextAttributes(["", 0, 2, 2])
+    ShowText(["Creamy&Emi:"])
+    ShowText(["We shall meet again...\\.\\.\\. \\N[1]..."])
+    Wait([60])
+    FadeoutScreen([])
+    Wait([15])
+    Script(["@id = $game_map.map_id"])
+    Script(["reset_gather_points(@id)"])
+    TintScreen(["Tone(@red=0.0, @green=0.0, @blue=0.0, @gray=0.0)", 1, true])
+    ConditionalBranch([1, 3444, 0, 1, 0])
+      TransferPlayer([0, 170, 5, 20, 2, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 3444, 0, 2, 0])
+      TransferPlayer([0, 23, 3, 3, 2, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 3444, 0, 3, 0])
+      TransferPlayer([0, 75, 27, 12, 2, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 3444, 0, 4, 0])
+      TransferPlayer([0, 222, 19, 9, 2, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 3444, 0, 5, 0])
+      TransferPlayer([0, 39, 19, 19, 2, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 3444, 0, 6, 0])
+      TransferPlayer([0, 153, 6, 8, 2, 0])
+      Empty([])
+
+    BranchEnd([])
+    Wait([15])
+    FadeinScreen([])
+    Empty([])
+
+CommonEvent 2
+Name = "SuccSh1"
+
+  Page 0
+    Comment(["[enemy 062]"])
+    Comment(["[localsw 0]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 057]"])
+    Comment(["[localsw 0]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 2
+    ConditionalBranch([2, "C", 1])
+      Script(["@n = 5"])
+      Label(["ag"])
+      Script(["$game_self_switches[[434,@n,\"A\"]]=true"])
+      Script(["@n += 1"])
+      ConditionalBranch([12, "@n <= 16"])
+        JumpToLabel(["ag"])
+        Empty([])
+      BranchEnd([])
+      ControlSelfSwitch(["C", 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 3
+Name = "SuccSh3"
+
+  Page 0
+    Comment(["[enemy 062]"])
+    Comment(["[localsw 0]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 057]"])
+    Comment(["[localsw 0]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 2
+    ConditionalBranch([2, "C", 1])
+      Script(["@n = 5"])
+      Label(["ag"])
+      Script(["$game_self_switches[[434,@n,\"C\"]]=true"])
+      Script(["@n += 1"])
+      ConditionalBranch([12, "@n <= 16"])
+        JumpToLabel(["ag"])
+        Empty([])
+      BranchEnd([])
+      ControlSelfSwitch(["C", 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 4
+Name = "SuccSh2"
+
+  Page 0
+    Comment(["[enemy 062]"])
+    Comment(["[localsw 0]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    Comment(["[enemy 057]"])
+    Comment(["[localsw 0]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 2
+    ConditionalBranch([2, "C", 1])
+      Script(["@n = 5"])
+      Label(["ag"])
+      Script(["$game_self_switches[[434,@n,\"B\"]]=true"])
+      Script(["@n += 1"])
+      ConditionalBranch([12, "@n <= 16"])
+        JumpToLabel(["ag"])
+        Empty([])
+      BranchEnd([])
+      ControlSelfSwitch(["C", 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+CommonEvent 5
+Name = "EV005"
+
+  Page 0
+    ConditionalBranch([2, "A", 0])
+      ConditionalBranch([2, "B", 0])
+        ConditionalBranch([2, "C", 0])
+          PlaySE(["RPG::SE(@name=\"Saint7\", @pitch=100, @volume=80)"])
+          ControlSelfSwitch(["D", 0])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 6
+Name = "EV006"
+
+  Page 0
+    ConditionalBranch([2, "A", 0])
+      ConditionalBranch([2, "B", 0])
+        ConditionalBranch([2, "C", 0])
+          PlaySE(["RPG::SE(@name=\"Saint7\", @pitch=100, @volume=80)"])
+          ControlSelfSwitch(["D", 0])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 7
+Name = "EV007"
+
+  Page 0
+    ConditionalBranch([2, "A", 0])
+      ConditionalBranch([2, "B", 0])
+        ConditionalBranch([2, "C", 0])
+          PlaySE(["RPG::SE(@name=\"Saint7\", @pitch=100, @volume=80)"])
+          ControlSelfSwitch(["D", 0])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 8
+Name = "EV008"
+
+  Page 0
+    ConditionalBranch([2, "A", 0])
+      ConditionalBranch([2, "B", 0])
+        ConditionalBranch([2, "C", 0])
+          PlaySE(["RPG::SE(@name=\"Saint7\", @pitch=100, @volume=80)"])
+          ControlSelfSwitch(["D", 0])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 9
+Name = "EV009"
+
+  Page 0
+    ConditionalBranch([2, "A", 0])
+      ConditionalBranch([2, "B", 0])
+        ConditionalBranch([2, "C", 0])
+          PlaySE(["RPG::SE(@name=\"Saint7\", @pitch=100, @volume=80)"])
+          ControlSelfSwitch(["D", 0])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 10
+Name = "EV010"
+
+  Page 0
+    ConditionalBranch([2, "A", 0])
+      ConditionalBranch([2, "B", 0])
+        ConditionalBranch([2, "C", 0])
+          PlaySE(["RPG::SE(@name=\"Saint7\", @pitch=100, @volume=80)"])
+          ControlSelfSwitch(["D", 0])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 11
+Name = "EV011"
+
+  Page 0
+    ConditionalBranch([2, "A", 0])
+      ConditionalBranch([2, "B", 0])
+        ConditionalBranch([2, "C", 0])
+          PlaySE(["RPG::SE(@name=\"Saint7\", @pitch=100, @volume=80)"])
+          ControlSelfSwitch(["D", 0])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 12
+Name = "EV012"
+
+  Page 0
+    ConditionalBranch([2, "A", 0])
+      ConditionalBranch([2, "B", 0])
+        ConditionalBranch([2, "C", 0])
+          PlaySE(["RPG::SE(@name=\"Saint7\", @pitch=100, @volume=80)"])
+          ControlSelfSwitch(["D", 0])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 13
+Name = "EV013"
+
+  Page 0
+    ConditionalBranch([2, "A", 0])
+      ConditionalBranch([2, "B", 0])
+        ConditionalBranch([2, "C", 0])
+          PlaySE(["RPG::SE(@name=\"Saint7\", @pitch=100, @volume=80)"])
+          ControlSelfSwitch(["D", 0])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 14
+Name = "EV014"
+
+  Page 0
+    ConditionalBranch([2, "A", 0])
+      ConditionalBranch([2, "B", 0])
+        ConditionalBranch([2, "C", 0])
+          PlaySE(["RPG::SE(@name=\"Saint7\", @pitch=100, @volume=80)"])
+          ControlSelfSwitch(["D", 0])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 15
+Name = "EV015"
+
+  Page 0
+    ConditionalBranch([2, "A", 0])
+      ConditionalBranch([2, "B", 0])
+        ConditionalBranch([2, "C", 0])
+          PlaySE(["RPG::SE(@name=\"Saint7\", @pitch=100, @volume=80)"])
+          ControlSelfSwitch(["D", 0])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 16
+Name = "EV016"
+
+  Page 0
+    ConditionalBranch([2, "A", 0])
+      ConditionalBranch([2, "B", 0])
+        ConditionalBranch([2, "C", 0])
+          PlaySE(["RPG::SE(@name=\"Saint7\", @pitch=100, @volume=80)"])
+          ControlSelfSwitch(["D", 0])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Comment(["<always update>"])
+    Empty([])
+
+CommonEvent 17
+Name = "EvStart"
+
+  Page 0
+    Comment(["lc - 98"])
+    Script(["@r = rand(4)"])
+    ConditionalBranch([12, "@r < 1"])
+      Script(["$game_self_switches[[434,98,\"A\"]]=true"])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["lc - 99"])
+    Script(["@r = rand(4)"])
+    ConditionalBranch([12, "@r < 1"])
+      Script(["$game_self_switches[[434,99,\"A\"]]=true"])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["lc - 100"])
+    Script(["@r = rand(4)"])
+    ConditionalBranch([12, "@r < 1"])
+      Script(["$game_self_switches[[434,100,\"A\"]]=true"])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["succ - 2"])
+    Script(["@r = rand(6)"])
+    ConditionalBranch([12, "@r < 1"])
+      Script(["$game_self_switches[[434,2,\"B\"]]=true"])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["succ - 3"])
+    Script(["@r = rand(6)"])
+    ConditionalBranch([12, "@r < 1"])
+      Script(["$game_self_switches[[434,3,\"B\"]]=true"])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["succ - 4"])
+    Script(["@r = rand(6)"])
+    ConditionalBranch([12, "@r < 1"])
+      Script(["$game_self_switches[[434,4,\"B\"]]=true"])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["chest - 18"])
+    Script(["@r = rand(3)"])
+    ConditionalBranch([12, "@r > 1"])
+      Script(["$game_self_switches[[434,18,\"B\"]]=true"])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["chest2 - 19"])
+    Script(["@r = rand(3)"])
+    ConditionalBranch([12, "@r > 1"])
+      Script(["$game_self_switches[[434,19,\"B\"]]=true"])
+      Empty([])
+
+    BranchEnd([])
+    Script(["$game_map.start_sas"])
+    ScriptMore(["$game_map.sas_hud.show(true)"])
+    Wait([15])
+    FadeinScreen([])
+    EraseEvent([])
+    Empty([])
+
+CommonEvent 18
+Name = "Chest"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    Script(["@r = rand(10)"])
+    ConditionalBranch([12, "@r < 5"])
+      ChangeItems([203, 0, 0, 1])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "@r < 7"])
+        ChangeWeapons([73, 0, 0, 1, false])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@r < 9"])
+          ChangeItems([342, 0, 0, 1])
+          Empty([])
+        Else([])
+          ChangeArmor([331, 0, 0, 1, false])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 19
+Name = "Chest2"
+
+  Page 0
+    PlaySE(["RPG::SE(@name=\"Chest\", @pitch=100, @volume=80)"])
+    SetMoveRoute([0, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=36, @parameters=[])\", \"RPG::MoveCommand(@code=17, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=18, @parameters=[])\", \"RPG::MoveCommand(@code=15, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=36, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=17, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    Unnamed(["RPG::MoveCommand(@code=18, @parameters=[])"])
+    Unnamed(["RPG::MoveCommand(@code=15, @parameters=[3])"])
+    ControlSelfSwitch(["A", 0])
+    Script(["@r = rand(10)"])
+    ConditionalBranch([12, "@r < 5"])
+      ChangeItems([203, 0, 0, 1])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "@r < 7"])
+        ChangeWeapons([73, 0, 0, 1, false])
+        Empty([])
+      Else([])
+        ConditionalBranch([12, "@r < 9"])
+          ChangeItems([342, 0, 0, 1])
+          Empty([])
+        Else([])
+          ChangeArmor([331, 0, 0, 1, false])
+          Empty([])
+        BranchEnd([])
+        Empty([])
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+  Page 2
+    Empty([])
+
+CommonEvent 20
+Name = "EV020"
+
+  Page 0
+    Empty([])
+
+CommonEvent 21
+Name = "EV021"
+
+  Page 0
+    Empty([])
+
+CommonEvent 22
+Name = "EV022"
+
+  Page 0
+    Empty([])
+
+CommonEvent 23
+Name = "EV023"
+
+  Page 0
+    Empty([])
+
+CommonEvent 24
+Name = "EV024"
+
+  Page 0
+    Empty([])
+
+CommonEvent 25
+Name = "EV025"
+
+  Page 0
+    Empty([])
+
+CommonEvent 26
+Name = "EV026"
+
+  Page 0
+    Empty([])
+
+CommonEvent 27
+Name = "EV027"
+
+  Page 0
+    Empty([])
+
+CommonEvent 28
+Name = "EV028"
+
+  Page 0
+    Empty([])
+
+CommonEvent 29
+Name = "EV029"
+
+  Page 0
+    Empty([])
+
+CommonEvent 30
+Name = "EV030"
+
+  Page 0
+    Empty([])
+
+CommonEvent 31
+Name = "EV031"
+
+  Page 0
+    Empty([])
+
+CommonEvent 32
+Name = "EV032"
+
+  Page 0
+    Empty([])
+
+CommonEvent 33
+Name = "EV033"
+
+  Page 0
+    Empty([])
+
+CommonEvent 34
+Name = "EV034"
+
+  Page 0
+    Empty([])
+
+CommonEvent 35
+Name = "EV035"
+
+  Page 0
+    Empty([])
+
+CommonEvent 36
+Name = "EV036"
+
+  Page 0
+    Empty([])
+
+CommonEvent 37
+Name = "EV037"
+
+  Page 0
+    Empty([])
+
+CommonEvent 38
+Name = "EV038"
+
+  Page 0
+    Empty([])
+
+CommonEvent 39
+Name = "EV039"
+
+  Page 0
+    Empty([])
+
+CommonEvent 40
+Name = "EV040"
+
+  Page 0
+    Empty([])
+
+CommonEvent 41
+Name = "EV041"
+
+  Page 0
+    Empty([])
+
+CommonEvent 42
+Name = "EV042"
+
+  Page 0
+    Empty([])
+
+CommonEvent 43
+Name = "EV043"
+
+  Page 0
+    Empty([])
+
+CommonEvent 44
+Name = "EV044"
+
+  Page 0
+    Empty([])
+
+CommonEvent 45
+Name = "EV045"
+
+  Page 0
+    Empty([])
+
+CommonEvent 46
+Name = "EV046"
+
+  Page 0
+    Empty([])
+
+CommonEvent 47
+Name = "EV047"
+
+  Page 0
+    Empty([])
+
+CommonEvent 48
+Name = "EV048"
+
+  Page 0
+    Empty([])
+
+CommonEvent 49
+Name = "EV049"
+
+  Page 0
+    Empty([])
+
+CommonEvent 50
+Name = "EV050"
+
+  Page 0
+    Empty([])
+
+CommonEvent 51
+Name = "EV051"
+
+  Page 0
+    Empty([])
+
+CommonEvent 52
+Name = "EV052"
+
+  Page 0
+    Empty([])
+
+CommonEvent 53
+Name = "EV053"
+
+  Page 0
+    Empty([])
+
+CommonEvent 54
+Name = "EV054"
+
+  Page 0
+    Empty([])
+
+CommonEvent 55
+Name = "EV055"
+
+  Page 0
+    Empty([])
+
+CommonEvent 56
+Name = "EV056"
+
+  Page 0
+    Empty([])
+
+CommonEvent 57
+Name = "EV057"
+
+  Page 0
+    Empty([])
+
+CommonEvent 58
+Name = "EV058"
+
+  Page 0
+    Empty([])
+
+CommonEvent 59
+Name = "EV059"
+
+  Page 0
+    Empty([])
+
+CommonEvent 60
+Name = "EV060"
+
+  Page 0
+    Empty([])
+
+CommonEvent 61
+Name = "EV061"
+
+  Page 0
+    Empty([])
+
+CommonEvent 62
+Name = "EV062"
+
+  Page 0
+    Empty([])
+
+CommonEvent 63
+Name = "EV063"
+
+  Page 0
+    Empty([])
+
+CommonEvent 64
+Name = "EV064"
+
+  Page 0
+    Empty([])
+
+CommonEvent 65
+Name = "EV065"
+
+  Page 0
+    Empty([])
+
+CommonEvent 66
+Name = "EV066"
+
+  Page 0
+    Empty([])
+
+CommonEvent 67
+Name = "EV067"
+
+  Page 0
+    Empty([])
+
+CommonEvent 68
+Name = "EV068"
+
+  Page 0
+    Empty([])
+
+CommonEvent 69
+Name = "EV069"
+
+  Page 0
+    Empty([])
+
+CommonEvent 70
+Name = "EV070"
+
+  Page 0
+    Empty([])
+
+CommonEvent 71
+Name = "EV071"
+
+  Page 0
+    Empty([])
+
+CommonEvent 72
+Name = "EV072"
+
+  Page 0
+    Empty([])
+
+CommonEvent 73
+Name = "EV073"
+
+  Page 0
+    Empty([])
+
+CommonEvent 74
+Name = "EV074"
+
+  Page 0
+    Empty([])
+
+CommonEvent 75
+Name = "EV075"
+
+  Page 0
+    Empty([])
+
+CommonEvent 76
+Name = "EV076"
+
+  Page 0
+    Empty([])
+
+CommonEvent 77
+Name = "EV077"
+
+  Page 0
+    Empty([])
+
+CommonEvent 78
+Name = "EV078"
+
+  Page 0
+    Empty([])
+
+CommonEvent 79
+Name = "EV079"
+
+  Page 0
+    Empty([])
+
+CommonEvent 80
+Name = "EV080"
+
+  Page 0
+    Empty([])
+
+CommonEvent 81
+Name = "EV081"
+
+  Page 0
+    Empty([])
+
+CommonEvent 82
+Name = "EV082"
+
+  Page 0
+    Empty([])
+
+CommonEvent 83
+Name = "EV083"
+
+  Page 0
+    Empty([])
+
+CommonEvent 84
+Name = "EV084"
+
+  Page 0
+    Empty([])
+
+CommonEvent 85
+Name = "EV085"
+
+  Page 0
+    Empty([])
+
+CommonEvent 86
+Name = "EV086"
+
+  Page 0
+    Empty([])
+
+CommonEvent 87
+Name = "EV087"
+
+  Page 0
+    Empty([])
+
+CommonEvent 88
+Name = "EV088"
+
+  Page 0
+    Empty([])
+
+CommonEvent 89
+Name = "EV089"
+
+  Page 0
+    Empty([])
+
+CommonEvent 90
+Name = "EV090"
+
+  Page 0
+    Empty([])
+
+CommonEvent 91
+Name = "EV091"
+
+  Page 0
+    Empty([])
+
+CommonEvent 92
+Name = "EV092"
+
+  Page 0
+    Empty([])
+
+CommonEvent 93
+Name = "EV093"
+
+  Page 0
+    Empty([])
+
+CommonEvent 94
+Name = "EV094"
+
+  Page 0
+    Empty([])
+
+CommonEvent 95
+Name = "EV095"
+
+  Page 0
+    Empty([])
+
+CommonEvent 96
+Name = "EV096"
+
+  Page 0
+    Empty([])
+
+CommonEvent 97
+Name = "EV097"
+
+  Page 0
+    Empty([])
+
+CommonEvent 98
+Name = "LewdCrawler1"
+
+  Page 0
+    Comment(["[enemy 109]"])
+    Comment(["[erase]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 99
+Name = "LewdCrawler1"
+
+  Page 0
+    Comment(["[enemy 109]"])
+    Comment(["[erase]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 100
+Name = "LewdCrawler1"
+
+  Page 0
+    Comment(["[enemy 109]"])
+    Comment(["[erase]"])
+    CallCommonEvent([466])
+    Empty([])
+
+  Page 1
+    Empty([])
+
+CommonEvent 101
+Name = "EV101"
+
+  Page 0
+    Empty([])
+
+CommonEvent 102
+Name = "EV102"
+
+  Page 0
+    Empty([])
