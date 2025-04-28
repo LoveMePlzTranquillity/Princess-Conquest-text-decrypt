@@ -1,0 +1,41 @@
+CommonEvent 806
+Name = "MP drain"
+
+  Wait([60])
+  ConditionalBranch([12, "$game_actors[8].state?(29) == false && $game_party.leader.class_id == 9"])
+    Comment(["std form"])
+    Script(["$game_party.leader.mp -= 4"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_party.leader.class_id == 176"])
+    Script(["$game_party.leader.mp -= 1"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[116] == \"SneakATK\""])
+    Script(["$game_party.leader.mp -= 2"])
+    Empty([])
+
+  BranchEnd([])
+  Script(["$game_map.sas_hud.refresh_bars"])
+  ConditionalBranch([12, "$game_party.leader.mp <= 0"])
+    ConditionalBranch([12, "$game_party.leader.class_id == 9"])
+      CallCommonEvent([936])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[116] == \"SneakATK\""])
+      CallCommonEvent([936])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_party.leader.class_id == 176"])
+      CallCommonEvent([936])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

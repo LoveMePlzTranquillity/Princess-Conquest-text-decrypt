@@ -1,0 +1,70 @@
+CommonEvent 866
+Name = "Corruption check"
+
+  ControlVariables([1197, 1197, 0, 0, 0])
+  ControlVariables([238, 238, 0, 3, 7, 1, 0])
+  ConditionalBranch([12, "$game_party.members[0].id == 1"])
+    Empty([])
+
+  Else([])
+    ControlVariables([1197, 1197, 1, 4, "$game_party.members[0].parent_stat(4)"])
+    ConditionalBranch([12, "$game_party.members[0].class_id == 28"])
+      ControlVariables([1197, 1197, 1, 0, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 238, 0, 2, 1])
+    ConditionalBranch([12, "$game_party.members[1].id == 1"])
+      Empty([])
+
+    Else([])
+      ControlVariables([1197, 1197, 1, 4, "$game_party.members[1].parent_stat(4)"])
+      ConditionalBranch([12, "$game_party.members[1].class_id == 28"])
+        ControlVariables([1197, 1197, 1, 0, 1])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 238, 0, 3, 1])
+    ConditionalBranch([12, "$game_party.members[2].id == 1"])
+      Empty([])
+
+    Else([])
+      ControlVariables([1197, 1197, 1, 4, "$game_party.members[2].parent_stat(4)"])
+      ConditionalBranch([12, "$game_party.members[2].class_id == 28"])
+        ControlVariables([1197, 1197, 1, 0, 1])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 238, 0, 4, 1])
+    ConditionalBranch([12, "$game_party.members[3].id == 1"])
+      Empty([])
+
+    Else([])
+      ControlVariables([1197, 1197, 1, 4, "$game_party.members[3].parent_stat(4)"])
+      ConditionalBranch([12, "$game_party.members[3].class_id == 28"])
+        ControlVariables([1197, 1197, 1, 0, 1])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

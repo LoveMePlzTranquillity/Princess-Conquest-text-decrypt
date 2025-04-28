@@ -1,0 +1,16 @@
+CommonEvent 798
+Name = "Bubble Coating"
+
+  ControlSwitches([1307, 1307, 1])
+  ConditionalBranch([0, 1306, 0])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["The \\i[698] Bubbly Soap is already in use!"])
+    Empty([])
+
+  Else([])
+    ChangeItems([295, 1, 0, 1])
+    ControlSwitches([1306, 1306, 0])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

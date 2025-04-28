@@ -1,0 +1,34 @@
+CommonEvent 880
+Name = "Moss"
+
+  ConditionalBranch([0, 3064, 0])
+    CallCommonEvent([881])
+    Comment(["Knight High Grass"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3558, 1])
+    ConditionalBranch([12, "$game_party.leader.class_id == 119"])
+      ConditionalBranch([0, 3559, 1])
+        SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=44, @parameters=[\\\"RPG::SE(@name=\\\\\\\"Absorb1\\\\\\\", @pitch=80, @volume=80)\\\"])\", \"RPG::MoveCommand(@code=41, @parameters=[\\\"$MossP\\\", 0])\", \"RPG::MoveCommand(@code=29, @parameters=[4])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+        Unnamed(["RPG::MoveCommand(@code=44, @parameters=[\"RPG::SE(@name=\\\"Absorb1\\\", @pitch=80, @volume=80)\"])"])
+        Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$MossP\", 0])"])
+        Unnamed(["RPG::MoveCommand(@code=29, @parameters=[4])"])
+        ControlSwitches([3600, 3600, 1])
+        ControlSwitches([3560, 3560, 1])
+        ControlSwitches([3559, 3559, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["end"])
+  Empty([])

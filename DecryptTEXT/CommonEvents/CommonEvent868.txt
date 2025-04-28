@@ -1,0 +1,392 @@
+CommonEvent 868
+Name = "***Check item gain***"
+
+  Comment(["bunnygirl costume FIX"])
+  ConditionalBranch([10, 202, false])
+    Script(["$PU_AUTOMATIC_POPUP = false"])
+    Loop([])
+      ConditionalBranch([10, 202, false])
+        ChangeArmor([202, 1, 0, 1, false])
+        Script(["@bun = [221,222,223].sample"])
+        ScriptMore(["$game_party.gain_item($data_armors[@bun],1)"])
+        Empty([])
+
+      Else([])
+        BreakLoop([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    RepeatAbove([])
+    Script(["$PU_AUTOMATIC_POPUP = true"])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["Sperm Qs"])
+  ConditionalBranch([0, 2054, 0])
+    ConditionalBranch([12, "objective_active?(33, 1)"])
+      ConditionalBranch([12, "objective_active?(33, 0)"])
+        Comment(["to deliver"])
+        ConditionalBranch([12, "$game_party.has_item?($data_items[$game_variables[977]], true)"])
+          ControlSwitches([3000, 3000, 0])
+          Wait([15])
+          Script(["complete_objective(33,0)"])
+          ScriptMore(["call_quest_journal(33)"])
+          Wait([15])
+          ControlSwitches([3000, 3000, 1])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      Else([])
+        Comment(["delivered"])
+        ConditionalBranch([12, "$game_party.has_item?($data_items[$game_variables[977]], true)"])
+          Empty([])
+
+        Else([])
+          ControlSwitches([3000, 3000, 0])
+          Wait([15])
+          Script(["uncomplete_objective(33,0)"])
+          ScriptMore(["call_quest_journal(33)"])
+          Wait([15])
+          ControlSwitches([3000, 3000, 1])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["Sperm Qs - Low"])
+  ConditionalBranch([0, 1276, 0])
+    ConditionalBranch([12, "objective_active?(13, 1)"])
+      ConditionalBranch([12, "objective_active?(13, 0)"])
+        Comment(["to deliver"])
+        ConditionalBranch([12, "$game_party.has_item?($data_items[$game_variables[977]], true)"])
+          ControlSwitches([3000, 3000, 0])
+          Wait([15])
+          Script(["complete_objective(13,0)"])
+          ScriptMore(["call_quest_journal(13)"])
+          Wait([15])
+          ControlSwitches([3000, 3000, 1])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      Else([])
+        Comment(["delivered"])
+        ConditionalBranch([12, "$game_party.has_item?($data_items[$game_variables[977]], true)"])
+          Empty([])
+
+        Else([])
+          ControlSwitches([3000, 3000, 0])
+          Wait([15])
+          Script(["uncomplete_objective(13,0)"])
+          ScriptMore(["call_quest_journal(13)"])
+          Wait([15])
+          ControlSwitches([3000, 3000, 1])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["Sperm Qs END"])
+  ConditionalBranch([8, 14])
+    ConditionalBranch([1, 3903, 0, 0, 0])
+      Script(["@v = 3903"])
+      Script(["$game_variables[@v] = "])
+      ScriptMore(["[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"])
+      ScriptMore(["0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"])
+      ScriptMore(["0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[3903][15] == 0"])
+      Wait([2])
+      ControlVariables([3907, 3907, 0, 0, 16])
+      CallCommonEvent([979])
+      ControlSwitches([3907, 3907, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([8, 201])
+    ConditionalBranch([1, 3903, 0, 0, 0])
+      Script(["@v = 3903"])
+      Script(["$game_variables[@v] = "])
+      ScriptMore(["[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"])
+      ScriptMore(["0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"])
+      ScriptMore(["0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[3903][16] == 0"])
+      Wait([2])
+      ControlVariables([3907, 3907, 0, 0, 17])
+      CallCommonEvent([979])
+      ControlSwitches([3907, 3907, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["slime salts"])
+  ConditionalBranch([0, 189, 0])
+    ConditionalBranch([12, "quest_active?(19)"])
+      ConditionalBranch([12, "objective_complete?(19, 0)"])
+        ConditionalBranch([8, 10])
+          Empty([])
+
+        Else([])
+          Script(["uncomplete_objective(19, 0)"])
+          ScriptMore(["call_quest_journal(19)"])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([8, 10])
+          Script(["complete_objective(19, 0)"])
+          ScriptMore(["call_quest_journal(19)"])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["milk"])
+  ConditionalBranch([0, 1227, 0])
+    ConditionalBranch([12, "objective_complete?(2, 1)"])
+      ConditionalBranch([8, 102])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([8, 106])
+          Empty([])
+
+        Else([])
+          Script(["uncomplete_objective(2, 1)"])
+          ScriptMore(["call_quest_journal(2)"])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "objective_active?(2, 1)"])
+        ConditionalBranch([8, 102])
+          Script(["complete_objective(2, 1)"])
+          ScriptMore(["call_quest_journal(2)"])
+          JumpToLabel(["gotmilk"])
+          Empty([])
+
+        BranchEnd([])
+        ConditionalBranch([8, 106])
+          Script(["complete_objective(2, 1)"])
+          ScriptMore(["call_quest_journal(2)"])
+          JumpToLabel(["gotmilk"])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Label(["gotmilk"])
+  Comment(["ske route"])
+  ConditionalBranch([12, "quest_active?(75)"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "quest_complete?(76)"])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([12, "quest_active?(76)"])
+      ConditionalBranch([12, "objective_complete?(76,2)"])
+        ConditionalBranch([10, 269, true])
+          Empty([])
+
+        Else([])
+          Script(["uncomplete_objective(76,2)"])
+          Script(["@call = 1"])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([10, 269, true])
+          Script(["complete_objective(76,2)"])
+          Script(["@call = 1"])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "quest_active?(77)"])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["ske route END"])
+  ConditionalBranch([0, 3549, 0])
+    Script(["@call = 0"])
+    ConditionalBranch([10, 252, false])
+      ConditionalBranch([12, "objective_active?(63, 0)"])
+        Script(["complete_objective(63,0)"])
+        Script(["@call = 1"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "objective_complete?(63,0)"])
+        Script(["uncomplete_objective(63,0)"])
+        Script(["@call = 1"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@call == 1"])
+      Script(["call_quest_journal(63)"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3550, 0])
+    Script(["@call = 0"])
+    ConditionalBranch([10, 254, false])
+      ConditionalBranch([12, "objective_active?(64, 0)"])
+        Script(["complete_objective(64,0)"])
+        Script(["@call = 1"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "objective_complete?(64,0)"])
+        Script(["uncomplete_objective(64,0)"])
+        Script(["@call = 1"])
+        Empty([])
+
+      Else([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@call == 1"])
+      Script(["call_quest_journal(64)"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3551, 0])
+    Script(["@call = 0"])
+    ConditionalBranch([10, 253, false])
+      ConditionalBranch([12, "objective_active?(65, 0)"])
+        Script(["complete_objective(65,0)"])
+        Script(["@call = 1"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "objective_complete?(65,0)"])
+        Script(["uncomplete_objective(65,0)"])
+        Script(["@call = 1"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "@call == 1"])
+      Script(["call_quest_journal(65)"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 1267, 0])
+    ConditionalBranch([12, "objective_complete?(6, 1)"])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([8, 109])
+        ConditionalBranch([12, "objective_active?(6, 0)"])
+          Script(["complete_objective(6,0)"])
+          ScriptMore(["call_quest_journal(6)"])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([12, "objective_complete?(6, 0)"])
+          Script(["uncomplete_objective(6,0)"])
+          ScriptMore(["call_quest_journal(6)"])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

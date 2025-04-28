@@ -1,0 +1,27 @@
+CommonEvent 883
+Name = "Moss Recovering"
+
+  Wait([120])
+  ConditionalBranch([0, 3558, 1])
+    ConditionalBranch([1, 3675, 0, 1, 1])
+      ControlVariables([3675, 3675, 2, 0, 1])
+      Empty([])
+
+    Else([])
+      ControlSwitches([3560, 3560, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 739, 0])
+    ConditionalBranch([12, "$game_party.leader.class_id == 119"])
+      CallCommonEvent([885])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

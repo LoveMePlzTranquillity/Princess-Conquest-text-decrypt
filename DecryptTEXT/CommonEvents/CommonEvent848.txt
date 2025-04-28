@@ -1,0 +1,13 @@
+CommonEvent 848
+Name = "Windmill Prep"
+
+  ControlVariables([2768, 2768, 0, 1, 3419])
+  ConditionalBranch([1, 2768, 0, 1, 1])
+    Script(["@k = 5"])
+    CallCommonEvent([543])
+    SetMoveRoute([5, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=16, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+    Unnamed(["RPG::MoveCommand(@code=16, @parameters=[])"])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

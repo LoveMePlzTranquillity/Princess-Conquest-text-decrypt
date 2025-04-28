@@ -1,0 +1,10 @@
+CommonEvent 807
+Name = "Nemui"
+
+  Wait([60])
+  ShotBalloonIcon([-1, 10, false])
+  Wait([120])
+  PlaySE(["RPG::SE(@name=\"Decision2\", @pitch=100, @volume=80)"])
+  ShotBalloonIcon([-1, 1, false])
+  ControlSwitches([1542, 1542, 1])
+  Empty([])

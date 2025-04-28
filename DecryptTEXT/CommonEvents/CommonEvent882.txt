@@ -1,0 +1,21 @@
+CommonEvent 882
+Name = "Moss Depleting"
+
+  ConditionalBranch([12, "$game_party.leader.class_id == 119"])
+    ConditionalBranch([0, 739, 0])
+      Wait([120])
+      ControlVariables([3675, 3675, 1, 0, 1])
+      CallCommonEvent([885])
+      ConditionalBranch([1, 3675, 0, 5, 1])
+        ControlSwitches([3558, 3558, 0])
+        CallCommonEvent([881])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

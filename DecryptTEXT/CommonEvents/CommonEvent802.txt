@@ -1,0 +1,35 @@
+CommonEvent 802
+Name = "Q Egg Check"
+
+  ControlSwitches([3090, 3090, 1])
+  ControlVariables([238, 238, 0, 3, 7, 1, 0])
+  Script(["@n = 0"])
+  Label(["nextac"])
+  Script(["@ac = $game_party.members[@n].id"])
+  ConditionalBranch([12, "@ac >= 35 && @ac <= 39"])
+    ControlVariables([2863, 2863, 0, 4, "@ac"])
+    ControlVariables([2868, 2868, 0, 4, "@ac"])
+    CallCommonEvent([479])
+    Script(["@prog = $game_variables[2868]"])
+    ConditionalBranch([12, "$game_variables[@prog][0] == 99"])
+      ConditionalBranch([0, 3088, 0])
+        ControlSwitches([3090, 3090, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[@prog][18] <= 5"])
+      ConditionalBranch([0, 3089, 0])
+        ControlSwitches([3090, 3090, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

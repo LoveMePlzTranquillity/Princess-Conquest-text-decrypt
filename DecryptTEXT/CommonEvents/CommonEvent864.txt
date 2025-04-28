@@ -1,0 +1,81 @@
+CommonEvent 864
+Name = "💀Terrains💀"
+
+  Wait([120])
+  ConditionalBranch([0, 3998, 0])
+    Comment(["Ske ending"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_message.visible == true"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 1770, 0])
+    Comment(["All Res"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 4156, 0])
+    Comment(["All Res"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 4182, 0])
+    Comment(["FLOW"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_map.map_id == 64 || $game_map.map_id == 170"])
+    Comment(["Tav/Camp"])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["---------------------------------------------------"])
+  ConditionalBranch([0, 4337, 0])
+    JumpToLabel(["ICE"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3691, 0])
+    Label(["ICE"])
+    CallCommonEvent([887])
+    Wait([5])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["---------------------------------------------------"])
+  ConditionalBranch([0, 487, 0])
+    JumpToLabel(["POISON"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3450, 0])
+    Label(["POISON"])
+    CallCommonEvent([867])
+    Wait([5])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["---------------------------------------------------"])
+  ConditionalBranch([0, 488, 0])
+    JumpToLabel(["FIRE"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3706, 0])
+    Label(["FIRE"])
+    CallCommonEvent([801])
+    Wait([5])
+    Empty([])
+
+  BranchEnd([])
+  Comment(["---------------------------------------------------"])
+  Label(["end"])
+  Empty([])

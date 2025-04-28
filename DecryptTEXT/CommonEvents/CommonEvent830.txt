@@ -1,0 +1,357 @@
+CommonEvent 830
+Name = "FrogWat eff Harvest"
+
+  ConditionalBranch([12, "$game_actors[32].equips[5] == $data_armors[237]"])
+    ControlVariables([3764, 3764, 2, 0, 25])
+    PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Harvest \\c[18]Population\\c[0] decreased by \\c[18]25\\c[0]!"])
+    Empty([])
+
+  Else([])
+    ControlVariables([3764, 3764, 1, 0, 25])
+    PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+    ShowTextAttributes(["", 0, 0, 2])
+    ShowText(["Harvest \\c[18]Population\\c[0] increased by \\c[18]25\\c[0]!"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 89, 0, -1, 5])
+    ConditionalBranch([0, 3265, 0])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "$game_actors[5].equips[5] == $data_armors[237]"])
+        PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Human \\c[18]Population\\c[0] decreased by \\c[18]25\\c[0]!"])
+        ControlVariables([352, 352, 2, 0, 25])
+        Empty([])
+
+      Else([])
+        PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Human \\c[18]Population\\c[0] increased by \\c[18]25\\c[0]!"])
+        ControlVariables([352, 352, 1, 0, 25])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 90, 0, -1, 5])
+    ConditionalBranch([0, 3266, 0])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "$game_actors[7].equips[5] == $data_armors[237]"])
+        PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Slime \\c[18]Population\\c[0] decreased by \\c[18]25\\c[0]!"])
+        ControlVariables([353, 353, 2, 0, 25])
+        Empty([])
+
+      Else([])
+        PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Slime \\c[18]Population\\c[0] increased by \\c[18]25\\c[0]!"])
+        ControlVariables([353, 353, 1, 0, 25])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 92, 0, -1, 5])
+    ConditionalBranch([0, 3268, 0])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "$game_actors[8].equips[5] == $data_armors[237]"])
+        PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Insect \\c[18]Population\\c[0] decreased by \\c[18]25\\c[0]!"])
+        ControlVariables([355, 355, 2, 0, 25])
+        Empty([])
+
+      Else([])
+        PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Insect \\c[18]Population\\c[0] increased by \\c[18]25\\c[0]!"])
+        ControlVariables([355, 355, 1, 0, 25])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 197, 0, -1, 5])
+    ConditionalBranch([0, 3270, 0])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "$game_actors[4].equips[5] == $data_armors[237]"])
+        PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Desert \\c[18]Population\\c[0] decreased by \\c[18]25\\c[0]!"])
+        ControlVariables([357, 357, 2, 0, 25])
+        Empty([])
+
+      Else([])
+        PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Desert \\c[18]Population\\c[0] increased by \\c[18]25\\c[0]!"])
+        ControlVariables([357, 357, 1, 0, 25])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 640, 0, -1, 5])
+    ConditionalBranch([0, 3272, 0])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "$game_actors[14].equips[5] == $data_armors[237]"])
+        PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Goblin \\c[18]Population\\c[0] decreased by \\c[18]25\\c[0]!"])
+        ControlVariables([641, 641, 2, 0, 25])
+        Empty([])
+
+      Else([])
+        PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Goblin \\c[18]Population\\c[0] increased by \\c[18]25\\c[0]!"])
+        ControlVariables([641, 641, 1, 0, 25])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1367, 0, -1, 5])
+    ConditionalBranch([0, 3273, 0])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "$game_actors[21].equips[5] == $data_armors[237]"])
+        PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Moth \\c[18]Population\\c[0] decreased by \\c[18]25\\c[0]!"])
+        ControlVariables([1368, 1368, 2, 0, 25])
+        Empty([])
+
+      Else([])
+        PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Moth \\c[18]Population\\c[0] increased by \\c[18]25\\c[0]!"])
+        ControlVariables([1368, 1368, 1, 0, 25])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 1558, 0, -1, 5])
+    ConditionalBranch([0, 3274, 0])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "$game_actors[23].equips[5] == $data_armors[237]"])
+        PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Cat \\c[18]Population\\c[0] decreased by \\c[18]25\\c[0]!"])
+        ControlVariables([1559, 1559, 2, 0, 25])
+        Empty([])
+
+      Else([])
+        PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Cat \\c[18]Population\\c[0] increased by \\c[18]25\\c[0]!"])
+        ControlVariables([1559, 1559, 1, 0, 25])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 3556, 0, -1, 5])
+    ConditionalBranch([0, 3275, 0])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "$game_actors[30].equips[5] == $data_armors[237]"])
+        PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Rabbit \\c[18]Population\\c[0] decreased by \\c[18]25\\c[0]!"])
+        ControlVariables([3557, 3557, 2, 0, 25])
+        Empty([])
+
+      Else([])
+        PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Rabbit \\c[18]Population\\c[0] increased by \\c[18]25\\c[0]!"])
+        ControlVariables([3557, 3557, 1, 0, 25])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 3931, 0, -1, 5])
+    ConditionalBranch([0, 3933, 0])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "$game_actors[46].equips[5] == $data_armors[237]"])
+        PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Finhead \\c[18]Population\\c[0] decreased by \\c[18]25\\c[0]!"])
+        ControlVariables([3932, 3932, 2, 0, 25])
+        Empty([])
+
+      Else([])
+        PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Finhead \\c[18]Population\\c[0] increased by \\c[18]25\\c[0]!"])
+        ControlVariables([3932, 3932, 1, 0, 25])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 4171, 0, -1, 5])
+    ConditionalBranch([0, 4213, 0])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "$game_actors[48].equips[5] == $data_armors[237]"])
+        PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Mermaid \\c[18]Population\\c[0] decreased by \\c[18]25\\c[0]!"])
+        ControlVariables([4172, 4172, 2, 0, 25])
+        Empty([])
+
+      Else([])
+        PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Mermaid \\c[18]Population\\c[0] increased by \\c[18]25\\c[0]!"])
+        ControlVariables([4172, 4172, 1, 0, 25])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 4251, 0, -1, 5])
+    ConditionalBranch([0, 4353, 0])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "$game_actors[53].equips[5] == $data_armors[237]"])
+        PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Bird \\c[18]Population\\c[0] decreased by \\c[18]25\\c[0]!"])
+        ControlVariables([4251, 4251, 2, 0, 25])
+        Empty([])
+
+      Else([])
+        PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Bird \\c[18]Population\\c[0] increased by \\c[18]25\\c[0]!"])
+        ControlVariables([4251, 4251, 1, 0, 25])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 4331, 0, -1, 5])
+    ConditionalBranch([0, 4653, 0])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "$game_actors[54].equips[5] == $data_armors[237]"])
+        PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Oni \\c[18]Population\\c[0] decreased by \\c[18]25\\c[0]!"])
+        ControlVariables([4332, 4332, 2, 0, 25])
+        Empty([])
+
+      Else([])
+        PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Oni \\c[18]Population\\c[0] increased by \\c[18]25\\c[0]!"])
+        ControlVariables([4332, 4332, 1, 0, 25])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 4431, 0, -1, 5])
+    ConditionalBranch([0, 3113, 0])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "$game_actors[56].equips[5] == $data_armors[237]"])
+        PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Plant \\c[18]Population\\c[0] decreased by \\c[18]25\\c[0]!"])
+        ControlVariables([4432, 4432, 2, 0, 25])
+        Empty([])
+
+      Else([])
+        PlaySE(["RPG::SE(@name=\"Alt Item Sound\", @pitch=100, @volume=80)"])
+        ShowTextAttributes(["", 0, 0, 2])
+        ShowText(["Plant \\c[18]Population\\c[0] increased by \\c[18]25\\c[0]!"])
+        ControlVariables([4432, 4432, 1, 0, 25])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

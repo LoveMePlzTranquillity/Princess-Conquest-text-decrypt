@@ -1,0 +1,6 @@
+CommonEvent 862
+Name = "FlyStamina"
+
+  Wait([120])
+  ControlSwitches([3434, 3434, 1])
+  Empty([])

@@ -1,0 +1,12 @@
+CommonEvent 863
+Name = "Delete FlBar&&&"
+
+  ConditionalBranch([0, 3826, 1])
+    ChangeMenuAccess([1])
+    Empty([])
+
+  BranchEnd([])
+  ErasePicture([3])
+  ErasePicture([4])
+  ControlSwitches([3436, 3436, 1])
+  Empty([])

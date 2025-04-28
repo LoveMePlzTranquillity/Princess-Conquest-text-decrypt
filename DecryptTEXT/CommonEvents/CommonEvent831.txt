@@ -1,0 +1,70 @@
+CommonEvent 831
+Name = "FrogWat eff Cat"
+
+  Script(["@r = rand(10)"])
+  ConditionalBranch([12, "@r < 1"])
+    ChangeItems([171, 0, 0, 1])
+    Empty([])
+
+  Else([])
+    ConditionalBranch([12, "@r < 2"])
+      ChangeItems([172, 0, 0, 1])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([12, "@r < 3"])
+        ChangeItems([173, 0, 0, 1])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([12, "@r < 4"])
+          ChangeItems([174, 0, 0, 1])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([12, "@r < 5"])
+            ChangeItems([174, 0, 0, 1])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([12, "@r < 6"])
+              ChangeItems([176, 0, 0, 1])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([12, "@r < 7"])
+                ChangeItems([182, 0, 0, 1])
+                Empty([])
+
+              Else([])
+                ConditionalBranch([12, "@r < 8"])
+                  ChangeItems([329, 0, 0, 1])
+                  Empty([])
+
+                Else([])
+                  ChangeItems([177, 0, 0, 1])
+                  Empty([])
+
+                BranchEnd([])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

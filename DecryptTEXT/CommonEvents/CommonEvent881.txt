@@ -1,0 +1,53 @@
+CommonEvent 881
+Name = "Moss Off"
+
+  ConditionalBranch([0, 739, 0])
+    ConditionalBranch([12, "$game_party.leader.class_id == 119"])
+      ConditionalBranch([0, 3559, 0])
+        ConditionalBranch([12, "$game_party.leader.class_id == 119"])
+          Script(["$game_variables[3861] = \"$MossLump\""])
+          ConditionalBranch([0, 3064, 0])
+            SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$Field%(4)\\\", 0])\", \"RPG::MoveCommand(@code=34, @parameters=[])\", \"RPG::MoveCommand(@code=31, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+            Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$Field%(4)\", 0])"])
+            Unnamed(["RPG::MoveCommand(@code=34, @parameters=[])"])
+            Unnamed(["RPG::MoveCommand(@code=31, @parameters=[])"])
+            Empty([])
+
+          Else([])
+            ShowAnimation([-1, 159, false])
+            SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=false, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$MossLump\\\", 0])\", \"RPG::MoveCommand(@code=29, @parameters=[3])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+            Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$MossLump\", 0])"])
+            Unnamed(["RPG::MoveCommand(@code=29, @parameters=[3])"])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        Else([])
+          ConditionalBranch([0, 3064, 0])
+            SetMoveRoute([-1, "RPG::MoveRoute(@repeat=false, @skippable=false, @wait=true, @list=[\"RPG::MoveCommand(@code=41, @parameters=[\\\"$Field%(4)\\\", 0])\", \"RPG::MoveCommand(@code=34, @parameters=[])\", \"RPG::MoveCommand(@code=31, @parameters=[])\", \"RPG::MoveCommand(@code=0, @parameters=[])\"])"])
+            Unnamed(["RPG::MoveCommand(@code=41, @parameters=[\"$Field%(4)\", 0])"])
+            Unnamed(["RPG::MoveCommand(@code=34, @parameters=[])"])
+            Unnamed(["RPG::MoveCommand(@code=31, @parameters=[])"])
+            Empty([])
+
+          Else([])
+            Empty([])
+
+          BranchEnd([])
+          Empty([])
+
+        BranchEnd([])
+        ControlSwitches([3600, 3600, 0])
+        ControlSwitches([3559, 3559, 1])
+        ControlSwitches([3560, 3560, 0])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

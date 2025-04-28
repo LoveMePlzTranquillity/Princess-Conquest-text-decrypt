@@ -1,0 +1,11 @@
+CommonEvent 843
+Name = "CrowQ check"
+
+  ConditionalBranch([1, 3872, 0, 4, 1])
+    Script(["complete_objective(57, 1)"])
+    ScriptMore(["reveal_objective(57, 2)"])
+    ScriptMore(["call_quest_journal(57)"])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

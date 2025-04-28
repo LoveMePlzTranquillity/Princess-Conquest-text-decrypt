@@ -1,0 +1,53 @@
+CommonEvent 797
+Name = "Bubble Going"
+
+  Label(["again"])
+  ShowAnimation([-1, 179, false])
+  Script(["map_effects.memorize"])
+  ScriptMore(["map_effects.set_zoom(125, 30)"])
+  ScriptMore(["map_effects.set_color(0,0,125,125,30)"])
+  Wait([600])
+  Wait([120])
+  ConditionalBranch([0, 3438, 0])
+    ConditionalBranch([8, 295])
+      ShowTextAttributes(["", 0, 0, 2])
+      ShowText(["You're out of time!\\.\\. Are you going to use another \\i[698] Bubbly Soap?\\!"])
+      ShowChoices([["Yes", "No"], 2])
+      When([0, "Yes"])
+        ChangeItems([295, 1, 0, 1])
+        JumpToLabel(["again"])
+        Empty([])
+
+      When([1, "No"])
+        Empty([])
+
+      ChoicesEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ControlSwitches([1307, 1307, 0])
+  ConditionalBranch([0, 3438, 0])
+    CallCommonEvent([76])
+    ConditionalBranch([0, 3705, 0])
+      ControlSwitches([3494, 3494, 1])
+      Empty([])
+
+    Else([])
+      ControlSwitches([3494, 3494, 0])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ControlSwitches([1307, 1307, 1])
+  ShowAnimation([-1, 180, false])
+  Script(["map_effects.set_zoom(100, 30)"])
+  ScriptMore(["map_effects.set_color(0,0,0,0,30)"])
+  Wait([30])
+  Script(["map_effects.clear"])
+  ControlSwitches([1306, 1306, 1])
+  Empty([])

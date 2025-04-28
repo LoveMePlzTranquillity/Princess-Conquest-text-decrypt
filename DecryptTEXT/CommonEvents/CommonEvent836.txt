@@ -1,0 +1,11 @@
+CommonEvent 836
+Name = "★🧸★ Gift # Reset"
+
+  Script(["@v = 3681"])
+  ScriptMore(["while @v <= 3700"])
+  ScriptMore(["$game_variables[@v] = 0"])
+  ScriptMore(["@v += 1"])
+  ScriptMore(["end"])
+  ScriptMore(["$game_variables[4558] = 0"])
+  ScriptMore(["$game_variables[4559] = 0"])
+  Empty([])

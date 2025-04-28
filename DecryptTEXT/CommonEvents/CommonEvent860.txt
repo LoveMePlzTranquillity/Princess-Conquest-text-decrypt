@@ -1,0 +1,283 @@
+CommonEvent 860
+Name = "Map fly Stamina&&&"
+
+  Script(["@startM = $game_map.map_id"])
+  Loop([])
+    ConditionalBranch([0, 3435, 0])
+      BreakLoop([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([0, 3437, 0])
+      ControlSwitches([3437, 3437, 1])
+      BreakLoop([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_variables[2891][0] == $game_map.map_id"])
+      Script(["@x = $game_player.x"])
+      ScriptMore(["@y = $game_player.y"])
+      ScriptMore(["@dx = @x - $game_variables[2891][1]"])
+      ScriptMore(["@dy = @y - $game_variables[2891][2]"])
+      Comment(["##########"])
+      Script(["@asc = @dx*@dx"])
+      ScriptMore(["@ord = @dy*@dy"])
+      ScriptMore(["@dist = Math.sqrt(@asc+@ord)"])
+      Comment(["##########"])
+      Script(["@lim = 13"])
+      ConditionalBranch([12, "$game_party.members[0].equips.include?$data_armors[255]"])
+        Script(["@lim *= 1.5"])
+        Empty([])
+
+      BranchEnd([])
+      ConditionalBranch([12, "$game_party.members[0].equips.include?$data_armors[697]"])
+        Script(["@lim *= 2"])
+        Empty([])
+
+      BranchEnd([])
+      Comment(["##########"])
+      Script(["@left = @lim - @dist"])
+      ControlVariables([2895, 2895, 0, 4, "@left"])
+      ConditionalBranch([12, "@dist > @lim"])
+        Script(["@reg = $game_player.region_id"])
+        ConditionalBranch([12, "@reg != 60 && @reg != 61 && @reg != 62"])
+          JumpToLabel(["stop"])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([0, 3434, 1])
+          ControlSwitches([3436, 3436, 0])
+          Comment(["FLY BAR INIT"])
+          Script(["@bary = 18"])
+          Script(["@barx = 226"])
+          Comment(["Max Steps"])
+          Comment(["##########"])
+          Script(["@lim = 13"])
+          ConditionalBranch([12, "$game_party.members[0].equips.include?$data_armors[255]"])
+            Script(["@lim *= 1.5"])
+            Empty([])
+
+          BranchEnd([])
+          ConditionalBranch([12, "$game_party.members[0].equips.include?$data_armors[697]"])
+            Script(["@lim *= 2"])
+            Empty([])
+
+          BranchEnd([])
+          Comment(["##########"])
+          Comment(["Steps Left"])
+          Script(["@v = $game_variables[2895]"])
+          Comment(["Pic Names"])
+          ConditionalBranch([12, "$game_party.leader.class_id >= 110 && $game_party.leader.class_id <= 113"])
+            Script(["@cro = \"FlCountLam\""])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([12, "$game_party.leader.class_id >= 137 && $game_party.leader.class_id <= 141"])
+              Script(["@cro = \"FlCountFai\""])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([12, "$game_party.leader.class_id == 28 || $game_party.leader.class_id == 72 || $game_party.leader.class_id == 201"])
+                Script(["@cro = \"FlCountSucc\""])
+                Empty([])
+
+              Else([])
+                ConditionalBranch([12, "$game_party.leader.id == 1"])
+                  Script(["@cro = \"FlCountK\""])
+                  Empty([])
+
+                Else([])
+                  ConditionalBranch([12, "$game_party.leader.id == 41"])
+                    Script(["@cro = \"FlCountW\""])
+                    Empty([])
+
+                  Else([])
+                    ConditionalBranch([12, "$game_party.leader.id == 7"])
+                      Script(["@cro = \"FlCountS\""])
+                      Empty([])
+
+                    Else([])
+                      ConditionalBranch([12, "$game_party.leader.class_id >= 149 && $game_party.leader.class_id <= 155"])
+                        Comment(["Birds"])
+                        Script(["@cro = \"FlCountBir\""])
+                        Empty([])
+
+                      Else([])
+                        ConditionalBranch([12, "$game_party.leader.class_id == 38 || $game_party.leader.class_id == 32"])
+                          Comment(["BirdP / FinAlt"])
+                          Script(["@cro = \"FlCountBir\""])
+                          Empty([])
+
+                        Else([])
+                          Script(["@cro = \"FlCount\""])
+                          Empty([])
+
+                        BranchEnd([])
+                        Empty([])
+
+                      BranchEnd([])
+                      Empty([])
+
+                    BranchEnd([])
+                    Empty([])
+
+                  BranchEnd([])
+                  Empty([])
+
+                BranchEnd([])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Script(["@bar = \"FlightBar\""])
+          Comment(["on 10 calc"])
+          Script(["@rap = @v / @lim"])
+          ScriptMore(["@diez = 10 * @rap"])
+          ConditionalBranch([12, "@diez <= 0"])
+            Script(["@barx = 226"])
+            BreakLoop([])
+            Empty([])
+
+          Else([])
+            ConditionalBranch([12, "@diez <= 1"])
+              Script(["@barx = 226"])
+              Empty([])
+
+            Else([])
+              ConditionalBranch([12, "@diez <= 2"])
+                Script(["@barx = 260"])
+                Empty([])
+
+              Else([])
+                ConditionalBranch([12, "@diez <= 3"])
+                  Script(["@barx = 294"])
+                  Empty([])
+
+                Else([])
+                  ConditionalBranch([12, "@diez <= 4"])
+                    Script(["@barx = 328"])
+                    Empty([])
+
+                  Else([])
+                    ConditionalBranch([12, "@diez <= 5"])
+                      Script(["@barx = 362"])
+                      Empty([])
+
+                    Else([])
+                      ConditionalBranch([12, "@diez <= 6"])
+                        Script(["@barx = 396"])
+                        Empty([])
+
+                      Else([])
+                        ConditionalBranch([12, "@diez <= 7"])
+                          Script(["@barx = 430"])
+                          Empty([])
+
+                        Else([])
+                          ConditionalBranch([12, "@diez <= 8"])
+                            Script(["@barx = 464"])
+                            Empty([])
+
+                          Else([])
+                            ConditionalBranch([12, "@diez <= 9"])
+                              Script(["@barx = 498"])
+                              Empty([])
+
+                            Else([])
+                              ConditionalBranch([12, "@diez <= 10"])
+                                Script(["@barx = 532"])
+                                Empty([])
+
+                              Else([])
+                                Empty([])
+
+                              BranchEnd([])
+                              Empty([])
+
+                            BranchEnd([])
+                            Empty([])
+
+                          BranchEnd([])
+                          Empty([])
+
+                        BranchEnd([])
+                        Empty([])
+
+                      BranchEnd([])
+                      Empty([])
+
+                    BranchEnd([])
+                    Empty([])
+
+                  BranchEnd([])
+                  Empty([])
+
+                BranchEnd([])
+                Empty([])
+
+              BranchEnd([])
+              Empty([])
+
+            BranchEnd([])
+            Empty([])
+
+          BranchEnd([])
+          Script(["$game_map.screen.pictures[3].show(@bar, 0, "])
+          ScriptMore(["224, 32, 100, 100, 255, 0)"])
+          ConditionalBranch([0, 3434, 1])
+            Script(["$game_map.screen.pictures[4].show(@cro, 0, "])
+            ScriptMore(["@barx, @bary, 100, 100, 255, 0)"])
+            Empty([])
+
+          BranchEnd([])
+          Comment(["FLY BAR END"])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ConditionalBranch([0, 3435, 1])
+        Label(["stop"])
+        ControlSwitches([3434, 3434, 0])
+        ShowTextAttributes(["", 0, 2, 2])
+        ShowText(["\\>\\^"])
+        CallCommonEvent([859])
+        BreakLoop([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["##########"])
+    ConditionalBranch([12, "$game_map.map_id != @startM"])
+      BreakLoop([])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["##########"])
+    ConditionalBranch([0, 3433, 1])
+      BreakLoop([])
+      Empty([])
+
+    BranchEnd([])
+    Comment(["##########"])
+    Wait([5])
+    Empty([])
+
+  RepeatAbove([])
+  ErasePicture([3])
+  ErasePicture([4])
+  Empty([])
