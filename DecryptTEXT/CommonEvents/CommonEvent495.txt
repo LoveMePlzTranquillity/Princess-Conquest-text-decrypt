@@ -1,0 +1,80 @@
+CommonEvent 495
+Name = "Helias Check"
+
+  ControlSwitches([2662, 2662, 1])
+  CallCommonEvent([109])
+  ConditionalBranch([0, 2663, 0])
+    JumpToLabel(["end"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 2791, 1, 761, 4])
+    Script(["@h = rand(3)"])
+    ConditionalBranch([12, "@h > 1.5"])
+      ControlSwitches([2662, 2662, 0])
+      Label(["hxy"])
+      Comment(["witch forest"])
+      ConditionalBranch([12, "$game_map.map_id == 209"])
+        Script(["@id = 13"])
+        Script(["@x = rand (40) + 7"])
+        ScriptMore(["@y = rand (15) + 7"])
+        Empty([])
+
+      BranchEnd([])
+      Comment(["werebeast hiding"])
+      ConditionalBranch([12, "$game_map.map_id == 273"])
+        Script(["@id = 9"])
+        Script(["@x = rand (10) + 7"])
+        ScriptMore(["@y = rand (5) + 7"])
+        Empty([])
+
+      BranchEnd([])
+      Comment(["wolf hidden"])
+      ConditionalBranch([12, "$game_map.map_id == 261"])
+        Script(["@id = 7"])
+        Script(["@x = rand (15) + 7"])
+        ScriptMore(["@y = rand (20) + 7"])
+        Empty([])
+
+      BranchEnd([])
+      Comment(["slime pool"])
+      ConditionalBranch([12, "$game_map.map_id == 262"])
+        Script(["@id = 17"])
+        Script(["@x = rand (30) + 7"])
+        ScriptMore(["@y = rand (20) + 7"])
+        Empty([])
+
+      BranchEnd([])
+      Comment(["moth forest"])
+      ConditionalBranch([12, "$game_map.map_id == 167"])
+        Script(["@id = 66"])
+        Script(["@x = rand (40) + 7"])
+        ScriptMore(["@y = rand (40) + 7"])
+        Empty([])
+
+      BranchEnd([])
+      ConditionalBranch([12, "$game_map.passable?(@x, @y, 2)"])
+        Script(["$game_map.events[@id].moveto(@x,@y)"])
+        Empty([])
+
+      Else([])
+        JumpToLabel(["hxy"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    Else([])
+      ControlSwitches([2662, 2662, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  Else([])
+    Label(["end"])
+    ControlSwitches([2662, 2662, 1])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

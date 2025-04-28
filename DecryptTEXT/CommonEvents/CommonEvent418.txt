@@ -1,0 +1,143 @@
+CommonEvent 418
+Name = "ListEx."
+
+  Script(["Font.default_size = 24"])
+  Script(["params = []"])
+  ScriptMore(["choices = []"])
+  ScriptMore(["choices.push(\"Kobold P.\")"])
+  ScriptMore(["choices.push(\"Human P.\")"])
+  ScriptMore(["choices.push(\"Slime P.\")"])
+  ScriptMore(["choices.push(\"Golem P.\")"])
+  ScriptMore(["choices.push(\"Insect P.\")"])
+  ScriptMore(["choices.push(\"Skeleton P.\")"])
+  ScriptMore(["choices.push(\"Desert P.\")"])
+  ScriptMore(["choices.push(\"Ghost P.\")"])
+  ScriptMore(["choices.push(\"Goblin P.\")"])
+  ScriptMore(["choices.push(\"Moth P.\")"])
+  ScriptMore(["choices.push(\"Cat P.\")"])
+  ScriptMore(["choices.push(\"Dog P.\")"])
+  ScriptMore(["choices.push(\"Next Page\")"])
+  ScriptMore(["params.push(choices)"])
+  ScriptMore(["params.push(99)"])
+  ScriptMore(["setup_choices(params)"])
+  ScriptMore(["wait_for_message"])
+  ScriptMore(["$game_variables[4602] = @branch[@indent]"])
+  Script(["Font.default_size = 30"])
+  ConditionalBranch([1, 4602, 0, 0, 0])
+    Comment(["KOB"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 4602, 0, 1, 0])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 4602, 0, 2, 0])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 4602, 0, 3, 0])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 4602, 0, 4, 0])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 4602, 0, 5, 0])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 4602, 0, 6, 0])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 4602, 0, 7, 0])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 4602, 0, 8, 0])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 4602, 0, 9, 0])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 4602, 0, 10, 0])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 4602, 0, 11, 0])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([1, 4602, 0, 12, 0])
+    Script(["Font.default_size = 24"])
+    Script(["params = []"])
+    ScriptMore(["choices = []"])
+    ScriptMore(["choices.push(\"Previous Page\")"])
+    ScriptMore(["choices.push(\"Mouse P.\")"])
+    ScriptMore(["choices.push(\"Rabbit P.\")"])
+    ScriptMore(["choices.push(\"Harvest P.\")"])
+    ScriptMore(["choices.push(\"Wyvern P.\")"])
+    ScriptMore(["choices.push(\"Finhead P.\")"])
+    ScriptMore(["choices.push(\"Mermaid P.\")"])
+    ScriptMore(["choices.push(\"Bird P.\")"])
+    ScriptMore(["choices.push(\"Oni P.\")"])
+    ScriptMore(["choices.push(\"Plant P.\")"])
+    ScriptMore(["params.push(choices)"])
+    ScriptMore(["params.push(99)"])
+    ScriptMore(["setup_choices(params)"])
+    ScriptMore(["wait_for_message"])
+    ScriptMore(["$game_variables[4602] = @branch[@indent]"])
+    Script(["Font.default_size = 30"])
+    ConditionalBranch([1, 4602, 0, 0, 0])
+      JumpToLabel(["PrevPrincess"])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 4602, 0, 1, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 4602, 0, 2, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 4602, 0, 3, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 4602, 0, 4, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 4602, 0, 5, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 4602, 0, 6, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 4602, 0, 7, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 4602, 0, 8, 0])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([1, 4602, 0, 9, 0])
+      Empty([])
+
+    Else([])
+      JumpToLabel(["PrevPrincess"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

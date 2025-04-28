@@ -1,0 +1,41 @@
+CommonEvent 485
+Name = "Reset Panties+Bodies"
+
+  Script(["@res = $game_variables[2864]"])
+  Script(["@n = 0"])
+  Script(["@v = 2778"])
+  Loop([])
+    ConditionalBranch([12, "$game_variables[@v][@n] == @res"])
+      Script(["$game_variables[@v][@n] = 0"])
+      Script(["$game_variables[2784][@n] = 0"])
+      Empty([])
+
+    BranchEnd([])
+    Script(["@n += 1"])
+    ConditionalBranch([12, "@n == 22"])
+      ConditionalBranch([12, "@v == 2785"])
+        BreakLoop([])
+        Empty([])
+
+      Else([])
+        ConditionalBranch([12, "@v == 2779"])
+          Script(["@v = 2785"])
+          Script(["@n = 0"])
+          Empty([])
+
+        Else([])
+          Script(["@v = 2779"])
+          Script(["@n = 0"])
+          Empty([])
+
+        BranchEnd([])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  RepeatAbove([])
+  Empty([])

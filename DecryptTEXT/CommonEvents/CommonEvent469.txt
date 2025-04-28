@@ -1,0 +1,62 @@
+CommonEvent 469
+Name = "Trasf?"
+
+  Comment(["474 - drake"])
+  CommentMore(["476 - headband"])
+  CommentMore(["771 - cardinal"])
+  Script(["@prog = $game_variables[2868]"])
+  ControlSwitches([3871, 3871, 0])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 10 || $game_variables[@prog][0] == 3"])
+    ConditionalBranch([12, "$game_variables[@prog][3] == 3"])
+      Comment(["Dumb Slimes / Larva Moths"])
+      ControlSwitches([3871, 3871, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 18"])
+    Comment(["Mermaids"])
+    ConditionalBranch([0, 3340, 0])
+      Empty([])
+
+    Else([])
+      ControlSwitches([3871, 3871, 1])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_variables[@prog][0] == 99"])
+    Comment(["EGGS"])
+    ControlSwitches([3871, 3871, 1])
+    Empty([])
+
+  BranchEnd([])
+  Script(["@noTF = [99,\"amelie\",\"idol\",\"crusader\",\"moss\",\"mimic\",\"crystal\","])
+  ScriptMore(["\"scarecrow\",\"dokuro\",\"eldritch\",\"wendigo\",\"dummy\",\"kitsune\",\"monkey\",\"futadog\","])
+  ScriptMore(["\"sala\",\"squid\",\"dullanyan\",\"sprite\",\"scorpio\",\"candy\",\"goat\",\"ox\",\"chain\",\"zmeu\","])
+  ScriptMore(["\"yukionna\",\"jester\",\"kraken\",\"nightmare\",\"bot\",\"mama\",\"shroom\",\"anubis\",\"femk\","])
+  ScriptMore(["\"spika\",\"imps31\",\"orca\",\"keteer\",\"lilbug\",\"lovesnek\"]"])
+  Script(["@noTF20 = [\"sakari\",\"onyx\",\"zalfos\",\"feather\",\"seji\",\"plasma\",\"rouge\",\"seji\"]"])
+  ConditionalBranch([12, "@noTF.include?$game_variables[@prog][0]"])
+    ControlSwitches([3871, 3871, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@noTF20.include?$game_variables[@prog][20]"])
+    ControlSwitches([3871, 3871, 1])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([0, 3871, 0])
+    Script(["if $game_variables[@prog].length > 60"])
+    ScriptMore(["$game_variables[@prog][61] = \"\""])
+    ScriptMore(["$game_variables[@prog][62] = \"\""])
+    ScriptMore(["end"])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])

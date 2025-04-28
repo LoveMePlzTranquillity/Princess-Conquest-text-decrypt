@@ -1,0 +1,18 @@
+CommonEvent 487
+Name = "Panty untrick! MGV"
+
+  ShowTextAttributes(["", 0, 0, 2])
+  ShowText(["Unmount the \\i[597] \\C[18]Bodiless Panties\\C[0]?"])
+  ShowChoices([["Yes", "No"], 2])
+  When([0, "Yes"])
+    ChangeItems([192, 1, 0, 1])
+    Wait([45])
+    ChangeItems([201, 0, 0, 1])
+    ChangeItems([191, 0, 0, 1])
+    Empty([])
+
+  When([1, "No"])
+    Empty([])
+
+  ChoicesEnd([])
+  Empty([])

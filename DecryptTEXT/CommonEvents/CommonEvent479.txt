@@ -1,0 +1,25 @@
+CommonEvent 479
+Name = "Get @prog"
+
+  Script(["@npm = $game_variables[2868]"])
+  ConditionalBranch([12, "@npm >= 35 && @npm <= 39"])
+    Empty([])
+
+  Else([])
+    Script(["@npm = 35"])
+    Empty([])
+
+  BranchEnd([])
+  Script(["@nam = $game_actors[@npm].name"])
+  Comment(["####################"])
+  Script(["@n = 2250"])
+  ScriptMore(["while @n <= 2750"])
+  ScriptMore(["if $game_variables[@n][2] == @nam"])
+  ScriptMore(["break"])
+  ScriptMore(["else"])
+  ScriptMore(["@n += 1"])
+  ScriptMore(["end"])
+  ScriptMore(["end"])
+  Comment(["####################"])
+  ControlVariables([2868, 2868, 0, 4, "@n"])
+  Empty([])

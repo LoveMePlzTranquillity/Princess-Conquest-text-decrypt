@@ -1,0 +1,165 @@
+CommonEvent 458
+Name = "rem px range calc"
+
+  ConditionalBranch([12, "$game_map.passable?(@px + 1, @py, 2)"])
+    Empty([])
+
+  Else([])
+    Script(["@c = 3"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_map.passable?(@px - 1, @py, 2)"])
+    Empty([])
+
+  Else([])
+    Script(["@d = -3"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_map.passable?(@px, @py + 1, 2)"])
+    Empty([])
+
+  Else([])
+    Script(["@b = 3"])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "$game_map.passable?(@px, @py - 1, 2)"])
+    Empty([])
+
+  Else([])
+    Script(["@a = -3"])
+    Empty([])
+
+  BranchEnd([])
+  Script(["@diff = 1"])
+  ConditionalBranch([12, "@dir == 2"])
+    Label(["hid2"])
+    ConditionalBranch([12, "@plpy - @diff > @ppy"])
+      Script(["@chx = @ppx"])
+      Script(["@chy = @plpy - @diff"])
+      Script(["@chy /= 4"])
+      ConditionalBranch([12, "$game_map.passable?(@chx, @chy, 2)"])
+        Script(["@diff += 1"])
+        JumpToLabel(["hid2"])
+        Empty([])
+
+      Else([])
+        Script(["@b = 4"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_map.passable?(@chx, @chy, 2) && $game_map.passable?(@chx + 0.5, @chy, 2) && $game_map.passable?(@chx - 0.5, @chy, 2) && $game_map.passable?(@chx, @chy + 0.5, 2) && $game_map.passable?(@chx, @chy - 0.5, 2)"])
+      Empty([])
+
+    Else([])
+      Script(["@b = 4"])
+      Script(["@c = 3"])
+      Script(["@d = -3"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@dir == 4"])
+    Label(["hid4"])
+    ConditionalBranch([12, "@plpx + @diff < @ppx"])
+      Script(["@chy = @ppy"])
+      Script(["@chx = @plpx + @diff"])
+      Script(["@chx /= 4"])
+      ConditionalBranch([12, "$game_map.passable?(@chx, @chy, 2)"])
+        Script(["@diff += 1"])
+        JumpToLabel(["hid4"])
+        Empty([])
+
+      Else([])
+        Script(["@d = -4"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_map.passable?(@chx, @chy, 2) && $game_map.passable?(@chx + 0.5, @chy, 2) && $game_map.passable?(@chx - 0.5, @chy, 2) && $game_map.passable?(@chx, @chy + 0.5, 2) && $game_map.passable?(@chx, @chy - 0.5, 2)"])
+      Empty([])
+
+    Else([])
+      Script(["@d = -4"])
+      Script(["@a = -3"])
+      Script(["@b = 3"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@dir == 6"])
+    Label(["hid6"])
+    ConditionalBranch([12, "@plpx - @diff > @ppx"])
+      Script(["@chy = @ppy"])
+      Script(["@chx = @plpx - @diff"])
+      Script(["@chx /= 4"])
+      ConditionalBranch([12, "$game_map.passable?(@chx, @chy, 2)"])
+        Script(["@diff += 1"])
+        JumpToLabel(["hid6"])
+        Empty([])
+
+      Else([])
+        Script(["@c = 4"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_map.passable?(@chx, @chy, 2) && $game_map.passable?(@chx + 0.5, @chy, 2) && $game_map.passable?(@chx - 0.5, @chy, 2) && $game_map.passable?(@chx, @chy + 0.5, 2) && $game_map.passable?(@chx, @chy - 0.5, 2)"])
+      Empty([])
+
+    Else([])
+      Script(["@c = 4"])
+      Script(["@a = -3"])
+      Script(["@b = 3"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  ConditionalBranch([12, "@dir == 8"])
+    Label(["hid8"])
+    ConditionalBranch([12, "@plpy + @diff < @ppy"])
+      Script(["@chx = @ppx"])
+      Script(["@chy = @plpy + @diff"])
+      Script(["@chy /= 4"])
+      ConditionalBranch([12, "$game_map.passable?(@chx, @chy, 2)"])
+        Script(["@diff += 1"])
+        JumpToLabel(["hid8"])
+        Empty([])
+
+      Else([])
+        Script(["@a = -4"])
+        Empty([])
+
+      BranchEnd([])
+      Empty([])
+
+    BranchEnd([])
+    ConditionalBranch([12, "$game_map.passable?(@chx, @chy, 2) && $game_map.passable?(@chx + 0.5, @chy, 2) && $game_map.passable?(@chx - 0.5, @chy, 2) && $game_map.passable?(@chx, @chy + 0.5, 2) && $game_map.passable?(@chx, @chy - 0.5, 2)"])
+      Empty([])
+
+    Else([])
+      Script(["@a = -4"])
+      Script(["@c = 3"])
+      Script(["@d = -3"])
+      Empty([])
+
+    BranchEnd([])
+    Empty([])
+
+  BranchEnd([])
+  Empty([])
