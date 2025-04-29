@@ -49,8 +49,8 @@ Description = "Принцесса слизи попросила вас разд�
 Note = "<image: SlimeSalts>"
 
 Item 11
-Name = "Frog Girl Bath Water"
-Description = "Bathing water from Frog Princess' green pond. Has many uses!"
+Name = "Девушка-лягушка купается в воде"
+Description = "Питьевая вода из зеленого пруда Принцессы Лягушки. Есть много применений!"
 Note = "<category: Consumable>\r\n<image: FrogWater>"
 
 Item 12
@@ -94,8 +94,8 @@ Description = "Таинственное письмо, которое вы наш
 Note = "<category: Book>"
 
 Item 20
-Name = "Caveau Key"
-Description = "Key to open the passage to the Caveau of the Rattesein."
+Name = "*POINTFLAG*Cveau Ключ"
+Description = "*POINTFLAG*Ключ к открытию прохода в пещеру Rattesein."
 Note = "<category: Key>"
 
 Item 21
@@ -115,12 +115,12 @@ Note = "<image: SharkPack>"
 
 Item 24
 Name = "Записи о смерти"
-Description = "Требуется для самой простой некромантии, собирайте кости и призывайте\"жизнь\"!"
+Description = "Требуется для самой простой некромантии, собирайте кости и призывайте\"
 Note = "<category: Usable>\r\n<image: DNot>"
 
 Item 25
-Name = "Lumpy Leftovers"
-Description = "Leftovers of the Lump on a Stick you used. It could still be useful."
+Name = "*POINTFLAG**POINTFLAG*Lumpy Leftovers"
+Description = "*POINTFLAG*Остатки шишки на палке, которую вы использовали. Это все еще может быть полезно."
 Note = ""
 
 Item 26
@@ -134,13 +134,13 @@ Description = "Превращает неодушевленную принцес�
 Note = ""
 
 Item 28
-Name = "Princess Spring Water"
-Description = "\"When you need to recover moisture, drink Princess Spring Water!\" "
+Name = "Оригинальное название: Princes Spring Water"
+Description = "*POINTFLAG*"
 Note = "<category: Consumable>"
 
 Item 29
-Name = "Lump on a Stick"
-Description = "Fermented and highly nutritious meat of dubious origin. Immediately fills one's belly!"
+Name = "Комок на палке"
+Description = "*Ферментированное и очень питательное мясо сомнительного происхождения. Немедленно наполни свой живот!"
 Note = "<category: Food>\r\n<category: Dowry>\r\n<image: StickLump>"
 
 Item 30
@@ -150,7 +150,7 @@ Note = ""
 
 Item 31
 Name = "Пара колец с красной нитью"
-Description = "Anything placed through one ring will emerge from the other."
+Description = "Все, что проходит через одно кольцо, выходит из другого."
 Note = "<image: RedRings>\r\n<category: Usable>\r\n<category: Dowry>"
 
 Item 32
@@ -164,12 +164,12 @@ Description = "Те, кто в нем отражается, видят, как �
 Note = "<image: GhostMirror>\r\n<category: Usable>\r\n<category: Dowry>"
 
 Item 34
-Name = "Caveau Combination"
-Description = "\"\\V[3437]\""
+Name = "*POINTFLAG*Caveau Combination"
+Description = "\"
 Note = "<category: Book>"
 
 Item 35
-Name = "Swirlies"
+Name = "POINTFLAG*Swirlies"
 Description = ""
 Note = ""
 
@@ -179,7 +179,7 @@ Description = "Уменьшает коррапшен на 2."
 Note = "<category: Consumable>\r\n<image: BlessedSalts>"
 
 Item 37
-Name = "Chunga Root"
+Name = "*Пойнтфлаг*Чунга Корень"
 Description = ""
 Note = "<image: Chunga>\r\ngift item only"
 
@@ -264,7 +264,7 @@ Description = "Ключ от комнаты Принцессы-Призрака.
 Note = "<category: Key>"
 
 Item 54
-Name = "Starchy's Key"
+Name = "Ключ Старчи"
 Description = ""
 Note = "<category: Key>"
 
@@ -299,8 +299,8 @@ Description = "Ключ от комнаты принцессы гоблинов.
 Note = "<category: Key>"
 
 Item 61
-Name = "Gemstone Plug"
-Description = "Kobold Princess' precious gem. \"Can only be removed by a knight\"."
+Name = "*POINTFLAG*Gemstone Plug"
+Description = "POINTFLAG - драгоценная жемчужина принцессы"
 Note = "<image: Plug>"
 
 Item 62
@@ -319,8 +319,8 @@ Description = "Ржавый ключ от комнаты Принцессы-Со
 Note = "<category: Key>"
 
 Item 65
-Name = "Reptilian Scale"
-Description = "Scale of a huge reptile. The sand made it pretty and smooth."
+Name = "*POINTFLAG*Рептильная шкала"
+Description = "POINTFLAG — масштаб огромной рептилии. Песок сделал его красивым и гладким."
 Note = "<image: ReptScale>"
 
 Item 66
@@ -344,8 +344,8 @@ Description = ""
 Note = ""
 
 Item 70
-Name = "Fuzzy Nip"
-Description = "Increases \\i[743] Lust by 2 and decreases \\i[742] Love by 1. Everytime you burn one, you end up with 2!"
+Name = "POINTFLAG - Fuzzy Nip"
+Description = "*POINTFLAG* Увеличение Похоть на 2 и уменьшается на 1. Каждый раз, когда вы сжигаете один, вы получаете 2."
 Note = "<image: Fuzzy>\r\n<category: Consumable>\r\n<category: Dowry>"
 
 Item 71
@@ -460,7 +460,7 @@ Note = ""
 
 Item 93
 Name = "Реликвия старого паладина"
-Description = "Золотая реликвия Церкви. На обороте есть надпись \"Ты всегда будешь моим самым дорогим сокровищем, даже если мы не одной крови.\""
+Description = "Золотая реликвия Церкви. На обороте есть надпись \"
 Note = ""
 
 Item 94
@@ -499,7 +499,7 @@ Description = "Товары для таверны."
 Note = "<category: Material>"
 
 Item 101
-Name = "Rice"
+Name = "рис"
 Description = "Товары для таверны."
 Note = "<category: Material>"
 
@@ -509,7 +509,7 @@ Description = "Вкусное молоко. Его можно найти тол�
 Note = "<category: Food>"
 
 Item 103
-Name = "Kelp"
+Name = "кельп"
 Description = "Товары для таверны."
 Note = "<category: Material>"
 
@@ -664,7 +664,7 @@ Description = "Бутылированный генетический матер�
 Note = "<category: Consumable>"
 
 Item 134
-Name = "Catoble Sperm"
+Name = "Катобльная сперма"
 Description = "Бутылированный генетический материал Восстанавливает 5 HP."
 Note = "<category: Consumable>"
 
@@ -774,7 +774,7 @@ Description = "Бутылированный генетический матер�
 Note = "<category: Consumable>"
 
 Item 156
-Name = "Forge Liquid"
+Name = "Кузнечная жидкость"
 Description = "Бутылированный генетический материал Восстанавливает 5 HP."
 Note = "<category: Consumable>"
 
@@ -844,7 +844,7 @@ Description = ""
 Note = ""
 
 Item 170
-Name = "*Monster Mats*"
+Name = "*Монстр Матс*"
 Description = ""
 Note = ""
 
@@ -865,7 +865,7 @@ Note = "<category: Material>"
 
 Item 174
 Name = "Страшная паутина"
-Description = "Premium material obtained from an Elite Webling!"
+Description = "Премиальный материал, полученный от Elite Webling!"
 Note = "<category: Material>"
 
 Item 175
@@ -884,7 +884,7 @@ Description = "Премиальный материал, полученный о�
 Note = "<category: Material>"
 
 Item 178
-Name = "Gemmed Chela"
+Name = "POINTFLAG Джеммед Чела"
 Description = "Премиальный материал, полученный из резного краба!"
 Note = "<category: Material>"
 
@@ -940,12 +940,12 @@ Note = "<category: Debug>"
 
 Item 189
 Name = "Подарок Отца"
-Description = "Gain small fortune for every child."
+Description = "POINTFLAG - Получите небольшое состояние для каждого ребенка."
 Note = "<image: FatherG>\r\nonly for gift"
 
 Item 190
-Name = "Lump Pills"
-Description = "Children are born 3 times faster!"
+Name = "*ПИНТФЛАГ* Таблетки"
+Description = "Дети рождаются в 3 раза быстрее!"
 Note = "<image: LumpPill>\r\nonly for gift"
 
 Item 191
@@ -964,7 +964,7 @@ Description = "Пара трусиков, украденных из гардер
 Note = "<category: Usable>"
 
 Item 194
-Name = "Gremlin Booze"
+Name = "Гремлин Буз"
 Description = "Восстанавливает 40 MP. Может изменить форму некоторых принцесс!"
 Note = "<category: Food>"
 
@@ -979,7 +979,7 @@ Description = "Восстанавливает 160 MP. Через день воз
 Note = "<category: Food>"
 
 Item 197
-Name = "Shorty Special"
+Name = "*POINTFLAG*Shorty Special"
 Description = "Остаток дня вы будете производить огромное количество семени, способного оплодотворить кого угодно! Восстанавливает 400 MP."
 Note = "<category: Food>\r\n<image: ShortyS>\r\n<category: Dowry>"
 
@@ -1009,12 +1009,12 @@ Description = "Просто вдохните этот порошок, и вы н
 Note = "<category: Consumable>\r\n<image: SleepPowder>"
 
 Item 203
-Name = "Testos-X"
+Name = "*POINTFLAG*Testos-X"
 Description = "Благодаря новой формуле этот афродизиак может заставить любого упасть к вашим ногам! У него много применений, обязательно попробуйте его во многих случаях!"
 Note = "<category: Consumable>\r\n<image: TestosX>"
 
 Item 204
-Name = "\"Естественная магия\""
+Name = "\"
 Description = "Среди этих документов Принцесса Драконов II нашла рецепт мощного усилителя удовольствия."
 Note = "<category: Book>"
 
@@ -1024,18 +1024,18 @@ Description = "Предмет, который просила Принцесса 
 Note = ""
 
 Item 206
-Name = "\"Секс и люди\""
-Description = "\"Секс и люди. Сексуальное поведение гуманоидного самца\". Книга для взрослых, продаваемая Тревором."
+Name = "\"
+Description = "\"
 Note = "<category: Book>"
 
 Item 207
-Name = "\"Импы и феи\""
-Description = "\"Импы и феи XXX\". Книга для взрослых, продаваемая Тревором."
+Name = "\"
+Description = "\"
 Note = "<category: Book>"
 
 Item 208
-Name = "\"Горячие Яйца\""
-Description = "\"«Горячие Яйца», история полудракона\". Книга для взрослых, продаваемая Тревором."
+Name = "\"
+Description = "\"
 Note = "<category: Book>"
 
 Item 209
@@ -1054,8 +1054,8 @@ Description = "Строительный материал. Прочный и до
 Note = "<category: Material>"
 
 Item 212
-Name = "Plump Helmets"
-Description = "Kobold rations! Meaty and nutritious mushrooms. Recovers 250 HP."
+Name = "Шлемы для откачки"
+Description = "Пайки Коболда! Мясные и питательные грибы. Восстанавливает 250 л.с."
 Note = "<image: PlumpHelmets>\r\n<category: Food>"
 
 Item 213
@@ -1080,7 +1080,7 @@ Note = ""
 
 Item 217
 Name = "Огонек желаний"
-Description = "Этот маленький огонек может исполнить любое твое желание! Но он глух к твоим просьбам... \"Осторожнее с тем, чего ты желаешь! Висп\""
+Description = "Этот маленький огонек может исполнить любое твое желание! Но он глух к твоим просьбам... \"
 Note = "<category: Consumable>\r\n<category: Dowry>\r\n<image: WishWisp>"
 
 Item 218
@@ -1274,82 +1274,82 @@ Description = "Строительный и ремесленный материа
 Note = "<category: Material>\r\n<image: Iron>"
 
 Item 256
-Name = "Cucco Beak"
-Description = "Premium material obtained from a King Cucco!"
+Name = "Кукко Бик"
+Description = "Премиальный материал, полученный от King Cucco!"
 Note = "<category: Material>"
 
 Item 257
-Name = "Potus Snout"
-Description = "Premium material obtained from an Hippopotus!"
+Name = "Потус Сноут"
+Description = "Премиальный материал, полученный из гиппопотуса!"
 Note = "<category: Material>"
 
 Item 258
-Name = "Hard Chela"
-Description = "Premium material obtained from a Chiseled Crab!"
+Name = "Хард Чела"
+Description = "Премиальный материал, полученный из расчесанного краба!"
 Note = "<category: Material>"
 
 Item 259
-Name = "Sharp Snakeskin"
-Description = "Premium material obtained from a Giant Tsuchinoko!"
+Name = "Острая змеиная кожа"
+Description = "Премиальный материал, полученный от гигантского Цучиноко!"
 Note = "<category: Material>"
 
 Item 260
-Name = "Evil Vine"
-Description = "Premium material obtained from the Pumpking!"
+Name = "Виноградная лоза"
+Description = "Премиальный материал, полученный из Pumpking!"
 Note = "<category: Material>"
 
 Item 261
-Name = "Spika Flaps"
-Description = "Premium material obtained from a Spika!"
+Name = "Спика Флэпс"
+Description = "Премиальный материал, полученный из спики!"
 Note = "<category: Material>"
 
 Item 262
 Name = "Spika Rostrum"
-Description = "Premium material obtained from a Spika!"
+Description = "Премиальный материал, полученный из спики!"
 Note = "<category: Material>"
 
 Item 263
-Name = "Mats xxx"
-Description = "Premium material obtained from a"
+Name = "Матс xxx"
+Description = "Премиальный материал, полученный из"
 Note = "<category: Material>"
 
 Item 264
-Name = "Mats xxx"
-Description = "Premium material obtained from a"
+Name = "Матс xxx"
+Description = "Премиальный материал, полученный из"
 Note = "<category: Material>"
 
 Item 265
-Name = "Mats xxx"
-Description = "Premium material obtained from a"
+Name = "Матс xxx"
+Description = "Премиальный материал, полученный из"
 Note = "<category: Material>"
 
 Item 266
-Name = "Mats xxx"
-Description = "Premium material obtained from a"
+Name = "Матс xxx"
+Description = "Премиальный материал, полученный из"
 Note = "<category: Material>"
 
 Item 267
-Name = "Mats xxx"
-Description = "Premium material obtained from a"
+Name = "Матс xxx"
+Description = "Премиальный материал, полученный из"
 Note = "<category: Material>"
 
 Item 268
-Name = "Mats xxx"
-Description = "Premium material obtained from a"
+Name = "Матс xxx"
+Description = "Премиальный материал, полученный из"
 Note = "<category: Material>"
 
 Item 269
-Name = "Mats xxx"
-Description = "Premium material obtained from a"
+Name = "Матс xxx"
+Description = "Премиальный материал, полученный из"
 Note = "<category: Material>"
 
 Item 270
-Name = "Mats xxx"
-Description = "Premium material obtained from a"
+Name = "Матс xxx"
+Description = "Премиальный материал, полученный из"
 Note = "<category: Material>"
 
 Item 271
-Name = "Missing Mats"
+Name = "Пропавшие маты"
 Description = ""
 Note = "<category: Material>"
 
@@ -1369,63 +1369,63 @@ Description = ""
 Note = ""
 
 Item 275
-Name = "Cardinal Bell"
-Description = "Just a ring of this bell is enough to change the target's sex!"
+Name = "кардинал Белл"
+Description = "Достаточно одного звонка, чтобы изменить пол цели!"
 Note = "<image: Cardinal>\r\n<category: Usable>\r\n<category: Dowry>"
 
 Item 276
-Name = "Windmill Key"
-Description = "A tag is strapped to the key. \"Windmill Key\" is written on it."
+Name = "Ключ от ветряной мельницы"
+Description = "Тэг привязан к ключу. \"
 Note = "<category: Key>"
 
 Item 277
-Name = "Candy Corn"
-Description = "Recovers 50 HP.\r\n"
+Name = "Конфетка"
+Description = "Восстанавливает 50 л.с."
 Note = "<image: CandyCorn>\r\n<category: Food>"
 
 Item 278
-Name = "Withered Cornucopia"
-Description = "A horn filled with withered fruits and nuts. Population loss and gains are inverted for the reign holding this!"
+Name = "Засохшая корнукопия"
+Description = "Рог, наполненный увядшими фруктами и орехами. Потери и прирост населения перевернуты для правления, удерживающего это!"
 Note = "<image: WithCor>\r\n<category: Dowry>"
 
 Item 279
-Name = "Porgy Meat"
-Description = "\"Keep your companions nice and plump, with Porgy Meat!\". Recovers 1500 HP."
+Name = "Мясо порги"
+Description = "\"
 Note = "<category: Food>\r\n<image: Porgy>"
 
 Item 280
-Name = "Frish"
-Description = "\"It was on the line just a couple hours ago! Demand only the freshest Frish for your companions!\". Recovers 800 HP."
+Name = "фриш"
+Description = "\"
 Note = "<category: Food>"
 
 Item 281
-Name = "Harvest Diary"
-Description = "A mysterious book that records everything about Harvest Princess!"
+Name = "Дневник урожая"
+Description = "Таинственная книга, в которой записано все о Принцессе Урожая!"
 Note = "<category: Diary>\r\n<image: PDiaryHar>"
 
 Item 282
-Name = "Wood Plank"
-Description = "A wood plank. Could be used to cross small gaps."
+Name = "Древесный планк"
+Description = "Древесная доска. Их можно использовать для преодоления небольших пробелов."
 Note = ""
 
 Item 283
-Name = "Sewers Key"
-Description = "Key needed to enter the sewers of the Northern region."
+Name = "Канализационный ключ"
+Description = "Ключ нужно было ввести в канализацию Северного региона."
 Note = "<category: Key>"
 
 Item 284
-Name = "Fire Ivy Leaf"
-Description = "A poisonous leaf lost by Frog Princess in the Sewers. Luckily you've found it before it was too late!"
+Name = "Огненный Плющ Лиф"
+Description = "Ядовитый лист, потерянный принцессой-лягушкой в канализации. К счастью, вы нашли его, пока не стало слишком поздно!"
 Note = "<image: FireIvy>"
 
 Item 285
-Name = "Wyvern Diary"
-Description = "A mysterious book that records everything about Wyvern Princess!"
+Name = "Дневник Уайверна"
+Description = "Загадочная книга, в которой записано все о принцессе Вайверн!"
 Note = "<category: Diary>\r\n<image: PDiaryWyv>"
 
 Item 286
-Name = "Guardian's Key"
-Description = "A tag is strapped to the key. \"Guardian's Key\" is written on it."
+Name = "Ключ Хранителя"
+Description = "Тэг привязан к ключу. \"
 Note = "<category: Key>"
 
 Item 287
@@ -1439,398 +1439,398 @@ Description = ""
 Note = ""
 
 Item 289
-Name = "Lumpy Frish"
-Description = "Your usual Frish, with an unusual lump on its belly."
+Name = "Пышный фриш"
+Description = "Ваш обычный фриш, с необычным комком на животе."
 Note = "<category: Food>"
 
 Item 290
-Name = "Ripped Fabric"
-Description = "A piece of ripped fabric, belonging to a tunic. The color pattern reminds you of the Church's vests."
+Name = "Поломанная ткань"
+Description = "Кусок разорванной ткани, принадлежавший тунике. Цветовой узор напоминает об жилетах церкви."
 Note = ""
 
 Item 291
-Name = "Ghost Ashes"
-Description = "The burned remains of Ghost Princess! Maybe you can tell how she died by having these remains analyzed?"
+Name = "Призрачный пепел"
+Description = "Сожженные останки принцессы-призрака! Может, вы можете сказать, как она умерла, проанализировав эти останки?"
 Note = "<image: GhostAshes>"
 
 Item 292
-Name = "Soul Whistle"
-Description = "With a blow of this bone whistle the souls of the dead will lend you their aid."
+Name = "Свист души"
+Description = "Ударом этого костяного свистка души умерших окажут вам свою помощь."
 Note = "<image: Whistle>\r\n<category: Usable>\r\n<category: Dowry>"
 
 Item 293
-Name = "Slaver Pass"
-Description = "Stamped by Goblin Princess, allows the bearer to partecipate in Slave Auctions!"
+Name = "Пропуск славян"
+Description = "Под маркой принцессы Гоблин, позволяет предъявителю участвовать в аукционах рабов!"
 Note = "<image: Contract2>"
 
 Item 294
-Name = "Sea Pass"
-Description = "Stamped by the \"Knights INC.\", allows the bearer to go through customs to the Sea Reign."
+Name = "Морской проход"
+Description = "Запечатанный \"
 Note = "<image: ContractSea>"
 
 Item 295
-Name = "Bubbly Soap"
-Description = "Just a rub, and your team will be enveloped in a durable bubble. Grants \\i[683] for a time."
+Name = "Пузырчатое мыло"
+Description = "Просто рубин, и ваша команда будет окутана прочным пузырем. Гранты \\i[683] на время."
 Note = "<image: Soap>\r\n<category: Consumable>"
 
 Item 296
-Name = "Archives Key"
-Description = "Key to the Royal Archives of the Monastery."
+Name = "Archives Ключ"
+Description = "Ключ к Королевскому архиву монастыря."
 Note = "<category: Key>"
 
 Item 297
-Name = "Queen Praline"
-Description = "Precious, highly nutritious, value in the Queen's Castle. Just a treat anywhere else. Recovers 800 HP and 800 MP."
+Name = "Королева Пралин"
+Description = "Драгоценная, очень питательная ценность в замке королевы. Просто угощение в другом месте. Восстанавливает 800 л.с. и 800 Мп."
 Note = "<category: Food>\r\n<image: QueenPraline>"
 
 Item 298
-Name = "Queen's Milk"
-Description = "Priceless beverage, milked directly from the Queen's udders. Mothers-to-be will fight like dragons! Grants +10% to every stat."
+Name = "Молоко королевы"
+Description = "Бесценный напиток, доил прямо из вымени королевы. Будущие мамы будут сражаться как драконы! Гранты +10% на каждый стат."
 Note = "<category: Food>\r\n<image: QueenMilk>\r\n<category: Dowry>"
 
 Item 299
-Name = "Soft Hair"
-Description = "Hair found in the Hourly Sisters' room."
+Name = "Мягкие волосы"
+Description = "Волосы найдены в комнате Почасовых Сестер."
 Note = ""
 
 Item 300
-Name = "Bones"
-Description = "only q"
+Name = "Кости"
+Description = "только q"
 Note = "<category: Bone>"
 
 Item 301
-Name = "Ribcage"
-Description = "A creepy keepsake. Part of a whole skeleton. "
+Name = "ребра"
+Description = "Страшный подарок. Часть целого скелета."
 Note = "<category: Bone>"
 
 Item 302
-Name = "Extra Bone"
-Description = "A creepy keepsake. Part of a whole skeleton. "
+Name = "дополнительная кость"
+Description = "Страшный подарок. Часть целого скелета."
 Note = "<category: Bone>"
 
 Item 303
-Name = "Skeletal Arm"
-Description = "A creepy keepsake. Part of a whole skeleton. "
+Name = "Скелетная рука"
+Description = "Страшный подарок. Часть целого скелета."
 Note = "<category: Bone>"
 
 Item 304
-Name = "Skull"
-Description = "A creepy keepsake. Part of a whole skeleton. "
+Name = "череп"
+Description = "Страшный подарок. Часть целого скелета."
 Note = "<category: Bone>"
 
 Item 305
-Name = "Creepy Skull"
-Description = "A creepy keepsake. Part of a whole skeleton. "
+Name = "Жуткий череп"
+Description = "Страшный подарок. Часть целого скелета."
 Note = "<category: Bone>"
 
 Item 306
-Name = "Sharp Skull"
-Description = "A creepy keepsake. Part of a whole skeleton. "
+Name = "Острый череп"
+Description = "Страшный подарок. Часть целого скелета."
 Note = "<category: Bone>"
 
 Item 307
-Name = "Demon Skull"
-Description = "A creepy keepsake. Part of a whole skeleton. "
+Name = "Демонический череп"
+Description = "Страшный подарок. Часть целого скелета."
 Note = "<category: Bone>"
 
 Item 308
-Name = "Bone Horn"
-Description = "A creepy keepsake. Part of a whole skeleton. "
+Name = "Костный Рог"
+Description = "Страшный подарок. Часть целого скелета."
 Note = "<category: Bone>"
 
 Item 309
-Name = "Neat Skull"
-Description = "A creepy keepsake. Part of a whole skeleton. "
+Name = "аккуратный череп"
+Description = "Страшный подарок. Часть целого скелета."
 Note = "<category: Bone>"
 
 Item 310
-Name = "XXX Bone"
-Description = "A creepy keepsake. Part of a whole skeleton. "
+Name = "XXX косточка"
+Description = "Страшный подарок. Часть целого скелета."
 Note = "<category: Bone>"
 
 Item 311
-Name = "XXX Bone"
-Description = "A creepy keepsake. Part of a whole skeleton. "
+Name = "XXX косточка"
+Description = "Страшный подарок. Часть целого скелета."
 Note = "<category: Bone>"
 
 Item 312
-Name = "XXX Bone"
-Description = "A creepy keepsake. Part of a whole skeleton. "
+Name = "XXX косточка"
+Description = "Страшный подарок. Часть целого скелета."
 Note = "<category: Bone>"
 
 Item 313
-Name = "XXX Bone"
-Description = "A creepy keepsake. Part of a whole skeleton. "
+Name = "XXX косточка"
+Description = "Страшный подарок. Часть целого скелета."
 Note = "<category: Bone>"
 
 Item 314
-Name = "XXX Bone"
-Description = "A creepy keepsake. Part of a whole skeleton. "
+Name = "XXX косточка"
+Description = "Страшный подарок. Часть целого скелета."
 Note = "<category: Bone>"
 
 Item 315
-Name = "XXX Bone"
-Description = "A creepy keepsake. Part of a whole skeleton. "
+Name = "XXX косточка"
+Description = "Страшный подарок. Часть целого скелета."
 Note = "<category: Bone>"
 
 Item 316
-Name = "Prayer: Final Goodbye"
-Description = "From the series \"Prayers for Every Need\": a final chance to say goodbye. Restores a little HPs upon death."
+Name = "Оригинальное название: Final Goodbye"
+Description = "Из серии \"
 Note = "<image: ContractHoly>\r\n<category: Consumable>"
 
 Item 317
-Name = "Prayer: Lesser Dragon"
-Description = "From the series \"Prayers for Every Need\": this lesser transformation prayer will trasform one into a \"lesser dragon\"."
+Name = "Оригинальное название: Lesser Dragon"
+Description = "Из серии \"
 Note = "<image: ContractHoly>\r\n<category: Consumable>"
 
 Item 318
-Name = "Prayer: Life Breath"
-Description = "From the series \"Prayers for Every Need\": chanting this prayer will increase the Kingdom Life Force by 20."
+Name = "Молитва: дыхание жизни"
+Description = "Из серии \"
 Note = "<image: ContractHoly>\r\n<category: Consumable>"
 
 Item 319
-Name = "Prayer: Purify"
-Description = "From the series \"Prayers for Every Need\": chanting this prayer will reduce one's own Corruption to 0."
+Name = "Молитва: очищение"
+Description = "Из серии \"
 Note = "<image: ContractHoly>\r\n<category: Consumable>"
 
 Item 320
-Name = "Pantheon Key"
-Description = "Key to the Queen's Spire Pantheon."
+Name = "Ключ Пантеон"
+Description = "Ключ к пантеону шпиля королевы."
 Note = "<category: Key>"
 
 Item 321
-Name = "Sharkfin Grog"
-Description = "Recovers 40 MP. Grants \\i[681]"
+Name = "Arkfin Grog"
+Description = "Восстанавливает 40 МП. Гранты \\i[681]"
 Note = "<category: Food>"
 
 Item 322
-Name = "Eel Bumbo"
-Description = "Recovers 80 MP. Grants \\i[681]"
+Name = "Угорь Бумбо"
+Description = "Восстанавливает 80 Мп. Гранты \\i[681]"
 Note = "<category: Food>"
 
 Item 323
-Name = "Pirate's Kiss"
-Description = "Recovers 160 MP. Grants \\i[681]"
+Name = "Поцелуй пирата"
+Description = "Восстанавливает 160 Мп. Гранты \\i[681]"
 Note = "<category: Food>"
 
 Item 324
-Name = "Bank Book"
-Description = "This piece of paper summarizes your bank account at the Rattesein. You have \\v[3899] \\G stored in their safe."
+Name = "Банковская книга"
+Description = "Этот лист бумаги суммирует ваш банковский счет в Rattesein. У вас есть [3899] SPECIAL_0_ хранится в сейфе."
 Note = "<category: Book>"
 
 Item 325
-Name = "Study Key"
-Description = "Key to Dusk Princess' study."
+Name = "Исследование Key"
+Description = "Оригинальное название: Dusk Princess' Study"
 Note = "<category: Key>"
 
 Item 326
-Name = "Finhead Diary"
-Description = "A mysterious book that records everything about Finhead Princess!"
+Name = "Дневник Финхед"
+Description = "Загадочная книга, в которой записано все о принцессе Финхед!"
 Note = "<category: Diary>\r\n<image: PDiaryFin>"
 
 Item 327
-Name = "Candy Bar"
-Description = "Processed candies! Gives a lot of \\i[626] Swirlies when used!"
+Name = "Сладкий бар"
+Description = "Обработанные конфеты! Дает много \\i[626] Swirlies при использовании!"
 Note = "<image: CandyBar>\r\n<category: Consumable>"
 
 Item 328
-Name = "Zpeedy"
-Description = "This precious mouse companion will automatically send the \\i[626] Swirlies in excess to your account at the \"Rattesein\"!"
+Name = "Зпеид"
+Description = "Этот драгоценный компаньон мыши автоматически отправит \\i[626] Swirlies в избытке на ваш счет."
 Note = "<image: ZPEEDY>"
 
 Item 329
 Name = "S.C.R.A.B."
-Description = "Jeweled crab-shaped brush with magical bristles! Increases \\i[671] Wealth by 1 but breaks upon use. \"S.C.R.A.B. it!\""
+Description = "Ювелирная кисть в форме краба с волшебными щетинками! Увеличение богатства на 1, но перерывы в использовании."
 Note = "<image: SCRAB>\r\n<category: Usable>\r\n<category: Dowry>"
 
 Item 330
-Name = "Kraken Skewer"
-Description = "Chewy and tasty. Recovers 700 HP."
+Name = "Кракен Скивер"
+Description = "Чувак и вкусно. Восстанавливает 700 л.с."
 Note = "<category: Food>\r\n<image: KrakenSk>"
 
 Item 331
-Name = "Cursed Porgy Meat"
-Description = "This piece of meat doesn't seem edible. A strong Porgy scent exudes from it."
+Name = "Проклятое мясо порги"
+Description = "Этот кусок мяса не кажется съедобным. Из него исходит сильный запах порги."
 Note = "<image: PorgyCurse>\r\n<category: Consumable>"
 
 Item 332
-Name = "Bumpkin Seeds"
-Description = "The seeds entrusted you by the Bumpkins that remained faithful to Harvest Princess. They smell good. +25% M.ATK and AGI."
+Name = "Семена тыквы"
+Description = "Семена, доверенные вам Бампкинсом, которые остались верными Принцессе Урожая. Они хорошо пахнут. +25% М.АТК и АГИ."
 Note = "<category: Consumable>"
 
 Item 333
-Name = "Cosmic Shard"
+Name = "Космический Шард"
 Description = "Shard of the \\i[732] Cosmic Shackles."
 Note = ""
 
 Item 334
-Name = "Empty Water Flask"
-Description = "Flask needed to the finheads to examine water around the Kingdom. Use it underwater to fill it."
+Name = "Пустая водная бляшка"
+Description = "Фласк нуждался в плавниках, чтобы исследовать воду вокруг Королевства. Используйте его под водой, чтобы заполнить."
 Note = "<category: Usable>"
 
 Item 335
-Name = "Filled Water Flask"
-Description = "Flask needed to the finheads to examine water around the Kingdom. It's full now."
+Name = "Заполненная водная бляшка"
+Description = "Фласк нуждался в плавниках, чтобы исследовать воду вокруг Королевства. Теперь он полон."
 Note = ""
 
 Item 336
-Name = "Bakeneko Spirit"
-Description = "\\i[746] \"Nyaa! Get me out of here!!\""
+Name = "Дух Бекенеко"
+Description = "\_SPECIAL_0__"
 Note = ""
 
 Item 337
-Name = "Chateau Lapin"
-Description = "Premium wine from Rabbit Princess' vineyards. Recovers 500 MP. Grants \\i[681]"
+Name = "Шато Лапин"
+Description = "Премиум вино из виноградников Принцессы Кролика. Восстанавливает 500 Мп. Гранты \\i[681]"
 Note = "<category: Food>"
 
 Item 338
-Name = "Pumpkin Pie"
-Description = "Spiced dessert with a pumpkin filling. Now with 30% less Bumpkins! Recovers 1200 HP."
+Name = "Тыквенный пирог"
+Description = "Острый десерт с тыквенной начинкой. Теперь на 30% меньше Бампкинса! Восстанавливает 1200 л.с."
 Note = "<category: Food>"
 
 Item 339
-Name = "Spooky Sushi"
-Description = "Said to be inhabited by the souls of the fishes it's made of. Loathed by Finheads! Recovers 350 HP."
+Name = "Страшные суши"
+Description = "Сказал, что его населяют души рыб, из которых он сделан. Ненавидимые Финхедами! Восстанавливает 350 л.с."
 Note = "<category: Food>"
 
 Item 340
-Name = "Rabbit Sangaree"
-Description = "Party drink made from wine that every rabbit loves! Recovers 85 MP. Grants \\i[681]"
+Name = "Кролик Сангари"
+Description = "Вечеринка из вина, которое любит каждый кролик! Восстанавливает 85 МП. Гранты \\i[681]"
 Note = "<category: Food>"
 
 Item 341
-Name = "Chocolate Whoopie-Pie"
-Description = "Creamy filling between two delicious chocolate biscuits. It's loved by rodents! Recovers 800 HP."
+Name = "Шоколадный вупи-пи"
+Description = "Сливочное наполнение между двумя вкусными шоколадными печеньями. Его любят грызуны! Восстанавливает 800 л.с."
 Note = "<category: Food>"
 
 Item 342
-Name = "Strawberry Creampie"
-Description = "This fabled cake is light and refreshing, but there's more to it! Recovers 1000 HP and 100 MP. Increases \\i[743] Lust by 1."
+Name = "Клубничный кремпи"
+Description = "Этот легендарный торт легкий и освежающий, но в нем есть что-то еще! Восстанавливает 1000 л.с. и 100 Мп. Потребность увеличивается на 1."
 Note = "<category: Food>"
 
 Item 343
-Name = "Dippy Fries"
-Description = "Unrivalled crunchiness and taste, to serve with sauces! OIL RULES! Recovers 800 HP and 100 MP."
+Name = "Диппи Фрис"
+Description = "Непревзойденный хруст и вкус, подавать с соусами! Нефтяные правила! Восстанавливает 800 л.с. и 100 Мп."
 Note = "<category: Food>\r\n<image: Fries>"
 
 Item 344
-Name = "Chilled Wisps"
-Description = "Wisp-flavoured ice cream the moths and larvae love to lick! Recovers 560 HP. Grants \\i[685]"
+Name = "Охлажденные шипы"
+Description = "Мороженое с ароматом Wisp моли и личинки любят лизать! Восстанавливает 560 л.с. Гранты \\i[685]"
 Note = "<category: Food>\r\n<image: IcedWisp>"
 
 Item 345
-Name = "Spicy Mansaf"
-Description = "Spicy lamb meat with rice! To sweat cools off the body, making the Mansaf a popular dish between nomads crossing the desert. Recovers 700 HP. Grants \\i[685]"
+Name = "Острый Мансаф"
+Description = "Острое мясо баранины с рисом! Пот охлаждает тело, делая Мансаф популярным блюдом между кочевниками, пересекающими пустыню. Восстанавливает 700 л.с. Гранты \\i[685]"
 Note = "<category: Food>\r\n<image: Mansaf>"
 
 Item 346
 Name = "Oeuf a la Cucco"
-Description = "Low calory egg of a (female) King Cucco! Recovers 700 HP."
+Description = "Низкокалорийное яйцо (женщины) Король Кукко! Восстанавливает 700 л.с."
 Note = "<category: Food>\r\n<image: BoilEgg>"
 
 Item 347
-Name = "Cucco Drumstick"
-Description = "Low calory leg of a wild King Cucco. Roasted and seasoned with mild spices! Recovers 1400 HP."
+Name = "Кукко Драмстик"
+Description = "Низкая калория ноги дикого короля Кукко. Обжаренные и приправленные мягкими специями! Восстанавливает 1400 л.с."
 Note = "<category: Food>\r\n<image: CookCuck>"
 
 Item 348
-Name = "Beefy Baked Cucco"
-Description = "Oven-baked Cucco's breast. A light and very nutritious meal, low on fats and high on proteins! Recovers 2000 HP."
+Name = "Печеный кукко"
+Description = "Запеченная грудь Кукко. Легкая и очень питательная еда, с низким содержанием жиров и высоким содержанием белков! Восстанавливает 2000 HP."
 Note = "<category: Food>\r\n<image: OvenCuck>"
 
 Item 349
 Name = "Flow-RDR"
-Description = "This strange beeping device seems to be displaying the area you're in. There's a button you can press on top of it."
+Description = "Это странное звуковое устройство отображает область, в которой вы находитесь. Есть кнопка, которую можно нажать сверху."
 Note = "<image: Radar>\r\n<category: Usable>"
 
 Item 350
 Name = "Acerola Syrup"
-Description = "Recovers 750 MP. Grants +5 Life Force."
+Description = "Восстанавливает 750 Мп. Гранты +5 Жизненные силы."
 Note = "<image: AceroSyrup>\r\n<category: Food>"
 
 Item 351
-Name = "Mermaid Diary"
-Description = "A mysterious book that records everything about Mermaid Princess!"
+Name = "Дневник русалки"
+Description = "Таинственная книга, в которой записано все о Принцессе Русалке!"
 Note = "<category: Diary>\r\n<image: PDiaryMer>"
 
 Item 352
-Name = "Mermaid Tear"
-Description = "A luminous pearl from the depths of the Kingdom. Its light faintly illumines your surroundings."
+Name = "Слеза русалки"
+Description = "Светящаяся жемчужина из глубин царства. Его свет слабо освещает ваше окружение."
 Note = "<image: MerTear>"
 
 Item 353
-Name = "Selkie Harp"
-Description = "Timeless treasure of the Abyss."
+Name = "Селки Харп"
+Description = "Вечные сокровища Бездны."
 Note = "<image: SelkieHarp>\r\n<category: Usable>\r\n<category: Dowry>"
 
 Item 354
-Name = "Frenzy Anemone"
-Description = "Deep-sea anemone, secret war tonic of the merfolk! Lose 50 HPs, Reduces HPs by 25%, increases Crit Chance by 25%."
+Name = "Безумный Анемон"
+Description = "Глубоководный анемон, тайный военный тоник мерфолка! Потеря 50 л.с., снижение HP на 25%, увеличение Crit Chance на 25%."
 Note = "<image: Anemone>\r\n<category: Food>\r\n"
 
 Item 355
-Name = "Strange Barnacle"
-Description = "Strange shell you've found under the sand of the Spika's Nest. May be a trace left by an old acquaintance of Mermaid Princess."
+Name = "Странный Барнакл"
+Description = "Странная раковина, которую вы нашли под песком Гнезда Спики. Может быть след, оставленный старым знакомым Русалочки Принцессы."
 Note = ""
 
 Item 356
-Name = "Kelp Sandwich"
-Description = "Bland sandwich made of seaweed and damp bread. Recovers 200 HP."
+Name = "Келп Сэндвич"
+Description = "Сухой сэндвич из морских водорослей и сырого хлеба. Восстанавливает 200 л.с."
 Note = "<image: KelpWhich>\r\n<category: Food>\r\n"
 
 Item 357
-Name = "Hequet Idol"
-Description = "Frog idol of fertility. Her cult was supposedly lost since ancient times."
+Name = "Геке Идол"
+Description = "Лягушка-идол плодородия. Ее культ якобы был утрачен с древних времен."
 Note = "<image: Hequet>"
 
 Item 358
 Name = "Spika Lure"
-Description = "Most prized shrimp of the Abyss, said to be the Spika's favorite. No squid could resist it!"
+Description = "Самые ценные креветки Бездны, как говорят, являются фаворитами Спики. Ни один кальмар не смог устоять!"
 Note = "<image: Bait>"
 
 Item 359
-Name = "Chefcargot"
-Description = "High calory delicacy prepared by the famous chef, Snail Princess! Its origins are unknown... Recovers 700 HP."
+Name = "Шефкарго"
+Description = "Высококалорийный деликатес, приготовленный знаменитым шеф-поваром, принцессой-улиткой! Его происхождение неизвестно... Восстанавливает 700 л.с."
 Note = "<image: Escargot>\r\n<category: Food>"
 
 Item 360
-Name = "Foie de Potus"
-Description = "High-calory delicacy prepared by the traveling chef Princess! 100% Hippopotus Fat. Recovers 1400 HP."
+Name = "Фойе Потус"
+Description = "Высококалорийный деликатес приготовил путешествующий шеф-повар Принцесса! 100% жир гиппопотуса восстанавливает 1400 л.с."
 Note = "<image: Foiegras>\r\n<category: Food>"
 
 Item 361
-Name = "Stuffed Eclair"
-Description = "High calory delicacy prepared by the famous chef, Snail Princess! Only the freshest Queen Cocca eggs and holstaur milk are used! Recovers 2000 HP."
+Name = "Задушенный Эклер"
+Description = "Высококалорийный деликатес, приготовленный знаменитым шеф-поваром, принцессой-улиткой! Используются только самые свежие яйца Кокка и молоко. Восстанавливает 2000 HP."
 Note = "<image: Eclair>\r\n<category: Food>"
 
 Item 362
-Name = "Dim Basalt Piece"
-Description = "Unknown piece of an alien rock, seems to be a part of something larger."
+Name = "Дим Базальт Пис"
+Description = "Неизвестный кусок инопланетной скалы, кажется, является частью чего-то большего."
 Note = "<image: DCrownI>\r\n<category: Usable>"
 
 Item 363
-Name = "Dim Feldspar Piece"
-Description = "Unknown piece of an alien rock, seems to be a part of something larger."
+Name = "Дим Фельдспар Пьесе"
+Description = "Неизвестный кусок инопланетной скалы, кажется, является частью чего-то большего."
 Note = "<image: DCrownII>\r\n<category: Usable>"
 
 Item 364
-Name = "Dim Pyroxene Piece"
-Description = "Unknown piece of an alien rock, seems to be a part of something larger."
+Name = "Дим Пироксен кусочек"
+Description = "Неизвестный кусок инопланетной скалы, кажется, является частью чего-то большего."
 Note = "<image: DCrownIII>\r\n<category: Usable>"
 
 Item 365
-Name = "Cat Pirujo"
-Description = "Simple bread made by the Felid Bakeries. Recovers 800 HPs."
+Name = "Кошка Пирухо"
+Description = "Простой хлеб, приготовленный в Felid Bakeries. Восстанавливает 800 л.с."
 Note = "<image: CatPirujo>\r\n<category: Food>\r\n"
 
 Item 366
-Name = "Cat Concha"
-Description = "Fancy sweet bread made by the Felid Bakeries. Recovers 1600 HPs."
+Name = "Кошка Конча"
+Description = "Причудливый сладкий хлеб, приготовленный Felid Bakeries. Восстанавливает 1600 л.с."
 Note = "<image: CatConcha>\r\n<category: Food>\r\n"
 
 Item 367
-Name = "Cat Bun"
-Description = "Adorable and sweet bread with various stuffings made by the Felid Bakeries. Recovers 1600 HPs. Increases a random stat by 1."
+Name = "Кот Бан"
+Description = "Очаровательный и сладкий хлеб с различными начинками, сделанными Felid Bakeries. Восстанавливает 1600 л.с. Увеличивает случайный показатель на 1."
 Note = "<image: CatBun>\r\n<category: Food>\r\n"
 
 Item 368
@@ -1844,98 +1844,98 @@ Description = ""
 Note = ""
 
 Item 370
-Name = "Aleph Crystal"
-Description = "Alchemically improved Golem Stone. Increases DEF by 2."
+Name = "Алеф Кристалл"
+Description = "Алхимически усовершенствован Голем Стоун. Увеличить DEF на 2."
 Note = "<category: Consumable>\r\n<image: StoneD+>"
 
 Item 371
-Name = "Talmud Crystal"
-Description = "Alchemically improved Golem Stone. Increases ATK by 2."
+Name = "Талмуд Кристалл"
+Description = "Алхимически усовершенствован Голем Стоун. Увеличивает АТК на 2."
 Note = "<category: Consumable>\r\n<image: StoneA+>"
 
 Item 372
-Name = "Mem Crystal"
-Description = "Alchemically improved Golem Stone. Increases MAT by 2."
+Name = "Мем Кристалл"
+Description = "Алхимически усовершенствован Голем Стоун. Увеличивает MAT на 2."
 Note = "<category: Consumable>\r\n<image: StoneMA+>"
 
 Item 373
-Name = "Tav Crystal"
-Description = "Alchemically improved Golem Stone. Increases MDF by 2."
+Name = "Тэв Кристалл"
+Description = "Алхимически усовершенствован Голем Стоун. Увеличить МДФ на 2."
 Note = "<category: Consumable>\r\n<image: StoneMD+>"
 
 Item 374
-Name = "Ayin Crystal"
-Description = "Alchemically improved Golem Stone. Increases AGI by 2."
+Name = "Айин Кристалл"
+Description = "Алхимически усовершенствован Голем Стоун. Увеличивает AGI на 2."
 Note = "<category: Consumable>\r\n<image: StoneAG+>"
 
 Item 375
-Name = "Bird Diary"
-Description = "A mysterious book that records everything about Bird Princess!"
+Name = "Птичий дневник"
+Description = "Загадочная книга, в которой записано все о Птичьей Принцессе!"
 Note = "<category: Diary>\r\n<image: PDiaryBir>"
 
 Item 376
-Name = "GALLERY TELEPORT"
-Description = "[Debug] Use this item to teleport to the animation gallery and back! Can only be used in the Tavern or outside Babs Hut!"
+Name = "Галерея телепорт"
+Description = "[Отладка] Используйте этот элемент, чтобы телепортироваться в анимационную галерею и обратно! Можно использовать только в таверне или за пределами Бабс Хат!"
 Note = "<category: Debug>"
 
 Item 377
-Name = "Catalyst Dagger"
-Description = "Weapon retrieved from the cursed world inside Ghost Princess' Manor. Cornerstone of the ritual to lift her Curse."
+Name = "Катализаторский кинжал"
+Description = "Оружие, извлеченное из проклятого мира в поместье Принцессы-Призрака. Краеугольный камень ритуала, чтобы поднять ее проклятие."
 Note = "<category: Key>"
 
 Item 378
-Name = "\"Ashes and Exorcists\""
-Description = "\"Ashes and Exorcists: DIY Divination and Death Dealing 4 Dummies\""
+Name = "\"
+Description = "\"
 Note = "<category: Book>"
 
 Item 379
-Name = "Buddy's Bud"
-Description = "Ready to sprout! Bud of one of Pruna's lackeys. Hide it in a Princess' room and see what happens!"
+Name = "Бадди Бад"
+Description = "Готов к прорастанию! Приятель одного из лакеев Пруны. Спрячьте его в комнате принцессы и посмотрите, что произойдет!"
 Note = ""
 
 Item 380
-Name = "Flower Cupcake"
-Description = "Tasty muffin made with buttercream and flowers. Recovers 800 HP."
+Name = "Цветочный кекс"
+Description = "Вкусный кекс из сливочного крема и цветов. Восстанавливает 800 л.с."
 Note = "<image: FlowerMuff>\r\n<category: Food>"
 
 Item 381
-Name = "Floral Tea"
-Description = "Refreshing and elegant tea made with a bouquet of flowers! Recovers 200 MP. Grants \\i[682]"
+Name = "Цветочный чай"
+Description = "Освежающий и элегантный чай из букета цветов! Восстанавливает 200 МП. Гранты \\i[682]"
 Note = "<image: FlowerTea>\r\n<category: Food>\r\n"
 
 Item 382
-Name = "Fried Zucchini"
-Description = "High calory deep-fried zucchini flower! Crispy and oily! The king of veggies! Recovers 1600 HP."
+Name = "Жареный Цуккини"
+Description = "Высококалорийный жареный цветок кабачки! Хрустящий и жирный! Король овощей! Восстанавливает 1600 л.с."
 Note = "<image: Zucchini>\r\n<category: Food>\r\n"
 
 Item 383
-Name = "Rose Note"
-Description = "Latest piece of intel regarding \\v[4136]."
+Name = "Розовая нота"
+Description = "Последняя информация о \\v[4136]."
 Note = "<image: RoseNote>\r\n<category: Book>"
 
 Item 384
-Name = "Bulbous Root"
+Name = "Бульбусный корень"
 Description = ""
 Note = "gift only"
 
 Item 385
-Name = "Avocloudo"
-Description = "Delicious oily fruit that only grows in the Kingdom Above. Said to be the Queen's favourite. Recovers 700 HPs and 50 MPs."
+Name = "Авоклудо"
+Description = "Вкусные маслянистые фрукты, которые растут только в Королевстве Выше. Сказал, что он фаворит королевы. Восстанавливает 700 л.с. и 50 Мп."
 Note = "<image: SkyCado>\r\n<category: Food>\r\n"
 
 Item 386
-Name = "Dragon Breath"
-Description = "Icy cold dessert. You will be breathing steam, like a dragon! Recovers 100 MPs and damages for 50 HPs. Grants \\i[685]"
+Name = "Дыхание дракона"
+Description = "Ледяной холодный десерт. Ты будешь дышать паром, как дракон! Восстанавливает 100 Мп и повреждает 50 л.с. Гранты \\i[685]"
 Note = "<image: DragonBreath>\r\n<category: Food>\r\n"
 
 Item 387
-Name = "Migraine Medication"
+Name = "Медикаментозное лечение мигрени"
 Description = "..."
 Note = "<image: MigPills>\r\n<category: Key>"
 
 Item 388
-Name = "Bird Stamp"
-Description = "Use it to STAMP important documents in Bird Princess' Launchpad and protect the Kingdom!"
+Name = "Птичий штамп"
+Description = "Используйте его, чтобы получить важные документы на стартовой площадке Bird Princess и защитить королевство!"
 Note = "<category: Material>\r\n<image: BirdStamp>"
 
 Item 389
@@ -1944,143 +1944,143 @@ Description = ""
 Note = ""
 
 Item 390
-Name = "Peacock Fan"
-Description = "This large fan can be used to drive rainy clouds away. Sun will shine again, but raise \\i[759]Kingdom Lewdness by 1."
+Name = "Павлин Фан"
+Description = "Этот большой вентилятор можно использовать для удаления дождливых облаков. Солнце снова засияет, но поднимется... Недоумение 1."
 Note = "<image: PeacockFan>\r\n<category: Usable>"
 
 Item 391
-Name = "Black Cat Jar"
-Description = "A mysterious power is enclosed in this jar, it would be advisable not to break it."
+Name = "Чёрная кошка"
+Description = "Таинственная сила заключена в этой банке, желательно не разбивать ее."
 Note = "<image: BlackJar>\r\n<category: Usable>"
 
 Item 392
-Name = "Silver Spoon"
+Name = "Серебряная ложка"
 Description = ""
 Note = "gift only"
 
 Item 393
-Name = "Prison Key"
-Description = "Key to the Gazer Prison's administration office."
+Name = "Тюремный ключ"
+Description = "Ключ от администрации тюрьмы Газер."
 Note = "<category: Key>"
 
 Item 394
-Name = "Queen's Roar"
-Description = "Dragon Queen and Bird Princess power combined! Pacify Reigns with the might of the Ruler!"
+Name = "Рев королевы"
+Description = "Королева Драконов и Принцесса Птицы вместе! Умиротворяйте правителей силой правителя!"
 Note = "<image: PeaceHorn>\r\n<category: Usable>\r\n<category: Dowry>"
 
 Item 395
-Name = "Oni Diary"
-Description = "A mysterious book that records everything about Oni Princess!"
+Name = "Дневник Они"
+Description = "Загадочная книга, в которой записано все о принцессе Они!"
 Note = "<category: Diary>\r\n<image: PDiaryOni>"
 
 Item 396
-Name = "Prayer: Cleanse"
-Description = "From the series \"Prayers for Every Need\": chanting this prayer will reduce the Kingdom Lewdness by 20."
+Name = "Молитва: очищение"
+Description = "Из серии \"
 Note = "<image: ContractHoly>\r\n<category: Consumable>"
 
 Item 397
-Name = "Golden Voucher"
-Description = "Can be redeemed in Faun's Tavern to use its services for free! 1 Coupon, 1 use!"
+Name = "Золотой ваучер"
+Description = "В таверне Фауна можно воспользоваться ее услугами бесплатно! 1 Купон, 1 использование!"
 Note = "<image: Voucher>"
 
 Item 398
-Name = "Cauldron Pin"
-Description = "Transforming energy condensed! The witch Babs will be able to transform in anything if you have this on you!"
+Name = "Пин котел"
+Description = "Трансформация энергии конденсируется! Ведьма Бабс сможет преобразиться во что угодно, если на тебе это есть!"
 Note = "<image: CauldronPin>"
 
 Item 399
-Name = "Bastardoni"
-Description = "Huge and tasty fruit once you get rid of its thorns. Recovers 1600 HPs."
+Name = "Бастардони"
+Description = "Огромные и вкусные фрукты, как только вы избавитесь от шипов. Восстанавливает 1600 л.с."
 Note = "<image: Bastardoni>\r\n<category: Food>\r\n"
 
 Item 400
-Name = "Warlust Beans"
-Description = "Hardly edible. It's said the power of Oni lies within these peas. Lose 50 HP, reduces defenses by 25%, increase ATK by 25%."
+Name = "Бобы Warlust"
+Description = "Едва съедобный. Говорят, что сила Они лежит в этих горошках. Потеря 50 л.с., снижение защиты на 25%, увеличение АТК на 25%."
 Note = "<image: WarlustBeans>\r\n<category: Food>\r\n"
 
 Item 401
-Name = "Bloodbath"
-Description = "Powerful potion and reagent of the Oni people. Lose 500 HP. Surviving grants +3 ATK/-1 DEF or +3 MAT/-1 MDF."
+Name = "Кровавая баня"
+Description = "Мощное зелье и реагент народа Они. Потерять 500 л.с. Выжившие гранты +3 ATK/-1 DEF или +3 MAT/-1 MDF."
 Note = "<image: BloodBath>\r\n<category: Food>\r\n"
 
 Item 402
-Name = "Blood Iron"
-Description = "Premium building and crafting material."
+Name = "Кровавое железо"
+Description = "Премиальный строительный и крафтовый материал."
 Note = "<category: Material>\r\n<image: BloodIron>"
 
 Item 403
-Name = "ForgeScene"
+Name = "Кузница"
 Description = ""
 Note = "Scene Only"
 
 Item 404
-Name = "Champion Title"
+Name = "чемпионский титул"
 Description = ""
 Note = "Scene Only"
 
 Item 405
-Name = "Royal Jug"
-Description = "Everlasting jug of strong oni mead. Grants \\i[681]"
+Name = "Королевский кувшин"
+Description = "Вечный кувшин крепкой медовухи. Гранты \\i[681]"
 Note = "<image: RoyalJug>\r\n<category: Food>\r\n"
 
 Item 406
-Name = "Demon Gauntlet"
+Name = "Демоническая Перчатка"
 Description = ""
 Note = "<image: DemonGauntlet>\r\ngift item only"
 
 Item 407
-Name = "Iridea"
-Description = "Brightest rock of the Kingdom's seas, but not very precious. Its uses are unknown."
+Name = "Иридея"
+Description = "Самая яркая скала морей королевства, но не очень ценная. Его использование неизвестно."
 Note = "<image: Iridea>\r\n<category: Consumable>\r\n"
 
 Item 408
-Name = "Tsun Ribbon"
-Description = "Gothic deep red satin bow. Changes your Progeny Skill to \"Tsundere\"."
+Name = "Цун Риббон"
+Description = "Готический глубокий красный атласный лук. Измените свой навык потомства"
 Note = "<iamge: TsundereRibbon>\r\n<category: Consumable>"
 
 Item 409
-Name = "Counter Key"
-Description = "Key found around Faun's Tavern. Maybe it opens one of the rooms upstairs...?"
+Name = "Контр-ключ"
+Description = "Ключ найден в таверне Фауна. Может быть, он открывает одну из комнат наверху?"
 Note = "<category: Key>"
 
 Item 410
-Name = "Pristine Shell"
-Description = "Premium building and crafting material."
+Name = "Нетронутая Shell"
+Description = "Премиальный строительный и крафтовый материал."
 Note = "<category: Material>\r\n<image: ShellTear>"
 
 Item 411
-Name = "Weird Puzzle"
-Description = "The pieces seem to rotate... is it some kind of toy? Maybe someone would be interested in it..."
+Name = "Странная головоломка"
+Description = "Куски, кажется, вращаются... это какая-то игрушка? Может быть, кому-то это будет интересно..."
 Note = "<image: PyrToy>"
 
 Item 412
-Name = "Dried Bulb"
-Description = "Worthless crafting material."
+Name = "Сухой Бульб"
+Description = "Недостойный крафтовый материал."
 Note = "<category: Material>\r\n<image: DriedBulb>"
 
 Item 413
-Name = "Smoked Ashes"
-Description = "Worthless crafting material."
+Name = "Дымчатый пепел"
+Description = "Недостойный крафтовый материал."
 Note = "<category: Material>\r\n<image: SmokedAsh>"
 
 Item 414
-Name = "Abandoned Shell"
-Description = "Worthless crafting material."
+Name = "Заброшенная раковина"
+Description = "Недостойный крафтовый материал."
 Note = "<category: Material>\r\n<image: AbandShell>"
 
 Item 415
-Name = "A look through the Glass"
+Name = "Взгляд сквозь стекло"
 Description = "???"
 Note = "<event only>"
 
 Item 416
-Name = "Fishnet Cutter"
-Description = "Useful to get rid of nasty fishing line and... spiderweb?! Loses its sharpness after a single use!"
+Name = "Рыболовка"
+Description = "Полезно избавиться от неприятных рыболовных линий и... паутины?! Потерять остроту после однократного использования!"
 Note = "<category: Material>\r\n<image: NetScissor>"
 
 Item 417
-Name = "Dark Ribbon"
-Description = "Delicate dark ribbon. A bit gloomy..."
+Name = "Темная лента"
+Description = "Нежная темная лента. Немного мрачный..."
 Note = "<category: Material>\r\n<image: DarkRibbon>"
 
 Item 418
@@ -2094,263 +2094,263 @@ Description = ""
 Note = ""
 
 Item 420
-Name = "Plant Diary"
-Description = "A mysterious book that records everything about Plant Princess!"
+Name = "Растительный дневник"
+Description = "Загадочная книга, в которой записано все о Принцессе Растения!"
 Note = "<category: Diary>\r\n<image: PDiaryPla>"
 
 Item 421
-Name = "Radish Jar"
-Description = "Freshly pickled from consenting Plant people. It's good for them, it's good for you. Recovers 800 HP."
+Name = "Радиш Джар"
+Description = "Свежий маринованный от соглашающихся людей Растения. Это хорошо для них, это хорошо для вас. Восстанавливает 800 л.с."
 Note = "<image: RadishJar>\r\n<category: Food>\r\n"
 
 Item 422
-Name = "Leaf Pate"
-Description = "Creamy paste of shade leaves. Considered a delicacy in the whole Kingdom. Recovers 1600 HP and 100 MP."
+Name = "Пэт Лиф"
+Description = "Сливочная паста из листьев тени. Считается деликатесом во всем королевстве. Восстанавливает 1600 л.с. и 100 Мп."
 Note = "<image: LeafPate>\r\n<category: Food>\r\n"
 
 Item 423
-Name = "Golden Formula"
-Description = "Restores all HP and MP. Increase Plant and Slime fertility for the day."
+Name = "Золотая формула"
+Description = "Восстановление всех HP и MP. Увеличение плодородия растений и слизи в течение дня."
 Note = "<image: GoldFert>\r\n<category: Food>\r\n"
 
 Item 424
-Name = "Fleeting Zeal"
-Description = "Alchemical reagent. Use it to craft stat-increasing stones."
+Name = "Флит-Зил"
+Description = "Алхимический реагент. Используйте его для изготовления растущих камней."
 Note = "<category: Material>\r\n<image: LesserEssence>"
 
 Item 425
 Name = "Solid Zeal"
-Description = "Powerful alchemical reagent. Use it to craft stat-increasing stones."
+Description = "Мощный алхимический реагент. Используйте его для изготовления растущих камней."
 Note = "<category: Material>\r\n<image: AmplifiedEssence>"
 
 Item 426
 Name = "EX Potion Lv1"
-Description = "Potion obtained from Zeal processing. Increases ALL stats by 2. Increase max HP/MP by 10."
+Description = "Позиция, полученная при обработке Zeal. Увеличивает все показатели на 2. Увеличить max HP/MP на 10."
 Note = "<category: Consumable>\r\n<image: EXPot1>"
 
 Item 427
 Name = "EX Potion Lv2"
-Description = "Potion obtained from Zeal processing. Increases ALL stats by 5. Increase max HP/MP by 25."
+Description = "Позиция, полученная при обработке Zeal. Увеличивает все показатели на 5. Максимальное увеличение HP/MP на 25."
 Note = "<category: Consumable>\r\n<image: EXPot2>"
 
 Item 428
 Name = "EX Potion Lv3"
-Description = "Potion obtained from Zeal processing. Increases ALL stats by 10. Increase max HP/MP by 50."
+Description = "Позиция, полученная при обработке Zeal. Увеличивает все показатели на 10. Увеличить max HP/MP на 50."
 Note = "<category: Consumable>\r\n<image: EXPot3>"
 
 Item 429
-Name = "Alchemist Ring"
-Description = "Conjured Ring. Increase chance of better yields and transmutations."
+Name = "Алхимическое кольцо"
+Description = "Заклятое кольцо. Повысить вероятность лучших урожаев и трансмутаций."
 Note = "<image: AlcheRing>"
 
 Item 430
-Name = "Zeal Tablet"
-Description = "Conjured drug. Zeal energy protects from unwanted \"visitors\". Grants \\i[1229]"
+Name = "Таблетка Zeal"
+Description = "Зачатое лекарство. Уравновешенная энергия защищает от нежелательных"
 Note = "<category: Consumable>\r\n<image: ZealTablet>"
 
 Item 431
-Name = "Zeal Pills"
-Description = "Conjured drug. Zeal energy increases battle prowess. Grants \\i[1231]"
+Name = "Здоровые таблетки"
+Description = "Зачатое лекарство. Упорная энергия увеличивает боевое мастерство. Гранты \\i[1231]"
 Note = "<category: Consumable>\r\n<image: ZealPills>"
 
 Item 432
-Name = "Replica Potion"
-Description = "Long lost Slime Alchemy. Conjure faithful replicas of one's equipment."
+Name = "Репликационное покрытие"
+Description = "Давно потерянная Алхимия Слизи. Заклинать верные копии своего снаряжения."
 Note = "<category: Consumable>\r\n<image: ClonePot>"
 
 Item 433
-Name = "LevelUp Potion"
-Description = "Long lost Human Alchemy. Grow your companions with ease! Raise Level by 1."
+Name = "Позиция LevelUp"
+Description = "Давно потерянная человеческая алхимия. Растите своих товарищей с легкостью! Повышение уровня на 1."
 Note = "<category: Consumable>\r\n<image: LevelPot>"
 
 Item 434
-Name = "Zeal Liquor"
-Description = "Long lost Goblin Alchemy. Restores all MP. Grants \\i[681] and \\i[682]"
+Name = "Зеал Ликер"
+Description = "Давно потерял Гоблинскую алхимию. Восстанавливает всех депутатов. Гранты \_SPECIAL_0__ и \_SPECIAL_1__"
 Note = "<category: Consumable>\r\n<image: ZealLiquor>"
 
 Item 435
-Name = "Formula: Replica Potion"
-Description = "Secret Alchemy formula, allows to conjure \\i[1243] Replica Potion."
+Name = "Оригинальное название: Replica Potion"
+Description = "Секретная формула алхимии, позволяющая заклинать \\i[1243] Replica Potion."
 Note = "<image: Formula>\r\n<category: Book>"
 
 Item 436
-Name = "Formula: LevelUp Potion"
-Description = "Secret Alchemy formula, allows to conjure \\i[1244] LevelUp Potion."
+Name = "Формула: LevelUp Potion"
+Description = "Секретная формула алхимии, позволяющая заклинать \\i[1244] LevelUp Potion."
 Note = "<image: Formula>\r\n<category: Book>"
 
 Item 437
-Name = "Formula: Zeal Liquor"
-Description = "Secret Alchemy formula, allows to conjure \\i[1245] Zeal Liquor."
+Name = "Оригинальное название: Zeal Liquor"
+Description = "Секретная формула алхимии, позволяющая заклинать \\i[1245] Zeal Liquor."
 Note = "<image: Formula>\r\n<category: Book>"
 
 Item 438
-Name = "Formula: Golem Fuel"
-Description = "Secret Alchemy formula, allows to conjure \\i[1248] Golem Fuel."
+Name = "Формула: горючее Golem"
+Description = "Секретная формула алхимии, позволяющая заклинать \\i[1248] Golem Fuel."
 Note = "<image: Formula>\r\n<category: Book>"
 
 Item 439
-Name = "Formula: Undigested Bauble"
-Description = "Secret Alchemy formula, allows to conjure \\i[1249] Undigested Bauble."
+Name = "Формула: непереваренный пузырь"
+Description = "Секретная формула алхимии, позволяющая заклинать \\i[1249] Непереваренный пузырь."
 Note = "<image: Formula>\r\n<category: Book>"
 
 Item 440
-Name = "Formula: Transmute Potion"
-Description = "Secret Alchemy formula, allows to conjure \\i[1250] Transmute Potion."
+Name = "Оригинальное название: Transmute Potion"
+Description = "Секретная формула алхимии, позволяющая заклинать \\i[1250] Трансмутное пятно."
 Note = "<image: Formula>\r\n<category: Book>"
 
 Item 441
-Name = "Formula: Spilled Sand"
-Description = "Secret Alchemy formula, allows to conjure \\i[1251] Spilled Sand."
+Name = "Оригинальное название: Spilled Sand"
+Description = "Секретная формула алхимии, позволяющая заклинать \\i[1251] Пролитый песок."
 Note = "<image: Formula>\r\n<category: Book>"
 
 Item 442
-Name = "Formula: Banshee Wail"
-Description = "Secret Alchemy formula, allows to conjure \\i[1252] Banshee Wail."
+Name = "Формула: Банши Вэйл"
+Description = "Секретная формула алхимии, позволяющая заклинать \\i[1252] Банши Вэйл."
 Note = "<image: Formula>\r\n<category: Book>"
 
 Item 443
-Name = "Formula: Death Potion"
-Description = "Secret Alchemy formula, allows to conjure \\i[1253] Death Potion."
+Name = "Оригинальное название: Death Potion"
+Description = "Секретная формула алхимии, позволяющая заклинать \\i[1253] Death Potion."
 Note = "<image: Formula>\r\n<category: Book>"
 
 Item 444
-Name = "Formula: Cat's Eye"
-Description = "Secret Alchemy formula, allows to conjure \\i[1254] Cat's Eye."
+Name = "Оригинальное название: Cat's Eye"
+Description = "Секретная формула алхимии, позволяющая заклинать Кошачий глаз / Cat's Eye."
 Note = "<image: Formula>\r\n<category: Book>"
 
 Item 445
-Name = "Formula: Enthralling Parfume"
-Description = "Secret Alchemy formula, allows to conjure \\i[1255] Enthralling Parfume."
+Name = "Оригинальное название: Enthralling Parfume"
+Description = "Секретная формула алхимии, позволяющая заклинать \\i[1255] Enthralling Парфюм."
 Note = "<image: Formula>\r\n<category: Book>"
 
 Item 446
-Name = "Formula: Love Potion"
-Description = "Secret Alchemy formula, allows to conjure \\i[1256] Love Potion."
+Name = "Оригинальное название: Love Potion"
+Description = "Секретная формула алхимии, позволяющая заклинать."
 Note = "<image: Formula>\r\n<category: Book>"
 
 Item 447
-Name = "Formula: Mida Potion"
-Description = "Secret Alchemy formula, allows to conjure \\i[1257] Mida Potion."
+Name = "Формула: Мида-пойон"
+Description = "Секретная формула алхимии, позволяющая заклинать \\i[1257] Mida Potion."
 Note = "<image: Formula>\r\n<category: Book>"
 
 Item 448
-Name = "Formula: Merk Spawn"
-Description = "Secret Alchemy formula, allows to conjure \\i[1258] Merk Spawn."
+Name = "Формула: Мерк Спаун"
+Description = "Секретная формула алхимии, позволяющая заклинать \\i[1258] Мерк Спаун."
 Note = "<image: Formula>\r\n<category: Book>"
 
 Item 449
-Name = "Formula: Raptor Claw"
-Description = "Secret Alchemy formula, allows to conjure \\i[1259] Raptor Claw."
+Name = "Формула: Raptor Claw"
+Description = "Секретная формула алхимии, позволяющая заклинать \\i[1259] Raptor Claw."
 Note = "<image: Formula>\r\n<category: Book>"
 
 Item 450
-Name = "Formula: Vitality Brew"
-Description = "Secret Alchemy formula, allows to conjure \\i[1260] Vitality Brew."
+Name = "Оригинальное название: Vitality Brew"
+Description = "Секретная формула алхимии, позволяющая заклинать \\i[1260] Vitality Brew."
 Note = "<image: Formula>\r\n<category: Book>"
 
 Item 451
-Name = "Formula: Artichoke Potion"
-Description = "Secret Alchemy formula, allows to conjure \\i[1261] Artichoke Potion."
+Name = "Оригинальное название: Artichoke Potion"
+Description = "Секретная формула алхимии, позволяющая заклинать \\i[1261] Artichoke Potion."
 Note = "<image: Formula>\r\n<category: Book>"
 
 Item 452
-Name = "Formula: Penumbra Flask"
-Description = "Secret Alchemy formula, allows to conjure \\i[1483] Penumbra Flask."
+Name = "Формула: Penumbra Flask"
+Description = "Секретная формула алхимии, позволяющая заклинать \\i[1483] Penumbra Flask."
 Note = "<image: Formula>\r\n<category: Book>"
 
 Item 453
-Name = "Formula: ###"
-Description = "Secret Alchemy formula, allows to conjure \\i[] XXX Potion."
+Name = "Формула: ###"
+Description = "Секретная формула алхимии, позволяющая вызвать в воображении XXX Потенция."
 Note = "<image: Formula>\r\n<category: Book>"
 
 Item 454
-Name = "Formula: ###"
-Description = "Secret Alchemy formula, allows to conjure \\i[] XXX Potion."
+Name = "Формула: ###"
+Description = "Секретная формула алхимии, позволяющая вызвать в воображении XXX Потенция."
 Note = "<image: Formula>\r\n<category: Book>"
 
 Item 455
-Name = "Golem Fuel"
-Description = "Long lost Golem Alchemy. Permanently increase an undead's Agility by 20."
+Name = "Топливо Golem"
+Description = "Давно потерял Голем Алхимию. Постоянно увеличивайте гибкость нежити на 20."
 Note = "<category: Consumable>\r\n<image: GolemFuel>"
 
 Item 456
-Name = "Undigested Bauble"
-Description = "Long lost Insect Alchemy. Immediately fills one's belly! Upon use, transforms into a random dowry."
+Name = "Непереваренный пузырь"
+Description = "Алхимия давно потерянных насекомых. Немедленно наполни свой живот! После использования превращается в случайное приданое."
 Note = "<category: Food>\r\n<image: ConjLump>"
 
 Item 457
-Name = "Transmute Potion"
-Description = "Long lost Skeleton Alchemy. The user takes the shape of a monster. Grants \\i[1262]"
+Name = "Трансмутное пятно"
+Description = "Давно потерял Скелетную Алхимию. Пользователь принимает форму монстра. Гранты \\i[1262]"
 Note = "<category: Consumable>\r\n<image: TransmutePot>"
 
 Item 458
-Name = "Spilled Sand"
-Description = "Long lost Desert Alchemy. Time seems to stop... for a while."
+Name = "Пролитый песок"
+Description = "Давно потерянная алхимия пустыни. Время, кажется, остановилось... на некоторое время."
 Note = "<category: Consumable>\r\n<image: BrokeTime>"
 
 Item 459
-Name = "Banshee Wail"
-Description = "Long lost Ghost Alchemy. Wakes up the dead! Unleash a ghastly wail that heavily damages every enemy in the room."
+Name = "Банши Вэйл"
+Description = "Давно потерянная Призрачная Алхимия. Разбуди мертвых! Отпустите ужасный вопль, который сильно повреждает каждого врага в комнате."
 Note = "<category: Consumable>\r\n<image: GhostWail>"
 
 Item 460
-Name = "Death Potion"
-Description = "Long lost Moth Alchemy. The target... dies?! Also lower Kingdom Life Force by 10 (or 20 if used on Princesses)"
+Name = "Позиция смерти"
+Description = "Давно потерянная алхимия мотыльков. Цель... погибает?! Жизненная сила королевства на 10 (или 20, если используется на принцессах)"
 Note = "<category: Consumable>\r\n<image: DeathPot>"
 
 Item 461
-Name = "Cat's Eye"
-Description = "Long lost Cat Alchemy. The user can see in darkness as in daylight. Grants \\i[1263]"
+Name = "Кошачий глаз"
+Description = "Давно потерянная алхимия кошек. Пользователь может видеть в темноте, как при дневном свете. Гранты \\i[1263]"
 Note = "<category: Consumable>\r\n<image: CatsEye>"
 
 Item 462
-Name = "Enthralling Parfume"
-Description = "Long lost Rabbit Alchemy. Allures without fail friends and foes. Increase \"rendez-vous\" damage during battle. Grants \\i[1294]"
+Name = "Захватывающий парфюм"
+Description = "Давно потерянная кроличья алхимия. Заманчивые друзья и враги. Увеличение \"
 Note = "<category: Consumable>\r\n<image: RabPerfume>"
 
 Item 463
-Name = "Love Potion"
-Description = "Long lost Harvest Alchemy. +2 \\i[742] Love if used. Can be gifted to a Princess on her throne for +2 Relationship and +2 \\i[742] Love."
+Name = "Любовная речь"
+Description = "Давно потерянная Алхимия Урожая. +2  Принцесса на троне может быть подарена за +2 Отношения и +2 \\\\\\\\\1__ Любовь."
 Note = "<category: Consumable>\r\n<image: LovePot>"
 
 Item 464
-Name = "Mida Potion"
-Description = "Long lost Finhead Alchemy. Endless riches for the rest of the day! Grants \\i[1265]"
+Name = "Мида-пойон"
+Description = "Давно потерянная Алхимия Финхеда. Бесконечное богатство до конца дня! Гранты \\i[1265]"
 Note = "<category: Consumable>\r\n<image: MidaPot>"
 
 Item 465
-Name = "Merk Spawn"
-Description = "Long lost Mermaid Alchemy. Spawns tentacles that hit surrounding enemies other than the main target. Grants \\i[1295]"
+Name = "Мерк Спаун"
+Description = "Давно потерянная Алхимия Русалки. Порождает щупальца, которые поражают окружающих врагов, кроме основной цели. Гранты \\i[1295]"
 Note = "<category: Consumable>\r\n<image: MermaidPot>"
 
 Item 466
-Name = "Raptor Claw"
-Description = "Long lost Bird Alchemy. Mach speed in a bottle! Grants \\i[1278]"
+Name = "Раптор Клоу"
+Description = "Давно потерянная алхимия птиц. Скорость в бутылке! Гранты \\i[1278]"
 Note = "<category: Consumable>\r\n<image: RaptorPot>"
 
 Item 467
-Name = "Vitality Brew"
-Description = "Long lost Oni Alchemy. The user becomes as vital as an oni! Grants \\i[1264]"
+Name = "Жизнеспособность пиво"
+Description = "Давно потерял Они Алхимию. Пользователь становится таким же важным, как и они! Гранты \\i[1264]"
 Note = "<category: Consumable>\r\n<image: VitPot>"
 
 Item 468
-Name = "Artichoke Potion"
-Description = "Long lost Plant Alchemy. Impregnable to damage... slowly. Grants \\i[1279] Barkskin"
+Name = "Позиция артишока"
+Description = "Давно потерянная алхимия растений. Неприступно к повреждению... медленно. Гранты \\i[1279] Баркскин"
 Note = "<category: Consumable>\r\n<image: ArtiPot>"
 
 Item 469
-Name = "Penumbra Flask"
-Description = "Long lost Shadow Alchemy. The user will ignore enemies' elemental resistances! Grants \\i[1489]"
+Name = "Фласк Пенумбры"
+Description = "Давно потерянная теневая алхимия. Пользователь будет игнорировать элементарное сопротивление врагов. Гранты \\i[1489]"
 Note = "<category: Consumable>\r\n<image: ShadPot>"
 
 Item 470
-Name = "Potion ###"
-Description = "Long lost Plant Alchemy. ###"
+Name = "Позиция ###"
+Description = "Давно потерянная алхимия растений. ####"
 Note = "<category: Consumable>"
 
 Item 471
-Name = "Potion ###"
-Description = "Long lost Plant Alchemy. ###"
+Name = "Позиция ###"
+Description = "Давно потерянная алхимия растений. ####"
 Note = "<category: Consumable>"
 
 Item 472
@@ -2364,57 +2364,57 @@ Description = ""
 Note = ""
 
 Item 474
-Name = "Flesh Thorn"
-Description = "Prickly spine, fallen from body of the \"Queen of Thorns\". May change some Princess' form!"
+Name = "Плоть Торн"
+Description = "Колючий позвоночник, выпавший из тела"
 Note = "<category: Usable>\r\n<image: FleshThorn>"
 
 Item 475
-Name = "Soldier Trophy"
-Description = "Precious bauble from a defeated soldier. Can be sold for some good \\i[626] \\G!"
+Name = "Солдат Трофей"
+Description = "Драгоценная игра от побежденного солдата. Может быть продан за какой-то товар \\i[626]\G!"
 Note = ""
 
 Item 476
-Name = "Chopp Nut"
-Description = "Crunchy nut, unexpectedly nutrient. It allows Chopp plantoids to fly for long distances!"
+Name = "Чопп Нат"
+Description = "Хрустящий орех, неожиданно питательный. Это позволяет растениям Чоппа летать на большие расстояния!"
 Note = "<image: ChopNut>\r\n<category: Food>\r\n"
 
 Item 477
-Name = "Grim Crystal"
-Description = "Crystal dropped by Dusk Princess and imbued with her magic. Use it with caution."
+Name = "Грим Кристалл"
+Description = "Кристалл забросила Принцесса Сумерек и прониклась ее магией. Используйте его с осторожностью."
 Note = "<image: GrimCrystal>\r\n<category: Usable>"
 
 Item 478
-Name = "Shadow Diary"
-Description = "A mysterious book that records everything about Shadow Princess!"
+Name = "Дневник теней"
+Description = "Загадочная книга, в которой записано все о Теневой Принцессе!"
 Note = "<category: Diary>\r\n<image: PDiarySha>"
 
 Item 479
-Name = "Shadow Record"
-Description = "Records of the War of Conquest regarding Shadow Reign."
+Name = "Теневой рекорд"
+Description = "Записи Войны завоевателей о Царстве Теней."
 Note = "<category: Book>"
 
 Item 480
-Name = "Eel Peel"
-Description = "Spoils of Shadow Reign's taint. Unedible. Lose 25 HP and 25 MP."
+Name = "Угорь Пил"
+Description = "Спойлы Теневого Правления. Несъедобно. Потеря 25 л.с. и 25 Мп."
 Note = "<category: Food>\r\n<image: ShadEel>"
 
 Item 481
-Name = "Angel Cake"
-Description = "Tasty, fluffy cake, baked by the nuns of the Church of Conquest. Said to reduce Corruption of the flesh!"
+Name = "Ангельский пирог"
+Description = "Вкусный, пушистый торт, испеченный монахинями Завоевательной церкви. Сказал, чтобы уменьшить коррупцию плоти!"
 Note = "<category: Food>\r\n<image: AngelCake>"
 
 Item 482
-Name = "Black Pearl"
-Description = "Cursed crafting material."
+Name = "Черная жемчужина"
+Description = "Проклятый крафтовый материал."
 Note = "<category: Material>\r\n<image: CursedPearl>"
 
 Item 483
-Name = "Shadow Queen"
+Name = "Королева теней"
 Description = ""
 Note = "gift only"
 
 Item 484
-Name = "Glass Turtle"
+Name = "Стеклянная черепаха"
 Description = "???"
 Note = "<category: Usable>\r\n<image: GlassTurtle>"
 
@@ -2424,38 +2424,38 @@ Description = ""
 Note = "<category: Key>\r\n<image: ShadScope>"
 
 Item 486
-Name = "Broken Bowl"
-Description = "Bowl of the broken pact between Shadow Princess and her Queen. Gather the wishes of the population and return to the Princess!"
+Name = "Сломанный Боул"
+Description = "Кубок нарушенного пакта между Теневой принцессой и ее королевой Соберите пожелания населения и вернитесь к принцессе!"
 Note = "<category: Key>\r\n<image: PactBowlBroken>"
 
 Item 487
 Name = "Shadow Graal"
-Description = "Bowl of the broken pact between Shadow Princess and her Queen. It's now fixed! Get it to the Princess!"
+Description = "Кубок нарушенного пакта между Теневой принцессой и ее королевой Теперь всё починено! Отдай это принцессе!"
 Note = "<category: Key>\r\n<image: PactBowl>"
 
 Item 488
-Name = "Cherry Pop!"
-Description = "Popular cherry-flavored fizzy drink. Recovers 250 MP. Grants \\i[681]"
+Name = "Черри Поп!"
+Description = "Популярный вишнёвый газированный напиток. Восстанавливает 250 Мп. Гранты \\i[681]"
 Note = "<category: Food>\r\n<image: CherryWine>"
 
 Item 489
-Name = "Synth Grabber"
-Description = "Biomechanically engineered to cop feels."
+Name = "Синт Граббер"
+Description = "Биомеханически сконструирован так, чтобы коп чувствовал."
 Note = "<image: SynthHand>"
 
 Item 490
-Name = "Grabber Blueprint"
-Description = "Blueprint of Socket's old invention. Could be useful to recognize the real thing hidden in trash!"
+Name = "Граббер Блюпринт"
+Description = "План старого изобретения Сокет. Может быть полезно узнать настоящую вещь, спрятанную в мусоре!"
 Note = ""
 
 Item 491
-Name = "Bathroom Key"
-Description = "Key to open Faun's Tavern prized bathroom."
+Name = "Ключ от ванной комнаты"
+Description = "Ключ к открытию таверны Фауна."
 Note = "<category: Key>"
 
 Item 492
-Name = "Snakeskin Scroll"
-Description = "As a snakes shedding its skin, the user may lose a part of itself to grow stronger! -2 to Every Stat, +1 Distribution Point."
+Name = "Свиток змеиной кожи"
+Description = "Когда змея сбрасывает кожу, пользователь может потерять часть себя, чтобы стать сильнее. 2 на каждый стат, +1 точка распределения."
 Note = "<category: Usable>\r\n<image: LamiaScroll>"
 
 Item 493
@@ -2494,78 +2494,78 @@ Description = ""
 Note = ""
 
 Item 500
-Name = "Eater Eggs"
-Description = "Only a monster eater would appreciate these fine Monster Eggs! Increases DEF by 2 if properly savored."
+Name = "Ешь яйца"
+Description = "Только пожиратель монстров оценит эти прекрасные яйца монстров! Увеличивает DEF на 2, если правильно смаковать."
 Note = "<category: Food>\r\n<image: EaterEggs>"
 
 Item 501
-Name = "Eater Coins"
-Description = "Only a monster eater would appreciate these mellow Monster Coins! Increases AGI by 2 if properly savored."
+Name = "Купить монеты"
+Description = "Только пожиратель монстров оценит эти мягкие Монеты Монстров! Увеличивает AGI на 2, если правильно смаковать."
 Note = "<category: Food>\r\n<image: EaterCoins>"
 
 Item 502
-Name = "Eater Meat"
-Description = "Only a monster eater would appreciate this honeyed Monster Meat! Increases ATK by 2 if properly savored."
+Name = "Ешь мясо"
+Description = "Только пожиратель монстров оценит это медовое мясо монстров! Увеличивает ATK на 2, если правильно смаковать."
 Note = "<category: Food>\r\n<image: EaterMeat>"
 
 Item 503
-Name = "Eater Salt"
-Description = "Only a monster eater would appreciate this crunchy Monster Salt! Increases LUK by 2 if properly savored."
+Name = "Соль для поедания"
+Description = "Только пожиратель монстров оценит эту хрустящую соль монстра! Увеличивает ЛУК на 2, если правильно смаковать."
 Note = "<category: Food>\r\n<image: EaterSalt>"
 
 Item 504
-Name = "Eater Pepper"
-Description = "Only a monster eater would appreciate this spicy Monster Salt! Increases MDF by 2 if properly savored."
+Name = "Питатель Pepper"
+Description = "Только едоки-монстры оценят эту пряную соль монстра! Увеличивает МДФ на 2, если правильно смаковать."
 Note = "<category: Food>\r\n<image: EaterPepper>"
 
 Item 505
-Name = "Eater Slime"
-Description = "Only a monster eater would appreciate this glazed Monster Slime! Increases AGI by 2 if properly savored."
+Name = "Пожиратель слизи"
+Description = "Только пожиратель монстров оценит эту остекленную слизь монстра! Увеличивает AGI на 2, если правильно смаковать."
 Note = "<category: Food>\r\n<image: EaterSlime>"
 
 Item 506
-Name = "Eater Sorbet"
-Description = "Only a monster eater would appreciate this icy Monster Sorbet! Increases MDF by 2 if properly savored."
+Name = "Пожиратель Сорбет"
+Description = "Только любитель монстров оценит этот ледяной монстр Сорбет! Увеличивает МДФ на 2, если правильно смаковать."
 Note = "<category: Food>\r\n<image: EaterSorbet>"
 
 Item 507
-Name = "Eater Tentacle"
-Description = "Only a monster eater would appreciate this springy Monster Tentacle! Increases ATK by 2 if properly savored."
+Name = "Пожиратель щупалец"
+Description = "Только пожиратель монстров оценит это весеннее Чудовище! Увеличивает ATK на 2, если правильно смаковать."
 Note = "<category: Food>\r\n<image: EaterTentacle>"
 
 Item 508
-Name = "Eater Shroom"
-Description = "Only a monster eater would appreciate this gamy Monster Shroom! Increases Max HP by 10 if properly savored."
+Name = "Шрум для поедания"
+Description = "Только пожиратель монстров оценит этот веселый Шрум монстра! Увеличивает Max HP на 10, если правильно смаковать."
 Note = "<category: Food>\r\n<image: EaterShroom>"
 
 Item 509
 Name = "Eater Core"
-Description = "Only a monster eater would appreciate this acidic Elemental Core! Increases Max MP by 10 if properly savored."
+Description = "Только едок-монстр оценит это кислотное Ядро! Увеличивает Max MP на 10, если правильно смаковать."
 Note = "<category: Food>\r\n<image: EaterElement>"
 
 Item 510
-Name = "Eater Cup"
-Description = "Only a monster eater would appreciate this springy Monster Cup! Increases MAT by 10 if properly savored."
+Name = "Кубок еды"
+Description = "Только любитель монстров оценит этот весенний Кубок монстров! Увеличивает MAT на 10, если правильно смаковать."
 Note = "<category: Food>\r\n<image: EaterSquid>"
 
 Item 511
-Name = "Eater Salad"
-Description = "Only a monster eater would appreciate this fresh Monster Salad! Increases LUK by 10 if properly savored."
+Name = "Съедобный салат"
+Description = "Только пожиратель монстров оценит этот свежий салат-монстр! Увеличивает Лук на 10, если правильно смаковать."
 Note = "<category: Food>\r\n<image: EaterSalad>"
 
 Item 512
-Name = "Eater Root"
-Description = "Only a monster eater would appreciate this flaky Monster Root! Increases DEF by 10 if properly savored."
+Name = "Корень пожирателя"
+Description = "Только едоки-монстры оценят этот неуклюжий корень монстра! Увеличивает DEF на 10, если правильно смаковать."
 Note = "<category: Food>\r\n<image: EaterRoot>"
 
 Item 513
-Name = "Eater Mimic"
-Description = "Only a monster eater would appreciate this zesty Mimic Chest! Increases ATK by 10 if properly savored."
+Name = "Пожиратель Мимик"
+Description = "Только едок-монстр оценит эту ржавую Мимическую Сундук! Увеличивает АТК на 10, если правильно смаковать."
 Note = "<category: Food>\r\n<image: EaterMimic>"
 
 Item 514
-Name = "Eater Sugar"
-Description = "Only a monster eater would appreciate this treacly Monster Sugar! Increases AGI by 10 if properly savored."
+Name = "Пожиратель сахара"
+Description = "Только пожиратель монстров оценит этот ужасный сахар монстров! Увеличивает AGI на 10, если правильно смаковать."
 Note = "<category: Food>\r\n<image: EaterSugar>"
 
 Item 515

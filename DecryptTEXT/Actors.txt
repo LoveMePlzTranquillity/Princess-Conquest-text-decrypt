@@ -1,152 +1,152 @@
 Actor 1
 Nickname = ""
 Character Name = "$protag"
-Face Name = "Hero"
-Name = "Anon"
-Description = "A mercenary looking for his way in the Kingdom."
+Face Name = "Герой"
+Name = "Анон"
+Description = "Наемник ищет свой путь в королевстве."
 Note = "<SPDS: 2>"
 
 Actor 2
 Nickname = ""
 Character Name = "$KobP"
-Face Name = "KoboldP"
-Name = "Usnug"
-Description = "A naive kobold with a sense of curiosity that often gets her into trouble. She wants to learn more about human culture."
+Face Name = "КоболдП"
+Name = "Уснуг"
+Description = "Наивный колдун с чувством любопытства, которое часто доставляет ей неприятности. Она хочет больше узнать о человеческой культуре."
 Note = "<SPDS: 0>\r\n<starting gear: 73>"
 
 Actor 3
 Nickname = ""
 Character Name = "$Knocker"
-Face Name = "KobH"
-Name = "Ugnuk"
-Description = "A member of the Kobold Princess royal garrison."
+Face Name = "Кобх"
+Name = "Угнук"
+Description = "Член королевского гарнизона принцессы Коболд."
 Note = ""
 
 Actor 4
 Nickname = ""
 Character Name = "$DesP"
-Face Name = "DesertP"
-Name = "Sherazad"
-Description = "A princess who has trained in the art of dance and intense fucking sessions. She is constantly on the hunt for men and women to add to her harem."
+Face Name = "Пустыня"
+Name = "Шеразад"
+Description = "Принцесса, которая обучалась искусству танца и интенсивным гребаным сеансам. Она постоянно охотится за мужчинами и женщинами, чтобы добавить в свой гарем."
 Note = "<SPDS: 1>\r\n<starting gear: 75>"
 
 Actor 5
 Nickname = ""
 Character Name = "$HumanP"
-Face Name = "HumanP"
-Name = "Sophia"
-Description = "The official princess of the human race. Born with a silver spoon in her mouth and raised to be a housewife, she longs for a life of adventure."
+Face Name = "человек"
+Name = "София"
+Description = "Официальная принцесса человеческого рода. Рожденная с серебряной ложкой во рту и выросшая домохозяйкой, она жаждет приключений."
 Note = "<SPDS: 3>\r\n<starting gear: 74>"
 
 Actor 6
 Nickname = ""
 Character Name = "$golemP"
-Face Name = "GolemP"
-Name = "Galatea"
-Description = "The first golem to be created by others of her kind. Born with an innate sense of wonder, she hopes to learn more about the world."
+Face Name = "Големп"
+Name = "Галатея"
+Description = "Первый голем был создан другими людьми. Рожденная с врожденным чувством удивления, она надеется узнать больше о мире."
 Note = "<SPDS: 4>\r\n<starting gear: 84>\r\n"
 
 Actor 7
 Nickname = ""
 Character Name = "$SliP"
-Face Name = "SlimeP"
-Name = "Jellica"
-Description = "A lively princess! Also a slime!"
+Face Name = "Слизняк"
+Name = "Еллика"
+Description = "Живая принцесса! И слизь тоже!"
 Note = "<SPDS: 5>\r\n"
 
 Actor 8
 Nickname = ""
 Character Name = "$InsectPrincess"
-Face Name = "InsectP"
-Name = "Zoe"
-Description = "The future of the Insect Princess had long since been decided for her as the kingdom's broodmother. Her heart, however, yearns for love."
+Face Name = "НасекомоеP"
+Name = "Зои"
+Description = "Будущее принцессы-насекомого уже давно было решено для нее как для матери королевства. Однако ее сердце жаждет любви."
 Note = "<SPDS: 7>\r\n"
 
 Actor 9
 Nickname = ""
 Character Name = "$SkeP"
-Face Name = "SkeletonP"
-Name = "Elaine"
-Description = "A lifetime of death has given this princess a humerus outlook on life. Only someone with a lot of guts can charm this hip maiden."
+Face Name = "СелетонП"
+Name = "Элейн"
+Description = "Жизнь после смерти дала этой принцессе взгляд на жизнь. Только тот, у кого много мужества, может очаровать эту девушку."
 Note = "<SPDS: 6>\r\n<starting gear: 85>"
 
 Actor 10
 Nickname = ""
 Character Name = "skelliesarmy"
-Face Name = "Monster1"
-Name = "Skeleton Soldier"
-Description = "Skeleton Princess summoned unit."
+Face Name = "Монстр1"
+Name = "Солдат-скелет"
+Description = "Принцесса Скелет вызвала отряд."
 Note = "<no spds>"
 
 Actor 11
 Nickname = ""
 Character Name = "$DraPII"
 Face Name = "DragonPII"
-Name = "Mandrya"
-Description = "A hoarder of knowledge, this great dragon seeks to combine the effects of deities to turn the dragon kingdom into a formidable superpower."
+Name = "Мандрия"
+Description = "Этот великий дракон стремится объединить эффекты божеств, чтобы превратить царство драконов в огромную сверхдержаву."
 Note = "<SPDS: 8>\r\n<starting gear: 88>\r\nsuperbia"
 
 Actor 12
 Nickname = ""
 Character Name = "$GhoP"
-Face Name = "GhostP"
-Name = "Yulia"
-Description = "Not a princess' ghost, but rather, the ethereal and mute Ghost Princess. If she ever turns red, run as fast as you can."
+Face Name = "Призрачный"
+Name = "Юлия"
+Description = "Не призрак принцессы, а скорее неземная и немая Принцесса-призрак. Если она когда-нибудь покраснеет, беги как можно быстрее."
 Note = "<SPDS: 9>\r\n<starting gear: 82>"
 
 Actor 13
 Nickname = ""
 Character Name = ""
 Face Name = ""
-Name = "Slave"
+Name = "раб"
 Description = ""
 Note = "<SPDS: 99>"
 
 Actor 14
 Nickname = ""
 Character Name = "$GoblinP"
-Face Name = "GoblinP"
-Name = "Gobbu"
-Description = "The shortstack princess of slavery and breeding!"
+Face Name = "ГоблинП"
+Name = "Гоббу"
+Description = "Принцесса рабства и размножения!"
 Note = "<SPDS: 10>\r\n<starting gear: 76>"
 
 Actor 15
 Nickname = ""
 Character Name = "elegroup1"
-Face Name = "GolemP"
-Name = "Synapse Galatea"
-Description = "The mechanical ruler of the golems. It's said to be centuries old."
+Face Name = "Големп"
+Name = "Синапс Галатея"
+Description = "Механический правитель големов. Говорят, что ему много веков."
 Note = ""
 
 Actor 16
 Nickname = ""
 Character Name = "$DogP"
-Face Name = "DogP"
-Name = "Yuki"
-Description = "A Princess who longed to be united with her prince. After latching onto a passing dragon, she departed to a tower and waited for them to arrive."
+Face Name = "Пёсик"
+Name = "Юки"
+Description = "Принцесса, которая хотела быть единой со своим принцем. Зацепившись за проходящего дракона, она ушла в башню и ждала, когда они прибудут."
 Note = "<SPDS: 11>\r\n<starting gear: 80>"
 
 Actor 17
 Nickname = ""
 Character Name = "bees"
-Face Name = "Monster1"
-Name = "store graphic dagger"
+Face Name = "Монстр1"
+Name = "магазин графический кинжал"
 Description = ""
 Note = ""
 
 Actor 18
 Nickname = ""
 Character Name = "$DraP"
-Face Name = "DragonPI"
-Name = "Lacomia"
-Description = "First daughter of the Dragon Queen, aims to hoard every treasure in the Kingdom!"
+Face Name = "Драконий"
+Name = "Лакомия"
+Description = "Первая дочь Королевы Драконов, стремится хранить все сокровища в Королевстве."
 Note = "<SPDS: 12>\r\n<starting gear: 87>\r\navarizia"
 
 Actor 19
 Nickname = ""
 Character Name = ""
 Face Name = ""
-Name = "NPC - Amelie"
+Name = "NPC - Амели"
 Description = ""
 Note = ""
 
@@ -154,56 +154,56 @@ Actor 20
 Nickname = ""
 Character Name = ""
 Face Name = ""
-Name = "NPC - Michael"
+Name = "NPC - Майкл"
 Description = ""
 Note = ""
 
 Actor 21
 Nickname = ""
 Character Name = "$MothP"
-Face Name = "MothP"
-Name = "Mashiro"
-Description = "The nosy princess of an insect empire. Her fuzzy wings can spread a fine psychedelic dust that often than not gets her into trouble."
+Face Name = "Мотор"
+Name = "Маширо"
+Description = "Любопытная принцесса империи насекомых. Ее нечеткие крылья могут распространять тонкую психоделическую пыль, которая часто доставляет ей неприятности."
 Note = "<SPDS: 13>\r\n<starting gear: 81>"
 
 Actor 22
 Nickname = ""
 Character Name = ""
 Face Name = ""
-Name = "NPC - Qhala"
+Name = "NPC - Кхала"
 Description = ""
 Note = ""
 
 Actor 23
 Nickname = ""
 Character Name = "$CatP"
-Face Name = "CatP"
-Name = "Kat"
-Description = "This charming princess stalks the night, hunting giant beasts. She hopes to one day hunt something as large as a dragon."
+Face Name = "Кэтп"
+Name = "Кот"
+Description = "Эта очаровательная принцесса преследует ночь, охотясь на гигантских зверей. Она надеется однажды охотиться на такого большого дракона."
 Note = "<SPDS: 14>\r\n<starting gear: 83>"
 
 Actor 24
 Nickname = "The Toxic Sloth"
 Character Name = "$DraPIII"
-Face Name = "DragonPIII"
-Name = "Silene"
-Description = "The youngest in a vast line of royal dragons, this princess aims to build her horde high. Unfortunately, she can't stop eating her treasures."
+Face Name = "Драконий"
+Name = "Силен"
+Description = "Самая молодая в обширной линейке королевских драконов, эта принцесса стремится построить свою орду высоко. К сожалению, она не может перестать есть свои сокровища."
 Note = "<SPDS: 15>\r\n<starting gear: 89>"
 
 Actor 25
 Nickname = ""
 Character Name = "$HolsP"
 Face Name = ""
-Name = "Caroline"
+Name = "Кэролайн"
 Description = ""
 Note = "<starting gear: 86>"
 
 Actor 26
 Nickname = ""
 Character Name = "$MouseP"
-Face Name = "MouP"
-Name = "Olivia"
-Description = "A plucky tinkerer, sister of the eleven Hourly Sisters. Watch out for your stuff around her!"
+Face Name = "Муп"
+Name = "Оливия"
+Description = "Отвратительная старушка, сестра одиннадцати часовых сестер. Берегись своих вещей вокруг нее!"
 Note = "<SPDS: 16>\r\n<starting gear: 152>"
 
 Actor 27
@@ -218,7 +218,7 @@ Actor 28
 Nickname = ""
 Character Name = ""
 Face Name = ""
-Name = "NPC - Mugen"
+Name = "NPC - Муген"
 Description = ""
 Note = ""
 
@@ -226,39 +226,39 @@ Actor 29
 Nickname = ""
 Character Name = ""
 Face Name = ""
-Name = "NPC - Niuya"
+Name = "NPC - Ниуя"
 Description = ""
 Note = ""
 
 Actor 30
 Nickname = ""
 Character Name = "$RabbitP"
-Face Name = "RabbitP"
-Name = "Fanny"
-Description = "The lonely Princess of the Rabbit Vineyards. Her mother often tells her to get married, but for some reason, suitors are scarce."
+Face Name = "Кролик"
+Name = "Фанни"
+Description = "Одинокая принцесса Кроличьих виноградников. Ее мать часто говорит ей выйти замуж, но по какой-то причине женихов мало."
 Note = "<SPDS: 17>\r\n<starting gear: 159>"
 
 Actor 31
 Nickname = ""
 Character Name = "$DRIDER"
-Face Name = "DriderP"
-Name = "Marble"
+Face Name = "ДрайдерП"
+Name = "мрамор"
 Description = ""
 Note = "<SPDS: 0>\r\n<starting gear: 256>"
 
 Actor 32
 Nickname = ""
 Character Name = "$HarvestP"
-Face Name = "HarvestP"
-Name = "Anica"
-Description = "The gentle Princess of the Scarecrow Fields. Hides a cute secret."
+Face Name = "Урожай"
+Name = "Аника"
+Description = "Нежная Принцесса Пугаловых Полей. Скрывает милый секрет."
 Note = "<SPDS: 18>\r\n<starting gear: 231>"
 
 Actor 33
 Nickname = ""
 Character Name = ""
 Face Name = ""
-Name = "Lamia"
+Name = "Ламия"
 Description = ""
 Note = ""
 
@@ -274,7 +274,7 @@ Actor 35
 Nickname = ""
 Character Name = ""
 Face Name = ""
-Name = "S&D 1"
+Name = "S&D 1 1"
 Description = ""
 Note = "<SPDS: 35>\r\n<starting gear: 197>"
 
@@ -306,7 +306,7 @@ Actor 39
 Nickname = ""
 Character Name = ""
 Face Name = ""
-Name = "S&D 5"
+Name = "S&D 5."
 Description = ""
 Note = "<SPDS: 35>\r\n<starting gear: 197>"
 
@@ -321,9 +321,9 @@ Note = ""
 Actor 41
 Nickname = ""
 Character Name = "$WyvP"
-Face Name = "WyvernP"
-Name = "Fiika"
-Description = "An outcast among dragons and humans. Her traumatic past may push her even further from the rest of the Kingdom."
+Face Name = "УивернП"
+Name = "Фиика"
+Description = "Изгой среди драконов и людей. Её травматическое прошлое может оттолкнуть её ещё дальше от остального Королевства."
 Note = "<SPDS: 19>\r\n<starting gear: 245>"
 
 Actor 42
@@ -337,49 +337,49 @@ Note = ""
 Actor 43
 Nickname = ""
 Character Name = "$FaunP"
-Face Name = "FaunP"
-Name = "Hop"
+Face Name = "Фаун"
+Name = "Хоп"
 Description = ""
 Note = "<starting gear: 272>"
 
 Actor 44
 Nickname = ""
 Character Name = "$ScarecrowP"
-Face Name = "ScarecrowP"
-Name = "Shayla"
-Description = "The not so gentle Princess of the Scarecrow Fields."
+Face Name = "Пугало"
+Name = "Шайла"
+Description = "Не такая уж и нежная Принцесса Пугаловых Полей."
 Note = ""
 
 Actor 45
 Nickname = ""
 Character Name = "$Amelie_Walk"
-Face Name = "Amelie"
-Name = "Amelie"
-Description = "A kobold girl, with a paladin's heritage."
+Face Name = "Амели"
+Name = "Амели"
+Description = "Скрытая девушка с наследием паладина."
 Note = "<starting gear: 276>"
 
 Actor 46
 Nickname = ""
 Character Name = "$FinheadP"
-Face Name = "FinheadP"
-Name = "Perla"
-Description = "The spoiled Princess of the Sea. Lives a sheltered life in the Diamond Seashell."
+Face Name = "Финхед"
+Name = "Перла"
+Description = "Избалованная принцесса моря. Живет защищенной жизнью в алмазной раковине."
 Note = "<SPDS: 20>\r\n<starting gear: 305>"
 
 Actor 47
 Nickname = ""
 Character Name = "$FairyP"
-Face Name = "FairyP"
-Name = "Fairy"
+Face Name = "Фейрип"
+Name = "фея"
 Description = ""
 Note = "<SPDS: 0>\r\n<starting gear: 355>"
 
 Actor 48
 Nickname = ""
 Character Name = "$MermaidP"
-Face Name = "MermaidP"
-Name = "Thetis"
-Description = "Princess of the raiders inhabiting the depths of the Kingdom. Said to be descending for the God of the Sea itself."
+Face Name = "Русалочка"
+Name = "Тетис"
+Description = "Принцесса рейдеров, населяющих глубины королевства. Сказал, что спускается к Богу моря."
 Note = "<SPDS: 21>\r\n<starting gear: 358>"
 
 Actor 49
@@ -394,80 +394,80 @@ Actor 50
 Nickname = ""
 Character Name = ""
 Face Name = ""
-Name = "absent actor temp"
+Name = "отсутствующий актер"
 Description = ""
 Note = ""
 
 Actor 51
 Nickname = ""
 Character Name = "$Frog_Princess"
-Face Name = "FrogP"
-Name = "Pipi"
+Face Name = "Лягушка"
+Name = "Пиппи"
 Description = ""
 Note = "<SPDS: 0>\r\n<starting gear: 365>"
 
 Actor 52
 Nickname = ""
 Character Name = "$DuskNoShad"
-Face Name = "DuskP"
-Name = "Dusky"
+Face Name = "Дневник"
+Name = "Душиный"
 Description = ""
 Note = "<SPDS: 0>"
 
 Actor 53
 Nickname = ""
 Character Name = "$BirdP"
-Face Name = "BirdP"
-Name = "Dorothy"
-Description = "Princess of the only Reign in the Kingdom Above. Serves as the wings of the Queen and watches over the Kingdom's peace."
+Face Name = "Птица"
+Name = "Дороти"
+Description = "Принцесса единственного королевства наверху. Служит крылом королевы и наблюдает за миром королевства."
 Note = "<SPDS: 22>\r\n<starting gear: 386>"
 
 Actor 54
 Nickname = ""
 Character Name = "$OniP"
 Face Name = "OniP"
-Name = "Raja"
-Description = "Warrior Princess of the Oni Reign. Said to have toppled the Queen, once."
+Name = "Раджа"
+Description = "Принцесса-воин царства Они. Сказал, что однажды сверг королеву."
 Note = "<SPDS: 23>\r\n<starting gear: 515>"
 
 Actor 55
 Nickname = ""
 Character Name = "$DraPIV"
 Face Name = "DragonPIV"
-Name = "Szpeta"
+Name = "Шпета"
 Description = ""
 Note = "<SPDS: 24>\r\n<starting gear: 512>"
 
 Actor 56
 Nickname = ""
 Character Name = "$PlantP"
-Face Name = "PlantP"
-Name = "Amarylla"
-Description = "Sprouted one day in the depths of the Kingdom, has recently surges as the ruler of the Plant Reign. Noone knows how."
+Face Name = "Плант"
+Name = "Амарелла"
+Description = "Прославленный однажды в недрах Царства, в последнее время вспыхивает как правитель Растения. Никто не знает как."
 Note = "<SPDS: 25>\r\n<starting gear: 580>"
 
 Actor 57
 Nickname = ""
 Character Name = "$ShadowP"
-Face Name = "ShadowP"
-Name = "Celes"
-Description = "Traitor of the Queen's rule over the Kingdom, now returned from her exile."
+Face Name = "Шэдоуп"
+Name = "Селес"
+Description = "Предатель правления королевы над королевством, теперь вернулся из изгнания."
 Note = "<SPDS: 26>\r\n<starting gear: 760>"
 
 Actor 58
 Nickname = ""
 Character Name = "$DraPV"
 Face Name = "DragonPV"
-Name = "Gat"
+Name = "Гат"
 Description = ""
 Note = "<SPDS: 27>\r\n<starting gear: 769>"
 
 Actor 59
 Nickname = ""
 Character Name = "$ToyP"
-Face Name = "ToyP"
-Name = "Harriet™"
-Description = "ASD"
+Face Name = "игрушка"
+Name = "HarrietTM"
+Description = "РАС"
 Note = "<SPDS: 27>\r\n<starting gear: 820>"
 
 Actor 60
